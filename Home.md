@@ -2,7 +2,7 @@
 
 MapRoom is the successor of QLandkarte GT. But it's no QLandkarte GT 3.0, it's somthing complete new, braking with most of the concepts in QLandkarte. As most Open Source projects, QLandkarte evolved with no real roadmap. It was deveopment by need and request. And it was a playground for many ideas and concepts. Naturally that results into a kind of awkward code with a thick layer of slag and issues. And at a certain point of development the beast won't digest another flip in the concept anymore. That is why MapRoom starts from scratch. 
 
-To start with MapRoom you want to visit the [documentation page](DocMain.html).
+To start with MapRoom you want to visit the [documentation page](DocMain).
 
 ## Goals
 
