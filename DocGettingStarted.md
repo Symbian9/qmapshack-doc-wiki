@@ -1,3 +1,5 @@
+[Home](Home) | [Manual](DocMain)
+
 #Getting started
 
 ![Alt text](images/DocGettingStarted/maproom1.png)
