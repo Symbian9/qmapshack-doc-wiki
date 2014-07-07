@@ -1,0 +1,1 @@
+#Basic knowledge about maps and DEM files
