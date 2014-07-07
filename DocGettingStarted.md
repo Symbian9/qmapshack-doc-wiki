@@ -42,7 +42,8 @@ to zoom.
 
 ![Alt text](images/DocGettingStarted/maproom4.png)
 
-To read more about maps see [_Control maps and DEM files_](DocControlMapDem)
+To read more about maps see [_Basics about maps and DEM files_](DocBasicsMapDem) and
+[_Control maps and DEM files_](DocControlMapDem)
 
 ##Add digital elevation model
 
@@ -61,4 +62,5 @@ on top of the list.
 
 ![Alt text](images/DocGettingStarted/maproom6.png)
 
-To read more about DEM files see [_Control maps and DEM files_](DocControlMapDem)
+To read more about DEM files see [_Basics about maps and DEM files_](DocBasicsMapDem) and
+[_Control maps and DEM files_](DocControlMapDem)
