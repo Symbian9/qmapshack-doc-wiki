@@ -4,13 +4,13 @@
 
 MapRoom supports the following map formats:
 
-##Vector Maps
+### Vector Maps
 
  Ext.   | Comment
 --------|-------------
 .img    | Garmin Map Image. This must be the same file as used on the devices. A collection with a *tdb file and several *img files won't do.
 
-##Raster Maps
+### Raster Maps
 
  Ext.   | Comment
 --------|-------------
@@ -18,7 +18,7 @@ MapRoom supports the following map formats:
 *.jnx   | Garmin Birds Eye.
 *.rmap  | CompeGPS Map Container. Just a very reduced feature set is supported. The tile format must be JPEG. The projection can be Mercator or Gauss Krueger 4/3
 
-##DEM Files
+### DEM Files
 
  Ext.   | Comment
 --------|-------------
