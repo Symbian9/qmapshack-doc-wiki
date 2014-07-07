@@ -1,4 +1,4 @@
-[Home](Home) [Manual](Manual)
+[Home](Home)
 
 #MapRoom Manual
 
