@@ -4,37 +4,27 @@
 
 MapRoom supports the following map formats:
 
-<table  width="500px">
-<tr valign="top">
-    <td colspan="2"style="background-color: #0000FF; color: #FFFFFF;">Vector Maps</td>
-</tr>
-<tr valign="top">
-    <td>*.img</td>
-    <td>Garmin Map Image. This must be the same file as used on the devices. A collection with a *tdb file and several *img files won't do.</td>
-</tr>
-<tr valign="top">
-    <td colspan="2" style="background-color: #0000FF; color: #FFFFFF;">Raster Maps</td>
-</tr>
-<tr valign="top">
-    <td>*.vrt</td>
-    <td>GDAL Virtual File. By that all raster map formats known to GDAL can be used.</td>
-</tr>
-<tr valign="top">
-    <td>*.jnx</td>
-    <td>Garmin Birds Eye.</td>
-</tr>
-<tr valign="top">
-    <td>*.rmap</td>
-    <td>CompeGPS Map Container. Just a very reduced feature set is supported. The tile format must be JPEG. The projection can be Mercator or Gauss Krueger 4/3</td>
-</tr>
-<tr valign="top">
-    <td colspan="2" style="background-color: #0000FF; color: #FFFFFF;">DEM Files</td>
-</tr>
-<tr valign="top">
-    <td>*.vrt</td>
-    <td>GDAL Virtual File. By that all DEM file formats known to GDAL can be used.</td>
-</tr>
-</table>
+##Vector Maps
+
+ Ext.   | Comment
+--------|-------------
+.img    | Garmin Map Image. This must be the same file as used on the devices. A collection with a *tdb file and several *img files won't do.
+
+##Raster Maps
+
+ Ext.   | Comment
+--------|-------------
+*.vrt   | GDAL Virtual File. By that all raster map formats known to GDAL can be used.
+*.jnx   | Garmin Birds Eye.
+*.rmap  | CompeGPS Map Container. Just a very reduced feature set is supported. The tile format must be JPEG. The projection can be Mercator or Gauss Krueger 4/3
+
+##DEM Files
+
+ Ext.   | Comment
+--------|-------------
+*.vrt   | GDAL Virtual File. By that all DEM file formats known to GDAL can be used.
+
+MapRoom supports the following map formats:
 
 ## Projection and Scaling
 
