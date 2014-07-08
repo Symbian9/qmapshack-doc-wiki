@@ -14,7 +14,7 @@ So, what will be new?
 
 *  Handle data project-oriented. In QLankarte you have a list for tracks, waypoints and so on. An then you have a geo database that somehow combines all these elements into a workspace. Over the years I developed the opinion that private consumer tend to organize their data as projects that combine all kind of data. 
 
-Let me explain: If I do a hike I use a track with waypoints for navigation. Some GeoCaches along the track. Sometimes a route to the parking lot. This should be all grouped into one project. During the hike I record a track and create more waypoints. This data should be added to the project. And later on I create a diary for the day. Back on the PC I want to see all that as a group, a project, next to other projects. 
+   Let me explain: If I do a hike I use a track with waypoints for navigation. Some GeoCaches along the track. Sometimes a route to the parking lot. This should be all grouped into one project. During the hike I record a track and create more waypoints. This data should be added to the project. And later on I create a diary for the day. Back on the PC I want to see all that as a group, a project, next to other projects. 
 
 * Exchange data with the device by drag-n-drop. In QLandkarte data exchange was strongly influenced by the old Garmin devices that could do an up- and download of all data only. This will be dropped including the support for old devices. The goal is to handle data on the device just as the data in the workspace. As projects where you add or update data.
 
