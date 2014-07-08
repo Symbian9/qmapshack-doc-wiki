@@ -1,3 +1,5 @@
+[Home](Home) | [Manual](DocMain)
+
 # Install MapRoom
 
 Currently the software is distributed as source code only. You need CMake, Qt5, GDAL and Proj4 to compile the code. Depending on your system you have to install compiler tools, too. This description is for \*nix based systems with GCC installed and a GNU make system.
