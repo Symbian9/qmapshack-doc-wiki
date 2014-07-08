@@ -8,13 +8,13 @@ MapRoom supports the following map formats:
 
  Ext.   | Comment
 --------|-------------
-.img    | Garmin Map Image. This must be the same file as used on the devices. A collection with a *tdb file and several *img files won't do.
+.img    | Garmin Map Image. This must be the same file as used on the devices. A collection with a \*tdb file and several \*img files won't do.
 
 ### Raster Maps
 
  Ext.   | Comment
 --------|-------------
-*.vrt   | GDAL Virtual File. By that all raster map formats known to GDAL can be used.
+*.vrt   | GDAL Virtual File. This is a wrapper format for all files supported by GDAL.
 *.jnx   | Garmin Birds Eye.
 *.rmap  | CompeGPS Map Container. Just a very reduced feature set is supported. The tile format must be JPEG. The projection can be Mercator or Gauss Krueger 4/3
 
@@ -22,19 +22,18 @@ MapRoom supports the following map formats:
 
  Ext.   | Comment
 --------|-------------
-*.vrt   | GDAL Virtual File. By that all DEM file formats known to GDAL can be used.
+*.vrt   | GDAL Virtual File. This is a wrapper format for all files supported by GDAL.
 
-MapRoom supports the following map formats:
 
 ## Projection and Scaling
 
-The basic projection used by MapRoom is Mercator. The datum is WGS84. However you can use maps with different 
+The basic projection used by MapRoom is Mercator. The geographic datum is WGS84. However you can use maps with different 
 projections and datums as MapRoom will re-project them on-the-fly. The same applies to the scale. 
-Maproom uses a fixed logarithmic list of scale levels. All maps will be scaled to these scale levels on-the-fly.
+Maproom uses a fixed logarithmic scale. All maps will be re-scaled to this scale on-the-fly.
 
 ## GDAL Tips and Tricks
 
-All raster maps handled by GDAL have to be wrapped into a virtual map. You can do this with _gdalbuildvrt_. 
+All raster maps handled by GDAL have to be wrapped by a virtual map. You can do this with _gdalbuildvrt_. 
 A virtual map can contain one or several map files.
 
     gdalbuildvrt My_Map_Name.vrt path1/file1.tif path2/file2.tif
@@ -52,8 +51,8 @@ The very same applies to DEM files.
 ## Sources of Maps and DEM files
 
 A nice collection of Garmin vector maps can be found at [_Freizeitkarte OSM_](http://www.freizeitkarte-osm.de/). 
-They publish their toolchain next to some ready to use maps. With the toolchain you can produce your 
-own OSM based maps for any reagion. 
+Next to read to use maps they publish their toolchain, too. With the toolchain you can produce your 
+own OSM based maps for any region. 
 
 Still the best place to look for DEM data is [VIEWFINDER PANORAMAS](http://www.viewfinderpanoramas.org/). 
 
