@@ -60,7 +60,7 @@ No one likes them but it helps to read and maintain the code. Thus please stick 
 * Enumerations are lowercase and have a trailing '_e'. Enumeration items start with a 'e' and are camel case. It helps if the enumeration name is repeated in the item.
 ```
 #!c++
-   enum eMyEnum
+   enum my_enum_e
    {
         eMyEnumThing1
        ,eMyEnumThing2
