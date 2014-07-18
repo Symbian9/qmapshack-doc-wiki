@@ -7,7 +7,13 @@ always reflect just a snapshot of the current state. Screenshots seen in this ma
 not reflect the current appearance of the program. The manual will be updated if there are 
 large changes to the GUI. However smaller changes will be ignored. 
 
+##User
+
 * [Install MapRoom](DocGetMapRoom)
 * [Getting started](DocGettingStarted)
 * [Basics about maps and DEM files](DocBasicsMapDem)
 * [Control maps and DEM files](DocControlMapDem)
+
+##Developer
+
+* [Developers, developers, developers... :)](Developers)
