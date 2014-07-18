@@ -17,3 +17,4 @@ large changes to the GUI. However smaller changes will be ignored.
 ##Developer
 
 * [Developers, developers, developers... :)](Developer)
+* [Coding Guideline](DeveloperCodingGuideline)
