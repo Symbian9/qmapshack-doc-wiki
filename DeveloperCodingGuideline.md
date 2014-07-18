@@ -1,3 +1,5 @@
+[Home](Home) | [Manual](DocMain)
+
 #Coding Guideline
 
 No one likes them but it helps to read and maintain the code. Thus please stick to them:
