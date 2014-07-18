@@ -18,3 +18,4 @@ large changes to the GUI. However smaller changes will be ignored.
 
 * [Developers, developers, developers... :)](Developer)
 * [Coding Guideline](DeveloperCodingGuideline)
+* [Code Structure](DeveloperCodeStructure)
