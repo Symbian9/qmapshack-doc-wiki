@@ -8,4 +8,4 @@ And over the years I learned my limits. You can't be good at every topic. And as
 
 I started to add issues to the issue tracker. No, I do not want you to fix my bugs. Watch out for issues of type "task". These are topics that need someone to implement and maintain. Have a look at the [list](https://bitbucket.org/maproom/maproom/issues?status=new&status=open). Perhaps one of the topics triggers your interest.
 
-See the developer's section in the [manual](https://bitbucket.org/maproom/maproom/wiki/DocMain) for more details on the code.
+See the developer's section in the [manual](DocMain) for more details on the code.
