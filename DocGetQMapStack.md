@@ -1,6 +1,6 @@
 [Home](Home) | [Manual](DocMain)
 
-# Install MapRoom
+# Install QMapShack
 
 Currently the software is distributed as source code only. You need CMake, Qt5, GDAL and Proj4 to compile the code. Depending on your system you have to install compiler tools, too. This description is for \*nix based systems with GCC installed and a GNU make system.
 
@@ -8,16 +8,16 @@ If you want to use the cutting edge you need _Mercurial_ to access the repositor
 
 If you prefer more or less stable releases have a look at the [_download_](https://bitbucket.org/maproom/maproom/downloads) section. You have to download and unpack the \*tar.gz files.
 
-Anyway you should end up with a directory containing the source code. Let's say the directory's name is _MapRoom_. Create anther directory next to _MapRoom_:
+Anyway you should end up with a directory containing the source code. Let's say the directory's name is _QMapShack_. Create anther directory next to _QMapShack_:
 
-    mkdir build_MapRoom
+    mkdir build_QMapShack
 
 And then:
 
-    cd build_MapRoom
-    ccmake ../MapRoom
+    cd build_QMapShack
+    ccmake ../QMapShack
 
-You might want to change _CMAKE_INSTALL_PREFIX_ from _/usr/local_ to _/usr_. And you might want to edit the file _CMakeLists.txt_ in _MapRoom_. Line 5 and 6:
+You might want to change _CMAKE_INSTALL_PREFIX_ from _/usr/local_ to _/usr_. And you might want to edit the file _CMakeLists.txt_ in _QMapShack_. Line 5 and 6:
 
     # has to be removed later on
     set(CMAKE_PREFIX_PATH /opt/Qt/5.3/gcc_64/)

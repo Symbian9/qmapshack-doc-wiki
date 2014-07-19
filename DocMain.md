@@ -1,6 +1,6 @@
 [Home](Home)
 
-#MapRoom Manual
+#QMapShack Manual
 
 **Note**: As the software is subject to a constant development progress, this manual will
 always reflect just a snapshot of the current state. Screenshots seen in this manual might 
@@ -9,7 +9,7 @@ large changes to the GUI. However smaller changes will be ignored.
 
 ##User
 
-* [Install MapRoom](DocGetMapRoom)
+* [Install QMapShack](DocGetQMapShack)
 * [Getting started](DocGettingStarted)
 * [Basics about maps and DEM files](DocBasicsMapDem)
 * [Control maps and DEM files](DocControlMapDem)

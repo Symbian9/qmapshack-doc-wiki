@@ -2,7 +2,7 @@
 
 #Code Structure
 
-On the QLandkarte the flat source tree became a problem with an increasing number of files. With MapRoom I started a complex source tree with folders. By that you can deflate folders of no interest in your IDE. I hope the code will be less intimidatory to new developers by that.
+On the QLandkarte the flat source tree became a problem with an increasing number of files. With QMapShack I started a complex source tree with folders. By that you can deflate folders of no interest in your IDE. I hope the code will be less intimidatory to new developers by that.
 
 If you add a new file use the little python script 'mkfile' in the source root. That gives you a skeleton with the GPL V3 header. *ui files are just created with designer. Take a bit of time to consider where to place new files. If in doubt discuss it with me.
 

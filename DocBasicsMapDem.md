@@ -2,7 +2,7 @@
 
 #Basic knowledge about maps and DEM files
 
-MapRoom supports the following map formats:
+QMapShack supports the following map formats:
 
 ### Vector Maps
 
@@ -27,8 +27,8 @@ MapRoom supports the following map formats:
 
 ## Projection and Scaling
 
-The basic projection used by MapRoom is Mercator. The geographic datum is WGS84. However you can use maps with different 
-projections and datums as MapRoom will re-project them on-the-fly. The same applies to the scale. 
+The basic projection used by QMapShack is Mercator. The geographic datum is WGS84. However you can use maps with different 
+projections and datums as QMapShack will re-project them on-the-fly. The same applies to the scale. 
 Maproom uses a fixed logarithmic scale. All maps will be re-scaled to this scale on-the-fly.
 
 ## GDAL Tips and Tricks
