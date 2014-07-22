@@ -2,7 +2,7 @@
 
 # Control of Maps and DEM Files
 
-The render engine of MapRom is quite flexible and lets you create map stacks with
+The render engine of QMapShack is quite flexible and lets you create map stacks with
 maps of different binary geographic datum, projection and binary format. Additionally 
 it adds elevation information to the displayed maps if DEM data is loaded. The DEM data 
 is completely independent from the loaded map. However the same concepts as for maps 
@@ -62,7 +62,7 @@ Vector maps have additional properties.
 
 ![Alt text](images/DocControlMapDem/maproom6.png)
 
-Use the checkboxes to control what major map elements are displayed. For example you can overlay your raster map with a vector map and display the points of interest only, to add more information to your map. 
+Use the check boxes to control what major map elements are displayed. For example you can overlay your raster map with a vector map and display the points of interest only, to add more information to your map. 
 
 ### DEM Files
 
@@ -70,4 +70,4 @@ DEM Files have additional properties.
 
 ![Alt text](images/DocControlMapDem/maproom7.png)
 
-Hillshading will overlay the map with a grayshaded relief.
+_Hillshading_ will overlay the map with a gray shaded relief.
