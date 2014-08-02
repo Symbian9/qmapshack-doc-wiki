@@ -13,6 +13,7 @@ large changes to the GUI. However smaller changes will be ignored.
 * [Getting started](DocGettingStarted)
 * [Basics about maps and DEM files](DocBasicsMapDem)
 * [Control maps and DEM files](DocControlMapDem)
+* [Handle GPX files](DocHandleGpxFiles)
 
 ##Developer
 
