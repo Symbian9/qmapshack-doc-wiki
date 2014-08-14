@@ -14,3 +14,9 @@ If you click on the highlighted waypoint you get a short on-screen-summary and a
 2. Delete the waypoint
 3. Move the waypoint to another location.
 4. Project the waypoint - This is copying the waypoint and to move to copy a given distance and bearing
+
+![maproom3.png](images/DocGisItemsWpt/maproom3.png)
+
+![maproom4.png](images/DocGisItemsWpt/maproom4.png)
+
+![maproom5.png](images/DocGisItemsWpt/maproom5.png)
