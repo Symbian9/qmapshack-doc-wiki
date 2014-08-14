@@ -1,0 +1,17 @@
+[Home](Home) | [Manual](DocMain)
+
+# Waypoints, Tracks & Co (A general word about GIS items)
+
+There are artificial items that are created on your computer. And there are items recorded in the field. The artificial ones are based on assumptions of maps and what you think the world looks like. And the ones from the field are created in reality, with an error typical to the GPS.
+
+Both sources of information have their caveats. As long as you know the origin of the data you are able to do your own assumptions on the reliability. However if artificial and real sources get mixed without notice this can lead to very misleading results. 
+
+Take the recording of a mountain trip, for example. On certain sections the signal conditions might be very bad. But you want to distribute that track. What are you doing now? You can replace the bad section by some artificial data, or move the track points to what ever position you believe that is right. But is that right? Is that a reliable source for anyone else to follow? Or would it be better to simply delete those bad points, showing the user that there is no good data for that section and leave it up to the user?
+
+Anyway QMapShack is following a certain policity on that topic:
+
+* If data is not created within QMapShack, it is locked. The user can unlock the data, but the data is marked as tainted. If data is tainted it will loose significant information. A track, for example, will loose it's timestamps, as timestamps don't make any sense if you have moved track points.
+
+* Data created within QMapShack can be changed without tainting the element. 
+
+* Each item does have a history. The history records each change with a timestamp.
