@@ -15,3 +15,9 @@ Anyway QMapShack is following a certain policity on that topic:
 * Data created within QMapShack can be changed without tainting the element. 
 
 * Each item does have a history. The history records each change with a timestamp.
+
+## Cluttered items
+
+Sometimes several items have the same coordinate or are very close by. That makes it hard to select a single one. If several items are highlighted (up to 8), simply do a left button click with your mouse. Each item will be shown in a circle with it's icon. Click on the circle you want. Or somewhere on the map to cancel the selection.
+
+![maproom1.png](images/DocGisItems/maproom1.png)
