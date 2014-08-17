@@ -25,10 +25,10 @@ As mentioned in [Waypoints, Tracks & Co](DocGisItems) items are locked, when imp
 
 ![maproom4.png](images/DocGisItemsWpt/maproom4.png)
 
-When moving the waypoint the cursor will be locked to move mode. On a right mouse button click the move action is aborted. On a left mouse button click the waypoint is dropped at the new position. If the cursor is close to the viewport's border, the map is moved.
+When moving the waypoint the cursor will be locked to move mode. On a right mouse button click the move action is aborted. On a left mouse button click the waypoint is dropped at the new position. If the cursor is close to the viewport's border, the map is moved. 
 
 ## Project Waypoint
 
 ![maproom5.png](images/DocGisItemsWpt/maproom5.png)
 
-Different to moving the waypoint this will create a clone of the waypoint. You have to give an explicit distance and bearing the waypoint is moved.
+Different to moving the waypoint this will create a clone of the waypoint. You have to give an explicit distance and bearing the waypoint is moved. You might want to change the icon and the name.
