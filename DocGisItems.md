@@ -37,3 +37,5 @@ This order can't be changed. However you can change the order of items within a 
 If you release the mouse button the item will be placed at the new location:
 
 ![maproom3.png](images/DocGisItems/maproom3.png)
+
+Of course you can use drag-n-drop between projects, too. In this case the item is not moved. A complete copy is created including a new key, making the new item a unique one.
