@@ -40,3 +40,5 @@ Due to the nature of tracks this screen is quite complex:
 ![TrkProfile.png](images/DocGisItemsTrk/TrkProfile.png) If you select the on-screen profile from the options you will see the profile plot in the bottom left corner of the map (1). The track will be highlighted by a red border. If you move the mouse close to the highlighted track you get some information about the point close to the mouse. It's the progress (2) of the track at that point. And it's some details about that point (3).
 
 ![maproom4.png](images/DocGisItemsTrk/maproom4.png)
+
+Optionally you can highlight the track when doing a double click on the item in workspace list. 
