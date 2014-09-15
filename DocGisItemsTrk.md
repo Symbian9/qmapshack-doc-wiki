@@ -41,4 +41,4 @@ Due to the nature of tracks this screen is quite complex:
 
 ![maproom4.png](images/DocGisItemsTrk/maproom4.png)
 
-Optionally you can highlight the track when doing a double click on the item in workspace list. 
+Optionally you can highlight the track when doing a double click on the item in workspace list. If you click on the little profile plot the details page will open.
