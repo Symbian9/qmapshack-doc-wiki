@@ -18,3 +18,19 @@ If you click on the highlighted track you get a short on-screen-summary and a fe
 ## View / Edit Details
 
 ![maproom3.png](images/DocGisItemsTrk/maproom3.png)
+
+Due to the nature of tracks this screen is quite complex:
+
+1. If you hoover the mouse over one of the graphs you will see some information about the point under the cursor
+2. This is the progress of the tour for the point under the mouse cursor
+3. The profile plot is the elevation over the distance. The red line is the elevation from the Digital Elevation Model (if data is available see [Basics about maps and DEM files](DocBasicsMapDem)) You can hide & show the plot by it's checkbox.
+4. The speed plot is the speed over the distance. You can hide & show the plot by it's checkbox.
+5. The progress plot is the distance over time. You can hide & show the plot by it's checkbox.
+6. You can select a track color from the combobox. The track will change it's color immediately.
+7. You can change the name simply by starting to type. The field will be marked as changed by turning red. If you press 'Return' the name is changed and the field will turn green.
+8. As mentioned in[Waypoints, Tracks & Co](DocGisItems) items are locked, when imported into QMapShack. If you change them all the same they are tainted, marked by the ink dot.
+9. As mentioned in[Waypoints, Tracks & Co](DocGisItems) items are locked, when imported into QMapShack. You can edit them all the same if you unlock them by pressing the lock button.
+10. This is a complete list of all track points.
+11. The red dot in the track graph will show you the location of the point under the track cursor.
+12. This is the history list showing all changes applied to the track.
+13. The track summary 
