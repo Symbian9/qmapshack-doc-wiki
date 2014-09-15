@@ -34,3 +34,9 @@ Due to the nature of tracks this screen is quite complex:
 11. The red dot in the track graph will show you the location of the point under the track cursor.
 12. This is the history list showing all changes applied to the track.
 13. The track summary 
+
+## On-screen Track Information
+
+![TrkProfile.png](images/DocGisItemsTrk/TrkProfile.png) If you select the on-screen profile from the options you will see the profile plot in the bottom left corner of the map (1)
+
+![maproom4.png](images/DocGisItemsTrk/maproom4.png)
