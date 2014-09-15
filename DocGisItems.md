@@ -21,3 +21,13 @@ Anyway QMapShack is following a certain policity on that topic:
 Sometimes several items have the same coordinate or are very close by. That makes it hard to select a single one. If several items are highlighted (up to 8), simply do a left button click with your mouse. Each item will be shown in a circle with it's icon. Click on the circle you want. Or somewhere on the map to cancel the selection.
 
 ![maproom1.png](images/DocGisItems/maproom1.png)
+
+## Draw Order & Copy Items
+
+All GIS items are grouped by projects. Currently a project equals to a GPX file. Within a project the items are grouped by their type:
+
+1. Tracks
+2. Routes
+3. Waypoints
+
+This order can't be changed. However you can change the order of items within a group. 
