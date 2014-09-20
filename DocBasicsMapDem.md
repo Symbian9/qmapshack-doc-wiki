@@ -18,8 +18,14 @@ QMapShack supports the following map formats:
 *.jnx   | Garmin Birds Eye.
 *.rmap  | CompeGPS Map Container. Just a very reduced feature set is supported. The tile format must be JPEG. The projection can be Mercator or Gauss Krueger 4/3
 
-### DEM Files
+### Online Maps
 
+ Ext.   | Comment
+--------|-------------
+*.wtms |  The WMTS server's WMTSCapabilities.xml sheet renamed to a unique name. (QMapShack V. 0.5.0 and later)
+
+### DEM Files
+ 
  Ext.   | Comment
 --------|-------------
 *.vrt   | GDAL Virtual File. This is a wrapper format for all files supported by GDAL.
@@ -27,9 +33,10 @@ QMapShack supports the following map formats:
 
 ## Projection and Scaling
 
-The basic projection used by QMapShack is Mercator. The geographic datum is WGS84. However you can use maps with different 
-projections and datums as QMapShack will re-project them on-the-fly. The same applies to the scale. 
-QMapShack uses a fixed logarithmic scale. All maps will be re-scaled to this scale on-the-fly.
+The basic projection used by QMapShack is Mercator. The geographic datum is WGS84. However you can use maps with different projections and datums as QMapShack will re-project them on-the-fly. The same applies to the scale. 
+QMapShack uses a fixed logarithmic scale. All maps will be re-scaled to this scale on-the-fly. 
+
+It is also possible to change the basic projection via "View-Setup Map Workspace".
 
 ## GDAL Tips and Tricks
 
