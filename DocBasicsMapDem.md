@@ -45,6 +45,12 @@ A virtual map can contain one or several map files.
 
     gdalbuildvrt My_Map_Name.vrt path1/file1.tif path2/file2.tif
 
+If you have a lot of files you can use wildcards:
+
+    gdalbuildvrt My_Map_Name.vrt path1/*.tif
+
+**Important:** All files must have the same color mode and the same projection/datum/scaling.
+
 If the files are large it will take a lot of memory and time to display them in the outer zoom levels. 
 You might consider to use gdaladdo to add overview levels to the files. 
 
