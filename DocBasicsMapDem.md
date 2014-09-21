@@ -38,7 +38,7 @@ QMapShack uses a fixed logarithmic scale. All maps will be re-scaled to this sca
 
 It is also possible to change the basic projection via "View-Setup Map Workspace".
 
-## GDAL Tips and Tricks
+## GDAL *.vrt Maps
 
 All raster maps handled by GDAL have to be wrapped by a virtual map. You can do this with _gdalbuildvrt_. 
 A virtual map can contain one or several map files.
