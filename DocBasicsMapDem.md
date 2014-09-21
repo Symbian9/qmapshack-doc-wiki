@@ -22,7 +22,7 @@ QMapShack supports the following map formats:
 
  Ext.   | Comment
 --------|-------------
-*.wtms |  The WMTS server's WMTSCapabilities.xml sheet renamed to a unique name. (QMapShack V. 0.5.0 and later)
+*.wmts |  The WMTS server's WMTSCapabilities.xml sheet renamed to a unique name. (QMapShack V. 0.5.0 and later)
 
 ### DEM Files
  
@@ -33,7 +33,7 @@ QMapShack supports the following map formats:
 
 ## Projection and Scaling
 
-The basic projection used by QMapShack is Mercator. The geographic datum is WGS84. However you can use maps with different projections and datums as QMapShack will re-project them on-the-fly. The same applies to the scale. 
+The default basic projection used by QMapShack is Mercator. The geographic datum is WGS84. However you can use maps with different projections and datums as QMapShack will re-project them on-the-fly. The same applies to the scale. 
 QMapShack uses a fixed logarithmic scale. All maps will be re-scaled to this scale on-the-fly. 
 
 It is also possible to change the basic projection via "View-Setup Map Workspace".
@@ -60,6 +60,18 @@ This will create a file _My_Map_Name.vrt.ovr_ next to _My_Map_Name.vrt_ containi
 _2 4 8 16_.
 
 The very same applies to DEM files.
+
+## WMTS Maps
+
+A Web Map Tile Service (WMTS) is a standard protocol for serving pre-rendered georeferenced map tiles over the Internet (says Wikipedia). The capabilities of a WMTS server are defines in a XML document named WMTSCapabilities.xml. It can be found on the server:
+
+    http://<server_address>/<optional_path>/1.0.0/WMTSCapabilities.xml
+
+For example there is a variety of free world wide WMTS map from [Arcgis](http://services.arcgisonline.com/arcgis/rest/services). A the capability sheet of the topo map can be found at:
+
+    http://services.arcgisonline.com/arcgis/rest/services/World_Topo_Map/MapServer/WMTS/1.0.0/WMTSCapabilities.xml
+
+To use the map you download the XML file and rename it to let's say: _World_Topo.wmts_. Move the file into QMapShack's map path and you can use the map online.
 
 ## Sources of Maps and DEM files
 
