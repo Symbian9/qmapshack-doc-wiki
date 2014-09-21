@@ -65,6 +65,15 @@ Vector maps have additional properties.
 
 Use the check boxes to control what major map elements are displayed. For example you can overlay your raster map with a vector map and display the points of interest only, to add more information to your map. 
 
+### Online Maps
+
+![Alt text](images/DocControlMapDem/maproom8.png)
+
+1. The path to the tile cache. Each map has it's own path. The default is  _"<home_dir>/.QMapShack/<map_file_name>"_
+2. The maximum tile cache size.
+3. The maximum age of the tiles in the cache
+4. If the map has more than one layer you can enable/disable the layers
+
 ### DEM Files
 
 DEM Files have additional properties.
