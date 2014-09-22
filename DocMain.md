@@ -2,7 +2,7 @@
 
 #QMapShack Manual
 
-![Alt text](images/maproom1.png)
+![Alt text](images/maproom.png)
 
 **Note**: As the software is subject to a constant development progress, this manual will
 always reflect just a snapshot of the current state. Screenshots seen in this manual might 
