@@ -32,5 +32,7 @@ And install the application with:
 
     sudo make install
 
+## Windows
 
+For Windows 7 64 Bit there is a binary installer available in the download section.
 
