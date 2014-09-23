@@ -22,13 +22,13 @@ QMapShack supports the following map formats:
 
  Ext.   | Comment
 --------|-------------
-*.wmts |  The WMTS server's WMTSCapabilities.xml sheet renamed to a unique name. (QMapShack V. 0.5.0 and later)
+*.wmts | The WMTS server's WMTSCapabilities.xml sheet renamed to a unique name. (QMapShack V. 0.5.0 and later)
 
 ### DEM Files
  
  Ext.   | Comment
 --------|-------------
-*.vrt   | GDAL Virtual File. This is a wrapper format for all files supported by GDAL.
+*.vrt | GDAL Virtual File. This is a wrapper format for all files supported by GDAL.
 
 
 ## Projection and Scaling
