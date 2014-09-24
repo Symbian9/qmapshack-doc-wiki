@@ -49,7 +49,7 @@ Not really map related but workspace related:
 
 ### Map and DEM
 
-If you expand a map or DEM item you can see the  property setup of this item in this workspace.
+If you expand a map or DEM item you can see the  property setup of this item for the current workspace.
 
 ![Alt text](images/DocControlMapDem/maproom5.png)
 
