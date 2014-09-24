@@ -80,4 +80,4 @@ DEM Files have additional properties.
 
 ![Alt text](images/DocControlMapDem/maproom7.png)
 
-_Hillshading_ will overlay the map with a gray shaded relief.
+_Hillshading_ (1) will overlay the map with a gray shaded relief. You can fine tune the contrast of the hillshading with the slider (2). 
