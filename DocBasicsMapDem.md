@@ -80,7 +80,7 @@ To use the map you download the XML file and rename it to let's say: _World_Topo
 ## Sources of Maps and DEM files
 
 A nice collection of Garmin vector maps can be found at [_Freizeitkarte OSM_](http://www.freizeitkarte-osm.de/). 
-Next to read to use maps they publish their toolchain, too. With the toolchain you can produce your 
+Next to ready to use maps they publish their tool chain, too. With the tool chain you can produce your 
 own OSM based maps for any region. 
 
 Still the best place to look for DEM data is [VIEWFINDER PANORAMAS](http://www.viewfinderpanoramas.org/). 
