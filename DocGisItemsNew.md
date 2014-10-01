@@ -25,3 +25,11 @@ Now you have to select an icon for your waypoint. The last selected icon will be
 Finally you have to select a project for your new waypoint. You can select from a list of already loaded projects or create a new one.
 
 ![start](images/DocGisItemsNew/maproom5.png)
+
+## Track
+
+If you select a track as new element the mouse position will be taken as first track point and the mouse cursor will enter the line edit mode. See  ["Edit items with multiple points (tracks, routes, areas)"](DocGisItemsEditMultiple) for more details.
+
+## Area
+
+If you select an area as new element the mouse position will be taken as first point and the mouse cursor will enter the line edit mode. See  ["Edit items with multiple points (tracks, routes, areas)"](DocGisItemsEditMultiple) for more details.
