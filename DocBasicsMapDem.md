@@ -36,7 +36,7 @@ QMapShack supports the following map formats:
 The default basic projection used by QMapShack is Mercator. The geographic datum is WGS84. However you can use maps with different projections and datums as QMapShack will re-project them on-the-fly. The same applies to the scale. 
 QMapShack uses a fixed logarithmic scale. All maps will be re-scaled to this scale on-the-fly. 
 
-It is also possible to change the basic projection via "View-Setup Map Workspace".
+It is also possible to change the basic projection via "View->Setup Map Workspace".
 
 ## GDAL *.vrt Maps
 
