@@ -75,7 +75,7 @@ Or satellite images:
 
     http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/WMTS/1.0.0/WMTSCapabilities.xml
 
-To use the map you download the XML file and rename it to let's say: _World_Topo.wmts_. Move the file into QMapShack's map path and you can use the map online.
+To use the map you download the XML file and rename it, let's say: _World_Topo.wmts_. Move the file into QMapShack's map path and you can use the map online.
 
 ## Sources of Maps and DEM files
 
