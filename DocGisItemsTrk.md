@@ -14,6 +14,7 @@ If you click on the highlighted track you get a short on-screen-summary and a fe
 2. Delete the track
 3. On-screen Profile - See a track profile on the map screen and get track information close to the cursor.
 4. Cut track - Cut the track into two tracks at the selected point.
+5. Change the position data of the track points.
 
 ## View / Edit Details
 
