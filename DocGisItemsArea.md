@@ -14,7 +14,7 @@ If you click on the highlighted area you get a short on-screen-summary and a few
 
 1. View / Edit area - See the full details about the area in a dialog with the option to edit the data.
 2. Delete the area
-3. Change the position data of the area coordinates. See ["Edit items with multiple points (tracks, routes, areas)"](DocGisItemsEditMultiple) for more details.
+3. Change thecoordinates of the area. See ["Edit items with multiple points (tracks, routes, areas)"](DocGisItemsEditMultiple) for more details.
 
 ## View / Edit Details
 
