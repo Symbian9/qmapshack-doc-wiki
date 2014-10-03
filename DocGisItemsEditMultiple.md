@@ -17,3 +17,9 @@ Additionally three buttons appear in the top left corner of the map canvas. Use 
 Next you select one of the points you want to change and select one of the options.
 
 ![maproom6.png](images/DocGisItemsEditMultiple/maproom6.png)
+
+1. Delete the point.
+2. Start to mark a range of points
+3. Move the point 
+4. Add points before the current point (the arrow points into the direction the new points will be added)
+5. Add points after the current point (the arrow points into the direction the new points will be added)
