@@ -22,7 +22,7 @@ All changes will be just temporarily until you choose to apply them permanently.
 
 ## Select point 
 
-Next you select one of the points you want to change and select one of the options.
+Next you click on the point you want to change and select one of the options.
 
 ![maproom6.png](images/DocGisItemsEditMultiple/maproom6.png)
 
@@ -31,5 +31,7 @@ Next you select one of the points you want to change and select one of the optio
 3. Move the point 
 4. Add points before the current point (the arrow points into the direction the new points will be added)
 5. Add points after the current point (the arrow points into the direction the new points will be added)
+
+## Mark a range
 
 
