@@ -32,6 +32,16 @@ Next you click on the point you want to change and select one of the options.
 4. Add points before the current point (the arrow points into the direction the new points will be added)
 5. Add points after the current point (the arrow points into the direction the new points will be added)
 
+You can abort the selection by a click anywhere on the map. 
+
 ## Mark a range
 
+If you choose to mark a range of points a red line will span from the selected point to the point closest to your current mouse position. You can abort the action by a right click. 
 
+![maproom7.png](images/DocGisItemsEditMultiple/maproom7.png)
+
+A left click on the last point in the range will fix the selection and offer you some options.
+
+![maproom8.png](images/DocGisItemsEditMultiple/maproom8.png)
+
+Currently the only option is to delete the complete range.
