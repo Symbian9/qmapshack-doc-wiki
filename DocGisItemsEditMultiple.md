@@ -20,6 +20,8 @@ All changes will be just temporarily until you choose to apply them permanently.
 
 ![maproom5.png](images/DocGisItemsEditMultiple/maproom5.png)
 
+## Select point 
+
 Next you select one of the points you want to change and select one of the options.
 
 ![maproom6.png](images/DocGisItemsEditMultiple/maproom6.png)
