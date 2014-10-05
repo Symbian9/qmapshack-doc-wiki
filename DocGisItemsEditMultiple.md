@@ -47,3 +47,13 @@ A left click on the last point in the range will fix the selection and offer you
 Currently the only option is to delete the complete range.
 
 ![maproom9.png](images/DocGisItemsEditMultiple/maproom9.png)
+
+## Move a point
+
+When moving a point it will stick to the cursor until you press the left mouse button to drop it at it's new location. If you press the right mouse button moving the point is aborted.
+
+## Add points
+
+You can add  points  by point-n-click on the map temporarily. A right mouse button click will finish the operation and you can choose if the new points should be part of the line permanently.
+
+![maproom10.png](images/DocGisItemsEditMultiple/maproom10.png)
