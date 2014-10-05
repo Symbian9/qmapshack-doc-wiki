@@ -45,3 +45,5 @@ A left click on the last point in the range will fix the selection and offer you
 ![maproom8.png](images/DocGisItemsEditMultiple/maproom8.png)
 
 Currently the only option is to delete the complete range.
+
+![maproom9.png](images/DocGisItemsEditMultiple/maproom9.png)
