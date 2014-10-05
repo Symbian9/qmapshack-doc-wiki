@@ -54,6 +54,6 @@ When moving a point it will stick to the cursor until you press the left mouse b
 
 ## Add points
 
-You can add  points  by point-n-click on the map temporarily. A right mouse button click will finish the operation and you can choose if the new points should be part of the line permanently.
+You can add  points  by point-n-click on the map temporarily. A right mouse button click will finish the operation and you can choose if the new points should be part of the line permanently to the temporary line. 
 
 ![maproom10.png](images/DocGisItemsEditMultiple/maproom10.png)
