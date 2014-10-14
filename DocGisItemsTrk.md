@@ -11,10 +11,13 @@ If you click on the highlighted track you get a short on-screen-summary and a fe
 ![maproom2.png](images/DocGisItemsTrk/maproom2.png)
 
 1. View / Edit track - See the full details about the track in a dialog with the option to edit the data.
-2. Delete the track
-3. On-screen Profile - See a track profile on the map screen and get track information close to the cursor.
-4. Cut track - Cut the track into two tracks at the selected point.
+2. On-screen Profile - See a track profile on the map screen and get track information close to the cursor.
+3. Delete the track
+4. Select Range - Select a range of track points to process.
 5. Change the position data of the track points. See  ["Edit items with multiple points (tracks, routes, areas)"](DocGisItemsEditMultiple) for more details.
+6. Reverse - Create a reverse copy of the track.
+7. Combine - Combine track with other tracks.
+8. Cut track - Cut the track into two tracks at the selected point.
 
 ## View / Edit Details
 
