@@ -46,3 +46,16 @@ Due to the nature of tracks this screen is quite complex:
 ![maproom4.png](images/DocGisItemsTrk/maproom4.png)
 
 Optionally you can highlight the track when doing a double click on the item in workspace list. If you click on the little profile plot the details page will open.
+
+
+## Combine Tracks
+
+![Combine.png](images/DocGisItemsTrk/Combine.png) You can combine the selected track with other tracks of the same project. 
+
+![maproom5.png](images/DocGisItemsTrk/maproom5.png)
+
+1. The list of available tracks.
+2. The list of already selected tracks
+3. Exchange tracks between the available and selected lists by the tool buttons.
+4. Change the order of the tracks to combine with the tool buttons.
+5. Preview of result.
