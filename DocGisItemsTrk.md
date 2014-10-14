@@ -62,6 +62,18 @@ Optionally you can highlight the track when doing a double click on the item in 
 
 ## Select Range
 
+When entering the range selection mode you will see the normal track line with visible points and a gray shadow line with all track points. 
+
 ![maproom6.png](images/DocGisItemsTrk/maproom6.png)
 
+Select the first point from the visible points. And then a second one to define the range. A right mouse button click will abort the selection.
+
 ![maproom7.png](images/DocGisItemsTrk/maproom7.png)
+
+You can choose from the options:
+
+1. Hide all points between the first and and the last point excluding.
+2. Show all points between the first and and the last point excluding.
+3. Create a new track as copy of the selected track points.
+
+Additionally you see some information about the selected range. If you click anywhere on the canvas you will abort the selection but stay in range selection mode for another selection.
