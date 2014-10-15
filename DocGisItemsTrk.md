@@ -62,11 +62,11 @@ Optionally you can highlight the track when doing a double click on the item in 
 
 ## Select Range
 
-![SelectRange.png](images/DocGisItemsTrk/SelectRange.png)When entering the range selection mode you will see the normal track line with visible points and a gray shadow line with all track points. 
+![SelectRange.png](images/DocGisItemsTrk/SelectRange.png)When entering the range selection mode you will see the normal track line with visible points and a gray shadow line with all track points. A right mouse button click will abort the selection mode at any time.
 
 ![maproom6.png](images/DocGisItemsTrk/maproom6.png)
 
-Select the first point from the visible points. And then a second one to define the range. A right mouse button click will abort the selection.
+Select the first point from the visible points. And then a second one to define the range. 
 
 ![maproom7.png](images/DocGisItemsTrk/maproom7.png)
 
