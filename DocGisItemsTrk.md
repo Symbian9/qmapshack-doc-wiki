@@ -23,7 +23,7 @@ If you click on the highlighted track you get a short on-screen-summary and a fe
 
 ![maproom3.png](images/DocGisItemsTrk/maproom3.png)
 
-Due to the nature of tracks this screen is quite complex:
+![EditDetails.png](images/DocGisItemsTrk/EditDetails.png) Due to the nature of tracks this screen is quite complex:
 
 1. If you hoover the mouse over one of the graphs you will see some information about the point under the cursor
 2. This is the progress of the tour for the point under the mouse cursor
