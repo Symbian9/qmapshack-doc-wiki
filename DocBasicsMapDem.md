@@ -158,7 +158,7 @@ function convert(z1, x1, y1)
 <Copyright>Microsoft - Bing</Copyright>
 </TMS>
 ```
-Instead of a **<ServerUrl>** the layer as a **<Script>* tag with Java code.
+Instead of a **<ServerUrl>** the layer as a **<Script>** tag with Java code.
 
 
 ## Sources of Maps and DEM files
