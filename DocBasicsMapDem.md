@@ -67,7 +67,7 @@ A Web Map Tile Service (WMTS) is a standard protocol for serving pre-rendered ge
 
     http://<server_address>/<optional_path>/1.0.0/WMTSCapabilities.xml
 
-For example there is a variety of free world wide WMTS map from [Arcgis](http://services.arcgisonline.com/arcgis/rest/services). A the capability sheet of the topo map can be found at:
+For example there is a variety of free world wide WMTS map from [Arcgis](http://services.arcgisonline.com/arcgis/rest/services). The capability sheet of the topo map can be found at:
 
     http://services.arcgisonline.com/arcgis/rest/services/World_Topo_Map/MapServer/WMTS/1.0.0/WMTSCapabilities.xml
 
