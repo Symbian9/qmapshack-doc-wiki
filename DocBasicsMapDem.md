@@ -125,6 +125,41 @@ On each layer you can define:
 
 **<MaxZoomLevel>** Override the default MaxZoomLevel for this layer.
 
+Next to the normal TMS naming scheme for URLs the URL can be formed by a bit of JavaScript. Here is an example for Microsoft's Bing:
+
+```
+#!xml
+<TMS>
+<Title>Bing</Title>
+<Layer idx="0">
+<Script><![CDATA[
+(
+function convert(z1, x1, y1)
+{
+serverpart = 0
+serverpart = (serverpart + 1) % 4;
+function encodeQuadTree(zoom, tilex, tiley)
+{
+var tileNum = []
+for (var i = zoom - 1; i >= 0; i--)
+{
+var num = (tilex % 2) | ((tiley % 2) << 1);
+tileNum[i] = new String(num);
+tilex >>= 1;
+tiley >>= 1;
+}
+return tileNum.join("");
+}
+return "http://ecn.t" + serverpart + ".tiles.virtualearth.net/tiles/a" + encodeQuadTree(z1,x1,y1) + ".jpeg?g=1036";
+}
+)
+]]></Script>
+</Layer>
+<Copyright>Microsoft - Bing</Copyright>
+</TMS>
+```
+Instead of a **<ServerUrl>** the layer as a **<Script>* tag with Java code.
+
 
 ## Sources of Maps and DEM files
 
