@@ -14,7 +14,7 @@ QMapShack supports the following map formats:
 
  Ext.   | Comment
 --------|-------------
-*.vrt   | GDAL Virtual File. This is a wrapper format for all files supported by GDAL.
+*.vrt   | GDAL Virtual File. This is a wrapper format for all files supported by GDAL. (see details below)
 *.jnx   | Garmin Birds Eye.
 *.rmap  | CompeGPS Map Container. Just a very reduced feature set is supported. The tile format must be JPEG. The projection can be Mercator or Gauss Krueger 4/3
 
@@ -22,14 +22,14 @@ QMapShack supports the following map formats:
 
  Ext.   | Comment
 --------|-------------
-*.wmts | The WMTS server's WMTSCapabilities.xml sheet renamed to a unique name. 
-*.tms | This is a small XML file to define all data needed to access TMS serves. 
+*.wmts | The WMTS server's WMTSCapabilities.xml sheet renamed to a unique name. (see details below)
+*.tms | This is a small XML file to define all data needed to access TMS serves. (see details below)
 
 ### DEM Files
  
  Ext.   | Comment
 --------|-------------
-*.vrt | GDAL Virtual File. This is a wrapper format for all files supported by GDAL.
+*.vrt | GDAL Virtual File. This is a wrapper format for all files supported by GDAL. (see details below)
 
 
 ## Projection and Scaling
