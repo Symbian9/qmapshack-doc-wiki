@@ -136,21 +136,21 @@ Next to the normal TMS naming scheme for URLs the URL can be formed by a bit of 
 (
 function convert(z1, x1, y1)
 {
-serverpart = 0
-serverpart = (serverpart + 1) % 4;
-function encodeQuadTree(zoom, tilex, tiley)
-{
-var tileNum = []
-for (var i = zoom - 1; i >= 0; i--)
-{
-var num = (tilex % 2) | ((tiley % 2) << 1);
-tileNum[i] = new String(num);
-tilex >>= 1;
-tiley >>= 1;
-}
-return tileNum.join("");
-}
-return "http://ecn.t" + serverpart + ".tiles.virtualearth.net/tiles/a" + encodeQuadTree(z1,x1,y1) + ".jpeg?g=1036";
+  serverpart = 0
+  serverpart = (serverpart + 1) % 4;
+  function encodeQuadTree(zoom, tilex, tiley)
+  {
+    var tileNum = []
+    for (var i = zoom - 1; i >= 0; i--)
+    {
+      var num = (tilex % 2) | ((tiley % 2) << 1);
+      tileNum[i] = new String(num);
+      tilex >>= 1;
+      tiley >>= 1;
+    }
+    return tileNum.join("");
+  }
+  return "http://ecn.t" + serverpart + ".tiles.virtualearth.net/tiles/a" + encodeQuadTree(z1,x1,y1) + ".jpeg?g=1036";
 }
 )
 ]]></Script>
