@@ -110,7 +110,7 @@ To access TMS servers you have to define a few properties via XML file.  This is
 
 **<Copyright>** A copyright notice for the maps displayed.
 
-**<RawHeader>** An optional list of tag/value pairs to be inserted into the HTTP header of the request. Some servers want to see special value here.
+**<RawHeader>** An optional list of name/value pairs to be inserted into the HTTP header of the request. Some servers want to see special value here.
 
 **<MinZoomLevel>** Can bee 0..17. 0 is the most detailed level. Below this level tiles from the specified level will be taken and scaled.
 
