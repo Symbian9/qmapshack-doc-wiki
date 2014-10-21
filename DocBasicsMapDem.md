@@ -100,12 +100,17 @@ To access TMS servers you have to define a few properties via XML file.  This is
   <MinZoomLevel>3</MinZoomLevel>
   <MaxZoomLevel>9</MaxZoomLevel>
  </Layer>
+ <RawHeader>
+   <Value name="User-Agent">Whatever</Value>
+ </RawHeader>
  <Copyright>Map data: (c) OpenStreetMap contributors, ODbL | Rendering: (c) OpenTopoMap, CC-BY-SA | Trails by tile.waymarkedtrails.org </Copyright>
 </TMS>
 ```
 **<Title>** This tag is currently of no use and just for backward compatibility to QLandkarte
 
 **<Copyright>** A copyright notice for the maps displayed.
+
+**<RawHeader>** An optional list of tag/value pairs to be inserted into the HTTP header of the request. Some servers want to see special value here.
 
 **<MinZoomLevel>** Can bee 0..17. 0 is the most detailed level. Below this level tiles from the specified level will be taken and scaled.
 
