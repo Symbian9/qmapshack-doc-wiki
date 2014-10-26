@@ -15,7 +15,7 @@ large changes to the GUI. However smaller changes will be ignored.
 * [Getting started](DocGettingStarted)
 * [Basics about maps and DEM files](DocBasicsMapDem)
 * [Control maps and DEM files](DocControlMapDem)
-* [Projects](DocProjects)
+* [Working with Projects](DocWorkingWithProjects)
     * [Handle GPX files](DocHandleGpxFiles)
 * [Tracks, Waypoints & Co](DocGisItems)
     * [Create new tracks, waypoints etc.](DocGisItemsNew)
