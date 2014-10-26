@@ -14,6 +14,6 @@ Now you can use an existing project or create a new one.
 
 ![maproom3.png](images/DocSearchGoogle/maproom3.png)
 
-And copy the result via drag-n-drop to the ne project. 
+And copy the result via drag-n-drop to the new project. 
 
 ![maproom4.png](images/DocSearchGoogle/maproom4.png)
