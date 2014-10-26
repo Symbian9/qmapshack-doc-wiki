@@ -17,6 +17,7 @@ large changes to the GUI. However smaller changes will be ignored.
 * [Control maps and DEM files](DocControlMapDem)
 * [Working with Projects](DocWorkingWithProjects)
     * [Handle GPX files](DocHandleGpxFiles)
+    * [Search Google](DocSearchGoogle)
 * [Tracks, Waypoints & Co](DocGisItems)
     * [Create new tracks, waypoints etc.](DocGisItemsNew)
     * [Tracks](DocGisItemsTrk)
