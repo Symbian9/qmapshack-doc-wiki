@@ -2,10 +2,15 @@
 
 #Getting started
 
+This is what you get on the first start-up. 
+
 ![Alt text](images/DocGettingStarted/maproom1.png)
 
-This is what you get on the first start-up. QMapShack accepts a few options on the command line.
-The most important ones are:
+All windows around the map workspace are docking windows. In other words you can move and re-group them as you like.
+
+![Alt text](images/DocGettingStarted/maproom1_1.png)
+
+QMapShack accepts a few options on the command line. The most important ones are:
 
     -d to enable debug output on the console
     -c <filename> to read the configuration from a configuration file
