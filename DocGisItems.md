@@ -41,3 +41,5 @@ If you release the mouse button the item will be placed at the new location:
 Of course you can use drag-n-drop between projects, too. In this case the item is not moved. A complete copy is created including a new key, making the new item a unique one.
 
 ![maproom4.png](images/DocGisItems/maproom4.png)
+
+## History of Changes & Undo/Redo
