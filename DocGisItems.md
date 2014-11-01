@@ -43,3 +43,12 @@ Of course you can use drag-n-drop between projects, too. In this case the item i
 ![maproom4.png](images/DocGisItems/maproom4.png)
 
 ## History of Changes & Undo/Redo
+
+Each item has a _History of Changes_. You will find it in the _Edit Details_ dialog. The _History of Changes_ list is also an _Undo/Redo_ list. You can click on one of the entries and the item will change to that state. 
+
+![maproom5.png](images/DocGisItems/maproom5.png)
+
+When saving the data to a QMS file the _History of Changes_ is stored completely. If stored to a GPX file only the informational part is stored and there is no way to restore one of the entries. 
+
+
+
