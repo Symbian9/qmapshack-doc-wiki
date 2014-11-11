@@ -54,9 +54,6 @@ You can define a no data value, too. This is quite useful for DEM data that does
 
     gdalbuildvrt -vrtnodata 32767  ASTER_GDEM2_Europe.vrt europe/*.tif
 
-
-
-
 **Important:** All files must have the same color mode and the same projection/datum/scaling.
 
 If the files are large it will take a lot of memory and time to display them in the outer zoom levels. 
@@ -66,8 +63,6 @@ You might consider to use gdaladdo to add overview levels to the files.
 
 This will create a file _My_Map_Name.vrt.ovr_ next to _My_Map_Name.vrt_ containing scaled overviews by factor 
 _2 4 8 16_.
-
-The very same applies to DEM files.
 
 ## WMTS Maps
 
