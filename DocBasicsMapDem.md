@@ -50,6 +50,13 @@ If you have a lot of files you can use wildcards:
 
     gdalbuildvrt My_Map_Name.vrt path1/*.tif
 
+You can define a no data value, too. This is quite useful for DEM data that does not cover a complete rectangular area:
+
+    gdalbuildvrt -vrtnodata 32767  ASTER_GDEM2_Europe.vrt europe/*.tif
+
+
+
+
 **Important:** All files must have the same color mode and the same projection/datum/scaling.
 
 If the files are large it will take a lot of memory and time to display them in the outer zoom levels. 
