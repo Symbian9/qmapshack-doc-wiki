@@ -10,3 +10,8 @@ You have to provide a name for your database and a database file. Use the toolbu
 
 ![maproom2](images/DocGisDatabaseAddRemove/maproom1.png)
 
+To remove a database you do a right click on the root entry of the database. 
+
+![maproom2](images/DocGisDatabaseAddRemove/maproom3.png)
+
+This will remove the database from the database list, but not from your harddisc. You can load it later again.  
