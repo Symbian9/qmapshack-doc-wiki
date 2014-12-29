@@ -26,9 +26,9 @@ large changes to the GUI. However smaller changes will be ignored.
     * [Edit items with multiple points (tracks, routes, areas)](DocGisItemsEditMultiple)
 * [Database](DocGisDatabase)
     * [Workspace and Database](DocGisDatabaseWorkspaceDatabase)
-    * [Add/Remove a database](DocGisDatabaseAddRemove)
-    * [Folders and items](DocGisDatabaseFoldersItems)
-    * [Lost & Found folder](DocGisDatabaseLostFound)
+    * [Add/Remove a Database](DocGisDatabaseAddRemove)
+    * [Folders and Items](DocGisDatabaseFoldersItems)
+    * ['Lost & Found' Folder](DocGisDatabaseLostFound)
 
 ##Developer
 
