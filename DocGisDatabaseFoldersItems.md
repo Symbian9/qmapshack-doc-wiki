@@ -21,3 +21,11 @@ The items won't be stored into the database unless you explicitely save the chan
 After saving  the project you will see the list of items in the database view. You load and unload single items by their checkboxes. The folders checkbox will  load or unload all items within the folder, but no subfolders.
 
 ![maproom2](images/DocGisDatabaseFolderItems/maproom5.png)
+
+If you delete items in a database project from the workspace the items are not deleted in the database. Just removed from the workspace. To delete the items in the database you have to select and to delete them in the database view.
+
+![maproom2](images/DocGisDatabaseFolderItems/maproom7.png)
+
+If the items are not referenced by another folder they will be moved into the 'Lost & Found' folder.
+
+![maproom2](images/DocGisDatabaseFolderItems/maproom8.png)
