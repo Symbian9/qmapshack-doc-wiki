@@ -81,4 +81,8 @@ DEM Files have additional properties.
 
 ![Alt text](images/DocControlMapDem/maproom7.png)
 
-_Hillshading_ (1) will overlay the map with a gray shaded relief. You can fine tune the contrast of the hillshading with the slider (2). _Slope_(3) will overlay the map with a color pattern for certain ranges of slopes. The patter reflects the ranges defined by the so called [DAV Snow Card](http://www.alpenverein.de/bergsport/sicherheit/skitouren-schneeschuh-sicher-im-schnee/dav-snowcard_aid_10619.html). This is a scheme to evaluate the risk of a snow avalanche commonly used in the European Alps. It knows 4 grades of risk. Use the slider (4) to select the grade. You will see the ranges in the legend (5).
+_Hillshading_ (1) will overlay the map with a gray shaded relief. You can fine tune the contrast of the hillshading with the slider (2). _Slope_ (3) will overlay the map with a color pattern for certain ranges of slopes. The patter reflects the ranges defined by the so called [DAV Snow Card](http://www.alpenverein.de/bergsport/sicherheit/skitouren-schneeschuh-sicher-im-schnee/dav-snowcard_aid_10619.html). This is a scheme to evaluate the risk of a snow avalanche commonly used in the European Alps. It knows 4 grades of risk. Use the slider (4) to select the grade. You will see the ranges in the legend (5). As a result the map will look a bit strange:
+
+![Alt text](images/DocControlMapDem/maproom10.png)
+
+
