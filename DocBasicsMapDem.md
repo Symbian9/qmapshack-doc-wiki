@@ -42,7 +42,7 @@ It is also possible to change the basic projection via "View->Setup Map Workspac
 ## GDAL *.vrt Maps
 
 All raster maps handled by GDAL have to be wrapped by a virtual map. You can do this with _gdalbuildvrt_. 
-A virtual map can contain one or several map files.
+A virtual map can contain one or several map files (you can replace *.tif with any other extension supported by GDAL, e.g. *.hgt).
 
     gdalbuildvrt My_Map_Name.vrt path1/file1.tif path2/file2.tif
 
