@@ -50,6 +50,11 @@ If you have a lot of files you can use wildcards:
 
     gdalbuildvrt My_Map_Name.vrt path1/*.tif
 
+If you use the wacky console of Windows you have to do this in two steps:
+
+    for %f in (*.hgt) DO echo %f >> hgt_list.txt
+    gdalbuildvrt -vrtnodata 32767 Alpen.vrt -input_file_list hgt_list.txt
+
 You can define a no data value, too. This is quite useful for DEM data that does not cover a complete rectangular area:
 
     gdalbuildvrt -vrtnodata 32767  ASTER_GDEM2_Europe.vrt europe/*.tif
