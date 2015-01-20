@@ -17,12 +17,7 @@ And then:
     cd build_QMapShack
     ccmake ../QMapShack
 
-You might want to change _CMAKE_INSTALL_PREFIX_ from _/usr/local_ to _/usr_. And you might want to edit the file _CMakeLists.txt_ in _QMapShack_. Line 5 and 6:
-
-    # has to be removed later on
-    set(CMAKE_PREFIX_PATH /opt/Qt/5.3/gcc_64/)
-
-This is because on my system Qt5 is not integrated into the usual paths, yet. Probably you have to remove that, or change it to where ever Qt5 is on your system.
+You might want to change _CMAKE_INSTALL_PREFIX_ from _/usr/local_ to _/usr_. 
 
 While in ccmake press the keys 'c' and then 'g'. If everything is fine leave with 'q'. Now compile the source with:
 
