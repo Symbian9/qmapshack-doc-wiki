@@ -11,7 +11,7 @@ QMapShack supports data exchange with several GPS outdoor units. All newer Garmi
 
 After you pluged your device to the PC and switched it to mass stroage mode you should see something link this:
 
--> ![maproom2](images/DocGisDevices/qmapshack2.png) <-
+![maproom2](images/DocGisDevices/qmapshack2.png)
 
 Each memory of the device is listed  in the workspace. If data is found on the device it will be attached as project to it's device entry.
 
