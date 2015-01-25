@@ -2,4 +2,4 @@
 
 # Working with GPS Devices
 
-![maproom2](images/DocGisDatabaseWorkspaceDevices/qmapshack2.png)
+![maproom2](images/DocGisDevices/qmapshack2.png)
