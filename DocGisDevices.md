@@ -24,3 +24,7 @@ That understood you copy projects by drag-n-drop  to the device entry you want t
 ![maproom2](images/DocGisDevices/qmapshack5.png)
 
 The context menu for items on devices is working, too. However with a limited range of options, as the items on the device are considered as read-only. Copy them to the workspace to change them ore to derive other items from them. Next to drag-n-drop you can use the copy option from the menu.
+
+![maproom2](images/DocGisDevices/qmapshack6.png)
+
+The context menu for the projects is working, too. Note that _Close_ is replaced _Delete_. This will delete the project from your device's memory.
