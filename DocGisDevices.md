@@ -17,4 +17,6 @@ Each memory of the device is listed  in the workspace. If data is found on the d
 
 The important part to understand is that a project on the device ist stored differently than on the workspace. For example devices won't be able to deal with the idea of hidden track points. Or it simply has no way to store all the information QMapShack is able to store. That is why projects have to be copied via the device entry to the device. And consequently projects on the device can't be copied to the workspace. This would lead to a project clash that is hard to resolve and very likely to loose data.
 
+![maproom2](images/DocGisDevices/qmapshack4.png)
 
+That understood you copy projects by drag-n-drop  to the device entry you want to store them. And after the tour you copy items like track recordings by drag-n-drop to what ever project on the workspace you want them. 
