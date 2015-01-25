@@ -7,7 +7,7 @@ QMapShack supports data exchange with several GPS outdoor units. All newer Garmi
 **Linux:** Make sure you have installed the UDisks2 package.  
 **Windows:** No support unless someone donates the code to detect devices. 
 
-**Garmin**: If you want to see your SD memory card in the device you have to copy the file _GarminDevice.xml_ from the internal _Garmin_ folder to the _Garmin_ folder on your SD memory card.
+**Garmin**: If you want to see your device's SD memory card you have to copy the file _GarminDevice.xml_ from the internal _Garmin_ folder to the _Garmin_ folder on your SD memory card.
 
 After you pluged your device to the PC and switched it to mass stroage mode you should see something link this:
 
