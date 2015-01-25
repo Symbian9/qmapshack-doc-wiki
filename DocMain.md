@@ -29,6 +29,7 @@ large changes to the GUI. However smaller changes will be ignored.
     * [Add/Remove a Database](DocGisDatabaseAddRemove)
     * [Folders and Items](DocGisDatabaseFoldersItems)
     * ['Lost & Found' Folder](DocGisDatabaseLostFound)
+* [GPS Devices](DocGisDevices)
 
 ##Developer
 
