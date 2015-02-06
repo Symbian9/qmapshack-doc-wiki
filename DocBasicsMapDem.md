@@ -131,7 +131,7 @@ On each layer you can define:
 
 **<Title>** A name for the layer. If no title is given "Layer" with the index number is used.
   
-**<ServerUrl>** This is the servers URL with placeholders. %1 is for the map level (z), %2 for the column (x) and %3 for the row (y)
+**<ServerUrl>** This is the servers URL with placeholders. %1 is for the map level (z), %2 for the column (x) and %3 for the row (y). If the URL contains special characters like you have to escape it according to the HTML specification, e.g. & becomes &amp;
 
 **<MinZoomLevel>** Override the default MinZoomLevel for this layer.
 
