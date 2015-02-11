@@ -69,6 +69,10 @@ You might consider to use gdaladdo to add overview levels to the files.
 This will create a file _My_Map_Name.vrt.ovr_ next to _My_Map_Name.vrt_ containing scaled overviews by factor 
 _2 4 8 16_.
 
+Starting with version 1.0  there is a graphic frontend to _gdalbuildvrt_. It helps you to avoid the commandline if you simply want to combine a few files into a *.vrt file.
+
+![Alt text](images/DocBasicsMapDem/qmapshack1.png)
+
 ## WMTS Maps
 
 A Web Map Tile Service (WMTS) is a standard protocol for serving pre-rendered georeferenced map tiles over the Internet (says Wikipedia). The capabilities of a WMTS server are defines in a XML document named WMTSCapabilities.xml. It can be found on the server:
