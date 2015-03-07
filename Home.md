@@ -8,17 +8,48 @@ If you want to start with QMapShack visit the [documentation page](DocMain).
 
 If you want to help developing QMapShack visit the [developer's page](Developer).
 
-## Goals
+## Features
 
-So, what will be new?
+Maps:
 
-* Use of several workspaces. QLandkarte has only one workspace. To see your data on another map you have to switch the map. Now you can open several independent workspaces with different maps each.
+* Garmin vector maps and *.jnx raster maps
+* Raster maps supported by GDAL
+* Online maps (TMS and WTMS (partially))
+* Display multiple maps in one view
+* Reproject maps on-the-fly to view's projection
+* Digital elevation model independent from maps
+* Hillshading and slope coloring
 
-* Use several maps on a workspace. In QLandkarte you can select a single map and overlay it with a vector map. This is not very practically if you look at the border of two maps. With QMapShack you are able to select as many different map files to be displayed as you want. The maps can even have different projections and overlay each other. You can define the draw order, the opacity and the zoom range a map is visible.
+GIS Data:
 
-*  Handle data project-oriented. In QLankarte you have a list for tracks, waypoints and so on. An then you have a geo database that somehow combines all these elements into a workspace. Over the years I developed the opinion that private consumer tend to organize their data as projects that combine all kind of data. 
+* 100% project oriented data handling
+* Summarize project by a diary
+* Support for tracks, waypoints and areas
+* Simple geocache support
+* Store projects in a database
+* Support for multiple databases
 
-     Let me explain: If I do a hike I use a track with waypoints for navigation. Some GeoCaches along the track. Sometimes a route to the parking lot. This should be all grouped into one project. During the hike I record a track and create more waypoints. This data should be added to the project. And later on I create a diary for the day. Back on the PC I want to see all that as a group, a project, next to other projects. 
+Planning:
 
-* Exchange data with the device by drag-n-drop. In QLandkarte data exchange was strongly influenced by the old Garmin devices that could do an up- and download of all data only. This will be dropped including the support for old devices. The goal is to handle data on the device just as the data in the workspace. As projects where you add or update data.
+* Undo/redo history for all items
+* Track point edit mode to create/change tracks
+* Cut/copy/combine/reverse tracks
+* Various filter to enhance tracks
 
+GPS Devices:
+
+* Support for newer Garmin devices
+* Support for TwoNav devices
+* Project oriented data organization on devices
+* Synchronize your project with several devices attached 
+
+System:
+
+* License GPL3+
+* Runs on all *nix systems as well as on Windows
+  Probably on OS X, too, but so far no one volunteers to 
+  maintain a binary.
+* GUI has been translated to Czech, French, German and Spanish
+* Wiki dokumentation is English 
+* Needs Qt5, GDAL, Proj4 installed
+* For device support on Linux DBus and UDisk2 must be installed
