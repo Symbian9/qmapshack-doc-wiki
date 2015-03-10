@@ -1,6 +1,6 @@
 # Welcome to QMapShack
 
-QMapShack is a consumer grade software to work with data aquired by GPS devices. The data can be displayed on a variety of maps and stored in a database. Additionally new data can be created to plan tours. 
+QMapShack is a consumer grade software to work with data aquired by GPS devices. The data can be displayed on a variety of maps and stored in a database. Additionally new data can be created to plan your next trip. 
 
 If you want to download QMapShack visit the [download page](https://bitbucket.org/maproom/qmapshack/downloads)
 
