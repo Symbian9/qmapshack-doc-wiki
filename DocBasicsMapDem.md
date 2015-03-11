@@ -123,7 +123,7 @@ To access TMS servers you have to define a few properties via XML file.  This is
 
 **<RawHeader>** An optional list of name/value pairs to be inserted into the HTTP header of the request. Some servers want to see special value here.
 
-**<MinZoomLevel>** Can bee 0..17. 0 is the most detailed level. Below this level tiles from the specified level will be taken and scaled.
+**<MinZoomLevel>** Can be 0..17. 0 is the most detailed level. Below this level tiles from the specified level will be taken and scaled.
 
 **<MaxZoomLevel>** Can be 1..18. 1 is the most detailed level. Above this level the map will not be drawn.
 
@@ -137,7 +137,7 @@ On each layer you can define:
   
 **<ServerUrl>** This is the servers URL with placeholders. %1 is for the map level (z), %2 for the column (x) and %3 for the row (y). If the URL contains special characters you have to escape them according to the HTML specification, e.g. & becomes &amp;
 
-**<MinZoomLevel>** Override the default MinZoomLevel for this layer. Can bee 0..17. 0 is the most detailed level. Below this level tiles from the specified level will be taken and scaled.
+**<MinZoomLevel>** Override the default MinZoomLevel for this layer. Can be 0..17. 0 is the most detailed level. Below this level tiles from the specified level will be taken and scaled.
 
 **<MaxZoomLevel>** Override the default MaxZoomLevel for this layer. Can be 1..18. 1 is the most detailed level. Above this level the map will not be drawn.
 
