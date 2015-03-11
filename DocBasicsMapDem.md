@@ -137,9 +137,9 @@ On each layer you can define:
   
 **<ServerUrl>** This is the servers URL with placeholders. %1 is for the map level (z), %2 for the column (x) and %3 for the row (y). If the URL contains special characters you have to escape them according to the HTML specification, e.g. & becomes &amp;
 
-**<MinZoomLevel>** Override the default MinZoomLevel for this layer. Note: Possible values are from 1..17. 1 is the most detailed level
+**<MinZoomLevel>** Override the default MinZoomLevel for this layer. Can bee 0..17. 0 is the most detailed level. Below this level tiles from the specified level will be taken and scaled.
 
-**<MaxZoomLevel>** Override the default MaxZoomLevel for this layer.  Note: Possible values are from 1..17. 17 is the least detailed level
+**<MaxZoomLevel>** Override the default MaxZoomLevel for this layer. Can be 1..18. 1 is the most detailed level. Above this level the map will not be drawn.
 
 Next to the normal TMS naming scheme for URLs the URL can be formed by a bit of JavaScript. Here is an example for Microsoft's Bing:
 
