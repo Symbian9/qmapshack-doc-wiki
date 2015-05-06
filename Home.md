@@ -10,6 +10,15 @@ If you have found a bug or want a new feature [read this first](BugFeatures).
 
 If you want to help developing QMapShack visit the [developer's page](Developer).
 
+## Support
+
+Problems understanding the documentation? Your requirement is not addressed by the documentation? You want to add to the project, but you do not know where to start? You got lost in the source code and need some guidance? You just want to brag about the crazy new feature you plan to add? 
+
+For all these questions you can get in touch with development.
+
+* The QLandkarte GT [mailing list](https://lists.sourceforge.net/lists/listinfo/qlandkartegt-users) and it's [archive](http://news.gmane.org/gmane.comp.gis.qlandkartegt.user)
+* IRC freenode, channel [#qlandkarte](http://webchat.freenode.net/?channels=#qlandkarte)
+
 ## Features
 
 Maps:
