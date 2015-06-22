@@ -29,11 +29,11 @@ Points and sub-points are stored different depending on the GIS item:
 
 **Route** - On save all points are stored as route waypoints. All sub-points are stored as intermediate route points. No navigation information is generated or stored. 
 
-![maproom2](images/DocGisItemsEditMultiple/PointMove.png)
+![maproom2](images/DocGisItemsEditMultiple/PointMove.png) Move a point. Move the mouse cursor over a point until it is highlighted. A left click will make the point stick to the mouse cursor. A right click will abort the operation. A second left click will drop the point at the new position. If routing is enabled the lines to and from the point are updated by sub-lines.
 
-![maproom2](images/DocGisItemsEditMultiple/Add.png)
+![maproom2](images/DocGisItemsEditMultiple/Add.png) Add a point to a line segment or at the start or end of the line. Move the mouse cursor over a line segment or a point to highlight it. A left click will add a new point that sticks to the mouse cursor.  A right click will abort the operation. A second left click will drop the point at the new position. If routing is enabled the lines to and from the point are updated by sub-lines.
 
-![maproom2](images/DocGisItemsEditMultiple/SelectRange.png)
+![maproom2](images/DocGisItemsEditMultiple/SelectRange.png) - tbd
 
-![maproom2](images/DocGisItemsEditMultiple/DeleteOne.png)
+![maproom2](images/DocGisItemsEditMultiple/DeleteOne.png) - Remove a highlighted point by a left click. If routing is enabled the lines to and from the point are updated by sub-lines.
 
