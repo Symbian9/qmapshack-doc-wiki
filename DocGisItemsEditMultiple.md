@@ -37,3 +37,11 @@ Points and sub-points are stored different depending on the GIS item:
 
 ![maproom2](images/DocGisItemsEditMultiple/DeleteOne.png) - Remove a highlighted point by a left click. If routing is enabled the lines to and from the point are updated by sub-lines.
 
+The next buttons configure the routing mode:
+
+**0** - No routing selected. Points are connected by a straight line.
+
+**A** - Auto-routing. To use auto-routing the current selected router must be a properly configured offline router. The points are connected by sublines derived by the router.
+
+**V** - Vector-routing. To use vector-routing a vector map must be active for the area. The points are connected by the points of a polyline in the vector map. It is important the the first and the second line is part of the polygon. Else a straight line is used. 
+
