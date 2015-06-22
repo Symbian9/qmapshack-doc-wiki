@@ -6,3 +6,5 @@
 
 In line edit mode several buttons are displayed on-screen. 
 
+![maproom2](images/DocGisItemsEditMultiple/qms1.png)
+
