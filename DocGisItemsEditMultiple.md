@@ -19,3 +19,15 @@ In line edit mode several buttons are displayed on-screen.
 **Save as new** - Create a new GIS item.
 
 **Abort** - Leave the line edit mode without a change.
+
+
+Points and sub-points are stored different depending on the GIS item:
+
+**Track** - On save all sub-points are converted to real points. 
+
+**Area** -  On save all sub-points are converted to real points. 
+
+**Route** - On save all points are stored as route waypoints. All sub-points are stored as intermediate route points. No navigation information is generated or stored. 
+
+
+
