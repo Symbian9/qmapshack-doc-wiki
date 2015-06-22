@@ -50,3 +50,6 @@ The next buttons configure the routing mode:
 
 **V** - Vector-routing. To use vector-routing a vector map must be active for the area. The points are connected by the points of a polyline in the vector map. It is important the the first and the second line is part of the polygon. Else a straight line is used. 
 
+## Undo/Redo ##
+
+![maproom2](images/DocGisItemsEditMultiple/Undo.png) ![maproom2](images/DocGisItemsEditMultiple/Redo.png) All operations can be undone ore replayed by the undo and redo buttons.
