@@ -16,3 +16,21 @@ If you click on the highlighted route you get a short on-screen-summary and a fe
 ![maproom1.png](images/DocGisItemsRte/Reset.png) Reset the route to waypoints connected with straight lines.
 
 ![maproom1.png](images/DocGisItemsRte/LineMove.png) Edit the route. Move waypoints, add waypoints, delete waypoints.
+
+
+## Routino ##
+
+![maproom1.png](images/DocGisItemsRte/qms4.png)
+
+Routino is an offline router. See it's [homepage](http://routino.org/) for more details. As it is working without an Internet connection it needs routing data locally installed. A database has four files:
+
+```
+#!text
+*-nodes.mem
+*-relations.mem
+*-segments.mem
+*-ways.mem
+```
+
+Replace the "*" with a name of the database, e-g. "Europ" or "North_America". This will be the name displayed on the GUI. The "_" will be replaced by " ".
+
