@@ -4,10 +4,11 @@
 
 If you have found a bug file a bug report on the [Issues](https://bitbucket.org/maproom/qmapshack/issues?status=new&status=open) page. Please make sure to provide:
 
-1. Information about the operating system and the software's version. You find this in the menu "?" -> About
-2. Give a detailed report about what is broken
-3. Give instructions about how to reproduce the problem
-4. If additional data is needed give real links to that data. A mellow description where to find it is not sufficient.
+1. Consider fixing it yourself. For example bad spelling, confusing names or explanations and bad translations can be fixed by everyone. Use Qt5 Linguist to edit the translations. Linguist will tell you the source file containing the string, too. By that you can change the original string in the source code. 
+2. Information about the operating system and the software's version. You find this in the menu "?" -> About
+3. Give a detailed report about what is broken
+4. Give instructions about how to reproduce the problem
+5. If additional data is needed give real links to that data. A mellow description where to find it is not sufficient.
 
 All bugs will get some attention. Due to vacations this might take up to 2 weeks. If there is no answer after that period make yourself heard via email.
 
