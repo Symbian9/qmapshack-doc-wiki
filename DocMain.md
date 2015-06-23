@@ -21,6 +21,7 @@ large changes to the GUI. However smaller changes will be ignored.
 * [Tracks, Waypoints & Co](DocGisItems)
     * [Create new tracks, waypoints etc.](DocGisItemsNew)
     * [Tracks](DocGisItemsTrk)
+    * [Routes](DocGisItemsRte)
     * [Waypoints](DocGisItemsWpt)
     * [Areas](DocGisItemsArea)
     * [Edit items with multiple points (tracks, routes, areas)](DocGisItemsEditMultiple)
