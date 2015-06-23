@@ -17,6 +17,9 @@ If you click on the highlighted route you get a short on-screen-summary and a fe
 
 ![maproom1.png](images/DocGisItemsRte/LineMove.png) Edit the route. Move waypoints, add waypoints, delete waypoints.
 
+# Routing Engines #
+
+Currently there is only one routing engine supported. 
 
 ## Routino ##
 
