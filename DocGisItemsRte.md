@@ -32,5 +32,5 @@ Routino is an offline router. See it's [homepage](http://routino.org/) for more 
 *-ways.mem
 ```
 
-Replace the "*" with a name of the database, e-g. "Europ" or "North_America". This will be the name displayed on the GUI. The "_" will be replaced by " ".
+Replace the "*" with a name of the database, e.g. "Europe" or "North_America". This will be the name displayed on the GUI. The "_" will be replaced by " ".
 
