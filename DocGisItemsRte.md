@@ -6,4 +6,13 @@ A route is a collection of waypoints with an order. The path between each point 
 
 ![maproom1.png](images/DocGisItemsRte/qms1.png) ![maproom1.png](images/DocGisItemsRte/qms2.png)
 
+If you click on the highlighted route you get a short on-screen-summary and a few options:
 
+![maproom1.png](images/DocGisItemsRte/qms3.png)
+
+
+![maproom1.png](images/DocGisItemsRte/Apply.png)
+
+![maproom1.png](images/DocGisItemsRte/Reset.png)
+
+![maproom1.png](images/DocGisItemsRte/LineMove.png)
