@@ -37,7 +37,7 @@ Points and sub-points are stored different depending on the GIS item:
 
 ![maproom2](images/DocGisItemsEditMultiple/Add.png) Add a point to a line segment or at the start or end of the line. Move the mouse cursor over a line segment or a point to highlight it. A left click will add a new point that sticks to the mouse cursor.  A right click will abort the operation. A second left click will drop the point at the new position. If routing is enabled the lines to and from the point are updated by sub-lines.
 
-![maproom2](images/DocGisItemsEditMultiple/SelectRange.png) - tbd
+![maproom2](images/DocGisItemsEditMultiple/SelectRange.png) Select a range of points. Select the first and last point with a left click of your mouse. You will get two options to choose from. ![maproom2](images/DocGisItemsEditMultiple/DeleteOne_small.png) Delete all points between the first and the last selected point. ![maproom2](images/DocGisItemsEditMultiple/Apply_small.png) Calculate a route between the first and the last point. Make sure the routing mode and router are setup properly to make it work.
 
 ![maproom2](images/DocGisItemsEditMultiple/DeleteOne.png) - Remove a highlighted point by a left click. If routing is enabled the lines to and from the point are updated by sub-lines.
 
@@ -52,4 +52,7 @@ The next buttons configure the routing mode:
 
 ## Undo/Redo ##
 
-![maproom2](images/DocGisItemsEditMultiple/Undo.png) ![maproom2](images/DocGisItemsEditMultiple/Redo.png) All operations can be undone ore replayed by the undo and redo buttons.
+While in line edit mode all changes can be undone.
+
+![maproom2](images/DocGisItemsEditMultiple/Undo.png) Undo last operation
+![maproom2](images/DocGisItemsEditMultiple/Redo.png) Redo last operation
