@@ -10,6 +10,11 @@ If you click on the highlighted route you get a short on-screen-summary and a fe
 
 ![maproom1.png](images/DocGisItemsRte/qms3.png)
 
+![maproom1.png](images/DocGisItemsRte/EditDetails.png) TBD
+
+![maproom1.png](images/DocGisItemsRte/Copy.png) Copy the route into another project.
+
+![maproom1.png](images/DocGisItemsRte/DeleteOne.png) Deltete the route from the project.
 
 ![maproom1.png](images/DocGisItemsRte/Apply.png) Calculate the route. The current router selection and configuration is used. 
 
@@ -25,7 +30,7 @@ Currently there is only one routing engine supported.
 
 ![maproom1.png](images/DocGisItemsRte/qms4.png)
 
-Routino is an offline router. See it's [homepage](http://routino.org/) for more details. As it is working without an Internet connection it needs routing data locally installed. A database has four files:
+Routino is an offline router written by Andrew M. Bishop. See the project's [homepage](http://routino.org/) for more details. As it is working without an Internet connection it needs routing data locally installed. A database needs 4 files:
 
 ```
 #!text
@@ -37,8 +42,8 @@ Routino is an offline router. See it's [homepage](http://routino.org/) for more 
 
 Replace the "*" with a name of the database, e.g. "Europe" or "North_America". This will be the name displayed on the GUI. The "_" will be replaced by " ".
 
-To create a database you need planetsplitter from the Routino package. Currently this is installed with the QMapShack installation. Please refer to the [online documentation](http://routino.org/documentation/usage.html) on how to use planetsplitter.
+To create a database use planetsplitter from the Routino package. Currently this is installed with the QMapShack installation. Please refer to the [online documentation](http://routino.org/documentation/usage.html) on how to use planetsplitter.
 
-There is also a ready to use collection of database files for [download](https://jeepxj.de/pub/routino/). You have to unpack the files into a directory and setup the path in QMapShacks Routino setup.
+There is also a ready to use collection of database files for [download](https://jeepxj.de/pub/routino/). You have to un-zip the files into a directory and QMapShack's Routino setup to register the path. Click the blue folder to do so.
 
 
