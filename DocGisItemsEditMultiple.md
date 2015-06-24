@@ -55,4 +55,5 @@ The next buttons configure the routing mode:
 While in line edit mode all changes can be undone.
 
 ![maproom2](images/DocGisItemsEditMultiple/Undo.png) Undo last operation
+
 ![maproom2](images/DocGisItemsEditMultiple/Redo.png) Redo last operation
