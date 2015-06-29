@@ -48,5 +48,6 @@ There is also a ready to use collection of database files for [download](https:/
 
 **Windows: Due to limitations in Microsoft's POSIX API Routino can't handle files larger than 4GB. Europe exceeds that size. You have to build your own smaller database with less countries.** 
 
+### Create Own Routino database ###
 
-
+![maproom1.png](images/DocGisItemsRte/qms5.png)
