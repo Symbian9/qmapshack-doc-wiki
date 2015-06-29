@@ -44,7 +44,7 @@ Replace the "*" with a name of the database, e.g. "Europe" or "North_America". T
 
 To create a database use planetsplitter from the Routino package. Currently this is installed with the QMapShack installation. Please refer to the [online documentation](http://routino.org/documentation/usage.html) on how to use planetsplitter.
 
-There is also a ready to use collection of database files for [download](https://jeepxj.de/pub/routino/). You have to un-zip the files into a directory and QMapShack's Routino setup to register the path. Click the blue folder to do so.
+There is also a ready to use collection of database files for [download](https://jeepxj.de/pub/routino/). You have to un-zip the files into a directory and use QMapShack's Routino setup to register the path. Click the blue folder to do so.
 
 **Windows: Due to limitations in Microsoft's POSIX API Routino can't handle files larger than 4GB. Europe exceeds that size. You have to build your own smaller database with less countries.** 
 
