@@ -35,7 +35,7 @@ GIS Data:
 
 * 100% project oriented data handling
 * Summarize project by a diary
-* Support for tracks, waypoints and areas
+* Support for tracks, routes, waypoints and areas
 * Simple geocache support
 * Store projects in a database
 * Support for multiple databases
@@ -46,6 +46,7 @@ Planning:
 * Track point edit mode to create/change tracks
 * Cut/copy/combine/reverse tracks
 * Various filter to enhance tracks
+* create routes and calculate them by offline and online services
 
 GPS Devices:
 
