@@ -46,7 +46,7 @@ Planning:
 * Track point edit mode to create/change tracks
 * Cut/copy/combine/reverse tracks
 * Various filter to enhance tracks
-* create routes and calculate them by offline and online services
+* Create routes and calculate them by offline and online services
 
 GPS Devices:
 
