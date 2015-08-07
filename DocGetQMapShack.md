@@ -2,6 +2,12 @@
 
 # Install QMapShack
 
+## Windows
+
+For Windows 7 64 Bit there is a binary installer available in the download section.
+
+## Linux
+
 Currently the software is distributed as source code only. You need CMake, Qt5, GDAL and Proj4 to compile the code. Depending on your system you have to install compiler tools, too. This description is for \*nix based systems with GCC installed and a GNU make system.
 
 If you want to use the cutting edge you need _Mercurial_ to access the repository. Find the [_instructions here_](https://bitbucket.org/maproom/qmapshack/overview).
@@ -26,8 +32,4 @@ While in ccmake press the keys 'c' and then 'g'. If everything is fine leave wit
 And install the application with:
 
     sudo make install
-
-## Windows
-
-For Windows 7 64 Bit there is a binary installer available in the download section.
 
