@@ -4,7 +4,7 @@ QMapShack is a consumer grade software to work with data aquired by GPS devices.
 
 If you want to download QMapShack visit the [download page](https://bitbucket.org/maproom/qmapshack/downloads)
 
-If you want to start with QMapShack visit the [documentation page](DocMain).
+If you want to see screenshots or start with QMapShack visit the [documentation page](DocMain).
 
 If you have found a bug or want a new feature [read this first](BugFeatures).
 
