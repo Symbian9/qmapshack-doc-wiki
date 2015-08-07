@@ -2,7 +2,7 @@
 
 # Working with GPS Devices
 
-QMapShack supports data exchange with several GPS outdoor units. All newer Garmin devices accessible with mass strorage mode will work. An the devices from CompeGPS are planned to be supported.
+QMapShack supports data exchange with several GPS outdoor units. All newer Garmin devices accessible with mass strorage mode will work. And all devices based on the CompeGPS software TwoNav, that are accessible as mass storage.
 
 **Linux:** Make sure you have installed the UDisks2 package.  
 **Windows:** Supported from version 1.0.0 on.
