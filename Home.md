@@ -43,25 +43,26 @@ GIS Data:
 Planning:
 
 * Undo/redo history for all items
-* Track point edit mode to create/change tracks
+* Track point edit mode to create/change tracks, routes or areas
 * Cut/copy/combine/reverse tracks
 * Various filter to enhance tracks
 * Create routes and calculate them by offline and online services
+* Use offline router to draw tracks on-the-fly.
 
 GPS Devices:
 
 * Support for newer Garmin devices
 * Support for TwoNav devices
 * Project oriented data organization on devices
-* Synchronize your project with several devices attached 
+* Synchronize your project with a group of devices attached 
 
 System:
 
 * License GPL3+
-* Runs on all *nix systems as well as on Windows
+* Runs on all *nix systems as well as on Windows.
   Probably on OS X, too, but so far no one volunteers to 
   maintain a binary.
 * GUI has been translated to Czech, French, German and Spanish
 * Wiki dokumentation is English 
-* Needs Qt5, GDAL, Proj4 installed
+* Needs Qt5, GDAL, Proj4 and Routino installed
 * For device support on Linux DBus and UDisk2 must be installed
