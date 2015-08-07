@@ -46,7 +46,7 @@ Planning:
 * Track point edit mode to create/change tracks, routes or areas
 * Cut/copy/combine/reverse tracks
 * Various filter to enhance tracks
-* Create routes and calculate them by offline and online services
+* Create routes and calculate them by Routino (offline) or MapQuest (online)
 * Use offline router to draw tracks on-the-fly.
 
 GPS Devices:
