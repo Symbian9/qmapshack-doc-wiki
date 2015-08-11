@@ -8,7 +8,7 @@ For Windows 7 64 Bit there is a binary installer available in the download secti
 
 ## Linux
 
-**Check out your distributions package system. Probably there is a binary package already.**
+**Check out your distribution's package system. Probably there is a binary package already.**
 
 Currently the software is distributed by the author as source code only. You need CMake, Qt5, GDAL, Proj4 and Routino to compile the code. Depending on your system you have to install compiler tools, too. This description is for \*nix based systems with GCC installed and a GNU make system.
 
