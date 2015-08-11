@@ -16,7 +16,7 @@ If you want to use the cutting edge you need _Mercurial_ to access the repositor
 
 If you prefer more or less stable releases have a look at the [_download_](https://bitbucket.org/maproom/qmapshack/downloads) section. You have to download and unpack the \*tar.gz files.
 
-Anyway you should end up with a directory containing the source code. Let's say the directory's name is _QMapShack_. Create anther directory next to _QMapShack_:
+Anyway you should end up with a directory containing the source code. Let's say the directory's name is _QMapShack_. Create another directory next to _QMapShack_:
 
     mkdir build_QMapShack
 
