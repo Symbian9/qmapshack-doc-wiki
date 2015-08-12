@@ -4,7 +4,7 @@
 
 ## Windows
 
-For 64 bit Windows there is a binary installer available in the download section. There is also an outdated version for 32 bit Windows. To get up-to-date binaries it needs a new maintainer.
+For 64 bit Windows there is a binary installer available in the download section. There is also an outdated version for 32 bit Windows. To get up-to-date 32 bit binaries it needs a new maintainer.
 
 ## Linux
 
