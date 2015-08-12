@@ -32,6 +32,8 @@ Some properties are set globally for all workspaces. You find them below the _Vi
 
 ![Alt text](images/DocControlMapDem/maproom3.png)
 
+* **Add Map View** Add a new _View_ to display your data over a selection of maps.
+* **Clone Map View** Clone the current view.
 
 * **Show Scale** A scalebar will be drawn in the right bottom corner of the map.
 * **Show Grid**  A grid is drawn over the map. To setup the grid for the current visible workspace select **Setup Grid**
@@ -42,6 +44,7 @@ Some properties are set globally for all workspaces. You find them below the _Vi
 Not really map related but workspace related:
 
 * **Flip Mouse Wheel** This will change the zoom in and zoom out direction.
+* **Ext. Profile** Switch on the extended profile view in an own window.
 * **Setup Map Font** This will change the font used for any text drawn on the map.
 * **Setup Units** Change the unit system to metric, imperial or nautical
 * **Setup Grid** Setup the projection of the grid overlay.
