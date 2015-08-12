@@ -35,7 +35,7 @@ Some properties are set globally for all workspaces. You find them below the _Vi
 * **Add Map View** Add a new _View_ to display your data over a selection of maps.
 * **Clone Map View** Clone the current view.
 
-The properties for the current view:
+The properties for the views:
 
 * **Show Scale** A scalebar will be drawn in the right bottom corner of the map.
 * **Show Grid**  A grid is drawn over the map. To setup the grid for the current visible workspace select **Setup Grid**
