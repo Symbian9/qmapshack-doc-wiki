@@ -2,6 +2,8 @@
 
 There is an issue tracker, that can be used for that kind of stuff. It's open to anonymous access. However if you register to BitBucket you will be informed when ever there is a change of your topic. Sometimes I will ask for more information. If you miss these questions and there is **no feedback in a reasonable time**, I will **delete the request** without further attention.
 
+**Do not assign an issue to anyone!** The issue will be assigned when someone volunteers to solve it. 
+
 ## Bugs
 
 If you have found a bug file a bug report on the [Issues](https://bitbucket.org/maproom/qmapshack/issues?status=new&status=open) page. 
