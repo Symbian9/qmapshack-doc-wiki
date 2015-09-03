@@ -21,7 +21,7 @@ All bugs will get some attention. Due to vacations this might take up to 2 weeks
 
 ##Features
 
-Your best chance to get a new feature is to implement it on your own. If you want someone else to do the work for you open an [Issue](https://bitbucket.org/maproom/qmapshack/issues?status=new&status=open). Do not assign it to anyone. If someone volunteers to implement it the issue will be assigned. To increase your chances consider the following:
+Your **best chance** to get a new feature is to** implement it on your own**. If you want someone else to do the work for you open an [Issue](https://bitbucket.org/maproom/qmapshack/issues?status=new&status=open). Do not assign it to anyone. If someone volunteers to implement it the issue will be assigned. To increase your chances consider the following:
 
 1. Give a detailed description of what you want and why you think it's of a general interest. Just because software XYZ does it, is a bad reason. 
 2. Sketch in detail how you think the feature should be integrated into the GUI or the workflow. 
