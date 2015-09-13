@@ -14,7 +14,9 @@ If you click on the highlighted route you get a short on-screen-summary and a fe
 
 ![maproom1.png](images/DocGisItemsRte/Copy.png) Copy the route into another project.
 
-![maproom1.png](images/DocGisItemsRte/DeleteOne.png) Deltete the route from the project.
+![maproom1.png](images/DocGisItemsRte/DeleteOne.png) Delete the route from the project.
+
+![maproom1.png](images/DocGisItemsRte/RteInstr.png) Highlight route and see instructions.
 
 ![maproom1.png](images/DocGisItemsRte/Apply.png) Calculate the route. The current router selection and configuration is used. 
 
@@ -53,3 +55,5 @@ A Routino database is created from OSM data. The used file format is *pbf. You f
 ![maproom1.png](images/DocGisItemsRte/qms5.png)
 
 ## MapQuest ##
+
+![maproom1.png](images/DocGisItemsRte/qms6.png)
