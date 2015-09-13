@@ -1,6 +1,6 @@
 [Home](Home) | [Manual](DocMain)
 
-# Routes (from version 1.3.0 on)
+# Routes
 
 A route is a collection of waypoints with an order. The path between each point is usually a straight line. With routing information a path using the street network can be derived. The calculation can be done by a server (online routing) or with a local database (offline routing).
 
@@ -53,6 +53,8 @@ There is also a ready to use collection of database files for [download](https:/
 A Routino database is created from OSM data. The used file format is *pbf. You find these files at [GeoFabrik](http://download.geofabrik.de/).
 
 ![maproom1.png](images/DocGisItemsRte/qms5.png)
+
+Add one or more *pbf files to the input list. Select an output path and name prefix. Press start to compile a new database.
 
 ## MapQuest ##
 
