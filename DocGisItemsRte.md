@@ -10,7 +10,7 @@ If you click on the highlighted route you get a short on-screen-summary and a fe
 
 ![maproom1.png](images/DocGisItemsRte/qms3.png)
 
-![maproom1.png](images/DocGisItemsRte/EditDetails.png) TBD
+![maproom1.png](images/DocGisItemsRte/EditDetails.png) Edit details about route.
 
 ![maproom1.png](images/DocGisItemsRte/Copy.png) Copy the route into another project.
 
