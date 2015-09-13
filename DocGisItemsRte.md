@@ -10,7 +10,7 @@ If you click on the highlighted route you get a short on-screen-summary and a fe
 
 ![maproom1.png](images/DocGisItemsRte/qms3.png)
 
-![maproom1.png](images/DocGisItemsRte/EditDetails.png) TBD
+![maproom1.png](images/DocGisItemsRte/EditDetails.png) Edit details about route.
 
 ![maproom1.png](images/DocGisItemsRte/Copy.png) Copy the route into another project.
 
@@ -24,7 +24,7 @@ If you click on the highlighted route you get a short on-screen-summary and a fe
 
 # Routing Engines #
 
-Currently there is only one routing engine supported. 
+Currently Routino is supported as offline router and MapQuest as online routing service.
 
 ## Routino ##
 
@@ -46,10 +46,10 @@ To create a database use planetsplitter from the Routino package. Currently this
 
 There is also a ready to use collection of database files for [download](https://jeepxj.de/pub/routino/). You have to un-zip the files into a directory and use QMapShack's Routino setup to register the path. Click the blue folder to do so.
 
-**Windows: Due to limitations in Microsoft's POSIX API Routino can't handle files larger than 4GB. Europe exceeds that size. You have to build your own smaller database with less countries.** 
-
 ## Create Own Routino database ##
 
 A Routino database is created from OSM data. The used file format is *pbf. You find these files at [GeoFabrik](http://download.geofabrik.de/).
 
 ![maproom1.png](images/DocGisItemsRte/qms5.png)
+
+## MapQuest ##
