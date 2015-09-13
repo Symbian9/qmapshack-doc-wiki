@@ -24,7 +24,7 @@ If you click on the highlighted route you get a short on-screen-summary and a fe
 
 # Routing Engines #
 
-Currently there is only one routing engine supported. 
+Currently Routino is supported as offline router and MapQuest as online routing service.
 
 ## Routino ##
 
@@ -53,3 +53,5 @@ There is also a ready to use collection of database files for [download](https:/
 A Routino database is created from OSM data. The used file format is *pbf. You find these files at [GeoFabrik](http://download.geofabrik.de/).
 
 ![maproom1.png](images/DocGisItemsRte/qms5.png)
+
+## MapQuest ##
