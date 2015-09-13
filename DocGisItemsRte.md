@@ -59,3 +59,5 @@ Add one or more *pbf files to the input list. Select an output path and name pre
 ## MapQuest ##
 
 ![maproom1.png](images/DocGisItemsRte/qms6.png)
+
+MapQuest is an online resource. It will answer to up to 15.000 requests each month without a charge. If that limit is exceeded the requests from all QMapShack users it will stop working until the end of the month. Compared to Routino MapQuest is better for car routes. For hikes and bike tours Routino is prefered. 
