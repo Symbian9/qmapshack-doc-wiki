@@ -20,7 +20,11 @@ You can register for this free "licence géoservices IGN pour usage grand public
 
 You will be prompted to select which layers you want. Although the same procedure probably applies to any of the available layers, the process described here has only been tried with the map layer called "cartes IGN" (or "GEOGRAPHICALGRIDSYSTEMS.MAPS" on the WMTS server).
 
-Note that you'll need to provide your IP address in the application process. The WMTS access may be denied if you try to connect from another IP (and this may be a problem if your ISP keeps changing your IP).
+Note that you will also need to provide your IP address (external IP: that is the IP of your internet router) during the application process. Usually you can easily find this IP in your router status page, or alternatively you can visit websites such as this one:
+
+[http://tell-my-ip.com/](http://tell-my-ip.com/)
+
+The WMTS access may be denied if you try to connect from another IP (and this may be a problem if your ISP keeps changing your IP).
 
 Shortly after your order (less than one hour), you will receive a confirmation e-mail, and you will be able to retrieve a personal ID (24 character key) from your personal account on the IGN website.
 
