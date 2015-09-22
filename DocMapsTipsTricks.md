@@ -10,7 +10,11 @@ As an individual, you can apply for a free non-commercial access to the French I
 
 http://dogeo.fr/wmts_ign/
 
-Just register for a free "licence géoservices IGN pour usage grand public" at the following URL:
+The terms of use enforce a few restrictions listed at the following URL:
+
+[http://professionnels.ign.fr/licence-api-geoportail-libre-et-gratuite](http://professionnels.ign.fr/licence-api-geoportail-libre-et-gratuite)
+
+You can register for this free "licence géoservices IGN pour usage grand public" at the following URL:
 
 [http://professionnels.ign.fr/api-web](http://professionnels.ign.fr/api-web)
 
@@ -32,14 +36,12 @@ The WMTS "capabilities" can then be fetched at the following URL:
 
 (don't forget to replace **[YOUR_ID]** with your actual 24 character personal key)
 
-Unfortunately, unlike other WMTS servers, this capabilities file does not directly work in QMapShack (although it works "as is" in QGIS). To work around this, you will have to modify it with a text editor to include a <ResourceURL> line at the end of the layer description (just before the </Layer>) for the "GEOGRAPHICALGRIDSYSTEMS.MAPS" layer (must be adjusted and tested for other layers).
-
+Unfortunately, unlike other WMTS servers, this capabilities file does not directly work in QMapShack (although it works "as is" in QGIS). To work around this, you will have to modify it with a text editor to include a <ResourceURL> line at the end of the layer description (just before the </Layer> directive) for the "GEOGRAPHICALGRIDSYSTEMS.MAPS" layer (must be adjusted and tested for other layers).
 
 ```
 #!xml
 
-<ResourceURL format="image/jpeg" resourceType="tile" template="https://wxs.ign.fr/**[YOUR_ID]**/geoportail/wmts?LAYER=GEOGRAPHICALGRIDSYSTEMS.MAPS&amp;EXCEPTIONS=text/xml&amp;FORMAT=image/jpeg&amp;SERVICE=WMTS&amp;VERSION=1.0.0&amp;REQUEST=GetTile&amp;STYLE=normal&amp;TILEMATRIXSET={TileMatrixSet}&amp;&amp;TILEMATRIX={TileMatrix}&amp;TILECOL={TileCol}&amp;TILEROW={TileRow}"/>mp;&amp;TILEMATRIX={TileMatrix}&amp;TILECOL={TileCol}&amp;TILEROW={TileRow}"/>
+<ResourceURL format="image/jpeg" resourceType="tile" template="https://wxs.ign.fr/[YOUR_ID]/geoportail/wmts?LAYER=GEOGRAPHICALGRIDSYSTEMS.MAPS&amp;EXCEPTIONS=text/xml&amp;FORMAT=image/jpeg&amp;SERVICE=WMTS&amp;VERSION=1.0.0&amp;REQUEST=GetTile&amp;STYLE=normal&amp;TILEMATRIXSET={TileMatrixSet}&amp;&amp;TILEMATRIX={TileMatrix}&amp;TILECOL={TileCol}&amp;TILEROW={TileRow}"/>
 ```
-
 
 (again, don't forget to replace **[YOUR_ID]** with your actual 24 character personal key)
