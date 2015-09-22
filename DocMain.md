@@ -14,7 +14,7 @@ large changes to the GUI. However smaller changes will be ignored.
 * [Install QMapShack](DocGetQMapShack)
 * [Getting started](DocGettingStarted)
 * [Basics about maps and DEM files](DocBasicsMapDem)
-* [Maps: Tips and Tricks]
+    * [Maps: Tips and Tricks]
 * [Control maps and DEM files](DocControlMapDem)
 * [Working with Projects](DocWorkingWithProjects)
     * [Handle GPX and QMS files](DocHandleGpxFiles)
