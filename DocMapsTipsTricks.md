@@ -24,7 +24,7 @@ Note that you will also need to provide your IP address (external IP: that is th
 
 [http://tell-my-ip.com/](http://tell-my-ip.com/)
 
-The WMTS access may be denied if you try to connect from another IP (and this may be a problem if your ISP keeps changing your IP). This problem can be diagnosed by trying to access a tile from a web browser (use the sample URL below). In case of IP mismatch you will obtain an error message saying "wrong IP address" instead of the map tile. The registered IP can be modified on the "IGN Espace Pro" website, under your account, you should click on "mes commandes" and then "modifier mon contrat". Note that they say it can take up to 12h 
+The WMTS access may be denied if you try to connect from another IP (and this may be a problem if your ISP keeps changing your IP). This problem can be diagnosed by trying to access a map tile directly from a web browser (use the sample URL below). In case of IP mismatch you will obtain an error message saying "wrong IP address" instead of the map tile. The registered IP can be modified on the "IGN Espace Pro" website, under your account, you should click on "mes commandes" and then "modifier mon contrat". Note that they say it can take up to 12h 
 before the new IP is actually activated.
 
 Shortly after your order (less than one hour), you will receive a confirmation e-mail, and you will be able to retrieve a personal ID (24 character key) from your personal account on the IGN website.
