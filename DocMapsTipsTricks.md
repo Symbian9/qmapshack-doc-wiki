@@ -4,6 +4,31 @@
 
 If you have a hot tip for free maps or a spiffy trick to do with maps add a small section here.
 
+# Backdoor to use a WMS server as TMS server
+
+QMapShack's TMS file specification allows Java Script to build URLs. This can be used to build a WMS URL if the WMS server supports the projection commonly used for TMS. This is either EPSG:3857 or EPSG:900913.
+
+This is an example how to do it. You have to replace the URL before **&BBOX=" + bbox + "&WIDTH=256&HEIGHT=256** with what ever is needed for the WMS server. This might be a bit tricky.
+```
+#!XML
+<TMS>
+<Layer idx="0">
+<Title>NRW DTK Sammeldienst</Title>
+<Script><![CDATA[(
+function convert(z1,x1,y1)
+{ function M(n){return 256*n*(156543.03392804062/(1<<z1))-20037508.342789244}
+  y=(1<<z1)-1-y1;
+  bbox=M(x1)+','+M(y)+','+M(x1+1)+','+M(y+1);
+  return "http://www.wms.nrw.de/geobasis/wms_nw_dtk?LAYERS=nw_dtk_col&FORMAT=image/png&SRS=EPSG:3857&EXCEPTIONS=application/vnd.ogc.se_inimage&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&BBOX=" + bbox + "&WIDTH=256&HEIGHT=256";
+}
+)]]></Script>
+</Layer>
+<Copyright>Geobasis NRW 2015</Copyright>
+</TMS>
+
+```
+
+
 # WMTS configuration to access French IGN maps ("Géoportail") #
 
 As an individual, you can apply for a free non-commercial access to the French IGN WMTS servers (for example through their "Géoportail API", but also works with other WMTS clients like QGIS and QMapShack). Lots of thanks to them for this free access because their maps are truely awesome. The original source of information about this is at the following URL (in French):
