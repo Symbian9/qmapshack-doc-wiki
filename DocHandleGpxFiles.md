@@ -1,5 +1,7 @@
 [Home](Home) | [Manual](DocMain)
 
+[TOC]
+
 # Handle GPX and QMS Files
 
 Despite all deficiencies, GPS manufactors support this format. A common format is a good approach in general, but TopoGrafix, the company behind GPX, fails miserably to evolve their format to the needs of today's GPS systems. Anyway, GPX is it to be. QMapShack does support the GPX definition version 1.1 and some of the proprietary extensions to GPX. And it adds a few more. But due to the sheer rank growth of extensions, caused by a lack of guidance, it can't support everything. Keep this in mind when you load and save GPX files that do not origin from QMapShack. You will loose information.

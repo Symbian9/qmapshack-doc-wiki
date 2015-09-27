@@ -1,5 +1,7 @@
 [Home](Home) | [Manual](DocMain)
 
+[TOC]
+
 # Waypoints, Tracks & Co (A general word about GIS items)
 
 There are artificial items that are created on your computer. And there are items recorded in the field. The artificial ones are based on assumptions of maps and what you think the world looks like. And the ones from the field are created in reality, with an error typical to the GPS.

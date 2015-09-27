@@ -1,3 +1,5 @@
+[TOC]
+
 # Bugs & Features
 
 There is an issue tracker, that can be used for that kind of stuff. It's open to anonymous access. However if you register to BitBucket you will be informed when ever there is a change of your topic. Sometimes I will ask for more information. If you miss these questions and there is **no feedback in a reasonable time**, I will **delete the request** without further attention.
@@ -19,7 +21,7 @@ Please make sure to provide:
 
 All bugs will get some attention. Due to vacations this might take up to 2 weeks. If there is no answer after that period make yourself heard via email.
 
-##Features
+## Features
 
 Your **best chance** to get a new feature is to** implement it on your own**. If you want someone else to do the work for you open an [Issue](https://bitbucket.org/maproom/qmapshack/issues?status=new&status=open). Do not assign it to anyone. If someone volunteers to implement it the issue will be assigned. To increase your chances consider the following:
 

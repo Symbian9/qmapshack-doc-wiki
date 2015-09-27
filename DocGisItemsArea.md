@@ -1,5 +1,7 @@
 [Home](Home) | [Manual](DocMain)
 
+[TOC]
+
 # Area Overlay
 
 An area overlay is a polygon to mark an area on a map. Commonly used by search and rescue.

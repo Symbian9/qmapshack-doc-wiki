@@ -1,5 +1,7 @@
 [Home](Home) | [Manual](DocMain)
 
+[TOC]
+
 # Waypoints
 
 A waypoint is a coordinate with data attached. This can be a point of interest, a geocache or a georeferenced image. If you move the mouse close enough to a waypoint it gets highlighted by a red circle:

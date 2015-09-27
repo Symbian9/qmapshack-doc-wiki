@@ -1,5 +1,7 @@
 [Home](Home) | [Manual](DocMain)
 
+[TOC]
+
 # Install QMapShack
 
 ## Windows

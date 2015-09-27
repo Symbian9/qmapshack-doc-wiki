@@ -1,5 +1,7 @@
 [Home](Home) | [Manual](DocMain)
 
+[TOC]
+
 # Tracks
 
 A track is a list of points recorded while moving along. Sometimes tracks are created artificially to be used for navigation.

@@ -1,5 +1,7 @@
 [Home](Home) | [Manual](DocMain)
 
+[TOC]
+
 # Control of Maps and DEM Files
 
 The render engine of QMapShack is quite flexible and lets you create map stacks with

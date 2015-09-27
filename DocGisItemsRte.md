@@ -1,5 +1,7 @@
 [Home](Home) | [Manual](DocMain)
 
+[TOC]
+
 # Routes
 
 A route is a collection of waypoints with an order. The path between each point is usually a straight line. With routing information a path using the street network can be derived. The calculation can be done by a server (online routing) or with a local database (offline routing).
