@@ -1,10 +1,12 @@
 [Home](Home) | [Manual](DocMain)
 
-#Maps: Tips & Tricks
+[TOC]
+
+# Maps: Tips & Tricks
 
 If you have a hot tip for free maps or a spiffy trick to do with maps add a small section here.
 
-# Backdoor to use a WMS server as TMS server
+## Backdoor to use a WMS server as TMS server
 
 QMapShack's TMS file specification allows Java Script to build URLs. This can be used to build a WMS URL if the WMS server supports the projection commonly used for TMS. This is either EPSG:3857 or EPSG:900913.
 
@@ -29,7 +31,7 @@ function convert(z1,x1,y1)
 ```
 
 
-# WMTS configuration to access French IGN maps ("Géoportail") #
+## WMTS configuration to access French IGN maps ("Géoportail")
 
 As an individual, you can apply for a free non-commercial access to the French IGN WMTS servers (for example through their "Géoportail API", but also works with other WMTS clients like QGIS and QMapShack). Lots of thanks to them for this free access because their maps are truely awesome. The original source of information about this is at the following URL (in French):
 
