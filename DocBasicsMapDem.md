@@ -89,6 +89,8 @@ Or satellite images:
 
 To use the map you download the XML file and rename it, let's say: _World_Topo.wmts_. Move the file into QMapShack's map path and you can use the map online.
 
+For some servers, the "capabilities" XML sheet may need some hand tuning (comparing with the above working ones from Arcgis may greatly help in fixing it). For example, there is some detailed info about French IGN WMTS server in the "maps tips & tricks" section.
+
 ## TMS Maps
 
 To access TMS servers you have to define a few properties via XML file.  This is an example for definition file with two layers.
