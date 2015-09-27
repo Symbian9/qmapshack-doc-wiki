@@ -1,5 +1,7 @@
 [Home](Home) | [Manual](DocMain)
 
+[TOC]
+
 #Getting started
 
 This is what you get on the first start-up. 
