@@ -10,7 +10,7 @@ For 64 bit Windows there is a binary installer available in the download section
 
 ## OS X
 
-As no one volunteers to maintain an OS X binary, there is none.
+A binary bundle is available in the download section.
 
 ## Linux
 
