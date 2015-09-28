@@ -4,7 +4,7 @@
 
 # Maps: Tips & Tricks
 
-If you have a hot tip for free maps or a spiffy trick to do with maps add a small section here.
+If you have a hot tip for free maps or a spiffy trick about what to do with maps add few words here.
 
 ## Backdoor to use a WMS server as TMS server
 
