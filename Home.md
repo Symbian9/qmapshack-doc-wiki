@@ -59,9 +59,7 @@ GPS Devices:
 System:
 
 * License GPL3+
-* Runs on all *nix systems as well as on Windows.
-  Probably on OS X, too, but so far no one volunteers to 
-  maintain a binary.
+* Runs on all *nix systems as well as on Windows and OS X.
 * GUI has been translated to Czech, French, German and Spanish
 * Wiki dokumentation is English 
 * Needs Qt5, GDAL, Proj4 and Routino installed
