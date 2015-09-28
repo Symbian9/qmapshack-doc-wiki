@@ -71,7 +71,7 @@ The WMTS "capabilities" can then be fetched at the following URL:
 
 Unfortunately, unlike other WMTS servers, this capabilities file does not directly work in QMapShack (although it works "as is" in QGIS). To work around this, you will have to modify it with a text editor to include a <ResourceURL> line at the end of the layer description (just before the </Layer> directive) for the "GEOGRAPHICALGRIDSYSTEMS.MAPS" layer (must be adjusted and tested for other layers).
 
-[IGN.wmts](IGN.wmts)
+**Download: [IGN.wmts](IGN.wmts)**
 
 (again, don't forget to replace the 3 occurrences of **[YOUR_ID]** with your actual 24 character personal key)
 
