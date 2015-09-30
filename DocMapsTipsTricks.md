@@ -38,7 +38,7 @@ The same logic can be implemented on the **export** command of ArcGIS server map
 ```
 "http://sigel.aneel.gov.br/arcgis/rest/services/CartasTopograficas/MapServer/export?dpi=96&transparent=true&format=png8&bbox=" + bbox + " &bboxSR=3857&imageSR=3857&size=256,256&layers=show:17&f=image"
 ```
-In most cases the request will work as expected, even though the native projection is not 3857 (Web Mercator).
+In most cases the request will work as expected, even though the native projection wouldn't be 3857 (Web Mercator).
 For documentation of export command refer to:
 [http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Export_Map/02r3000000v7000000/](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Export_Map/02r3000000v7000000/).
 
