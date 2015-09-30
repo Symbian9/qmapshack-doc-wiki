@@ -30,7 +30,7 @@ function convert(z1,x1,y1)
 </TMS>
 
 ```
-
+The official documentation of WMS standard can be found on [http://www.opengeospatial.org/standards/wms](http://www.opengeospatial.org/standards/wms).
 
 ## WMTS configuration to access French IGN maps ("Géoportail")
 
