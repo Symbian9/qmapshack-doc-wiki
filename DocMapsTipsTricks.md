@@ -32,6 +32,16 @@ function convert(z1,x1,y1)
 ```
 The official documentation of WMS standard can be found on [http://www.opengeospatial.org/standards/wms](http://www.opengeospatial.org/standards/wms).
 
+## ArcGIS follows same rules
+The same logic can be implemented on the **export** command of ArcGIS server maps. Here is an example URL:
+
+```
+"http://sigel.aneel.gov.br/arcgis/rest/services/CartasTopograficas/MapServer/export?dpi=96&transparent=true&format=png8&bbox=" + bbox + " &bboxSR=3857&imageSR=3857&size=256,256&layers=show:17&f=image"
+```
+In most cases the request will work as expected, even though the native projection is not 3857 (Web Mercator).
+For documentation of export command refer to:
+[http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Export_Map/02r3000000v7000000/](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Export_Map/02r3000000v7000000/)
+
 ## WMTS configuration to access French IGN maps ("Géoportail")
 
 As an individual, you can apply for a free non-commercial access to the French IGN WMTS servers (for example through their "Géoportail API", but also works with other WMTS clients like QGIS and QMapShack). Lots of thanks to them for this free access because their maps are truely awesome. The original source of information about this is at the following URL (in French):
