@@ -40,7 +40,7 @@ The same logic can be implemented on the **export** command of ArcGIS server map
 ```
 In most cases the request will work as expected, even though the native projection is not 3857 (Web Mercator).
 For documentation of export command refer to:
-[http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Export_Map/02r3000000v7000000/](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Export_Map/02r3000000v7000000/)
+[http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Export_Map/02r3000000v7000000/](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Export_Map/02r3000000v7000000/).
 
 ## WMTS configuration to access French IGN maps ("Géoportail")
 
