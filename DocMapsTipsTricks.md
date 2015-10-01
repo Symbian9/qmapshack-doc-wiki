@@ -32,7 +32,7 @@ function convert(z1,x1,y1)
 ```
 The official documentation of WMS standard can be found on [http://www.opengeospatial.org/standards/wms](http://www.opengeospatial.org/standards/wms).
 
-## Use ArcGIS Server like a TMS Server
+### Use ArcGIS Server like a TMS Server
 The same logic can be implemented on the **export** command of ArcGIS server maps. Here is an example URL:
 
 ```
