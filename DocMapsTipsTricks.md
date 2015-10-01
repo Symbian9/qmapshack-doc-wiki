@@ -42,6 +42,8 @@ In most cases the request will work as expected, even though the native projecti
 For documentation of export command refer to:
 [http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Export_Map/02r3000000v7000000/](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Export_Map/02r3000000v7000000/).
 
+---
+
 ## WMTS configuration to access French IGN maps ("Géoportail")
 
 As an individual, you can apply for a free non-commercial access to the French IGN WMTS servers (for example through their "Géoportail API", but also works with other WMTS clients like QGIS and QMapShack). Lots of thanks to them for this free access because their maps are truely awesome. The original source of information about this is at the following URL (in French):
@@ -86,3 +88,5 @@ Unfortunately, unlike other WMTS servers, this capabilities file does not direct
 (again, don't forget to replace the 3 occurrences of **[YOUR_ID]** with your actual 24 character personal key)
 
 Note that this file was working as of September 22, 2015 but may stop working in the future in case IGN changes its WMTS server configuration.
+
+---
