@@ -16,7 +16,7 @@ A binary bundle is available in the download section.
 
 **Check out your distribution's package system. Probably there is a binary package already.**
 
-Currently the software is distributed by the author as source code only. You need CMake, Qt5, GDAL, Proj4 and Routino to compile the code. Depending on your system you have to install compiler tools, too. This description is for \*nix based systems with GCC installed and a GNU make system.
+Currently the software is distributed by the author as source code only. You need CMake, Qt5, GDAL, Proj4 and latest Routino from it's SVN repository to compile the code. Depending on your system you have to install compiler tools, too. This description is for \*nix based systems with GCC installed and a GNU make system.
 
 If you want to use the cutting edge you need _Mercurial_ to access the repository. Find the [_instructions here_](https://bitbucket.org/maproom/qmapshack/overview).
 
