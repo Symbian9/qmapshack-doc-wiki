@@ -11,7 +11,20 @@ For 64 bit Windows there is a binary installer available in the download section
 ## OS X
 
 A binary bundle is available in the download section.
+The application can also be installed through cask (homebrew additon).
+Installing homebrew and cask, if not already done: 
 
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    brew install caskroom/cask/brew-cask
+
+Installing QMapShack (latest provided version):
+
+    brew cask install qmapshack
+
+Update QMapShack to the latest version:
+
+    brew cask install qmapshack --force 
+   
 ## Linux
 
 **Check out your distribution's package system. Probably there is a binary package already.**
