@@ -90,3 +90,42 @@ Unfortunately, unlike other WMTS servers, this capabilities file does not direct
 Note that this file was working as of September 22, 2015 but may stop working in the future in case IGN changes its WMTS server configuration.
 
 ---
+##Contour lines
+There are two ways to add a transparent contour line layer to your map view:
+
+- vector map in Garmin IMG format
+- raster map with transparent contour line tiles 
+###Vector map in Garmin IMG format
+Some maps for Garmin devices provide a separate img file with contour lines. Add this file to your QMS map directory and you can use it as contour line overlay in map views. 
+
+Sources for vector contour line maps:
+
+- [OpenTopoMap](http://garmin.opentopomap.org/#download): the "Garmin" file contains both a base map and a contour line map in img format
+- [BBBike](http://extract.bbbike.org/?lang=en): allows to create a contour line file for a custom area. 
+- [Velomap](https://www.velomap.org): download the .exe file and chose "installe a separate contour lines only map" during the installation process.
+
+###Raster contour line layer
+Some TMS tile servers provide contour line only layers. To use such a layer in QMS, add a *.tms file to your map directory. 
+
+Sample TMS file for the contour line layer from [OpenSnowMap](http://www.opensnowmap.org):
+
+
+```
+#!xml
+
+<TMS>
+ <Title>OpenSnowMap Contour Lines</Title>
+ <MinZoomLevel>1</MinZoomLevel>
+ <MaxZoomLevel>1024</MaxZoomLevel>
+ <Layer idx="0">
+     <ServerUrl>http://www.opensnowmap.org/opensnowmap-overlay/%1/%2/%3.png</ServerUrl>
+ </Layer>
+ <Copyright>Openstreetmap contributors | Rendering: www.opensnowmap.org | DEM: ASTER GDEM is a product of METI and NASA
+SRTM V4.1 from CGIAR-CSI EU-DEM: Produced using Copernicus data and information funded by the European Union </Copyright>
+</TMS>
+
+```
+Other sources for transparent contour line tiles:
+
+- OpenMapSurfer from GIScience at Heidelberg University   
+```<ServerUrl>http://129.206.74.245:8006/tms_il.ashx?x=%2&amp;y=%3&amp;z=%1</ServerUrl>```
