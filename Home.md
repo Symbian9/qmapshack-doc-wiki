@@ -8,6 +8,8 @@ If you want to see **screenshots** or start with QMapShack visit the [**document
 
 If you have found a **bug**, need some hints for **troubleshooting** or want a new **feature**  [**read this**](BugFeatures).
 
+If you need **troubleshooting** have a look [**here**](TroubleShooting)
+
 ## Support
 
 Problems understanding the documentation? Your requirement is not addressed by the documentation? You want to add to the project, but you do not know where to start? You got lost in the source code and need some guidance? You just want to brag about the crazy new feature you plan to add? 
