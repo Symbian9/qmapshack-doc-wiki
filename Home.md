@@ -6,7 +6,7 @@ If you want to download QMapShack visit the [**download page**](https://bitbucke
 
 If you want to see **screenshots** or start with QMapShack visit the [**documentation page**](DocMain).
 
-If you have found a **bug**, need some hints for **troubleshooting** or want a new **feature**  [**read this**](BugFeatures).
+If you have found a **bug** or you want a new **feature**  [**read this**](BugFeatures).
 
 If you need **troubleshooting** have a look [**here**](TroubleShooting)
 
