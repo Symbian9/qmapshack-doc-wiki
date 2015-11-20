@@ -8,9 +8,13 @@ A track is a list of points recorded while moving along. Tracks are also created
 
 If you click on the highlighted track you get a short on-screen-summary and a few options:
 
-![maproom1.png](images/DocGisItemsTrk/EditDetails.png) Show details of the track and edit data attached to the track. 
+|   |   |   |
+|---|---|---|
+| ![maproom1.png](images/DocGisItemsTrk/EditDetails.png)  | Edit/Show Details  | Show details of the track and edit data attached to the track.   |
+| ![maproom1.png](images/DocGisItemsTrk/Copy.png)  | Copy  | Copy the track into another project.  |
+| ![maproom1.png](images/DocGisItemsTrk/DeleteOne.png)  | Delete  |  Delete the track. |
 
-![maproom1.png](images/DocGisItemsTrk/Copy.png) Copy the track into another project.
+
 
 ![maproom1.png](images/DocGisItemsTrk/DeleteOne.png) Delete the track.
 
