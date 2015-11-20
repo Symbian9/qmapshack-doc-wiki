@@ -4,11 +4,9 @@
 
 A track is a list of points recorded while moving along. Tracks are also created artificially to be used for navigation and planning.
 
-![maproom1.png](images/DocGisItemsTrk/maproom1.png)
+![maproom1.png](images/DocGisItemsTrk/maproom1.png) ![maproom1.png](images/DocGisItemsTrk/ScreenOptions.png) 
 
 If you click on the highlighted track you get a short on-screen-summary and a few options:
-
-![maproom1.png](images/DocGisItemsTrk/ScreenOptions.png) 
 
 ![maproom1.png](images/DocGisItemsTrk/EditDetails.png) Show details of the track and edit data attached to the track. 
 
