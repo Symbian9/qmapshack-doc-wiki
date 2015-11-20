@@ -23,3 +23,7 @@ If you click on the highlighted track you get a short on-screen-summary and a fe
 ![maproom1.png](images/DocGisItemsTrk/Combine.png) Combine this track with other tracks in the project
 
 ![maproom1.png](images/DocGisItemsTrk/TrkCut.png) Cut the track at the selected point. You can use that to delete points at the start or the end of the track. Or to split a track into stages.
+
+## Track Details Dialog ##
+
+![maproom1.png](images/DocGisItemsTrk/DetailsDialog.png)
