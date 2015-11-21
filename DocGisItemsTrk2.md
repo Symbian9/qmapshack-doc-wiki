@@ -27,3 +27,6 @@ The dialog has 3 areas:
 
 1) The graph area with up to three graphs. The profile graph on top is static and can't be changed. The other two graphs can display arbitrary track properties.
 
+2) The track information area on the left bottom. It displays the same information as the on-screen summary. There are two icons:
+   * ![maproom1.png](images/DocGisItemsTrk/Lock.png)
+   * ![maproom1.png](images/DocGisItemsTrk/Tainted.png)
