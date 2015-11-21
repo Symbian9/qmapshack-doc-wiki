@@ -49,11 +49,11 @@ If you move the mouse over the graph area you will see some information about th
 
 Another left click on the graph will abort. 
 
-With a right click you can:
+With a right click you will see a context menu:
 
 |   |   |   |
 |---|---|---|
-|![maproom1.png](images/DocGisItemsTrk/Zoom.png)|Reset zoom|You can zoom on the x-axis with your mouse wheel. This can be reset by this function|
+|![maproom1.png](images/DocGisItemsTrk/Zoom.png)|Reset zoom|You can zoom on the x-axis with your mouse wheel. This can be reset by this menu item|
 |![maproom1.png](images/DocGisItemsTrk/SelectRange.png)|Abort selection| This is another way to stop the range selectio|
 |![maproom1.png](images/DocGisItemsTrk/Save.png)|Save| Save the graph as image.|
 
