@@ -54,8 +54,35 @@ With a right click you will see a context menu:
 |   |   |   |
 |---|---|---|
 |![maproom1.png](images/DocGisItemsTrk/Zoom.png)|Reset zoom|You can zoom on the x-axis with your mouse wheel. This can be reset by this menu item|
-|![maproom1.png](images/DocGisItemsTrk/SelectRange.png)|Abort selection| This is another way to stop the range selectio|
+|![maproom1.png](images/DocGisItemsTrk/SelectRange.png)|Abort selection| This is another way to stop the range selection|
 |![maproom1.png](images/DocGisItemsTrk/Save.png)|Save| Save the graph as image.|
 
 ### Info ###
+
+![maproom1.png](images/DocGisItemsTrk/InfoTab.png)
+
 In the info tab you can see a small representation of your track. The red dot is the current position selected by the mouse on the graphs. You can edit the description and comment. Or add Web links. On some devices the link can be used to reference additional data.
+
+### Style ###
+
+![maproom1.png](images/DocGisItemsTrk/StyleTab.png)
+
+### Graphs ###
+
+![maproom1.png](images/DocGisItemsTrk/GraphsTab.png)
+
+### Activity ###
+
+![maproom1.png](images/DocGisItemsTrk/ActivityTab.png)
+
+### Points ###
+
+![maproom1.png](images/DocGisItemsTrk/PointTab.png)
+
+### Filter ###
+
+![maproom1.png](images/DocGisItemsTrk/FilterTab.png)
+
+### History ###
+
+![maproom1.png](images/DocGisItemsTrk/HistoryTab.png)
