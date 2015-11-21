@@ -34,14 +34,15 @@ Points and sub-points are stored different depending on the GIS item:
 **Route** - On save all points are stored as route waypoints. All sub-points are stored as intermediate route points. No navigation information is generated or stored. 
 
 ## Edit line ##
+| | | |
+|-|-|-|
+|![maproom2](images/DocGisItemsEditMultiple/PointMove.png)| Move a point| Move the mouse cursor over a point until it is highlighted. A left click will make the point stick to the mouse cursor. A right click will abort the operation. A second left click will drop the point at the new position. If routing is enabled the lines to and from the point are updated by sub-lines.|
 
-![maproom2](images/DocGisItemsEditMultiple/PointMove.png) Move a point. Move the mouse cursor over a point until it is highlighted. A left click will make the point stick to the mouse cursor. A right click will abort the operation. A second left click will drop the point at the new position. If routing is enabled the lines to and from the point are updated by sub-lines.
+|![maproom2](images/DocGisItemsEditMultiple/Add.png)| Add a point| Add a point to a line segment or at the start or end of the line. Move the mouse cursor over a line segment or a point to highlight it. A left click will add a new point that sticks to the mouse cursor.  A right click will abort the operation. A second left click will drop the point at the new position. If routing is enabled the lines to and from the point are updated by sub-lines.|
 
-![maproom2](images/DocGisItemsEditMultiple/Add.png) Add a point to a line segment or at the start or end of the line. Move the mouse cursor over a line segment or a point to highlight it. A left click will add a new point that sticks to the mouse cursor.  A right click will abort the operation. A second left click will drop the point at the new position. If routing is enabled the lines to and from the point are updated by sub-lines.
+|![maproom2](images/DocGisItemsEditMultiple/SelectRange.png)| Select a range of points| Select the first and last point with a left click of your mouse. You will get two options to choose from. ![maproom2](images/DocGisItemsEditMultiple/DeleteOne_small.png) Delete all points between the first and the last selected point. ![maproom2](images/DocGisItemsEditMultiple/Apply_small.png) Calculate a route between the first and the last point. Make sure the routing mode and router are setup properly to make it work.|
 
-![maproom2](images/DocGisItemsEditMultiple/SelectRange.png) Select a range of points. Select the first and last point with a left click of your mouse. You will get two options to choose from. ![maproom2](images/DocGisItemsEditMultiple/DeleteOne_small.png) Delete all points between the first and the last selected point. ![maproom2](images/DocGisItemsEditMultiple/Apply_small.png) Calculate a route between the first and the last point. Make sure the routing mode and router are setup properly to make it work.
-
-![maproom2](images/DocGisItemsEditMultiple/DeleteOne.png) - Remove a highlighted point by a left click. If routing is enabled the lines to and from the point are updated by sub-lines.
+|![maproom2](images/DocGisItemsEditMultiple/DeleteOne.png)|Delete|Remove a highlighted point by a left click. If routing is enabled the lines to and from the point are updated by sub-lines.|
 
 ## Routing ##
 The next buttons configure the routing mode:
