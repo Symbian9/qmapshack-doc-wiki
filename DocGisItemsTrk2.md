@@ -33,3 +33,29 @@ The dialog has 3 areas:
    * ![maproom1.png](images/DocGisItemsTrk/Tainted.png) If the track has been imported and was changed it is considered as tainted. If the ink spot is visible you know the track has been altered.
 
 3) In the tab widget on the right bottom you will find more information about the track and various tools to edit the track data and how it is presented.
+
+### Graph Area ###
+
+![maproom1.png](images/DocGisItemsTrk/GraphArea.png)
+
+If you move the mouse over the graph area you will see some information about the current point in the text field on top. You can start a selection with a left click of your mouse. You define the end of the range by a second click. This will give you some additional information about the selected range and a few options to apply to the range.
+
+|   |   |   |
+|---|---|---|
+|![maproom1.png](images/DocGisItemsTrk/PointHide.png)|Hide| Hide the selected track points|
+|![maproom1.png](images/DocGisItemsTrk/PointShow.png)|Show| Show all track points between the first and last point of the selection |
+|![maproom1.png](images/DocGisItemsTrk/Activity.png)|Activity| Mark the selected track points to be part of an selected activity|
+|![maproom1.png](images/DocGisItemsTrk/Copy.png)|Copy| Copy selected track points as a new track|
+
+Another left click on the graph will abort. 
+
+With a right click you can:
+
+|   |   |   |
+|---|---|---|
+|![maproom1.png](images/DocGisItemsTrk/Zoom.png)|Reset zoom|You can zoom on the x-axis with your mouse wheel. This can be reset by this function|
+|![maproom1.png](images/DocGisItemsTrk/SelectRange.png)|Abort selection| This is another way to stop the range selectio|
+|![maproom1.png](images/DocGisItemsTrk/Save.png)|Save| Save the graph as image.|
+
+### Info ###
+In the info tab you can see a small representation of your track. The red dot is the current position selected by the mouse on the graphs. You can edit the description and comment. Or add Web links. On some devices the link can be used to reference additional data.
