@@ -22,3 +22,8 @@ If you click on the highlighted track you get a short on-screen-summary and a fe
 ## Track Details Dialog ##
 
 ![maproom1.png](images/DocGisItemsTrk/DetailsDialog.png)
+
+The dialog has 3 areas:
+
+1) The graph area with up to three graphs. The profile graph on top is static and can't be changed. The other two graphs can display arbitrary track properties.
+
