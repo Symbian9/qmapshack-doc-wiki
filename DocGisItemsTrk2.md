@@ -45,7 +45,7 @@ If you move the mouse over the graph area you will see some information about th
 |---|---|---|
 |![maproom1.png](images/DocGisItemsTrk/PointHide.png)|Hide| Hide the selected track points|
 |![maproom1.png](images/DocGisItemsTrk/PointShow.png)|Show| Show all track points between the first and last point of the selection |
-|![maproom1.png](images/DocGisItemsTrk/Activity.png)|Activity| Mark the selected track points to be part of a selected activity|
+|![maproom1.png](images/DocGisItemsTrk/Activity.png)|Activity| Mark the selected track points to be part of a activity to be selected|
 |![maproom1.png](images/DocGisItemsTrk/Copy.png)|Copy| Copy selected track points as a new track|
 
 Another left click on the graph will abort. Doing a right click on the graph will display a context menu:
