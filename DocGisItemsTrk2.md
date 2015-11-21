@@ -6,7 +6,7 @@ A track is a list of points recorded while moving along. Tracks are also created
 
 ![maproom1.png](images/DocGisItemsTrk/maproom1.png)
 
-If you click on the highlighted track you get a short on-screen-summary and a few options:
+If you click on the track line in the map view you open a short on-screen-summary and a few options:
 
 |   |   |   |
 |---|---|---|
