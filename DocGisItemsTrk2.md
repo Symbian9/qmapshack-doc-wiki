@@ -80,6 +80,8 @@ In the graph tab you can select how many graphs are displayed and what track poi
 
 The idea behind the activities is to differentiate the track statistics of a track. On some recordings you might have used several different vehicles. This influences the average speed etc. By assigning activities you get statistics per activity. 
 
+Usually you select an activity for the complete track by checking one of the activities in this tab. Next you use the mouse to select a range of the track and apply another activity to that range.
+
 ### Points ###
 
 ![maproom1.png](images/DocGisItemsTrk/PointsTab.png)
