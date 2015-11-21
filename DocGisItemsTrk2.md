@@ -28,5 +28,8 @@ The dialog has 3 areas:
 1) The graph area with up to three graphs. The profile graph on top is static and can't be changed. The other two graphs can display arbitrary track properties.
 
 2) The track information area on the left bottom. It displays the same information as the on-screen summary. There are two icons:
-   * ![maproom1.png](images/DocGisItemsTrk/Lock.png)
-   * ![maproom1.png](images/DocGisItemsTrk/Tainted.png)
+
+   * ![maproom1.png](images/DocGisItemsTrk/Lock.png) If he lock is closed the track is read only. To edit track data you have to press it.
+   * ![maproom1.png](images/DocGisItemsTrk/Tainted.png) If the track has been imported and was changed it is considered as tainted. If the ink spot is visible you know the track has been altered.
+
+3) In the tab widget on the right bottom you will find more information about the track and various tools to edit the track data and how it is presented.
