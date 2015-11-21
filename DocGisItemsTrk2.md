@@ -77,7 +77,7 @@ In the info tab you can see a small representation of your track. The red dot is
 
 ### Points ###
 
-![maproom1.png](images/DocGisItemsTrk/PointTab.png)
+![maproom1.png](images/DocGisItemsTrk/PointsTab.png)
 
 ### Filter ###
 
