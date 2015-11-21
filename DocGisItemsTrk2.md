@@ -71,18 +71,29 @@ In the style tab you can setup how the track is drawn on the map. You can select
 
 ![maproom1.png](images/DocGisItemsTrk/GraphsTab.png)
 
+In the graph tab you can select how many graphs are displayed and what track point property to display. Graph 1 will always show the track's profile. 
+
 ### Activity ###
 
 ![maproom1.png](images/DocGisItemsTrk/ActivityTab.png)
+
+The idea behind the activities is to differentiate the track statistics of a track. On some recordings you might have used several different vehicles. This influences the average speed etc. By assigning activities you get statistics per activity. 
 
 ### Points ###
 
 ![maproom1.png](images/DocGisItemsTrk/PointsTab.png)
 
+This is a simple table of recorded data with the most common properties. It's just informational and has no other function.
+
 ### Filter ###
 
 ![maproom1.png](images/DocGisItemsTrk/FilterTab.png)
 
+In the filter tab you can apply algorithms to alter the visibility, elevation and timestamps of your track. More details on filters here (tbd)
+
 ### History ###
 
 ![maproom1.png](images/DocGisItemsTrk/HistoryTab.png)
+
+In the history tab you can see all changes applied to your track. You can revert the track data to a certain state by selecting the entry in the history. To cut the history at a selected state do a right click.
+
