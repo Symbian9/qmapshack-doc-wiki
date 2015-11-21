@@ -47,9 +47,7 @@ If you move the mouse over the graph area you will see some information about th
 |![maproom1.png](images/DocGisItemsTrk/Activity.png)|Activity| Mark the selected track points to be part of a selected activity|
 |![maproom1.png](images/DocGisItemsTrk/Copy.png)|Copy| Copy selected track points as a new track|
 
-Another left click on the graph will abort. 
-
-With a right click you will see a context menu:
+Another left click on the graph will abort. Doing a right click on the graph will display a context menu:
 
 |   |   |   |
 |---|---|---|
@@ -66,6 +64,8 @@ In the info tab you can see a small representation of your track. The red dot is
 ### Style ###
 
 ![maproom1.png](images/DocGisItemsTrk/StyleTab.png)
+
+In the style tab you can setup how the track is drawn on the map. You can select the color of the track. This selection is portable to most of the applications/devices. Alternatively you can select a track point property to colorize the track. This selection will be saved with the track, but is not portable to any other application/device.
 
 ### Graphs ###
 
