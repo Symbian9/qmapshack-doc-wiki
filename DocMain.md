@@ -21,7 +21,7 @@ large changes to the GUI. However smaller changes will be ignored.
     * [Search Google](DocSearchGoogle)
 * [Tracks, Waypoints & Co](DocGisItems)
     * [Create new tracks, waypoints etc.](DocGisItemsNew)
-    * [Tracks](DocGisItemsTrk)
+    * [Tracks](DocGisItemsTrk2)
     * [Routes](DocGisItemsRte)
     * [Waypoints](DocGisItemsWpt)
     * [Areas](DocGisItemsArea)
