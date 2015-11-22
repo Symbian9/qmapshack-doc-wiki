@@ -23,8 +23,7 @@ If you click on the highlighted waypoint you get a short on-screen-summary and a
 | ![Project](images/DocGisItemsWpt/WptProj.png)          | Project           | [Project the waypoint - This is copying the waypoint and to move to copy a given distance and bearing](#ProjWpt) |
 
 
-## <img src="images/DocGisItemsWpt/EditDetails.png" alt="EditDetails.png" style="vertical-align:middle;" />  View / Edit Details
-<a name="Details"></a>
+## ![EditDetails](images/DocGisItemsWpt/EditDetails.png) View / Edit Details
 
 ![Waypoint Details](images/DocGisItemsWpt/WptDetails.png)
 
@@ -57,15 +56,14 @@ This functionality comes with several limitations, as it is primarily meant to p
 <span style="color:red; font-weight:bold;">Photos are not exported to GPX.</span> Use either a Database or the QMS format for saving photos along with waypoints.
 
 <a name="MoveWpt"></a>
-## <img src="images/DocGisItemsWpt/WptMove.png" alt="WptMove.png" style="vertical-align:middle;" /> Move Waypoint
+## ![WptMove](images/DocGisItemsWpt/WptMove.png) Move Waypoint
 
 When moving the waypoint the cursor will be locked to move mode. On a right mouse button click the move action is aborted. On a left mouse button click the waypoint is dropped at the new position. If the cursor is close to the viewport's border, the map is moved. 
 
 ![Move Waypoint](images/DocGisItemsWpt/Move.png)
 
 
-<a name="ProjWpt"></a>
-## <img src="images/DocGisItemsWpt/WptProj.png" alt="WptProj.png" style="vertical-align:middle;" /> Project Waypoint
+## ![WptProj](images/DocGisItemsWpt/WptProj.png) Project Waypoint
 
 Different to moving the waypoint this will create a clone of the waypoint. You have to give an explicit distance and bearing the waypoint is moved. You might want to change the icon and the name.
 
