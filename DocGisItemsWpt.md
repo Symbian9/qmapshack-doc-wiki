@@ -15,12 +15,12 @@ If you click on the highlighted waypoint you get a short on-screen-summary and a
 
 |   |   |   |
 |---|---|---|
-| ![Edit/Details](images/DocGisItemsWpt/EditDetails.png) | Edit/Show Details | [Show details of the waypoint and edit attached data.](#Details)   |
+| ![Edit/Details](images/DocGisItemsWpt/EditDetails.png) | Edit/Show Details | [Show details of the waypoint and edit attached data.](#markdown-header-view-edit-details)   |
 | ![Copy](images/DocGisItemsWpt/Copy.png)                | Copy              | Copy the waypoint into another project. |
 | ![Delete](images/DocGisItemsWpt/DeleteOne.png)         | Delete            | Delete the waypoint. This also deletes data associated with the waypoint, such as photos. |
 | ![Show Bubble](images/DocGisItemsWpt/Bubble.png)       | Show Bubble       | When enabled, the waypoint's content is shown as a static bubble. |
-| ![Move](images/DocGisItemsWpt/WptMove.png)             | Move              | [Move the waypoint to another location.](#MoveWpt) |
-| ![Project](images/DocGisItemsWpt/WptProj.png)          | Project           | [Project the waypoint - This is copying the waypoint and to move to copy a given distance and bearing](#ProjWpt) |
+| ![Move](images/DocGisItemsWpt/WptMove.png)             | Move              | [Move the waypoint to another location.](#markdown-header-move-waypoint) |
+| ![Project](images/DocGisItemsWpt/WptProj.png)          | Project           | [Project the waypoint - This is copying the waypoint and to move to copy a given distance and bearing](#markdown-header-project-waypoint) |
 
 
 ## ![EditDetails](images/DocGisItemsWpt/EditDetails.png) View / Edit Details
@@ -39,7 +39,7 @@ These can be changed by clicking on the blue, underlined labels.
 ### Custom Icons
 QMapShack ships with a bunch of default icons, which are likely to be displayed correctly on the most GPS-Devices.
 
-If you want to use your own icons, you need to add them to *~/.config/QLandkarte/WaypointIcons/* (tbd: path Windows/OSX?)
+If you want to use your own icons, you need to add them to *~/.config/QLandkarte/WaypointIcons/* (**tbd: path Windows/OSX?**)
 
 When adding an icon *Photo.png*, the icon will be listed as *Photo* in QMapShack.
 
@@ -50,12 +50,11 @@ This functionality comes with several limitations, as it is primarily meant to p
 
 |   |   |   |
 |---|---|---|
-| ![Add Image](images/DocGisItemsWpt/AddImage.png) | Add (a) new image(s)  | Imports one or more new images. <span style="color:red; font-weight:bold;">Photos are scaled down on import</span> |
+| ![Add Image](images/DocGisItemsWpt/AddImage.png) | Add (a) new image(s)  | Imports one or more new images. **Photos are scaled down on import** |
 | ![Del Image](images/DocGisItemsWpt/DelImage.png) | Delete selected image | Remove selected image (i.e. the image with the yellow frame) |
 
-<span style="color:red; font-weight:bold;">Photos are not exported to GPX.</span> Use either a Database or the QMS format for saving photos along with waypoints.
+**Photos are not exported to GPX.** Use either a Database or the QMS format for saving photos along with waypoints.
 
-<a name="MoveWpt"></a>
 ## ![WptMove](images/DocGisItemsWpt/WptMove.png) Move Waypoint
 
 When moving the waypoint the cursor will be locked to move mode. On a right mouse button click the move action is aborted. On a left mouse button click the waypoint is dropped at the new position. If the cursor is close to the viewport's border, the map is moved. 
