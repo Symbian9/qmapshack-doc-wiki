@@ -37,7 +37,7 @@ In addition, the waypoint's position, elevation and a text browser to display li
 These can be changed by clicking on the blue, underlined labels.
 
 ### Custom Icons
-QMapShack ships with a bunch of default icons, which are likely to be displayed correctly on the most GPS-Devices.
+QMapShack ships with a bunch of default icons, which are likely to be displayed correctly on the most GPS devices.
 
 If you want to use your own icons, you need to add them to *~/.config/QLandkarte/WaypointIcons/* (**tbd: path Windows/OSX?**)
 
