@@ -36,7 +36,7 @@ GIS Data:
 * 100% project oriented data handling
 * Summarize project by a diary
 * Support for tracks, routes, waypoints and areas
-* Support of track point extensions
+* Support of track point extensions (e.g. heart rate)
 * Simple geocache support
 * Store projects in a database
 * Support for multiple databases
