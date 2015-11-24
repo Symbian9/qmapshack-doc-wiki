@@ -36,19 +36,19 @@ Points and sub-points are stored different depending on the GIS item:
 ## Edit line ##
 | | | |
 |-|-|-|
-|![maproom2](images/DocGisItemsEditMultiple/PointMove.png)| Move a point| Move the mouse cursor over a point until it is highlighted. A left click will make the point stick to the mouse cursor. A right click will abort the operation. A second left click will drop the point at the new position. If routing is enabled the lines to and from the point are updated by sub-lines.|
-|![maproom2](images/DocGisItemsEditMultiple/Add.png)| Add a point| Add a point to a line segment or at the start or end of the line. Move the mouse cursor over a line segment or a point to highlight it. A left click will add a new point that sticks to the mouse cursor.  A right click will abort the operation. A second left click will drop the point at the new position. If routing is enabled the lines to and from the point are updated by sub-lines.|
-|![maproom2](images/DocGisItemsEditMultiple/SelectRange.png)| Select a range of points| Select the first and last point with a left click of your mouse. You will get two options to choose from. ![maproom2](images/DocGisItemsEditMultiple/DeleteOne_small.png) Delete all points between the first and the last selected point. ![maproom2](images/DocGisItemsEditMultiple/Apply_small.png) Calculate a route between the first and the last point. Make sure the routing mode and router are setup properly to make it work.|
-|![maproom2](images/DocGisItemsEditMultiple/DeleteOne.png)|Delete|Remove a highlighted point by a left click. If routing is enabled the lines to and from the point are updated by sub-lines.|
+|![maproom2](images/DocGisItemsEditMultiple/PointMove.png)| Move a point| Move the mouse cursor over a point until it is highlighted. A left click will make the point stick to the mouse cursor. A right click will abort the operation. A second left click will drop the point at the new position. If routing is enabled the lines to and from the point are updated by sub-lines (CTRL+M).|
+|![maproom2](images/DocGisItemsEditMultiple/Add.png)| Add a point| Add a point to a line segment or at the start or end of the line. Move the mouse cursor over a line segment or a point to highlight it. A left click will add a new point that sticks to the mouse cursor.  A right click will abort the operation. A second left click will drop the point at the new position. If routing is enabled the lines to and from the point are updated by sub-lines (CTRL++).|
+|![maproom2](images/DocGisItemsEditMultiple/SelectRange.png)| Select a range of points| Select the first and last point with a left click of your mouse. You will get two options to choose from (CTRL+R). ![maproom2](images/DocGisItemsEditMultiple/DeleteOne_small.png) Delete all points between the first and the last selected point. ![maproom2](images/DocGisItemsEditMultiple/Apply_small.png) Calculate a route between the first and the last point. Make sure the routing mode and router are setup properly to make it work.|
+|![maproom2](images/DocGisItemsEditMultiple/DeleteOne.png)|Delete|Remove a highlighted point by a left click. If routing is enabled the lines to and from the point are updated by sub-lines (CTRL+D).|
 
 ## Routing ##
 The next buttons configure the routing mode:
 
 | | |
 |-|-|
-|**0**|No routing selected. Points are connected by a straight line.|
-|**A**|Auto-routing. To use auto-routing the current selected router must be a properly configured offline router. The points are connected by sublines derived by the router.|
-|**V**|Vector-routing. To use vector-routing a vector map must be active for the area. The points are connected by the points of a polyline in the vector map. It is important the the first and the second line is part of the polygon. Else a straight line is used.|
+|**0**|No routing selected. Points are connected by a straight line (CTRL+O).|
+|**A**|Auto-routing. To use auto-routing the current selected router must be a properly configured offline router. The points are connected by sublines derived by the router (CTRL+A).|
+|**V**|Vector-routing. To use vector-routing a vector map must be active for the area. The points are connected by the points of a polyline in the vector map. It is important the the first and the second line is part of the polygon. Else a straight line is used (CTRL+V).|
 
 ## Undo/Redo ##
 
