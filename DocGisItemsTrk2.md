@@ -106,6 +106,6 @@ Track filter are little macros that process on the track's data to enhance it.
 
 ![maproom1.png](images/DocGisItemsTrk/FilterPoints.png)
 
-![maproom1.png](images/DocGisItemsTrk/FilterElevation.png)
+![maproom1.png](images/DocGisItemsTrk/FilterEelvation.png)
 
 ![maproom1.png](images/DocGisItemsTrk/FilterTime.png)
