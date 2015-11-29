@@ -100,3 +100,12 @@ In the filter tab you can apply algorithms to alter the visibility, elevation an
 
 In the history tab you can see all changes applied to your track. You can revert the track data to a certain state by selecting the entry in the history. To cut the history at a selected state do a right click.
 
+## Track Filter ##
+
+Track filter are little macros that process on the track's data to enhance it. 
+
+![maproom1.png](images/DocGisItemsTrk/FilterPoints.png)
+
+![maproom1.png](images/DocGisItemsTrk/FilterElevation.png)
+
+![maproom1.png](images/DocGisItemsTrk/FilterTime.png)
