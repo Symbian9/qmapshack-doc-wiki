@@ -10,7 +10,7 @@ If you click on the track line in the map view you open a short on-screen-summar
 
 |   |   |   |
 |---|---|---|
-| ![maproom1.png](images/DocGisItemsTrk/EditDetails.png)  | Edit/Show Details  | Show details of the track and edit data attached to the track.   |
+| ![maproom1.png](images/DocGisItemsTrk/EditDetails.png)  | Edit/Show Details  | Show details of the track and edit data attached to the track. [More...](DocGisItemsTrk2#markdown-header-track-details-dialog)|
 | ![maproom1.png](images/DocGisItemsTrk/Copy.png)  | Copy  | Copy the track into another project.  |
 | ![maproom1.png](images/DocGisItemsTrk/DeleteOne.png)  | Delete  |  Delete the track. |
 | ![maproom1.png](images/DocGisItemsTrk/TrkProfile.png)  | Profile | Highlight the track and show the on-screen track profile. Btw. did you know that the key combination "ctrl+e" will make the profile a sizable and movable widget? Use the same key combination to switch back.|
@@ -92,7 +92,7 @@ This is a simple table of recorded data with the most common properties. It's ju
 
 ![maproom1.png](images/DocGisItemsTrk/FilterTab.png)
 
-In the filter tab you can apply algorithms to alter the visibility, elevation and timestamps of your track. More details on filters here (tbd)
+In the filter tab you can apply algorithms to alter the visibility, elevation and timestamps of your track. More [details on filters](DocGisItemsTrk2#markdown-header-track-filter) here
 
 ### History ###
 
@@ -104,19 +104,19 @@ In the history tab you can see all changes applied to your track. You can revert
 
 Track filter are little macros that process on the track's data to enhance it. They are grouped by function. To apply a filter press the button with the gear. Most filter results can be reverted by the [history](DocGisItemsTrk2#markdown-header-history)
 
-### Filter Points ###
+### Points ###
 
 With these filters you can weed out bad points or reduce the number of track points without changing the overall appearance of your track.
 
 ![maproom1.png](images/DocGisItemsTrk/FilterPoints.png)
 
-### Filter Elevation ###
+### Elevation ###
 
 Elevation filter can smooth your profile, fix an offset or even add artificial elevation data from a file.
 
 ![maproom1.png](images/DocGisItemsTrk/FilterEelvation.png)
 
-### Filter Timestamps ###
+### Timestamps ###
 
 You can obscure timestamps if you want to publish a track and keep as much privacy as possible. Add timestamps to your planned tracks.
 
