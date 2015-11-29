@@ -102,7 +102,7 @@ In the history tab you can see all changes applied to your track. You can revert
 
 ## Track Filter ##
 
-Track filter are little macros that process on the track's data to enhance it. They are grouped. 
+Track filter are little macros that process on the track's data to enhance it. They are grouped by function. To apply a filter press the button with the gear. Most filter results can be reverted by the [history](DocGisItemsTrk2#markdown-header-history)
 
 ### Filter Points ###
 
