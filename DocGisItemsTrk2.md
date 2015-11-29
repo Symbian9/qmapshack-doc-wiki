@@ -102,10 +102,22 @@ In the history tab you can see all changes applied to your track. You can revert
 
 ## Track Filter ##
 
-Track filter are little macros that process on the track's data to enhance it. 
+Track filter are little macros that process on the track's data to enhance it. They are grouped. 
+
+### Filter Points ###
+
+With these filters you can weed out bad points or reduce the number of track points without changing the overall appearance of your track.
 
 ![maproom1.png](images/DocGisItemsTrk/FilterPoints.png)
 
+### Filter Elevation ###
+
+Elevation filter can smooth your profile, fix an offset or even add artificial elevation data from a file.
+
 ![maproom1.png](images/DocGisItemsTrk/FilterEelvation.png)
+
+### Filter Timestamps ###
+
+You can obscure timestamps if you want to publish a track and keep as much privacy as possible. Add timestamps to your planned tracks.
 
 ![maproom1.png](images/DocGisItemsTrk/FilterTime.png)
