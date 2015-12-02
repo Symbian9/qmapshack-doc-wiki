@@ -8,7 +8,7 @@
 
 For 64 bit Windows there is a binary installer available in the download section. There is also an outdated version for 32 bit Windows. To get up-to-date 32 bit binaries it needs someone maintaining it.
 
-If you want to compile QMapShack for Windows on own your own see **nsi/3rdparty.txt** and n**si/HOWTO-BUILD.txt** in the source tree.
+If you want to compile QMapShack for Windows have a look at **nsi/3rdparty.txt** and **nsi/HOWTO-BUILD.txt** in the source tree.
 
 ## OS X
 
