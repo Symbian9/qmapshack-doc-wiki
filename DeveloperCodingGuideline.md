@@ -67,9 +67,11 @@ No one likes them but it helps to read and maintain the code. Thus please stick 
    };
 ```
 
-* Use the 'override' keyword where ever appropriate. When using GCC 5.1 and more recent the compiler will throw a warning. This is important because it prevents us from producing some nasty bugs.
+* Use the `override` keyword where ever appropriate. When using GCC 5.1 and more recent the compiler will throw a warning. This is important because it prevents us from producing some nasty bugs.
 
-* Use 'const' keyword on methods. Best practice is to use right on the spot for every method. And remove it the moment the method really alters the object's data.
+* Use `const` keyword on methods. Best practice is to use right on the spot for every method. And remove it the moment the method really alters the object's data.
+
+* Use `nullptr` for checking pointers against null, avoid using `0` or `NULL` for pointers
 
 I think that's it. Just look at the code and try to mimic the coding style as good as you can. A bit of discipline really helps to maintain the beast.
 
