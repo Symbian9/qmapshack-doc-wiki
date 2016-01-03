@@ -5,7 +5,7 @@
 No one likes them but it helps to read and maintain the code. Thus please stick to them:
 
 * Indentation is 4 spaces
-* Brackets are on a new line each::
+* Brackets are on a new line each:
  
 ```
 #!c++
