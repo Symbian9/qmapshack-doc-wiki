@@ -10,7 +10,7 @@ No one likes them but it helps to read and maintain the code. Thus please stick 
 ```
 #!c++
   ...
-    if(item  == 0)
+    if(item == nullptr)
     {
         return;
     }
