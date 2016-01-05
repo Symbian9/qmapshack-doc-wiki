@@ -10,6 +10,45 @@ On a Windows 7 installation this temporary folder seems to be
 C:\Users\your user name\AppData\Local\Temp. 
 That log file may give additional insight to the root cause.
 
+# Create a backtrace of a crash on Linux
+
+If QMapShack crashes on Linux the best you can do to help development is to send a backtrace. A backtrace is a log of the last code lines executed before the crash. Usually this contains enough hints to fix the problem fast.
+
+To create a backtrace you have to compile QMapShack as debug version yourself. Have a look at [the getting started chapter of the wiki](https://bitbucket.org/maproom/qmapshack/wiki/DocGetQMapShack) for basic instructions. 
+
+When you do the step:
+
+
+```
+#!bash
+ccmake ../QMapShack
+
+
+```
+
+change the variable CMAKE_BUILD_TYPE to *Debug*. No start the build process with 
+
+```
+#!bash
+make
+
+
+```
+
+No need to do a "make install". To create a backtrace you have to start QMapShack with the GDB debugger:
+
+```
+#!bash
+gdb bin/qmapshack
+
+
+```
+At gdb's command line prompt enter 'r' to run QMapShack. Now you can provoke the crash. After the crash enter 'bt' on gdb's command line. This will output the backtrace. Copy the lines and attach them to your bug report.
+
+
+
+
+
 # Limitations of QMapShack for Windows (short: QMS)
 
 To limit the build and maintenance effort, the Windows binary packages 
