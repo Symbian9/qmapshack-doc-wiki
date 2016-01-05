@@ -18,6 +18,7 @@ Please make sure to provide:
 3. Give a **detailed report** about what is broken
 4. Give instructions about **how to reproduce** the problem
 5. If **additional data** is needed give **real links** to that data. A mellow description where to find it is not sufficient.
+6. If the application crashes and you are using Linux try to create a backtrace. See instructions
 
 All bugs will get some attention. Due to vacations this might take up to 2 weeks. If there is no answer after that period make yourself heard via email.
 
