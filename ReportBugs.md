@@ -24,10 +24,10 @@ Make sure to include the all the information listed below.
  1. Use a **descriptive title**
  2. Do **not assign** the issue to anyone
  3. A bug is a bug, a proposal is a proposal - select the **correct kind**
- 4. Include steps required to reproduce the bug
- 5. Include a screenshot (if applicable)
- 6. Include version information (for OS, QMS and packages used by QMS)
- 7. Attach any data required to reproduce this bug**¹**
+ 4. Include **steps** required to reproduce the bug
+ 5. Include a **screenshot** (if applicable)
+ 6. Include **version information** (for OS, QMS and packages used by QMS)
+ 7. Attach any **additional data** required to reproduce this bug**¹**
 
 ---
 
