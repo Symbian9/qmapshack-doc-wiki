@@ -15,8 +15,14 @@ Make sure to include the all the information listed below.
     1. *application crash*: [A backtrace (if you are on Linux)](https://bitbucket.org/maproom/qmapshack/wiki/TroubleShooting#markdown-header-create-a-backtrace-of-a-crash-on-linux)
     2. *incorrect displaying*: A screenshot
     3. *failed loading of a file*: The file you tried to load**¹**
+    4. *"strange" behaviour*: Describe the behaviour you expected
 
-## 
+## Additional Tips
+
+ 1. **Include everything required for fixing the bug within your report**, avoid untraceable references (such as `as discuessed on IRC`)
+ 1. Do **not assume anything**; we (most likely) don't know you at all
+ 2. Use to `Preview` button to ensure **correct formatting** (px. a missing newline can destroy your whole formatting)
+ 3. **Reread** your text **before submitting**, make sure there are no ambiguities
 
 # Example
 
