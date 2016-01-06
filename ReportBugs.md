@@ -16,9 +16,14 @@ Make sure to include the all the information listed below.
     2. *incorrect displaying*: A screenshot
     3. *failed loading of a file*: The file you tried to load**¹**
 
+## 
+
 # Example
 
+---
 ![example_bug_report.png](https://bitbucket.org/repo/L5qerE/images/2322176961-example_bug_report.png)
+
+---
 
 ### Remarks (see example above)
  1. Use a **descriptive title**
