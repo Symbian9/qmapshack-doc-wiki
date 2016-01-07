@@ -50,9 +50,7 @@ create user 'django'@'172.16.1.5' identified by '1234';
 grant all privileges on *.* to 'django'@'172.16.1.5' with grant option;
 ```
 
-**Note: This is a very basic but fail safe setup. Please refer to the manual of your MySQL server for a more sophisticated setup.**
-
-Replace "django" with your user name. "172.16.1.5" with the address of your PC. And "1234" with a reasonable password.
+Replace "django" with your user name. "172.16.1.5" with the address of your PC. And "1234" with a reasonable password. **Note: This is a very basic but fail safe setup. Please refer to the manual of your MySQL server for a more sophisticated setup.**
 
 Keep in mind that every time QMapShack tells you that it has to migrate the database only a user with full access rights may perform the migration.
 
