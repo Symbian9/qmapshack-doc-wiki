@@ -1,5 +1,7 @@
 [Home](Home) | [Manual](DocMain)
 
+[TOC]
+
 # Add/Remove a Database
 
 To add a database you do a right click with your mouse on some empty sapce in the the database list. You will get a context menu with an option to add a database:
