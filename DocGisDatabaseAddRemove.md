@@ -20,6 +20,11 @@ This will remove the database from the database list, but not from your harddisc
 
 ![maproom2](images/DocGisDatabaseAddRemove/maproom1.png)
 
+| | |
+|-|-|
+![maproom2](images/DocGisDatabaseAddRemove/Add.png)| Create a new database file
+![maproom2](images/DocGisDatabaseAddRemove/PathBlue.png)| Add an existing database file
+
 
 
 ##MySQL
