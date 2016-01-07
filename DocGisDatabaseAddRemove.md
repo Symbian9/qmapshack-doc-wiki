@@ -81,6 +81,6 @@ The provided database name must be the one of the MySQL database (e.g. MyData)
 
 | | |
 |-|-|
-|**Server**| A host name or an IP address|
-|**User**| A login for the database|
-|**Password**| The user's password for the database|
+|**Server**| A host name or an IP address of the MySQL server|
+|**User**| A user login for the server|
+|**Password**| The user's password for the server|
