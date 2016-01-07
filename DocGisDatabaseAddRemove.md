@@ -75,7 +75,7 @@ drop database MyData;
 Now it's time to add the database in QMapShack.
 
 
-![maproom2](images/DocGisDatabaseAddRemove/maproom1.png)
+![maproom2](images/DocGisDatabaseAddRemove/maproom4.png)
 
 The provided database name must be the one of the MySQL database (e.g. MyData)
 
