@@ -39,7 +39,9 @@ To use MySQL as database you need to enter some commands on the server first. To
 
 mysql -u root -p
 ```
+
 You need at least one user with full access rights, as QMapShack will create the database structure on the first start.
+
 
 ```
 #!mysql
@@ -47,25 +49,29 @@ You need at least one user with full access rights, as QMapShack will create the
 create user 'django'@'172.16.1.5' identified by '1234';
 grant all privileges on *.* to 'django'@'172.16.1.5' with grant option;
 ```
+
 Replace "django" with your user name. "172.16.1.5" with the address of your PC. And "1234" with a reasonable password.
 
 Keep in mind that every time QMapShack tells you that it has to migrate the database only a user with full access rights may perform the migration.
 
 Next you want to create a database, e.g. MyData:
 
+
 ```
 #!mysql
 
 create database MyData;
-...
+```
 
 You can remove a database, e.g. if something went wrong during the first start:
+
 
 ```
 #!mysql
 
 drop database MyData;
-...
+```
+
 
 ![maproom2](images/DocGisDatabaseAddRemove/maproom1.png)
 
