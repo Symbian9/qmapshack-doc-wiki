@@ -72,6 +72,8 @@ You can remove a database, e.g. if something went wrong during the first start:
 drop database MyData;
 ```
 
+Now it's time to add the database in QMapShack.
+
 
 ![maproom2](images/DocGisDatabaseAddRemove/maproom1.png)
 
