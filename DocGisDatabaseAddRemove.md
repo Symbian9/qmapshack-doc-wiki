@@ -6,7 +6,7 @@ To add a database you do a right click with your mouse on some empty sapce in th
 
 ![maproom2](images/DocGisDatabaseAddRemove/maproom2.png)
 
-You can choose between a SQLite database or a MySQL database. For a single user or an installation on laptop with no permanent access to a network SQLite is the better choice. If you want multiple users to access the data via network, MySQL is the option to go.
+You can choose between a SQLite database or a MySQL database. For a single user or an installation on a laptop with no permanent access to a network, SQLite is the better choice. If you want multiple users to access the data via network, MySQL is the option to go.
 
 To remove a database you do a right click on the root entry of the database. 
 
