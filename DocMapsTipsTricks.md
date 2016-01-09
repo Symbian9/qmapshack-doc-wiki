@@ -138,10 +138,10 @@ For Windows user, there is an integrated batchfile, which will do all necessary 
 In Linux, please check if package p7zip-full is installed – we need it to unpack the .exe file. Open the console and execute *sudo apt-get install p7zip-full* . We need [Mkgmap](http://www.mkgmap.org.uk/), too. Also Java 1.6 is required.
 
 1. Download openmtbmap-ALPS and the latest version of mkgmap
-2. Create a folder like ~/openmtbmap_alps and put in the mkgmap.jar
+2. Create a folder like ~/openmtbmap_alps and unzip your downloaded version
 3. Open the .exe file and extract all files called 6528xxxx.img (maptiles) and 7528xxxx (counterlines), and a typ file (the layout of the map). For this sample we choose *widealp.TYP* 
 
-The folder should now contain all map tiles, the counterlines, the layout file and the mkgmap.jar.
+The folder should now contain all map tiles, the counterlines, the layout file and the extracted files from mkgmap.
 
 Now start your console, browse to your folder and copy the following code: 
 
@@ -149,7 +149,7 @@ Now start your console, browse to your folder and copy the following code:
 ```
 #!sh
 
-java  -Xmx2048M -jar --family-id=6528 --description="openmtbmap_alps" --series-name="openmtbmap_alps" --family-name="openmtbmap_alps" --product-id=1 --gmapsupp 6*.img 7*.img widealp.TYP
+java  -Xmx2048M -jar --index --family-id=6528 --description="openmtbmap_alps" --series-name="openmtbmap_alps" --family-name="openmtbmap_alps" --product-id=1 --gmapsupp 6*.img 7*.img widealp.TYP
 ```
 
 
