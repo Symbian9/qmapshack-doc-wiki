@@ -145,7 +145,7 @@ The folder should now contain all map tiles, the counterlines, the layout file a
 
 Now start your console, browse to your folder and copy the following code: 
 
-*java  -Xmx2048M -jar --index --family-id=6528 --description="openmtbmap_alps" --series-name="openmtbmap_alps“ --family-name="openmtbmap_alps" --product-id=1 --gmapsupp 6*.img 7*.img widealp.TYP*
+*java  -Xmx2048M -jar --family-id=6528 --description="openmtbmap_alps" --series-name="openmtbmap_alps“ --family-name="openmtbmap_alps" --product-id=1 --gmapsupp 6*.img 7*.img widealp.TYP*
 
 Then press <Enter> and  a gmapsupp.img will be created, which you can easily rename to opentmtbmap_alps.img. Now copy this file unto your GPS unit and in your QMapShack maps folder as well.
 
