@@ -26,7 +26,7 @@ ccmake ../QMapShack
 
 ```
 
-change the variable CMAKE_BUILD_TYPE to *Debug*. No start the build process with 
+change the variable CMAKE_BUILD_TYPE to *Debug*. Now start the build process with 
 
 ```
 #!bash
