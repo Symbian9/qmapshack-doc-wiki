@@ -129,3 +129,35 @@ Other sources for transparent contour line tiles:
 
 - OpenMapSurfer from GIScience at Heidelberg University   
 ```<ServerUrl>http://129.206.74.245:8006/tms_il.ashx?x=%2&amp;y=%3&amp;z=%1</ServerUrl>```
+
+---
+##Using openmtbmap.org & velomap.org in QMapShack
+In order to use openmtbmap.org or velomap.org maps within QMapShack you first need to create a gmapsupp.img from the map tiles. 
+For Windows user, there is an integrated batchfile, which will do all necessary steps; so this tutorial is for Linux users. More information you may find [here](https://openmtbmap.org/de/tutorials/mkgmap/).
+
+In Linux, please check if package p7zip-full is installed – we need it to unpack the .exe file. Open the console and execute *sudo apt-get install p7zip-full* . We need [Mkgmap](http://www.mkgmap.org.uk/), too. Also Java 1.6 is required.
+
+1. Download openmtbmap-ALPS and the latest version of mkgmap
+2. Create a folder like ~/openmtbmap_alps and put in the mkmap.jar
+3. Open the .exe file and extract all files called 6528xxxx.img (maptiles) and 7528xxxx (counterlines), and a typ file (the layout of the map). For this sample we choose *widealp.TYP* 
+
+The folder should now contain all map tiles, the counterlines, the layout file and the mkgmap.jar.
+
+Now start your console, browse to your folder and copy the following code: 
+
+*java  -Xmx2048M -jar --index --family-id=6528 --description="openmtbmap_alps" --series-name="openmtbmap_alps“ --family-name="openmtbmap_alps" --product-id=1 --gmapsupp 6*.img 7*.img widealp.TYP*
+
+Then press <Enter> and  a gmapsupp.img will be created, which you can easily rename to opentmtbmap_alps.img. Now copy this file unto your GPS unit and in your QMapShack maps folder as well.
+
+If you would like do it with some other layout, simply replace the *.TYP (f.e. easyalps.TYP). 
+If you prefer another country be careful: all 6x.img and 7x.img must be from the particular openmtbmap country file! Also don't forget to replace the --family-id with the one from your country.
+
+This is really a quick way, to integrate your favourite openmtbmaps or velomaps into QMapShack.
+
+If you prefer a GUI: you can still use QLandkarteGT for creating gmapsupp.img, too. 
+
+Links (with further information and some tutorials):
+
+* [openmtbmap.org](https://openmtbmap.org/)
+* [velomap.org](https://velomap.org/)
+* [Mkgmap](http://www.mkgmap.org.uk/)
