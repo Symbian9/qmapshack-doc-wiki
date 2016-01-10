@@ -24,6 +24,11 @@ No one likes them but it helps to read and maintain the code. Thus please stick 
     int n;
     int maxBrownFoxes;
 ```
+
+* Use the Qt types (qreal, quint8, qint8, etc) exclusively, as all other definitions might not be portable.
+
+* Use the Qt wrappers for C/C++ API (qAbs(), qMin(), etc) exclusively as all other definitions might not be portable.
+
 * Classes start with a capital 'C'
 
 ```
