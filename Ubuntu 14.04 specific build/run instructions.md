@@ -1,4 +1,4 @@
-In particular Ubuntu 14.04 needs cmake 3 and Qt5.4
+In particular Ubuntu 14.04 needs cmake 3 and Qt 5.4
 
 
 # Build
@@ -8,7 +8,7 @@ sudo add-apt-repository ppa:george-edison55/cmake-3.x
 sudo apt-get update
 ```
 
-## Qt5.4
+## Qt 5.4
 ```
 sudo add-apt-repository ppa:beineri/opt-qt541-trusty
 sudo apt-get update
@@ -23,7 +23,7 @@ make
 sudo make install
 ```
 
-## Use Qt5.4 instead of 5.2 (it's only temporary and for the current terminal)
+## Use Qt 5.4 instead of 5.2 (it's only temporary and for the current terminal)
 ```
 source /opt/qt54/bin/qt54-env.sh
 ```
@@ -32,8 +32,8 @@ source /opt/qt54/bin/qt54-env.sh
 
 # Running the software:
 ```
-source /opt/qt54/bin/qt54-env.sh # to use Qt5.4 instead of 5.2, this is only for the current terminal
+source /opt/qt54/bin/qt54-env.sh # to use Qt 5.4 instead of 5.2, this is only for the current terminal
 qmapshack
 ```
 
-Maybe there is a better way to use Qt5.4
+Maybe there is a better way to use Qt 5.4
