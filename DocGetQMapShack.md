@@ -43,6 +43,8 @@ Anyway you should end up with a directory containing the source code. Let's say 
 
     mkdir build_QMapShack
 
+[Ubuntu 14.04 specific build & run instructions](https://bitbucket.org/maproom/qmapshack/wiki/Ubuntu%2014.04%20specific%20build%20&%20run%20instructions)
+
 And then:
 
     cd build_QMapShack
