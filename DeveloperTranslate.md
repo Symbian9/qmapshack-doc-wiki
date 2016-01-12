@@ -26,7 +26,7 @@ The qmapshack.desktop file contains the info that appears in the panel menus. It
 ```
 #Translations
 Name[de]=QMapShack
-GenericName[de]=GPS - Gerätezuordnung Dienstprogramm
+GenericName[de]=GPS Daten- und Kartenverwaltung
 ```
 * The reference (English) strings are at `src/qmapshack.desktop.in`:
 ```
