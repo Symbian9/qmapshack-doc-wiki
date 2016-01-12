@@ -35,11 +35,11 @@ Update QMapShack to the latest version:
 
 Currently the software is distributed by the author as source code only. You need CMake, Qt5, GDAL, Proj4 and latest Routino from it's SVN repository to compile the code. Depending on your system you have to install compiler tools, too. This description is for \*nix based systems with GCC installed and a GNU make system.
 
-If you use Ubuntu 14.04 you have to proceed with these [instructions](https://bitbucket.org/maproom/qmapshack/wiki/Ubuntu%2014.04%20specific%20build%20&%20run%20instructions) prior to anything else.
-
 If you want to use the cutting edge you need _Mercurial_ to access the repository. Find the [_instructions here_](https://bitbucket.org/maproom/qmapshack/overview).
 
 If you prefer more or less stable releases have a look at the [_download_](https://bitbucket.org/maproom/qmapshack/downloads) section. You have to download and unpack the \*tar.gz files.
+
+If you use Ubuntu 14.04 you have to proceed with these [instructions](https://bitbucket.org/maproom/qmapshack/wiki/Ubuntu%2014.04%20specific%20build%20&%20run%20instructions) before the next steps described on this page.
 
 Anyway you should end up with a directory containing the source code. Let's say the directory's name is _QMapShack_. Create another directory next to _QMapShack_:
 
