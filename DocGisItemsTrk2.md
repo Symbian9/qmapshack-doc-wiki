@@ -33,6 +33,11 @@ The dialog has 3 areas:
    * ![maproom1.png](images/DocGisItemsTrk/Lock.png) If he lock is closed the track is read only. To edit track data you have to press it.
    * ![maproom1.png](images/DocGisItemsTrk/Tainted.png) If the track has been imported and was changed it is considered as tainted. If the ink spot is visible you know the track has been altered.
 
+Note about displayed cumulative elevation gain :
+As this value is derived from raw data, some filtering is necessary to avoid exaggerated results.
+Because measured elevation often fluctuates even when GPSr is placed at a constant elevation, it would make no sense to take into account each measured bump.
+It was decided in QMS to use a threshold of 5 meters : elevation is accumulated only if elevation grows more than 5 meters.
+
 3) In the tab widget on the right bottom you will find more information about the track and various tools to edit the track data and how it is presented.
 
 ### Graph Area ###
