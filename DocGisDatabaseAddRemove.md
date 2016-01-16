@@ -84,3 +84,13 @@ The provided database name must be the one of the MySQL database (e.g. MyData)
 |**Server**| A host name or an IP address of the MySQL server|
 |**User**| A user login for the server|
 |**Password**| The user's password for the server|
+
+#Multi-user Access
+
+The database can be used by multiple users at the same time. QMapShack will detect conflicts if items have been changed by two users at the same time and offer options for mitigation.  
+
+To see changes in the database by someone else as soon as they are saved to the database you can enable a UDP broadcast package based notification system. As notifications are distributed by QMapShack this will only work if all instances are in the same local network. To enable notifications you have to select *Project->Setup Workspace* from the menu.
+
+![maproom2](images/DocGisDatabaseAddRemove/maproom5.png)
+
+Make sure your personal firewall allows UDP traffic on the given port.
