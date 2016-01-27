@@ -74,6 +74,8 @@ No one likes them but it helps to read and maintain the code. Thus please stick 
 
 * Use the `override` keyword where ever appropriate. When using GCC 5.1 and more recent the compiler will throw a warning. This is important because it prevents us from producing some nasty bugs.
 
+* As we use the keyword `override` we do not have to use `virtual`, too. This is just redundant and of no real use anyway.
+
 * Use `const` keyword on methods. Best practice is to use right on the spot for every method. And remove it the moment the method really alters the object's data.
 
 * Use `nullptr` for checking pointers against null, avoid using `0` or `NULL` for pointers
