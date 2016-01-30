@@ -167,3 +167,104 @@ Links (with further information and some tutorials):
 * [openmtbmap.org](https://openmtbmap.org/)
 * [velomap.org](https://velomap.org/)
 * [Mkgmap](http://www.mkgmap.org.uk/)
+
+###Script
+
+If you want to update your maps regularly you might consider using the script below.
+The script requires the following tools to be installed:
+
+ * `wget` (downloading)
+ * `7z` (extraction)
+ * `mkgmap` (creation of gmapsupp.img)
+
+####Configuration
+
+The script below is configured to download the OpenMTBMap for bavaria, convert it to `OpenMTBMap_<date>.img` using traddby.TYP and move it to `~/.qmapshack_maps/`.
+
+If this does not match your requirements, you will need to adopt the values *FILESRC*, *IMGFMT*, *QMSMAPDIR* and *TYPE*:
+
+* *FILESRC*: [Navigate here](http://ftp5.gwdg.de/pub/misc/openstreetmap/openmtbmap/odbl/), find the file you want to download and write the URL to *FILESRC*
+
+* *IMGFMT*: Name of the resulting file, see `man 1 date`
+
+* *QMSMAPDIR*: Path to your QMS-Map folder (`~` will not work, use `${HOME}` instead)
+
+Depending on your system's configuration you will need to change *MKGMAP* to allow proper execution of `mkgmap` (see section above).
+
+
+```
+#!sh
+#! /bin/sh
+
+# configuration
+
+FILESRC="http://ftp5.gwdg.de/pub/misc/openstreetmap/openmtbmap/odbl/germany/mtbbayern.exe"
+IMGFMT="OpenMTBMap_%Y-%m-%d.img"
+QMSMAPDIR="${HOME}/.qmapshack_maps/"
+TYPE="traddby.TYP"
+MKGMAP="mkgmap"
+
+# code starts here, no changes below here required
+
+error_check() {
+	if [ $1 != 0 ]; then
+		echo ${red}ERROR${NC}
+		exit 1
+	else
+		echo ${green}OK${NC}
+	fi
+}
+
+tool_check() {
+	which $1 2>&1 1>/dev/null
+	if [ $? != 0 ]; then
+		echo ${red}ERROR: $1 missing${NC}
+		exit 1
+	fi
+}
+
+red="\033[0;31m"
+green="\033[0;32m"
+NC="\033[0m"
+
+TMP=`mktemp`
+if [ ! -f "${TMP}" ]; then
+	echo ${red}ERROR: failed to get temp. file${NC}
+	exit 1
+fi
+
+tool_check "wget"
+tool_check "7z"
+${MKGMAP} >/dev/null 2>&1
+if [ $? != 0 ]; then
+	echo ${red}ERROR: mkgmap can\'t be executed${NC}
+	echo ${red}ERROR: make sure MKGMAP is set properly in script configuration${NC}
+	exit 1
+fi
+
+echo -n " * Downloading... "
+wget -q -O "$TMP" "$FILESRC"
+error_check $?
+
+echo -n " * Decompressing... "
+7z e -o"${TMP}_" ${TMP} >/dev/null
+error_check $?
+
+FILETIME=`stat -c %Y ${TMP}`
+IMGFILE=`date -d@${FILETIME} +"${IMGFMT}"`
+
+echo -n " * Building ${IMGFILE}... "
+cd "${TMP}_"
+FID=`ls -x 7*.img | cut -c1-4`
+${MKGMAP} --show-profiles=1 --product-id=1 --family-id=${FID} --index --gmapsupp 6*.img 7*.img ${TYPE} >/dev/null
+error_check $?
+
+echo -n " * Moving gmapsupp.img to ${QMSMAPDIR}... "
+mv "${TMP}_/gmapsupp.img" "${QMSMAPDIR}/${IMGFILE}"
+error_check $?
+
+echo -n " * Cleanup... "
+rm -rf "${TMP}" "${TMP}_"
+error_check $?
+
+```
