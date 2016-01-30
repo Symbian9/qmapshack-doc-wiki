@@ -46,7 +46,7 @@ For documentation of export command refer to:
 
 ## WMTS configuration to access French IGN maps ("Géoportail")
 
-As an individual, you can apply for a free non-commercial access to the French IGN WMTS servers (for example through their "Géoportail API", but also works with other WMTS clients like QGIS and QMapShack). Lots of thanks to them for this free access because their maps are truely awesome. The original source of information about this is at the following URL (in French):
+As an individual, you can apply for a free non-commercial access to the French IGN WMTS servers (for example through their "Géoportail API", but also works with other WMTS clients like QGIS and QMapShack). Lots of thanks to them for this free access because their maps are truly awesome. The original source of information about this is at the following URL (in French):
 
 http://dogeo.fr/wmts_ign/
 
@@ -102,7 +102,7 @@ Sources for vector contour line maps:
 
 - [OpenTopoMap](http://garmin.opentopomap.org/#download): the "Garmin" file contains both a base map and a contour line map in img format
 - [BBBike](http://extract.bbbike.org/?lang=en): allows to create a contour line file for a custom area. 
-- [Velomap](https://www.velomap.org): download the .exe file and chose "installe a separate contour lines only map" during the installation process.
+- [Velomap](https://www.velomap.org): download the .exe file and chose "install a separate contour lines only map" during the installation process.
 
 ###Raster contour line layer
 Some TMS tile servers provide contour line only layers. To use such a layer in QMS, add a *.tms file to your map directory. 
@@ -139,9 +139,9 @@ In Linux, please check if package p7zip-full is installed – we need it to unpa
 
 1. Download openmtbmap-ALPS and the latest version of mkgmap
 2. Create a folder like ~/openmtbmap_alps and unzip your downloaded version
-3. Open the .exe file and extract all files called 6528xxxx.img (maptiles) and 7528xxxx (counterlines), and a typ file (the layout of the map). For this sample we choose *widealp.TYP* 
+3. Open the .exe file and extract all files called 6528xxxx.img (maptiles) and 7528xxxx (contour lines), and a typ file (the layout of the map). For this sample we choose *widealp.TYP* 
 
-The folder should now contain all map tiles, the counterlines, the layout file and the extracted files from mkgmap.
+The folder should now contain all map tiles, the contour lines, the layout file and the extracted files from mkgmap.
 
 Now start your console, browse to your folder and copy the following code: 
 
@@ -158,7 +158,7 @@ Then press <Enter> and a gmapsupp.img will be created, which you can easily rena
 If you would like do it with some other layout, simply replace the *.TYP (f.e. easyalps.TYP). 
 If you prefer another country be careful: all 6x.img and 7x.img must be from the particular openmtbmap country file! Also don't forget to replace the --family-id with the one from your country.
 
-This is really a quick way, to integrate your favourite openmtbmaps or velomaps into QMapShack.
+This is really a quick way, to integrate your favorite openmtbmaps or velomaps into QMapShack.
 
 If you prefer a GUI: you can still use QLandkarteGT for creating gmapsupp.img, too. 
 
