@@ -131,7 +131,7 @@ Other sources for transparent contour line tiles:
 ```<ServerUrl>http://129.206.74.245:8006/tms_il.ashx?x=%2&amp;y=%3&amp;z=%1</ServerUrl>```
 
 ---
-##Using openmtbmap.org & velomap.org in QMapShack
+##Using openmtbmap.org & velomap.org in QMapShack (Linux only)
 In order to use openmtbmap.org or velomap.org maps within QMapShack you first need to create a gmapsupp.img from the map tiles. 
 For Windows user, there is an integrated batchfile, which will do all necessary steps; so this tutorial is for Linux users. More information you may find [here](https://openmtbmap.org/de/tutorials/mkgmap/).
 
