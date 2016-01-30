@@ -135,7 +135,7 @@ Other sources for transparent contour line tiles:
 In order to use openmtbmap.org or velomap.org maps within QMapShack you first need to create a gmapsupp.img from the map tiles. 
 For Windows user, there is an integrated batchfile, which will do all necessary steps; so this tutorial is for Linux users. More information you may find [here](https://openmtbmap.org/de/tutorials/mkgmap/).
 
-In Linux, please check if package p7zip-full is installed – we need it to unpack the .exe file. Open the console and execute *sudo apt-get install p7zip-full* . We need [Mkgmap](http://www.mkgmap.org.uk/), too. Also Java 1.6 is required.
+In Linux, please check if package p7zip-full is installed – we need it to unpack the .exe file. Open the console and execute *sudo apt-get install p7zip-full* . We need [Mkgmap](http://www.mkgmap.org.uk/), too. Also Java is required.
 
 1. Download openmtbmap-ALPS and the latest version of mkgmap
 2. Create a folder like ~/openmtbmap_alps and unzip your downloaded version
