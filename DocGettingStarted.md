@@ -14,12 +14,11 @@ All windows around the map workspace are docking windows. In other words you can
 
 QMapShack accepts a few options on the command line. The most important ones are:
 
-   -d to enable debug output on the console (*nix only),
-
-   -f to enable debug output and write it to the file 
-    "C:\Users\your_user_name\AppData\Local\Temp\org.qlandkarte.QMapShack.log" (Windows only).
-
-   -c <filename> to read/write the configuration from/to a configuration file.
+| Switch | Parameter  | Comment                                        |
+|:------:|:----------:|------------------------------------------------|
+|*-d*    |            | enable debug output on the console (*nix only) |
+|*-f*    |            | enable debug output and write it to the file "C:\Users\your_user_name\AppData\Local\Temp\org.qlandkarte.QMapShack.log" (Windows only). |
+|*-c*    |*<filename>*| read/write the configuration from/to a configuration file.|
  
 If you start the application without the "-c" option the configuration will be stored wherever your system stores application configurations otherwise it is stored in <filename> at the end of a QMapShack run.
 
