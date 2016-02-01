@@ -13,6 +13,7 @@ large changes to the GUI. However smaller changes will be ignored.
 
 * [Install QMapShack](DocGetQMapShack)
 * [Getting started](DocGettingStarted)
+* [Command line parameters](DocCmdOptions)
 * [Basics about maps and DEM files](DocBasicsMapDem)
     * [Maps: Tips and Tricks](DocMapsTipsTricks)
 * [Control maps and DEM files](DocControlMapDem)
