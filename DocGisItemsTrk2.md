@@ -126,3 +126,15 @@ Elevation filter can smooth your profile, fix an offset or even add artificial e
 You can obscure timestamps if you want to publish a track and keep as much privacy as possible. Add timestamps to your planned tracks.
 
 ![maproom1.png](images/DocGisItemsTrk/FilterTime.png)
+
+### Extensions ###
+
+You can remove a track point extension e.g. your heart rate if you want to publish your tracks.
+
+![maproom1.png](images/DocGisItemsTrk/FilterExtensions.png)
+
+### Split Track ###
+
+Cut a track into several tracks.
+
+![maproom1.png](images/DocGisItemsTrk/FilterSplit.png)
