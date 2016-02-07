@@ -10,15 +10,21 @@ sudo apt-get update
 
 ## Qt 5.4
 ```
-sudo add-apt-repository ppa:beineri/opt-qt541-trusty
+sudo add-apt-repository ppa:beineri/opt-qt542-trusty
 sudo apt-get update
 sudo apt-get install libgdal-dev libproj-dev qt54base qt54tools qt54-meta-full # qt54-meta-minimal might be enough instead of full
 ```
 
 ## Routino
 ```
-svn co http://routino.org/svn/trunk routino
+#!bash
+
+# install required dev-packages
 sudo apt-get install gcc make libc6-dev libz-dev libbz2-dev libgraphics-magick-perl
+
+# download, build and install routino
+svn co http://routino.org/svn/trunk routino
+cd routino
 make
 sudo make install
 ```
