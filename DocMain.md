@@ -38,6 +38,6 @@ large changes to the GUI. However smaller changes will be ignored.
 
 * [Commit Code](DeveloperCommitCode)
 * [Coding Guideline](DeveloperCodingGuideline)
-* Compile Instructions for [Windows](https://bitbucket.org/maproom/qmapshack/src/tip/nsi/HOWTO-BUILD.txt)
+* Compile Instructions for [Windows](https://bitbucket.org/maproom/qmapshack/src/tip/nsi/HOWTO-BUILD.md)
 * [Add translations](DeveloperTranslate)
 
