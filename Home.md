@@ -25,6 +25,7 @@ Maps:
 
 * Garmin vector maps and *.jnx raster maps
 * Raster maps supported by GDAL
+* GEMF raster maps
 * Online maps (TMS and WTMS (partially))
 * Display multiple maps in one view
 * Reproject maps on-the-fly to view's projection
@@ -37,10 +38,10 @@ GIS Data:
 * Summarize project by a diary
 * Support for tracks, routes, waypoints and areas
 * Support of track point extensions (e.g. heart rate)
+* Support GPX, SLF, FIT and QMapShack's own binary format
 * Simple geocache support
 * Store projects in a database
 * Support for multiple databases
-
 
 Planning:
 
@@ -48,6 +49,9 @@ Planning:
 * Track point edit mode to create/change tracks, routes or areas
 * Cut/copy/combine/reverse tracks
 * Various filter to enhance tracks
+* Track point extensions like heart rate, cadence,...
+* Fine tune track statistics by activities
+* Colorize track by extension or activity
 * Create routes and calculate them by Routino (offline) or MapQuest (online)
 * Use offline router to draw tracks on-the-fly.
 
