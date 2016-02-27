@@ -2,7 +2,7 @@
 
 # 'Lost & Found' Folder
 
-When deleteing an item from a database folder the item is not deleted itself. Just the relation with that folder. All items with no relation to any folder are collected in the Lost & Found folder. Only if you delete the item form this folder it is deleted permanently. You can do this by either emptying the complete folder or by deleteing selected items.
+When deleting an item from a database folder the item is not deleted itself. Just the relation with that folder. All items with no relation to any folder are collected in the Lost & Found folder. Only if you delete the item form this folder it is deleted permanently. You can do this by either emptying the complete folder or by deleting selected items.
 
 ![maproom2](images/DocGisDatabaseLostFound/maproom1.png) ![maproom2](images/DocGisDatabaseLostFound/maproom2.png)
 

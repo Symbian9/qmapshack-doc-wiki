@@ -10,7 +10,7 @@ Both sources of information have their caveats. As long as you know the origin o
 
 Take the recording of a mountain trip, for example. On certain sections the signal conditions might be very bad. But you want to distribute that track. What are you doing now? You can replace the bad section by some artificial data, or move the track points to what ever position you believe that is right. But is that right? Is that a reliable source for anyone else to follow? Or would it be better to simply delete those bad points, showing the user that there is no good data for that section and leave it up to the user?
 
-Anyway QMapShack is following a certain policity on that topic:
+Anyway QMapShack is following a certain policy on that topic:
 
 * If data is not created within QMapShack, it is locked. The user can unlock the data, but the data is marked as tainted. If data is tainted it will loose significant information. A track, for example, will loose it's timestamps, as timestamps don't make any sense if you have moved track points.
 

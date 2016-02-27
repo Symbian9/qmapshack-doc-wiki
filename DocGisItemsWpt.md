@@ -43,7 +43,7 @@ If you want to use your own icons, you need to add them to *~/.config/QLandkarte
 
 When adding an icon *Photo.png*, the icon will be listed as *Photo* in QMapShack.
 
-### The Photoalbum
+### The Photo Album
 
 In addition to general information, such as position, name and a description, QMapShack allows attaching photos to a waypoint.
 This functionality comes with several limitations, as it is primarily meant to provide a quick overview over the specific location - it is not intended to organize your collection of photos.

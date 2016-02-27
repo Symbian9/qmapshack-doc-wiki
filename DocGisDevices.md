@@ -11,7 +11,7 @@ QMapShack supports data exchange with several GPS outdoor units. All newer Garmi
 
 **Garmin**: If you want to see your device's SD memory card you have to copy the file _GarminDevice.xml_ from the internal _Garmin_ folder to the _Garmin_ folder on your SD memory card.
 
-After you plugged your device to the PC and switched it to mass stroage mode you should see something link this:
+After you plugged your device to the PC and switched it to mass storage mode you should see something link this:
 
 ![maproom2](images/DocGisDevices/qmapshack2.png)
 

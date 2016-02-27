@@ -49,7 +49,7 @@ should have the routing information for the region used in the map.
 |-|-|
 |**0**| `CTRL+O` No routing selected. Points are connected by a straight line.|
 |**A**| `CTRL+A` Auto-routing. The points are connected by sublines derived by the router.|
-|**V**| `CTRL+V` Vector-routing. To use vector-routing a vector map must be active for the area. The points are connected by the points of a polyline in the vector map. It is important the the first and the second line is part of the polygon. Else a straight line is used.|
+|**V**| `CTRL+V` Vector-routing. To use vector-routing a vector map must be active for the area. The points are connected by the points of a polyline in the vector map. It is important that the first and the second line is part of the polygon. Else a straight line is used.|
 
 The routing mode can be changed during the track/route creation by pressing the keys described.
 

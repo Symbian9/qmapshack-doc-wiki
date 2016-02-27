@@ -2,7 +2,7 @@
 
 # Troubleshooting
 
-Since the 13-Oct-2015 developerment version, you can start qmapshack 
+Since the 13-Oct-2015 development version, you can start qmapshack 
 with the commandline option "-f".
 Then a logfile "org.qlandkarte.QMapShack.log" will be created in 
 the system's temporary folder.
@@ -26,7 +26,7 @@ ccmake ../QMapShack
 
 ```
 
-change the variable CMAKE_BUILD_TYPE to *Debug*. Now start the build process with 
+Change the variable CMAKE_BUILD_TYPE to *Debug*. Now start the build process with 
 
 ```
 #!bash

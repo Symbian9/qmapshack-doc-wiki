@@ -14,7 +14,7 @@ To remove a database you do a right click on the root entry of the database.
 
 ![maproom2](images/DocGisDatabaseAddRemove/maproom3.png)
 
-This will remove the database from the database list, but not from your harddisc. You can load it later again.  
+This will remove the database from the database list, but not from your hard disk. You can load it later again.  
 
 ## SQLite
 

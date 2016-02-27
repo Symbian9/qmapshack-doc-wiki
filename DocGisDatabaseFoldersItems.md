@@ -14,7 +14,7 @@ This will create an empty folder in the database. To add items to the folder che
 
 ![maproom2](images/DocGisDatabaseFolderItems/maproom3.png)
 
-The items won't be stored into the database unless you explicitely save the changes to the database folder. With 'Save As...' you can export the database folder into a file.
+The items won't be stored into the database unless you explicitly save the changes to the database folder. With 'Save As...' you can export the database folder into a file.
 
 ![maproom2](images/DocGisDatabaseFolderItems/maproom4.png)
 

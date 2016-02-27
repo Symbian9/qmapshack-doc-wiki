@@ -15,7 +15,7 @@ If you want to compile QMapShack for Windows have a look at **nsi/3rdparty.txt**
 A binary bundle is available in the download section.
 The binary is build with compatibility for Mac OS X 10.5 (Leopard) and later. The build is done with the Xcode 7.0.1 and tested on OS-X 10.10.5 (Yosemite) and partly on OS-X 10.11 (El Capitan).
 
-The application can also be installed through cask (homebrew additon).
+The application can also be installed through cask (homebrew addition).
 Installing homebrew and cask, if not already done: 
 
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"

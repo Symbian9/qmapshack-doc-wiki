@@ -4,7 +4,7 @@
 
 # Handle GPX and QMS Files
 
-Despite all deficiencies, GPS manufactors support this format. A common format is a good approach in general, but TopoGrafix, the company behind GPX, fails miserably to evolve their format to the needs of today's GPS systems. Anyway, GPX is it to be. QMapShack does support the GPX definition version 1.1 and some of the proprietary extensions to GPX. And it adds a few more. But due to the sheer rank growth of extensions, caused by a lack of guidance, it can't support everything. Keep this in mind when you load and save GPX files that do not origin from QMapShack. You will loose information.
+Despite all deficiencies, GPS manufacturers support this format. A common format is a good approach in general, but TopoGrafix, the company behind GPX, fails miserably to evolve their format to the needs of today's GPS systems. Anyway, GPX is it to be. QMapShack does support the GPX definition version 1.1 and some of the proprietary extensions to GPX. And it adds a few more. But due to the sheer rank growth of extensions, caused by a lack of guidance, it can't support everything. Keep this in mind when you load and save GPX files that do not origin from QMapShack. You will loose information.
 
 QMS is QMapShack's own binary format. You will never loose information using it, but of course it is not compatible to any other application. 
 
@@ -16,7 +16,7 @@ There are two ways to load GPX or QMS files.
 
     qmapshack file1.gpx file2.qms
     
-2) Use the menu _File->Load GIS Data_ (GIS = Geographic Information Sytems)
+2) Use the menu _File->Load GIS Data_ (GIS = Geographic Information Systems)
 
 ![Alt text](images/DocHandleGpxFiles/maproom1.png)
 
@@ -26,7 +26,7 @@ Each file will create a new top level item in the data view's workspace list.
 
 ![Alt text](images/DocHandleGpxFiles/maproom2.png)
 
-If you expand the item you can see the elements like waypoints, tracks, routes and so on. If you let the mouse hoover over an element you get more information.
+If you expand the item you can see the elements like waypoints, tracks, routes and so on. If you let the mouse hover over an element you get more information.
 
 ![Alt text](images/DocHandleGpxFiles/maproom3.png)
 
