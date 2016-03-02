@@ -5,7 +5,7 @@ translations from the sources files within CMake. It's controlled by the `UPDATE
 To update the translations just set the CMake command line option `UPDATE_TRANSLATIONS` to `ON`. E.g.: 
 ```
 #!cmake
-cmake -DUPDATE_TRASNLATIONS=ON ..
+cmake -DUPDATE_TRANSLATIONS=ON ..
 make
 
 ```
@@ -34,7 +34,4 @@ Name=QMapShack
 GenericName=GPS device mapping utility
 ```
 * To translate it to other language change the `de` in the filename and in the file itself to the language code you are translating for.
-
-
-
 
