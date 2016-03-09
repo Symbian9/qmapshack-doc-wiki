@@ -187,5 +187,5 @@ A nice collection of Garmin vector maps can be found at [_Freizeitkarte OSM_](ht
 Next to ready to use maps they publish their tool chain, too. With the tool chain you can produce your 
 own OSM based maps for any region. 
 
-Still the best place to look for DEM data is [VIEWFINDER PANORAMAS](http://www.viewfinderpanoramas.org/). 
+Still the best place to look for DEM data is [VIEWFINDER PANORAMAS](http://www.viewfinderpanoramas.org/). For Europe the EEA offers [DEM files with quite good resolution](http://www.eea.europa.eu/data-and-maps/data/eu-dem).
 
