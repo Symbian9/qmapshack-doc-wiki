@@ -28,9 +28,10 @@ Usually this kind of data is very large. And because it is large, it is split in
 
 ![Alt text](images/DocBasicsMapDem/qmapshack1.png)
 
-1. Select all the files you want to combine to one map or DEM data set.
-2. Select a target filename. Of course this should be in your map or DEM path.
-3. Press the start button.
+0. Download or copy files into your map or DEM path. You can create a sub-folder to keep file chaos to a minimum. 
+1. Select all the files you want to combine to one map or DEM data set. Use the tool button with the green folder.
+2. Select a target filename. Use the tool button with the blue folder. Of course this should be in your map or DEM path.
+3. Press the start button and watch.
 
 When done you can reload the map or DEM list by a right click on the list. Choose ***Reload Maps*** or ***Reload DEM***. The new map should be listed.
 
