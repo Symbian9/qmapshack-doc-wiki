@@ -2,6 +2,7 @@
 
 [TOC]
 
+---
 # Install Maps & DEM
 
 Sorry for not being a commercial software, that provides ready made map and DEM packages with an installer. The project does not have the financial resources to provide that kind of stuff. However we think it's really simple to install maps & DEM after you have read this.
@@ -33,6 +34,20 @@ This is a bit tricky. Usually this kind of data is very large. And because it is
 
 When done you can reload the map or DEM list by a right click on the list. Choose ***Reload Maps*** or ***Reload DEM***. The new map should be listed.
 
+---
+# Sources of Maps and DEM files
+
+## Maps
+A nice collection of Garmin vector maps can be found at [_Freizeitkarte OSM_](http://www.freizeitkarte-osm.de/). 
+Next to ready to use maps they publish their tool chain, too. With the tool chain you can produce your 
+own OSM based maps for any region. 
+
+## DEM
+* Still the best place to look for DEM data is [VIEWFINDER PANORAMAS](http://www.viewfinderpanoramas.org/). 
+* For Europe the EEA offers [DEM files with quite good resolution](http://www.eea.europa.eu/data-and-maps/data/eu-dem). 
+* For Austria you can download quite high detailed data [here](https://www.data.gv.at/katalog/dataset/d88a1246-9684-480b-a480-ff63286b35b7).
+
+---
 #Basic knowledge about maps and DEM files
 
 QMapShack supports the following map formats:
@@ -209,11 +224,4 @@ function convert(z1, x1, y1)
 Instead of a **<ServerUrl>** the layer has a **<Script>** tag with JavaScript code.
 
 
-## Sources of Maps and DEM files
-
-A nice collection of Garmin vector maps can be found at [_Freizeitkarte OSM_](http://www.freizeitkarte-osm.de/). 
-Next to ready to use maps they publish their tool chain, too. With the tool chain you can produce your 
-own OSM based maps for any region. 
-
-Still the best place to look for DEM data is [VIEWFINDER PANORAMAS](http://www.viewfinderpanoramas.org/). For Europe the EEA offers [DEM files with quite good resolution](http://www.eea.europa.eu/data-and-maps/data/eu-dem). And this is a source of [very high detailed DEM data of Austria](https://www.data.gv.at/katalog/dataset/d88a1246-9684-480b-a480-ff63286b35b7).
 
