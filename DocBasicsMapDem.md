@@ -41,7 +41,7 @@ If you want to know more about the details of creating a \*.vrt file jump [here]
 
 ## Maps
 * A nice collection of Garmin vector maps can be found at [_Freizeitkarte OSM_](http://www.freizeitkarte-osm.de/). Next to ready to use maps they publish their tool chain, too. With the tool chain you can produce your own OSM based maps for any region. 
-* You can use the [\*.tms files](https://sourceforge.net/projects/qlandkartegt/files/WMS%20Maps/) from QLankdarte GT
+* You can use the [\*.tms files](https://sourceforge.net/projects/qlandkartegt/files/WMS%20Maps/) from QLankdarte GT (Note: the \*.xml ones won't work)
 
 ## DEM
 * Still the best place to look for DEM data is [VIEWFINDER PANORAMAS](http://www.viewfinderpanoramas.org/). 
