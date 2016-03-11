@@ -20,7 +20,7 @@ You have to register these paths with ***File->Setup Map Paths*** and ***File->S
 
 ## Installing Maps
 
-You can start with the online maps provided by the "Help! I want maps!" button. Basically this will ask you for a path, copy some map files into the path and update the map list. If you have a Garmin device copy the \*.img and \*.jnx maps on the device to the maps folder. See, now you have quite a fine collection of maps to be used by QMapShack.
+You can start with the online maps provided by the "Help! I want maps!" button. Basically this will ask you for a path, copy some map files into the path and update the map list. If you have a Garmin device copy the \*.img and \*.jnx maps on the device to the maps folder. That should give you quite a fine collection of maps to be used by QMapShack.
 
 ## Installing Raster Maps or DEM Data
 
