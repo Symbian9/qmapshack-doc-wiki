@@ -2,7 +2,7 @@
 
 # Commit Code #
 
-Please do not send patches. Use a pull request. In the past patches proved to be very unreliable. Either the conflicted with the moving forward state of the repository or there where some line break quirks between Windows and Linux. 
+*Please do not send patches!* Use a pull request. In the past patches proved to be very unreliable. Either they conflicted with the moving forward state of the repository or there where some line break quirks between Windows and Linux. 
 
 Anyway a pull request is a much cleaner way for you to develop your feature. And for us to review and merge the request.
 
