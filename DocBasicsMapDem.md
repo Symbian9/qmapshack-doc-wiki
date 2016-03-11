@@ -24,7 +24,7 @@ You can start with the online maps provided by the "Help! I want maps!" button. 
 
 ## Installing Raster Maps or DEM Data
 
-This is a bit tricky. Usually this kind of data is very large. And because it is large it is split into several files. But as we have learned QMapShack needs a single file to be listed. That is the point where GDAL's virtual file format (\*.vrt) jumps in. This is just a text file that defines what files in your folder should be taken as single data set. This sounds more complicated as it really is, because QMapShack provides you a tool. Open it with ***Tool->VRT Builder***.
+This is a bit tricky. Usually this kind of data is very large. And because it is large it is split into several files. But as we have learned QMapShack needs a single file to be listed. That is the point where GDAL's virtual file format (\*.vrt) jumps in. This is just a text file that defines what files in your folder should be taken as single data set. This sounds more complicated than it really is, because QMapShack provides you a tool. Open it with ***Tool->VRT Builder***.
 
 ![Alt text](images/DocBasicsMapDem/qmapshack1.png)
 
@@ -33,6 +33,8 @@ This is a bit tricky. Usually this kind of data is very large. And because it is
 3. Press the start button.
 
 When done you can reload the map or DEM list by a right click on the list. Choose ***Reload Maps*** or ***Reload DEM***. The new map should be listed.
+
+If you want to know more about the details of creating a \*.vrt file jump [here](DocBasicsMapDem#markdown-header-gdal-vrt-maps)
 
 ---
 # Sources of Maps and DEM files
