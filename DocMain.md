@@ -14,7 +14,7 @@ large changes to the GUI. However smaller changes will be ignored.
 * [Install QMapShack](DocGetQMapShack)
 * [Getting started](DocGettingStarted)
 * [Command line parameters](DocCmdOptions)
-* Maps & Digital Elevation Data (DEM)
+* [Maps & Digital Elevation Data (DEM)](DocInstallMapDem)
     * [Install Maps & DEM Data](DocInstallMapDem)
     * [Basics about maps and DEM files](DocBasicsMapDem)
     * [Control maps and DEM files](DocControlMapDem)
