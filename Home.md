@@ -68,5 +68,5 @@ System:
 * Runs on all *nix systems as well as on Windows and OS X.
 * GUI has been translated to Czech, Dutch, French, German and Spanish
 * Wiki documentation is English 
-* Needs Qt5, GDAL, Proj4 and Routino installed
+* Needs Qt5.4 or later, GDAL, Proj4 and Routino installed
 * For device support on Linux DBus and UDisk2 must be installed
