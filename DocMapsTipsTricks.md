@@ -268,3 +268,27 @@ rm -rf "${TMP}" "${TMP}_"
 error_check $?
 
 ```
+
+## TMS Configuration for NZ Topo
+
+NZ Topo decided that it is great idea to treat negative Lat Koordinates as positive ones. So I had to script the conversion.
+
+```
+<TMS>
+	<Title>NZTopo</Title>
+	<MinZoomLevel>6</MinZoomLevel>
+	<MaxZoomLevel>15</MaxZoomLevel>
+	<Layer idx="0">
+		<Title>NZTopo</Title>
+		<Script><![CDATA[(
+		function convert(z1,x1,y1)
+		{	
+			function lat2tile(lat,zoom) { return (Math.floor((1-Math.log(Math.tan(lat*Math.PI/180)+1/Math.cos(lat*Math.PI/180))/Math.PI)/2*Math.pow(2,zoom))); }
+			function tile2lat(y,z) { var n=Math.PI-2*Math.PI*y/Math.pow(2,z); return (180/Math.PI*Math.atan(0.5*(Math.exp(n)-Math.exp(-n)))); }
+			lat = tile2lat(y1,z1); neg_lat = -lat; y2 = lat2tile(neglat,z1);
+			return "http://nz1.nztopomaps.com/" + z1 + "/" + x1 + "/" + y2 + ".png"; 
+		}
+		)]]></Script>
+	</Layer>
+</TMS>
+```
