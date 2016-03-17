@@ -36,7 +36,7 @@ The official documentation of WMS standard can be found on [http://www.opengeosp
 The same logic can be implemented on the **export** command of ArcGIS server maps. Here is an example URL:
 
 ```
-"http://sigel.aneel.gov.br/arcgis/rest/services/CartasTopograficas/MapServer/export?dpi=96&transparent=true&format=png8&bbox=" + bbox + " &bboxSR=3857&imageSR=3857&size=256,256&layers=show:17&f=image"
+"http://www.pcn.minambiente.it/arcgis/rest/services/immagini/IGM_25000/MapServer/export?dpi=96&transparent=true&format=png8&bbox=" + bbox + " &bboxSR=3857&imageSR=3857&size=256,256&f=image"
 ```
 In most cases the request will work as expected, even though the native projection wouldn't be 3857 (Web Mercator).
 For documentation of export command refer to:
