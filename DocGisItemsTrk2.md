@@ -135,6 +135,13 @@ You can remove a track point extension e.g. your heart rate if you want to publi
 
 ### Split Track ###
 
-Cut a track into several tracks.
+Cut a track into several tracks using its track segments.
+
+Tracks consist of one or more track segments. Each track point belongs to a track segment. 
+
+Sources of track segments can be
+ 
+* tracks imported into QMapShack consisting of several track segments (e.g. in GPX files),
+* track operations within QMapShack (e.g. combining several tracks into one).
 
 ![maproom1.png](images/DocGisItemsTrk/FilterSplit.png)
