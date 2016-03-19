@@ -1,11 +1,10 @@
-# Compiling and Building QMapShack for Windows (short: QMS)
+# Compiling and Building QMapShack for Windows 
 
 
-[Please also read the file 3rdparty.txt]
+QMapShack for Windows (short: QMS) is build with Visual Studio 2013 as _64bit_ application.
 
-QMS is build with Visual Studio 2013 as _64bit_ application.
-* Ensure to have the 64bit option selected in all build steps
-* Currently, no _32bit_ version is officially supported. 
+- Ensure to have the 64bit option selected in all build steps.
+- Currently, no _32bit_ version is officially supported. 
   It should still be possible to build a 32bit version using analogous steps.
   But you might have problems with memory limitations on large maps and you will be on your own when it comes to bug fixing.
 
@@ -33,21 +32,23 @@ Build instructions inspired by
   from http://trac.osgeo.org/gdal/wiki/DownloadSource and unzip
 - In nmake.opt, adapt the following lines, 
   according to your build environment [my settings are given as example]
-```
+~~~~
   MSVC_VER=1800
   # NOTE: MSVC_VER=1800 corresponds to Visual Studio 2013
   GDAL_HOME = "M:\lib\gdal"
   # NOTE: GDAL_HOME specifies where the build results will be stored
   # NOTE: try to avoid path names with spaces and non-ASCII characters and in case of trouble try without quotes
   WIN64=YES
-```
+~~~~
    
 - On the Windows Desktop:
-	=> select Start | All Programs | Microsoft Visual Studio 2013 | Visual Studio Tools | VS 2013 x64 Native Tools Command Prompt.
+  select Start | All Programs | Microsoft Visual Studio 2013 | Visual Studio Tools | VS 2013 x64 Native Tools Command Prompt.
 - in the command prompt:
-	=> change directory to the extracted GDAL source code root folder
-	=> nmake /f makefile.vc
-	=> nmake /f makefile.vc devinstall
+  change directory to the extracted GDAL source code root folder
+~~~~
+  nmake /f makefile.vc
+  nmake /f makefile.vc devinstall
+~~~~
 	
 ### C2.) Compile the PROJ library http://trac.osgeo.org/proj/
 
@@ -65,25 +66,30 @@ Build instructions inspired by
 	=> nmake /f makefile.vc
 	=> nmake /f makefile.vc install-all
 
-### C3.) Compile the routino library
+### C3.) Compile the routino library http://www.routino.org
 - Get the latest version from the SVN trunk http://www.routino.org/download/
-  ~~~~
+~~~~
   svn co http://routino.org/svn/trunk routino
-  ~~~~  
+~~~~  
+Note: you might have to install TortoiseSVN or any other svn client
 - Adapt, use and follow instructions found in build_routino.bat
   which you can find in \nsi directory of your QMS source directory
 - It may me necessary to switch off antivirus software before compilation (Avast has been reported to block compilation)
     
-### C4.) Install Qt5.5 or later 
+### C4.) Install Qt5.5 http://qt-project.org
 - Download and run the Qt5 Windows Online Installer 
   from http://qt-project.org/downloads
 - Install for VS2013, x64
+
+Note: QMS should compile with Qt5.4 as well but Qt5.4 has a nasty bug in list scrolling. Qt5.6 on the other hand will not work as QWebkit is used in QMS which has been removed from Qt5.6.
   
   Note: if you prefer offline installation you can choose the right package 
   in OFFLINE INSTALLERS section of that page
   
 ### C5.) Get the QMapshack source from the repository, e.g. 
+~~~~
    hg clone https://bitbucket.org/maproom/qmapshack QMapShack  
+~~~~
 Note: you might have to install TortoiseHG or any other mercurial client 
    
 ### C6.) Start the CMake GUI (you did install CMake before, didn't you)
