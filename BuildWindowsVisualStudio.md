@@ -73,7 +73,7 @@ Build instructions inspired by
 ~~~~  
 Note: you might have to install TortoiseSVN or any other svn client
 - Adapt, use and follow instructions found in build_routino.bat
-  which you can find in \nsi directory of your QMS source directory
+  which you can find in \msvc_64 directory of your QMS source directory
 - It may me necessary to switch off antivirus software before compilation (Avast has been reported to block compilation)
     
 ### C4.) Install Qt5.5 http://qt-project.org
@@ -159,7 +159,9 @@ The reason for this problem is currently unknown. Any help is welcome.
   (see http://stackoverflow.com/questions/2119539/visual-studio-how-to-set-path-to-dll)
   The path depends on where you have installed/compiled Qt5, gdal, proj.4, routino
   In my case this is 
-  PATH=%PATH%;M:\lib\gdal\bin;M:\lib\PROJ\bin;M:\src\routino_pkg\lib;C:\Qt5\5.4\msvc2013_64\bin
+~~~~
+  PATH=%PATH%;M:\lib\gdal\bin;M:\lib\PROJ\bin;M:\src\routino_pkg\lib;C:\Qt5\5.5\msvc2013_64\bin
+~~~~
 
 ### D3.) Compile
 - Right-Click on the ALL_BUILD project and select build to start the compilation
