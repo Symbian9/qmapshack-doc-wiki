@@ -95,11 +95,11 @@ Note: you might have to install TortoiseHG or any other mercurial client
 ### C6.) Start the CMake GUI (you did install CMake before, didn't you)
 - Select "Visual Studio 12 2013 Win64" and "Native Compilers"
 - Configure 
-  In the first run there will be errors. 
-  Now enter the directories where you have installed Qt5, GDAL, 
-  PROJ.4, routino to the respective variables.
-  After that, Configure again.
-  Note: in case that you only get some warnings, you anyway can try to GENERATE
+    - In the first run there will be errors. 
+    - Now enter the directories where you have installed Qt5, GDAL, 
+      PROJ.4, routino to the respective variables.
+    - After that, Configure again.
+    - Note: in case that you only get some warnings, you anyway can try to GENERATE
 - Generate
 
 ### C7.) Open the generated  build\QMapShack.sln with VS2013
@@ -115,29 +115,30 @@ Note: you might have to install TortoiseHG or any other mercurial client
 Note: in case the redistributable files are already installed in your system, 
 this step is not necessary.
 
-### I2.) Create the installer with NSIS(3.0b1)
--  Execute the copyfiles.bat which you can find in \nsi directory of 
-  your QMS source directory
-  Note: In copyfiles.bat, you may have to adapt the directories 
-  - where you have installed Qt5
-  - where your self compiled binaries of routino, GDAL and PROJ4 are 
-  - Path to the build directory which you have specified in the CMake GUI
-  The copyfiles.bat script will create a new directory "Files" which has 
+### I2.) Copy all required files to intermediate directory
+-  Edit the file copyfiles.bat which you can find in \msvc_64 directory of 
+  your QMS source directory and adapt the directories 
+    - where you have installed Qt5
+    - where your self compiled binaries of routino, GDAL and PROJ4 are 
+    - Path to the build directory which you have specified in the CMake GUI
+-  Execute the copyfiles.bat 
+- The copyfiles.bat script will create a new directory "Files" which has 
   exactly the same content as the final installation directory created 
   by the NSIS installer will have.
-  QMapShack does not have any dependencies out of its own installation 
-  directory. So instead of creating an NSIS installer you could just 
-  copy this directory to an other machine for a quick deployment
-
+- QMapShack does not have any dependencies out of its own installation 
+  directory. So instead of creating an NSIS installer in the next step 
+  you could just copy this directory to an other machine for a quick deployment
 - [optional] Test whether the deployment is complete: 
   double-click on Files/qmapshack.exe
   ==> QMapShack should start up and be fully operational without any restrictions
-  
+
+### I3.) Create the installer with NSIS(3.0b1)
 - Run the QMapShack_Installer.nsi script e.g via right click on script file 
   and choosing "Compile NSIS Script" from contextual menu.
-  Note: there also are the options to run the script on command prompt with 
-  commandline version(makensis.exe). 
-  Or you can start windows version (makensisw.exe) to run the script.
+
+Note: there also are the options to run the script on command prompt with 
+commandline version(makensis.exe). 
+Or you can start windows version (makensisw.exe) to run the script.
 
   
 ## Debugging with VS2013
