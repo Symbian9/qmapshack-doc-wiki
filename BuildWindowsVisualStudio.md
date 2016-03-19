@@ -33,14 +33,14 @@ Build instructions inspired by
   from http://trac.osgeo.org/gdal/wiki/DownloadSource and unzip
 - In nmake.opt, adapt the following lines, 
   according to your build environment [my settings are given as example]
-  ~~~~
+```
   MSVC_VER=1800
   # NOTE: MSVC_VER=1800 corresponds to Visual Studio 2013
   GDAL_HOME = "M:\lib\gdal"
   # NOTE: GDAL_HOME specifies where the build results will be stored
   # NOTE: try to avoid path names with spaces and non-ASCII characters and in case of trouble try without quotes
   WIN64=YES
-  ~~~~
+```
    
 - On the Windows Desktop:
 	=> select Start | All Programs | Microsoft Visual Studio 2013 | Visual Studio Tools | VS 2013 x64 Native Tools Command Prompt.
@@ -55,9 +55,9 @@ Build instructions inspired by
   from http://trac.osgeo.org/proj/ and unzip it
 - In nmake.opt, adapt the following lines, 
   according to your build environment [my settings are given as example]
-  ~~~~
+~~~~
   INSTDIR=M:\lib\PROJ
-  ~~~~
+~~~~
 - On the Windows Desktop:
 	=> select Start | All Programs | Microsoft Visual Studio 2013 | Visual Studio Tools | VS 2013 x64 Native Tools Command Prompt.
 - in the command prompt:
