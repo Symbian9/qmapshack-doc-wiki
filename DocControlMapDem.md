@@ -34,7 +34,7 @@ Some properties are set globally for all workspaces. You find them below the _Vi
 
 ![Alt text](images/DocControlMapDem/maproom3.png)
 
-* **Add Map View** Add a new _View_ to display your data over a selection of maps.
+* **Add Map View** Add a new _View_ to display your data over a selection of maps. *Hint:* The default name of a view can be edited in a configuration file.
 * **Clone Map View** Clone the current view.
 
 The properties for the views:
@@ -42,7 +42,7 @@ The properties for the views:
 * **Show Scale** A scalebar will be drawn in the right bottom corner of the map.
 * **Show Grid**  A grid is drawn over the map. To setup the grid for the current visible workspace select **Setup Grid**
 * **POI Text**   This applies to vector maps only. If inactive all labels on point of interest are not drawn.
-* **Map Tool Tip** This applies to vector maps only. If active a tool tip with information about the element below the mouse cursor is displayed. Of the map does not store any information nothing is displayed.
+* **Map Tool Tip** This applies to vector maps only. If active a tool tip with information about the element below the mouse cursor is displayed. If the map does not have any information at the position of the mouse cursor then nothing is displayed.
 * **Night / Day ** This applies to vector maps only. Switch between night and day color scheme. This must be defined within the map, else nothing will happen.
 
 Not really map related but workspace related:
