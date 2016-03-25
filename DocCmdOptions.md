@@ -27,6 +27,8 @@ The configuration file keeps information about
 
 * other user interface properties.
 
+Configuration files are standard INI-files and can be edited (be careful!).
+
 The *-c* option is pretty handy if you start QMapShack from a memory stick and want to take your
 configuration with you. 
 
