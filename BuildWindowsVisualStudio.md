@@ -1,5 +1,16 @@
-# Compiling and Building QMapShack for Windows 
+# Compiling and Building QMapShack for Windows
 
+## Foreword
+
+The following description explains how the QmapShack windows binaries provided for download at https://bitbucket.org/maproom/qmapshack/downloads are created.
+
+I try to keep a balance between providing a complete and still reasonably compact description.
+So, depending on the setup of your development machine (e.g. language settings) you might have to make some adaptations which may not be described here in full detail. 
+So please be prepared for some improvization.
+
+Of course, there might be other ways to create windows binaries, e.g. with other compiler tool chains. If you succeed, you are encouraged to create a builld description on a separate Wiki page.
+
+## General remarks
 
 QMapShack for Windows (short: QMS) is build with Visual Studio 2013 as _64bit_ application.
 
@@ -8,7 +19,7 @@ QMapShack for Windows (short: QMS) is build with Visual Studio 2013 as _64bit_ a
   It should still be possible to build a 32bit version using analogous steps.
   But you might have problems with memory limitations on large maps and you will be on your own when it comes to bug fixing.
 
-Note: You don't have to buy Visual Studio 2013. The free-of-charge Visual Studio 2013 Community-Edition works, too.
+Note: You don't have to buy Visual Studio 2013. The free-of-charge Visual Studio 2013 Community-Edition works, too. Instead of Visual Studio 2013, Visual Studio 2015 should also work. Maybe we switch to 2015 sooner or later due to its improved C++-11 support (https://msdn.microsoft.com/library/hh567368.aspx#featurelist)
 
 ## Required tools for building and installing
 
