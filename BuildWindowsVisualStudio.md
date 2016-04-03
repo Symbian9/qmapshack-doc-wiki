@@ -27,7 +27,7 @@ Note: You don't have to buy Visual Studio 2013. The free-of-charge Visual Studio
   Ensure that you have the latest update installed, see https://support.microsoft.com/en-us/kb/2829760
 - CMake 3.0 or later, available at http://www.cmake.org/
 - Qt5.5 or later from http://qt-project.org/downloads
-- The mingw64 toolchain (http://mingw-w64.org) is needed to compile the routino library
+- The mingw64 toolchain (http://mingw-w64.org) is needed to compile the routino library.
   For installation, follow the instructions at the beginning of the build_routino.bat which you can find in \msvc_64 directory
 - NSIS, available at http://nsis.sourceforge.net/Main_Page
   only required if you want to create the installer  
@@ -110,6 +110,7 @@ Note: you might have to install TortoiseHG or any other mercurial client
     - In the first run there will be errors. 
     - Now enter the directories where you have installed Qt5, GDAL, 
       PROJ.4, routino to the respective variables.
+    - Only change the UPDATE_TRANSLATIONS option in you know what you are doing. See the [DeveloperTranslate Wiki page](https://bitbucket.org/maproom/qmapshack/wiki/DeveloperTranslate) for details.
     - After that, Configure again.
     - Note: in case that you only get some warnings, you anyway can try to GENERATE
 - Generate
