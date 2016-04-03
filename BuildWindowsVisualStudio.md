@@ -105,6 +105,8 @@ Note: QMS should compile with Qt5.4 as well but Qt5.4 has a nasty bug in list sc
 Note: you might have to install TortoiseHG or any other mercurial client 
    
 ### C6.) Start the CMake GUI (you did install CMake before, didn't you)
+- Enter the path to the source directory (which has been created by cloning the hg repository in the previous step)
+- Enter the path where you want to build the binaries (should be a new directory)
 - Select "Visual Studio 12 2013 Win64" and "Native Compilers"
 - Configure 
     - In the first run there will be errors. 
