@@ -155,6 +155,9 @@ Note: there also are the options to run the script on command prompt with
 commandline version(makensis.exe). 
 Or you can start windows version (makensisw.exe) to run the script.
 
+## TroubleShooting
+If QMapShack does not behave as you expect, please have a look at the [TroubleShooting Wiki Page](https://bitbucket.org/maproom/qmapshack/wiki/TroubleShooting). If this does not help you to understand the problem, you can try to dig deeper by debugging as described in the next section.
+
   
 ## Debugging with VS2013
 
