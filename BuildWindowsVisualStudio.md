@@ -4,9 +4,9 @@
 
 The following description explains how the QmapShack windows binaries provided for download at https://bitbucket.org/maproom/qmapshack/downloads are created.
 
-I try to keep a balance between providing a complete and still reasonably compact description.
+I try to keep a balance between providing a complete but still reasonably compact description.
 So, depending on the setup of your development machine (e.g. language settings) you might have to make some adaptations which may not be described here in full detail. 
-So please be prepared for some improvization.
+So please be prepared for some improvization, e.g. when adapting path names or resoving start menu entries.
 
 Of course, there might be other ways to create windows binaries, e.g. with other compiler tool chains. If you succeed, you are encouraged to create a builld description on a separate Wiki page.
 
@@ -27,12 +27,12 @@ Note: You don't have to buy Visual Studio 2013. The free-of-charge Visual Studio
   Ensure that you have the latest update installed, see https://support.microsoft.com/en-us/kb/2829760
 - CMake 3.0 or later, available at http://www.cmake.org/
 - Qt5.5 or later from http://qt-project.org/downloads
-- The mingw64 toolchain (http://mingw-w64.org) is needed to 
-  compile the routino library
+- The mingw64 toolchain (http://mingw-w64.org) is needed to compile the routino library
+  For installation, follow the instructions at the beginning of the build_routino.bat which you can find in \msvc_64 directory
 - NSIS, available at http://nsis.sourceforge.net/Main_Page
   only required if you want to create the installer  
 
-## Compile instructions - to be verified
+## Compile instructions
 
 ### C1.) Compile the GDAL library, http://www.gdal.org/
 Build instructions inspired by 
@@ -83,9 +83,10 @@ Build instructions inspired by
   svn co http://routino.org/svn/trunk routino
 ~~~~  
 Note: you might have to install TortoiseSVN or any other svn client
+
 - Adapt, use and follow instructions found in build_routino.bat
   which you can find in \msvc_64 directory of your QMS source directory
-- It may me necessary to switch off antivirus software before compilation (Avast has been reported to block compilation)
+- It may be necessary to switch off antivirus software before compilation (Avast has been reported to block compilation by one user)
     
 ### C4.) Install Qt5.5 http://qt-project.org
 - Download and run the Qt5 Windows Online Installer 
