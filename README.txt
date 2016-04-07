@@ -1,0 +1,118 @@
+How to process all these "*.md" files
+=====================================
+
+Author: Rainer Woitok, Rainer.Woitok@Gmail.Com, 2016-04-07
+
+
+
+A. Creating the "*.html" files locally on your computer
+-------------------------------------------------------
+
+   1. Prerequisites
+   ................
+
+      To successfully create "*.html" files  from these "*.md" files you
+      will need the following:
+
+         - Python 2.7 or better.
+
+         - Python's "Markdown" module  including the  following standard
+           "Markdown" extensions:
+
+              . admonition
+              . codehilite
+              . extra
+              . meta
+              . sane_lists
+              . smarty
+              . toc
+              . wikilinks
+
+           All this is downloadable from, for instance,
+
+              https://pythonhosted.org/Markdown/
+
+         - Some sort of  Unix/Linux shell  located at  "/usr/bin/sh" (if
+           your shell resides  in some other place,  simply edit scripts
+           "DocFix.sh" and "NavBar.sh" accordingly).
+
+         - GNU "gawk".   Both scripts,  "DocFix.sh" and "NavBar.sh", use
+           some "gawk" spcific features, like a function "match()" which
+           takes three arguments, function "gensub()", and perhaps a few
+           others.
+
+         - GNU "make".  The makefile provided uses "simply expanded var-
+           iables" (defined via "::=", as introduced by the Posix stand-
+           ard in 2012) as well as "double-colon rules".
+
+
+   2. Building the "*.html" files
+   ..............................
+
+      Change into the directory  containing  all these "*.md"  files and
+      issue the command
+
+         make
+
+      That's it :-)
+
+
+B. Sanitizing the "*.md" files on the Bitbucket server
+------------------------------------------------------
+
+   1. Prerequisites
+   ................
+
+      To sanitize the  "*.md" files on the  Bitbucket server so the HTML
+      code created  from them  is usable locally  and to add  navigation
+      bars to them you'll need:
+
+         - Some sort of  Unix/Linux shell  located at  "/usr/bin/sh" (if
+           your shell resides  in some other place,  simply edit scripts
+           "DocFix.sh" and "NavBar.sh" accordingly).
+
+         - GNU "gawk".   Both scripts,  "DocFix.sh" and "NavBar.sh", use
+           some "gawk" spcific features, like a function "match()" which
+           takes three arguments, function "gensub()", and perhaps a few
+           others.
+
+         - GNU "make".  The makefile provided uses "simply expanded var-
+           iables" (defined via "::=", as introduced by the Posix stand-
+           ard in 2012) as well as "double-colon rules".
+
+      Python and "Markdown" are not needed here, because the conversion
+      from "*.md" to "*.html" is done by the Bitbucket server itself.
+
+
+   2. Sanitizing the "*.md" files
+   ..............................
+
+      Change into the directory  containing all  these "*.md"  files and
+      issue the command
+
+         make nav
+
+      That's it again :-)
+
+
+   3. What sanitizing includes
+   ...........................
+
+      - Make all "*.md" file names blank free, so "make" can easily pro-
+        cess them.
+
+      - Ensure that all  URLs referencing  other files  in this wiki are
+        local and do not point to Bitbucket.
+
+      - Ensure that all local URLs  end in an ".html" extension,  so the
+        browser can find them in the local file system.
+
+      - Ensure that "#..." suffixes in URLs  refer to the correct header
+        identifiers in the local files.
+
+      - Add a  navigation  bar to both,  the top and  the bottom of each
+        "*.md" file  which does not only contain the "Home" and "Manual"
+        links currently  provided but also  "Prev" and  "Next" links for
+        easier reading.
+
+========================================================================
