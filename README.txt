@@ -16,8 +16,8 @@ A. Creating the "*.html" files locally on your computer
 
          - Python 2.7 or better.
 
-         - Python's "Markdown" module  including the  following standard
-           "Markdown" extensions:
+         - Python's "Markdown" module  version 2.6.6 or better including
+           the following standard "Markdown" extensions:
 
               . admonition
               . codehilite
@@ -53,6 +53,11 @@ A. Creating the "*.html" files locally on your computer
       issue the command
 
          make
+
+      If you are working  in a clone of the wiki repository  rather than
+      in a normal directory  created from  a downloaded  "tar" ball, you
+      should be aware  that your actions might have  changed some of the
+      "*.md" files and that these actions should thus be committed.
 
       That's it :-)
 
@@ -92,6 +97,11 @@ B. Sanitizing the "*.md" files on the Bitbucket server
 
          make nav
 
+      Since you are definitely  working in a clone  of the wiki reposit-
+      ory, you should be aware that your actions might have changed some
+      of the "*.md" files and that these actions should thus be committ-
+      ed.
+
       That's it again :-)
 
 
@@ -110,9 +120,9 @@ B. Sanitizing the "*.md" files on the Bitbucket server
       - Ensure that "#..." suffixes in URLs  refer to the correct header
         identifiers in the local files.
 
-      - Add a  navigation  bar to both,  the top and  the bottom of each
-        "*.md" file  which does not only contain the "Home" and "Manual"
-        links currently  provided but also  "Prev" and  "Next" links for
-        easier reading.
+      - Add a navigation bar (which does not only contain the "Home" and
+        "Manual" links  currently provided  but also  "Prev"  and "Next"
+        links for  easier reading)  to both,  the top  and the bottom of
+        each "*.md" file.
 
 ========================================================================
