@@ -1,5 +1,4 @@
-[Prev](DocGisItems.html) (Tracks, Waypoints & Co) | [Home](Home.html) | [Manual](DocMain.html) | (Tracks) [Next](DocGisItemsTrk2.html)
-- - -
+[Home](Home) | [Manual](DocMain)
 
 [TOC]
 
@@ -31,10 +30,8 @@ Finally you have to select a project for your new waypoint. You can select from 
 
 ## Track
 
-If you select a track as new element the mouse position will be taken as first track point and the mouse cursor will enter the line edit mode. See  ["Edit items with multiple points (tracks, routes, areas)"](DocGisItemsEditMultiple.html) for more details.
+If you select a track as new element the mouse position will be taken as first track point and the mouse cursor will enter the line edit mode. See  ["Edit items with multiple points (tracks, routes, areas)"](DocGisItemsEditMultiple) for more details.
 
 ## Area
 
-If you select an area as new element the mouse position will be taken as first point and the mouse cursor will enter the line edit mode. See  ["Edit items with multiple points (tracks, routes, areas)"](DocGisItemsEditMultiple.html) for more details.
-- - -
-[Prev](DocGisItems.html) (Tracks, Waypoints & Co) | [Home](Home.html) | [Manual](DocMain.html) | (Tracks) [Next](DocGisItemsTrk2.html)
+If you select an area as new element the mouse position will be taken as first point and the mouse cursor will enter the line edit mode. See  ["Edit items with multiple points (tracks, routes, areas)"](DocGisItemsEditMultiple) for more details.

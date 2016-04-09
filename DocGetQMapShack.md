@@ -1,5 +1,4 @@
-[Prev](DocMain.html) (Manual) | [Home](Home.html) | [Manual](DocMain.html) | (Getting started) [Next](DocGettingStarted.html)
-- - -
+[Home](Home) | [Manual](DocMain)
 
 [TOC]
 
@@ -40,7 +39,7 @@ If you want to use the cutting edge you need _Mercurial_ to access the repositor
 
 If you prefer more or less stable releases have a look at the [_download_](https://bitbucket.org/maproom/qmapshack/downloads) section. You have to download and unpack the \*tar.gz files.
 
-If you use Ubuntu 14.04 you have to proceed with these [instructions](Ubuntu-14.04-HowTo.html) before the next steps described on this page.
+If you use Ubuntu 14.04 you have to proceed with these [instructions](https://bitbucket.org/maproom/qmapshack/wiki/Ubuntu%2014.04%20specific%20build%20&%20run%20instructions) before the next steps described on this page.
 
 Anyway you should end up with a directory containing the source code. Let's say the directory's name is _QMapShack_. Create another directory next to _QMapShack_:
 
@@ -61,5 +60,3 @@ And install the application with:
 
     sudo make install
 
-- - -
-[Prev](DocMain.html) (Manual) | [Home](Home.html) | [Manual](DocMain.html) | (Getting started) [Next](DocGettingStarted.html)

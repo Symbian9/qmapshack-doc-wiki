@@ -1,5 +1,4 @@
-[Prev](DocHandleGpxFiles.html) (Handle GPX and QMS files) | [Home](Home.html) | [Manual](DocMain.html) | (Tracks, Waypoints & Co) [Next](DocGisItems.html)
-- - -
+[Home](Home) | [Manual](DocMain)
 
 # Search Google
 
@@ -18,5 +17,3 @@ Now you can use an existing project or create a new one.
 And copy the result via drag-n-drop to the new project. 
 
 ![maproom4.png](images/DocSearchGoogle/maproom4.png)
-- - -
-[Prev](DocHandleGpxFiles.html) (Handle GPX and QMS files) | [Home](Home.html) | [Manual](DocMain.html) | (Tracks, Waypoints & Co) [Next](DocGisItems.html)

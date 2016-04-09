@@ -1,5 +1,4 @@
-[Prev](DocGisDatabaseAddRemove.html) (Add/Remove a Database) | [Home](Home.html) | [Manual](DocMain.html) | ('Lost & Found' Folder) [Next](DocGisDatabaseLostFound.html)
-- - -
+[Home](Home) | [Manual](DocMain)
 
 # Folders and Items
 
@@ -30,5 +29,3 @@ If you delete items in a database project from the workspace the items are not d
 If the items are not referenced by another folder they will be moved into the 'Lost & Found' folder.
 
 ![maproom2](images/DocGisDatabaseFolderItems/maproom8.png)
-- - -
-[Prev](DocGisDatabaseAddRemove.html) (Add/Remove a Database) | [Home](Home.html) | [Manual](DocMain.html) | ('Lost & Found' Folder) [Next](DocGisDatabaseLostFound.html)

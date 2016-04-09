@@ -1,5 +1,4 @@
-[Prev](DocGisItemsWpt.html) (Waypoints) | [Home](Home.html) | [Manual](DocMain.html) | (Edit items with multiple points (tracks, routes, areas)) [Next](DocGisItemsEditMultiple.html)
-- - -
+[Home](Home) | [Manual](DocMain)
 
 [TOC]
 
@@ -17,7 +16,7 @@ If you click on the highlighted area you get a short on-screen-summary and a few
 
 1. View / Edit area - See the full details about the area in a dialog with the option to edit the data.
 2. Delete the area
-3. Change the coordinates of the area. See ["Edit items with multiple points (tracks, routes, areas)"](DocGisItemsEditMultiple.html) for more details.
+3. Change the coordinates of the area. See ["Edit items with multiple points (tracks, routes, areas)"](DocGisItemsEditMultiple) for more details.
 
 ## View / Edit Details
 
@@ -32,5 +31,3 @@ If you click on the highlighted area you get a short on-screen-summary and a few
 7. Add a comment or a description by clicking on the highlighted string. 
 8. The coordinates of the area (read only)
 9. This is the history list showing all changes applied to the area.
-- - -
-[Prev](DocGisItemsWpt.html) (Waypoints) | [Home](Home.html) | [Manual](DocMain.html) | (Edit items with multiple points (tracks, routes, areas)) [Next](DocGisItemsEditMultiple.html)

@@ -1,5 +1,4 @@
-[Prev](DocGisItemsRte.html) (Routes) | [Home](Home.html) | [Manual](DocMain.html) | (Areas) [Next](DocGisItemsArea.html)
-- - -
+[Home](Home) | [Manual](DocMain)
 
 [TOC]
 
@@ -16,12 +15,12 @@ If you click on the highlighted waypoint you get a short on-screen-summary and a
 
 |   |   |   |
 |---|---|---|
-| ![Edit/Details](images/DocGisItemsWpt/EditDetails.png) | Edit/Show Details | [Show details of the waypoint and edit attached data.](#view-edit-details)   |
+| ![Edit/Details](images/DocGisItemsWpt/EditDetails.png) | Edit/Show Details | [Show details of the waypoint and edit attached data.](#markdown-header-view-edit-details)   |
 | ![Copy](images/DocGisItemsWpt/Copy.png)                | Copy              | Copy the waypoint into another project. |
 | ![Delete](images/DocGisItemsWpt/DeleteOne.png)         | Delete            | Delete the waypoint. This also deletes data associated with the waypoint, such as photos. |
 | ![Show Bubble](images/DocGisItemsWpt/Bubble.png)       | Show Bubble       | When enabled, the waypoint's content is shown as a static bubble. |
-| ![Move](images/DocGisItemsWpt/WptMove.png)             | Move              | [Move the waypoint to another location.](#move-waypoint) |
-| ![Project](images/DocGisItemsWpt/WptProj.png)          | Project           | [Project the waypoint - This is copying the waypoint and to move to copy a given distance and bearing](#project-waypoint) |
+| ![Move](images/DocGisItemsWpt/WptMove.png)             | Move              | [Move the waypoint to another location.](#markdown-header-move-waypoint) |
+| ![Project](images/DocGisItemsWpt/WptProj.png)          | Project           | [Project the waypoint - This is copying the waypoint and to move to copy a given distance and bearing](#markdown-header-project-waypoint) |
 
 
 ## ![EditDetails](images/DocGisItemsWpt/EditDetails.png) View / Edit Details
@@ -31,8 +30,8 @@ If you click on the highlighted waypoint you get a short on-screen-summary and a
 |   |   |   |
 |---|---|---|
 | ![Icon](images/DocGisItemsWpt/PinRed.png)     | Icon    | Shows the currently selected Icon / provides a list of available Icon when clicked |
-| ![Tainted](images/DocGisItemsWpt/Tainted.png) | Tainted | When shown, the Waypoint was imported and modified (for details see [Waypoints, Tracks & Co](DocGisItems.html)) |
-| ![Lock](images/DocGisItemsWpt/Lock.png)       | Locked  | When shown, the Waypoint is locked - that is cannot be modified until unlocked (for details see [Waypoints, Tracks & Co](DocGisItems.html)) |
+| ![Tainted](images/DocGisItemsWpt/Tainted.png) | Tainted | When shown, the Waypoint was imported and modified (for details see [Waypoints, Tracks & Co](DocGisItems)) |
+| ![Lock](images/DocGisItemsWpt/Lock.png)       | Locked  | When shown, the Waypoint is locked - that is cannot be modified until unlocked (for details see [Waypoints, Tracks & Co](DocGisItems)) |
 
 In addition, the waypoint's position, elevation and a text browser to display links, description and comment are shown.
 These can be changed by clicking on the blue, underlined labels.
@@ -69,5 +68,3 @@ Different to moving the waypoint this will create a clone of the waypoint. You h
 
 ![Project Waypoint](images/DocGisItemsWpt/Projection.png)
 
-- - -
-[Prev](DocGisItemsRte.html) (Routes) | [Home](Home.html) | [Manual](DocMain.html) | (Areas) [Next](DocGisItemsArea.html)

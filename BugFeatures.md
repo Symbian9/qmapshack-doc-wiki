@@ -1,6 +1,3 @@
-Prev () | [Home](Home.html) | [Manual](DocMain.html) | () Next
-- - -
-
 [TOC]
 
 # Bugs & Features
@@ -21,7 +18,7 @@ Please make sure to provide:
 3. Give a **detailed report** about what is broken
 4. Give instructions about **how to reproduce** the problem
 5. If **additional data** is needed give **real links** to that data. A mellow description where to find it is not sufficient.
-6. If the application crashes and you are using Linux try to create a backtrace. [See instructions](TroubleShooting.html#create-a-backtrace-of-a-crash-on-linux)
+6. If the application crashes and you are using Linux try to create a backtrace. [See instructions](https://bitbucket.org/maproom/qmapshack/wiki/TroubleShooting#markdown-header-create-a-backtrace-of-a-crash-on-linux)
 
 All bugs will get some attention. Due to vacations this might take up to 2 weeks. If there is no answer after that period make yourself heard via email.
 
@@ -35,5 +32,3 @@ Your **best chance** to get a new feature is to** implement it on your own**. If
 
 It's ok if you do not know how to code C++. But always keep in mind you ask someone to spend his/her time for you. Thus try to prepare  as much as possible the stuff that does not need programming skills. And if someone implemented a feature for you it would be more than fair of you to test it faithfully and to add a nice documentation about it in the Wiki. 
 
-- - -
-Prev () | [Home](Home.html) | [Manual](DocMain.html) | () Next

@@ -1,5 +1,4 @@
-Prev () | [Home](Home.html) | [Manual](DocMain.html) | () Next
-- - -
+[Home](Home) | [Manual](DocMain)
 
 #Code Structure
 
@@ -22,5 +21,3 @@ map               | Everything related to the map drawing layer. Complex map ite
 mouse             | All classes to control mouse interaction.
 plot              | A small light weight plot widget collection to draw various track related graphs
 units             | Everything related to units like metric and imperial units.
-- - -
-Prev () | [Home](Home.html) | [Manual](DocMain.html) | () Next

@@ -1,5 +1,4 @@
-[Prev](DocGisDatabaseWorkspaceDatabase.html) (Workspace and Database) | [Home](Home.html) | [Manual](DocMain.html) | (Folders and Items) [Next](DocGisDatabaseFoldersItems.html)
-- - -
+[Home](Home) | [Manual](DocMain)
 
 [TOC]
 
@@ -95,5 +94,3 @@ To see changes in the database by someone else as soon as they are saved to the 
 ![maproom2](images/DocGisDatabaseAddRemove/maproom5.png)
 
 Make sure your personal firewall allows UDP traffic on the given port.
-- - -
-[Prev](DocGisDatabaseWorkspaceDatabase.html) (Workspace and Database) | [Home](Home.html) | [Manual](DocMain.html) | (Folders and Items) [Next](DocGisDatabaseFoldersItems.html)

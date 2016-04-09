@@ -4,11 +4,11 @@ Use QMapShack to plan your next outdoor trip or to visualize and archive all the
 
 If you want to download QMapShack visit the [**download page**](https://bitbucket.org/maproom/qmapshack/downloads)
 
-If you want to see **screenshots** or start with QMapShack visit the [**documentation page**](DocMain.html).
+If you want to see **screenshots** or start with QMapShack visit the [**documentation page**](DocMain).
 
-If you have found a **bug** or you want a new **feature**  [**read this**](BugFeatures.html).
+If you have found a **bug** or you want a new **feature**  [**read this**](BugFeatures).
 
-If you need **troubleshooting** have a look [**here**](TroubleShooting.html)
+If you need **troubleshooting** have a look [**here**](TroubleShooting)
 
 ## Support
 

@@ -1,5 +1,4 @@
-Prev () | [Home](Home.html) | [Manual](DocMain.html) | (Install QMapShack) [Next](DocGetQMapShack.html)
-- - -
+[Home](Home)
 
 #QMapShack Manual
 
@@ -12,37 +11,35 @@ large changes to the GUI. However smaller changes will be ignored.
 
 ##User
 
-* [Install QMapShack](DocGetQMapShack.html)
-* [Getting started](DocGettingStarted.html)
-* [Command line parameters](DocCmdOptions.html)
-* [Maps & Digital Elevation Model (DEM)](DocInstallMapDem.html)
-    * [Install Maps & DEM Data](DocInstallMapDem.html)
-    * [Basics about maps and DEM files](DocBasicsMapDem.html)
-    * [Control maps and DEM files](DocControlMapDem.html)
-    * [Maps: Tips and Tricks](DocMapsTipsTricks.html)
-* [Working with Projects](DocWorkingWithProjects.html)
-    * [Handle GPX and QMS files](DocHandleGpxFiles.html)
-    * [Search Google](DocSearchGoogle.html)
-* [Tracks, Waypoints & Co](DocGisItems.html)
-    * [Create new tracks, waypoints etc.](DocGisItemsNew.html)
-    * [Tracks](DocGisItemsTrk2.html)
-    * [Routes](DocGisItemsRte.html)
-    * [Waypoints](DocGisItemsWpt.html)
-    * [Areas](DocGisItemsArea.html)
-    * [Edit items with multiple points (tracks, routes, areas)](DocGisItemsEditMultiple.html)
-* [Database](DocGisDatabase.html)
-    * [Workspace and Database](DocGisDatabaseWorkspaceDatabase.html)
-    * [Add/Remove a Database](DocGisDatabaseAddRemove.html)
-    * [Folders and Items](DocGisDatabaseFoldersItems.html)
-    * ['Lost & Found' Folder](DocGisDatabaseLostFound.html)
-* [GPS Devices](DocGisDevices.html)
+* [Install QMapShack](DocGetQMapShack)
+* [Getting started](DocGettingStarted)
+* [Command line parameters](DocCmdOptions)
+* [Maps & Digital Elevation Model (DEM)](DocInstallMapDem)
+    * [Install Maps & DEM Data](DocInstallMapDem)
+    * [Basics about maps and DEM files](DocBasicsMapDem)
+    * [Control maps and DEM files](DocControlMapDem)
+    * [Maps: Tips and Tricks](DocMapsTipsTricks)
+* [Working with Projects](DocWorkingWithProjects)
+    * [Handle GPX and QMS files](DocHandleGpxFiles)
+    * [Search Google](DocSearchGoogle)
+* [Tracks, Waypoints & Co](DocGisItems)
+    * [Create new tracks, waypoints etc.](DocGisItemsNew)
+    * [Tracks](DocGisItemsTrk2)
+    * [Routes](DocGisItemsRte)
+    * [Waypoints](DocGisItemsWpt)
+    * [Areas](DocGisItemsArea)
+    * [Edit items with multiple points (tracks, routes, areas)](DocGisItemsEditMultiple)
+* [Database](DocGisDatabase)
+    * [Workspace and Database](DocGisDatabaseWorkspaceDatabase)
+    * [Add/Remove a Database](DocGisDatabaseAddRemove)
+    * [Folders and Items](DocGisDatabaseFoldersItems)
+    * ['Lost & Found' Folder](DocGisDatabaseLostFound)
+* [GPS Devices](DocGisDevices)
 
 ##Developer & Translators
 
-* [Commit Code](DeveloperCommitCode.html)
-* [Coding Guideline](DeveloperCodingGuideline.html)
-* [Compile Instructions for Windows](BuildWindowsVisualStudio.html)
-* [Add translations](DeveloperTranslate.html)
+* [Commit Code](DeveloperCommitCode)
+* [Coding Guideline](DeveloperCodingGuideline)
+* [Compile Instructions for Windows](BuildWindowsVisualStudio)
+* [Add translations](DeveloperTranslate)
 
-- - -
-Prev () | [Home](Home.html) | [Manual](DocMain.html) | (Install QMapShack) [Next](DocGetQMapShack.html)

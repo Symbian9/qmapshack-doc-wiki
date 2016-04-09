@@ -1,5 +1,4 @@
-[Prev](DocControlMapDem.html) (Control maps and DEM files) | [Home](Home.html) | [Manual](DocMain.html) | (Working with Projects) [Next](DocWorkingWithProjects.html)
-- - -
+[Home](Home) | [Manual](DocMain)
 
 [TOC]
 
@@ -289,5 +288,3 @@ Script converts to OSGEO TMS (http://www.maptiler.org/google-maps-coordinates-ti
 	</Layer>
 </TMS>
 ```
-- - -
-[Prev](DocControlMapDem.html) (Control maps and DEM files) | [Home](Home.html) | [Manual](DocMain.html) | (Working with Projects) [Next](DocWorkingWithProjects.html)
