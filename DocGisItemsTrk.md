@@ -1,4 +1,5 @@
-[Home](Home) | [Manual](DocMain)
+Prev () | [Home](Home.html) | [Manual](DocMain.html) | () Next
+- - -
 
 [TOC]
 
@@ -16,7 +17,7 @@ If you click on the highlighted track you get a short on-screen-summary and a fe
 2. On-screen Profile - See a track profile on the map screen and get track information close to the cursor.
 3. Delete the track
 4. Select Range - Select a range of track points to process.
-5. Change the position data of the track points. See  ["Edit items with multiple points (tracks, routes, areas)"](DocGisItemsEditMultiple) for more details.
+5. Change the position data of the track points. See  ["Edit items with multiple points (tracks, routes, areas)"](DocGisItemsEditMultiple.html) for more details.
 6. Reverse - Create a reverse copy of the track.
 7. Combine - Combine track with other tracks.
 8. Cut track - Cut the track into two tracks at the selected point.
@@ -29,13 +30,13 @@ If you click on the highlighted track you get a short on-screen-summary and a fe
 
 1. If you hoover the mouse over one of the graphs you will see some information about the point under the cursor
 2. This is the progress of the tour for the point under the mouse cursor
-3. The profile plot is the elevation over the distance. The red line is the elevation from the Digital Elevation Model (if data is available see [Basics about maps and DEM files](DocBasicsMapDem)) You can hide & show the plot by it's checkbox.
+3. The profile plot is the elevation over the distance. The red line is the elevation from the Digital Elevation Model (if data is available see [Basics about maps and DEM files](DocBasicsMapDem.html)) You can hide & show the plot by it's checkbox.
 4. The speed plot is the speed over the distance. You can hide & show the plot by it's checkbox.
 5. The progress plot is the distance over time. You can hide & show the plot by it's checkbox.
 6. You can select a track color from the combobox. The track will change it's color immediately.
 7. You can change the name simply by starting to type. The field will be marked as changed by turning red. If you press 'Return' the name is changed and the field will turn green.
-8. As mentioned in [Waypoints, Tracks & Co](DocGisItems) items are locked, when imported into QMapShack. If you change them all the same they are tainted, marked by the ink dot.
-9. As mentioned in [Waypoints, Tracks & Co](DocGisItems) items are locked, when imported into QMapShack. You can edit them all the same if you unlock them by pressing the lock button.
+8. As mentioned in [Waypoints, Tracks & Co](DocGisItems.html) items are locked, when imported into QMapShack. If you change them all the same they are tainted, marked by the ink dot.
+9. As mentioned in [Waypoints, Tracks & Co](DocGisItems.html) items are locked, when imported into QMapShack. You can edit them all the same if you unlock them by pressing the lock button.
 10. This is a complete list of all track points.
 11. The red dot in the track graph will show you the location of the point under the mouse cursor.
 12. This is the history list showing all changes applied to the track.
@@ -80,3 +81,5 @@ You can choose from the options:
 3. Create a new track as copy of the selected track points.
 
 Additionally you see some information about the selected range. If you click anywhere on the canvas you will abort the selection but stay in range selection mode for another selection.
+- - -
+Prev () | [Home](Home.html) | [Manual](DocMain.html) | () Next

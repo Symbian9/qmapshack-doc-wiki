@@ -1,3 +1,6 @@
+[Prev](BuildWindowsVisualStudio.html) (Compile Instructions for Windows) | [Home](Home.html) | [Manual](DocMain.html) | () Next
+- - -
+
 # HOWTO enable/disable source translations extraction #
 We now have the ability to choose when to update (extract) the
 translations from the sources files within CMake. It's controlled by the `UPDATE_TRANSLATIONS` CMake command line option. It defaults to `OFF`. Translations are always compiled (.ts to .qm)
@@ -35,3 +38,5 @@ GenericName=GPS device mapping utility
 ```
 * To translate it to other language change the `de` in the filename and in the file itself to the language code you are translating for.
 
+- - -
+[Prev](BuildWindowsVisualStudio.html) (Compile Instructions for Windows) | [Home](Home.html) | [Manual](DocMain.html) | () Next

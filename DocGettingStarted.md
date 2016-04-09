@@ -1,4 +1,5 @@
-[Home](Home) | [Manual](DocMain)
+[Prev](DocGetQMapShack.html) (Install QMapShack) | [Home](Home.html) | [Manual](DocMain.html) | (Command line parameters) [Next](DocCmdOptions.html)
+- - -
 
 [TOC]
 
@@ -36,8 +37,8 @@ to zoom.
 
 ![Alt text](images/DocGettingStarted/maproom4.png)
 
-To read more about maps see [_Basics about maps and DEM files_](DocBasicsMapDem) and
-[_Control maps and DEM files_](DocControlMapDem)
+To read more about maps see [_Basics about maps and DEM files_](DocBasicsMapDem.html) and
+[_Control maps and DEM files_](DocControlMapDem.html)
 
 ##Add digital elevation model
 
@@ -52,5 +53,7 @@ used. If it fails the next file is used. And so on. Consequently you place your 
 
 ![Alt text](images/DocGettingStarted/maproom6.png)
 
-To read more about DEM files see [_Basics about maps and DEM files_](DocBasicsMapDem) and
-[_Control maps and DEM files_](DocControlMapDem)
+To read more about DEM files see [_Basics about maps and DEM files_](DocBasicsMapDem.html) and
+[_Control maps and DEM files_](DocControlMapDem.html)
+- - -
+[Prev](DocGetQMapShack.html) (Install QMapShack) | [Home](Home.html) | [Manual](DocMain.html) | (Command line parameters) [Next](DocCmdOptions.html)

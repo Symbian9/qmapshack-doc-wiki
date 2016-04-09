@@ -1,4 +1,5 @@
-[Home](Home) | [Manual](DocMain)
+[Prev](DocInstallMapDem.html) (Install Maps & DEM Data) | [Home](Home.html) | [Manual](DocMain.html) | (Control maps and DEM files) [Next](DocControlMapDem.html)
+- - -
 
 [TOC]
 
@@ -89,7 +90,7 @@ Or satellite images:
 
 To use the map you download the XML file and rename it, let's say: _World_Topo.wmts_. Move the file into QMapShack's map path and you can use the map online.
 
-For some servers, the "capabilities" XML sheet may need some hand tuning (comparing with the above working ones from Arcgis may greatly help in fixing it). For example, there is some detailed info about French IGN WMTS server in the ["maps tips & tricks"](DocMapsTipsTricks) section.
+For some servers, the "capabilities" XML sheet may need some hand tuning (comparing with the above working ones from Arcgis may greatly help in fixing it). For example, there is some detailed info about French IGN WMTS server in the ["maps tips & tricks"](DocMapsTipsTricks.html) section.
 
 ## TMS Maps
 
@@ -180,3 +181,5 @@ Instead of a **<ServerUrl>** the layer has a **<Script>** tag with JavaScript co
 
 
 
+- - -
+[Prev](DocInstallMapDem.html) (Install Maps & DEM Data) | [Home](Home.html) | [Manual](DocMain.html) | (Control maps and DEM files) [Next](DocControlMapDem.html)

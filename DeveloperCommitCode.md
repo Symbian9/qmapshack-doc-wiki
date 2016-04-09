@@ -1,4 +1,5 @@
-[Home](Home) | [Manual](DocMain)
+[Prev](DocGisDevices.html) (GPS Devices) | [Home](Home.html) | [Manual](DocMain.html) | (Coding Guideline) [Next](DeveloperCodingGuideline.html)
+- - -
 
 # Commit Code #
 
@@ -12,3 +13,5 @@ BitBucket offers you to fork the QMapShack repository. By that you have your own
 
 This request will be reviewed. Maybe it needs a few fixes. Anyway, if the code has been reviewed and obviously does not break anything, it will be merged into the main repository. 
 
+- - -
+[Prev](DocGisDevices.html) (GPS Devices) | [Home](Home.html) | [Manual](DocMain.html) | (Coding Guideline) [Next](DeveloperCodingGuideline.html)

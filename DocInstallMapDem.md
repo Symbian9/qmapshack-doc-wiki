@@ -1,4 +1,5 @@
-[Home](Home) | [Manual](DocMain)
+[Prev](DocInstallMapDem.html) (Maps & Digital Elevation Model (DEM)) | [Home](Home.html) | [Manual](DocMain.html) | (Basics about maps and DEM files) [Next](DocBasicsMapDem.html)
+- - -
 
 [TOC]
 
@@ -35,7 +36,7 @@ Usually this kind of data is very large. And because it is large, it is split in
 
 When done you can reload the map or DEM list by a right click on the list. Choose ***Reload Maps*** or ***Reload DEM***. The new map should be listed. Don't forget: You have to activate a map if you want to see it (right click on the map entry in the list!).
 
-If you want to know more about the details of creating a \*.vrt file jump [here](DocBasicsMapDem#markdown-header-gdal-vrt-maps)
+If you want to know more about the details of creating a \*.vrt file jump [here](DocBasicsMapDem.html#gdal-vrt-maps)
 
 ---
 # Sources of Maps and DEM files
@@ -49,3 +50,5 @@ If you want to know more about the details of creating a \*.vrt file jump [here]
 * For Europe the EEA offers [DEM files with quite good resolution](http://www.eea.europa.eu/data-and-maps/data/eu-dem). 
 * For Austria you can download quite high detailed data [here](https://www.data.gv.at/katalog/dataset/d88a1246-9684-480b-a480-ff63286b35b7).
 
+- - -
+[Prev](DocInstallMapDem.html) (Maps & Digital Elevation Model (DEM)) | [Home](Home.html) | [Manual](DocMain.html) | (Basics about maps and DEM files) [Next](DocBasicsMapDem.html)

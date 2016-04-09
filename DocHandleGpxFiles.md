@@ -1,4 +1,5 @@
-[Home](Home) | [Manual](DocMain)
+[Prev](DocWorkingWithProjects.html) (Working with Projects) | [Home](Home.html) | [Manual](DocMain.html) | (Search Google) [Next](DocSearchGoogle.html)
+- - -
 
 [TOC]
 
@@ -35,3 +36,5 @@ If you expand the item you can see the elements like waypoints, tracks, routes a
 You can either save all files in the workspace via _Save All GIS Data_. Or you can save a single file by a right click on the item in the data view's workspace list.
 
 ![Alt text](images/DocHandleGpxFiles/maproom4.png)
+- - -
+[Prev](DocWorkingWithProjects.html) (Working with Projects) | [Home](Home.html) | [Manual](DocMain.html) | (Search Google) [Next](DocSearchGoogle.html)

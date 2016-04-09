@@ -1,4 +1,5 @@
-[Home](Home) | [Manual](DocMain)
+[Prev](DocSearchGoogle.html) (Search Google) | [Home](Home.html) | [Manual](DocMain.html) | (Create new tracks, waypoints etc.) [Next](DocGisItemsNew.html)
+- - -
 
 [TOC]
 
@@ -54,3 +55,5 @@ When saving the data to a QMS file the _History of Changes_ is stored completely
 
 
 
+- - -
+[Prev](DocSearchGoogle.html) (Search Google) | [Home](Home.html) | [Manual](DocMain.html) | (Create new tracks, waypoints etc.) [Next](DocGisItemsNew.html)

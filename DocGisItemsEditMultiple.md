@@ -1,4 +1,5 @@
-[Home](Home) | [Manual](DocMain)
+[Prev](DocGisItemsArea.html) (Areas) | [Home](Home.html) | [Manual](DocMain.html) | (Database) [Next](DocGisDatabase.html)
+- - -
 
 [TOC]
 
@@ -61,3 +62,5 @@ While in line edit mode all changes can be undone.
 |-|-|
 |![maproom2](images/DocGisItemsEditMultiple/Undo.png)| Undo last operation|
 |![maproom2](images/DocGisItemsEditMultiple/Redo.png)| Redo last operation|
+- - -
+[Prev](DocGisItemsArea.html) (Areas) | [Home](Home.html) | [Manual](DocMain.html) | (Database) [Next](DocGisDatabase.html)

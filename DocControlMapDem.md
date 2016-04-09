@@ -1,4 +1,5 @@
-[Home](Home) | [Manual](DocMain)
+[Prev](DocBasicsMapDem.html) (Basics about maps and DEM files) | [Home](Home.html) | [Manual](DocMain.html) | (Maps: Tips and Tricks) [Next](DocMapsTipsTricks.html)
+- - -
 
 [TOC]
 
@@ -93,3 +94,5 @@ _Hillshading_ (1) will overlay the map with a gray shaded relief. You can fine t
 ![Alt text](images/DocControlMapDem/maproom10.png)
 
 
+- - -
+[Prev](DocBasicsMapDem.html) (Basics about maps and DEM files) | [Home](Home.html) | [Manual](DocMain.html) | (Maps: Tips and Tricks) [Next](DocMapsTipsTricks.html)
