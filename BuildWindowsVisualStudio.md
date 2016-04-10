@@ -130,11 +130,22 @@ Note: you might have to install TortoiseHG or any other mercurial client
 Note: in case the redistributable files are already installed in your system, 
 this step is not necessary.
 
-### I2.) Copy all required files to intermediate directory
+### I2.) [Optional] Download libmysql.dll from mariadb
+  Download mariadb-10.1.11-winx64.zip (large file - ca 260MB) from 
+  https://downloads.mariadb.org/mariadb/10.1.11/ and extract libmysql.dll.
+  Or copy libmysql.dll from an existing QMS installation
+  This library is only needed at runtime for mysql/mariadb support
+  Note: If you don't doqnload/copy it, you have to comment out the respective 
+  lines in the copyfiles.bat / QMapShack_Installer.nsi scripts which are described 
+  in the next steps.
+
+### I3.) Copy all required files to intermediate directory
 -  Edit the file copyfiles.bat which you can find in \msvc_64 directory of 
   your QMS source directory and adapt the directories 
     - where you have installed Qt5
     - where your self compiled binaries of routino, GDAL and PROJ4 are 
+    - where the runtime libraries from mingw/msys are
+    - where the libmysql.dll is
     - Path to the build directory which you have specified in the CMake GUI
 -  Execute the copyfiles.bat 
 - The copyfiles.bat script will create a new directory "Files" which has 
@@ -147,7 +158,7 @@ this step is not necessary.
   double-click on Files/qmapshack.exe
   ==> QMapShack should start up and be fully operational without any restrictions
 
-### I3.) Create the installer with NSIS(3.0b1)
+### I4.) Create the installer with NSIS(3.0b1)
 - Run the QMapShack_Installer.nsi script e.g via right click on script file 
   and choosing "Compile NSIS Script" from contextual menu.
 
