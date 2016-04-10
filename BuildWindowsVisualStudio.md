@@ -135,8 +135,9 @@ this step is not necessary.
   https://downloads.mariadb.org/mariadb/10.1.11/ and extract libmysql.dll.
   Or copy libmysql.dll from an existing QMS installation
   This library is only needed at runtime for mysql/mariadb support
-  Note: If you don't doqnload/copy it, you have to comment out the respective 
-  lines in the copyfiles.bat / QMapShack_Installer.nsi scripts which are described 
+
+  Note: If you don't download/copy it, you have to comment out the respective 
+  lines in the copyfiles.bat and QMapShack_Installer.nsi scripts which are described 
   in the next steps.
 
 ### I3.) Copy all required files to intermediate directory
