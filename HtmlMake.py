@@ -41,7 +41,7 @@ print '<head>'
 print '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">'
 print '</head>'
 
-import markdown, sys
+import markdown, re, sys
 
 #
 # Check the argument,  and if there is none,  provide an  empty argument
@@ -49,22 +49,88 @@ import markdown, sys
 
 if len(sys.argv) == 1: sys.argv.extend([''])  # Default: standard input.
 
+from markdown.extensions    import Extension
+from markdown.preprocessors import Preprocessor
+
 #
-# Since Markdown's  "save_mode='...'" option  is  meanwhile  deprecated,
-# provide the following "EscapeHtml" extension which does the same thing
-# as "safe_mode='escape'" did:
+# Since references to local files in the various "*.md" source files are
+# required by Bitbucket  to have  NO  extension  but are required by any
+# browser to have an ".html" extension,  we use the following additional
+# Markdown preprocessor:
 
-from markdown.extensions import Extension
+class AddHtmlExt(Preprocessor):
+    def run(self, InLines):
+        OutLines  = []                    # To receive the output lines.
+        ReHash    = re.compile('#')  # Match start of header identifier.
 
-class EscapeHtml(Extension):
+        #
+        # Ignore URLs which refer  to a header identifier in the current
+        # file ("#..."), to a remote location ("http://" or "https://"),
+        # or which already contain an extension:
+
+        ReIgnore  = re.compile('[]][(](#|https?://|(.*/)?.+[.][^.]+(#|[)]))')
+        ReProtect = re.compile('[]]=[(]')                 # Match "]=(".
+        ReRPar    = re.compile('[)]')                # Match end of URL.
+
+        #
+        # In Markdown a URL is always  prefixed with  "]("  and suffixed
+        # with ")":
+
+        ReUrl     = re.compile('[]][(][^)]+[)]')
+
+        for line in InLines:
+            while True:
+                url = ReUrl.search(line)              # Locate next URL.
+
+                if not url: break                # No further URL found.
+
+                OldUrl = url.group()                # Fetch current URL.
+
+                if ReIgnore.match(OldUrl):
+                      NewUrl = OldUrl           # Don't change this URL.
+                elif ReHash.search(OldUrl):
+                      NewUrl = ReHash.sub('.html#', OldUrl, count=1)
+                else: NewUrl = ReRPar.sub('.html)', OldUrl, count=1)
+
+                #
+                # Replace the initial "](" with "]=("  to prevent match-
+                # ing here again:
+
+                line = ReUrl.sub(']=(' + NewUrl[2:], line, count=1)
+
+            #
+            # After having  processed all URLs  in this line,  again re-
+            # place "]=(" with "](" and output the line:
+
+            OutLines.append(ReProtect.sub('](',line))
+
+        return OutLines
+
+#
+# Define a Markdown extension which solves all our HTML problems:
+
+class FixHtml(Extension):
    def extendMarkdown(self, md, md_globals):
+
+       #
+       # Insert our own "AddHtmlExt" preprocessor  at the very beginning
+       # of ordered "md" dict "preprocessors":
+
+       md.preprocessors.add('add_html_ext',AddHtmlExt(md),'_begin')
+
+       #
+       # Since Markdown's "save_mode='...'" option  is meanwhile deprec-
+       # ated,  delete the following  three components  from the various
+       # "md" dicts  to achieve the same effect  as "safe_mode='escape'"
+       # formerly had:
+
        del md.inlinePatterns['entity']
        del md.inlinePatterns['html']
        del md.preprocessors['html_block']
 
 #
 # Pass the input file to Markdown with all necessary extensions enabled,
-# including our own "EscapeHtml" extension:
+# including our own "FixHtml" extension:
 
 markdown.markdownFromFile(extensions=['markdown.extensions.admonition',
                                       'markdown.extensions.codehilite',
@@ -74,7 +140,7 @@ markdown.markdownFromFile(extensions=['markdown.extensions.admonition',
                                       'markdown.extensions.smarty'    ,
                                       'markdown.extensions.toc'       ,
                                       'markdown.extensions.wikilinks' ,
-                                      EscapeHtml()
+                                      FixHtml()
                                      ],
                           extension_configs={'markdown.extensions.codehilite':
                                                 {'linenums':     'False',

@@ -114,9 +114,6 @@ B. Sanitizing the "*.md" files on the Bitbucket server
       - Ensure that all  URLs referencing  other files  in this wiki are
         local and do not point to Bitbucket.
 
-      - Ensure that all local URLs  end in an ".html" extension,  so the
-        browser can find them in the local file system.
-
       - Ensure that "#..." suffixes in URLs  refer to the correct header
         identifiers in the local files.
 

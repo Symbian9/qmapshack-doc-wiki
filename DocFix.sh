@@ -29,11 +29,6 @@
 #                                                    R Woitok 2016-03-04
 #
 ########################################################################
-#
-# This script will update the modification date of the source file spec-
-# ified, regardless  of whether or not any  real changes  were introduc-
-# ed.  But since a simple change of the modification date does not cause
-# Mercurial to regard a file as having changed, this is ok here:
 
 gawk '#
       # If the current input file is not "Home.md" and if its first line
@@ -67,46 +62,6 @@ gawk '#
         # URLs:
 
         sub("#markdown-header-","#")
-
-        #
-        # Add missing ".html" extensions to URLs pointing to local files
-        # (and since a line  in the source  file could  contain multiple
-        # URLs, from which a normal greedy regular expression would only
-        # process the last one,  we use a loop  searching for  "](", and
-        # apart from adding ".html" where necessary,  we also temporari-
-        # ly replace the string "](" with "]=(" to prevent if from being
-        # processed again):
-
-        while ( match($0,"^(.*)[]][(]([^)]*)([)].*)$",m) ) {
-
-           #
-           # Leave the URL as is, if it refers to a header identifier in
-           # the current file,  to a remote  location,  or if it already
-           # contains an extension:
-
-           if ( m[2] ~ "^(#|https?://)" || m[2] ~ "^(.*/)?.+[.][^.]+$" \
-              ) $0 = m[1] "]=(" m[2] m[3]
-
-           #
-           # If the URL  refers to a header identifier  in another local
-           # file, insert the missing  ".html" extension immediately be-
-           # fore the header identifier:
-
-           else if ( match(m[2],"^(.+)(#.*)$",mm)                      \
-                   ) $0 = m[1] "]=(" mm[1] ".html" mm[2] m[3]
-
-                #
-                # Otherwise append the missing  ".html" extension to the
-                # local file name:
-
-                else $0 = m[1] "]=("  m[2] ".html"       m[3]
-                                                           }
-
-        #
-        # When a line  is processed completely,  again remove  the equal
-        # signs squeezed between the square brackets and parentheses:
-
-        gsub("[]]=[(]","](")
 
         print        # Finally output the possibly modified source line.
       }' "$1" > "$1.out" &&

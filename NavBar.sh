@@ -39,14 +39,14 @@
 #
 ########################################################################
 
-gawk -v "toc=${1%.*}.html" '
+gawk -v "toc=${1%.*}" '
      #
      # Define a function  which takes the  current "*.md"  input file as
      # argument and which  creates the Markdown code  for the navigation
      # bar from the information stored in arrays "p[]" and "n[]":
 
      function nav(file) {  
-        sub("[.]md$",".html",file)          # Provide correct extension.
+        sub("[.]md$","",file)              # Remove the ".md" extension.
 
         #
         # Provide information for previous file:
@@ -64,14 +64,14 @@ gawk -v "toc=${1%.*}.html" '
                        }
         else             nx = "() Next"         # Non-clickable element.
 
-        printf "%s | [Home](Home.html) | [Manual](%s) | %s\n", pr, toc, nx
+        printf "%s | [Home](Home) | [Manual](%s) | %s\n", pr, toc, nx
                         }                       # End of function "nav".
 
      #
      # Extract the sequence of documents mentioned  in the table of con-
      # tents source file  and initialize  arrays  "p[]"  (previous), and
-     # "n[]" (next)  from this  information  (both arrays  take "*.html"
-     # file names as indices):
+     # "n[]" (next)  from this information  (both arrays take file names
+     # without extensions as indices):
 
      C                                  { #
                                           # Skip lines which do not dir-
@@ -142,7 +142,7 @@ gawk -v "toc=${1%.*}.html" '
                                           print "- - -"
                                           nav(FILENAME)
                                         }
-                           ' C=1 "$1" C= "$2" > "$2.out" &&
+                      ' C=1 "$1" C= "$2" > "$2.out" &&
 
 if cmp  -s "$2" "$2.out"                          # File did not change,
 then rm -f      "$2.out"                        # so remove output file.
