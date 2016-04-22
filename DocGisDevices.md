@@ -32,7 +32,7 @@ The context menu for items on devices is working, too. However with a limited ra
 
 The context menu for the projects is working, too. Note that _Close_ is replaced _Delete_. This will delete the project from your device's memory.
 
-#Remark about Garmin GPSmap 60CSx and similar devices
+# Remark about Garmin GPSmap 60CSx and similar devices
 
 If the following _GarminDevice.xml_ file is copied to the _Garmin_ folder of the SD memory card
 then the tracks written by the device on its memory card are shown in QMapShack as described above.

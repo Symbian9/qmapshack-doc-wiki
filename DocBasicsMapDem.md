@@ -4,7 +4,7 @@
 [TOC]
 
 ---
-#Basic knowledge about maps and DEM files
+# Basic knowledge about maps and DEM files
 
 QMapShack supports the following map formats:
 

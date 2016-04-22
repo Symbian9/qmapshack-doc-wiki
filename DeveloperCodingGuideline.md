@@ -1,7 +1,7 @@
 [Prev](DeveloperCommitCode) (Commit Code) | [Home](Home) | [Manual](DocMain) | (Compile Instructions for Windows) [Next](BuildWindowsVisualStudio)
 - - -
 
-#Coding Guideline
+# Coding Guideline
 
 No one likes them but it helps to read and maintain the code. Thus please stick to them:
 

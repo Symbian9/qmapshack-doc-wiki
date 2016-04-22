@@ -1,7 +1,7 @@
 Prev () | [Home](Home) | [Manual](DocMain) | (Install QMapShack) [Next](DocGetQMapShack)
 - - -
 
-#QMapShack Manual
+# QMapShack Manual
 
 ![start](images/maproom1.png)
 
@@ -10,7 +10,7 @@ always reflect just a snapshot of the current state. Screenshots seen in this ma
 not reflect the current appearance of the program. The manual will be updated if there are 
 large changes to the GUI. However smaller changes will be ignored. 
 
-##User
+## User
 
 * [Install QMapShack](DocGetQMapShack)
 * [Getting started](DocGettingStarted)
@@ -37,7 +37,7 @@ large changes to the GUI. However smaller changes will be ignored.
     * ['Lost & Found' Folder](DocGisDatabaseLostFound)
 * [GPS Devices](DocGisDevices)
 
-##Developer & Translators
+## Developer & Translators
 
 * [Commit Code](DeveloperCommitCode)
 * [Coding Guideline](DeveloperCodingGuideline)

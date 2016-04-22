@@ -91,12 +91,12 @@ Unfortunately, unlike other WMTS servers, this capabilities file does not direct
 Note that this file was working as of September 22, 2015 but may stop working in the future in case IGN changes its WMTS server configuration.
 
 ---
-##Contour lines
+## Contour lines
 There are two ways to add a transparent contour line layer to your map view:
 
 - vector map in Garmin IMG format
 - raster map with transparent contour line tiles 
-###Vector map in Garmin IMG format
+### Vector map in Garmin IMG format
 Some maps for Garmin devices provide a separate img file with contour lines. Add this file to your QMS map directory and you can use it as contour line overlay in map views. 
 
 Sources for vector contour line maps:
@@ -105,7 +105,7 @@ Sources for vector contour line maps:
 - [BBBike](http://extract.bbbike.org/?lang=en): allows to create a contour line file for a custom area. 
 - [Velomap](https://www.velomap.org): download the .exe file and chose "install a separate contour lines only map" during the installation process.
 
-###Raster contour line layer
+### Raster contour line layer
 Some TMS tile servers provide contour line only layers. To use such a layer in QMS, add a *.tms file to your map directory. 
 
 Sample TMS file for the contour line layer from [OpenSnowMap](http://www.opensnowmap.org):
@@ -132,7 +132,7 @@ Other sources for transparent contour line tiles:
 ```<ServerUrl>http://129.206.74.245:8006/tms_il.ashx?x=%2&amp;y=%3&amp;z=%1</ServerUrl>```
 
 ---
-##Using openmtbmap.org & velomap.org in QMapShack (Linux only)
+## Using openmtbmap.org & velomap.org in QMapShack (Linux only)
 In order to use openmtbmap.org or velomap.org maps within QMapShack you first need to create a gmapsupp.img from the map tiles. 
 For Windows user, there is an integrated batchfile, which will do all necessary steps; so this tutorial is for Linux users. More information you may find [here](https://openmtbmap.org/de/tutorials/mkgmap/).
 
@@ -169,7 +169,7 @@ Links (with further information and some tutorials):
 * [velomap.org](https://velomap.org/)
 * [Mkgmap](http://www.mkgmap.org.uk/)
 
-###Script
+### Script
 
 If you want to update your maps regularly you might consider using the script below.
 The script requires the following tools to be installed:
@@ -178,7 +178,7 @@ The script requires the following tools to be installed:
  * `7z` (extraction)
  * `mkgmap` (creation of gmapsupp.img)
 
-####Configuration
+#### Configuration
 
 The script below is configured to download the OpenMTBMap for bavaria, convert it to `OpenMTBMap_<date>.img` using traddby.TYP and move it to `~/.qmapshack_maps/`.
 

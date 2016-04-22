@@ -3,7 +3,7 @@
 
 [TOC]
 
-#Getting started
+# Getting started
 
 This is what you get on the first start-up. 
 
@@ -15,7 +15,7 @@ All windows around the map workspace are docking windows. In other words you can
 
 On first start-up you will see an empty workspace and empty lists for maps and elevation data.
 
-##Add maps
+## Add maps
 
 For the impatient ones: There is big button to install a few online map. 
 
@@ -40,7 +40,7 @@ to zoom.
 To read more about maps see [_Basics about maps and DEM files_](DocBasicsMapDem) and
 [_Control maps and DEM files_](DocControlMapDem)
 
-##Add digital elevation model
+## Add digital elevation model
 
 If you want to know the elevation at the mouse cursor's position or you want to overlay some hill shading you need Digital Elevation Model (DEM) data.
 

@@ -1,7 +1,7 @@
 Prev () | [Home](Home) | [Manual](DocMain) | () Next
 - - -
 
-#Code Structure
+# Code Structure
 
 On the QLandkarte the flat source tree became a problem with an increasing number of files. With QMapShack I started a complex source tree with folders. By that you can deflate folders of no interest in your IDE. I hope the code will be less intimidating to new developers by that.
 
