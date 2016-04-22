@@ -1,4 +1,5 @@
-[Home](Home) | [Manual](DocMain)
+Prev () | [Home](Home) | [Manual](DocMain) | () Next
+- - -
 
 [TOC]
 
@@ -80,3 +81,5 @@ You can choose from the options:
 3. Create a new track as copy of the selected track points.
 
 Additionally you see some information about the selected range. If you click anywhere on the canvas you will abort the selection but stay in range selection mode for another selection.
+- - -
+Prev () | [Home](Home) | [Manual](DocMain) | () Next

@@ -1,4 +1,5 @@
-[Home](Home) | [Manual](DocMain)
+[Prev](DocGisItemsWpt) (Waypoints) | [Home](Home) | [Manual](DocMain) | (Edit items with multiple points (tracks, routes, areas)) [Next](DocGisItemsEditMultiple)
+- - -
 
 [TOC]
 
@@ -31,3 +32,5 @@ If you click on the highlighted area you get a short on-screen-summary and a few
 7. Add a comment or a description by clicking on the highlighted string. 
 8. The coordinates of the area (read only)
 9. This is the history list showing all changes applied to the area.
+- - -
+[Prev](DocGisItemsWpt) (Waypoints) | [Home](Home) | [Manual](DocMain) | (Edit items with multiple points (tracks, routes, areas)) [Next](DocGisItemsEditMultiple)

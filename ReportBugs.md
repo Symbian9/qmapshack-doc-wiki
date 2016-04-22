@@ -1,3 +1,6 @@
+Prev () | [Home](Home) | [Manual](DocMain) | () Next
+- - -
+
 # Reporting Bugs
 
 If you have found a bug file a bug report on the [Issues page](https://bitbucket.org/maproom/qmapshack/issues?status=new&status=open).
@@ -12,7 +15,7 @@ Make sure to include the all the information listed below.
  3. A **detailed report** about what is broken
  4. A **list of steps** required **for reproduction**
  5. Further information (depending on issue; these are examples):
-    1. *application crash*: [A backtrace (if you are on Linux)](https://bitbucket.org/maproom/qmapshack/wiki/TroubleShooting#markdown-header-create-a-backtrace-of-a-crash-on-linux)
+    1. *application crash*: [A backtrace (if you are on Linux)](TroubleShooting#create-a-backtrace-of-a-crash-on-linux)
     2. *incorrect displaying*: A screenshot
     3. *failed loading of a file*: The file you tried to load**¹**
     4. *"strange" behaviour*: Describe the behavior you expected
@@ -43,3 +46,5 @@ Make sure to include the all the information listed below.
 ---
 
 **¹** Some files may contain sensitive data you do not want to share with the world (for instance, .gpx can contain your heart rate and home location).
+- - -
+Prev () | [Home](Home) | [Manual](DocMain) | () Next

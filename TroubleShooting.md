@@ -1,3 +1,6 @@
+Prev () | [Home](Home) | [Manual](DocMain) | () Next
+- - -
+
 [TOC]
 
 # Troubleshooting
@@ -14,7 +17,7 @@ That log file may give additional insight to the root cause.
 
 If QMapShack crashes on Linux the best you can do to help development is to send a backtrace. A backtrace is a log of the last code lines executed before the crash. Usually this contains enough hints to fix the problem fast.
 
-To create a backtrace you have to compile QMapShack as debug version yourself. Have a look at [the getting started chapter of the wiki](https://bitbucket.org/maproom/qmapshack/wiki/DocGetQMapShack) for basic instructions. 
+To create a backtrace you have to compile QMapShack as debug version yourself. Have a look at [the getting started chapter of the wiki](DocGetQMapShack) for basic instructions. 
 
 When you do the step:
 
@@ -93,3 +96,5 @@ Some raster map formats (e.g. wavelet based) are not supported by the default
 GDAL installation. The reasons may be various (licences, dependencies, ...).
 A possible workaround is the same as to add curl support: use the GDAL binaries 
 from [gisinternals](http://gisinternals.com/).
+- - -
+Prev () | [Home](Home) | [Manual](DocMain) | () Next

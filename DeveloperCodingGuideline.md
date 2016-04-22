@@ -1,4 +1,5 @@
-[Home](Home) | [Manual](DocMain)
+[Prev](DeveloperCommitCode) (Commit Code) | [Home](Home) | [Manual](DocMain) | (Compile Instructions for Windows) [Next](BuildWindowsVisualStudio)
+- - -
 
 #Coding Guideline
 
@@ -85,3 +86,5 @@ I think that's it. Just look at the code and try to mimic the coding style as go
 
 
 
+- - -
+[Prev](DeveloperCommitCode) (Commit Code) | [Home](Home) | [Manual](DocMain) | (Compile Instructions for Windows) [Next](BuildWindowsVisualStudio)

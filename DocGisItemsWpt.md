@@ -1,4 +1,5 @@
-[Home](Home) | [Manual](DocMain)
+[Prev](DocGisItemsRte) (Routes) | [Home](Home) | [Manual](DocMain) | (Areas) [Next](DocGisItemsArea)
+- - -
 
 [TOC]
 
@@ -15,12 +16,12 @@ If you click on the highlighted waypoint you get a short on-screen-summary and a
 
 |   |   |   |
 |---|---|---|
-| ![Edit/Details](images/DocGisItemsWpt/EditDetails.png) | Edit/Show Details | [Show details of the waypoint and edit attached data.](#markdown-header-view-edit-details)   |
+| ![Edit/Details](images/DocGisItemsWpt/EditDetails.png) | Edit/Show Details | [Show details of the waypoint and edit attached data.](#view-edit-details)   |
 | ![Copy](images/DocGisItemsWpt/Copy.png)                | Copy              | Copy the waypoint into another project. |
 | ![Delete](images/DocGisItemsWpt/DeleteOne.png)         | Delete            | Delete the waypoint. This also deletes data associated with the waypoint, such as photos. |
 | ![Show Bubble](images/DocGisItemsWpt/Bubble.png)       | Show Bubble       | When enabled, the waypoint's content is shown as a static bubble. |
-| ![Move](images/DocGisItemsWpt/WptMove.png)             | Move              | [Move the waypoint to another location.](#markdown-header-move-waypoint) |
-| ![Project](images/DocGisItemsWpt/WptProj.png)          | Project           | [Project the waypoint - This is copying the waypoint and to move to copy a given distance and bearing](#markdown-header-project-waypoint) |
+| ![Move](images/DocGisItemsWpt/WptMove.png)             | Move              | [Move the waypoint to another location.](#move-waypoint) |
+| ![Project](images/DocGisItemsWpt/WptProj.png)          | Project           | [Project the waypoint - This is copying the waypoint and to move to copy a given distance and bearing](#project-waypoint) |
 
 
 ## ![EditDetails](images/DocGisItemsWpt/EditDetails.png) View / Edit Details
@@ -68,3 +69,5 @@ Different to moving the waypoint this will create a clone of the waypoint. You h
 
 ![Project Waypoint](images/DocGisItemsWpt/Projection.png)
 
+- - -
+[Prev](DocGisItemsRte) (Routes) | [Home](Home) | [Manual](DocMain) | (Areas) [Next](DocGisItemsArea)

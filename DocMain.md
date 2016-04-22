@@ -1,4 +1,5 @@
-[Home](Home)
+Prev () | [Home](Home) | [Manual](DocMain) | (Install QMapShack) [Next](DocGetQMapShack)
+- - -
 
 #QMapShack Manual
 
@@ -43,3 +44,5 @@ large changes to the GUI. However smaller changes will be ignored.
 * [Compile Instructions for Windows](BuildWindowsVisualStudio)
 * [Add translations](DeveloperTranslate)
 
+- - -
+Prev () | [Home](Home) | [Manual](DocMain) | (Install QMapShack) [Next](DocGetQMapShack)

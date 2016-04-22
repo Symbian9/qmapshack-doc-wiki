@@ -1,4 +1,5 @@
-[Home](Home) | [Manual](DocMain)
+[Prev](DocGisItems) (Tracks, Waypoints & Co) | [Home](Home) | [Manual](DocMain) | (Tracks) [Next](DocGisItemsTrk2)
+- - -
 
 [TOC]
 
@@ -35,3 +36,5 @@ If you select a track as new element the mouse position will be taken as first t
 ## Area
 
 If you select an area as new element the mouse position will be taken as first point and the mouse cursor will enter the line edit mode. See  ["Edit items with multiple points (tracks, routes, areas)"](DocGisItemsEditMultiple) for more details.
+- - -
+[Prev](DocGisItems) (Tracks, Waypoints & Co) | [Home](Home) | [Manual](DocMain) | (Tracks) [Next](DocGisItemsTrk2)

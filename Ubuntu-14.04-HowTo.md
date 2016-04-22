@@ -1,3 +1,6 @@
+Prev () | [Home](Home) | [Manual](DocMain) | () Next
+- - -
+
 In particular Ubuntu 14.04 needs cmake 3 and Qt 5.4
 
 
@@ -33,7 +36,7 @@ sudo make install
 ```
 source /opt/qt54/bin/qt54-env.sh
 ```
-[go on with the build instructions](https://bitbucket.org/maproom/qmapshack/wiki/DocGetQMapShack#markdown-header-linux)
+[go on with the build instructions](DocGetQMapShack#linux)
 
 
 # Running the software:
@@ -43,3 +46,5 @@ qmapshack
 ```
 
 Maybe there is a better way to use Qt 5.4
+- - -
+Prev () | [Home](Home) | [Manual](DocMain) | () Next

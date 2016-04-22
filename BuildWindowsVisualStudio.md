@@ -1,3 +1,6 @@
+[Prev](DeveloperCodingGuideline) (Coding Guideline) | [Home](Home) | [Manual](DocMain) | (Add translations) [Next](DeveloperTranslate)
+- - -
+
 # Compiling and Building QMapShack for Windows
 
 ## Foreword
@@ -112,7 +115,7 @@ Note: you might have to install TortoiseHG or any other mercurial client
     - In the first run there will be errors. 
     - Now enter the directories where you have installed Qt5, GDAL, 
       PROJ.4, routino to the respective variables.
-    - Only change the UPDATE_TRANSLATIONS option in you know what you are doing. See the [DeveloperTranslate Wiki page](https://bitbucket.org/maproom/qmapshack/wiki/DeveloperTranslate) for details.
+    - Only change the UPDATE_TRANSLATIONS option in you know what you are doing. See the [DeveloperTranslate Wiki page](DeveloperTranslate) for details.
     - After that, Configure again.
     - Note: in case that you only get some warnings, you anyway can try to GENERATE
 - Generate
@@ -168,7 +171,7 @@ commandline version(makensis.exe).
 Or you can start windows version (makensisw.exe) to run the script.
 
 ## TroubleShooting
-If QMapShack does not behave as you expect, please have a look at the [TroubleShooting Wiki Page](https://bitbucket.org/maproom/qmapshack/wiki/TroubleShooting). If this does not help you to understand the problem, you can try to dig deeper by debugging as described in the next section.
+If QMapShack does not behave as you expect, please have a look at the [TroubleShooting Wiki Page](TroubleShooting). If this does not help you to understand the problem, you can try to dig deeper by debugging as described in the next section.
 
   
 ## Debugging with VS2013
@@ -219,3 +222,5 @@ not .dll's + all directories)
 ### D5.) Run/Debug 
 Congratulations: all preparations finished.
 Now you can _really_ start debugging!
+- - -
+[Prev](DeveloperCodingGuideline) (Coding Guideline) | [Home](Home) | [Manual](DocMain) | (Add translations) [Next](DeveloperTranslate)
