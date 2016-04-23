@@ -39,17 +39,14 @@ gawk '#
 
       ++i == 1 && FILENAME != "Home.md" && \
       ! /^([[](Home|Prev)[]]|Prev [(][)])/ {
-          printf "[Home](Home.html)\n\n"
+          printf "[Home](Home)\n\n"
                                            }
 
       { #
         # In the reference to the "Ubuntu*" file  use its new blank free
-        # name (and because the name  without the extension already con-
-        # tains a dot  which would be missinterpreted in the rule adding
-        # missing ".html" extensions, explicitly add the ".html" extens-
-        # ion manually):
+        # name:
 
-        sub("[]][(][^)]*Ubuntu[^)]*[)]","](Ubuntu-14.04-HowTo.html)")
+        sub("[]][(][^)]*Ubuntu[^)]*[)]","](Ubuntu-14.04-HowTo)")
 
         #
         # Replace URLs  pointing into the  documentation wiki  with URLs
