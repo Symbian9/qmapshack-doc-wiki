@@ -6,7 +6,7 @@
 ---
 # Install Maps & DEM
 
-Sorry for not being a commercial software, that provides ready made map and DEM packages with an installer. The project does not have the financial resources to provide that kind of stuff. However we think it's really simple to install maps & DEM after you have read this.
+Sorry this is not a commercial software, that provides ready made map and DEM packages with an installer. The project does not have the financial resources to provide that kind of stuff. However we think it's really simple to install maps & DEM after you have read this.
 
 ## Organization of Maps & DEM
 
