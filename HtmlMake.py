@@ -37,9 +37,9 @@
 # ape the angle brackets in our own extension below, the following three
 # lines MUST NOT be piped to "Markdown"):
 
-print '<head>'
-print '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">'
-print '</head>'
+print('<head>')
+print('<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">')
+print('</head>')
 
 import markdown, re, sys
 
