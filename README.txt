@@ -36,10 +36,10 @@ A. Creating the "*.html" files locally on your computer
            your shell resides  in some other place,  simply edit scripts
            "DocFix.sh" and "NavBar.sh" accordingly).
 
-         - GNU "gawk".   Both scripts,  "DocFix.sh" and "NavBar.sh", use
-           some "gawk" spcific features, like a function "match()" which
-           takes three arguments, function "gensub()", and perhaps a few
-           others.
+         - GNU "gawk".   Both scripts, "DocFix.sh"  and "NavBar.sh", use
+           some "gawk" specific  features,  like function  "gensub()", a
+           function "match()" which takes three arguments, and perhaps a
+           few others.
 
          - GNU "make".  The makefile provided uses "simply expanded var-
            iables" (defined via "::=", as introduced by the Posix stand-
