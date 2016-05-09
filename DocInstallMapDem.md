@@ -6,7 +6,7 @@
 ---
 # Install Maps & DEM
 
-Sorry this is not a commercial software, that provides ready made map and DEM packages with an installer. The project does not have the financial resources to provide that kind of stuff. However we think it's really simple to install maps & DEM after you have read this.
+QMapShack is not a commercial software, providing installable, ready made maps and DEM packages. The project does not have the man power and financial resources to provide that kind of stuff. However we think it's really simple to install maps & DEM after you have read this.
 
 ## Organization of Maps & DEM
 
