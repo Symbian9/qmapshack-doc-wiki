@@ -19,6 +19,13 @@ For all these questions you can get in touch with development.
 * The QLandkarte GT [mailing list](https://lists.sourceforge.net/lists/listinfo/qlandkartegt-users) and it's [archive](http://news.gmane.org/gmane.comp.gis.qlandkartegt.user)
 * IRC freenode, channel [#qlandkarte](http://webchat.freenode.net/?channels=#qlandkarte)
 
+## Unsupported Systems:
+Due to limited resources a few operating system versions are not supported:
+
+* Linux 32bit versions
+* Windows 32bit versions
+* OS X < 10.8
+
 ## Features
 
 Maps:
