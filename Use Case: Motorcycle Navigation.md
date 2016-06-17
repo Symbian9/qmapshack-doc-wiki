@@ -21,11 +21,26 @@ For sake of example, let me report some encounters of my last tour I pre-planned
 
 Some supplemental waypoints I added to "nail down" a route to my desires where some dozen meters beneath the road. If you realize it during driving, you have to pass it by and then manually call "skip route point" to avoid your satnav insisting on "turn back". Not nice during driving curvy roads. 
 
+![wiki-fl.jpg](https://bitbucket.org/repo/L5qerE/images/2580338973-wiki-fl.jpg)
+
 If you do not realize it, you enter some residential area or some higway junction just be told that you can turn now: Have been there, have done that. So, carefully adjusting your "trip nails" is tantamount.
 
-* One road that was both included by QMapShack backend routino and by Garmins nüvi I found decorated by the infamous "closed for cars and motorcycles". Pretending to be nice guy, I passed by and fund myself on a Highway that led me to miss one of the most interesting pieces of the journey I planned. Presumably there hat been an alternative to my sceny track, but you won't find that in heavy traffic when you are just entering a higwhay, unprotected between 40-ton-trucks. Nice reason to ride there again :-) . After the trip is before the trip. 
+![wiki-kc.jpg](https://bitbucket.org/repo/L5qerE/images/1500573576-wiki-kc.jpg)
+![wiki-bf.jpg](https://bitbucket.org/repo/L5qerE/images/3741804599-wiki-bf.jpg)
 
-* On another junction, my eyes found a sideway that promised an even more sceny trip than the one that I had planned before. Great - just turne and enjoy the nüvis functionality to reroute me back to my preplanned tour on other curvy roads. This nice deviation is registered in my track log and avialable for future planning.
+One road that was both included by QMapShack backend routino and by Garmins zumo I found decorated by the infamous "closed for cars and motorcycles". Pretending to be the nice guy, I passed by and found myself on a highway that led me to miss one of the most interesting peces of river valley in the journey I'd planned. Presumably there had been an alternative to my sceny track back (yellow road), but you won't find that in heavy traffic when you are just entering a higwhay, unprotected between 40-ton-trucks. Never mind: nice reason to ride there again :-) . After the trip is before the trip. (The preplanned route is blue with arrows, the recorded track is shown in magenta)
+
+![wiki-or.jpg](https://bitbucket.org/repo/L5qerE/images/2715376200-wiki-or.jpg)
+
+At some other junction, my eyes found a sideway that promised an even more scenic trip into the mountains than the river valley that I had planned with my eyes on the map only. Great - just turn and enjoy the nüvis functionality to reroute me back to my preplanned tour on other curvy roads. This nice deviation is registered in my track log and avialable for future planning.
+
+![wiki-lk.jpg](https://bitbucket.org/repo/L5qerE/images/1078212255-wiki-lk.jpg)
+
+When you use differend maps and/or different routing engines and/or different routing prefernces, your plan in the workstation might nevertheless show differences from the one your satnav displays on the trip:
+
+![wiki-sk.jpg](https://bitbucket.org/repo/L5qerE/images/3193648309-wiki-sk.jpg)
+![wiki-eg.jpg](https://bitbucket.org/repo/L5qerE/images/2078719396-wiki-eg.jpg)
+
 
 ## Working with QMapShack ##
 ### Configuring maps, DEM and routino ###
