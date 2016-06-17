@@ -50,20 +50,33 @@ This is where you learn to appreciate the "prefer curvy roads" option of the zü
 #Why QMapShack?#
 
 ##Glimpse on the GIS software Field##
+This is not a thourgh overview if GIS software for linux, just may personal experience.
+Being farmer by profession, I have used qgis since about 5 years now to assist the ever growing documentation needs of work in the field. I have a samll **BT747 GPS logger** I can carry with me on the tractor. At home, I can import the tracks into qgis and find the partition of my fields for different crops. While I'd consider qgis much more elaborate and mature than QMApShak, it is in many cases much more tedius, overcrowded, and slow. Hoewever, when it comes to 2-D geospatial objects aka areas, QMS appears to me far behind qgis.
 
-##FEatures of QMS I learned to appreciate##
-Really fast performance when zooiming in and out
+Maintaining a collection of trip records may become a source of chaos over time.
+A Tool for a quick preview of shape and location of track might be of great assistance for sorting.
+On my old SuSE 11 workstation, misused *josm* - the OSM map edit tool - for this purpose. While it is quite slow due to its java architecture and a lot features if which I do not even know the purpose, It was still faster as the qgis track conversion procedure. I used it for opening tracks on a OSM or Satellite image bakground - just to get an Idea what is in the track when organizing them.
+
+On my debian, I found *marble* as a much better tool for fast preview of tracks (and other GPS data) files. It is even preregistered as standard application for gpx filed and fires up within seconds. While in some instances targeting similiar use cases as QMapShack, I did not dig deeper into it. Well - I had preplanned a tour using the address search capability I was (then) still missing in QMapShack. I had to find out that it can only export some nasty kml-format, which even gpsbabel was not able to properly transform into gpx. One nice feature might come handy again: It looks like marble can integrate a live GPS receiver device and thus keep a map view centered at the current position. More on this on "further plans". 
+
+Garmin, one of the major satnav device manufacturers, offers a product called *"BaseCamp"*. As the name suggests, it is targeted precisely to planing and replanning trips which are assisted by one of its devices "out there in the wild". Of course, it offers a good integration with its own satnav gadgets. The main disadvantage for me: it only runs on WIN$. Becoming fed up with WIN$ in the times of WIN2k, I use Linux as main OS for more than a decade now.
+
+Searching for "BaseCamp wine", I found reports of bad experience - and a pointer to *QLandkarteGT*, and from the last ones web page a Pointer to its successor QMapShack. So I started to explore QMapShack considering as the open surce / linux alternative to Garmins BaseCamp.
+
+
+##FEatures of QMapShack I learned to appreciate##
+* Really fast performance when zooiming in and out
 even with multiple maps
-DEM, Topo mapsm bicycle maps, Sat images for estimation the "scenicity" of a tour
-Offline OSM and offline DEM
-Offline router routino
-possibilty to build all on a single data source OSM
+* DEM, Topo mapsm bicycle maps, Sat images for estimation the "scenicity" of a tour
+* Offline OSM and offline DEM
+* Offline router routino
+* possibilty to build all on a single data source OSM
 (well, there may be some time lags if we used prefabricated sources as recommended in Manual
 
-Routing
-GPX import and export (havent yet tested ohter formats)
-Handle many GPX projects simultaneously
-GArmin device integration
+* Routing
+* GPX import and export (havent yet tested ohter formats)
+* Handle many GPX projects simultaneously
+* workable GArmin device integration (no access to test other brands)
 
 ## downsides##
 To me, QMapShack appears to be a project of rapid devlopment. Why this is good news if it comes to features and quality we can expect, we see that documentation does not catch up. For example, recently I asked in QMS issue list for some functionality that might resemble some basic route plannig features, as (still to be) described below. Surprise: route planning support is available and works fine, but simply is not yet documented. I agree, another candidate for my ToDo list.
@@ -74,6 +87,35 @@ Look, feel and features may severly change in future relases. I would not dare t
 
 However
 
+.... route point labels missing ????....
+well this happened on the nüvi with BaseCamp as well 
+maybe the problem is located between chair and keyboard?
+
+
+#Geopatial data#
+
+
+
+##Geospatial entities: Tracks, Routes, Waypoints##
+
+##Some Words on data formats##
+
+### sources of track data ###
+
+breadcrumb
+
+I have a bunch of GPS mice laying around from a 
+NMEA ... collection with a raspi ... gpsbabel -> gpx 
+Logger
+Mobile apps (most mobiles have built in GPS -
+reportedly bad accuracy - no systematic tests yet
+
+Import from other route planners, 
+Trips from Friends
+
+
+
+
 
 # Working with QMapShack #
 ## Installation ##
@@ -81,9 +123,7 @@ However
 ### Configuring maps, DEM and routino ###
 ### Configuring maps, DEM and routino ###
 
-##Geospatial entities: Tracks, Routes, Waypoints##
 
-##Some Words on data formats##
 
 ### Planning routes ###
 ### Importing tracks ###
