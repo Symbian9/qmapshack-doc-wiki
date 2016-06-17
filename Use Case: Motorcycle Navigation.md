@@ -1,6 +1,6 @@
 # This is just a stub / test dummy and not yet ready for public linkage. #
 
-# Peculiarities of Motorcycle navigation #
+# Peculiarities of Motorcycle Navigation #
 
 As it appears, motorcycle navigation demands some special requirements, so that all those major manufacturers of satnav navigation devices even offer special prouduct series. Beyond ruggedized design and glove optimized handling, there are special features like navigating along tracks, preference for curvy roads or skipping of intermediary route points.
 
@@ -19,11 +19,11 @@ The common trick to force your satnav device to stick to your preplanned route i
 For sake of example, let me report some encounters of my last tour I pre-planned with QMapShack and engaged with the route downloaded to a Garmin zumo 390LM (one of those dedicated motorcycle satnav gadgets).
 
 
-Some supplemental waypoints I added to "nail down" a route to my desires where some dozen meters beneath the road. If you realize it during driving, you have to pass it by and then manually call "skip route point" (a feature I desperately missed on my car satnav I used before) to avoid your satnav insisting to "turn back". Not nice during when driving curvy roads, but better than a complete loss of navigation assistance.
+Some supplemental waypoints I added to "nail down" a route to my desires where some dozen meters beneath the road. If you realize it during driving, you have to pass it by and then manually call "skip route point" (a feature I desperately missed on my car satnav I used before) to avoid your satnav insisting to "turn back". Not nice during driving curvy roads, but still better than a complete loss of navigation assistance.
 
 ![wiki-fl.jpg](https://bitbucket.org/repo/L5qerE/images/2580338973-wiki-fl.jpg)
 
-If you do not realize it, you enter some residential area or some higway junction just be told that you can turn now: *Have been there, have done that* :-((( . So, carefully adjusting your "trip nails" close to your route is tantamount. 
+If you do not realize that you just hunt a dummy nail, you may enter some residential area, city center or some highway junction just to be told that you can turn now: *have come far but what am I doing here?* :-((( . So, carefully adjusting your "trip nails" close to your route is tantamount. 
 
 ![wiki-kc.jpg](https://bitbucket.org/repo/L5qerE/images/1500573576-wiki-kc.jpg)
 ![wiki-bf.jpg](https://bitbucket.org/repo/L5qerE/images/3741804599-wiki-bf.jpg)
@@ -47,9 +47,76 @@ When you use differend maps and/or different routing engines and/or different ro
 
 This is where you learn to appreciate the "prefer curvy roads" option of the zümo. At least, as long as the curves are not loacted in the middle of some industrial area.
 
-## Working with QMapShack ##
+#Why QMapShack?#
+
+##Glimpse on the GIS software Field##
+
+##FEatures of QMS I learned to appreciate##
+Really fast performance when zooiming in and out
+even with multiple maps
+DEM, Topo mapsm bicycle maps, Sat images for estimation the "scenicity" of a tour
+Offline OSM and offline DEM
+Offline router routino
+possibilty to build all on a single data source OSM
+(well, there may be some time lags if we used prefabricated sources as recommended in Manual
+
+Routing
+GPX import and export (havent yet tested ohter formats)
+Handle many GPX projects simultaneously
+GArmin device integration
+
+## downsides##
+To me, QMapShack appears to be a project of rapid devlopment. Why this is good news if it comes to features and quality we can expect, we see that documentation does not catch up. For example, recently I asked in QMS issue list for some functionality that might resemble some basic route plannig features, as (still to be) described below. Surprise: route planning support is available and works fine, but simply is not yet documented. I agree, another candidate for my ToDo list.
+
+Of course, repidly growing projects also display some higher risk of regression bugs. I encountered a segfault issue in the routino part - a really great and performant routing engine - which is integrated in QMS. I only received defending comments from the programmers when reporting this issue. In mature projects, you always find some people doing the boring job of quality assurance. In QMS, all good people still seem to fight at the frontier of innovation. However, QMS at least took the hurdel of debian listing, so we can at least expect workable stability.
+
+Look, feel and features may severly change in future relases. I would not dare to rely on QMapShack in "mission critical" professional applications, as long as you do not feel confident to be able to grab into the nuts and bolts of the source code on your own responsibility.
+
+However
+
+
+# Working with QMapShack #
+## Installation ##
 ### Configuring maps, DEM and routino ###
+### Configuring maps, DEM and routino ###
+### Configuring maps, DEM and routino ###
+
+##Geospatial entities: Tracks, Routes, Waypoints##
+
+##Some Words on data formats##
+
 ### Planning routes ###
 ### Importing tracks ###
 ### Exchanging data with the Garmin nüvi ###
 ## Some additional helper scripts ##
+##gpsbabel##
+
+#Further plans#
+
+##Inverse routing##
+
+
+
+rationale .... 
+status quo
+link to code snippet 
+
+
+
+
+## Geotagged Videos ##
+I donsider it a great idea to record a video during driving along with the track coordinates.
+Many car dashboard cams do this, but I did not yet find a ruggedized one for motorcycle mounting.
+Recently, I got a ruggedized "action cam" with GPS receiver included. 
+Sadly, first test where disappointing: huge files, small memory, small battery, 30 min recording max.
+Not suited for a trip.
+
+Calls for some DIY, e.g. on a raspberry. There I could record cam and GPS from independent sources and perform image / video extraction matching to my needs, not to some GoPro-cloning marketing geek.
+My Idea were to record low quality video at say 30 fps, and additionaly extract high quality images at say 1 fps or so.
+
+Unfortunately, most players for geotagged video playing is for WIN$ only.
+I could not get one to work on my old SuSE 11.0 those days. I got a WIN Laptop now, and a recent debian jessie on the workstation. Time to try again.
+
+And it would be great to display a combined view of track on map, video, images and track profile synchronized in the web, I haven't found any player yet. Pointers were welcome.
+
+Nice-Stuff-ToDo list growing still longer....
