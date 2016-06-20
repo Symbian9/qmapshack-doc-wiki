@@ -52,6 +52,17 @@ To be sure, I recommend closing the QMapShack application and umount your device
 
 ## Your Workspace ##
 
+Data in your file based procjects is only stored in your files if you select "save" in the project file's line.
 
+Data in your database residing projects is only stored in the database when you select "Sync. with database" in the database project line.
 
+If you make any changes to your object (as shown here https://bitbucket.org/maproom/qmapshack /wiki/DocGisItemsEditMultiple in detail) , both your edited object and the project it belongs to is marked by an asterisk * in the Data Window. 
 
+![wiki-projtree.jpg](https://bitbucket.org/repo/L5qerE/images/1713486213-wiki-projtree.jpg)
+
+This asterisk indicate you that your current changes are not yet written to save storage. At least not yet to the final place in the project they belong to.
+
+The good news: there is an periodic **autosave feature** for all these pending changes in your workspace. You can access it by the menu path **"Project -> setup Workspace"** which gives you:
+![wiki-setupws.png](https://bitbucket.org/repo/L5qerE/images/4061261758-wiki-setupws.png)
+
+Your workspace is also saved upon clear exit of QMapShack, so all your changes you made are still available after a restart. But beware - your changes are lost after some crash of QMapShack. There is no way to manually trigger the saving of the workspace, so if you think five minutes is too risky on your system, you may decrease the value. It is not intended that users play around with the stored workspace, so we will not provide the location here. If you need instantaneous save or consistent roll back, use one of the concepts outlined above.
