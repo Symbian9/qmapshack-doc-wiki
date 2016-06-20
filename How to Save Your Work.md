@@ -15,7 +15,8 @@ Basically, you have three distinct realms of storable work:
 You don't edit maps in QMapShack, so the maps themselves are readonly - no matter whether you use online maps or locally stored maps. However your **map view** is the way yo configure how your currently visible maps are diplayed. Details are covered elsewhere in the manual:
 https://bitbucket.org/maproom/qmapshack/wiki/DocControlMapDem
 
-You can can switch between different map views, but those are not directly related to your own data which is stored in projects.
+You can can switch between different map views, but those are not directly related to your own data which is stored in projects. The data can be displayed on one or several Views. A View is defined by a
+selection of maps and DEM files and is independent from the data in the Workspace.
 
 
 ## Your Projects ##
@@ -56,13 +57,20 @@ Data in your file based procjects is only stored in your files if you select "sa
 
 Data in your database residing projects is only stored in the database when you select "Sync. with database" in the database project line.
 
-If you make any changes to your object (as shown here https://bitbucket.org/maproom/qmapshack /wiki/DocGisItemsEditMultiple in detail) , both your edited object and the project it belongs to is marked by an asterisk * in the Data Window. 
+If you make any changes to your object (as shown here https://bitbucket.org/maproom/qmapshack /wiki/DocGisItemsEditMultiple in detail) , both your edited object and the project it belongs to is marked by an asterisk * in the Data Window with the project tree:
 
-![wiki-projtree.jpg](https://bitbucket.org/repo/L5qerE/images/1713486213-wiki-projtree.jpg)
+![wiki-projtree.png](https://bitbucket.org/repo/L5qerE/images/4285409798-wiki-projtree.png)
 
 This asterisk indicate you that your current changes are not yet written to save storage. At least not yet to the final place in the project they belong to.
 
 The good news: there is an periodic **autosave feature** for all these pending changes in your workspace. You can access it by the menu path **"Project -> setup Workspace"** which gives you:
+
 ![wiki-setupws.png](https://bitbucket.org/repo/L5qerE/images/4061261758-wiki-setupws.png)
 
-Your workspace is also saved upon clear exit of QMapShack, so all your changes you made are still available after a restart. But beware - your changes are lost after some crash of QMapShack. There is no way to manually trigger the saving of the workspace, so if you think five minutes is too risky on your system, you may decrease the value. It is not intended that users play around with the stored workspace, so we will not provide the location here. If you need instantaneous save or consistent roll back, use one of the concepts outlined above.
+Your workspace is also saved upon clear exit of QMapShack, so all your changes you made are still available after a restart. So you can still continue editing, roll back to an earlier stage and/or safe it finally to the project file they are supposed to belong to.
+
+But beware - your changes are lost after some crash of QMapShack. There is no way to manually trigger the saving of the workspace, so if you think five minutes is too risky on your system, you may decrease the value. 
+
+It is not intended that users play around with the stored workspace, so we will not provide the location here. If you need instantaneous save or consistent roll back, use one of the concepts outlined above.
+
+From the program's point of view, the workspace ist the access to all your data you are working with - as opposed to the map view, which only defines the way you currently look at them.
