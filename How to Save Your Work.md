@@ -1,5 +1,7 @@
 *(This page is a draft based on email discussion with Oliver Eichler. I may have misunderstood some details. Not every step reported here is thoroughly tested)*
 
+** *kiozen: Using random boldness does not help understanding the text. Simply cross read the bold text and you won't get what it's about. Keeping the text short and focused does help* **
+
 Shit happens. This is one of murphy's law. Power may fail, disks may crash, OS may bluescreen (at least some of them), and even the great routino router plugged into QMapShack was proven to be able to segfault on rare conditions.
 
 The **greatest risk for your data** is located between chair and keyboard: You, **the user**. For exmaple, I prefer to save all my work which is more complex than a simlple half page letter with **frequently changing versionized filenames** like foobar00001, foobar0002 .... Alternatively, if work is spread over many files, and depends on consistent content of them, you may produce **regular backups with versionized file numbers**, like **foo001.tgz, foo002.tgz**. This versionized backup approach allows you to roll back multiple steps and still get multiple files in a consistent manner, even if you realize that you have screwed up something miserably some save-cycles ago.
@@ -7,6 +9,9 @@ The **greatest risk for your data** is located between chair and keyboard: You, 
 There are also more elaborated backup concepts like snapshot file systems (btrfs, just to name one) or version control systems.
 
 So: save your worK! while it is common knowledge, and no matter which strategy you follow, it requires some thorough understanding where, when and how stuff is stored at all.
+
+** *kiozen: Up to this point it's only commonplaces and a description how to do version management of documents the worst way possible. It doesn’t add to the topic* **
+
 
 Basically, you have three distinct realms of storable work:
 
@@ -27,6 +32,8 @@ https://bitbucket.org/maproom/qmapshack/wiki/DocControlMapDem
 The "File ->  Store Map View" and the "File ->  Load Map View" allow you to select specific locations. 
 There is a file ~/current.view in your home directory, which ????? ####where does it come from? ####
 
+** *kiozen: QMapShack does not save a view by default. Therefore you must have saved the view, or the file is from another software* **
+
 ## Your Projects ##
 
 The **project** is the place where your own personal data - basically waypoints, tracks and routes - lives in. In terms of storage, procjets may be implemented as:
@@ -36,24 +43,29 @@ The **project** is the place where your own personal data - basically waypoints,
 * in databases,
 * on the storage of your satnav device 
 
+
 ###Backup of single project files###
 
 See here https://bitbucket.org/maproom/qmapshack/wiki/DocHandleGpxFiles for further details on the handling of GIS files.
 
 For both .gpx and .qms files, there is a 1:1 relation between project and file. This keeps backup procedures simple and straightforward, but leaves the responsibility to keep your data in sync if you roll back to a different version up to you.
 
-There is one important difference between .qms an .gpx files with regard to backup: The **.qms format** includes object history and **allows a roll back of changes** on a per object basis. This feature is not available in gpx files, because it would break the main purpose of gpx, its exchangability: there is simply no standard in the gpx definitions for rollback histories. So if you want to combine the andvantage of both worlds, save your work in a qms "master copy" (or in a database) and only produce gmx files for the sake of exchange. In the right-click context menue of the project, there is a "save as..." dialogue which allows you to switch between *.gpx and *.qms format for this purpose. ###Todo: not tested yet ###
+There is one important difference between .qms an .gpx files with regard to backup: The **.qms format** includes object history and **allows a roll back of changes** on a per object basis. This feature is not available in gpx files, because it would break the main purpose of gpx, it's exchangeability: there is simply no standard in the gpx definitions for rollback histories. So if you want to combine the andvantage of both worlds, save your work in a qms "master copy" (or in a database) and only produce gmx files for the sake of exchange. In the right-click context menu of the project, there is a "save as..." dialogue which allows you to switch between *.gpx and *.qms format for this purpose. ###Todo: not tested yet ###
+
+** *kiozen: Save as is the correct way to export to another format* **
 
 ###Backup of databases###
 
 Databases are, like qms files, a  QMapShack internal format not supposed to be disassembled by the causal end user.
 See here https://bitbucket.org/maproom/qmapshack/wiki/DocGisDatabase for more on databases.
 
-In a database, multiple projects are stored in one database file. So if you backup versions of this database, all the projects within will be restored in a consistend way, if you switch to an earlier version. This means on the other hand, that you cannot easily roll back selectively. To do so, you have to open both old and new version and manually copy selected content between them as desired.
+In a database, multiple projects are stored in one database file. So if you backup versions of this database, all the projects within will be restored in a consistent way, if you switch to an earlier version. This means on the other hand, that you cannot easily roll back selectively. To do so, you have to open both old and new version and manually copy selected content between them as desired.
 
 ###Data on mobile device###
 
-See here https://bitbucket.org/maproom/qmapshack/wiki/DocGisDevices for further infos on device access.
+** *kiozen: Devices are not really meant as storage to save your work. In fact not everything written to an exported GPX file is written into the GPX file of a device as it would upset the device. This chapter is way too long. Too much chitchat about mightbes, wouldbes and commonplaces.* **
+
+See here https://bitbucket.org/maproom/qmapshack/wiki/DocGisDevices for further information on device access.
 
 Backup of satnav device data is a complicated issue. While basically most modern devices are accessed as "USB mass storage", you can simply open them with any file manager (like an USB stick) and copy everything on the device to a save location. 
 
@@ -71,13 +83,19 @@ Modern operation systems usually will keep data in a **memory cache upon writing
 
 To be sure, I recommend closing the QMapShack application and umount your device properly. I admit that I don't do it all the time and just wait some time I consider sufficient. But you have been warned.
 
+** *kiozen: If you access a device via the icon in the workspace QMapShack will take care about mounting and unmounting the device. Simply plugin the device and wait until QMapshack recognized it. The device is unmounted unless QMapShack is actively reading/writing it (Cursor is an hourglass). Once done you can unplug the device without any further action.* **
+
 
 ## Your Workspace ##
 
-Data in your file based procjects is only stored in your files if you select "save" in the project file line's context menue.
+Data in your file based projects is only stored in your files if you select "save" in the project file line's context menu.
 Data in your database residing projects is only stored in the database when you select "Sync. with database" in the database project line.
 
-From the program's point of view, the workspace ist the access window to all your data you are working with - as opposed to the map view, which only defines the way you currently look at them.
+** *kiozen: the usual way to save data to the database is using "Save". "Sync. with database" is used when two users access and work on the same project in the database.* **
+
+From the program's point of view, the workspace is the access window to all your data you are working with - as opposed to the map view, which only defines the way you currently look at them.
+
+** *kiozen: opposed? That word does not make sense in that context.* **
 
 If you make any changes to any object (as shown here 
 https://bitbucket.org/maproom/qmapshack/wiki/DocGisItemsEditMultiple 
