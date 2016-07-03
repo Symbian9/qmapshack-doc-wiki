@@ -106,27 +106,29 @@ In a database, multiple projects are stored in one database file. So if you back
 
 ###Data on mobile device###
 
-** *kiozen: Devices are not really meant as storage to save your work. In fact not everything written to an exported GPX file is written into the GPX file of a device as it would upset the device. This chapter is way too long. Too much chitchat about mightbes, wouldbes and commonplaces.* **
+Don't consider your mobile satnav device as a sure location for backup, even if it looks like a memory stick when you plug it into your workstation. 
+
+*(The following is derived from tests with singular GARMIN nuvi and zumo units. File system organisation differs not only between manufacturers, but also between device series and models. Your milegae may vary.)*
+
+In the directory tree of a plugged Garmin device, you find the **directory "GPX"** similiar to this:
+
+![wiki-garmin.png](https://bitbucket.org/repo/L5qerE/images/2180082863-wiki-garmin.png)
+
+This contains most information on your device as it rerfers to QMapShack projects. You may frequently copy them to your Workstation and include it into your backup scheme. The gpx files can be opened as QMapShack projects or any other compatible application.
+
+We do **not recommend to write directly onto the device** using file level access, unless you do not know what to do. Enjoy the great work the QMS programmers have deliverd and **use QMapShack device access** functionality instead. There are quite some items in a QMX file that the standard allows but may upset your device. You have been warned.
 
 See here https://bitbucket.org/maproom/qmapshack/wiki/DocGisDevices for further information on device access.
 
-Backup of satnav device data is a complicated issue. While basically most modern devices are accessed as "USB mass storage", you can simply open them with any file manager (like an USB stick) and copy everything on the device to a save location. 
+We also do not discuss the other directories, as they are not immediately related to QMS work. There is a plethora of forum entries around, full of tips and good and bad experiences. Good luck trying!
 
-For example, some Garmin nüvi and zumo devices store their tracks in a directory GPX. To learn more about their meaning, you may google for forum entries, just open a copy of the gpx files as GIS file in QMapShack or even peek into them with any text editor - GPX follows xml standard which is supposed to be human readable. *(maybe you need a tool like xmllint to display nice intented format)*
+There is one important thing to mention on mass storage devices: The **risk of premature plugoff** . In other applications, data may still reside in **write cache** RAM only, while the app is displaying successful writing. In Linux, you have to unmount a device, in WIN, you call "safe remove" to make sure the write cache is synced to the device.
 
-However, I would not recommend this brute approach the other way round - overwriting files on the device with content you *think* is what belongs there - without further research. You may screw up your device and loose all your warranty.
+To avoid this, QMapShack implements its own handling of device mounting.
+*If you access a device via the icon in the workspace QMapShack will take care about mounting and unmounting the device. Simply plugin the device and wait until QMapshack recognized it. The device is unmounted **unless** QMapShack is actively reading/writing it (**Cursor is an hourglass**). Once done **you can unplug** the device without any further action.* 
 
-The simple way is to **consider your device as an unsecure location of storage**. Keep all your data in workstation project files as means of primary storage and backup them as outlined. Pull tracks from your device after every tour as soon as possible, if they are of any value to you. QMapShack seems to offer a proven method to acces recognized devices, so use it, instead of the risky direct file access. Prepare all routes on your workstations, if possible. Your mobile device is by its very nature subject to high risk of loss and damage. And if your device is lost or its data is broken, there is not much use in restoring it any way, is it? I don't think that these gadgets are going to be repaired nowadays any more. 
+This automounting of QMapShack may interfere with your OS mounting behavoiur and produce some warning. But following above rule, you shold be on the safe side and not loose any data. If not, its time to file a bug.
 
-If you nevertheless want to restore some data on your device, there is a plethora of forum entries around for tips and good and bad experiences. Good luck trying!
-
-There is one important thing to mention on mass storage devices: The **risk of premature plugoff** .
-
-Modern operation systems usually will keep data in a **memory cache upon writing** . So most applications, which delegate writing to the operating system, will "think" that writing is finished, while a part of data may still reside in memory cache only. On linux, you are always supposed to properly **unmount** a storage device before unplugging it. Most file managers display an Option "Sicher entfernen" (in German, my be sth. like "save removal" in english) to enforce syncing write cache to the device. They block with an error message, if some application is still busy with the device. Usually, it suffices to open the devices file tree in some file manager to block unmounting. However, it does not seem that QMapShack blocks unmounting, even if I open it as a project and display its contents. Fiddling with this unexpected behaviour, I can put the plugged device into an unreadable state. This seems weird to me - Keep an open eye...
-
-To be sure, I recommend closing the QMapShack application and umount your device properly. I admit that I don't do it all the time and just wait some time I consider sufficient. But you have been warned.
-
-** *kiozen: If you access a device via the icon in the workspace QMapShack will take care about mounting and unmounting the device. Simply plugin the device and wait until QMapshack recognized it. The device is unmounted unless QMapShack is actively reading/writing it (Cursor is an hourglass). Once done you can unplug the device without any further action.* **
 
 
 ## Your Workspace ##
