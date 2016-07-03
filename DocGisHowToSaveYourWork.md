@@ -8,7 +8,7 @@ We suppose you want to keep your work save:
 * keep copies of your disk content to provide against media failure
 * keep different versions of your files to prevent against user mistakes
 
-You will have some system and strategies in place to do backup. You **want to know what, where, and when data is stored by QMapShack** to include this into your existing backup.
+You will have some system and strategies in place to do backup. You **want to know what, where, and when data is stored by QMapShack** to include this into your existing backup, and to know what to do in case of recovery.
 
 Basically, you have three distinct realms of storable work:
 
@@ -16,20 +16,66 @@ Basically, you have three distinct realms of storable work:
 * your project files
 * your workspace
 
-## Your Map view ##
+## Maps and views ##
 
-A View is defined by a
-selection of maps and DEM files and is independent from the data in the Workspace.
-The data can be displayed on one or several Views. 
-You can can switch between different map views, but those are not directly related to your own data which is stored in projects. 
+You don't edit maps in QMapShack. Maps are huge and may eat up lots of backup resources. They may be easily recovered from the internet. Enough reason for some special considerations reagarding map backup.
 
-You don't edit maps in QMapShack, so the maps themselves are readonly - no matter whether you use online maps or locally stored maps. However your **map view** is the way you configure how your currently visible maps are displayed. Details are covered elsewhere in the manual:
-https://bitbucket.org/maproom/qmapshack/wiki/DocControlMapDem
+QMapShack reads its maps from the configured MapPaths.
 
+Recall the map organisation:
+https://bitbucket.org/maproom/qmapshack/wiki/DocBasicsMapDem
+
+
+
+### Online maps ###
+
+The essential information to backup for online maps are their **definition files**. They are located in your configured MapPaths.
+
+If you installed your initial maps from the "I want maps" buttons, they are named
+
+
+```
+#!
+
+OpenCycleMap.tms  OpenStreetMap.tms  OSM_Topo.tms  WorldSat.wmts  WorldTopo.wmts
+
+```
+
+When browsing through maps, QMapShack maintains a local tile cache. This has limited life time and is automagically rebuilt if missing ###### confirmation requested ####. It may contain some hundreds MB. Consider to exclude the tile cache from backup.
+
+X#### Looks like #### they are located in a hidden directory 
+
+```
+#!
+
+~/.QMapShack/
+```
+
+
+I found a second (obviously outdated) set clobbered my home dir:
+
+
+```
+#!
+
+OpenStreetMap, OSM_Topo, WorldSat, WorldTopo, OpenCycleMap
+```
+####XXXXXXXXX to bec checked XXXXXXXXXXX####
+
+
+### Local Maps, DEMs and roting database ###
+
+... are usually are huge (easily some GB). They will not change due to working with QMapShack. Thus you may consider them for special treatment on backup. 
+You may keep online maps and offline maps in different paths to ease this.
+
+### Map Views ###
+
+.. determine how your currently visible maps - including your visible data - are **displayed**. Recall https://bitbucket.org/maproom/qmapshack/wiki/DocControlMapDem
+
+The view is different and independent from your GIS data as organized in projects.
+
+QMapShack does not save a view by default. 
 The "File ->  Store Map View" and the "File ->  Load Map View" allow you to select specific locations. 
-There is a file ~/current.view in your home directory, which ????? ####where does it come from? ####
-
-** *kiozen: QMapShack does not save a view by default. Therefore you must have saved the view, or the file is from another software* **
 
 ## Your Projects ##
 
