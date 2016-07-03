@@ -1,6 +1,6 @@
 # How to save your work #
 
-*(penultimate version - database paragraph in chapter workspace still wrong - rest should be fine for me)*
+*(pen-pen-ultimate version -  should be fine for me)*
 
 We suppose you want to keep your work save:
 
@@ -170,7 +170,7 @@ Thus, it's folder is opened as a project in
 the workspace with the item attached. The project name is qualified by  @, followed by the parent folder in the database.
 
  If you edit the item you will see the 
-asterix that it has been changed - as for file based items. If you save the project, the item will be 
+asterisk that it has been changed - as for file based items. If you save the project, the item will be 
 changed in the database.
 
 
