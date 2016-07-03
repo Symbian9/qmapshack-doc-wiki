@@ -12,7 +12,7 @@ You will have some system and strategies in place to do backup. You **want to kn
 
 Basically, you have three distinct realms of storable work:
 
-* your map view
+* your maps, including the map view
 * your project files
 * your workspace
 
@@ -57,9 +57,9 @@ You can change the path of the tile cache via
 Directly at the top of the window ("Root path of the tile cache for online maps:").
 
 
-### Local Maps, DEMs and roting database ###
+### Local Maps, DEMs and routing database ###
 
-... are usually are **huge** (easily some GB). They **will not change** due to working with QMapShack. Thus you may consider them for special treatment on backup. 
+... are usually are **huge** (easily some GB). They **will not change** while working with QMapShack. Thus you may consider them for special treatment on backup. 
 You may keep online maps and offline maps in different paths to ease this.
 
 ### Map Views ###
@@ -76,7 +76,9 @@ It depends on your style of work, whether backing up views is worth any special 
 
 # Your Projects #
 
-The **project** is the place **where your own personal data** - basically in the form of waypoints, tracks and routes - **lives in**. In terms of storage, procjets may be implemented as:
+The **project** is the place **where your own personal data** - basically in the form of waypoints, tracks and routes - **lives in**. Presumably this will be the data you really want to take care of.
+
+In terms of storage, procjets may be implemented as:
 
 * qms files, the QMapShack internal format
 * gpx files, the most common format for exchanging GIS Data 
@@ -128,16 +130,13 @@ This automounting of QMapShack may interfere with your OS mounting behavoiur and
 
 
 
-## Your Workspace ##
+# Your Workspace #
+
+The workspace is the place where QMapShack keeps your actions **while youe are working** with it. This is distinct from the concept of project files, where your data conceptually resides before you begin after you are done.
+
 
 Data in your file based projects is only stored in your files if you select "save" in the project file line's context menu.
 
-
-Data in your database residing projects is only stored in the database when you select "Sync. with database" in the database project line.
-
-** *kiozen: the usual way to save data to the database is using "Save". "Sync. with database" is used when two users access and work on the same project in the database.* **
-
-From the program's point of view, the workspace is the access window to all your data you are working with. This is distinct from the the map view, which only defines the way you currently look at them.
 
 If you make any changes to any object (as shown here 
 https://bitbucket.org/maproom/qmapshack/wiki/DocGisItemsEditMultiple 
@@ -159,4 +158,24 @@ It is not intended that users play around with the stored workspace.
 So, if we provide the path here ( ~/.config/QLandkarte/ on linux systems) , this is only for backup purposes.
 If you need instantaneous save or consistent roll back, use one of the concepts outlined above.
 
+### Workflow for Database based items ###
+
+The workflow for database based items is as follows:
+You load any project from the database by activating the associated tickbox in the database window.
+
+
+![wiki-db.png](https://bitbucket.org/repo/L5qerE/images/1993398614-wiki-db.png)
+
+Thus, it's folder is opened as a project in 
+the workspace with the item attached. The project name is qualified by  @, followed by the parent folder in the database.
+
+ If you edit the item you will see the 
+asterix that it has been changed - as for file based items. If you save the project, the item will be 
+changed in the database.
+
+
+The sync. function is to update your workspace if someone else is changeing 
+items on another instance of QMapShack. This includes saving local changes and 
+reloading all items in the workspace. On a conflict the user is asked which 
+version to keep.
 
