@@ -41,9 +41,9 @@ OpenCycleMap.tms  OpenStreetMap.tms  OSM_Topo.tms  WorldSat.wmts  WorldTopo.wmts
 
 ```
 
-When browsing through maps, QMapShack maintains a local **tile cache**. This has limited life time and is automagically rebuilt if missing ###### confirmation requested ####. It may contain some hundreds MB. Consider to exclude the tile cache from backup.
+When browsing through maps, QMapShack maintains a local **tile cache**. This has limited life time and is automagically rebuilt if missing. It may contain some hundreds MB. Consider to exclude the tile cache from backup.
 
-X#### Looks like #### they are located in a hidden directory 
+Default location is
 
 ```
 #!
@@ -52,15 +52,9 @@ X#### Looks like #### they are located in a hidden directory
 ```
 
 
-I found a second (obviously outdated) set clobbered my home dir:
-
-
-```
-#!
-
-OpenStreetMap, OSM_Topo, WorldSat, WorldTopo, OpenCycleMap
-```
-####XXXXXXXXX to bec checked XXXXXXXXXXX####
+You can change the path of the tile cache via
+ *File -> Setup Map Paths* - 
+Directly at the top of the window ("Root path of the tile cache for online maps:").
 
 
 ### Local Maps, DEMs and roting database ###
@@ -76,6 +70,9 @@ The view is different and independent from your GIS data as organized in project
 
 QMapShack does not save a view by default. 
 The "File ->  Store Map View" and the "File ->  Load Map View" allow you to select specific locations. 
+
+It depends on your style of work, whether backing up views is worth any special consideration at all.
+
 
 # Your Projects #
 
