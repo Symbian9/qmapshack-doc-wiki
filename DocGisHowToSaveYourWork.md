@@ -115,7 +115,7 @@ In the directory tree of a plugged Garmin device, you find the **directory "GPX"
 
 This contains most information on your device as it rerfers to QMapShack projects. You may frequently copy them to your Workstation and include it into your backup scheme. The gpx files can be opened as QMapShack projects or any other compatible application.
 
-We do **not recommend to write directly onto the device** using file level access, unless you do not know what to do. Enjoy the great work the QMS programmers have deliverd and **use QMapShack device access** functionality instead. There are quite some items in a QMX file that the standard allows but may upset your device. You have been warned.
+We do **not recommend to write directly onto the device** using file level access, unless you do not know what to do. Enjoy the great work the QMS programmers have deliverd and **use QMapShack device access** functionality instead. There are quite some items in a GPX file that the standard allows but may upset your device. You have been warned.
 
 See here https://bitbucket.org/maproom/qmapshack/wiki/DocGisDevices for further information on device access.
 
