@@ -1,17 +1,14 @@
+# How to save your work #
+
 *(This page is a draft based on email discussion with Oliver Eichler. I may have misunderstood some details. Not every step reported here is thoroughly tested)*
 
-** *kiozen: Using random boldness does not help understanding the text. Simply cross read the bold text and you won't get what it's about. Keeping the text short and focused does help* **
+We suppose you want to keep your work save:
 
-Shit happens. This is one of murphy's law. Power may fail, disks may crash, OS may bluescreen (at least some of them), and even the great routino router plugged into QMapShack was proven to be able to segfault on rare conditions.
+* frequently save memory resident data to disk to provide against system (power, memory, hardware, software ...) failure
+* keep copies of your disk content to provide against media failure
+* keep different versions of your files to prevent against user mistakes
 
-The **greatest risk for your data** is located between chair and keyboard: You, **the user**. For exmaple, I prefer to save all my work which is more complex than a simlple half page letter with **frequently changing versionized filenames** like foobar00001, foobar0002 .... Alternatively, if work is spread over many files, and depends on consistent content of them, you may produce **regular backups with versionized file numbers**, like **foo001.tgz, foo002.tgz**. This versionized backup approach allows you to roll back multiple steps and still get multiple files in a consistent manner, even if you realize that you have screwed up something miserably some save-cycles ago.
-
-There are also more elaborated backup concepts like snapshot file systems (btrfs, just to name one) or version control systems.
-
-So: save your worK! while it is common knowledge, and no matter which strategy you follow, it requires some thorough understanding where, when and how stuff is stored at all.
-
-** *kiozen: Up to this point it's only commonplaces and a description how to do version management of documents the worst way possible. It doesn’t add to the topic* **
-
+You will have some system and strategies in place to do backup. You **want to know what, where, and when data is stored by QMapShack** to include this into your existing backup.
 
 Basically, you have three distinct realms of storable work:
 
