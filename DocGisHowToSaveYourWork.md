@@ -1,6 +1,6 @@
 # How to save your work #
 
-*(This page is a draft based on email discussion with Oliver Eichler. I may have misunderstood some details. Not every step reported here is thoroughly tested)*
+*(penultimate version - database paragraph in chapter workspace still wrong - rest should be fine for me)*
 
 We suppose you want to keep your work save:
 
@@ -131,13 +131,13 @@ This automounting of QMapShack may interfere with your OS mounting behavoiur and
 ## Your Workspace ##
 
 Data in your file based projects is only stored in your files if you select "save" in the project file line's context menu.
+
+
 Data in your database residing projects is only stored in the database when you select "Sync. with database" in the database project line.
 
 ** *kiozen: the usual way to save data to the database is using "Save". "Sync. with database" is used when two users access and work on the same project in the database.* **
 
-From the program's point of view, the workspace is the access window to all your data you are working with - as opposed to the map view, which only defines the way you currently look at them.
-
-** *kiozen: opposed? That word does not make sense in that context.* **
+From the program's point of view, the workspace is the access window to all your data you are working with. This is distinct from the the map view, which only defines the way you currently look at them.
 
 If you make any changes to any object (as shown here 
 https://bitbucket.org/maproom/qmapshack/wiki/DocGisItemsEditMultiple 
