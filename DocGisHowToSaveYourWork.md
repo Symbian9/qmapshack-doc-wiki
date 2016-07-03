@@ -16,7 +16,7 @@ Basically, you have three distinct realms of storable work:
 * your project files
 * your workspace
 
-## Maps and views ##
+# Maps and views #
 
 You don't edit maps in QMapShack. Maps are huge and may eat up lots of backup resources. They may be easily recovered from the internet. Enough reason for some special considerations reagarding map backup.
 
@@ -41,7 +41,7 @@ OpenCycleMap.tms  OpenStreetMap.tms  OSM_Topo.tms  WorldSat.wmts  WorldTopo.wmts
 
 ```
 
-When browsing through maps, QMapShack maintains a local tile cache. This has limited life time and is automagically rebuilt if missing ###### confirmation requested ####. It may contain some hundreds MB. Consider to exclude the tile cache from backup.
+When browsing through maps, QMapShack maintains a local **tile cache**. This has limited life time and is automagically rebuilt if missing ###### confirmation requested ####. It may contain some hundreds MB. Consider to exclude the tile cache from backup.
 
 X#### Looks like #### they are located in a hidden directory 
 
@@ -65,7 +65,7 @@ OpenStreetMap, OSM_Topo, WorldSat, WorldTopo, OpenCycleMap
 
 ### Local Maps, DEMs and roting database ###
 
-... are usually are huge (easily some GB). They will not change due to working with QMapShack. Thus you may consider them for special treatment on backup. 
+... are usually are **huge** (easily some GB). They **will not change** due to working with QMapShack. Thus you may consider them for special treatment on backup. 
 You may keep online maps and offline maps in different paths to ease this.
 
 ### Map Views ###
@@ -77,9 +77,9 @@ The view is different and independent from your GIS data as organized in project
 QMapShack does not save a view by default. 
 The "File ->  Store Map View" and the "File ->  Load Map View" allow you to select specific locations. 
 
-## Your Projects ##
+# Your Projects #
 
-The **project** is the place where your own personal data - basically waypoints, tracks and routes - lives in. In terms of storage, procjets may be implemented as:
+The **project** is the place **where your own personal data** - basically in the form of waypoints, tracks and routes - **lives in**. In terms of storage, procjets may be implemented as:
 
 * qms files, the QMapShack internal format
 * gpx files, the most common format for exchanging GIS Data 
@@ -91,11 +91,11 @@ The **project** is the place where your own personal data - basically waypoints,
 
 See here https://bitbucket.org/maproom/qmapshack/wiki/DocHandleGpxFiles for further details on the handling of GIS files.
 
-For both .gpx and .qms files, there is a 1:1 relation between project and file. This keeps backup procedures simple and straightforward, but leaves the responsibility to keep your data in sync if you roll back to a different version up to you.
+For both .gpx and .qms files, there is a **1:1 relation between project and file**. This keeps backup procedures simple and straightforward. However, it leaves you the responsibility to keep your data in sync  between different projects=files if you roll back to a different version of your work.
 
-There is one important difference between .qms an .gpx files with regard to backup: The **.qms format** includes object history and **allows a roll back of changes** on a per object basis. This feature is not available in gpx files, because it would break the main purpose of gpx, it's exchangeability: there is simply no standard in the gpx definitions for rollback histories. So if you want to combine the andvantage of both worlds, save your work in a qms "master copy" (or in a database) and only produce gmx files for the sake of exchange. In the right-click context menu of the project, there is a "save as..." dialogue which allows you to switch between *.gpx and *.qms format for this purpose. ###Todo: not tested yet ###
+There is one important difference between .qms an .gpx files with regard to backup: The **.qms format** includes object history and **allows a roll back of changes** on a per object basis. This feature is not available in gpx files, because it would break the main purpose of **gpx**, it's **exchangeability**: there is simply no standard in the gpx definitions for rollback histories. 
 
-** *kiozen: Save as is the correct way to export to another format* **
+So, if you want to combine the andvantage of both worlds, save your work in a qms "master copy" (or in a database) and only produce gmx files for the sake of exchange. In the right-click context menu of the project, there is a "**save as...**" dialogue which allows you **to switch** between **.gpx** and **.qms** format for this purpose. 
 
 ###Backup of databases###
 
