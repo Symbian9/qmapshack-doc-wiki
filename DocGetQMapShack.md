@@ -39,6 +39,7 @@ Update QMapShack to the latest version:
 ### From distribution's package system
 
 Many distributions come with a prebuilt version of QMapShack.
+
 Installing via official repository is the prefered way of installing QMapShack.
 Below a (non-exhaustive) list of Linux Distributions shipping QMapShack:
 
@@ -70,22 +71,34 @@ You also need to **install the development packages** in order to build QMapShac
 
 #### Obtaining the Source
 
-The latest stable release [can be downloaded here](https://bitbucket.org/maproom/qmapshack/downloads).
+The **latest stable release** [can be downloaded here](https://bitbucket.org/maproom/qmapshack/downloads).
 You have to download and unpack the \*tar.gz files.
 
-If you want to use the cutting edge you need _Mercurial_ to access the repository. Find the [_instructions here_](https://bitbucket.org/maproom/qmapshack/overview).
+If you want to use the cutting edge you need _Mercurial_ to access the repository.
+A GUI for _Mercurial_ is [TortoiseHg](http://tortoisehg.bitbucket.org/).
+
+Keep in mind: **_The cutting edge may be less stable and/or contain bugs_**
+
+Clone the QMapShack repo into a folder QMapShack by executing:
+
+    hg clone https://bitbucket.org/maproom/qmapshack QMapShack
+
+To update the code to the cutting edge change to the folder `QMapShack` and execute:
+
+    hg pull
+    hg update
 
 #### Compiling and Installing
 
-Anyway you should end up with a directory containing the source code. Let's say the directory's name is _QMapShack_. Create another directory next to _QMapShack_:
+Create a new directory `build_QMapShack` (if it does not exist yet)
 
     mkdir build_QMapShack
 
-And then:
+And run:
 
-    cd build_QMapShack
     cmake ../QMapShack
     make
+
 
 And install the application with:
 
