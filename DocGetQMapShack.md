@@ -35,6 +35,23 @@ Update QMapShack to the latest version:
 
 **Check out your distribution's package system. Probably there is a binary package already.**
 
+
+### From distribution's package system
+
+Many distributions come with a prebuilt version of QMapShack.
+Installing via official repository is the prefered way of installing QMapShack.
+Below a (non-exhaustive) list of Linux Distributions shipping QMapShack:
+
+* [Debian](https://packages.debian.org/testing/qmapshack)
+* [Ubuntu](http://packages.ubuntu.com/xenial/qmapshack)
+* [OpenSUSE](https://software.opensuse.org/package/qmapshack)
+* [Arch](https://aur.archlinux.org/packages/qmapshack/)
+* [Fedora](https://admin.fedoraproject.org/pkgdb/package/rpms/qmapshack/)
+
+Refer your distributions manual on howto install packages from using the package system.
+
+### From Source
+
 Currently the software is distributed as source code only. You need CMake, Qt5 (at least 5.4), GDAL, Proj4 and latest Routino from it's SVN repository to compile the code. Depending on your system you have to install compiler tools, too. This description is for \*nix based systems with GCC installed and a GNU make system.
 
 If you want to use the cutting edge you need _Mercurial_ to access the repository. Find the [_instructions here_](https://bitbucket.org/maproom/qmapshack/overview).
