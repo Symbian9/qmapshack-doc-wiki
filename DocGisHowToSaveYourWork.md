@@ -18,11 +18,11 @@ Basically, you have three distinct realms of storable work:
 
 # Maps and views #
 
-You don't edit maps in QMapShack. Maps are huge and may eat up lots of backup resources. They may be easily recovered from the internet. Enough reason for some special considerations reagarding map backup.
+You don't edit maps in QMapShack. Maps are huge and may eat up lots of backup resources. They may be easily recovered from the internet. Enough reason for some special considerations regarding map backup.
 
 QMapShack reads its maps from the configured MapPaths.
 
-Recall the map organisation:
+Recall the map organization:
 https://bitbucket.org/maproom/qmapshack/wiki/DocBasicsMapDem
 
 
@@ -78,7 +78,7 @@ It depends on your style of work, whether backing up views is worth any special 
 
 The **project** is the place **where your own personal data** - basically in the form of waypoints, tracks and routes - **lives in**. Presumably this will be the data you really want to take care of.
 
-In terms of storage, procjets may be implemented as:
+In terms of storage, projects may be implemented as:
 
 * qms files, the QMapShack internal format
 * gpx files, the most common format for exchanging GIS Data 
@@ -94,7 +94,7 @@ For both .gpx and .qms files, there is a **1:1 relation between project and file
 
 There is one important difference between .qms an .gpx files with regard to backup: The **.qms format** includes object history and **allows a roll back of changes** on a per object basis. This feature is not available in gpx files, because it would break the main purpose of **gpx**, it's **exchangeability**: there is simply no standard in the gpx definitions for rollback histories. 
 
-So, if you want to combine the andvantage of both worlds, save your work in a qms "master copy" (or in a database) and only produce gmx files for the sake of exchange. In the right-click context menu of the project, there is a "**save as...**" dialogue which allows you **to switch** between **.gpx** and **.qms** format for this purpose. 
+So, if you want to combine the advantage of both worlds, save your work in a qms "master copy" (or in a database) and only produce gmx files for the sake of exchange. In the right-click context menu of the project, there is a "**save as...**" dialogue which allows you **to switch** between **.gpx** and **.qms** format for this purpose. 
 
 ###Backup of databases###
 
@@ -107,15 +107,15 @@ In a database, multiple projects are stored in one database file. So if you back
 
 Don't consider your mobile satnav device as a sure location for backup, even if it looks like a memory stick when you plug it into your workstation. 
 
-*(The following is derived from tests with singular GARMIN nuvi and zumo units. File system organisation differs not only between manufacturers, but also between device series and models. Your milegae may vary.)*
+*(The following is derived from tests with singular GARMIN nuvi and zumo units. File system organization differs not only between manufacturers, but also between device series and models. Your **milegae** may vary.**WHAT DO YOU MEAN BY THAT?**)*
 
-In the directory tree of a plugged Garmin device, you find the **directory "GPX"** similiar to this:
+In the directory tree of a plugged Garmin device, you find the **directory "GPX"** similar to this:
 
 ![wiki-garmin.png](https://bitbucket.org/repo/L5qerE/images/2180082863-wiki-garmin.png)
 
-This contains most information on your device as it rerfers to QMapShack projects. You may frequently copy them to your Workstation and include it into your backup scheme. The gpx files can be opened as QMapShack projects or any other compatible application.
+This contains most information on your device as it refers to QMapShack projects. You may frequently copy them to your Workstation and include it into your backup scheme. The gpx files can be opened as QMapShack projects or any other compatible application.
 
-We do **not recommend to write directly onto the device** using file level access, unless you do not know what to do. Enjoy the great work the QMS programmers have deliverd and **use QMapShack device access** functionality instead. There are quite some items in a GPX file that the standard allows but may upset your device. You have been warned.
+We do **not recommend to write directly onto the device** using file level access, unless you do not know what to do. Enjoy the great work the QMS programmers have delivered and **use QMapShack device access** functionality instead. There are quite some items in a GPX file that the standard allows but may upset your device. You have been warned.
 
 See here https://bitbucket.org/maproom/qmapshack/wiki/DocGisDevices for further information on device access.
 
@@ -124,15 +124,15 @@ We also do not discuss the other directories, as they are not immediately relate
 There is one important thing to mention on mass storage devices: The **risk of premature plugoff** . In other applications, data may still reside in **write cache** RAM only, while the app is displaying successful writing. In Linux, you have to unmount a device, in WIN, you call "safe remove" to make sure the write cache is synced to the device.
 
 To avoid this, QMapShack implements its own handling of device mounting.
-*If you access a device via the icon in the workspace QMapShack will take care about mounting and unmounting the device. Simply plugin the device and wait until QMapshack recognized it. The device is unmounted **unless** QMapShack is actively reading/writing it (**Cursor is an hourglass**). Once done **you can unplug** the device without any further action.* 
+*If you access a device via the icon in the workspace QMapShack will take care about mounting and unmounting the device. Simply plugin the device and wait until QMapShack recognized it. The device is unmounted **unless** QMapShack is actively reading/writing it (**Cursor is an hourglass**). Once done **you can unplug** the device without any further action.* 
 
-This automounting of QMapShack may interfere with your OS mounting behavoiur and produce some warning. But following above rule, you shold be on the safe side and not loose any data. If not, its time to file a bug.
+This automounting of QMapShack may interfere with your OS mounting behavior and produce some warning. But following above rule, you should be on the safe side and not loose any data. If not, its time to file a bug.
 
 
 
 # Your Workspace #
 
-The workspace is the place where QMapShack keeps your actions **while youe are working** with it. This is distinct from the concept of project files, where your data conceptually resides before you begin after you are done.
+The workspace is the place where QMapShack keeps your actions **while you are working** with it. This is distinct from the concept of project files, where your data conceptually resides before you begin after you are done.
 
 
 Data in your file based projects is only stored in your files if you select "save" in the project file line's context menu.
@@ -174,7 +174,7 @@ asterisk that it has been changed - as for file based items. If you save the pro
 changed in the database.
 
 
-The sync. function is to update your workspace if someone else is changeing 
+The sync. function is to update your workspace if someone else is changing 
 items on another instance of QMapShack. This includes saving local changes and 
 reloading all items in the workspace. On a conflict the user is asked which 
 version to keep.
