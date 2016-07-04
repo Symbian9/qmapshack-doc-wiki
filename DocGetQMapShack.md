@@ -7,13 +7,14 @@
 
 ## Windows
 
-For 64 bit Windows there is a binary installer available in the download section. There is also an outdated version for 32 bit Windows. To get up-to-date 32 bit binaries it needs someone maintaining it.
+For 64 bit Windows there is a binary installer available [in the download section](https://bitbucket.org/maproom/qmapshack/downloads).
+There is also an outdated version for 32 bit Windows. To get up-to-date 32 bit binaries it needs someone maintaining it.
 
 If you want to compile QMapShack for Windows have a look at ["Compiling and Building QMapShack for Windows"](BuildWindowsVisualStudio) in the source tree.
 
 ## OS X
 
-A binary bundle is available in the download section.
+A binary bundle is available [in the download section](https://bitbucket.org/maproom/qmapshack/downloads).
 The binary is build with compatibility for Mac OS X 10.5 (Leopard) and later. The build is done with the Xcode 7.0.1 and tested on OS-X 10.10.5 (Yosemite) and partly on OS-X 10.11 (El Capitan).
 
 The application can also be installed through cask (homebrew addition).
@@ -34,11 +35,11 @@ Update QMapShack to the latest version:
 
 **Check out your distribution's package system. Probably there is a binary package already.**
 
-Currently the software is distributed by the author as source code only. You need CMake, Qt5 (at least 5.4), GDAL, Proj4 and latest Routino from it's SVN repository to compile the code. Depending on your system you have to install compiler tools, too. This description is for \*nix based systems with GCC installed and a GNU make system.
+Currently the software is distributed as source code only. You need CMake, Qt5 (at least 5.4), GDAL, Proj4 and latest Routino from it's SVN repository to compile the code. Depending on your system you have to install compiler tools, too. This description is for \*nix based systems with GCC installed and a GNU make system.
 
 If you want to use the cutting edge you need _Mercurial_ to access the repository. Find the [_instructions here_](https://bitbucket.org/maproom/qmapshack/overview).
 
-If you prefer more or less stable releases have a look at the [_download_](https://bitbucket.org/maproom/qmapshack/downloads) section. You have to download and unpack the \*tar.gz files.
+If you prefer more or less stable releases have a look [at the _download_ section](https://bitbucket.org/maproom/qmapshack/downloads). You have to download and unpack the \*tar.gz files.
 
 If you use Ubuntu 14.04 you have to proceed with these [instructions](Ubuntu-14.04-HowTo) before the next steps described on this page.
 
