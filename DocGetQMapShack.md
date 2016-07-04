@@ -66,13 +66,16 @@ To compile QMapShack, you need to have installed:
 Prefer installing those dependencies via the distribution's package system.
 You also need to **install the development packages** in order to build QMapShack
 
+[Click here](Ubuntu-14.04-HowTo) for additional instructions on howto install on Ubuntu 14.04.
+
 #### Obtaining the Source
+
+The latest stable release [can be downloaded here](https://bitbucket.org/maproom/qmapshack/downloads).
+You have to download and unpack the \*tar.gz files.
 
 If you want to use the cutting edge you need _Mercurial_ to access the repository. Find the [_instructions here_](https://bitbucket.org/maproom/qmapshack/overview).
 
-If you prefer more or less stable releases have a look [at the _download_ section](https://bitbucket.org/maproom/qmapshack/downloads). You have to download and unpack the \*tar.gz files.
-
-If you use Ubuntu 14.04 you have to proceed with these [instructions](Ubuntu-14.04-HowTo) before the next steps described on this page.
+#### Compiling and Installing
 
 Anyway you should end up with a directory containing the source code. Let's say the directory's name is _QMapShack_. Create another directory next to _QMapShack_:
 
@@ -81,12 +84,7 @@ Anyway you should end up with a directory containing the source code. Let's say 
 And then:
 
     cd build_QMapShack
-    ccmake ../QMapShack
-
-You might want to change _CMAKE_INSTALL_PREFIX_ from _/usr/local_ to _/usr_. 
-
-While in ccmake press the keys 'c' and then 'g'. If everything is fine leave with 'q'. Now compile the source with:
-
+    cmake ../QMapShack
     make
 
 And install the application with:
