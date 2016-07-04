@@ -52,7 +52,21 @@ Refer your distributions manual on howto install packages from using the package
 
 ### From Source
 
-Currently the software is distributed as source code only. You need CMake, Qt5 (at least 5.4), GDAL, Proj4 and latest Routino from it's SVN repository to compile the code. Depending on your system you have to install compiler tools, too. This description is for \*nix based systems with GCC installed and a GNU make system.
+#### Prerequisites
+
+To compile QMapShack, you need to have installed:
+
+* [Qt5](https://www.qt.io/) (at least 5.4)
+* [GDAL](http://www.gdal.org/)
+* [Proj4](https://github.com/OSGeo/proj.4/wiki)
+* [Routino](http://www.routino.org/) (at least 3.0)
+* CMake/Make
+* a C++ compiler (supporting C++11)
+
+Prefer installing those dependencies via the distribution's package system.
+You also need to **install the development packages** in order to build QMapShack
+
+#### Obtaining the Source
 
 If you want to use the cutting edge you need _Mercurial_ to access the repository. Find the [_instructions here_](https://bitbucket.org/maproom/qmapshack/overview).
 
