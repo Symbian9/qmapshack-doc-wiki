@@ -18,6 +18,7 @@ For all these questions you can get in touch with development.
 
 * The QLandkarte GT [mailing list](https://lists.sourceforge.net/lists/listinfo/qlandkartegt-users) and it's [archive](http://news.gmane.org/gmane.comp.gis.qlandkartegt.user)
 * IRC freenode, channel [#qlandkarte](http://webchat.freenode.net/?channels=#qlandkarte)
+* Reading the [FAQ](DocFaq) never hurts.
 
 ## Unsupported Systems:
 Due to limited resources a few operating system versions are not supported:
