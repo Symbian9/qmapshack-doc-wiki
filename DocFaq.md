@@ -13,11 +13,13 @@
 **Source:** [http://article.gmane.org/gmane.comp.gis.qlandkartegt.user/2612](http://article.gmane.org/gmane.comp.gis.qlandkartegt.user/2612)
 
 With QMapShack version 1.6.1 or later:
-* Load all stuff you want to have in a single project into the workspace (possibly resulting in several new projects)
-* Right click on the map window and choose "Select Items on Map"
-* Follow the instructions displayed and select what ever data you want to have in one project.
-* When the selection is finished, copy everything into the destination project.
-* Remove all unnecessary projects from the workspace
+
+  * Load all stuff you want to have in a single project into the workspace (possibly resulting in several new projects)
+  * Right click on the map window and choose "Select Items on Map"
+  * Follow the instructions displayed and select what ever data you want to have in one project.
+  * When the selection is finished, copy everything into the destination project.
+  * Remove all unnecessary projects from the workspace
+
 If you use a database you do not have to load all data of a project.
 You can load only the items needed. Additionally, if you store a newly created
 project into the database you do not need to clone (duplicate) the data.
