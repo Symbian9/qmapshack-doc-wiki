@@ -4,14 +4,6 @@
 
 # Frequently Asked Questions
 
-## Contents:
-* Is there an easy way to "select all" the contents of one project to drag them into another?
-* Is there a way to merge projects together?
-* Is there a possibility to display small roads/tracks in a map without zooming in too much?
-* Is there a possibility to choose the preferred road class when routing?
-* User-relevant QMapShack directories (Windows version)
-* What is the maximum Routino databases file size that can be handled by the QMapShack Windows version?
-
 ********
 
 
