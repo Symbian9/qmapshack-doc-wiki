@@ -7,6 +7,7 @@ For example I describe service http://loadmap.net that provides simple way to ta
 Major disadvantage of the such maps is a border that overlap near maps. To solve this issue I wrote small application that helps: [geocrop](https://github.com/h4tr3d/geocrop) (it is free and open source app, patches is welcomed!).
 
 Major advantage of the QMapShack (QMS for short later): it can open GDAL maps in ``.vrt`` format. VRT file is a XML based map description that contains different useful information about map:
+
 * link to the original map source (raster file in our case);
 * reference description;
 * and other useful transformations.
