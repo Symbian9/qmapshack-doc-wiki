@@ -86,7 +86,7 @@ https://bitbucket.org/maproom/qmapshack/wiki/DocGisItemsNew#markdown-header-wayp
 
 The GPX file format is a widely used de facto standard for GIS data exchange. Many GIS data sources may produce GPX directly, which can be used in the "File -> Load GIS" dialogoue.
 
-If not, the *GPS "swiss army knife" **gpsbabel** * may help to convert nearyly any relevant GIS data format into GPX. 
+If not, the GPS "swiss army knife" **gpsbabel**  may help to convert nearyly any relevant GIS data format into GPX. 
 For details, read the manual you may find here: https://www.gpsbabel.org/htmldoc-1.4.4/gpsbabel-1.4.4.pdf
 
 For example, take this little csv formatted text file, saved as "wpts-test5.csv":
@@ -121,6 +121,7 @@ and
 
 ![import-wpt-map.jpg](https://bitbucket.org/repo/L5qerE/images/3896244447-import-wpt-map.jpg)
 
+As you see, the coordinates and the descriptive labels of the waypoints are imported.
 
 ### Import Routes ###
 
@@ -149,11 +150,11 @@ Call "Calculate route" to get:
 
 Notice that the routepoints now have kept their labels, as opposed to their anonymuous behaviour when QMapShack derives routepoints from waypoints.
 
-As soon as you edit the route, e.g. by moving points, you get a warning 
+As soon as you call "Edit Route", e.g. to move points, you get a warning 
 
 ![edit-warning.png](https://bitbucket.org/repo/L5qerE/images/2327772757-edit-warning.png)
 
-The edited route points now have lost their description.
+If you continue, the edited route points now have lost their description.
 
 This property is consistenlty transferred to the mobile GPS device.
 
@@ -163,7 +164,7 @@ not here, better in the issue case ########
 
 ### Send Route to Device ###
 
-Save your project, plug your device and call "send to device" in the project context menue. Be aware that all objects in the project - waypoints, routes and tracks - are sent to the device. If this is not what you want, create a new project and copy only desired items into this. Send this project to the device, then.
+Save your project, plug your device and call "**send to device**" in the project context menue. Be aware that all objects in the project - waypoints, routes and tracks - are sent to the device. If this is not what you want, create a new project and copy only desired items into this. Send this project to the device, then.
 
 See here
 https://bitbucket.org/maproom/qmapshack/wiki/DocGisDevices
