@@ -290,10 +290,9 @@ Script converts to OSGEO TMS (http://www.maptiler.org/google-maps-coordinates-ti
 </TMS>
 ```
 
-## Raster maps
+## Russian maps (ex-military (aka "Genshtab" /Maps of the General Staff/), non-classified maps and so on) 
 
-1. Russian maps (ex-military (aka "Genshtab" /Maps of the General Staff/), un-secret tourist maps and so on)
-    1. [Quick way to prepare raster map for QMapShack](QuickWayToPrepareRasterMapForQMapShack)
+[Quick way to prepare raster map for QMapShack](QuickWayToPrepareRasterMapForQMapShack)
 
 - - -
 [Prev](DocControlMapDem) (Control maps and DEM files) | [Home](Home) | [Manual](DocMain) | (Working with Projects) [Next](DocWorkingWithProjects)
