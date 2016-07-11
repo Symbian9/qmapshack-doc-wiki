@@ -71,7 +71,7 @@ for a detailled description of the dialogue.
 
 You may notice that the routepoints have lost their relation to the waypoints from which they were initially created. Moving a routepoint does not change the waypoint it was derived from.
 
-### issue: named route points ###
+### Issue: named route points ###
 
 The routepoints do not inherit their name or description from the waypoints they were generated from.
 There is a bug report/feature request on this in the issue list:
@@ -79,17 +79,17 @@ https://bitbucket.org/maproom/qmapshack/issues/127/create-a-route-from-waypoints
 
 ### Manually create, edit and move a waypoint ###
 
-If you are not always happy with the results of the "Google Search" function, You may manually fine tune your waypoints before deriving a route from them - see here for instructions:
+If you are not always happy with the results of the "Google Search" function, you may manually fine tune your waypoints before deriving a route from them. See here for detailed instructions:
 https://bitbucket.org/maproom/qmapshack/wiki/DocGisItemsNew#markdown-header-waypoint
 
-### import waypoints ###
+### Import Waypoints ###
 
 The GPX file format is a widely used de facto standard for GIS data exchange. Many GIS data sources may produce GPX directly, which can be used in the "File -> Load GIS" dialogoue.
 
-If not, the GPS "swiss army knife" gpsbabel may help to convert nearyly any relevant GIS data format into GPX
+If not, the *GPS "swiss army knife" **gpsbabel** * may help to convert nearyly any relevant GIS data format into GPX. 
 For details, read the manual you may find here: https://www.gpsbabel.org/htmldoc-1.4.4/gpsbabel-1.4.4.pdf
 
-Take for example this little csv formatted text file, saved as "wpts-test5.csv":
+For example, take this little csv formatted text file, saved as "wpts-test5.csv":
 
 
 ```
@@ -106,7 +106,14 @@ Call gpsbabel like this to convert this to a gpx with waypoints:
 #!
 gpsbabel -i csv -f wpts-test5.csv  -o gpx -F wpts-test5-wpt.gpx
 ```
-Open it with "File -> Load GIS Data" yields 
+Short explanation of the options:
+
+* *-i csv* : input file format
+* *-f wpts-test5.csv* : input file name
+* *-o gpx* : output file format
+* *-F wpts-test5-wpt.gpx* : output file name
+
+Open the output file in QMapShack with "File -> Load GIS Data" yields 
 
 ![import-wpt-list.png](https://bitbucket.org/repo/L5qerE/images/995727279-import-wpt-list.png)
 
@@ -114,7 +121,8 @@ and
 
 ![import-wpt-map.jpg](https://bitbucket.org/repo/L5qerE/images/3896244447-import-wpt-map.jpg)
 
-### import routes ###
+
+### Import Routes ###
 
 To import the points as routepoints instead, call this:
 
@@ -122,6 +130,10 @@ To import the points as routepoints instead, call this:
 #!
 gpsbabel -i csv -f wpts-test5.csv -x  transform,rte=wpt -x nuketypes,waypoints -o gpx -F wpts-test5-rtpt.gpx
 ```
+which differs from above command by the gpsbabel filter options
+
+* *-x transform,rte=wpt* : transform the (way-)points found in input to routepoints
+* *-x nuketypes,waypoints* : remove the waypoints from the output
 
 This will display in QMapShack as
 
@@ -143,13 +155,28 @@ As soon as you edit the route, e.g. by moving points, you get a warning
 
 The edited route points now have lost their description.
 
-???#### to be tested: does this survive on the device?########
+This property is consistenlty transferred to the mobile GPS device.
+
+???#### screenshots from device ?? 
+not here, better in the issue case ########
 
 
-### send route to device ###
+### Send Route to Device ###
 
 Save your project, plug your device and call "send to device" in the project context menue. Be aware that all objects in the project - waypoints, routes and tracks - are sent to the device. If this is not what you want, create a new project and copy only desired items into this. Send this project to the device, then.
 
 See here
 https://bitbucket.org/maproom/qmapshack/wiki/DocGisDevices
 for more infos about exchanging data with mobile GPS devices.
+
+### Gotchas and Tricks ###
+
+Be aware that your device presumably uses different maps, routing preferences and routing engine than QMapShack / routino does. While the routepoints are fixed by coordinates, the calculated route between them may differ significantly.
+
+One way to prevent this is to convert your route to a track and send this to your device. However, this is not flexible for rerouting if you deviate from your preplanned route for whatever reason and want to find back to it.
+
+You also may add addional waypoints to your route, using the "edit route" funtionality. This let's you "nail down" your route to the desired pathway. Be sure to select "nails" as close to your target pathway as possible. Otherwise, your device might navigate you to artificial stepaways just to collect an imaginary flag. Some devices, e.g. the Garmin zumo motorcycle navigators, have a "skip next route point" function for this reason.
+
+You also may send waypoints as such to your device. However, many devices will add them to their list of favorites. So this may be clobbered with supplementary way points you are not permanently interested in.
+
+The best solution would be to share the same map, routing engine and routing preference setting between workstation and mobile device. Any reports on such solutions are welcome ... where? on the mailing list????
