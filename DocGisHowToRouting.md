@@ -135,6 +135,12 @@ Call "Calculate route" to get:
 
 Notice that the routepoints now have kept their labels, as opposed to their anonymuous behaviour when QMapShack derives routepoints from waypoints.
 
+As soon as you edit the route, e.g. by moving points, you get a warning 
+
+![edit-warning.png](https://bitbucket.org/repo/L5qerE/images/2327772757-edit-warning.png)
+
+The edited route points now have lost their description.
+
 ???#### to be tested: does this survive on the device?########
 
 
