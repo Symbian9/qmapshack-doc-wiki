@@ -82,6 +82,12 @@ https://bitbucket.org/maproom/qmapshack/wiki/DocGisItemsNew#markdown-header-wayp
 
 ### import waypoints ###
 
+The GPX file format is a widely used de facto standard for GIS data exchange. Many GIS data sources may produce GPX directly, which can be used in the "File -> Load GIS" dialogoue.
+
+If not, the GPS "swiss army knife" gpsbabel may help to convert nearyly any relevant GIS data format into GPX
+
+
+
 
 ### import routes ###
 
