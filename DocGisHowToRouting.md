@@ -47,12 +47,38 @@ Save your project if you want to use the results later.
 
 ![rte_context.png](https://bitbucket.org/repo/L5qerE/images/3754465212-rte_context.png)
 
+"Edit...", "Copy to... " and "Delete" are generic object functions and do what they say.
+
+"Route Instructions": highlight route and see routing instructions.
+
+"Reset Route" removes the calculated pathway and returns to waypoints linked by straigt lines of flight.
+
+"Calculate" restores the calculated pathway or recalculates it according to your (maybe changed) routing preferences.
+
+See here
+https://bitbucket.org/maproom/qmapshack/wiki/DocGisItemsRte
+how to configure your routing engine. It is strongly encouraged to use offline routine routing, if you want to use serious route planning - both for performance reasons and to limit load on MapQuest online routing.
 
 
-### Manually create waypoint ###
+"Convert to Track" creates a track with a large number of points ("breadcrumb track") which remains independet of the routing engine, the router map and the routing properties. If your GPS device supports routing by track, this will deliver exactly what you have planned. This includes the disadvantage that you cannot easily replan your route on the GPS device.
+
+"Edit route" .....
+This allows you to add/delete/move maypoints to your route. See here
+https://bitbucket.org/maproom/qmapshack/wiki/DocGisItemsEditMultiple
+for a detailled description of the dialogue.
+
+You may notice that the routepoints have lost their relation to the waypoints from which they were initially created. Moving a routepoint does not change the waypoint it was derived from.
+
+### issue: named route points ###
+
+The routepoints do not inherit their name or description from the waypoints they were generated from.
+There is a bug report/feature request on this in the issue list:
+https://bitbucket.org/maproom/qmapshack/issues/127/create-a-route-from-waypoints-does-not-add
+
+### Manually create, edit and move a waypoint ###
+
+If you are not always happy with the results of the "Google Search" function, You may manually fine tune your waypoints before deriving a route from them - see here for instructions:
 https://bitbucket.org/maproom/qmapshack/wiki/DocGisItemsNew#markdown-header-waypoint
-
-### edit and move a waypoint ###
 
 ### import waypoints ###
 
@@ -62,4 +88,8 @@ https://bitbucket.org/maproom/qmapshack/wiki/DocGisItemsNew#markdown-header-wayp
 
 ### send route to device ###
 
-### issue: named route points ###
+Save your project, plug your device and call "send to device" in the project context menue. Be aware that all objects in the project - waypoints, routes and tracks - are sent to the device. If this is not what you want, create a new project and copy only desired items into this. Send this project to the device, then.
+
+See here
+https://bitbucket.org/maproom/qmapshack/wiki/DocGisDevices
+for more infos about exchanging data with mobile GPS devices.
