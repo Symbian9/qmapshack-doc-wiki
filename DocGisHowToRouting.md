@@ -85,11 +85,57 @@ https://bitbucket.org/maproom/qmapshack/wiki/DocGisItemsNew#markdown-header-wayp
 The GPX file format is a widely used de facto standard for GIS data exchange. Many GIS data sources may produce GPX directly, which can be used in the "File -> Load GIS" dialogoue.
 
 If not, the GPS "swiss army knife" gpsbabel may help to convert nearyly any relevant GIS data format into GPX
+For details, read the manual you may find here: https://www.gpsbabel.org/htmldoc-1.4.4/gpsbabel-1.4.4.pdf
+
+Take for example this little csv formatted text file, saved as "wpts-test5.csv":
 
 
+```
+#!
+49.43226,11.09153 , Nürnberg Hermundurenstraße 17
+49.73233,11.07244 , Forchheim Hugo-Post-Straße 84
+49.42029,11.89065 , Kümmersbruck Grasiger Weg
+49.15800,11.71157 , parsberg lindlbergstraße
+49.43226,11.09153 , Nürnberg Hermundurenstraße 17
+```
 
+Call gpsbabel like this to convert this to a gpx with waypoints:
+```
+#!
+gpsbabel -i csv -f wpts-test5.csv  -o gpx -F wpts-test5-wpt.gpx
+```
+Open it with "File -> Load GIS Data" yields 
+
+![import-wpt-list.png](https://bitbucket.org/repo/L5qerE/images/995727279-import-wpt-list.png)
+
+and
+
+![import-wpt-map.jpg](https://bitbucket.org/repo/L5qerE/images/3896244447-import-wpt-map.jpg)
 
 ### import routes ###
+
+To import the points as routepoints instead, call this:
+
+```
+#!
+gpsbabel -i csv -f wpts-test5.csv -x  transform,rte=wpt -x nuketypes,waypoints -o gpx -F wpts-test5-rtpt.gpx
+```
+
+This will display in QMapShack as
+
+![import-rtpt-list.png](https://bitbucket.org/repo/L5qerE/images/2542930625-import-rtpt-list.png)
+
+and in the map as path of flight:
+
+![import-rtpt-map.jpg](https://bitbucket.org/repo/L5qerE/images/1051625912-import-rtpt-map.jpg)
+
+Call "Calculate route" to get:
+
+![import-rtpt-map-calc.jpg](https://bitbucket.org/repo/L5qerE/images/1950590911-import-rtpt-map-calc.jpg)
+
+Notice that the routepoints now have kept their labels, as opposed to their anonymuous behaviour when QMapShack derives routepoints from waypoints.
+
+???#### to be tested: does this survive on the device?########
 
 
 ### send route to device ###
