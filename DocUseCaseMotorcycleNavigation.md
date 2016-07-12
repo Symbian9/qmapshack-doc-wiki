@@ -1,6 +1,3 @@
-Prev () | [Home](Home) | [Manual](DocMain) | () Next
-- - -
-
 # This is just a stub / test dummy and not yet ready for public linkage. #
 
 # Peculiarities of Motorcycle Navigation #
@@ -169,5 +166,3 @@ I could not get one to work on my old SuSE 11.0 those days. I got a WIN Laptop n
 And it would be great to display a combined view of track on map, video, images and track profile synchronized in the web, I haven't found any player yet. Pointers were welcome.
 
 Nice-Stuff-ToDo list growing still longer....
-- - -
-Prev () | [Home](Home) | [Manual](DocMain) | () Next
