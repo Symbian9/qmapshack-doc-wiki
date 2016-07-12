@@ -8,7 +8,7 @@ Prev () | [Home](Home) | [Manual](DocMain) | () Next
 
 Activate a proper map. OpenStreetMap as installed by "I want maps" will do perfectly.
 
-Activate **Menue -> Project -> Add empty project**  
+Activate **Menu -> Project -> Add empty project**  
 
 ![projmenu.png](https://bitbucket.org/repo/L5qerE/images/1188753088-projmenu.png)
 
@@ -16,7 +16,7 @@ and give it a proper name. Leave qms project type unless you know why not.
 
 ![proj_new.png](https://bitbucket.org/repo/L5qerE/images/2189981266-proj_new.png)
 
-Activate **Menue -> Project -> Search Google** if not yet open.
+Activate **Menu -> Project -> Search Google** if not yet open.
 
 Type some search term for your address into the "Google Project" field. You may expand the left triangle to see your results. If you get "Error:", try to change or refine your search term. Usually, a road and a town should give reasonable results. Right click on your result, activate "copy to" and select your project name given in the first step. If your search yields multiple results, select the one desired.
 
@@ -24,7 +24,7 @@ This way, you collect **waypoints** in your project.
 Repeat the steps for all waypoints your route is desired to pass.
 
 Use **shift-<click>** or **ctrl-<click>** to select some or all of your waypoints in the project. Be sure to select at least two waypoints and no other objects.
-In the context menue (right mouse button), select "Create Route". 
+In the context menu (right mouse button), select "Create Route". 
 
 ![rte_create.png](https://bitbucket.org/repo/L5qerE/images/541772100-rte_create.png)
 
@@ -50,7 +50,7 @@ Save your project if you want to use the results later.
 
 # Manipulating a Route #
 
-### route context menue ###
+### route context menu ###
 
 ![rte_context.png](https://bitbucket.org/repo/L5qerE/images/3754465212-rte_context.png)
 
@@ -169,7 +169,7 @@ not here, better in the issue case ########
 
 ### Send Route to Device ###
 
-Save your project, plug your device and call "**send to device**" in the project context menue. Be aware that all objects in the project - waypoints, routes and tracks - are sent to the device. If this is not what you want, create a new project and copy only desired items into this. Send this project to the device, then.
+Save your project, plug your device and call "**send to device**" in the project context menu. Be aware that all objects in the project - waypoints, routes and tracks - are sent to the device. If this is not what you want, create a new project and copy only desired items into this. Send this project to the device, then.
 
 See here
 DocGisDevices
