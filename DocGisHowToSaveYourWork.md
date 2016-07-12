@@ -1,6 +1,3 @@
-Prev () | [Home](Home) | [Manual](DocMain) | () Next
-- - -
-
 # How to save your work #
 
 *(pen-pen-ultimate version -  should be fine for me)*
@@ -26,7 +23,7 @@ You don't edit maps in QMapShack. Maps are huge and may eat up lots of backup re
 QMapShack reads its maps from the configured MapPaths.
 
 Recall the map organization:
-DocBasicsMapDem
+https://bitbucket.org/maproom/qmapshack/wiki/DocBasicsMapDem
 
 
 
@@ -67,7 +64,7 @@ You may keep online maps and offline maps in different paths to ease this.
 
 ### Map Views ###
 
-.. determine how your currently visible maps - including your visible data - are **displayed**. Recall DocControlMapDem
+.. determine how your currently visible maps - including your visible data - are **displayed**. Recall https://bitbucket.org/maproom/qmapshack/wiki/DocControlMapDem
 
 The view is different and independent from your GIS data as organized in projects.
 
@@ -91,7 +88,7 @@ In terms of storage, projects may be implemented as:
 
 ###Backup of single project files###
 
-See here DocHandleGpxFiles for further details on the handling of GIS files.
+See here https://bitbucket.org/maproom/qmapshack/wiki/DocHandleGpxFiles for further details on the handling of GIS files.
 
 For both .gpx and .qms files, there is a **1:1 relation between project and file**. This keeps backup procedures simple and straightforward. However, it leaves you the responsibility to keep your data in sync  between different projects=files if you roll back to a different version of your work.
 
@@ -102,7 +99,7 @@ So, if you want to combine the advantage of both worlds, save your work in a qms
 ###Backup of databases###
 
 Databases are, like qms files, a  QMapShack internal format not supposed to be disassembled by the causal end user.
-See here DocGisDatabase for more on databases.
+See here https://bitbucket.org/maproom/qmapshack/wiki/DocGisDatabase for more on databases.
 
 In a database, multiple projects are stored in one database file. So if you backup versions of this database, all the projects within will be restored in a consistent way, if you switch to an earlier version. This means on the other hand, that you cannot easily roll back selectively. To do so, you have to open both old and new version and manually copy selected content between them as desired.
 
@@ -120,7 +117,7 @@ This contains most information on your device as it refers to QMapShack projects
 
 We do **not recommend to write directly onto the device** using file level access, unless you do not know what to do. Enjoy the great work the QMS programmers have delivered and **use QMapShack device access** functionality instead. There are quite some items in a GPX file that the standard allows but may upset your device. You have been warned.
 
-See here DocGisDevices for further information on device access.
+See here https://bitbucket.org/maproom/qmapshack/wiki/DocGisDevices for further information on device access.
 
 We also do not discuss the other directories, as they are not immediately related to QMS work. There is a plethora of forum entries around, full of tips and good and bad experiences. Good luck trying!
 
@@ -142,7 +139,7 @@ Data in your file based projects is only stored in your files if you select "sav
 
 
 If you make any changes to any object (as shown here 
-DocGisItemsEditMultiple 
+https://bitbucket.org/maproom/qmapshack/wiki/DocGisItemsEditMultiple 
 in detail), both your edited object and the project it belongs to is marked by an asterisk * in the Data Window with the project tree:
 
 ![wiki-projtree.png](https://bitbucket.org/repo/L5qerE/images/4285409798-wiki-projtree.png)
@@ -182,5 +179,3 @@ items on another instance of QMapShack. This includes saving local changes and
 reloading all items in the workspace. On a conflict the user is asked which 
 version to keep.
 
-- - -
-Prev () | [Home](Home) | [Manual](DocMain) | () Next
