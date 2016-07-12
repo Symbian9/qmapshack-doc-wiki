@@ -1,3 +1,6 @@
+Prev () | [Home](Home) | [Manual](DocMain) | () Next
+- - -
+
 # Quick way to prepare raster map for QMapShack
 
 This is translation of the original article in my own blog: http://htrd.su/wiki/zhurnal/2016/02/11/bystro_i_nenavjazchivo_gotovim_kartu_dlja_otkrytija_v_qmapshack.
@@ -34,3 +37,5 @@ On screenshot above (image with better quality: http://htrd.su/wiki/_media/zhurn
 Also, you can see podcast that describe procedure above: https://youtu.be/7mp35wYk0IQ
 
 Note, you can create VRT of VRTs. In other words: combine multiple VRT files with same scale to the "atlas" and open only one file. Description will be provided ASAP.
+- - -
+Prev () | [Home](Home) | [Manual](DocMain) | () Next

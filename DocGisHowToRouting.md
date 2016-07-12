@@ -1,3 +1,6 @@
+Prev () | [Home](Home) | [Manual](DocMain) | () Next
+- - -
+
 # Planning a Route #
 # Routing Quick Start  #
 
@@ -58,7 +61,7 @@ Save your project if you want to use the results later.
 "**Calculate**" restores the calculated pathway or recalculates it according to your (maybe changed) routing preferences.
 
 See here
-https://bitbucket.org/maproom/qmapshack/wiki/DocGisItemsRte
+DocGisItemsRte
 how to configure your routing engine. It is strongly encouraged to **use** offline **routino** routing, if you want to use serious route planning - both for performance reasons and to limit load on MapQuest online routing.
 
 
@@ -66,7 +69,7 @@ how to configure your routing engine. It is strongly encouraged to **use** offli
 
 "**Edit route**" .....
 This allows you to add/delete/move maypoints to your route. See here
-https://bitbucket.org/maproom/qmapshack/wiki/DocGisItemsEditMultiple
+DocGisItemsEditMultiple
 for a detailled description of the dialogue.
 
 You may notice that the routepoints have lost their relation to the waypoints from which they were initially created. Moving a routepoint does not change the waypoint it was derived from.
@@ -80,7 +83,7 @@ https://bitbucket.org/maproom/qmapshack/issues/127/create-a-route-from-waypoints
 ### Manually create, edit and move a waypoint ###
 
 If you are not always happy with the results of the "Google Search" function, you may manually fine tune your waypoints before deriving a route from them. See here for detailed instructions:
-https://bitbucket.org/maproom/qmapshack/wiki/DocGisItemsNew#markdown-header-waypoint
+DocGisItemsNew#waypoint
 
 ### Import Waypoints ###
 
@@ -167,7 +170,7 @@ not here, better in the issue case ########
 Save your project, plug your device and call "**send to device**" in the project context menue. Be aware that all objects in the project - waypoints, routes and tracks - are sent to the device. If this is not what you want, create a new project and copy only desired items into this. Send this project to the device, then.
 
 See here
-https://bitbucket.org/maproom/qmapshack/wiki/DocGisDevices
+DocGisDevices
 for more infos about exchanging data with mobile GPS devices.
 
 ### Gotchas and Tricks ###
@@ -181,3 +184,5 @@ You also may add addional waypoints to your route, using the "edit route" funtio
 You also may send waypoints as such to your device. However, many devices will add them to their list of favorites. So this may be clobbered with supplementary way points you are not permanently interested in.
 
 The best solution would be to share the same map, routing engine and routing preference setting between workstation and mobile device. Any reports on such solutions are welcome ... where? on the mailing list????
+- - -
+Prev () | [Home](Home) | [Manual](DocMain) | () Next

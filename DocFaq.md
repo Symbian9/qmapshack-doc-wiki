@@ -1,4 +1,5 @@
-[Home](Home)
+Prev () | [Home](Home) | [Manual](DocMain) | () Next
+- - -
 
 [TOC]
 
@@ -62,3 +63,5 @@ different road types can be modified by the user.
 
 Due to limitations in the Windows POSIX API Routino can't handle files larger than 4GB.
 
+- - -
+Prev () | [Home](Home) | [Manual](DocMain) | () Next
