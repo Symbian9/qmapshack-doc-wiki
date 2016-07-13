@@ -10,6 +10,9 @@ Activate a proper map. OpenStreetMap as installed by "I want maps" will do perfe
 
 Activate **Menu -> Project -> Add empty project**  
 
+**kiozen: Images are stored in the correct folder of the images folder. Keep in mind that the Wiki can be converted into a stand alone HTML document by the scripts. Therefore all stuff has to be in this repository.**
+
+
 ![projmenu.png](https://bitbucket.org/repo/L5qerE/images/1188753088-projmenu.png)
 
 and give it a proper name. Leave qms project type unless you know why not.
