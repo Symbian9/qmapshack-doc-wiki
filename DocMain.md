@@ -36,6 +36,7 @@ large changes to the GUI. However smaller changes will be ignored.
     * [Folders and Items](DocGisDatabaseFoldersItems)
     * ['Lost & Found' Folder](DocGisDatabaseLostFound)
 * [GPS Devices](DocGisDevices)
+* [Frequently Asked Questions](DocFaq)
 
 ## Developer & Translators
 

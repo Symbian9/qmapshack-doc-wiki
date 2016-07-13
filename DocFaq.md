@@ -10,7 +10,7 @@
 ## Is there an easy way to "select all" the contents of one project to drag them into another? 
 ## Is there a way to merge projects together?
 
-**Source:** [http://article.gmane.org/gmane.comp.gis.qlandkartegt.user/2612](http://article.gmane.org/gmane.comp.gis.qlandkartegt.user/2612)
+**Source:** [gmane.comp.gis.qlandkartegt](http://article.gmane.org/gmane.comp.gis.qlandkartegt.user/2612)
 
 With QMapShack version 1.6.1 or later:
 
@@ -25,20 +25,27 @@ You can load only the items needed. Additionally, if you store a newly created
 project into the database you do not need to clone (duplicate) the data.
 
 
-## Is there a possibility to display small roads/tracks in a map without zooming in too much?
+## Is there a possibility to display small roads/tracks in a vector map without zooming in too much?
 
-**Source:** [http://www.naviboard.de/vb/showthread.php?t=59676](http://www.naviboard.de/vb/showthread.php?t=59676)
+**Source:** [www.naviboard.de](http://www.naviboard.de/vb/showthread.php?t=59676)
 
-This problem appears with a map like [Freizeitkarte](http://www.freizeitkarte-osm.de/) where smaller roads/tracks are only visible at 
-a zoom level where the overview gets lost.
+This problem appears with a vector map like [Freizeitkarte](http://www.freizeitkarte-osm.de/) where smaller 
+roads/tracks are only visible at a zoom level where the overview gets lost.
 
-There is no such possibility in QMapShack. The detail levels for map data are defined by the map author and can't be
+There is no such possibility in QMapShack. The detail levels for vector map data are defined by the map author and can't be
 changed within QMapShack.
 
+Users reported about the following ways to improve the visibility of small roads:
+
+* Choose the menu item `View - Setup Map View - Projections&Datum`
+* Append to the given configuration string one of the following strings:
+  * `+lat_ts=60` 
+  * `+k_0=0.3` (**Source:** [gmane.comp.gis.qlandkartegt](http://permalink.gmane.org/gmane.comp.gis.qlandkartegt.user/2688)) 
+  * Try to increase or decrease the given value to get the wanted result
 
 ## Is there a possibility to choose the preferred road class when routing?
 
-**Source:** [http://www.naviboard.de/vb/showthread.php?t=59418](http://www.naviboard.de/vb/showthread.php?t=59418)
+**Source:** [www.naviboard.de](http://www.naviboard.de/vb/showthread.php?t=59418)
 
 Routing in QMapShack depends on the [Routino](http://routino.org) package and this package does not offer an option to select a preferred road type.
 
