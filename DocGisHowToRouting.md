@@ -1,7 +1,9 @@
 Prev () | [Home](Home) | [Manual](DocMain) | () Next
 - - -
 
-# Planning a Route #
+[TOC]
+
+
 # Routing Quick Start  #
 
 Activate a proper map. OpenStreetMap as installed by "I want maps" will do perfectly.
@@ -60,8 +62,9 @@ Save your project if you want to use the results later.
 
 "**Calculate**" restores the calculated pathway or recalculates it according to your (maybe changed) routing preferences.
 
-See here
-https://bitbucket.org/maproom/qmapshack/wiki/DocGisItemsRte
+**kiozen: Local documents are referenced like this:**
+
+See [here](DocGisItemsRte)
 how to configure your routing engine. It is strongly encouraged to **use** offline **routino** routing, if you want to use serious route planning - both for performance reasons and to limit load on MapQuest online routing.
 
 
