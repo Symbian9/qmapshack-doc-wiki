@@ -165,6 +165,8 @@ As soon as you call "Edit Route", e.g. to move points, you get a warning
 
 If you continue, the edited route points now have lost their description.
 
+**kiozen: Keep in mind that once these issues are fixed this statement will be obsolete and misleading. And it's very likely that no one will take care of fixing the text. Therefore it's ok to mention and reference the issue once. But avoid hidden references like that.**
+
 This property is consistenlty transferred to the mobile GPS device.
 
 ???#### screenshots from device ?? 
