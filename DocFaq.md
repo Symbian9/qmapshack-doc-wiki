@@ -39,9 +39,8 @@ Users reported about the following ways to improve the visibility of small roads
 
 * Choose the menu item `View - Setup Map View - Projections&Datum`
 * Append to the given configuration string one of the following strings:
-  * `+lat_ts=60` 
-  * `+k_0=0.3` (**Source:** [gmane.comp.gis.qlandkartegt](http://permalink.gmane.org/gmane.comp.gis.qlandkartegt.user/2688)) 
-  * Try to increase or decrease the given value to get the wanted result
+  * `+lat_ts=60` This sets the *latitude of true scale* for a Mercator projection. The closer you get to the polar regions the more the map will be skewed horizontally in comparison to the vertical scale. At the *latitude of true scale* (usually 0 for the equator) the scales are equal.
+  * `+k_0=0.3` (**Source:** [gmane.comp.gis.qlandkartegt](http://permalink.gmane.org/gmane.comp.gis.qlandkartegt.user/2688))  The is a scale factor for the normal scale. A value of 1.0 will have no effect. Try to increase or decrease the given value to get the wanted result
 
 ## Is there a possibility to choose the preferred road class when routing?
 
