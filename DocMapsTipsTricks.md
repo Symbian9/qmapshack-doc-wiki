@@ -290,7 +290,7 @@ Script converts to OSGEO TMS (http://www.maptiler.org/google-maps-coordinates-ti
 </TMS>
 ```
 
-## Russian maps (ex-military (aka "Genshtab" /Maps of the General Staff/), non-classified maps and so on) 
+## (Russian) Raster maps (ex-military (aka "Genshtab" /Maps of the General Staff/), non-classified maps and so on) 
 
 [Quick way to prepare raster map for QMapShack](QuickWayToPrepareRasterMapForQMapShack)
 
