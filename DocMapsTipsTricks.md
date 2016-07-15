@@ -33,7 +33,7 @@ function convert(z1,x1,y1)
 ```
 The official documentation of WMS standard can be found on [http://www.opengeospatial.org/standards/wms](http://www.opengeospatial.org/standards/wms).
 
-The following version loads the French BRGM TMS tiles (adapted from QLandkarteGT xml config file) :
+The following version loads the French BRGM WMS tiles (adapted from QLandkarteGT xml config file) :
 ```
 #!XML
 <TMS>
