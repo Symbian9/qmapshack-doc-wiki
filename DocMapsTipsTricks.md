@@ -33,6 +33,26 @@ function convert(z1,x1,y1)
 ```
 The official documentation of WMS standard can be found on [http://www.opengeospatial.org/standards/wms](http://www.opengeospatial.org/standards/wms).
 
+The following version loads the French BRGM TMS tiles (adapted from QLandkarteGT xml config file) :
+```
+#!XML
+<TMS>
+<Layer idx="0">
+<Title>IGN BRGM France</Title>
+<Script><![CDATA[(
+function convert(z1,x1,y1)
+{ function M(n){return 256*n*(156543.03392804062/(1<<z1))-20037508.342789244}
+  y=(1<<z1)-1-y1;
+  bbox=M(x1)+','+M(y)+','+M(x1+1)+','+M(y+1);
+  return "http://mapsref.brgm.fr/wxs/refcom-brgm/refign?LAYERS=FONDS_SCAN&FORMAT=image/png&SRS=EPSG:3857&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&BBOX=" + bbox + "&WIDTH=256&HEIGHT=256";
+}
+)]]></Script>
+</Layer>
+<Copyright>France IGN BRGM</Copyright>
+</TMS>
+
+```
+
 ### Use ArcGIS Server like a TMS Server
 The same logic can be implemented on the **export** command of ArcGIS server maps. Here is an example URL:
 
