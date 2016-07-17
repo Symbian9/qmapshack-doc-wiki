@@ -5,13 +5,13 @@
 
 ## Foreword
 
-The following description explains how the QmapShack windows binaries provided for download at https://bitbucket.org/maproom/qmapshack/downloads are created.
+The following description explains how the QMapShack windows binaries provided for download at https://bitbucket.org/maproom/qmapshack/downloads are created.
 
 I try to keep a balance between providing a complete but still reasonably compact description.
 So, depending on the setup of your development machine (e.g. language settings) you might have to make some adaptations which may not be described here in full detail. 
-So please be prepared for some improvization, e.g. when adapting path names or resoving start menu entries.
+So please be prepared for some improvizatizon, e.g. when adapting path names or resolving start menu entries.
 
-Of course, there might be other ways to create windows binaries, e.g. with other compiler tool chains. If you succeed, you are encouraged to create a builld description on a separate Wiki page.
+Of course, there might be other ways to create windows binaries, e.g. with other compiler tool chains. If you succeed, you are encouraged to create a build description on a separate Wiki page.
 
 ## General remarks
 
@@ -101,7 +101,7 @@ Note: QMS should compile with Qt5.4 as well but Qt5.4 has a nasty bug in list sc
   Note: if you prefer offline installation you can choose the right package 
   in OFFLINE INSTALLERS section of that page
   
-### C5.) Get the QMapshack source from the repository, e.g. 
+### C5.) Get the QMapShack source from the repository, e.g. 
 ~~~~
    hg clone https://bitbucket.org/maproom/qmapshack QMapShack  
 ~~~~

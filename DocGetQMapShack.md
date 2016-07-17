@@ -40,7 +40,7 @@ Update QMapShack to the latest version:
 
 Many distributions come with a prebuilt version of QMapShack.
 
-Installing via official repository is the prefered way of installing QMapShack.
+Installing via official repository is the preferred way of installing QMapShack.
 Below a (non-exhaustive) list of Linux Distributions shipping QMapShack:
 
 * [Debian](https://packages.debian.org/testing/qmapshack)

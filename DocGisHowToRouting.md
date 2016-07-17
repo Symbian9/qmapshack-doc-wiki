@@ -37,7 +37,7 @@ You can now adjust the sequence in which the route should pass your waypoints.
 
 Continue with OK, enter a route name in the next window and select your project in the following window.
 
-QMapShack automagically will calculate the route according to your current routing prefrences, which more or less may take some time.
+QMapShack automagically will calculate the route according to your current routing preferences, which more or less may take some time.
 
 Double click your route to zoom your map view to the whole route.
 
@@ -61,7 +61,7 @@ Save your project if you want to use the results later.
 
 "**Route Instructions**": highlight route and see routing instructions.
 
-"**Reset Route**" removes the calculated pathway and returns to waypoints linked by straigt lines of flight.
+"**Reset Route**" removes the calculated pathway and returns to waypoints linked by straight lines of flight.
 
 "**Calculate**" restores the calculated pathway or recalculates it according to your (maybe changed) routing preferences.
 
@@ -71,7 +71,7 @@ See [here](DocGisItemsRte)
 how to configure your routing engine. It is strongly encouraged to **use** offline **routino** routing, if you want to use serious route planning - both for performance reasons and to limit load on MapQuest online routing.
 
 
-"**Convert to Track**" creates a track with a large number of points ("breadcrumb track") which remains independet of the routing engine, the router map and the routing properties (available in version 1.6.2). If your GPS device supports routing by track, this will deliver exactly what you have planned. Be aware, that from track data, you cannot easily replan your route on the GPS device.
+"**Convert to Track**" creates a track with a large number of points ("breadcrumb track") which remains independent of the routing engine, the router map and the routing properties (available in version 1.6.2). If your GPS device supports routing by track, this will deliver exactly what you have planned. Be aware, that from track data, you cannot easily replan your route on the GPS device.
 
 "**Edit route**" .....
 This allows you to add/delete/move maypoints to your route. See here
@@ -93,7 +93,7 @@ https://bitbucket.org/maproom/qmapshack/wiki/DocGisItemsNew#markdown-header-wayp
 
 ### Import Waypoints ###
 
-The GPX file format is a widely used de facto standard for GIS data exchange. Many GIS data sources may produce GPX directly, which can be used in the "File -> Load GIS" dialogoue.
+The GPX file format is a widely used de facto standard for GIS data exchange. Many GIS data sources may produce GPX directly, which can be used in the "File -> Load GIS" dialogue.
 
 If not, the GPS "swiss army knife" **gpsbabel**  may help to convert nearyly any relevant GIS data format into GPX. 
 For details, read the manual you may find here: https://www.gpsbabel.org/htmldoc-1.4.4/gpsbabel-1.4.4.pdf
@@ -157,7 +157,7 @@ Call "Calculate route" to get:
 
 ![import-rtpt-map-calc.jpg](https://bitbucket.org/repo/L5qerE/images/1950590911-import-rtpt-map-calc.jpg)
 
-Notice that the routepoints now have kept their labels, as opposed to their anonymuous behaviour when QMapShack derives routepoints from waypoints.
+Notice that the routepoints now have kept their labels, as opposed to their anonymous behavior when QMapShack derives routepoints from waypoints.
 
 As soon as you call "Edit Route", e.g. to move points, you get a warning 
 
@@ -167,7 +167,7 @@ If you continue, the edited route points now have lost their description.
 
 **kiozen: Keep in mind that once these issues are fixed this statement will be obsolete and misleading. And it's very likely that no one will take care of fixing the text. Therefore it's ok to mention and reference the issue once. But avoid hidden references like that.**
 
-This property is consistenlty transferred to the mobile GPS device.
+This property is consistently transferred to the mobile GPS device.
 
 ???#### screenshots from device ?? 
 not here, better in the issue case ########
@@ -187,7 +187,7 @@ Be aware that your device presumably uses different maps, routing preferences an
 
 One way to prevent this is to convert your route to a track and send this to your device. However, this is not flexible for rerouting if you deviate from your preplanned route for whatever reason and want to find back to it.
 
-You also may add addional waypoints to your route, using the "edit route" funtionality. This let's you "nail down" your route to the desired pathway. Be sure to select "nails" as close to your target pathway as possible. Otherwise, your device might navigate you to artificial stepaways just to collect an imaginary flag. Some devices, e.g. the Garmin zumo motorcycle navigators, have a "skip next route point" function for this reason.
+You also may add addional waypoints to your route, using the "edit route" functionality. This let's you "nail down" your route to the desired pathway. Be sure to select "nails" as close to your target pathway as possible. Otherwise, your device might navigate you to artificial stepaways just to collect an imaginary flag. Some devices, e.g. the Garmin zumo motorcycle navigators, have a "skip next route point" function for this reason.
 
 You also may send waypoints as such to your device. However, many devices will add them to their list of favorites. So this may be clobbered with supplementary way points you are not permanently interested in.
 

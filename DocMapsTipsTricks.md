@@ -200,7 +200,7 @@ The script requires the following tools to be installed:
 
 #### Configuration
 
-The script below is configured to download the OpenMTBMap for bavaria, convert it to `OpenMTBMap_<date>.img` using traddby.TYP and move it to `~/.qmapshack_maps/`.
+The script below is configured to download the OpenMTBMap for Bavaria, convert it to `OpenMTBMap_<date>.img` using traddby.TYP and move it to `~/.qmapshack_maps/`.
 
 If this does not match your requirements, you will need to adopt the values *FILESRC*, *IMGFMT*, *QMSMAPDIR* and *TYPE*:
 
