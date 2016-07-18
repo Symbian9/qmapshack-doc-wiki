@@ -42,17 +42,6 @@ Users reported about the following ways to improve the visibility of small roads
   * `+lat_ts=60` This sets the *latitude of true scale* for a Mercator projection. The closer you get to the polar regions the more the map will be skewed horizontally in comparison to the vertical scale. At the *latitude of true scale* (usually 0 for the equator) the scales are equal.
   * `+k_0=0.3` (**Source:** [gmane.comp.gis.qlandkartegt](http://permalink.gmane.org/gmane.comp.gis.qlandkartegt.user/2688))  This is an additional scale factor on the normal scale. A value of 1.0 will have no effect. Try to increase or decrease the given value to get the wanted result
 
-## Is there a possibility to switch between different type files for Garmin maps?
-
-(compare discussion in the 
-[issue tracker](https://bitbucket.org/maproom/qmapshack/issues/152/garmin-maps-alter-scale-to-detail-level)) 
-
-The common format of Garmin maps is a `gmapsupp.img` file for each map(set). 
-These files can be used as they are on the devices and in QMapShack. 
-  
-A quick way to use a different typ file for a Garmin map is to replace the typ file in the `gmapsupp.img` file 
-with some extra tool like `GMapTool`.
-  
 ## Is there a possibility to choose the preferred road class when routing?
 
 **Source:** [www.naviboard.de](http://www.naviboard.de/vb/showthread.php?t=59418)
@@ -62,6 +51,11 @@ Routing in QMapShack depends on the [Routino](http://routino.org) package and th
 Routing profiles are saved in an XML-file (/usr/share/routino/profiles.xml). Here the preferences/weights of 
 different road types can be modified by the user.
 
+## Can I run several QMS instances at the same time?
+
+As a general rule don't do this. QMS saves workspace information in the file `workspace.db`. There is only one such
+file for all QMS instances. If this file is used by several QMS instances at the same time then the 
+QMS workspace data behaviour is unpredictable.
 
 ## User-relevant QMapShack directories (Windows version)
 
