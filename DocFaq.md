@@ -13,6 +13,7 @@
 In the following **data item** means **waypoint**, **track**, **route**, or **area**.
 
 There are 3 physical storage types used in QMS for saving data items:
+
 * `GPX` files (common data format)
 * `QMS` files (proprietary efficient binary data format)
 * `SQLite` or `MySQL` databases
@@ -32,6 +33,7 @@ Each database consists of a tree. Each node of the tree is either a **folder** o
 Nodes on the highest level must be folders.
 
 There are 3 types of folders:
+
 * **Group** (displayed with a blue icon),
 * **Project** (displayed with a green icon),
 * **Other** (displayed with an orange icon)
