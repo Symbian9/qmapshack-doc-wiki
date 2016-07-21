@@ -64,10 +64,9 @@ that contains again all tracks from the other green folders. As the tracks are j
 folders they are not stored several times as would have done with `GPX` or `QMS` files.
 
 Other advantages of the use of databases are the possibility
-* to load just a few data items of a project into the workspace. With a `GPX` file everything in
-the file is completely loaded into the workspace,
-* to search for data items with a given text string using the context menu entry `Search database` of the
-database (starting with QMS version 1.6.3.post).
+
+* to load just a few data items of a project into the workspace. With a `GPX` file everything in the file is completely loaded into the workspace,
+* to search for data items with a given text string using the context menu entry `Search database` of the database (starting with QMS version 1.6.3.post).
 
 When creating a new reference to a data item QMS offers the choice either to create simply a reference or a 
 clone (a copy) of the data item.
