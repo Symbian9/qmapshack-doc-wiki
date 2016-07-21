@@ -63,12 +63,13 @@ Additionally, a green _summary_ folder
 that contains again all tracks from the other green folders. As the tracks are just referenced by the
 folders they are not stored several times as would have done with `GPX` or `QMS` files.
 
-Another advantage of the use of databases is that just a few data items of a project can be loaded
-into the workspace. With a `GPX` file everything in
-the file is completely loaded into the workspace.
+Other advantages of the use of databases are the possibility
+* to load just a few data items of a project into the workspace. With a `GPX` file everything in
+the file is completely loaded into the workspace,
+* to search for data items with a given text string using the context menu entry `Search database` of the
+database (starting with QMS version 1.6.3.post).
 
-When
-creating a new reference to a data item QMS offers the choice either to create simply a reference or a 
+When creating a new reference to a data item QMS offers the choice either to create simply a reference or a 
 clone (a copy) of the data item.
 
 ## Is there an easy way to "select all" the contents of one project to drag them into another? 
