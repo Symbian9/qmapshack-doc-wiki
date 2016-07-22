@@ -171,18 +171,14 @@ georeference data can't be found within the MAP files.
     * Run 
     
     `gdalwarp -of VRT full_path_to_your_raster_map.map full_path_to_your_raster_map.vrt`
+
     * _Remark:_ It is unclear why `GDALBuildVRT` does not find the georeference information. 
     * Add the directory where the new VRT-file is located to your QMapShack map paths.
     
-* _Hint for Ubuntu users:_ Raster maps may have borders. There is an Ubuntu tool to crop semi-automatically
-  the map or a whole series of maps in such a way that the borders are not visible when loaded into QMapShack.
-  
-  Link to the tool: [github.com/h4tr3d/geocrop](https://github.com/h4tr3d/geocrop).
-  
-  Description of usage: 
-  
+* _Hint for Ubuntu users:_ Raster maps may have borders. There is an Ubuntu tool to crop semi-automatically the map or a whole series of maps in such a way that the borders are not visible when loaded into QMapShack. Link to the tool: [github.com/h4tr3d/geocrop](https://github.com/h4tr3d/geocrop). Description of usage: 
     * [http://htrd.su/wiki](http://htrd.su/wiki/start?btng[post][tags]=qmapshack) (Russian). This link leads also to a short Russian description of the basic QMapShack features.
     * [Quick way to prepare raster map for QMapShack](QuickWayToPrepareRasterMapForQMapShack)
+
 ## Why is a raster map not displayed?   
   
 **Source:** [http://permalink.gmane.org/gmane.comp.gis.qlandkartegt.user/2624](http://permalink.gmane.org/gmane.comp.gis.qlandkartegt.user/2624)
