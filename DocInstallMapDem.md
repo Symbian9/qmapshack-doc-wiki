@@ -1,4 +1,4 @@
-[Prev](DocInstallMapDem) (Maps & Digital Elevation Model (DEM)) | [Home](Home) | [Manual](DocMain) | (Basics about maps and DEM files) [Next](DocBasicsMapDem)
+[Prev](DocCmdOptions) (Command line parameters) | [Home](Home) | [Manual](DocMain) | (Basics about maps and DEM files) [Next](DocBasicsMapDem)
 - - -
 
 [TOC]
@@ -51,4 +51,4 @@ If you want to know more about the details of creating a \*.vrt file jump [here]
 * For Austria you can download quite high detailed data [here](https://www.data.gv.at/katalog/dataset/d88a1246-9684-480b-a480-ff63286b35b7).
 
 - - -
-[Prev](DocInstallMapDem) (Maps & Digital Elevation Model (DEM)) | [Home](Home) | [Manual](DocMain) | (Basics about maps and DEM files) [Next](DocBasicsMapDem)
+[Prev](DocCmdOptions) (Command line parameters) | [Home](Home) | [Manual](DocMain) | (Basics about maps and DEM files) [Next](DocBasicsMapDem)

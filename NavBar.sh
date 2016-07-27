@@ -87,7 +87,21 @@ gawk -v "toc=${1%.*}" '
 
                                           match($0,"[[][^]]*[]][(]([^)]*)",m)
 
-                                          p[m[1]]      = last_info
+                                          #
+                                          # If the previous entry is al-
+                                          # ready  set in  array  "p[]",
+                                          # this is  caused by  a header
+                                          # and an immediately following
+                                          # sub-header  in the  contents
+                                          # file  pointing  to the  same
+                                          # target  file.   In that case
+                                          # we do not again set the com-
+                                          # ponent in  "p[]"  to prevent
+                                          # it from pointing to the cur-
+                                          # rent file:
+
+                                          if ( ! (m[1] in p) ) p[m[1]] = last_info
+
                                           n[last_file] = $0
                                           last_info    = $0
                                           last_file    = m[1]
