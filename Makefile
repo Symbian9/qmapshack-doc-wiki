@@ -76,10 +76,9 @@ clean:
 # dividual "*.md" Markdown source files  so they are usable locally (be-
 # cause both  actions  depend on  individual  prerequisites,  we use two
 # double-colon rules which are executed in sequence and independently of
-# each other.   This rule is implicitly called  as prerequisite  by both
-# rules, "doc" and "nav",  and if at all,  explicit use of it is at most
-# required on the Bitbucket server  where no "*.html" files will be cre-
-# ated directly):
+# each other.  These rules are implicitly called as prerequisite by both
+# rules, "doc" and "nav", and thus there's  hardly any need to call them
+# directly):
 
 fix:: $(ubu)
 
@@ -109,14 +108,10 @@ $(fxt):: $(src)
 # the arguments for the "echo" commands consists of a tab character!):
 
 help:
-	@echo '	make clean (Discard all "*.html" files.)'            ; \
-	 echo '	make [doc] (Update all "*.html" files.  This is the' ; \
-	 echo '	            target normally used locally.)'          ; \
-	 echo '	make fix   (Make "*.md" files usable locally.)'      ; \
-	 echo '	make help  (Display this text.)'                     ; \
-	 echo '	make nav   (Update navigation bars in "*.md" files.' ; \
-	 echo '	            This is the target normally used on the' ; \
-	 echo '	            Bitbucket server.)'
+	@echo '	make clean # Discard all "*.html" and time stamp files.' ; \
+	 echo '	make [doc] # Update all outdated "*.html" files.'        ; \
+	 echo '	make help  # Display this text.'                         ; \
+	 echo '	make nav   # Sanitize all changed "*.md" files.'         ; \
 
 #
 # Rule to create  a single  "*.html" file from its  Markdown source file
@@ -129,8 +124,7 @@ help:
 #
 # Rule to update  the navigation bars in the  "*.md" source files  (this
 # rule is implicitly called as prerequisite  by rule "doc", and explicit
-# use of it is required  only on the Bitbucket server  where no "*.html"
-# files will be created directly):
+# use of it is required only when no "*.html" files should be created):
 
 nav: fix $(nvt)
 
