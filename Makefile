@@ -66,6 +66,13 @@ tgt ::= $(src:.md=.html)
 doc: nav $(tgt)
 
 #
+# Rule to check for unreferenced local files,  undefined local links, as
+# well as for self references:
+
+check:
+	@./LinkCheck.sh
+
+#
 # Rule to remove all "*.html" files as well as any time stamp files:
 
 clean:

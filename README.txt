@@ -146,7 +146,13 @@ B. Sanitizing the "*.md" files
          $
 
       This will sanitize  all "*.md" files  modified since the last call
-      of "make".
+      of "make".   And if you want to check for dead files ("*.md" files
+      not pointed to by a link in any other "*.md"  file) as well as for
+      broken links (links to non-existing "*.md" files),  you can addit-
+      ionally run the command
+
+         $ make check
+         $
 
       Since you are definitely  working in a clone  of the wiki reposit-
       ory, you should be aware that your actions might have changed some
