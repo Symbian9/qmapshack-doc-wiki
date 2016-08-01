@@ -1,7 +1,7 @@
 ########################################################################
 ########################################################################
 ##                                                                    ##
-## Copyright (C) 2016 Rainer Woitok, Rainer.Woitok@Gmail.Com          ##
+## Copyright (C) 2016 Rainer Woitok, <Rainer.Woitok@Gmail.Com>        ##
 ##                                                                    ##
 ## This makefile  is free software:  you can  redistribute it  and/or ##
 ## modify it  under the terms  of the  GNU General  Public License as ##
@@ -54,6 +54,15 @@ ubu ::= Ubuntu-14.04-HowTo.md
 src ::= $(shell ls *.md | sed 's/^$(Ubu)$$/$(ubu)/')
 tgt ::= $(src:.md=.html)
 
+#
+# Define function "select" which  either returns only those "*.md" files
+# being younger than the target, or all "*.md" files,  depending on whe-
+# ther or not  the files passed  as second and third  arguments are both
+# older than the file passed as first argument (this function is used in
+# the "fxt" and "nvt" targets):
+
+select = $(if $(shell test $(2) -ot $(1) && test $(3) -ot $(1) && echo 1),$?,$(src))
+
 ########################################################################
 #
 # Target rules:
@@ -80,34 +89,22 @@ clean:
 
 #
 # Rules to rename file "Ubuntu*.md", if not yet done, and to fix the in-
-# dividual "*.md" Markdown source files  so they are usable locally (be-
-# cause both  actions  depend on  individual  prerequisites,  we use two
-# double-colon rules which are executed in sequence and independently of
-# each other.  These rules are implicitly called as prerequisite by both
-# rules, "doc" and "nav", and thus there's  hardly any need to call them
-# directly):
+# dividual "*.md" Markdown source files so they are usable locally (this
+# rule is  implicitly called  as prerequisite  by both rules,  "doc" and
+# "nav", and thus there's hardly any need to call it directly):
 
-fix:: $(ubu)
-
-fix:: $(fxt)
+fix: $(ubu) $(fxt)
 
 #
-# Rule to fix all "*.md" source files in case the script performing the-
-# se fixes has changed  since the time of the last fixing  (mind that we
-# are using double-colon rules here  which will be processed both and in
-# the order specified):
+# Rule to either fix all  "*.md" files having changed  since the time of
+# the last fixing,  or all "*.md" files,  if the script performing these
+# fixes has  changed since then  (the recipe is using  function "select"
+# defined above to determine the set of files to be processed):
 
-$(fxt):: $(fix)
-	@rm -f $(fxt)
-
-#
-# Rule to fix those  "*.md"  source files  which have changed  since the
-# time of the last fixing:
-
-$(fxt):: $(src)
-	@for f in $?                     ; \
-	 do echo $(fix) $$f ; $(fix) $$f ; \
-	 done                            ; \
+$(fxt): $(fix) $(src)
+	@for f in $(call select,$(fxt),$(fix),$(fix)) ; \
+	 do echo $(fix) $$f ; $(fix) $$f              ; \
+	 done                                         ; \
 	 echo 'Last modified by "make fix".' > $(fxt)
 
 #
@@ -136,23 +133,17 @@ help:
 nav: fix $(nvt)
 
 #
-# Rule to re-create  the navigation bars  in all "*.md" source files, if
-# either the source file containing  the table of contents or the script
-# generating the navigation bars has changed  since the last re-creation
-# (mind that we are using double-colon rules here which will be process-
-# ed both and in the order specified):
+# Rule to either recreate the navigation bars in those "*.md" files hav-
+# ing changed since the time of the last recreation,  or all "*.md" fil-
+# es, if the source file containing the table of contents  or the script
+# generating the navigation bars  has changed since then  (the recipe is
+# using function "select" defined above to determine the set of files to
+# be processed,  and since the  "nav" target  has the  "fix" target as a
+# prerequisite, the changes  made by  this rule  should not  again cause
+# "make fix" to process any files):
 
-$(nvt):: $(cnt) $(nav)
-	@rm -f $(nvt)
-
-#
-# Rule to re-create  the navigation bars  in those  "*.md"  source files
-# which have changed since the last re-creation  (since the "nav" target
-# has the "fix" target as a prerequisite,  the changes made by this rule
-# should not again cause "make fix" to process any files):
-
-$(nvt):: $(src)
-	@for f in $?                                   ; \
+$(nvt): $(cnt) $(nav) $(src)
+	@for f in $(call select,$(nvt),$(cnt),$(nav))  ; \
 	 do echo $(nav) $(cnt) $$f ; $(nav) $(cnt) $$f ; \
 	 done                                          ; \
 	 echo 'Last modified by "make nav".' | tee $(fxt) > $(nvt)
