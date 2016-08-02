@@ -45,10 +45,10 @@ gawk '#
             delete file_unref[file]
             refs = linked_in[file]
 
-            while ( match(refs,"^(.*) ([^ ]+)$",mm) ) {
+            while ( match(refs,"^(.*) ([^ ]+) *$",mm) ) {
                refs = mm[1]                   # For next loop iteration.
                referenced(mm[2])         # Mark next file as referenced.
-                                   }   }              }
+                                   }   }                }
 
       #
       # Provide input file name without extension:
@@ -105,10 +105,10 @@ gawk '#
            if ( m[2] == filename ) {
               if ( filename != "DocMain" ) printf "Self-reference in %s\n", FILENAME
                                    }
-           else { l = f = m[2]
+           else { f = l = m[2]
 
-                  sub("^#"  ,filename "#",l)  # Prefix name to loc link.
-                  sub("#.*$",""          ,f)       # Discard local link.
+                  sub("#.*$",""          ,f)  # Discard local link part.
+                  sub("^#"  ,filename "#",l) # Prefix name to local lnk.
 
                   linked_in[filename] = linked_in[filename] " " f
                   called_in[l]        = called_in[l]        " " FILENAME
