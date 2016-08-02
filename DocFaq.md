@@ -1,4 +1,5 @@
-[Home](Home)
+[Prev](DocGisDevices) (GPS Devices) | [Home](Home) | [Manual](DocMain) | (Commit Code) [Next](DeveloperCommitCode)
+- - -
 
 [TOC]
 
@@ -207,3 +208,5 @@ Consider the following hints:
 * double-click in the elevation column,
 * set the new elevation in the pop-up window.
 
+- - -
+[Prev](DocGisDevices) (GPS Devices) | [Home](Home) | [Manual](DocMain) | (Commit Code) [Next](DeveloperCommitCode)

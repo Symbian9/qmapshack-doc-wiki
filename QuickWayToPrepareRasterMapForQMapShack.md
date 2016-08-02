@@ -1,3 +1,6 @@
+Prev () | [Home](Home) | [Manual](DocMain) | () Next
+- - -
+
 # Quick way to prepare raster maps for use in QMapShack
 
 This is translation of the original article in the blog: 
@@ -59,3 +62,5 @@ A single VRT file can be created out of several VRT files.
 In other words: it is possible to combine multiple VRT files for maps with the same scale into a single file (an "atlas")
 and open only one VRT file for loading a whole series of raster maps. 
 
+- - -
+Prev () | [Home](Home) | [Manual](DocMain) | () Next
