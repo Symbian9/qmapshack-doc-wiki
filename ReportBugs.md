@@ -4,9 +4,9 @@ Prev () | [Home](Home) | [Manual](DocMain) | () Next
 # Reporting Bugs
 
 If you have found a bug file a bug report on the [Issues page](https://bitbucket.org/maproom/qmapshack/issues?status=new&status=open).
-Make sure to include the all the information listed below.
+Make sure to include the all the information listed below to ease both your and our lifes.
 
-1. **Consider fixing it yourself.** For example bad spelling, confusing names or explanations and bad translations can be fixed by everyone. Use Qt5 Linguist to edit the translations. Linguist will tell you the source file containing the string, too. By that you can change the original string in the source code. 
+**Consider fixing it yourself.** For example bad spelling, confusing names or explanations and bad translations can be fixed by everyone. Use Qt5 Linguist to edit the translations. Linguist will tell you the source file containing the string, too. By that you can change the original string in the source code. 
 
 # **Required Information**
 
