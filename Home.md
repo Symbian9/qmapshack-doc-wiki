@@ -8,7 +8,7 @@ If you want to see **screenshots** or start with QMapShack visit the [**document
 
 [**Found a bug?** Read this!](ReportBugs)
 
-[**Missing a feature?** Read this!](BugFeatures)
+[**Missing a feature?** Read this!](RequestFeatures)
 
 If you need **troubleshooting** have a look [**here**](TroubleShooting)
 
