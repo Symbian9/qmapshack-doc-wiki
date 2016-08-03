@@ -112,7 +112,8 @@ $(fxt): $(fix) $(src)
 # the arguments for the "echo" commands consists of a tab character!):
 
 help:
-	@echo '	make clean # Discard all "*.html" and time stamp files.' ; \
+	@echo '	make check # Check for dead files and broken links.'     ; \
+	 echo '	make clean # Discard all "*.html" and time stamp files.' ; \
 	 echo '	make [doc] # Update all outdated "*.html" files.'        ; \
 	 echo '	make help  # Display this text.'                         ; \
 	 echo '	make nav   # Sanitize all changed "*.md" files.'         ; \
