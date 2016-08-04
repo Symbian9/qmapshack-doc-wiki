@@ -8,6 +8,6 @@ Pages/articles will be removed without further notice from the Wiki if they stic
 
 Unfinished articles are:
 
-[How to do routing](playground/DocGisHowToRouting) - August 2016
-[How to save your work](playground/DocGisHowToSaveYourWork) - August 2016
-[Use case motorcycle navigation](playground/DocUseCaseMotorcycleNavigation) - August 2016
+* [How to do routing](playground/DocGisHowToRouting) - August 2016
+* [How to save your work](playground/DocGisHowToSaveYourWork) - August 2016
+* [Use case motorcycle navigation](playground/DocUseCaseMotorcycleNavigation) - August 2016
