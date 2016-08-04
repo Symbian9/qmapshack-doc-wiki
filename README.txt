@@ -73,7 +73,7 @@ A. Creating the "*.html" files
 
          * GNU "make".  The makefile provided uses "simply expanded var-
            iables" (defined via "::=", as introduced by the Posix stand-
-           ard in 2012) as well as "double-colon rules".
+           ard in 2012).
 
 
    2. Building the "*.html" files
