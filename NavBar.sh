@@ -3,7 +3,7 @@
 ########################################################################
 ########################################################################
 ##                                                                    ##
-## Copyright (C) 2016 Rainer Woitok, Rainer.Woitok@Gmail.Com          ##
+## Copyright (C) 2016 Rainer Woitok, <Rainer.Woitok@Gmail.Com>        ##
 ##                                                                    ##
 ## This shell script is free software: you can redistribute it and/or ##
 ## modify it  under the terms  of the  GNU General  Public License as ##
@@ -128,24 +128,44 @@ gawk -v "toc=${1%.*}" '
      # Replace the  original simple  navigation link(s)  with a slightly
      # more sophisticated  navigation bar  or update the  top navigation
      # bar (if this regular expression should match  a second time, this
-     # is the bottom navigation bar,  which we skip here and create anew
-     # in the "END" rule):
+     # is the bottom navigation bar,  which we remove here  to create it
+     # anew in the "END" rule):
 
      /^([[](Home|Prev)[]]|Prev [(][)])/ { if ( U ) next      # Skip bar.
 
                                           nav(FILENAME)
-                                          print "- - -"
+                                          printf "- - -\n[TOC]\n- - -\n\n"
 
+                                          e = 1  # Document still empty.
                                           U = 1    # Upper nav bar done.
 
                                           next
                                         }
 
      #
-     # Drop our special rule line indicator "- - -" belonging to the old
-     # navigation bars but print all other lines:
+     # Remove our special rule line directives "- - -"  belonging to the
+     # old navigation bars as well as the old "[TOC]" directive:
 
-     ! /^- - -$/
+     /^(- - -|[[]TOC[]])$/ { next }
+
+     #
+     # At the beginning of the file drop both, empty lines and rules:
+
+     e && /^( *|---)$/     { next }
+
+     { print                                       # Print normal lines.
+
+       e = 0                              # Document is no longer empty.
+
+       #
+       # For the sake of the "END" clause check the current line for be-
+       # ing empty or not  (if it is  not empty and  the current line is
+       # the last line of the file, the "END" clause will insert an add-
+       # itional empty line before adding the bottom navigation bar):
+
+       if ( $0 ~ /^ *$/ ) rule = "- - -\n"            # Use normal rule.
+       else               rule = "\n- - -\n" # Empty line ahead of rule.
+     }
 
      #
      # Also insert a navigation bar at the end of the file,  provided we
@@ -153,7 +173,7 @@ gawk -v "toc=${1%.*}" '
 
      END                                { if ( ! U ) exit
 
-                                          print "- - -"
+                                          printf rule
                                           nav(FILENAME)
                                         }
                       ' C=1 "$1" C= "$2" > "$2.out" &&

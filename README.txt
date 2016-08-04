@@ -263,16 +263,33 @@ C. Changing the existing documentation
       When editing an existing file please mind:
 
          * Always leave the navigation bars at the top and bottom of the
-           "*.md" file alone.  These consist of three lines each: a line
-           starting with "Prev" and containing "[Home](Home)", a "- - -"
-           line, and an empty line (of course these three lines occur in
-           reverse order at the bottom),  and will be  automatically up-
-           dated, if necessary.
+           "*.md" file alone.  The top navigation bar looks like
 
-         * Likewise do not touch the line reading "[TOC]", if it exists.
+              [Prev](... | [Home](Home) | [Manual](DocMain) | ...
+              - - -
+              [TOC]
+              - - -
 
-         * Apart from that try to maintain the general look of the orig-
-           inal file.
+           while the bottom navigation bar looks like this
+
+              - - -
+              [Prev](... | [Home](Home) | [Manual](DocMain) | ...
+
+           These lines are automatically created if they don't yet exist
+           and are automatically  updated otherwise  when running "make"
+           or "make nav".
+
+         * Do not use the Markdown directive "- - -"  to insert a horiz-
+           ontal rule, that is, a  horizontal line running from the left
+           edge of the browser window  to the right edge.   This special
+           variant is regarded  part of the navigation bars  and will be
+           removed anywhere else  in the file  when the  navigation bars
+           are automatically inserted or updated.   Rather use the Mark-
+           down variants  "---" or "***",  if you need a horizontal rule
+           somewhere in your Markdown file.
+
+         * Apart from the advices above try to maintain the general look
+           of the original file.
 
 
    4. Creating a new "*.md" file
@@ -290,13 +307,17 @@ C. Changing the existing documentation
 
          * Don't try to add the navigation bars at the top and bottom of
            your new "*.md" file yourself.   These lines  will be created
-           automatically when running "make" or "make nav".
+           automatically when running "make" or "make nav".   Just start
+           the file with your first headline.
 
-         * If your file doesn't fit on one or two screens,  or does con-
-           tain quite a few  headlines of which  at least some should be
-           reachable directly from the top of the page,  start it with a
-           "[TOC]" line,  which will automatically  be expanded by Mark-
-           down to a clickable local table of contents for this page.
+         * Do not use the Markdown directive "- - -"  to insert a horiz-
+           ontal rule, that is, a  horizontal line running from the left
+           edge of the browser window  to the right edge.   This special
+           variant is regarded  part of the navigation bars  and will be
+           removed anywhere else  in the file  when the  navigation bars
+           are automatically inserted or updated.   Rather use the Mark-
+           down variants  "---" or "***",  if you need a horizontal rule
+           somewhere in your Markdown file.
 
          * If your file isn't reachable via some link occuring in one of
            the other "*.md" files,  it is dead.   Or at least as good as
