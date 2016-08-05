@@ -33,8 +33,7 @@
 #
 ########################################################################
 
-find . -name .hg -prune -o \( -name '*.md' -o    \
-       -name '*.png' -o -name '*.wmts' \) -print |
+hg manifest |                 # Provide list of currently tracked files.
 gawk '#
       # Define a function which removes  the file passed as argument and
       # all files  which are  recursively reachable  from it from global
@@ -42,8 +41,18 @@ gawk '#
 
       function referenced(file , refs) {
          if ( file in file_unref ) {
-            delete file_unref[file]
-            refs = linked_in[file]
+            refs = linked_in[file]    # Files mentioned in current file.
+            delete file_unref[file]           # Mark file as referenced.
+
+            #
+            # If the current file is a "*.png" file, also mark the corr-
+            # esponding "*.svg" file as referenced:
+
+            if ( match(file,"^(.*)[.]png$",mm) ) \
+               delete file_unref[mm[1] ".svg"]
+
+            #
+            # Process each file mentioned in the current file:
 
             while ( match(refs,"^(.*) ([^ ]+) *$",mm) ) {
                refs = mm[1]                   # For next loop iteration.
@@ -58,13 +67,15 @@ gawk '#
                 }
 
       #
-      # Read in the names  of available files  from standard input (if a
-      # file is an "*.md" file, remove its extension) and mark all these
-      # files as existing but not yet referenced:
+      # Read in  the names of  tracked files  from standard input,  skip
+      # Mercurial files,  file "Makefile",  as well as scripts  and pure
+      # text files, remove the extension from "*.md" files, and mark all
+      # these files as existing but not yet referenced:
 
-      L { sub(".md$" ,"")         # Remove ".md" extension, if existing.
-          sub("^[.]/","")                         # Remove leading "./".
-          link_def[$0] = file_unref[$0] = 1      # Mark file as existing
+      F { if ( $0 ~ "^[.]hg|^Makefile$|[.](py|sh|txt)$" ) next
+
+          sub(".md$","")          # Remove ".md" extension, if existing.
+          file_unref[$0] = link_def[$0] = 1      # Mark file as existing
           next                                   # but yet unreferenced.
         }
 
@@ -156,4 +167,4 @@ gawk '#
                printf "\nUndefined links:\n"
                for ( l in called_in ) print l, "in:" called_in[l]
           }                          }
-     ' L=1 - L= *.md
+     ' F=1 - F= *.md
