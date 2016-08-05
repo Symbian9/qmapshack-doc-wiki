@@ -1,7 +1,7 @@
 [Prev](DocMain) (Manual) | [Home](Home) | [Manual](DocMain) | (Getting started) [Next](DocGettingStarted)
 - - -
-
 [TOC]
+- - -
 
 # Install QMapShack
 

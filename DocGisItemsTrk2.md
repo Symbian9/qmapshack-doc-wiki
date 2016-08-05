@@ -1,7 +1,7 @@
 [Prev](DocGisItemsNew) (Create new tracks, waypoints etc.) | [Home](Home) | [Manual](DocMain) | (Routes) [Next](DocGisItemsRte)
 - - -
-
 [TOC]
+- - -
 
 # Tracks #
 
@@ -148,5 +148,6 @@ Sources of track segments can be
 * track operations within QMapShack (e.g. combining several tracks into one).
 
 ![maproom1.png](images/DocGisItemsTrk/FilterSplit.png)
+
 - - -
 [Prev](DocGisItemsNew) (Create new tracks, waypoints etc.) | [Home](Home) | [Manual](DocMain) | (Routes) [Next](DocGisItemsRte)

@@ -1,7 +1,7 @@
 [Prev](DocBasicsMapDem) (Basics about maps and DEM files) | [Home](Home) | [Manual](DocMain) | (Maps: Tips and Tricks) [Next](DocMapsTipsTricks)
 - - -
-
 [TOC]
+- - -
 
 # Control of Maps and DEM Files
 

@@ -1,5 +1,7 @@
 Prev () | [Home](Home) | [Manual](DocMain) | (Install QMapShack) [Next](DocGetQMapShack)
 - - -
+[TOC]
+- - -
 
 # QMapShack Manual
 

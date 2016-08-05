@@ -1,5 +1,7 @@
 Prev () | [Home](Home) | [Manual](DocMain) | () Next
 - - -
+[TOC]
+- - -
 
 In particular Ubuntu 14.04 needs cmake 3 and Qt 5.4
 
@@ -46,5 +48,6 @@ qmapshack
 ```
 
 Maybe there is a better way to use Qt 5.4
+
 - - -
 Prev () | [Home](Home) | [Manual](DocMain) | () Next

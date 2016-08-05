@@ -1,7 +1,7 @@
 [Prev](DocGisDatabaseLostFound) ('Lost & Found' Folder) | [Home](Home) | [Manual](DocMain) | (Frequently Asked Questions) [Next](DocFaq)
 - - -
-
 [TOC]
+- - -
 
 # Working with GPS Devices
 

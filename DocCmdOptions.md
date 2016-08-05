@@ -1,7 +1,7 @@
 [Prev](DocGettingStarted) (Getting started) | [Home](Home) | [Manual](DocMain) | (Maps & Digital Elevation Model (DEM)) [Next](DocInstallMapDem)
 - - -
-
 [TOC]
+- - -
 
 # List of options
 
@@ -37,5 +37,6 @@ configuration with you.
 
 It is handy too for the definition of a top level basic data structure. The user can define and use different configuration files and in doing so define separate data and map sets (e.g. referring to different countries).
 As a consequence QMapShack starts much faster due to the fact that less map data must be loaded.
+
 - - -
 [Prev](DocGettingStarted) (Getting started) | [Home](Home) | [Manual](DocMain) | (Maps & Digital Elevation Model (DEM)) [Next](DocInstallMapDem)

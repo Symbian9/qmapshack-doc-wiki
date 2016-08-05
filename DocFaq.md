@@ -1,7 +1,7 @@
-[Prev](DocGisDevices) (GPS Devices) | [Home](Home) | [Manual](DocMain) | (Commit Code) [Next](DeveloperCommitCode)
+[Prev](DocGisDevices) (GPS Devices) | [Home](Home) | [Manual](DocMain) | (Playground - start your new Wiki page) [Next](DocPlayground)
 - - -
-
 [TOC]
+- - -
 
 # Frequently Asked Questions
 
@@ -209,4 +209,4 @@ Consider the following hints:
 * set the new elevation in the pop-up window.
 
 - - -
-[Prev](DocGisDevices) (GPS Devices) | [Home](Home) | [Manual](DocMain) | (Commit Code) [Next](DeveloperCommitCode)
+[Prev](DocGisDevices) (GPS Devices) | [Home](Home) | [Manual](DocMain) | (Playground - start your new Wiki page) [Next](DocPlayground)

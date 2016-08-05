@@ -1,8 +1,7 @@
 [Prev](DocControlMapDem) (Control maps and DEM files) | [Home](Home) | [Manual](DocMain) | (Working with Projects) [Next](DocWorkingWithProjects)
 - - -
-
 [TOC]
-
+- - -
 
 # Maps: Tips & Tricks
 

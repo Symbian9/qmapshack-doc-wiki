@@ -1,5 +1,7 @@
 [Prev](DocMapsTipsTricks) (Maps: Tips and Tricks) | [Home](Home) | [Manual](DocMain) | (Handle GPX and QMS files) [Next](DocHandleGpxFiles)
 - - -
+[TOC]
+- - -
 
 # Working with Projects
 
@@ -10,5 +12,6 @@ You can create a new project, start a search or close all projects by the _Proje
 ![Alt text](images/DocWorkingWithProjects/maproom1.png)
 
 You get the same menu with a right click when no item in the data view's workspace list is selected.
+
 - - -
 [Prev](DocMapsTipsTricks) (Maps: Tips and Tricks) | [Home](Home) | [Manual](DocMain) | (Handle GPX and QMS files) [Next](DocHandleGpxFiles)

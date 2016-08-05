@@ -1,5 +1,7 @@
 [Prev](DeveloperCodingGuideline) (Coding Guideline) | [Home](Home) | [Manual](DocMain) | (Add translations) [Next](DeveloperTranslate)
 - - -
+[TOC]
+- - -
 
 # Compiling and Building QMapShack for Windows
 
@@ -222,5 +224,6 @@ not .dll's + all directories)
 ### D5.) Run/Debug 
 Congratulations: all preparations finished.
 Now you can _really_ start debugging!
+
 - - -
 [Prev](DeveloperCodingGuideline) (Coding Guideline) | [Home](Home) | [Manual](DocMain) | (Add translations) [Next](DeveloperTranslate)

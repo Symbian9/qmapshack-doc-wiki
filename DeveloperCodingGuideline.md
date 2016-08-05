@@ -1,5 +1,7 @@
 [Prev](DeveloperCommitCode) (Commit Code) | [Home](Home) | [Manual](DocMain) | (Compile Instructions for Windows) [Next](BuildWindowsVisualStudio)
 - - -
+[TOC]
+- - -
 
 # Coding Guideline
 

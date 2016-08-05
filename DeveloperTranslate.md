@@ -1,5 +1,7 @@
 [Prev](BuildWindowsVisualStudio) (Compile Instructions for Windows) | [Home](Home) | [Manual](DocMain) | () Next
 - - -
+[TOC]
+- - -
 
 # HOWTO enable/disable source translations extraction #
 We now have the ability to choose when to update (extract) the

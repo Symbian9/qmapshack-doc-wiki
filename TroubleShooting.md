@@ -1,7 +1,7 @@
 Prev () | [Home](Home) | [Manual](DocMain) | () Next
 - - -
-
 [TOC]
+- - -
 
 # Troubleshooting
 
@@ -96,5 +96,6 @@ Some raster map formats (e.g. wavelet based) are not supported by the default
 GDAL installation. The reasons may be various (licences, dependencies, ...).
 A possible workaround is the same as to add curl support: use the GDAL binaries 
 from [gisinternals](http://gisinternals.com/).
+
 - - -
 Prev () | [Home](Home) | [Manual](DocMain) | () Next

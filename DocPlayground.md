@@ -1,3 +1,8 @@
+[Prev](DocFaq) (Frequently Asked Questions) | [Home](Home) | [Manual](DocMain) | (Commit Code) [Next](DeveloperCommitCode)
+- - -
+[TOC]
+- - -
+
 # The Playground #
 
 This page references all articles in progress, that are not referenced by any other page, yet. If you want to start a new page/article, start here.
@@ -15,3 +20,5 @@ Unfinished articles are:
 * [Use case motorcycle navigation](playground/DocUseCaseMotorcycleNavigation) - August 2016
 
 
+- - -
+[Prev](DocFaq) (Frequently Asked Questions) | [Home](Home) | [Manual](DocMain) | (Commit Code) [Next](DeveloperCommitCode)

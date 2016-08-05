@@ -1,7 +1,7 @@
 [Prev](DocGisItemsArea) (Areas) | [Home](Home) | [Manual](DocMain) | (Database) [Next](DocGisDatabase)
 - - -
-
 [TOC]
+- - -
 
 # Edit items with multiple points (tracks, routes, areas)(valid from version 1.3.0 or later)
 
@@ -62,5 +62,6 @@ While in line edit mode all changes can be undone.
 |-|-|
 |![maproom2](images/DocGisItemsEditMultiple/Undo.png)| Undo last operation|
 |![maproom2](images/DocGisItemsEditMultiple/Redo.png)| Redo last operation|
+
 - - -
 [Prev](DocGisItemsArea) (Areas) | [Home](Home) | [Manual](DocMain) | (Database) [Next](DocGisDatabase)

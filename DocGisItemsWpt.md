@@ -1,7 +1,7 @@
 [Prev](DocGisItemsRte) (Routes) | [Home](Home) | [Manual](DocMain) | (Areas) [Next](DocGisItemsArea)
 - - -
-
 [TOC]
+- - -
 
 # Waypoints
 

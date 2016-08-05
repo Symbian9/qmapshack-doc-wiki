@@ -1,7 +1,7 @@
 [Prev](DocGetQMapShack) (Install QMapShack) | [Home](Home) | [Manual](DocMain) | (Command line parameters) [Next](DocCmdOptions)
 - - -
-
 [TOC]
+- - -
 
 # Getting started
 
@@ -55,5 +55,6 @@ used. If it fails the next file is used. And so on. Consequently you place your 
 
 To read more about DEM files see [_Basics about maps and DEM files_](DocBasicsMapDem) and
 [_Control maps and DEM files_](DocControlMapDem)
+
 - - -
 [Prev](DocGetQMapShack) (Install QMapShack) | [Home](Home) | [Manual](DocMain) | (Command line parameters) [Next](DocCmdOptions)

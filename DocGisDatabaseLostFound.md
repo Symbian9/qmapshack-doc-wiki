@@ -1,5 +1,7 @@
 [Prev](DocGisDatabaseFoldersItems) (Folders and Items) | [Home](Home) | [Manual](DocMain) | (GPS Devices) [Next](DocGisDevices)
 - - -
+[TOC]
+- - -
 
 # 'Lost & Found' Folder
 
@@ -18,5 +20,6 @@ Next you copy the items you want to restore to another project.
 This will not affect the database until you save the project.
 
 ![maproom2](images/DocGisDatabaseLostFound/maproom6.png)
+
 - - -
 [Prev](DocGisDatabaseFoldersItems) (Folders and Items) | [Home](Home) | [Manual](DocMain) | (GPS Devices) [Next](DocGisDevices)

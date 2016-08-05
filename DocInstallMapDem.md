@@ -1,9 +1,8 @@
 [Prev](DocCmdOptions) (Command line parameters) | [Home](Home) | [Manual](DocMain) | (Basics about maps and DEM files) [Next](DocBasicsMapDem)
 - - -
-
 [TOC]
+- - -
 
----
 # Install Maps & DEM
 
 QMapShack is not a commercial software, providing installable, ready made maps and DEM packages. The project does not have the man power and financial resources to provide that kind of stuff. However we think it's really simple to install maps & DEM after you have read this.
