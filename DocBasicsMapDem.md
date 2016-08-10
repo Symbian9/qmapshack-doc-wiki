@@ -11,7 +11,8 @@ QMapShack supports the following map formats:
 
  Ext.   | Comment
 --------|-------------
-.img    | Garmin Map Image. This must be the same file as used on the devices. A collection with a \*tdb file and several \*img files won't do.
+.img    | Garmin Map Images. This must be the same container files as used on the devices (often named gmapsupp_*.img). Garmin map images consisting of several mapsets (required for older Garmin devices) can be used only if all included mapsets use the same type file. Freely available software tools can be used to find the properties of a map image container and to create map images with just 1 mapset from map image containers with several mapsets. A collection with a \*tdb file and several \*img map tile files won't do.
+            
 
 ### Raster Maps
 
