@@ -90,6 +90,7 @@ The database setup is part of the configuration and saved in a configuration fil
 is considered as temporary and therefore not part of the configuration.
 
 **Warnings:** 
+
 * QMS maintains only one `workspace.db`file!
 * The workspace data can be linked to data in a database. When restarting QMS with a different configuration 
 (with different databases) workspace data gets lost if a link to the database can't be restored! 
