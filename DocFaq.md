@@ -142,8 +142,8 @@ QMS workspace data behaviour is unpredictable.
 * Other directories:
     * `c:\Users\yor_user_name\AppData\Local\Temp\org.qlandkarte.QMapShack.log`: logfile written if command line option
       `-f`is used
-    * `c:\Users\your_user_name\.QMapShack`: tile caches for online maps
-    * `c:\Users\your_user_name\.config\QLandkarte\workspace.db`: backup of last used workspace - used when QMapShack is restarted
+    * `c:\Users\your_user_name\.QMapShack`: tile caches for online maps (default, can be changed by the user)
+    * `c:\Users\your_user_name\.config\QLandkarte\workspace.db`: backup of last used workspace - used for rebuilding the last workspace when QMapShack is restarted
     
     
 ## What is the maximum Routino databases file size that can be handled by the QMapShack Windows version?
