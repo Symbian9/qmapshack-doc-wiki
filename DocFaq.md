@@ -74,6 +74,32 @@ Other advantages of the use of databases are the possibility
 When creating a new reference to a data item QMS offers the choice either to create simply a reference or a 
 clone (a copy) of the data item.
 
+## Why does QMapsShack use a separate workspace.db to save data?
+
+**Source:** [Newsgroup discussion about QMS INI information](https://sourceforge.net/p/qlandkartegt/mailman/message/35276035)
+
+The philosophy of the QMS workspace concept is to support handling of temporary project data which exists only for a short time 
+period and for which there is no need to save it permanently into a user-defined database 
+(shown in the lower part of the "Data" dock widget). 
+In order to avoid the loss of such temporary project data without
+forcing the user to save it as permanent data QMS uses the `workspace.db` database. This file contains all the data of the 
+current QMS workspace (upper part of the "Data" dock widget). Thus, this state of the workspace can be restored after a 
+restart of QMS.
+
+The database setup is part of the configuration and saved in a configuration file (*.config or *.ini file, Windows registry). The workspace setup 
+is considered as temporary and therefore not part of the configuration.
+
+**Warnings:** 
+* QMS maintains only one `workspace.db`file!
+* The workspace data can be linked to data in a database. When restarting QMS with a different configuration 
+(with different databases) workspace data gets lost if a link to the database can't be restored! 
+
+## Can I run several QMS instances at the same time?
+
+As a general rule don't do this. QMS saves workspace information in the file `workspace.db`. There is only one such
+file for all QMS instances. If this file is used by several QMS instances at the same time then the 
+QMS workspace data behaviour is unpredictable.
+
 ## Is there an easy way to "select all" the contents of one project to drag them into another? 
 ## Is there a way to merge projects together?
 
@@ -113,6 +139,7 @@ Users reported about the following ways to improve the visibility of small roads
 * Append to the given configuration string one of the following strings:
   * `+lat_ts=60` This sets the *latitude of true scale* for a Mercator projection. The closer you get to the polar regions the more the map will be skewed horizontally in comparison to the vertical scale. At the *latitude of true scale* (usually 0 for the equator) the scales are equal.
   * `+k_0=0.3` (**Source:** [gmane.comp.gis.qlandkartegt](http://permalink.gmane.org/gmane.comp.gis.qlandkartegt.user/2688))  This is an additional scale factor on the normal scale. A value of 1.0 will have no effect. Try to increase or decrease the given value to get the wanted result
+
 ## Is there a possibility to choose the preferred road class when routing?
 
 **Source:** 
@@ -126,13 +153,6 @@ different road types can be modified by the user.
 
 On Routino's homepage there is an online version where fine
 tuning of all parameters can be tried. Once done there one can take over the values into the local `profiles.xml` file.
-
-
-## Can I run several QMS instances at the same time?
-
-As a general rule don't do this. QMS saves workspace information in the file `workspace.db`. There is only one such
-file for all QMS instances. If this file is used by several QMS instances at the same time then the 
-QMS workspace data behaviour is unpredictable.
 
 ## User-relevant QMapShack directories (Windows version)
 
