@@ -90,12 +90,13 @@ To update the code to the cutting edge change to the folder `QMapShack` and exec
 
 #### Compiling and Installing
 
-Create a new directory `build_QMapShack` (if it does not exist yet)
+Create a new directory `build_QMapShack` (if it does not yet exist)
 
     mkdir build_QMapShack
 
 And run:
 
+    cd build_QMapShack
     cmake ../QMapShack
     make
 
