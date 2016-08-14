@@ -67,12 +67,19 @@ select = $(if $(shell test $(2) -ot $(1) && test $(3) -ot $(1) && echo 1),$?,$(s
 #
 # Target rules:
 
-.PHONY: clean doc fix help nav
+.PHONY: check clean doc fix help nav
 
 #
-# Default rule to update all outdated "*.html" files:
+# Default rule  to display  "help" output  (mind that  the initial white
+# space in the arguments for the "echo" commands consists of a tab char-
+# acter!):
 
-doc: nav $(tgt)
+help:
+	@echo '	make check  # Check for dead files and broken links.'     ; \
+	 echo '	make clean  # Discard all "*.html" and time stamp files.' ; \
+	 echo '	make doc    # Update all outdated "*.html" files.'        ; \
+	 echo '	make [help] # Display this text.'                         ; \
+	 echo '	make nav    # Sanitize all changed "*.md" files.'         ; \
 
 #
 # Rule to check for unreferenced local files,  undefined local links, as
@@ -88,10 +95,15 @@ clean:
 	rm -f $(tgt) $(fxt) $(nvt)
 
 #
+# Rule to update all outdated "*.html" files:
+
+doc: $(tgt)
+
+#
 # Rules to rename file "Ubuntu*.md", if not yet done, and to fix the in-
 # dividual "*.md" Markdown source files so they are usable locally (this
-# rule is  implicitly called  as prerequisite  by both rules,  "doc" and
-# "nav", and thus there's hardly any need to call it directly):
+# rule is implicitly  called as  prerequisite  by rule  "nav",  and thus
+# there's hardly any need to call it directly):
 
 fix: $(ubu) $(fxt)
 
@@ -108,17 +120,6 @@ $(fxt): $(fix) $(src)
 	 echo 'Last modified by "make fix".' > $(fxt)
 
 #
-# Rule to display  "help" output  (mind that the  initial white space in
-# the arguments for the "echo" commands consists of a tab character!):
-
-help:
-	@echo '	make check # Check for dead files and broken links.'     ; \
-	 echo '	make clean # Discard all "*.html" and time stamp files.' ; \
-	 echo '	make [doc] # Update all outdated "*.html" files.'        ; \
-	 echo '	make help  # Display this text.'                         ; \
-	 echo '	make nav   # Sanitize all changed "*.md" files.'         ; \
-
-#
 # Rule to create  a single  "*.html" file from its  Markdown source file
 # "*.md" (we also have  to re-create the "*.html" file,  should the con-
 # version script change):
@@ -127,9 +128,7 @@ help:
 	$(htm) $< > $@
 
 #
-# Rule to update  the navigation bars in the  "*.md" source files  (this
-# rule is implicitly called as prerequisite  by rule "doc", and explicit
-# use of it is required only when no "*.html" files should be created):
+# Rule to update the navigation bars in the "*.md" source files:
 
 nav: fix $(nvt)
 
