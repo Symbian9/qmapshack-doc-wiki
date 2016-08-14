@@ -20,9 +20,6 @@ A. Creating the "*.html" files
    ser without having installed some Markdown plugin for it, you need to
    create the "*.html" files from the "*.md" files yourself.
 
-   Mind that creating the "*.html" files  will also automatically sanit-
-   ize the "*.md" files as described in section "B." below.
-
 
    1. Prerequisites
    ................
@@ -62,14 +59,7 @@ A. Creating the "*.html" files
 
               https://pythonhosted.org/Markdown/
 
-         * Some sort of  Unix/Linux shell  located at  "/usr/bin/sh" (if
-           your shell resides  in some other place,  simply edit scripts
-           "DocFix.sh" and "NavBar.sh" accordingly).
-
-         * GNU "gawk".   Both scripts, "DocFix.sh"  and "NavBar.sh", use
-           some "gawk" specific  features,  like function  "gensub()", a
-           function "match()" which takes three arguments, and perhaps a
-           few others.
+         * Some sort of Unix/Linux shell.
 
          * GNU "make".  The makefile provided uses "simply expanded var-
            iables" (defined via "::=", as introduced by the Posix stand-
@@ -82,18 +72,12 @@ A. Creating the "*.html" files
       Change into the directory  containing the  "*.md" files  and issue
       the command
 
-         $ make
+         $ make doc
          $ your_browser file:///local/path/to/DocMain.html
          $
 
-      This will sanitize  all "*.md" files  modified since the last call
-      of "make"  and besides it will update  all outdated "*.html" files
-      before it opens your browser at the main documentation page.
-
-      If you are working  in a clone of the wiki repository  rather than
-      in a normal directory  created from  a downloaded  "tar" ball, you
-      should be aware  that your actions might have  changed some of the
-      "*.md" files and that these actions should thus be committed.
+      This will update  all outdated "*.html" files  before your browser
+      is opened at the main documentation page.
 
       That's it :-)
 
@@ -108,9 +92,9 @@ B. Sanitizing the "*.md" files
    both, locally and over the web.  We call this process "sanitizing".
 
    This process includes fixing  URLs so the  Markdown files  are usable
-   both, locally and over the web as well as adding or updating the nav-
-   igation bars on the top and bottom of each "*.md" file to ease navig-
-   ation.
+   both,  locally and  over the web,  adding or updating  the navigation
+   bars on the  top and bottom  of each "*.md" file  to ease navigation,
+   and adding a table of contents near the top of it.
 
 
    1. Prerequisites
@@ -121,19 +105,17 @@ B. Sanitizing the "*.md" files
 
          * Some sort of  Unix/Linux shell  located at  "/usr/bin/sh" (if
            your shell resides  in some other place,  simply edit scripts
-           "DocFix.sh" and "NavBar.sh" accordingly).
+           "DocFix.sh", "NavBar.sh",  and optionally also "LinkCheck.sh"
+           accordingly).
 
-         * GNU "gawk".   Both scripts,  "DocFix.sh" and "NavBar.sh", use
-           some "gawk" spcific features, like a function "match()" which
-           takes three arguments, function "gensub()", and perhaps a few
-           others.
+         * GNU "gawk".  The scripts "DocFix.sh", "NavBar.sh", and "Link-
+           Check.sh" use some  "gawk" spcific features,  like a function
+           "match()" which takes  three arguments,  function "gensub()",
+           and perhaps a few others.
 
          * GNU "make".  The makefile provided uses "simply expanded var-
            iables" (defined via "::=", as introduced by the Posix stand-
-           ard in 2012) as well as "double-colon rules".
-
-      Because no "*.html" files  are created,  Python and "Markdown" are
-      not needed here.
+           ard in 2012).
 
 
    2. Sanitizing
@@ -146,10 +128,10 @@ B. Sanitizing the "*.md" files
          $
 
       This will sanitize  all "*.md" files  modified since the last call
-      of "make".   And if you want to check for dead files ("*.md" files
-      not pointed to by a link in any other "*.md"  file) as well as for
-      broken links (links to non-existing "*.md" files),  you can addit-
-      ionally run the command
+      of "make nav".   And if you want  to check for dead files  ("*.md"
+      files not pointed to  by a link in  any other "*.md" file) as well
+      as for broken links (links to  non-existing "*.md" files), you can
+      additionally run the command
 
          $ make check
          $
@@ -179,6 +161,9 @@ B. Sanitizing the "*.md" files
         "Manual" links  previously provided  but also "Prev"  and "Next"
         links for  easier reading)  to both,  the top  and the bottom of
         each "*.md" file.
+
+      * Add a clickable table of contents  immediately following the top
+        navigation bar.
 
 
 
@@ -210,7 +195,7 @@ C. Changing the existing documentation
    2. The Markdown language
    ........................
 
-      You can find extensive documentation of the Markdown language at
+      You can find plenty of documentation of the Markdown language at
 
          * http://daringfireball.net/projects/markdown/syntax
 
@@ -240,10 +225,12 @@ C. Changing the existing documentation
       and your  browser happens  to be Firefox,  just type Ctrl-u (other
       browsers may or may  not need different handling,  but most decent
       browsers will be  able to display  the HTML source of  the current
-      page one way or other).
+      page one way or the other).
+
+      IMPORTANT NOTE:
 
       Mind that a Markdown file isn't just a text file you look at using
-      a browser.  For instance, a line containing
+      a browser.  For instance, a line containing the text
 
          For more information see here: http://x.y.z.com
 
@@ -275,9 +262,9 @@ C. Changing the existing documentation
               - - -
               [Prev](... | [Home](Home) | [Manual](DocMain) | ...
 
-           These lines are automatically created if they don't yet exist
-           and are automatically  updated otherwise  when running "make"
-           or "make nav".
+           When running "make nav" these lines are automatically created
+           if they don't yet exist, and are automatically updated other-
+           wise.
 
          * Do not use the Markdown directive "- - -"  to insert a horiz-
            ontal rule, that is, a  horizontal line running from the left
@@ -307,8 +294,8 @@ C. Changing the existing documentation
 
          * Don't try to add the navigation bars at the top and bottom of
            your new "*.md" file yourself.   These lines  will be created
-           automatically when running "make" or "make nav".   Just start
-           the file with your first headline.
+           automatically when running  "make nav".   Just start the file
+           with your first headline.
 
          * Do not use the Markdown directive "- - -"  to insert a horiz-
            ontal rule, that is, a  horizontal line running from the left
@@ -348,8 +335,8 @@ C. Changing the existing documentation
    ..........................
 
       Depending on what you want and depending on what prerequisites are
-      met by your installation  follow the instructions in sections "A."
-      or "B.", above.
+      met by your installation  follow the instructions in sections "B."
+      and optionally "A.", above.
 
 
    6. Sharing your changes
@@ -358,15 +345,15 @@ C. Changing the existing documentation
       If you are finally satisfied with your changes, it's time to share
       them with the world.  There are two cases:
 
-         * You have successfully  run the command "make"  or "make nav".
-           By this  you have added  some changes to  your local clone of
-           the Bitbucket wiki repository which you should now commit ac-
-           cordingly and then push to the upstream Bitbucket repository.
+         * You have successfully  run the command  "make nav".   By this
+           you have added  some changes  to your local clone of the Bit-
+           bucket wiki repository which you should now commit according-
+           ly and then push to the upstream Bitbucket repository.
 
-         * You can neither run "make" nor "make nav" yourself.   In this
-           case it's probably your best bet to send your proposed chang-
-           es (preferably in  "unified diff" format,  see "man diff") to
-           the QMapShack mailing list at
+         * You can't run "make nav" yourself.  In this case it's probab-
+           ly your best bet to send your proposed changes (preferably in
+           "unified diff" format, see "man diff") to the QMapShack mail-
+           ing list at
 
               <qlandkartegt-users@lists.sourceforge.net>
 
