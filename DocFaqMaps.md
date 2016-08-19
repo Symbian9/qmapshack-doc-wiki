@@ -40,7 +40,30 @@ tuning of all parameters can be tried. Once done there one can take over the val
 
 Due to limitations in the Windows POSIX API Routino can't handle files larger than 4GB.
 
+## Does QMapShack/Routino support cross-border routing?
 
+**Source:** Inspired by [newsgroup thread](https://sourceforge.net/p/qlandkartegt/mailman/qlandkartegt-users/thread/1450466213.2419.8.camel%40knibb.myzen.co.uk/#msg34706080)
+
+Offline routing in QMapShack needs special routing databases. The easiest way to create these databases is with QMS itself
+as described in the [Routes](DocGisItemsRte) section of the QMS Wiki. The required `*.pbf` input files can be downloaded per country/region.
+If cross-country routing is wanted then the user should select the `*.pbf`files for all countries needed as described in the Wiki page
+and then create one routing database for these countries. The resulting database supports cross-country routing. In the example shown
+on the mentioned Wiki page cross-border routing all over Belgium and Luxemburg will be possible. 
+
+If a single routing database is created for each country then these databases don't support cross-border routing.
+
+When creating the routing database QMS executes the following Routino commands:
+
+    path_to\planetsplitter.exe --dir=\temp --prefix=MyRegions --tagging=path_to\tagging.xml --parse-only path_to\file1.osm.pbf 
+    path_to\planetsplitter.exe --dir=\temp --prefix=MyRegions --tagging=path_to\tagging.xml --parse-only path_to\file2.osm.pbf 
+    ...
+    path_to\planetsplitter.exe --dir=\temp --prefix=MyRegions --tagging=path_to\tagging.xml --process-only    
+
+When using the standard QMS Windows installation then `planetsplitter.exe` is found in the same directory as `qmapshack.exe`,
+`tagging.xml`is found in the `routino-xml` subdirectory of the `qmapshack.exe`directory.
+    
+These commands can be executed directly from a command line.
+    
 ## How to use Russian military and similar raster maps with QMapShack?
 
 **Source:** Newsgroup thread [sourceforge.net/p/qlandkartegt](https://sourceforge.net/p/qlandkartegt/mailman/message/34518807/)
