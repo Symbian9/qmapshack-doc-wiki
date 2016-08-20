@@ -94,6 +94,9 @@ is considered as temporary and therefore not part of the configuration.
 
 
 ## Is there an easy way to "select all" the contents of one project to drag them into another? 
+
+For answer see next topic!
+
 ## Is there a way to merge projects together?
 
 **Source:** [gmane.comp.gis.qlandkartegt](http://article.gmane.org/gmane.comp.gis.qlandkartegt.user/2612)
