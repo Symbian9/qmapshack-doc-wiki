@@ -14,6 +14,18 @@ Prev () | [Home](Home) | [Manual](DocMain) | () Next
 * double-click in the elevation column,
 * set the new elevation in the pop-up window.
 
+## How to find route instructions?
+
+* Open some map which can display the route under consideration
+* Double-click the route name to see the route on the map
+* Right-click on the route name and select the context menu entry `Route Instructions`
+* Points on the route with instructions are shown in light-blue
+* Move the mouse pointer on a light-blue point
+* See the instructions for the given point in a bubble box
+
+![Route instructions bubble box](images/DocFaq/RouteInstructions.png)
+ 
+
 [Back to FAQ main page](DocFaq)
 
 

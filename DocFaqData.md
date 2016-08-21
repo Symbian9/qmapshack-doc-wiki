@@ -113,6 +113,17 @@ If you use a database you do not have to load all data of a project.
 You can load only the items needed. Additionally, if you store a newly created
 project into the database you do not need to clone (duplicate) the data.
 
+## How to edit quickly the name of a project?
+
+**Compare:** [QMS issues list](https://bitbucket.org/maproom/qmapshack/issues/160/update-of-diary-after-adding-a-waypoint)
+
+Depending on the number of data objects (tracks, routes, waypoints) in a project in the workspace it may take a relatively long time
+to open the project edit window (right click on the project name in the workspace and select `Edit` menu item).
+The reason for this is that the project diary with all the selected data objects has to be created.
+
+If the only goal is to edit the name of a project then open the project with just a few data objects. The project edit
+window is then opened very quickly and the project name can be edited in it.
+
 ## How to find the location of a database file used in QMapShack?
 
 Move the mouse pointer on the database name in the main window. A bubble box appears and shows the physical location of the
