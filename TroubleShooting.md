@@ -98,4 +98,4 @@ A possible workaround is the same as to add curl support: use the GDAL binaries
 from [gisinternals](http://gisinternals.com/).
 
 - - -
-Prev () | [Home](Home) | [Manual](DocMain) | () Next
+Prev () | [Home](Home) | [Manual](DocMain) | [Top](#) | () Next

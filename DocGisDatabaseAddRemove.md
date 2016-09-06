@@ -97,4 +97,4 @@ To see changes in the database by someone else as soon as they are saved to the 
 Make sure your personal firewall allows UDP traffic on the given port.
 
 - - -
-[Prev](DocGisDatabaseWorkspaceDatabase) (Workspace and Database) | [Home](Home) | [Manual](DocMain) | (Folders and Items) [Next](DocGisDatabaseFoldersItems)
+[Prev](DocGisDatabaseWorkspaceDatabase) (Workspace and Database) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Folders and Items) [Next](DocGisDatabaseFoldersItems)

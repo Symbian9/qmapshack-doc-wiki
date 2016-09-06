@@ -30,4 +30,4 @@ Your **best chance** to get a new feature is to** implement it on your own**. If
 
 
 - - -
-Prev () | [Home](Home) | [Manual](DocMain) | () Next
+Prev () | [Home](Home) | [Manual](DocMain) | [Top](#) | () Next

@@ -50,4 +50,4 @@ qmapshack
 Maybe there is a better way to use Qt 5.4
 
 - - -
-Prev () | [Home](Home) | [Manual](DocMain) | () Next
+Prev () | [Home](Home) | [Manual](DocMain) | [Top](#) | () Next

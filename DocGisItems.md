@@ -56,4 +56,4 @@ When saving the data to a QMS file the _History of Changes_ is stored completely
 
 
 - - -
-[Prev](DocSearchGoogle) (Search Google) | [Home](Home) | [Manual](DocMain) | (Create new tracks, waypoints etc.) [Next](DocGisItemsNew)
+[Prev](DocSearchGoogle) (Search Google) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Create new tracks, waypoints etc.) [Next](DocGisItemsNew)

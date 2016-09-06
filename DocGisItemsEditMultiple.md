@@ -64,4 +64,4 @@ While in line edit mode all changes can be undone.
 |![maproom2](images/DocGisItemsEditMultiple/Redo.png)| Redo last operation|
 
 - - -
-[Prev](DocGisItemsArea) (Areas) | [Home](Home) | [Manual](DocMain) | (Database) [Next](DocGisDatabase)
+[Prev](DocGisItemsArea) (Areas) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Database) [Next](DocGisDatabase)

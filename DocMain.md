@@ -1,4 +1,4 @@
-Prev () | [Home](Home) | [Manual](DocMain) | () Next
+Prev () | [Home](Home) | [Manual](DocMain) | (Install QMapShack) [Next](DocGetQMapShack)
 - - -
 [TOC]
 - - -
@@ -49,4 +49,4 @@ large changes to the GUI. However smaller changes will be ignored.
 * [Add translations](DeveloperTranslate)
 
 - - -
-Prev () | [Home](Home) | [Manual](DocMain) | () Next
+Prev () | [Home](Home) | [Manual](DocMain) | [Top](#) | (Install QMapShack) [Next](DocGetQMapShack)

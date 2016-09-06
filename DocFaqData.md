@@ -132,4 +132,4 @@ database file.
 [Back to FAQ main page](DocFaq)
 
 - - -
-Prev () | [Home](Home) | [Manual](DocMain) | () Next
+Prev () | [Home](Home) | [Manual](DocMain) | [Top](#) | () Next

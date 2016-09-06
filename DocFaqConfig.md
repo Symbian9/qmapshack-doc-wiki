@@ -26,4 +26,4 @@ QMS workspace data behaviour is unpredictable.
 
     
 - - -
-Prev () | [Home](Home) | [Manual](DocMain) | () Next
+Prev () | [Home](Home) | [Manual](DocMain) | [Top](#) | () Next

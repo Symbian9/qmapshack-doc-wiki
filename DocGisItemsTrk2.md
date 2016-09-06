@@ -150,4 +150,4 @@ Sources of track segments can be
 ![maproom1.png](images/DocGisItemsTrk/FilterSplit.png)
 
 - - -
-[Prev](DocGisItemsNew) (Create new tracks, waypoints etc.) | [Home](Home) | [Manual](DocMain) | (Routes) [Next](DocGisItemsRte)
+[Prev](DocGisItemsNew) (Create new tracks, waypoints etc.) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Routes) [Next](DocGisItemsRte)

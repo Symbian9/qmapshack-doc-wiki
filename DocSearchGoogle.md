@@ -22,4 +22,4 @@ And copy the result via drag-n-drop to the new project.
 ![maproom4.png](images/DocSearchGoogle/maproom4.png)
 
 - - -
-[Prev](DocHandleGpxFiles) (Handle GPX and QMS files) | [Home](Home) | [Manual](DocMain) | (Tracks, Waypoints & Co) [Next](DocGisItems)
+[Prev](DocHandleGpxFiles) (Handle GPX and QMS files) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Tracks, Waypoints & Co) [Next](DocGisItems)

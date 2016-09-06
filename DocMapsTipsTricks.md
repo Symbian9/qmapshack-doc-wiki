@@ -314,4 +314,4 @@ Script converts to OSGEO TMS (http://www.maptiler.org/google-maps-coordinates-ti
 [Quick way to prepare raster map for QMapShack](QuickWayToPrepareRasterMapForQMapShack)
 
 - - -
-[Prev](DocControlMapDem) (Control maps and DEM files) | [Home](Home) | [Manual](DocMain) | (Working with Projects) [Next](DocWorkingWithProjects)
+[Prev](DocControlMapDem) (Control maps and DEM files) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Working with Projects) [Next](DocWorkingWithProjects)

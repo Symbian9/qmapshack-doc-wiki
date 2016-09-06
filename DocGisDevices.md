@@ -67,4 +67,4 @@ xsi:schemaLocation="http://www.garmin.com/xmlschemas/GarminDevice/v2 http://www.
 
 
 - - -
-[Prev](DocGisDatabaseLostFound) ('Lost & Found' Folder) | [Home](Home) | [Manual](DocMain) | (Frequently Asked Questions) [Next](DocFaq)
+[Prev](DocGisDatabaseLostFound) ('Lost & Found' Folder) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Frequently Asked Questions) [Next](DocFaq)

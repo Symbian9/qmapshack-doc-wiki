@@ -16,4 +16,4 @@ As another difference to a filesystem items are not stored in several files. The
 This applies to a single database. You can load several databases. If you copy an item from one database to another the copies are as well independent as a clone within the same database.
 
 - - -
-[Prev](DocGisItemsEditMultiple) (Edit items with multiple points (tracks, routes, areas)) | [Home](Home) | [Manual](DocMain) | (Workspace and Database) [Next](DocGisDatabaseWorkspaceDatabase)
+[Prev](DocGisItemsEditMultiple) (Edit items with multiple points (tracks, routes, areas)) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Workspace and Database) [Next](DocGisDatabaseWorkspaceDatabase)

@@ -41,4 +41,4 @@ GenericName=GPS device mapping utility
 * To translate it to other language change the `de` in the filename and in the file itself to the language code you are translating for.
 
 - - -
-[Prev](BuildWindowsVisualStudio) (Compile Instructions for Windows) | [Home](Home) | [Manual](DocMain) | () Next
+[Prev](BuildWindowsVisualStudio) (Compile Instructions for Windows) | [Home](Home) | [Manual](DocMain) | [Top](#) | () Next

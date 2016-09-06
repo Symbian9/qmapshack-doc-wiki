@@ -21,4 +21,4 @@ Unfinished articles are:
 
 
 - - -
-[Prev](DocFaq) (Frequently Asked Questions) | [Home](Home) | [Manual](DocMain) | (Commit Code) [Next](DeveloperCommitCode)
+[Prev](DocFaq) (Frequently Asked Questions) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Commit Code) [Next](DeveloperCommitCode)

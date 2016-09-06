@@ -22,4 +22,4 @@ This will not affect the database until you save the project.
 ![maproom2](images/DocGisDatabaseLostFound/maproom6.png)
 
 - - -
-[Prev](DocGisDatabaseFoldersItems) (Folders and Items) | [Home](Home) | [Manual](DocMain) | (GPS Devices) [Next](DocGisDevices)
+[Prev](DocGisDatabaseFoldersItems) (Folders and Items) | [Home](Home) | [Manual](DocMain) | [Top](#) | (GPS Devices) [Next](DocGisDevices)

@@ -95,4 +95,4 @@ _Hillshading_ (1) will overlay the map with a gray shaded relief. You can fine t
 
 
 - - -
-[Prev](DocBasicsMapDem) (Basics about maps and DEM files) | [Home](Home) | [Manual](DocMain) | (Maps: Tips and Tricks) [Next](DocMapsTipsTricks)
+[Prev](DocBasicsMapDem) (Basics about maps and DEM files) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Maps: Tips and Tricks) [Next](DocMapsTipsTricks)

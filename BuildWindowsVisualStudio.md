@@ -226,4 +226,4 @@ Congratulations: all preparations finished.
 Now you can _really_ start debugging!
 
 - - -
-[Prev](DeveloperCodingGuideline) (Coding Guideline) | [Home](Home) | [Manual](DocMain) | (Add translations) [Next](DeveloperTranslate)
+[Prev](DeveloperCodingGuideline) (Coding Guideline) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Add translations) [Next](DeveloperTranslate)

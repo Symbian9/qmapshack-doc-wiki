@@ -1,4 +1,4 @@
-Prev () | [Home](Home) | [Manual](DocMain) | (Getting started) [Next](DocGettingStarted)
+[Prev](DocMain) (Manual) | [Home](Home) | [Manual](DocMain) | (Getting started) [Next](DocGettingStarted)
 - - -
 [TOC]
 - - -
@@ -106,4 +106,4 @@ And install the application with:
     sudo make install
 
 - - -
-Prev () | [Home](Home) | [Manual](DocMain) | (Getting started) [Next](DocGettingStarted)
+[Prev](DocMain) (Manual) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Getting started) [Next](DocGettingStarted)

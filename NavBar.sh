@@ -45,7 +45,7 @@ gawk -v "toc=${1%.*}" '
      # argument and which  creates the Markdown code  for the navigation
      # bar from the information stored in arrays "p[]" and "n[]":
 
-     function nav(file) {  
+     function nav(file,bottom) {
         sub("[.]md$","",file)              # Remove the ".md" extension.
 
         #
@@ -64,8 +64,16 @@ gawk -v "toc=${1%.*}" '
                        }
         else             nx = "() Next"         # Non-clickable element.
 
-        printf "%s | [Home](Home) | [Manual](%s) | %s\n", pr, toc, nx
-                        }                       # End of function "nav".
+        #
+        # If this is the bottom navigation bar, also add a "Top" link:
+
+        if ( bottom ) tp = "[Top](#) | "
+        else          tp = ""
+
+        # Print navigation links:
+
+        printf "%s | [Home](Home) | [Manual](%s) | %s\n", pr, toc, tp nx
+                               }                # End of function "nav".
 
      #
      # Extract the sequence of documents mentioned  in the table of con-
@@ -133,7 +141,7 @@ gawk -v "toc=${1%.*}" '
 
      /^([[](Home|Prev)[]]|Prev [(][)])/ { if ( U ) next      # Skip bar.
 
-                                          nav(FILENAME)
+                                          nav(FILENAME,0)
                                           printf "- - -\n[TOC]\n- - -\n\n"
 
                                           e = 1  # Document still empty.
@@ -174,7 +182,7 @@ gawk -v "toc=${1%.*}" '
      END                                { if ( ! U ) exit
 
                                           printf rule
-                                          nav(FILENAME)
+                                          nav(FILENAME,1)
                                         }
                       ' C=1 "$1" C= "$2" > "$2.out" &&
 

@@ -57,4 +57,4 @@ To read more about DEM files see [_Basics about maps and DEM files_](DocBasicsMa
 [_Control maps and DEM files_](DocControlMapDem)
 
 - - -
-[Prev](DocGetQMapShack) (Install QMapShack) | [Home](Home) | [Manual](DocMain) | (Command line parameters) [Next](DocCmdOptions)
+[Prev](DocGetQMapShack) (Install QMapShack) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Command line parameters) [Next](DocCmdOptions)

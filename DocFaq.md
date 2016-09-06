@@ -19,4 +19,4 @@ Check the following parts to get answers to some questions about QMapShack:
 
 
 - - -
-[Prev](DocGisDevices) (GPS Devices) | [Home](Home) | [Manual](DocMain) | (Playground - start your new Wiki page) [Next](DocPlayground)
+[Prev](DocGisDevices) (GPS Devices) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Playground - start your new Wiki page) [Next](DocPlayground)

@@ -50,4 +50,4 @@ Make sure to include the all the information listed below to ease both your and 
 **¹** Some files may contain sensitive data you do not want to share with the world (for instance, .gpx can contain your heart rate and home location).
 
 - - -
-Prev () | [Home](Home) | [Manual](DocMain) | () Next
+Prev () | [Home](Home) | [Manual](DocMain) | [Top](#) | () Next
