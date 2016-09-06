@@ -63,7 +63,7 @@ gawk '#
       # Provide input file name without extension:
 
       BEGINFILE { filename = FILENAME
-                  sub(".md$","",filename)
+                  sub("[.]md$","",filename)
                 }
 
       #
@@ -74,7 +74,7 @@ gawk '#
 
       F { if ( $0 ~ "^[.]hg|^Makefile$|[.](py|sh|txt)$" ) next
 
-          sub(".md$","")          # Remove ".md" extension, if existing.
+          sub("[.]md$","")        # Remove ".md" extension, if existing.
           file_unref[$0] = link_def[$0] = 1      # Mark file as existing
           next                                   # but yet unreferenced.
         }
