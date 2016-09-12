@@ -68,7 +68,7 @@ For documentation of export command refer to:
 
 As an individual, you can apply for a free non-commercial access to the French IGN WMTS servers (for example through their "Géoportail API", but also works with other WMTS clients like QGIS and QMapShack). Lots of thanks to them for this free access because their maps are truly awesome. The original source of information about this is at the following URL (in French):
 
-http://dogeo.fr/wmts_ign/
+[http://dogeo.fr/wmts_ign/](http://dogeo.fr/wmts_ign/)
 
 The terms of use enforce a few restrictions listed at the following URL:
 
