@@ -152,14 +152,17 @@ gawk -v "toc=${1%.*}" '
 
      #
      # Remove our special rule line directives "- - -"  belonging to the
-     # old navigation bars as well as the old "[TOC]" directive:
+     # old navigation bars,  the old "[TOC]"  directive,  as well as any
+     # default footnote place markers:
 
-     /^(- - -|[[]TOC[]])$/ { next }
+     /^(- - -|[[]TOC[]]|\/{3}Footnotes Go Here\/{3})$/ { next }
 
      #
      # At the beginning of the file drop both, empty lines and rules:
 
-     e && /^( *|---)$/     { next }
+     e && /^( *|---)$/ { next }
+
+     /[[]\^/           { foot = 1 }           # File contains footnotes.
 
      { print                                       # Print normal lines.
 
@@ -179,12 +182,16 @@ gawk -v "toc=${1%.*}" '
      # Also insert a navigation bar at the end of the file,  provided we
      # have added or updated one at the beginning:
 
-     END                                { if ( ! U ) exit
+     END { if ( ! U ) exit
 
-                                          printf rule
-                                          nav(FILENAME,1)
-                                        }
-                      ' C=1 "$1" C= "$2" > "$2.out" &&
+           #
+           # Insert default footnote place marker, if necessary:
+
+           if ( foot ) printf "///Footnotes Go Here///\n"
+
+           printf rule
+           nav(FILENAME,1)
+         }            ' C=1 "$1" C= "$2" > "$2.out" &&
 
 if cmp  -s "$2" "$2.out"                          # File did not change,
 then rm -f      "$2.out"                        # so remove output file.

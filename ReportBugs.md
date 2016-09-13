@@ -19,7 +19,7 @@ Make sure to include the all the information listed below to ease both your and 
  5. Further information (depending on issue; these are examples):
     1. *application crash*: [A backtrace (if you are on Linux)](TroubleShooting#create-a-backtrace-of-a-crash-on-linux)
     2. *incorrect displaying*: A screenshot
-    3. *failed loading of a file*: The file you tried to load**¹**
+    3. *failed loading of a file*: The file you tried to load[^1]
     4. *"strange" behaviour*: Describe the behavior you expected
 
 ## Additional Tips
@@ -43,11 +43,10 @@ Make sure to include the all the information listed below to ease both your and 
  4. Include **steps** required to reproduce the bug
  5. Include a **screenshot** (if applicable)
  6. Include **version information** (for OS, QMS and packages used by QMS)
- 7. Attach any **additional data** required to reproduce this bug**¹**
+ 7. Attach any **additional data** required to reproduce this bug[^1]
 
----
+[^1]: Some files may contain sensitive data you do not want to share with the world (for instance, .gpx can contain your heart rate and home location).
 
-**¹** Some files may contain sensitive data you do not want to share with the world (for instance, .gpx can contain your heart rate and home location).
-
+///Footnotes Go Here///
 - - -
 Prev () | [Home](Home) | [Manual](DocMain) | [Top](#) | () Next
