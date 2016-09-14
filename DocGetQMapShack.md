@@ -49,7 +49,7 @@ Below a (non-exhaustive) list of Linux Distributions shipping QMapShack:
 * [Arch](https://aur.archlinux.org/packages/qmapshack/)
 * [Fedora](https://admin.fedoraproject.org/pkgdb/package/rpms/qmapshack/)
 
-Refer your distributions manual on howto install packages from using the package system.
+Refer to your distribution's manual on how to install packages using the package system.
 
 ### From Source
 
@@ -67,7 +67,7 @@ To compile QMapShack, you need to have installed:
 Prefer installing those dependencies via the distribution's package system.
 You also need to **install the development packages** in order to build QMapShack
 
-[Click here](Ubuntu-14.04-HowTo) for additional instructions on howto install on Ubuntu 14.04.
+[Click here](Ubuntu-14.04-HowTo) for additional instructions about how to install on Ubuntu 14.04.
 
 #### Obtaining the Source
 
