@@ -25,9 +25,7 @@
 #
 # Check for  dead files  ("*.md" files  not pointed to  by a link in any
 # other "*.md" file) as well as for broken links  (links to non-existing
-# "*.md" files.  Mind however, that in the case of broken links only the
-# existence of the  target file can be tested,  but not the existence of
-# any header identifiers within that file).
+# "*.md" files or non-existing header identifiers within an "*.md" file).
 #
 #                                                    R Woitok 2016-07-29
 #
@@ -80,13 +78,9 @@ gawk '#
         }
 
       #
-      # Now we are reading all existing Markdown files:
-
-      /[]][(]http/ { next }          # Skip links to external web pages.
-
-      #
-      # Mark the local link targets implicitly created for each Markdown
-      # headline as existing:
+      # Now we are reading  all existing Markdown files,  and first mark
+      # any local link target implicitly created for each Markdown head-
+      # line as existing:
 
       match($0,"^ *#+ *(.*)$",m) {
          l = tolower(m[1])
@@ -104,6 +98,12 @@ gawk '#
       # tion must be the last one):
 
       { while ( match($0,"^(.*)[]][(]([^)]+)",m) ) {
+           $0 = m[1]                 # Drop last link from current line.
+
+           #
+           # Skip links to external web pages as well as the "Top" link:
+
+           if ( match(m[2],"http|#$") ) continue
 
            #
            # If this is not  a self reference,  that is,  a reference to
@@ -123,10 +123,7 @@ gawk '#
 
                   linked_in[filename] = linked_in[filename] " " f
                   called_in[l]        = called_in[l]        " " FILENAME
-                }
-
-           $0 = m[1]                 # Drop last link from current line.
-      }                                            }    # End while ....
+      }         }                                  }    # End while ....
 
       END { #
             # Sort arrays ascending with respect to their indices:
