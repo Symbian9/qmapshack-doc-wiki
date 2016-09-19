@@ -31,27 +31,18 @@
 # Variables:
 #
 # Define the paths to the relevant scripts  ("fix",  "htm",  and "nav"),
-# the name  of the file containing  the table of contents ("cnt"), both,
-# the original ("UBU") and the blank free ("ubu")  name of the "Ubuntu*.
-# md" source file, the lists of files to process  ("src" and "tgt", both
-# featuring the blank free "Ubuntu*.*" names obtained by using the comm-
-# ands "ls" and "sed"  in a shell,  because the "make" specific function
-# "patsubst" only operates  on blank free words),  the names of the time
+# the name  of the file  containing the  table of contents ("cnt"),  the
+# lists of files  to process  ("src" and "tgt"),  the names  of the time
 # stamp files used internally to record various actions ("fxt" and "nvt"
-# the values of which  must be mentioned  in file ".hgignore"),  and the
-# name of the Mercurial command ("HG"), if we are executing in a Mercur-
-# ial repository's main directory:
+# (the values of which must be mentioned in file ".hgignore")):
 
 cnt ::= DocMain.md
 fix ::= ./DocFix.sh
 fxt ::= fix.time
-HG  ::= $(shell [ -d .hg ] && echo hg)
 htm ::= ./HtmlMake.py
 nav ::= ./NavBar.sh
 nvt ::= nav.time
-Ubu ::= $(wildcard Ubuntu*.md)
-ubu ::= Ubuntu-14.04-HowTo.md
-src ::= $(shell ls *.md | sed 's/^$(Ubu)$$/$(ubu)/')
+src ::= $(wildcard *.md)
 tgt ::= $(src:.md=.html)
 
 #
@@ -100,12 +91,11 @@ clean:
 doc: $(tgt)
 
 #
-# Rules to rename file "Ubuntu*.md", if not yet done, and to fix the in-
-# dividual "*.md" Markdown source files so they are usable locally (this
-# rule is implicitly  called as  prerequisite  by rule  "nav",  and thus
-# there's hardly any need to call it directly):
+# Rules to fix the individual  "*.md" Markdown source files  so they are
+# usable locally (this rule is implicitly called as prerequisite by rule
+# "nav", and thus there's hardly any need to call it directly):
 
-fix: $(ubu) $(fxt)
+fix: $(fxt)
 
 #
 # Rule to either fix all  "*.md" files having changed  since the time of
@@ -147,10 +137,3 @@ $(nvt): $(cnt) $(nav) $(src)
 	 do echo $(nav) $(cnt) $$f ; $(nav) $(cnt) $$f ; \
 	 done                                          ; \
 	 echo 'Last modified by "make nav".' | tee $(fxt) > $(nvt)
-
-#
-# Rule to make the name of the "Ubuntu*.md" file blank free, either in a
-# Mercurial repository or in a normal directory:
-
-$(ubu):
-	$(HG) mv "$(Ubu)" $(ubu)

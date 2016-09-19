@@ -43,14 +43,9 @@ gawk '#
                                            }
 
       { #
-        # In the reference to the "Ubuntu*" file  use its new blank free
-        # name:
-
-        sub("[]][(][^)]*Ubuntu[^)]*[)]","](Ubuntu-14.04-HowTo)")
-
-        #
-        # Replace URLs  pointing into the  documentation wiki  with URLs
-        # pointing to the corresponding local files:
+        # Replace URLs pointing into  the documentation wiki on the Bit-
+        # bucket server  with URLs  pointing to the  corresponding local
+        # files:
 
         sub("https://bitbucket.org/maproom/qmapshack/wiki/","")
 
