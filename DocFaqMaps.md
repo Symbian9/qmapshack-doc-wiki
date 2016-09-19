@@ -1,4 +1,4 @@
-Prev () | [Home](Home) | [Manual](DocMain) | () Next
+[Prev](DocFaqHandling) (Data handling) | [Home](Home) | [Manual](DocMain) | (Troubleshooting QMapShack) [Next](TroubleShooting)
 - - -
 [TOC]
 - - -
@@ -111,10 +111,6 @@ Consider the following hints:
   Things are getting a bit more difficult for insane large map collections. `gdaladdo` will create an overview 
   file over all maps combined in the vrt file. That might get too large. In this case you have to create single
   overview files and combine them in a vrt. 
-  
-[Back to FAQ main page](DocFaq)
-
-  
 
 - - -
-Prev () | [Home](Home) | [Manual](DocMain) | [Top](#) | () Next
+[Prev](DocFaqHandling) (Data handling) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Troubleshooting QMapShack) [Next](TroubleShooting)

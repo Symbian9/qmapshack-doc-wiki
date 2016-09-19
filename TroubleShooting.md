@@ -1,4 +1,4 @@
-Prev () | [Home](Home) | [Manual](DocMain) | () Next
+[Prev](DocFaqMaps) (Maps and routing) | [Home](Home) | [Manual](DocMain) | (Reporting a bug) [Next](ReportBugs)
 - - -
 [TOC]
 - - -
@@ -98,4 +98,4 @@ A possible workaround is the same as to add curl support: use the GDAL binaries
 from [gisinternals](http://gisinternals.com/).
 
 - - -
-Prev () | [Home](Home) | [Manual](DocMain) | [Top](#) | () Next
+[Prev](DocFaqMaps) (Maps and routing) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Reporting a bug) [Next](ReportBugs)

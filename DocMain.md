@@ -12,9 +12,13 @@ always reflect just a snapshot of the current state. Screenshots seen in this ma
 not reflect the current appearance of the program. The manual will be updated if there are 
 large changes to the GUI. However smaller changes will be ignored. 
 
-## User
+## Installing QMapShack
 
 * [Install QMapShack](DocGetQMapShack)
+* [Compile Instructions for Windows](BuildWindowsVisualStudio)
+
+## Using QMapShack
+
 * [Getting started](DocGettingStarted)
 * [Command line parameters](DocCmdOptions)
 * [Maps & Digital Elevation Model (DEM)](DocInstallMapDem)
@@ -38,15 +42,24 @@ large changes to the GUI. However smaller changes will be ignored.
     * [Folders and Items](DocGisDatabaseFoldersItems)
     * ['Lost & Found' Folder](DocGisDatabaseLostFound)
 * [GPS Devices](DocGisDevices)
-* [Frequently Asked Questions](DocFaq)
-* [Playground - start your new Wiki page](DocPlayground)
 
-## Developer & Translators
+## Getting Help
+
+* [Frequently Asked Questions](DocFaqConfig)
+    * [Configuring and running QMapShack](DocFaqConfig)
+    * [Databases and projects](DocFaqData)
+    * [Data handling](DocFaqHandling)
+    * [Maps and routing](DocFaqMaps)
+* [Troubleshooting QMapShack](TroubleShooting)
+* [Reporting a bug](ReportBugs)
+* [Requesting a feature](RequestFeatures)
+
+## Developing QMapShack
 
 * [Commit Code](DeveloperCommitCode)
 * [Coding Guideline](DeveloperCodingGuideline)
-* [Compile Instructions for Windows](BuildWindowsVisualStudio)
 * [Add translations](DeveloperTranslate)
+* [Playground - start your new Wiki page](DocPlayground)
 
 - - -
 Prev () | [Home](Home) | [Manual](DocMain) | [Top](#) | (Install QMapShack) [Next](DocGetQMapShack)

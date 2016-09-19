@@ -1,4 +1,4 @@
-Prev () | [Home](Home) | [Manual](DocMain) | () Next
+[Prev](DocFaqConfig) (Configuring and running QMapShack) | [Home](Home) | [Manual](DocMain) | (Data handling) [Next](DocFaqHandling)
 - - -
 [TOC]
 - - -
@@ -129,7 +129,5 @@ window is then opened very quickly and the project name can be edited in it.
 Move the mouse pointer on the database name in the main window. A bubble box appears and shows the physical location of the
 database file.
 
-[Back to FAQ main page](DocFaq)
-
 - - -
-Prev () | [Home](Home) | [Manual](DocMain) | [Top](#) | () Next
+[Prev](DocFaqConfig) (Configuring and running QMapShack) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Data handling) [Next](DocFaqHandling)

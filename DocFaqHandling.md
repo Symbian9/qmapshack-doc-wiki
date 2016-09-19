@@ -1,4 +1,4 @@
-Prev () | [Home](Home) | [Manual](DocMain) | () Next
+[Prev](DocFaqData) (Databases and projects) | [Home](Home) | [Manual](DocMain) | (Maps and routing) [Next](DocFaqMaps)
 - - -
 [TOC]
 - - -
@@ -24,10 +24,6 @@ Prev () | [Home](Home) | [Manual](DocMain) | () Next
 * See the instructions for the given point in a bubble box
 
 ![Route instructions bubble box](images/DocFaq/RouteInstructions.png)
- 
-
-[Back to FAQ main page](DocFaq)
-
 
 - - -
-Prev () | [Home](Home) | [Manual](DocMain) | [Top](#) | () Next
+[Prev](DocFaqData) (Databases and projects) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Maps and routing) [Next](DocFaqMaps)
