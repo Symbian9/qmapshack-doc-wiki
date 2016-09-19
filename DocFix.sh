@@ -55,6 +55,13 @@ gawk '#
 
         sub("#markdown-header-","#")
 
+        #
+        # Remove ".md" and ".html" extensions from Markdown file links:
+
+        while ( match($0,"^(.*[]][(][^(]]*)[.](md|html)([#)].*)$",m) ) {
+           $0 = m[1] m[3]                  # Remove file name extension.
+                                                                       }
+
         print        # Finally output the possibly modified source line.
       }' "$1" > "$1.out" &&
 
