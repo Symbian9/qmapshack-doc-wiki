@@ -135,19 +135,19 @@ class FixHtml(Extension):
 # Pass the input file to Markdown with all necessary extensions enabled,
 # including our own "FixHtml" extension:
 
-markdown.markdownFromFile(extensions=['markdown.extensions.admonition',
-                                      'markdown.extensions.codehilite',
-                                      'markdown.extensions.extra'     ,
-                                      'markdown.extensions.meta'      ,
-                                      'markdown.extensions.sane_lists',
-                                      'markdown.extensions.smarty'    ,
-                                      'markdown.extensions.toc'       ,
-                                      'markdown.extensions.wikilinks' ,
+markdown.markdownFromFile(extensions=['markdown.extensions.abbr'        ,
+                                      'markdown.extensions.def_list'    ,
+                                      'markdown.extensions.fenced_code' ,
+                                      'markdown.extensions.footnotes'   ,
+                                      'markdown.extensions.sane_lists'  ,
+                                      'markdown.extensions.tables'      ,
+                                      'markdown.extensions.toc'         ,
+                                      'markdown.extensions.wikilinks'   ,
                                       FixHtml()
                                      ],
-                          extension_configs={'markdown.extensions.codehilite':
-                                                {'linenums':     'False',
-                                                 'use_pygments': 'False'
+                          extension_configs={'markdown.extensions.wikilinks':
+                                                {'base_url': '' ,
+                                                 'end_url':  '.html'
                                                 }
                                             },
                           input=sys.argv[1]
