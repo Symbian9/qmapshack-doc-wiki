@@ -1,0 +1,3 @@
+# Test strike through.
+
+~~xxx~~
