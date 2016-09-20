@@ -136,17 +136,18 @@ class FixHtml(Extension):
 # Define a Markdown extension  to process the  "~~xxxxx~~"  notation for
 # "strike through":
 
-DelRe = r'(~~)(.*?)~~'   # Regular expression matching "strike through".
+ReDel = r'(~~)(.*?)~~'   # Regular expression matching "strike through".
 
 class StrikeThrough(Extension):
    def extendMarkdown(self, md, md_globals):
-       del_tag = SimpleTagPattern(DelRe, 'del')
-
-       md.inlinePatterns.add('del', del_tag, '>not_strong')
+       md.inlinePatterns.add('del',
+                             SimpleTagPattern(ReDel, 'del'),
+                             '>not_strong'
+                            )
 
 #
 # Pass the input file to Markdown with all necessary extensions enabled,
-# including our own "FixHtml" extension:
+# including our own "FixHtml" and "StrikeThrough" extensions:
 
 markdown.markdownFromFile(extensions=['markdown.extensions.abbr'        ,
                                       'markdown.extensions.def_list'    ,
