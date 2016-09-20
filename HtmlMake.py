@@ -49,8 +49,9 @@ import markdown, re, sys
 
 if len(sys.argv) == 1: sys.argv.extend([''])  # Default: standard input.
 
-from markdown.extensions    import Extension
-from markdown.preprocessors import Preprocessor
+from markdown.extensions     import Extension
+from markdown.inlinepatterns import Pattern, SimpleTagPattern
+from markdown.preprocessors  import Preprocessor
 
 #
 # Since references to local files in the various "*.md" source files are
@@ -132,6 +133,18 @@ class FixHtml(Extension):
        del md.preprocessors['html_block']
 
 #
+# Define a Markdown extension  to process the  "~~xxxxx~~"  notation for
+# "strike through":
+
+DelRe = r'(~~)(.*?)~~'   # Regular expression matching "strike through".
+
+class StrikeThrough(Extension):
+   def extendMarkdown(self, md, md_globals):
+       del_tag = SimpleTagPattern(DelRe, 'del')
+
+       md.inlinePatterns.add('del', del_tag, '>not_strong')
+
+#
 # Pass the input file to Markdown with all necessary extensions enabled,
 # including our own "FixHtml" extension:
 
@@ -143,7 +156,8 @@ markdown.markdownFromFile(extensions=['markdown.extensions.abbr'        ,
                                       'markdown.extensions.tables'      ,
                                       'markdown.extensions.toc'         ,
                                       'markdown.extensions.wikilinks'   ,
-                                      FixHtml()
+                                      FixHtml()                         ,
+                                      StrikeThrough()
                                      ],
                           extension_configs={'markdown.extensions.wikilinks':
                                                 {'base_url': '' ,
