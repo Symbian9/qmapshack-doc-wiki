@@ -71,7 +71,7 @@ class AddHtmlExt(Preprocessor):
         # than dot  and dash  (the latter preventing  the trailing ".04-
         # HowTo" in the "Ubuntu*" URL to be mistaken for an extension)):
 
-        ReIgnore  = re.compile('[]][(](#|https?://|(.*/)?.+[.][^-.]+(#|[)]))')
+        ReIgnore  = re.compile('[]][(](#|https?://|(.*/)?[^/]+[.][^-/.]+[#)])')
         ReProtect = re.compile('[]]=[(]')                 # Match "]=(".
         ReRPar    = re.compile('[)]')                # Match end of URL.
 
