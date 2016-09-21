@@ -46,7 +46,7 @@ If you want to use your own icons, you need to add them to
 * `c:\Users\my_user_name\.config\QLandkarte\WaypointIcons` (Windows)
 * `???` (OSX)
 
-Icon files must be in PNG or BMP format with size 24x24. 
+Icon files must be in PNG or BMP format with size 22x22. 
 
 When adding an icon *Photo.png*, the icon will be listed as *Photo* in QMapShack.
 
