@@ -41,9 +41,10 @@ These can be changed by clicking on the blue, underlined labels.
 QMapShack ships with a bunch of default icons, which are likely to be displayed correctly on the most GPS devices.
 
 If you want to use your own icons, you need to add them to
-+ `~/.config/QLandkarte/WaypointIcons` (*nix-type systems)
-+ `c:\Users\my_user_name\.config\QLandkarte\WaypointIcons` (Windows)
-+ `???` (OSX)
+
+* `~/.config/QLandkarte/WaypointIcons` (*nix-type systems)
+* `c:\Users\my_user_name\.config\QLandkarte\WaypointIcons` (Windows)
+* `???` (OSX)
 
 Icon files must be in PNG or BMP format with size 24x24. 
 
