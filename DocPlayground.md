@@ -5,15 +5,15 @@
 
 # The Playground #
 
-This page references all articles in progress, that are not referenced by any other page, yet. If you want to start a new page/article, start here.
+This page references all articles being currently developed that are not yet referenced by any other page. If you want to start a new page/article, start here.
 
-Please keep in mind that all pages/articles you find in this section is work in progress. You are welcome to read it. You are welcome to point out errors or misleading stuff. But do not expect anything usefull right from the spot.
+Please keep in mind that all pages/articles you find in this section represent work in progress. You are welcome to read them. You are welcome to point out errors or misleading stuff. But do not expect anything usefull right from the spot.
 
-To start a new page/article in the playgound simply add a new link referencing a file in the sub-directory _playgound_. Do your best to mimic the name scheme. Once you are done you can click the link and a new file file be created.
+To start a new page/article in the playgound simply add a new link to the current file referencing your new file in sub-directory `playgound/`. Do your best to mimic the name scheme. Once you are done you can click this new link and your new file will be created.
 
-Pages/articles will be removed without further notice from the Wiki if they stick into this section for more than half a year.
+Pages/articles in sub-directory `playground/` will be removed without further notice from the wiki, if they remain unchanged there for more than half a year.
 
-Unfinished articles are:
+Articles currenly being developed:
 
 * [Developing Documentation](playground/DevelopingDocumentation) - September 2016
 * [How to do routing](playground/DocGisHowToRouting) - August 2016
