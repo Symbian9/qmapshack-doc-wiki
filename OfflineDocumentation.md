@@ -84,7 +84,7 @@ creating a command alias from the last command line above by executing
 
     because in that case the argument passed to your browser must be
     interpretable as a Windows path.
-///Footnotes Go Here///
 
+///Footnotes Go Here///
 - - -
 [Prev](BuildWindowsVisualStudio) (Compile Instructions for Windows) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Getting started) [Next](DocGettingStarted)

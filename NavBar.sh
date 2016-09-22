@@ -172,10 +172,11 @@ gawk -v "toc=${1%.*}" '
        # For the sake of the "END" clause check the current line for be-
        # ing empty or not  (if it is  not empty and  the current line is
        # the last line of the file, the "END" clause will insert an add-
-       # itional empty line before adding the bottom navigation bar):
+       # itional empty line  before adding  the optional  footnote place
+       # marker and the bottom navigation bar):
 
-       if ( $0 ~ /^ *$/ ) rule = "- - -\n"            # Use normal rule.
-       else               rule = "\n- - -\n" # Empty line ahead of rule.
+       if ( $0 ~ /^ *$/ ) nl = 0                        # Line is empty.
+       else               nl = 1                    # Line is non-empty.
      }
 
      #
@@ -184,12 +185,14 @@ gawk -v "toc=${1%.*}" '
 
      END { if ( ! U ) exit
 
+           if ( nl ) print # If necessary, insert additional empty line.
+
            #
            # Insert default footnote place marker, if necessary:
 
            if ( foot ) printf "///Footnotes Go Here///\n"
 
-           printf rule
+           printf "- - -\n"
            nav(FILENAME,1)
          }            ' C=1 "$1" C= "$2" > "$2.out" &&
 
