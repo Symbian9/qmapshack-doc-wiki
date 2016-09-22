@@ -16,6 +16,7 @@ large changes to the GUI. However smaller changes will be ignored.
 
 * [Install QMapShack](DocGetQMapShack)
 * [Compile Instructions for Windows](BuildWindowsVisualStudio)
+* [Create Offline Documentation](OfflineDocumentation)
 
 ## Using QMapShack
 

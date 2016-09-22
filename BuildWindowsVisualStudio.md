@@ -1,4 +1,4 @@
-[Prev](DocGetQMapShack) (Install QMapShack) | [Home](Home) | [Manual](DocMain) | (Getting started) [Next](DocGettingStarted)
+[Prev](DocGetQMapShack) (Install QMapShack) | [Home](Home) | [Manual](DocMain) | (Create Offline Documentation) [Next](OfflineDocumentation)
 - - -
 [TOC]
 - - -
@@ -226,4 +226,4 @@ Congratulations: all preparations finished.
 Now you can _really_ start debugging!
 
 - - -
-[Prev](DocGetQMapShack) (Install QMapShack) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Getting started) [Next](DocGettingStarted)
+[Prev](DocGetQMapShack) (Install QMapShack) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Create Offline Documentation) [Next](OfflineDocumentation)
