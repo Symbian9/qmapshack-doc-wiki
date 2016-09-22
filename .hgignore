@@ -1,0 +1,18 @@
+syntax: glob
+
+#
+# Exclude Emacs backup and autosave files:
+
+*~
+\#*\#
+.\#*
+
+#
+# Exclude the "*.html" target files created from the "*md" source files:
+
+*.html
+
+#
+# Exclude the "*.time" time stamp files used by the make file:
+
+*.time
