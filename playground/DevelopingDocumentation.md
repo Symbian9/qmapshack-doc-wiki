@@ -337,13 +337,11 @@ Bitbucket, the following conditions must be met:
 
     Mind however that the `make check` command does not just check the
     files containing your current changes, but rather checks the whole
-    wiki repository for unreferenced files and all toplevel `*.md` files
-    for containing undefined links[^4].  So if `make check` finds
-    unreferenced files or undefined links introduced by **your recent
-    work**, apply corrections, but leave errors not related to your
-    current work unresolved in the current changeset you are working on,
-    and if you want to resolve them, resolve them in a separate
-    changeset later.
+    wiki repository[^4].  So if `make check` finds unreferenced files or
+    undefined links introduced by **your recent work**, apply
+    corrections, but leave errors not related to your current work
+    unresolved in the current changeset you are working on, and if you
+    want to resolve them, resolve them in a separate changeset later.
 
 *   Finally, keep your Bitbucket password ready for pushing the
     repository upstream and run the commands
@@ -359,5 +357,10 @@ Bitbucket, the following conditions must be met:
     dates) which aren't caused by your own changes.
 
 [^4]:
-    This implies that `make check` **can not be used** to find undefined
-    links in `*.md` files still residing in directory `playground/`.
+    To be precise, `make check` checks all _tracked_ files of the wiki
+    repository for being referenced in at least one _toplevel_ `*.md`
+    file as well as all _toplevel_ `*.md` files for containing only
+    defined local links into any _toplevel_ `*.md` file.  This implies
+    that `make check` can neither find undefined links in `*.md` files
+    still residing in directory `playground/` nor check whether (yet)
+    untracked files are referenced.
