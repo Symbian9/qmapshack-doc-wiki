@@ -38,16 +38,16 @@
 #
 ########################################################################
 
-if   [[ "${1-}" = -n ]]                  # Sanitize the files specified.
+if   [ "${1-}" = -n ]                    # Sanitize the files specified.
 then op=n
      shift
-elif [[ "${1-}" = -d ]]    # Create "*.html" files from files specified.
+elif [ "${1-}" = -d ]      # Create "*.html" files from files specified.
 then shift
 fi
 
 files=$(ls "${@-}")                # Determine list of files to process.
 
-if [[ -n "${op-}" ]]                         # Sanitize specified files.
+if [ -n "${op-}" ]                           # Sanitize specified files.
 then for f in $files
      do echo  ./DocFix.sh $f
               ./DocFix.sh $f
@@ -58,5 +58,5 @@ else for f in $files                  # Convert specified files to HTML.
      do echo "./HtmlMake.py $f >" ${f%.md}.html
               ./HtmlMake.py $f >  ${f%.md}.html
      done
-fi                                         # End else [[ -n "${op-}" ]].
+fi                                           # End else [ -n "${op-}" ].
 
