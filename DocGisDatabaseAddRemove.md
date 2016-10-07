@@ -96,9 +96,6 @@ To see changes in the database by someone else as soon as they are saved to the 
 
 Make sure your personal firewall allows UDP traffic on the given port.
 
-- - -
-[Prev](DocGisDatabaseWorkspaceDatabase) (Workspace and Database) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Folders and Items) [Next](DocGisDatabaseFoldersItems)
-
 You can trigger the resulting action on the notification manually, too. Do a right click on the root entry of the database and select *"Sync. with Database"*.
 
 ![maproom2](images/DocGisDatabaseAddRemove/maproom3.png)
