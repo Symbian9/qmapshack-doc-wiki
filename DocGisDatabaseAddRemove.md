@@ -118,5 +118,3 @@ The search is performed over an internal text that combines:
 * For the activity if the item is a track
 
 The search does **not** include project names and project descriptions.
-
-![maproom2](images/DocGisDatabaseAddRemove/maproom3.png)
