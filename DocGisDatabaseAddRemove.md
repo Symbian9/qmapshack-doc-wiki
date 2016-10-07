@@ -11,7 +11,7 @@ To add a database you do a right click with your mouse on some empty space in th
 
 You can choose between a SQLite database or a MySQL database. For a single user or an installation on a laptop with no permanent access to a network, SQLite is the better choice. If you want multiple users to access the data via network, MySQL is the option to go.
 
-To remove a database you do a right click on the root entry of the database. 
+To remove a database you do a right click on the root entry of the database and select *"Remove Database"*
 
 ![maproom2](images/DocGisDatabaseAddRemove/maproom3.png)
 
@@ -98,3 +98,25 @@ Make sure your personal firewall allows UDP traffic on the given port.
 
 - - -
 [Prev](DocGisDatabaseWorkspaceDatabase) (Workspace and Database) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Folders and Items) [Next](DocGisDatabaseFoldersItems)
+
+You can trigger the resulting action on the notification manually, too. Do a right click on the root entry of the database and select *"Sync. with Database"*.
+
+![maproom2](images/DocGisDatabaseAddRemove/maproom3.png)
+
+# Search the Database
+
+You can do a text search over items of a database. To start the search do a right click on the root entry of the database and select *"Search Database"*.
+
+![maproom2](images/DocGisDatabaseAddRemove/maproom3.png)
+
+The search is performed over an internal text that combines:
+
+* The item's name
+* The item's short summary as seen in the bubbles.
+* The item's description
+* The item's comment
+* For the activity if the item is a track
+
+The search does **not** include project names and project descriptions.
+
+![maproom2](images/DocGisDatabaseAddRemove/maproom3.png)
