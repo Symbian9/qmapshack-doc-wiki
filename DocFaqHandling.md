@@ -25,5 +25,26 @@
 
 ![Route instructions bubble box](images/DocFaq/RouteInstructions.png)
 
+## How to find distance between waypoints
+
+(inspired by and partially copied from [QMS issues list](https://bitbucket.org/maproom/qmapshack/issues/169/distance-between-waypoints-popup-window))
+ 
+* _Find the direct distance from a waypoint to some other point:_ set a waypoint and move it to the other point. 
+  This will give you the distance and the course (direction) to the other point. When done abort the operation (right mouse click) and remove the waypoint.
+
+![Waypoint distance](images/DocFaq/WPTDistance.jpg)
+
+* _Find a defined distance from several waypoints:_ add the distance as proximity to the waypoints.
+
+![Waypoint distances](images/DocFaq/WPTDistances.jpg)
+
+![Waypoint proximity](images/DocFaq/WPTProximity.jpg)
+
+* _Find the street distance or the direct distance between several points:_ start to create a track with or without routing.
+
+![Direct track distance](images/DocFaq/Directtrack.jpg)
+
+![Routed track distance](images/DocFaq/Routedtrack.jpg)
+
 - - -
 [Prev](DocFaqData) (Databases and projects) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Maps and routing) [Next](DocFaqMaps)
