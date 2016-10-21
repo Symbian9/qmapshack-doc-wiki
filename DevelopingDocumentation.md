@@ -113,7 +113,7 @@ Bitbucket, the following conditions must be met:
     navigation bars at the top and bottom of it alone.  The top
     navigation bar looks like
 
-            [Prev](... | [Home](Home) | [Manual](DocMain) | ...  
+            [Prev](... | [Home](... | [Manual](... | ...  
             - - -  
             [TOC]  
             - - -
@@ -121,7 +121,7 @@ Bitbucket, the following conditions must be met:
     while the bottom navigation bar looks like
 
             - - -  
-            [Prev](... | [Home](Home) | [Manual](DocMain) | ...
+            [Prev](... | [Home](... | [Manual](... | ...
 
     When running `make nav` later, these lines will be updated
     automatically (and if they don't yet exist, they will be created).
