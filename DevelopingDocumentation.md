@@ -248,7 +248,7 @@ Bitbucket, the following conditions must be met:
         have to make sure your editor correctly encodes these characters
         as _UTF-8_** or they will not be displayed properly.  And of
         course you'll have to know how to tell your editor to insert an
-        UTF-8 "`Ê`" character directly into your file (the author would
+        UTF-8 "`ÃŠ`" character directly into your file (the author would
         recommend the _Mule_ package of
         [GNU _Emacs_](https://www.gnu.org/software/emacs/) for editing
         UTF-8 files, but your milage may vary).
