@@ -104,7 +104,7 @@ gawk '#
       # potentially modify the current input line in this loop, this ac-
       # tion must be the last one):
 
-      { while ( match($0,"^(.*)[]][(]([^)]+)",m) ) {
+      { while ( match($0,"^(.*)[]][(]([^)]+)[)]",m) ) {
            $0 = m[1]                 # Drop last link from current line.
 
            #
@@ -130,7 +130,7 @@ gawk '#
 
                   linked_in[filename] = linked_in[filename] " " f
                   called_in[l]        = called_in[l]        " " FILENAME
-      }         }                                  }    # End while ....
+      }         }                                     } # End while ....
 
       END { #
             # Sort arrays ascending with respect to their indices:
