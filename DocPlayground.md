@@ -1,4 +1,4 @@
-[Prev](DeveloperTranslate) (Add translations) | [Home](Home) | [Manual](DocMain) | () Next
+[Prev](DevelopingDocumentation) (Developing Documentation) | [Home](Home) | [Manual](DocMain) | () Next
 - - -
 [TOC]
 - - -
@@ -15,11 +15,10 @@ Pages/articles in sub-directory `playground/` will be removed without further no
 
 Articles currenly being developed:
 
-* [Developing Documentation](playground/DevelopingDocumentation) - September 2016
 * [How to do routing](playground/DocGisHowToRouting) - August 2016
 * [How to save your work](playground/DocGisHowToSaveYourWork) - August 2016
 * [Use case motorcycle navigation](playground/DocUseCaseMotorcycleNavigation) - August 2016
 
 
 - - -
-[Prev](DeveloperTranslate) (Add translations) | [Home](Home) | [Manual](DocMain) | [Top](#) | () Next
+[Prev](DevelopingDocumentation) (Developing Documentation) | [Home](Home) | [Manual](DocMain) | [Top](#) | () Next

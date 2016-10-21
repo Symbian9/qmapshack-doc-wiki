@@ -1,3 +1,8 @@
+[Prev](DeveloperTranslate) (Add translations) | [Home](Home) | [Manual](DocMain) | (Playground - start your new Wiki page) [Next](DocPlayground)
+- - -
+[TOC]
+- - -
+
 # Developing Documentation
 
 ## Prerequisites
@@ -44,7 +49,7 @@ Bitbucket, the following conditions must be met:
     *   [Documentation](https://pythonhosted.org/Markdown/extensions/index.html)
         of the _Markdown_ syntax understood by every _Markdown_ extension
         used by Bitbucket[^1] (see
-        [_Python_ requirements](../OfflineDocumentation#prerequisites)) as
+        [_Python_ requirements](OfflineDocumentation#prerequisites)) as
         well as the HTML code produced from it.
 
     *   Finally, you can look into any of the `*.md` files in this
@@ -173,7 +178,7 @@ Bitbucket, the following conditions must be met:
 
     |   |   |
     |---|---|
-    | ![UnderConstruction](images/UnderConstruction.png) | **Help please! This section is still under construction:** I'm not at all familiar with online editing via the Bitbucket server, so the gory details should be inserted here by someone who is.  The following topics sould be covered by the description: |
+    | ![UnderConstruction](images/UnderConstruction.png) | **Help please! This section is still under construction:** The author is not at all familiar with online editing via the Bitbucket server, so the gory details should be inserted here by someone who is.  The following topics sould be covered by the description: |
 
     *   **_Where to point your browser to in order to enter your
         Bitbucket password._**
@@ -216,7 +221,7 @@ Bitbucket, the following conditions must be met:
 *   Additional Prerequisites:
 
     *   You have the software tools described
-        [here](../OfflineDocumentation#prerequisites) to manually
+        [here](OfflineDocumentation#prerequisites) to manually
         convert your `*.md` file to HTML so you can locally inspect it
         using your browser.
 
@@ -243,10 +248,10 @@ Bitbucket, the following conditions must be met:
         have to make sure your editor correctly encodes these characters
         as _UTF-8_** or they will not be displayed properly.  And of
         course you'll have to know how to tell your editor to insert an
-        UTF-8 "`ÃŠ`" character directly into your file (personally I
-        would recommend the _Mule_ package of [GNU
-        _Emacs_](https://www.gnu.org/software/emacs/) for editing UTF-8
-        files, but your milage may vary).
+        UTF-8 "`Ê`" character directly into your file (the author would
+        recommend the _Mule_ package of
+        [GNU _Emacs_](https://www.gnu.org/software/emacs/) for editing
+        UTF-8 files, but your milage may vary).
 
 *   Just open an existing `*.md` file you want to edit or create a new
     one (**in sub-directory `playground/`, as recommended
@@ -364,3 +369,7 @@ Bitbucket, the following conditions must be met:
     that `make check` can neither find undefined links in `*.md` files
     still residing in directory `playground/` nor check whether (yet)
     untracked files are referenced.
+
+///Footnotes Go Here///
+- - -
+[Prev](DeveloperTranslate) (Add translations) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Playground - start your new Wiki page) [Next](DocPlayground)

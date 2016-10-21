@@ -1,4 +1,4 @@
-[Prev](DeveloperCodingGuideline) (Coding Guideline) | [Home](Home) | [Manual](DocMain) | (Playground - start your new Wiki page) [Next](DocPlayground)
+[Prev](DeveloperCodingGuideline) (Coding Guideline) | [Home](Home) | [Manual](DocMain) | (Developing Documentation) [Next](DevelopingDocumentation)
 - - -
 [TOC]
 - - -
@@ -41,4 +41,4 @@ GenericName=GPS device mapping utility
 * To translate it to other language change the `de` in the filename and in the file itself to the language code you are translating for.
 
 - - -
-[Prev](DeveloperCodingGuideline) (Coding Guideline) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Playground - start your new Wiki page) [Next](DocPlayground)
+[Prev](DeveloperCodingGuideline) (Coding Guideline) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Developing Documentation) [Next](DevelopingDocumentation)

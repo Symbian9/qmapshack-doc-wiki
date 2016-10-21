@@ -60,6 +60,7 @@ large changes to the GUI. However smaller changes will be ignored.
 * [Commit Code](DeveloperCommitCode)
 * [Coding Guideline](DeveloperCodingGuideline)
 * [Add translations](DeveloperTranslate)
+* [Developing Documentation](DevelopingDocumentation)
 * [Playground - start your new Wiki page](DocPlayground)
 
 - - -
