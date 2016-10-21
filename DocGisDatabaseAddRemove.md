@@ -115,3 +115,6 @@ The search is performed over an internal text that combines:
 * For the activity if the item is a track
 
 The search does **not** include project names and project descriptions.
+
+- - -
+[Prev](DocGisDatabaseWorkspaceDatabase) (Workspace and Database) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Folders and Items) [Next](DocGisDatabaseFoldersItems)

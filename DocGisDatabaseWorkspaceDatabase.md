@@ -1,4 +1,4 @@
-[Prev](DocGisDatabase) (Database) | [Home](Home) | [Manual](DocMain) | (Add/Remove a Database) [Next](DocGisDatabaseAddRemove)
+[Prev](DocGisDatabase) (Database) | [Home](Home) | [Manual](DocMain) | (Add/Remove/Synchronize/Search a Database) [Next](DocGisDatabaseAddRemove)
 - - -
 [TOC]
 - - -
@@ -14,4 +14,4 @@ For example if you want to copy an item from one database folder to another, you
 If you delete an item from a database project in the workspace it's not deleted from the database. It's just removed from the workspace. You have to delete it explicitly in the database view. If the item is not referenced by any other folder in the database it is moved to the 'Lost & Found' folder. 
 
 - - -
-[Prev](DocGisDatabase) (Database) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Add/Remove a Database) [Next](DocGisDatabaseAddRemove)
+[Prev](DocGisDatabase) (Database) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Add/Remove/Synchronize/Search a Database) [Next](DocGisDatabaseAddRemove)
