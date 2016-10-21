@@ -185,7 +185,10 @@ gawk -v "toc=${1%.*}" '
 
      END { if ( ! U ) exit
 
-           if ( nl ) print # If necessary, insert additional empty line.
+           #
+           # Insert additional empty line, if necessary:
+
+           if ( nl ) printf "\n"
 
            #
            # Insert default footnote place marker, if necessary:
