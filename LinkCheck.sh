@@ -91,6 +91,13 @@ gawk '#
                                  }
 
       #
+      # Mark any links defined by footnotes as existing:
+
+      match($0,"[[]\\^([^]]+)[]]:",m) { link_def[filename "#fn:"    m[1]] = 1
+                                        link_def[filename "#fnref:" m[1]] = 1
+                                      }
+
+      #
       # Check every Markdown link in the current line (since regular ex-
       # pressions are greedy,  we process the last link in the currently
       # remaining line first and then we simply drop it.  And because we
@@ -103,7 +110,7 @@ gawk '#
            #
            # Skip links to external web pages as well as the "Top" link:
 
-           if ( match(m[2],"http|#$") ) continue
+           if ( match(m[2],"^http|#$") ) continue
 
            #
            # If this is not  a self reference,  that is,  a reference to
