@@ -5,6 +5,22 @@
 
 # Frequently Asked Questions - Maps and routing
 
+## Why are waypoints shown with a blue dot icon?
+
+**Source:** [Newsgroup discussion](https://sourceforge.net/p/qlandkartegt/mailman/message/35441910/)
+
+_Example:_
+
+![Blue dots](images/DocFaq/BlueDots.jpg)
+
+The blue dots shown on the map are not the icons of waypoints but they are used as indicators that at the given zoom level
+of the map and at the given locations there are several waypoints on the map. Thus, cluttering of the map is avoided.
+
+Changing the zoom level results in the display of all waypoints at the given location with the necessary icons.
+
+![No Blue dots](images/DocFaq/NoBlueDots.jpg)
+
+
 ## Is there a possibility to display small roads/tracks in a vector map without zooming in too much?
 
 **Source:** [www.naviboard.de](http://www.naviboard.de/vb/showthread.php?t=59676)
