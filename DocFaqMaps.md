@@ -16,7 +16,8 @@ _Example:_
 The blue dots shown on the map are not the icons of waypoints but they are used as indicators that at the given zoom level
 of the map and at the given locations there are several waypoints on the map. Thus, cluttering of the map is avoided.
 
-Changing the zoom level results in the display of all waypoints at the given location with the necessary icons.
+Changing the zoom level results in the display of all waypoints at the given location with the necessary icons (exception:
+several waypoints with equal coordinates).
 
 ![No Blue dots](images/DocFaq/NoBlueDots.jpg)
 
