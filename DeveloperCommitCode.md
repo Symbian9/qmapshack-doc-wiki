@@ -1,4 +1,4 @@
-[Prev](RequestFeatures) (Requesting a feature) | [Home](Home) | [Manual](DocMain) | (Coding Guideline) [Next](DeveloperCodingGuideline)
+[Prev](DeveloperCodingGuideline) (Coding Guideline) | [Home](Home) | [Manual](DocMain) | (Add translations) [Next](DeveloperTranslate)
 - - -
 [TOC]
 - - -
@@ -16,4 +16,4 @@ BitBucket offers you to fork the QMapShack repository. By that you have your own
 This request will be reviewed. Maybe it needs a few fixes. Anyway, if the code has been reviewed and obviously does not break anything, it will be merged into the main repository. 
 
 - - -
-[Prev](RequestFeatures) (Requesting a feature) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Coding Guideline) [Next](DeveloperCodingGuideline)
+[Prev](DeveloperCodingGuideline) (Coding Guideline) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Add translations) [Next](DeveloperTranslate)

@@ -57,8 +57,8 @@ large changes to the GUI. However smaller changes will be ignored.
 
 ## Developing QMapShack
 
-* [Commit Code](DeveloperCommitCode)
 * [Coding Guideline](DeveloperCodingGuideline)
+* [Commit Code](DeveloperCommitCode)
 * [Add translations](DeveloperTranslate)
 * [Developing Documentation](DevelopingDocumentation)
 * [Playground - start your new Wiki page](DocPlayground)

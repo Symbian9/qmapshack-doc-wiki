@@ -1,4 +1,4 @@
-[Prev](ReportBugs) (Reporting a bug) | [Home](Home) | [Manual](DocMain) | (Commit Code) [Next](DeveloperCommitCode)
+[Prev](ReportBugs) (Reporting a bug) | [Home](Home) | [Manual](DocMain) | (Coding Guideline) [Next](DeveloperCodingGuideline)
 - - -
 [TOC]
 - - -
@@ -30,4 +30,4 @@ Your **best chance** to get a new feature is to** implement it on your own**. If
 
 
 - - -
-[Prev](ReportBugs) (Reporting a bug) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Commit Code) [Next](DeveloperCommitCode)
+[Prev](ReportBugs) (Reporting a bug) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Coding Guideline) [Next](DeveloperCodingGuideline)
