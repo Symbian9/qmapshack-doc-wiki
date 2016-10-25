@@ -29,6 +29,13 @@ CTRL-Q | Close QMapShack.
 CTRL-S | Save all projects from the workspace.
 CTRL-T | Add new view tab.
 CTRL-SHIFT-T | Clone map view.
+__Map__ |
+up-key     | move the map focus north, moving the map south 
+down-key   | move the map focus south, moving the map north
+left-key   | move the map focus west, moving the map east
+right-key  | move the map focus east, moving the map west
++          | zoom into the map
+-          | zoom out of the map
 
 When in text edit fields the usual hotkeys can be used.
 
