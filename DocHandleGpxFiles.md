@@ -28,6 +28,11 @@ Each file will create a new top level item in the data view's workspace list.
 ![Alt text](images/DocHandleGpxFiles/maproom2.png)
 
 If you expand the item you can see the elements like waypoints, tracks, routes and so on. If you let the mouse hover over an element you get more information.
+Mind that checking the `Show on Map` checkbox to the left of the GIS
+item in the data view's workspace list does **not** move the map to
+where the objects of your GIS file are located on the globe!  To achieve
+this expand the GIS item and then double click on one of its tracks,
+routes, or waypoints.
 
 ![Alt text](images/DocHandleGpxFiles/maproom3.png)
 
