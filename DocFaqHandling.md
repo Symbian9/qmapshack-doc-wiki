@@ -52,6 +52,73 @@ When in text edit fields the usual hotkeys can be used.
 
 ![Route instructions bubble box](images/DocFaq/RouteInstructions.png)
 
+## What are the features of the different routing methods in QMapsShack?
+
+When creating a new track or a new route QMS offers 3 different offline routing methods.
+These methods work in the same way for track and for route creation. Therefore, only track creation will be considered.
+
+The following basic procedure is used to create a new track:
+
+* Open a view with some map.
+* Move the mouse pointer to the first trackpoint.
+* Right click and select the context menu entry `Add track`. The following image shows the initial layout of the map window:
+
+  ![Create track](images/DocFaq/RoutingBasics.jpg) 
+  
+  The toolbar icons labeled `O`, `A`, `V` have to be used in order to select the correct routing method.
+  The hotkeys `CTRL-O`, `CTRL-A` and `CTRL-V` can also be used in order to select the routing method.
+  
+  The first trackpoint is shown with a yellow border, the next trackpoint is shown with a green border. Select
+  the correct location of the green trackpoint with a left click of the mouse and proceed to the next trackpoint 
+  in the same way. A change of the routing method during the track creation procedure is allowed. The newly selected
+  method will be applied to all following new trackpoints.
+  
+* When done click right to stop the creation of new trackpoint and save the new track with the help of the `Save as new` 
+button
+* _Description of routing methods:_ 
+  * _Method 1:_ Off-road routing:
+    
+    Select this method by clicking on the toolbar icon `O` or by pressing `CTRL-O` (easier!).
+  
+    The selected trackpoints are connected by a straight line segment as shown in the previous image.
+
+  * _Method 2:_ Routing with a Routino database:
+    
+    Select this method by clicking on the toolbar icon `A` or by pressing `CTRL-A` (easier!).
+  
+    This method can be used only after a special preparation of an offline routing database as described in the section 
+    [Routes](DocGisItemsRte). The map is used only to locate the trackpoints properly. Thus, raster maps (e.g. 
+    Russian military maps)
+    as shown in the following image are appropriate.
+
+    ![Routino](images/DocFaq/Routino.jpg) 
+ 
+    The routing algorithm applies the parameters selected in the Route window (foot - bicycle - motorcar, ...). 
+    
+      * _Advantage of this method:_ Fast routing not depending on map data.
+      * _Disadvantage:_ From time to time unexpected tracks longer than necessary. There are many reasons for this 
+        behavior (e.g. incorrect map data used for creating the routing database, location
+        of mouse pointer not precise enough).
+    
+  * _Method 3:_ Routing with vector map data:
+
+    Select this method by clicking on the toolbar icon `V` or by pressing `CTRL-V` (easier!).
+  
+    This method can be used only with a vector map. A routing databse as described in method 2 is not required. 
+    As soon as 2 consecutive trackpoints can be connected by a
+    polyline (a sequence of straight line segments) contained in the map this polyline is used as part of 
+    the new track connecting the waypoints considered. If such a polyline is not found in the map then a straight line 
+    segment will be used to connect the trackpoints.
+    
+    The following image shows a first new track segment. Its endpoint is on a road of the map (a polyline of the map).
+    The yellow part of the road is the extent of this polyline. If the next trackpoint is selected on this yellow part
+    then the track follows this road up to this point.   
+    
+    ![Polyline](images/DocFaq/Polyline.jpg)
+    
+      * _Advantage of this method:_ Off-road and on-road routing can be mixed.
+      * _Disadvantage:_ Quite often very short map polylines. Thus, many intermediate trackpoints are required.
+
 ## How to find distance between waypoints
 
 (_inspired by and partially copied from_ [QMS issues list](https://bitbucket.org/maproom/qmapshack/issues/169/distance-between-waypoints-popup-window))
