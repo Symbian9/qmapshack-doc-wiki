@@ -86,8 +86,13 @@ These commands can be executed directly from a command line.
 **Source:** Newsgroup thread [sourceforge.net/p/qlandkartegt](https://sourceforge.net/p/qlandkartegt/mailman/message/34518807/)
 
 * Calibrated Russian military and other raster maps can be downloaded from various locations.
-One of the well known servers is [loadmap.net](http://loadmap.net). When downloading a map tile 2 files are created:
-a GIF file with the raster map and an `OZIExplorer` MAP file with calibration data.
+Some servers are 
+  * [loadmap.net](http://loadmap.net)
+  * [http://gpska.yapl.ru](http://gpska.yapl.ru)
+  * [http://satmaps.info/us/map-detector.php](http://satmaps.info/us/map-detector.php)
+  
+  When downloading a map tile 2 files are created:
+a GIF file (or other image file) with the raster map and an `OZIExplorer` MAP file with calibration data.
 
 * QMapShack supports the use of raster maps via VRT-files. These files can be created with the `GDALBuildVRT`tool
 and can also be accessed from within QMapShack.
@@ -99,12 +104,13 @@ georeference data can't be found within the MAP files.
     * Add this directory to the PATH environment variable
     * Ensure that the `data` subdirectory of the QMapShack installation directory is properly installed
     * Add this directory to the GDAL_DATA environment variable
+    * Move the image and the map file to a location where QMS is looking for maps or add the directory where 
+    these files are located to your QMapShack map paths.
     * Run 
     
     `gdalwarp -of VRT full_path_to_your_raster_map.map full_path_to_your_raster_map.vrt`
 
     * _Remark:_ It is unclear why `GDALBuildVRT` does not find the georeference information. 
-    * Add the directory where the new VRT-file is located to your QMapShack map paths.
     
 * _Hint for Ubuntu users:_ Raster maps may have borders. There is an Ubuntu tool to crop semi-automatically the map or a whole series of maps in such a way that the borders are not visible when loaded into QMapShack. Link to the tool: [github.com/h4tr3d/geocrop](https://github.com/h4tr3d/geocrop). Description of usage: 
     * [http://htrd.su/wiki](http://htrd.su/wiki/start?btng[post][tags]=qmapshack) (Russian). This link leads also to a short Russian description of the basic QMapShack features.

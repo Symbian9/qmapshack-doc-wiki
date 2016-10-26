@@ -59,7 +59,7 @@ When in text edit fields the usual hotkeys can be used.
 
 ![Route instructions bubble box](images/DocFaq/RouteInstructions.png)
 
-## What are the features of the different routing methods in QMapsShack?
+## What are the features of the different routing methods in QMapShack?
 
 When creating a new track or a new route QMS offers 3 different offline routing methods.
 These methods work in the same way for track and for route creation. Therefore, only track creation will be considered.
