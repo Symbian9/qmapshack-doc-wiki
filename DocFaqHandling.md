@@ -48,6 +48,50 @@ When in text edit fields the usual hotkeys can be used.
 * double-click in the elevation column,
 * set the new elevation in the pop-up window.
 
+## What is the reason for strange elevation profiles?
+
+Assume DEM (**D**igital **E**levation **M**odel) data is available in QMS for the area under consideration. Create
+a track in this area. Then QMS adds automatically elevation data to the track that can be checked in the track profile
+of the track edit window.
+It may happen that this profile displays strange elevation values as can be seen in the following image:
+
+![Strange track profile](images/DocFaq/DEM1.jpg)
+
+The trackpoints list of this track is as follows and shows strange values, too:
+
+![Strange trackpoints](images/DocFaq/DEM2.jpg)
+
+The area (map) in which the track is located doesn't show anything special:
+
+![DEM with gaps](images/DocFaq/DEM0.jpg)
+
+The reason for this is the source of the elevation data (in the example discussed a file `N51E011.hgt`). Elevation data
+is normally taken from satellite measurement (SRTM data) and this data may have gaps, i.e. small areas without valid elevation
+data. These gaps are marked in the HGT files as `NODATA` areas and it is up to the application that uses this
+data to choose an appropriate handling. In the case of QMS the huge negative value is used as an indicator for such
+a data gap.
+
+If there is an urgent need to avoid these strange values the user can proceed as follows:
+* (*tedious procedure*) Manually edit elevation data with data taken from a different source (e.g. raster map
+with elevation data).
+* (*unreliable procedure*) If the area is rather flat then gaps in HGT files can be filled with a default average elevation 
+value with the help of the `GDAL` package. On a command line 2 steps have to be executed:  
+
+  1. Convert the `NODATA` value of the source file to the wanted average value (in the example 50m, use full paths!)
+  
+         gdalwarp N51E011.hgt -of VRT N51E0111.hgt -dstnodata 50
+  1. Unset the `NODATA` flag in the HGT file so that 100 is considered as a regular value.  
+  
+         gdal_translate N51E0111.hgt -of VRT N51E01111.hgt -a_nodata none
+  1. Use the new HGT file (more precisely: its VRT file) in QMS
+
+  The result of this procedure is shown in the following images:
+
+  ![Corrected track profile](images/DocFaq/DEM3.jpg)
+
+  ![Corrected trackpoints](images/DocFaq/DEM4.jpg)
+  
+
 ## How to find route instructions?
 
 * Open some map which can display the route under consideration

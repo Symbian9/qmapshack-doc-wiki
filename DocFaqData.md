@@ -72,7 +72,7 @@ Other advantages of the use of databases are the possibility
 When creating a new reference to a data item QMS offers the choice either to create simply a reference or a 
 clone (a copy) of the data item.
 
-## Why does QMapsShack use a separate workspace.db to save data?
+## Why does QMapShack use a separate workspace.db to save data?
 
 **Source:** [Newsgroup discussion about QMS INI information](https://sourceforge.net/p/qlandkartegt/mailman/message/35276035)
 
