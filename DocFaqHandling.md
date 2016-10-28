@@ -72,18 +72,21 @@ data to choose an appropriate handling. In the case of QMS the huge negative val
 a data gap.
 
 If there is an urgent need to avoid these strange values the user can proceed as follows:
-* (*tedious procedure*) Manually edit elevation data with data taken from a different source (e.g. raster map
+
+* (_tedious procedure_) Manually edit elevation data with data taken from a different source (e.g. raster map
 with elevation data).
-* (*unreliable procedure*) If the area is rather flat then gaps in HGT files can be filled with a default average elevation 
+* (_unreliable procedure_) If the area is rather flat then gaps in HGT files can be filled with a default average elevation 
 value with the help of the `GDAL` package. On a command line 2 steps have to be executed:  
 
-  1. Convert the `NODATA` value of the source file to the wanted average value (in the example 50m, use full paths!)
-  
-         gdalwarp N51E011.hgt -of VRT N51E0111.hgt -dstnodata 50
-  1. Unset the `NODATA` flag in the HGT file so that 100 is considered as a regular value.  
-  
-         gdal_translate N51E0111.hgt -of VRT N51E01111.hgt -a_nodata none
-  1. Use the new HGT file (more precisely: its VRT file) in QMS
+    * Convert the `NODATA` value of the source file to the wanted average value (in the example 50m, use full paths!)
+
+             gdalwarp N51E011.hgt -of VRT N51E0111.hgt -dstnodata 50
+
+    * Unset the `NODATA` flag in the HGT file so that 100 is considered as a regular value.  
+
+             gdal_translate N51E0111.hgt -of VRT N51E01111.hgt -a_nodata none
+
+    * Use the new HGT file (more precisely: its VRT file) in QMS
 
   The result of this procedure is shown in the following images:
 
