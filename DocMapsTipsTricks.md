@@ -313,5 +313,9 @@ Script converts to OSGEO TMS (http://www.maptiler.org/google-maps-coordinates-ti
 
 [Quick way to prepare raster map for QMapShack](QuickWayToPrepareRasterMapForQMapShack)
 
+## Add a few more Onlinemaps like GoogleSatMap, Bing, Basemap.at to QMapShack
+
+[Onlinemaps](http://www.mtb-touring.net/qms/onlinekarten-einbinden) 
+
 - - -
 [Prev](DocControlMapDem) (Control maps and DEM files) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Working with Projects) [Next](DocWorkingWithProjects)
