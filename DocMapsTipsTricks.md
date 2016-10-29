@@ -317,13 +317,13 @@ Script converts to OSGEO TMS (http://www.maptiler.org/google-maps-coordinates-ti
 
 [WMS & WMTS Server Maps](http://www.mtb-touring.net/qms/onlinekarten-einbinden) 
 
-Sat: ArcGIS, Bing
-OSM Style: hikebikemap, humanitarian, landscape, openstreetmap, opencyclemap, opnvkarte, outdoors
-Topo: OSM Topo, World Topo, Alpenkarte
-Waymarkedtrails: Inlinescating, Mountainbiking, Cycling, Riding, Hiking, Slopemap
-Google: Google Hybrid Maps, Google Maps, Google Sat Map, Google Terrain Map
-Geoland.at: Basemap, Basemap Overlay, Basemap Grau, Basemap High DPI & Basemap Orthofoto
-Strava: Running & Cycling Heatmap
+* Sat: ArcGIS, Bing
+* OSM Style: hikebikemap, humanitarian, landscape, openstreetmap, opencyclemap, opnvkarte, outdoors
+* Topo: OSM Topo, World Topo, Alpenkarte
+* Waymarkedtrails: Inlinescating, Mountainbiking, Cycling, Riding, Hiking, Slopemap
+* Google: Google Hybrid Maps, Google Maps, Google Sat Map, Google Terrain Map
+* Geoland.at: Basemap, Basemap Overlay, Basemap Grau, Basemap High DPI & Basemap Orthofoto
+* Strava: Running & Cycling Heatmap
 
 - - -
 [Prev](DocControlMapDem) (Control maps and DEM files) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Working with Projects) [Next](DocWorkingWithProjects)
