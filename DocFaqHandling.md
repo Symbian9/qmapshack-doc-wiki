@@ -68,7 +68,7 @@ The area (map) in which the track is located doesn't show anything special:
 The reason for this is the source of the elevation data (in the example discussed a file `N51E011.hgt`). Elevation data
 is normally taken from satellite measurement (SRTM data) and this data may have gaps, i.e. small areas without valid elevation
 data. These gaps are marked in the HGT files as `NODATA` areas and it is up to the application that uses this
-data to choose an appropriate handling. In the case of QMS the huge negative value is used as an indicator for such
+data to choose an appropriate handling. In the case of QMS the huge negative value can be seen as an indicator for such
 a data gap.
 
 If there is an urgent need to avoid these strange values the user can proceed as follows:
@@ -82,7 +82,7 @@ value with the help of the `GDAL` package. On a command line 2 steps have to be 
 
              gdalwarp N51E011.hgt -of VRT N51E0111.hgt -dstnodata 50
 
-    * Unset the `NODATA` flag in the HGT file so that 100 is considered as a regular value.  
+    * Unset the `NODATA` flag in the HGT file so that 50 is considered as a regular value.  
 
              gdal_translate N51E0111.hgt -of VRT N51E01111.hgt -a_nodata none
 
