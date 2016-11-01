@@ -245,11 +245,13 @@ To display this information proceed as follows:
 * The project roadbook opens as additional tab in the upper right part of the user interface.  
 * Select the `Sort along track (multiple)` entry from the combobox in the upper right part of the roadbook.
 * Now for each attached waypoint its distance
-  * from the start of the track,
-  * to the next attached waypoint, and
-  * to the end of the track
+    * from the start of the track,
+    * to the next attached waypoint, and
+    * to the end of the track
   
-  is shown. _Hint:_ It may happen that a waypoint is displayed several times in the list (in the example __WPT3__). This 
+    is shown. 
+
+_Hint:_ It may happen that a waypoint is displayed several times in the list (in the example __WPT3__). This 
 happens if the track intersects itself and if an attached waypoint is located at an intersection.   
   
 ![Roadbook with attached waypoints](images/DocFaq/Roadbook.jpg)
