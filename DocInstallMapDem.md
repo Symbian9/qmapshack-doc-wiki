@@ -51,6 +51,7 @@ If you want to know more about the details of creating a \*.vrt file jump [here]
 * Still the best place to look for DEM data is [VIEWFINDER PANORAMAS](http://www.viewfinderpanoramas.org/). 
 * For Europe the EEA offers [DEM files with quite good resolution](http://www.eea.europa.eu/data-and-maps/data/eu-dem). 
 * For Austria you can download quite high detailed data [here](https://www.data.gv.at/katalog/dataset/d88a1246-9684-480b-a480-ff63286b35b7).
+* For Bavaria, the survey authorities offer DEM data as part of their [OpenData program](http://www.ldbv.bayern.de/produkte/weitere/opendata.html). Scroll down until "DGM50 und DGM200".
 
 - - -
 [Prev](DocCmdOptions) (Command line parameters) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Basics about maps and DEM files) [Next](DocBasicsMapDem)
