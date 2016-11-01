@@ -48,18 +48,27 @@ When in text edit fields the usual hotkeys can be used.
 * double-click in the elevation column,
 * set the new elevation in the pop-up window.
 
-## What is the reason for strange elevation profiles?
+## Why does a track have invalid elevation data?
+
+_Remark: This explanation refers to QMapShack patch version f64949c (30.10.2016) and later ones!_
 
 Assume DEM (**D**igital **E**levation **M**odel) data is available in QMS for the area under consideration. Create
-a track in this area. Then QMS adds automatically elevation data to the track that can be checked in the track profile
-of the track edit window.
-It may happen that this profile displays strange elevation values as can be seen in the following image:
+a track in this area. Then QMS adds automatically elevation data to the track that can be checked in the track profile and
+in the trackpoint list of the track edit window.
 
-![Strange track profile](images/DocFaq/DEM1.jpg)
+It may happen that the trackpoint list shows a warning of the form __"Invalid elevations!"__ and some trackpoints do not have
+an elevation assigned to them as can be seen in the following image:
 
-The trackpoints list of this track is as follows and shows strange values, too:
+![Invalid elevation](images/DocFaq/DEM10.jpg)
 
-![Strange trackpoints](images/DocFaq/DEM2.jpg)
+A similar situation can be noticed in the status line. If the mouse pointer is at a location in the map then normally the
+status line shows the coordinates of the location and its elevation:
+
+![Status line with elevation](images/DocFaq/DEM11.jpg)
+
+In some cases the elevation can be missing in the status line:
+
+![Status line without elevation](images/DocFaq/DEM12.jpg)
 
 The area (map) in which the track is located doesn't show anything special:
 
@@ -67,22 +76,21 @@ The area (map) in which the track is located doesn't show anything special:
 
 The reason for this is the source of the elevation data (in the example discussed a file `N51E011.hgt`). Elevation data
 is normally taken from satellite measurement (SRTM data) and this data may have gaps, i.e. small areas without valid elevation
-data. These gaps are marked in the HGT files as `NODATA` areas and it is up to the application that uses this
-data to choose an appropriate handling. In the case of QMS the huge negative value can be seen as an indicator for such
-a data gap.
+data. These gaps are marked in the HGT files as `NODATA` areas. If a trackpoint is located in such an area then QMS can't
+assign an elevation to this trackpoint.
 
-If there is an urgent need to avoid these strange values the user can proceed as follows:
+If there is an urgent need to avoid these missing elevation values the user can proceed as follows:
 
 * (_tedious procedure_) Manually edit elevation data with data taken from a different source (e.g. raster map
 with elevation data).
-* (_unreliable procedure_) If the area is rather flat then gaps in HGT files can be filled with a default average elevation 
+* (_unreliable procedure_) If the area is rather flat then gaps in HGT files can be filled in with a default average elevation 
 value with the help of the `GDAL` package. On a command line 2 steps have to be executed:  
 
     * Convert the `NODATA` value of the source file to the wanted average value (in the example 50m, use full paths!)
 
              gdalwarp N51E011.hgt -of VRT N51E0111.hgt -dstnodata 50
 
-    * Unset the `NODATA` flag in the HGT file so that 50 is considered as a regular value.  
+    * Unset the `NODATA` flag in the HGT file so that 100 is considered as a regular value.  
 
              gdal_translate N51E0111.hgt -of VRT N51E01111.hgt -a_nodata none
 
@@ -90,11 +98,8 @@ value with the help of the `GDAL` package. On a command line 2 steps have to be 
 
   The result of this procedure is shown in the following images:
 
-  ![Corrected track profile](images/DocFaq/DEM3.jpg)
-
-  ![Corrected trackpoints](images/DocFaq/DEM4.jpg)
+  ![Corrected trackpoints](images/DocFaq/DEM13.jpg)
   
-
 ## How to find route instructions?
 
 * Open some map which can display the route under consideration
@@ -244,7 +249,8 @@ To display this information proceed as follows:
   * to the next attached waypoint, and
   * to the end of the track
   
-is shown.  
+  is shown. _Hint:_ It may happen that a waypoint is displayed several times in the list (in the example __WPT3__). This 
+happens if the track intersects itself and if an attached waypoint is located at an intersection.   
   
 ![Roadbook with attached waypoints](images/DocFaq/Roadbook.jpg)
  
