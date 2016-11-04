@@ -319,7 +319,7 @@ Script converts to OSGEO TMS (http://www.maptiler.org/google-maps-coordinates-ti
 
 * Sat: ArcGIS, Bing
 * OSM Style: hikebikemap, humanitarian, landscape, openstreetmap, opencyclemap, opnvkarte, outdoors
-* Topo: OSM Topo, World Topo, Alpenkarte, 4UMaps.eu
+* Topo: OSM Topo, World Topo, Alpenkarte, 4UMaps.eu, MTBMap.cz
 * Waymarkedtrails: Inlinescating, Mountainbiking, Cycling, Riding, Hiking, Slopemap
 * Overlay: Hillshading
 * Google: Google Hybrid Maps, Google Maps, Google Sat Map, Google Terrain Map
