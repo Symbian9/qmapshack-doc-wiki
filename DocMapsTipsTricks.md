@@ -319,8 +319,9 @@ Script converts to OSGEO TMS (http://www.maptiler.org/google-maps-coordinates-ti
 
 * Sat: ArcGIS, Bing
 * OSM Style: hikebikemap, humanitarian, landscape, openstreetmap, opencyclemap, opnvkarte, outdoors
-* Topo: OSM Topo, World Topo, Alpenkarte
+* Topo: OSM Topo, World Topo, Alpenkarte, 4UMaps.eu
 * Waymarkedtrails: Inlinescating, Mountainbiking, Cycling, Riding, Hiking, Slopemap
+* Overlay: Hillshading
 * Google: Google Hybrid Maps, Google Maps, Google Sat Map, Google Terrain Map
 * Geoland.at: Basemap, Basemap Overlay, Basemap Grau, Basemap High DPI & Basemap Orthofoto
 * Strava: Running & Cycling Heatmap
