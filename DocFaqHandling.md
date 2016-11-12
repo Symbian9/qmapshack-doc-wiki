@@ -42,20 +42,24 @@ When in text edit fields the usual hotkeys can be used.
 ## How to avoid or remove invalid data in a track?
 
 QMS is a software for
+
 * _managing and displaying of recorded waypoints and tracks_ (GPS data). A recorded track consists of a sequence of recorded
 trackpoints. The trackpoint data consists of location, elevation, timestamp and some other data. With the
-exception of rare failures caused by the recording GPS device this data is consistent (valid). 
+exception of rare failures caused by the recording GPS device this data is consistent (valid).
+ 
 * _creating new waypoints and tracks_. The creation of a track requires a map so that track points can be properly located.
 If elevation data should be added to the track then this data (DEM data) should be available in QMS. Finally,
 if routing should be used for track creation then routing data should be available in QMS.
 
 QMS offers quite a few easy ways to create and edit tracks. Among others 
+
 * copy, cut and paste and
 * adding and deleting 
 
 of trackpoints are supported.
 
 In a track created with the methods mentioned in the last paragraph 
+
 * can be trackpoints with or without timestamps,
 * can different track segments have trackpoints with inconsistent (invalid) timestamps,
 * can elevation data be available or not or can be even invalid (see discussion in the following 2 sections of this page).
@@ -116,10 +120,13 @@ above mentioned gaps have been removed using various techniques. For Germany the
 * Use the QMS __Reduce visible track points__ filter to __hide invalid track points__. Check if 
 the resulting changes of the track can be accepted. If so, use this filter again to finally __remove 
 invalid points__.
+
 * Use the QMS __Change elevation of track points__ filter to __interpolate elevation data__. Check in the __preview__ 
 if the resulting interpolated (smoothed) track profile can be accepted. If so, apply the filter.
+
 * (_tedious procedure_) Manually edit elevation data with data taken from a different source (e.g. raster map
 with elevation data).
+
 * (_unreliable procedure_) If the area is rather flat then gaps in HGT files can be filled in with a default average elevation 
 value with the help of the `GDAL` package. On a command line 2 steps have to be executed:  
 
