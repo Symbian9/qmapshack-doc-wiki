@@ -51,7 +51,7 @@ large changes to the GUI. However smaller changes will be ignored.
     * [Databases and projects](DocFaqData)
     * [Data handling](DocFaqHandling)
     * [Routing](DocFaqRouting)
-    * [Maps and routing](DocFaqMaps)
+    * [Maps](DocFaqMaps)
 * [Troubleshooting QMapShack](TroubleShooting)
 * [Reporting a bug](ReportBugs)
 * [Requesting a feature](RequestFeatures)
