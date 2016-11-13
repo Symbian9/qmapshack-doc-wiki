@@ -50,6 +50,7 @@ large changes to the GUI. However smaller changes will be ignored.
     * [Configuring and running QMapShack](DocFaqConfig)
     * [Databases and projects](DocFaqData)
     * [Data handling](DocFaqHandling)
+    * [Routing](DocFaqRouting)
     * [Maps and routing](DocFaqMaps)
 * [Troubleshooting QMapShack](TroubleShooting)
 * [Reporting a bug](ReportBugs)

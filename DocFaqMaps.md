@@ -1,9 +1,9 @@
-[Prev](DocFaqHandling) (Data handling) | [Home](Home) | [Manual](DocMain) | (Troubleshooting QMapShack) [Next](TroubleShooting)
+[Prev](DocFaqRouting) (Routing) | [Home](Home) | [Manual](DocMain) | (Troubleshooting QMapShack) [Next](TroubleShooting)
 - - -
 [TOC]
 - - -
 
-# Frequently Asked Questions - Maps and routing
+# Frequently Asked Questions - Maps
 
 ## Why are waypoints shown with a blue dot icon?
 
@@ -38,48 +38,6 @@ Users reported about the following ways to improve the visibility of small roads
 * Append to the given configuration string one of the following strings:
   * `+lat_ts=60` This sets the *latitude of true scale* for a Mercator projection. The closer you get to the polar regions the more the map will be skewed horizontally in comparison to the vertical scale. At the *latitude of true scale* (usually 0 for the equator) the scales are equal.
   * `+k_0=0.3` (**Source:** [gmane.comp.gis.qlandkartegt](http://permalink.gmane.org/gmane.comp.gis.qlandkartegt.user/2688))  This is an additional scale factor on the normal scale. A value of 1.0 will have no effect. Try to increase or decrease the given value to get the wanted result
-
-## Is there a possibility to choose the preferred road class when routing?
-
-**Source:** 
- * [www.naviboard.de](http://www.naviboard.de/vb/showthread.php?t=59418)
- * [gmane.comp.gis.qlandkartegt.user](http://permalink.gmane.org/gmane.comp.gis.qlandkartegt.user/2626)
-
-Routing in QMapShack depends on the [Routino](http://routino.org) package and this package does not offer an option to select a preferred road type.
-
-Routing profiles are saved in an XML-file (/usr/share/routino/profiles.xml). Here the preferences/weights of 
-different road types can be modified by the user.
-
-On Routino's homepage there is an online version where fine
-tuning of all parameters can be tried. Once done there one can take over the values into the local `profiles.xml` file.
-
-## What is the maximum Routino databases file size that can be handled by the QMapShack Windows version?
-
-Due to limitations in the Windows POSIX API Routino can't handle files larger than 4GB.
-
-## Does QMapShack/Routino support cross-border routing?
-
-**Source:** Inspired by [newsgroup thread](https://sourceforge.net/p/qlandkartegt/mailman/qlandkartegt-users/thread/1450466213.2419.8.camel%40knibb.myzen.co.uk/#msg34706080)
-
-Offline routing in QMapShack needs special routing databases. The easiest way to create these databases is with QMS itself
-as described in the [Routes](DocGisItemsRte) section of the QMS Wiki. The required `*.pbf` input files can be downloaded per country/region.
-If cross-country routing is wanted then the user should select the `*.pbf`files for all countries needed as described in the Wiki page
-and then create one routing database for these countries. The resulting database supports cross-country routing. In the example shown
-on the mentioned Wiki page cross-border routing all over Belgium and Luxemburg will be possible. 
-
-If a single routing database is created for each country then these databases don't support cross-border routing.
-
-When creating the routing database QMS executes the following Routino commands:
-
-    path_to\planetsplitter.exe --dir=\temp --prefix=MyRegions --tagging=path_to\tagging.xml --parse-only path_to\file1.osm.pbf 
-    path_to\planetsplitter.exe --dir=\temp --prefix=MyRegions --tagging=path_to\tagging.xml --parse-only --append path_to\file2.osm.pbf 
-    ...
-    path_to\planetsplitter.exe --dir=\temp --prefix=MyRegions --tagging=path_to\tagging.xml --process-only    
-
-When using the standard QMS Windows installation then `planetsplitter.exe` is found in the same directory as `qmapshack.exe`,
-`tagging.xml`is found in the `routino-xml` subdirectory of the `qmapshack.exe`directory.
-    
-These commands can be executed directly from a command line.
     
 ## How to use Russian military and similar raster maps with QMapShack?
 
@@ -195,4 +153,4 @@ Raster maps and DEM (**D**igital **E**levation **M**odel) data are supported in 
 Several VRT files can be used. It is up to the user to organize the files in a proper way.
  
 - - -
-[Prev](DocFaqHandling) (Data handling) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Troubleshooting QMapShack) [Next](TroubleShooting)
+[Prev](DocFaqRouting) (Routing) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Troubleshooting QMapShack) [Next](TroubleShooting)
