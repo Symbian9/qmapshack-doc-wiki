@@ -68,7 +68,7 @@ If there are invalid timestamps or elevation data in a newly created or edited t
 
 The user should use the __Change timestamps of track points__ filter to remove invalid timestamps.
 
-Different approaches for avoiding or removing invalid elevations are described in the following 2 sections of this page.
+Different approaches for avoiding or removing invalid elevations are described in the following 2 sections of this page.[Link](#what-to-do-if-a-track-has-invalid-elevation-data)
 
 ## How to edit the elevation of a track point manually?
 
