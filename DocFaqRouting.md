@@ -16,6 +16,41 @@
 
 ![Route instructions bubble box](images/DocFaq/RouteInstructions.png)
 
+
+## Why are only a few waypoints saved in a GPX file containing a route?
+
+**Source:** Inspired by [newsgroup thread](https://www.tapatalk.com/topic/59991-16347) 
+
+A typical procedure for creating a route is as follows:
+
+* Select a routing strategy (car - bike - foot, shortest - quickest, language, ...) to be used in the routing algorithm.
+* Select a series of waypoints through which the route should go.
+* Start the routing algorithm to get the required route (this may automatically happen when selecting the waypoints).
+
+When following a route the user expects at all junctions (and only there) informations about the necessary 
+turn in the selected language 
+(next direction, road number, distance to next junction, ...). No additional information is needed and therefore 
+no additional information is shown between 2 junctions.
+
+In the following picture the selected waypoints are shown as red dots on the route. Blue dots on the route show 
+junctions with routing information.
+
+![Routing](images/DocFaq/RouteExample.png)
+
+Having the ordered sequence of route waypoints and the map data (more precisely the routing data of a map) the route
+can easily be recalculated by the routing algorithm. This is the reason why when saving a route in form of a GPX file
+only the route waypoints are saved. In addition to this the GPX data format does not support the type of information
+mentioned above for junctions.
+
+When loading a route from a GPX file into QMS (or into another tool) the route has to be recalculated. 
+An implication of this is that a transfer of a route
+in form of a GPX file from one soft- or hardware tool to another one can lead to a different route due to a different 
+routing algorithm or different map (routing) data.
+
+QMS can transform a route into a track. This track shows exactly the path to follow but doesn't include the above mentioned
+routing information for junctions.
+
+
 ## What are the features of the different routing methods in QMapShack?
 
 When creating a new track or a new route QMS offers 3 different offline routing methods.
