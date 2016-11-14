@@ -37,7 +37,7 @@ Users reported about the following ways to improve the visibility of small roads
 * Choose the menu item `View - Setup Map View - Projections&Datum`
 * Append to the given configuration string one of the following strings:
   * `+lat_ts=60` This sets the *latitude of true scale* for a Mercator projection. The closer you get to the polar regions the more the map will be skewed horizontally in comparison to the vertical scale. At the *latitude of true scale* (usually 0 for the equator) the scales are equal.
-  * `+k_0=0.3` (**Source:** [gmane.comp.gis.qlandkartegt](http://permalink.gmane.org/gmane.comp.gis.qlandkartegt.user/2688))  This is an additional scale factor on the normal scale. A value of 1.0 will have no effect. Try to increase or decrease the given value to get the wanted result
+  * `+k_0=0.3` (**Source:** [gmane.comp.gis.qlandkartegt](http://article.gmane.org/gmane.comp.gis.qlandkartegt.user/2688))  This is an additional scale factor on the normal scale. A value of 1.0 will have no effect. Try to increase or decrease the given value to get the wanted result
     
 ## How to use Russian military and similar raster maps with QMapShack?
 
@@ -79,7 +79,7 @@ georeference data can't be found within the MAP files.
 
 ## Why is a raster map not displayed?   
   
-**Source:** [http://permalink.gmane.org/gmane.comp.gis.qlandkartegt.user/2624](http://permalink.gmane.org/gmane.comp.gis.qlandkartegt.user/2624)
+**Source:** [http://article.gmane.org/gmane.comp.gis.qlandkartegt.user/2624](http://article.gmane.org/gmane.comp.gis.qlandkartegt.user/2624)
 
 Consider the following hints:
 * Use `gdalinfo` to verify if the required vrt file provides proper information. Keep in mind that the VRT file 

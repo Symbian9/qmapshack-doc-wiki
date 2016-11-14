@@ -7,7 +7,7 @@
 
 ## How are QMS data items organized?
 
-(inspired by and partially copied from [QMS newsgroup](http://permalink.gmane.org/gmane.comp.gis.qlandkartegt.user/2744))
+(inspired by and partially copied from [QMS newsgroup](http://article.gmane.org/gmane.comp.gis.qlandkartegt.user/2744))
 
 In the following **data item** means **waypoint**, **track**, **route**, or **area**.
 

@@ -88,7 +88,7 @@ button
 
 **Source:** 
  * [www.naviboard.de](http://www.naviboard.de/vb/showthread.php?t=59418)
- * [gmane.comp.gis.qlandkartegt.user](http://permalink.gmane.org/gmane.comp.gis.qlandkartegt.user/2626)
+ * [gmane.comp.gis.qlandkartegt.user](http://article.gmane.org/gmane.comp.gis.qlandkartegt.user/2626)
 
 Routing in QMapShack depends on the [Routino](http://routino.org) package and this package does not offer an option to select a preferred road type.
 
