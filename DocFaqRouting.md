@@ -16,6 +16,45 @@
 
 ![Route instructions bubble box](images/DocFaq/RouteInstructions.png)
 
+
+## Why are only a few waypoints saved in a GPX file containing a route?
+
+**Source:** Inspired by [newsgroup thread](https://www.tapatalk.com/topic/59991-16347) 
+
+A typical procedure for creating a route is as follows:
+
+* Select a routing strategy (car - bike - foot, shortest - quickest, language, ...) to be used in the routing algorithm.
+* Select a series of waypoints through which the route should go.
+* Start the routing algorithm to get the required route (this may automatically happens when selecting the waypoints).
+
+When following a route the user expects at all junctions (and only there) information about the necessary 
+turn in the selected language 
+(next direction, road number, distance to next junction, ...). No additional information is needed and therefore 
+no additional information is shown between 2 junctions.
+
+In the following picture the selected waypoints are shown as red dots on the route. Blue dots on the route show 
+junctions with routing information.
+
+![Routing](images/DocFaq/RouteExample.png)
+
+Having the ordered sequence of route waypoints and the map data (more precisely the routing data of a map) the route
+can easily be recalculated by the routing algorithm. This is the reason why when saving a route in form of a portable GPX file
+only the route waypoints are saved. In addition to this the GPX data format does not support the type of information
+mentioned above for junctions.
+
+When loading a route from a GPX file into QMS (or into another tool - the file format is portable!) the route has to be recalculated. 
+An implication of this is that a transfer of a route
+in form of a GPX file from one soft- or hardware tool to another one can lead to a different route due to a different 
+routing algorithm or different map (routing) data.
+
+QMS can transform a route into a track. This track shows exactly the path to follow but doesn't include the above mentioned
+routing information for junctions. This track can be stored together with the route (more precisely the route waypoints)
+in a GPX file. In this file the route and the track are 2 independent objects!
+
+_Remark:_ There are some software applications saving a route together with this track in a proprietary 
+non-portable format which links route and track data. 
+
+
 ## What are the features of the different routing methods in QMapShack?
 
 When creating a new track or a new route QMS offers 3 different offline routing methods.
@@ -29,7 +68,7 @@ The following basic procedure is used to create a new track:
 
   ![Create track](images/DocFaq/RoutingBasics.jpg) 
   
-  The toolbar icons labeled `O`, `A`, `V` have to be used in order to select the correct routing method.
+  The toolbar icons labelled `O`, `A`, `V` have to be used in order to select the correct routing method.
   The hotkeys `CTRL-O`, `CTRL-A` and `CTRL-V` can also be used in order to select the routing method.
   
   The first trackpoint is shown with a yellow border, the next trackpoint is shown with a green border. Select
@@ -61,14 +100,14 @@ button
     
       * _Advantage of this method:_ Fast routing not depending on map data.
       * _Disadvantage:_ From time to time unexpected tracks longer than necessary. There are many reasons for this 
-        behavior (e.g. incorrect map data used for creating the routing database, location
+        behaviour (e.g. incorrect map data used for creating the routing database, location
         of mouse pointer not precise enough).
     
   * _Method 3:_ Routing with vector map data:
 
     Select this method by clicking on the toolbar icon `V` or by pressing `CTRL-V` (easier!).
   
-    This method can be used only with a vector map. A routing databse as described in method 2 is not required. 
+    This method can be used only with a vector map. A routing database as described in method 2 is not required. 
     As soon as 2 consecutive trackpoints can be connected by a
     polyline (a sequence of straight line segments) contained in the map this polyline is used as part of 
     the new track connecting the waypoints considered. If such a polyline is not found in the map then a straight line 
@@ -83,12 +122,27 @@ button
       * _Advantage of this method:_ Off-road and on-road routing can be mixed.
       * _Disadvantage:_ Quite often very short map polylines. Thus, many intermediate trackpoints are required.
 
+## Why do route instructions use different languages?
 
+The following image shows a route instruction in which 3 languages are used:
+
+![Route language](images/DocFaq/RouteLanguage.png)
+      
+The reason for this is as follows:
+
+* The first line with English time and distance information shows data provided by the used English QMS version. This is 
+the language of the operating system if QMS language files are available for this language or the default language 
+in all other cases.
+* The second line with Russian routing instructions shows data provided by the Routino routing algorithm used in QMS. 
+The language for the routing algorithm was set by the user to Russian within QMS.
+* The third line shows a German road name. This is data coming from the German map used by the Routino routing algorithm.
+      
+      
 ## Is there a possibility to choose the preferred road class when routing?
 
 **Source:** 
  * [www.naviboard.de](http://www.naviboard.de/vb/showthread.php?t=59418)
- * [gmane.comp.gis.qlandkartegt.user](http://permalink.gmane.org/gmane.comp.gis.qlandkartegt.user/2626)
+ * [gmane.comp.gis.qlandkartegt.user](http://article.gmane.org/gmane.comp.gis.qlandkartegt.user/2626)
 
 Routing in QMapShack depends on the [Routino](http://routino.org) package and this package does not offer an option to select a preferred road type.
 
@@ -108,9 +162,9 @@ Due to limitations in the Windows POSIX API Routino can't handle files larger th
 
 Offline routing in QMapShack needs special routing databases. The easiest way to create these databases is with QMS itself
 as described in the [Routes](DocGisItemsRte) section of the QMS Wiki. The required `*.pbf` input files can be downloaded per country/region.
-If cross-country routing is wanted then the user should select the `*.pbf`files for all countries needed as described in the Wiki page
+If cross-country routing is wanted then the user should select the `*.pbf` files for all countries needed as described in the Wiki page
 and then create one routing database for these countries. The resulting database supports cross-country routing. In the example shown
-on the mentioned Wiki page cross-border routing all over Belgium and Luxemburg will be possible. 
+on the mentioned Wiki page cross-border routing all over Belgium and Luxembourg will be possible. 
 
 If a single routing database is created for each country then these databases don't support cross-border routing.
 
@@ -122,7 +176,7 @@ When creating the routing database QMS executes the following Routino commands:
     path_to\planetsplitter.exe --dir=\temp --prefix=MyRegions --tagging=path_to\tagging.xml --process-only    
 
 When using the standard QMS Windows installation then `planetsplitter.exe` is found in the same directory as `qmapshack.exe`,
-`tagging.xml`is found in the `routino-xml` subdirectory of the `qmapshack.exe`directory.
+`tagging.xml`is found in the `routino-xml` subdirectory of the `qmapshack.exe` directory.
     
 These commands can be executed directly from a command line.
     
