@@ -20,8 +20,9 @@ Bitbucket, the following conditions must be met:
 *   If you want to do more than just correcting a typo (which can also be
     done directly on the
     [Bitbucket server](https://bitbucket.org/maproom/qmapshack/wiki), see
-    [below](#online-editing)), you should be working on a local clone of
-    the _Mercurial_ repository of the _QMapShack_ wiki at Bitbucket.
+    [below](#markdown-header-online-editing)), you should be working on a
+    local clone of the _Mercurial_ repository of the _QMapShack_ wiki at
+    Bitbucket.
 
     If you have [_Mercurial_](https://www.mercurial-scm.org/) installed,
     you can clone the _QMapShack_ wiki by issuing the command
@@ -49,8 +50,8 @@ Bitbucket, the following conditions must be met:
     *   [Documentation](https://pythonhosted.org/Markdown/extensions/index.html)
         of the _Markdown_ syntax understood by every _Markdown_ extension
         used by Bitbucket[^1] (see
-        [_Python_ requirements](OfflineDocumentation#prerequisites)) as
-        well as the HTML code produced from it.
+        [_Python_ requirements](OfflineDocumentation#markdown-header-prerequisites))
+        as well as the HTML code produced from it.
 
     *   Finally, you can look into any of the `*.md` files in this
         repository and at the same time point your browser to the
@@ -139,9 +140,10 @@ Bitbucket, the following conditions must be met:
     file.
 
 *   You can edit an existing or create a new `*.md` file either
-    [online](#online-editing) or [offline](#offline-editing), the latter
-    being the preferred method.  **Online editing is discouraged and
-    should only be used for minor changes like correcting a typo!**
+    [online](#markdown-header-online-editing) or
+    [offline](#markdown-header-offline-editing), the latter being the
+    preferred method.  **Online editing is discouraged and should only
+    be used for minor changes like correcting a typo!**
 
     One reason for discouraging online editing is that it causes the
     Bitbucket server to use a stereotype "`Edited online`" commit
@@ -221,9 +223,9 @@ Bitbucket, the following conditions must be met:
 *   Additional Prerequisites:
 
     *   You have the software tools described
-        [here](OfflineDocumentation#prerequisites) to manually
-        convert your `*.md` file to HTML so you can locally inspect it
-        using your browser.
+        [here](OfflineDocumentation#markdown-header-prerequisites) to
+        manually convert your `*.md` file to HTML so you can locally
+        inspect it using your browser.
 
     *   You have _GNU_ `gawk` to run `make nav` and `make check` against
         the repository.  The scripts `DocFix.sh`, `NavBar.sh`, and

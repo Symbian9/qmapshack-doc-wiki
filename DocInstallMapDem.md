@@ -38,7 +38,7 @@ Usually this kind of data is very large. And because it is large, it is split in
 
 When done you can reload the map or DEM list by a right click on the list. Choose ***Reload Maps*** or ***Reload DEM***. The new map should be listed. Don't forget: You have to activate a map if you want to see it (right click on the map entry in the list!).
 
-If you want to know more about the details of creating a \*.vrt file jump [here](DocBasicsMapDem#gdal-vrt-maps)
+If you want to know more about the details of creating a \*.vrt file jump [here](DocBasicsMapDem#markdown-header-gdal-vrt-maps)
 
 ---
 # Sources of Maps and DEM files

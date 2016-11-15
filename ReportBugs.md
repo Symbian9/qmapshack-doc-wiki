@@ -17,7 +17,7 @@ Make sure to include the all the information listed below to ease both your and 
  3. A **detailed report** about what is broken
  4. A **list of steps** required **for reproduction**
  5. Further information (depending on issue; these are examples):
-    1. *application crash*: [A backtrace (if you are on Linux)](TroubleShooting#create-a-backtrace-of-a-crash-on-linux)
+    1. *application crash*: [A backtrace (if you are on Linux)](TroubleShooting#markdown-header-create-a-backtrace-of-a-crash-on-linux)
     2. *incorrect displaying*: A screenshot
     3. *failed loading of a file*: The file you tried to load[^1]
     4. *"strange" behaviour*: Describe the behavior you expected

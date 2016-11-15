@@ -38,7 +38,7 @@ sudo make install
 ```
 source /opt/qt54/bin/qt54-env.sh
 ```
-[go on with the build instructions](DocGetQMapShack#linux)
+[go on with the build instructions](DocGetQMapShack#markdown-header-linux)
 
 
 # Running the software:
