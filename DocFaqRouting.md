@@ -122,7 +122,22 @@ button
       * _Advantage of this method:_ Off-road and on-road routing can be mixed.
       * _Disadvantage:_ Quite often very short map polylines. Thus, many intermediate trackpoints are required.
 
+## Why do route instructions use different languages?
 
+The following image shows a route instruction in which 3 languages are used:
+
+![Route language](images/DocFaq/RouteLanguage.png)
+      
+The reason for this is as follows:
+
+* The first line with English time and distance information shows data provided by the used English QMS version. This is 
+the language of the operating system if QMS language files are available for this language or the default language 
+in all other cases.
+* The second line with Russian routing instructions shows data provided by the Routino routing algorithm used in QMS. 
+The language for the routing algorithm was set by the user to Russian within QMS.
+* The third line shows a German road name. This is data coming from the German map used by the Routino routing algorithm.
+      
+      
 ## Is there a possibility to choose the preferred road class when routing?
 
 **Source:** 
