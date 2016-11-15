@@ -85,8 +85,9 @@ gawk '#
       match($0,"^ *#+ *(.*)$",m) {
          l = tolower(m[1])
          sub("^![[][^]]*[]][(][^)]+[)] *","",l)     # Ignore image link.
-         sub(" *#*$","",l)                       # Drop trailing marker.
-         gsub("[^a-zA-Z0-9]+","-",l)
+         sub(" *#* *$","",l)                     # Drop trailing marker.
+         gsub("[^a-zA-Z0-9_ \t-]+","" ,l)  # Drop chars illegal in URLs.
+         gsub(           "[ \t-]+","-",l)   # Squeeze blanks and dashes.
          link_def[filename "#markdown-header-" l] = 1
                                  }
 
