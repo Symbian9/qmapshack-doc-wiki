@@ -80,10 +80,10 @@ Bitbucket, the following conditions must be met:
 
 *   **Fragment identifiers:** This term refers to the optional last part
     of a URL which is separated from the rest using a _hash sign_ ("`#`"),
-    as in "http://x.y.z.com#chapter_1".  When you click such a URL, the
-    part to the left of the hash sign ("http://x.y.z.com") specifies the
+    as in "`http://x.y.z.com#chapter_1`".  When you click such a URL, the
+    part to the left of the hash sign ("`http://x.y.z.com`") specifies the
     HTML file to be opened, while the fragment identifier to the right
-    of the hash sign ("chapter_1") specifies a label defined somewhere
+    of the hash sign ("`chapter_1`") specifies a label defined somewhere
     in the HTML code itself to which your browser is pointed.
 
     Using _Markdown_ you cannot directly define your own fragment
@@ -147,7 +147,7 @@ Bitbucket, the following conditions must be met:
     top of the file but not to the fragment identifier when you click
     them in the online documentation (alternativly you can also run
     `./Make.sh -n` or `make nav` which will fix your broken fragment
-    identifiers in your "*.md" files).
+    identifiers in your `*.md` files).
 
 ## Dos and Don'ts
 
