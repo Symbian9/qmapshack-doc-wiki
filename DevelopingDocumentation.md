@@ -36,8 +36,8 @@ Bitbucket, the following conditions must be met:
 
 ## The _Markdown_ Language
 
-*   Documentation regarding the _Markdown_ language can be found at various
-    places:
+*   **Documentation** regarding the _Markdown_ language can be found at
+    various places:
 
     *   John Gruber's original
         [_Markdown_ syntax definition](http://daringfireball.net/projects/markdown/syntax)
@@ -78,12 +78,75 @@ Bitbucket, the following conditions must be met:
     in _Markdown_.  In this case the word "`here`" will be clickable in
     your browser, taking you to "`http://x.y.z.com`".
 
+*   **Fragment identifiers:** This term refers to the optional last part
+    of a URL which is separated from the rest using a _hash sign_ ("`#`"),
+    as in "http://x.y.z.com#chapter_1".  When you click such a URL, the
+    part to the left of the hash sign ("http://x.y.z.com") specifies the
+    HTML file to be opened, while the fragment identifier to the right
+    of the hash sign ("chapter_1") specifies a label defined somewhere
+    in the HTML code itself to which your browser is pointed.
+
+    Using _Markdown_ you cannot directly define your own fragment
+    identifiers but _Markdown_ implicitly defines several fragment
+    identifiers which you can then use in URLs, provided you know their
+    names.  To refer to a fragment identifier defined in the current
+    file use something like
+
+    >    \[_Text_]\(#_identifier_)
+
+    and to refer to a fragment identifier in another file in the same
+    directory use
+
+    >    \[_Text_]\(_File_#_identifier_)
+
+    _Markdown_ implicitly defines the following fragment identifiers:
+
+    *   "`fn:`_id_": This fragment identifier will take you to the text
+        containing your footnote named "_id_".
+
+    *   "`fnref:`_id_": This fragment identifier will take you to the
+        first location where you referred to your footnote named "_id_".
+
+    *   Header identifiers: Whenever you define a _Markdown_ header line
+        starting with 1 to 6 hash signs ("`#`"), this header line will
+        be labeled with an identifier derived the following way:
+
+        *   First, white space and hash signs are stripped off of both
+            ends of the header line, an image URL ("`![...](....png)`"),
+            if specified, is removed from it, the remaining header line
+            is converted to lowercase, and is then prefixed with
+            "`markdown-header-`".
+
+        *   Next, any non-alphanumeric characters other than white
+            space, underscore ("`_`") and minus ("`-`") are removed.
+
+        *   Finally, every longest possible sequence of white space and
+            minus signs is replaced with a single minus sign.
+
+        So the header line
+
+                ## --Example Header (-/-) URL: http://x.y.z.com
+
+        will be labeled "`markdown-header-example-header-url-httpxyzcom`"[^2].
+
 [^1]:
     Apart from using these _Markdown_ extensions the Bitbucket
     _Markdown_ dialect also accepts the clause "`~~xxx~~`" which is
     rendered to "~~xxx~~" ("strike through").  This clause is also
     accepted when locally rendering _Markdown_ files to HTML using
     script `Make.sh` or using `make doc`.
+
+[^2]:
+    If you inspect HTML code created locally via script `Make.sh` or via
+    `make doc`, you will notice that all header identifiers are in fact
+    missing the "`markdown-header-`" prefix.  However, when viewing the
+    documentation online at the Bitbucket server, Bitbucket will
+    invariably generate HTML code for your browser where all header
+    identifiers contain this prefix.  Thus you'll have to use this
+    prefix in your URLs, too, or these URLs will only take you to the
+    top of the file, but not to the fragment identifier (alternativly
+    you can run `./Make.sh -n` or `make nav` which will also fix your
+    broken fragment identifiers).
 
 ## Dos and Don'ts
 
@@ -96,7 +159,7 @@ Bitbucket, the following conditions must be met:
     already existing.
 
 *   If the file you want to edit does **not yet exist**, create it in
-    sub-directory `playground/`[^2].  This way your new file does
+    sub-directory `playground/`[^3].  This way your new file does
     neither disturb others running `make nav` against the repsository
     while you are developing the contents of your file nor do other
     people's `make nav` operations add currently unwanted changes to
@@ -165,7 +228,7 @@ Bitbucket, the following conditions must be met:
     more easily and more thoroughly offline and thus this is just
     another reason for discouraging online editing.
 
-[^2]:
+[^3]:
     Mind however that links in your new file which point to other wiki
     files now have to be temporarily prefixed with "`../`" as in
 
@@ -337,14 +400,14 @@ Bitbucket, the following conditions must be met:
             make check
 
     to ensure all your changed `*.md` files are in a consistent state
-    which is usable both, locally and online[^3].  This includes fixing
+    which is usable both, locally and online[^4].  This includes fixing
     some URLs as well as adding or updating both, the top and bottom
     navigation bars and the table of contents of each `*.md` file
     affected.
 
     Mind however that the `make check` command does not just check the
     files containing your current changes, but rather checks the whole
-    wiki repository[^4].  So if `make check` finds unreferenced files or
+    wiki repository[^5].  So if `make check` finds unreferenced files or
     undefined links introduced by **your recent work**, apply
     corrections, but leave errors not related to your current work
     unresolved in the current changeset you are working on, and if you
@@ -356,14 +419,14 @@ Bitbucket, the following conditions must be met:
             hg commit
             hg push
 
-[^3]:
+[^4]:
     Mind that under some circumstances (in particular when running it
     for the very first time) the command `make nav` might process more
     than just the files you changed.  However, it should normally not
     introduce any real changes (not even changes to file modification
     dates) which aren't caused by your own changes.
 
-[^4]:
+[^5]:
     To be precise, `make check` checks all _tracked_ files of the wiki
     repository for being referenced in at least one _toplevel_ `*.md`
     file as well as all _toplevel_ `*.md` files for containing only
