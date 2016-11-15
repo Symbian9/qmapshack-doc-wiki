@@ -111,9 +111,9 @@ Bitbucket, the following conditions must be met:
         starting with 1 to 6 hash signs ("`#`"), this header line will
         be labeled with an identifier derived the following way:
 
-        *   First, white space and hash signs are stripped off of both
-            ends of the header line, an image URL ("`![...](....png)`"),
-            if specified, is removed from it, the remaining header line
+        *   First, an image URL ("`![....png)`"), if specified, is
+            removed from the header line, white space and hash signs are
+            stripped off of both ends of it, the remaining header line
             is converted to lowercase, and is then prefixed with
             "`markdown-header-`".
 
@@ -144,9 +144,10 @@ Bitbucket, the following conditions must be met:
     invariably generate HTML code for your browser where all header
     identifiers contain this prefix.  Thus you'll have to use this
     prefix in your URLs, too, or these URLs will only take you to the
-    top of the file, but not to the fragment identifier (alternativly
-    you can run `./Make.sh -n` or `make nav` which will also fix your
-    broken fragment identifiers).
+    top of the file but not to the fragment identifier when you click
+    them in the online documentation (alternativly you can also run
+    `./Make.sh -n` or `make nav` which will fix your broken fragment
+    identifiers in your "*.md" files).
 
 ## Dos and Don'ts
 
