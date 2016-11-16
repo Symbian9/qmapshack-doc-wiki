@@ -29,6 +29,7 @@ CTRL-Q | Close QMapShack.
 CTRL-S | Save all projects from the workspace.
 CTRL-T | Add new view tab.
 CTRL-SHIFT-T | Clone map view.
+CTRL-W | Close tab that is not a map view (_patch version cff9526 (15.11.2016) and later ones_).
 __Map__ |
 up-key     | Move the map focus north, moving the map south 
 down-key   | Move the map focus south, moving the map north
@@ -62,13 +63,15 @@ In a track created with the methods mentioned in the last paragraph
 
 * can be trackpoints with or without timestamps,
 * can different track segments have trackpoints with inconsistent (invalid) timestamps,
-* can elevation data be available or not or can be even invalid (see discussion in the following 2 sections of this page).
+* can elevation data be available or not or can be even invalid (see discussion 
+[here](#markdown-header-what-to-do-if-a-track-has-invalid-elevation-data)).
 
 If there are invalid timestamps or elevation data in a newly created or edited track then QMS displays a red warning message in the track info box.
 
 The user should use the __Change timestamps of track points__ filter to remove invalid timestamps.
 
-Different approaches for avoiding or removing invalid elevations are described in the following 2 sections of this page.
+Different approaches for avoiding or removing invalid elevations are described 
+[here](markdown-header-what-to-do-if-a-track-has-invalid-elevation-data).
 
 ## How to edit the elevation of a track point manually?
 
@@ -108,7 +111,7 @@ The area (map) in which the track is located doesn't show anything special:
 
 The reason for the missing elevation data is the source of the elevation data (in the example discussed 
 a file `N51E011.hgt`). Elevation data
-is normally taken from satellite measurement (SRTM data) and this data may have gaps, i.e. small areas without valid elevation
+is normally taken from satellite measurement (SRTM data) and this data may have gaps (elsewhere called voids), i.e. small areas without valid elevation
 data. These gaps are marked in the HGT files as `NODATA` areas. If a trackpoint is located in such an area then QMS can't
 assign an elevation to this trackpoint.
 

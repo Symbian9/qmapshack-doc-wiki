@@ -25,7 +25,7 @@ A typical procedure for creating a route is as follows:
 
 * Select a routing strategy (car - bike - foot, shortest - quickest, language, ...) to be used in the routing algorithm.
 * Select a series of waypoints through which the route should go.
-* Start the routing algorithm to get the required route (this may automatically happens when selecting the waypoints).
+* Start the routing algorithm to get the required route (this may automatically happen when selecting the waypoints).
 
 When following a route the user expects at all junctions (and only there) information about the necessary 
 turn in the selected language 
@@ -38,7 +38,8 @@ junctions with routing information.
 ![Routing](images/DocFaq/RouteExample.png)
 
 Having the ordered sequence of route waypoints and the map data (more precisely the routing data of a map) the route
-can easily be recalculated by the routing algorithm. This is the reason why when saving a route in form of a portable GPX file
+can easily be recalculated by the routing algorithm. This is the reason why when saving a route in form of a portable 
+GPX file
 only the route waypoints are saved. In addition to this the GPX data format does not support the type of information
 mentioned above for junctions.
 
@@ -68,7 +69,7 @@ The following basic procedure is used to create a new track:
 
   ![Create track](images/DocFaq/RoutingBasics.jpg) 
   
-  The toolbar icons labelled `O`, `A`, `V` have to be used in order to select the correct routing method.
+  The toolbar icons labeled `O`, `A`, `V` have to be used in order to select the correct routing method.
   The hotkeys `CTRL-O`, `CTRL-A` and `CTRL-V` can also be used in order to select the routing method.
   
   The first trackpoint is shown with a yellow border, the next trackpoint is shown with a green border. Select
@@ -100,7 +101,7 @@ button
     
       * _Advantage of this method:_ Fast routing not depending on map data.
       * _Disadvantage:_ From time to time unexpected tracks longer than necessary. There are many reasons for this 
-        behaviour (e.g. incorrect map data used for creating the routing database, location
+        behavior (e.g. incorrect map data used for creating the routing database, location
         of mouse pointer not precise enough).
     
   * _Method 3:_ Routing with vector map data:
@@ -126,8 +127,8 @@ button
 
 The following image shows a route instruction in which 3 languages are used:
 
-![Route language](images/DocFaq/RouteLanguage.png)
-      
+![Route language](images/DocFaq/RouteLanguage.png)  
+
 The reason for this is as follows:
 
 * The first line with English time and distance information shows data provided by the used English QMS version. This is 
@@ -135,9 +136,9 @@ the language of the operating system if QMS language files are available for thi
 in all other cases.
 * The second line with Russian routing instructions shows data provided by the Routino routing algorithm used in QMS. 
 The language for the routing algorithm was set by the user to Russian within QMS.
-* The third line shows a German road name. This is data coming from the German map used by the Routino routing algorithm.
-      
-      
+* The third line shows a German road name. This is data coming from the German map used by the Routino routing algorithm 
+(this map can be different from the map displayed in the QMS view!).
+
 ## Is there a possibility to choose the preferred road class when routing?
 
 **Source:** 
