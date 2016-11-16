@@ -22,5 +22,6 @@ QMS workspace data behaviour is unpredictable.
     * `c:\Users\your_user_name\.QMapShack`: tile caches for online maps (default, can be changed by the user)
     * `c:\Users\your_user_name\.config\QLandkarte\workspace.db`: backup of last used workspace - used for rebuilding the last workspace when QMapShack is restarted
     * `current_working_directory\test.xml`: MapQuest routing protocol
+
 - - -
 [Prev](DocGisDevices) (GPS Devices) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Databases and projects) [Next](DocFaqData)
