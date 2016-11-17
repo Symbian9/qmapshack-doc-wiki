@@ -84,7 +84,7 @@ Bitbucket, the following conditions must be met:
     part to the left of the hash sign ("`http://x.y.z.com`") specifies the
     HTML file to be opened, while the fragment identifier to the right
     of the hash sign ("`chapter_1`") specifies a label defined somewhere
-    in the HTML code itself to which your browser is pointed.
+    in the HTML code itself to which your browser then is pointed.
 
     Using _Markdown_ you cannot directly define your own fragment
     identifiers but _Markdown_ implicitly defines several fragment
@@ -123,11 +123,11 @@ Bitbucket, the following conditions must be met:
         *   Finally, every longest possible sequence of white space and
             minus signs is replaced with a single minus sign.
 
-        So the header line
+        Thus the header line
 
                 ## --Example Header (-/-) URL: http://x.y.z.com
 
-        will be labeled "`markdown-header-example-header-url-httpxyzcom`"[^2].
+        will be labeled "`markdown-header-example-header-url-httpxyzcom`".
 
 [^1]:
     Apart from using these _Markdown_ extensions the Bitbucket
@@ -135,19 +135,6 @@ Bitbucket, the following conditions must be met:
     rendered to "~~xxx~~" ("strike through").  This clause is also
     accepted when locally rendering _Markdown_ files to HTML using
     script `Make.sh` or using `make doc`.
-
-[^2]:
-    If you inspect HTML code created locally via script `Make.sh` or via
-    `make doc`, you will notice that all header identifiers are in fact
-    missing the "`markdown-header-`" prefix.  However, when viewing the
-    documentation online at the Bitbucket server, Bitbucket will
-    invariably generate HTML code for your browser where all header
-    identifiers contain this prefix.  Thus you'll have to use this
-    prefix in your URLs, too, or these URLs will only take you to the
-    top of the file but not to the fragment identifier when you click
-    them in the online documentation (alternativly you can also run
-    `./Make.sh -n` or `make nav` which will fix your broken fragment
-    identifiers in your `*.md` files).
 
 ## Dos and Don'ts
 
@@ -160,7 +147,7 @@ Bitbucket, the following conditions must be met:
     already existing.
 
 *   If the file you want to edit does **not yet exist**, create it in
-    sub-directory `playground/`[^3].  This way your new file does
+    sub-directory `playground/`[^2].  This way your new file does
     neither disturb others running `make nav` against the repsository
     while you are developing the contents of your file nor do other
     people's `make nav` operations add currently unwanted changes to
@@ -172,7 +159,7 @@ Bitbucket, the following conditions must be met:
 *   If the file you want to edit does **not yet exist**, do not try to
     manually add to it the navigation bars you see in all the other wiki
     files because this could cause confusion when running `make nav`
-    later.  Just start your file with its first headline.
+    later.  Just start your file with its first header line.
 
 *   If you are editing an **already existing** `*.md` file, leave the
     navigation bars at the top and bottom of it alone.  The top
@@ -229,7 +216,7 @@ Bitbucket, the following conditions must be met:
     more easily and more thoroughly offline and thus this is just
     another reason for discouraging online editing.
 
-[^3]:
+[^2]:
     Mind however that links in your new file which point to other wiki
     files now have to be temporarily prefixed with "`../`" as in
 
@@ -271,7 +258,7 @@ Bitbucket, the following conditions must be met:
         `DocPlayground` as described above and creating a new link there
         pointing to your not yet existing file:
 
-        >    \* \[_YourPersonalName_]\(playground/_YourNewFileName_)
+        >    \* \[_Topic_]\(playground/_YourNewFileName_) - _YourName_
 
         Mind that "_YourNewFileName_" must neither end in a `.md` nor in
         a `.html` extension.  Finally click the link, and Bitbucket will
@@ -280,7 +267,7 @@ Bitbucket, the following conditions must be met:
     *   The final steps of moving your file one directory level up,
         creating at least one link to it in one of the other wiki files,
         and then running `make nav` against the wiki repository have to
-        be done offline.
+        be done offline anyway.
 
 ## Offline Editing
 
@@ -321,7 +308,7 @@ Bitbucket, the following conditions must be met:
 
 *   Just open an existing `*.md` file you want to edit or create a new
     one (**in sub-directory `playground/`, as recommended
-    [above](#fnref:1)!**) in your favorite, **UTF-8 capable** editor and
+    [above](#fnref:2)!**) in your favorite, **UTF-8 capable** editor and
     edit it to your heart's content.
 
     **Mind that the `.md` extension is mandatory when creating a new
@@ -401,14 +388,14 @@ Bitbucket, the following conditions must be met:
             make check
 
     to ensure all your changed `*.md` files are in a consistent state
-    which is usable both, locally and online[^4].  This includes fixing
+    which is usable both, locally and online[^3].  This includes fixing
     some URLs as well as adding or updating both, the top and bottom
     navigation bars and the table of contents of each `*.md` file
     affected.
 
     Mind however that the `make check` command does not just check the
     files containing your current changes, but rather checks the whole
-    wiki repository[^5].  So if `make check` finds unreferenced files or
+    wiki repository[^4].  So if `make check` finds unreferenced files or
     undefined links introduced by **your recent work**, apply
     corrections, but leave errors not related to your current work
     unresolved in the current changeset you are working on, and if you
@@ -420,14 +407,14 @@ Bitbucket, the following conditions must be met:
             hg commit
             hg push
 
-[^4]:
+[^3]:
     Mind that under some circumstances (in particular when running it
     for the very first time) the command `make nav` might process more
     than just the files you changed.  However, it should normally not
     introduce any real changes (not even changes to file modification
     dates) which aren't caused by your own changes.
 
-[^5]:
+[^4]:
     To be precise, `make check` checks all _tracked_ files of the wiki
     repository for being referenced in at least one _toplevel_ `*.md`
     file as well as all _toplevel_ `*.md` files for containing only

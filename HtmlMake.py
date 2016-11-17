@@ -56,32 +56,24 @@ from markdown.preprocessors  import Preprocessor
 #
 # References to local files in the various "*.md" source files are requ-
 # ired by Bitbucket to have NO extension but are required by any browser
-# to have an ".html"  extension.  Likewise the  HTML Bitbucket sends  to
-# the browser defines header identifiers  starting with  "markdown-head-
-# er-" and thus also requires header identifiers  occuring in local URLs
-# to contain  this prefix.   In contrast  the standard  Python  Markdown
-# "TOC" extension  used here generates  header identifiers  without this
-# prefix,  and thus we have  to remove this prefix  from any local URLs.
-# Therefore we use the following additional Markdown preprocessor to add
-# ".html" extensions  and to remove the  "markdown-header-" prefix where
-# necessary:
+# to have an ".html" extension.   Therefore we use  the following addit-
+# ional Markdown preprocessor to add ".html" extensions to file names:
 
 class AddHtmlExt(Preprocessor):
     def run(self, InLines):
         OutLines  = []                    # To receive the output lines.
-        ReHash    = re.compile(r'#')         # Match start of header id.
-        ReHashOth = re.compile(r'([^ (])#')  # Match start of header id.
+        ReHash    = re.compile(r'#')  # Match fragment identifier separ.
 
         #
-        # Ignore URLs  which refer  to a remote  location  ("http://" or
-        # "https://"), or which already  contain an extension  (which is
-        # supposed to consist  of a dot followed by  a sequence of char-
-        # acters other than slash, dot, and dash  (the latter preventing
+        # Ignore all URLs  which refer  to a fragment identifier  in the
+        # current file ("#..."),  to a remote location  ("http://..." or
+        # "https://..."),  or which already contain an extension  (which
+        # is supposed to consist of a dot followed by a sequence of cha-
+        # racters other than slash, dot, and dash (the latter preventing
         # the trailing ".04-HowTo"  in the "Ubuntu*" URL  to be mistaken
         # for an extension)):
 
-        ReIgnore  = re.compile(r'\]\((https?://|(.*/)?[^/]+\.[^/.-]+[#)])')
-        RePrefix  = re.compile(r'#markdown-header-') # Bitbucket prefix.
+        ReIgnore  = re.compile(r'\]\((#|https?://|(.*/)?[^/]+\.[^/.-]+[#)])')
         ReProtect = re.compile(r'\]=\(')                  # Match "]=(".
         ReRPar    = re.compile(r'\)')                # Match end of URL.
 
@@ -95,32 +87,19 @@ class AddHtmlExt(Preprocessor):
             while True:                   # Process a single input line.
                 url = ReUrl.search(line)              # Locate next URL.
 
-                if not url: break   # No further URL found in this line.
+                if url: Url = url.group()           # Fetch current URL.
+                else: break         # No further URL found in this line.
 
-                Url = url.group()                   # Fetch current URL.
+                if ReIgnore.match(Url): pass            # Skip this URL.
 
-                if not ReIgnore.match(Url):          # Process this URL.
-                    Url = RePrefix.sub('#', Url) # Drop prefix if there.
+                #
+                # Depending on  whether or not  the URL contains a frag-
+                # ment identifier,  insert the ".html" file extension in
+                # the correct place:
 
-                    #
-                    # If the URL  refers to another  local file,  insert
-                    # the ".html" file extension in the correct place:
-
-                    char = ReHashOth.search(Url)   # Char preceding "#".
-
-                    if char:  # Character preceding "#" is valid in URL.
-                        Url = ReHashOth.sub(char.group(1) + '.html#',
-                                            Url,
-                                            count=1
-                                           )
-
-                    #
-                    # If the URL does not contain a "#" character, suff-
-                    # ix it with ".html",  otherwise leave it as is, be-
-                    # cause it refers to a file local header identifier:
-
-                    elif not ReHash.search(Url):
-                        Url = ReRPar.sub('.html)', Url, count=1)
+                elif ReHash.search(Url):
+                      Url = ReHash.sub('.html#', Url, count=1)
+                else: Url = ReRPar.sub('.html)', Url, count=1)
 
                 #
                 # Replace the initial "](" with "]=("  to prevent match-
@@ -133,7 +112,7 @@ class AddHtmlExt(Preprocessor):
             # After having  processed all URLs  in this line,  again re-
             # place "]=(" with "](" and output the line:
 
-            OutLines.append(ReProtect.sub('](',line))
+            OutLines.append(ReProtect.sub('](', line))
 
         return OutLines
 
@@ -147,7 +126,7 @@ class FixHtml(Extension):
        # Insert our own "AddHtmlExt" preprocessor  at the very beginning
        # of ordered "md" dict "preprocessors":
 
-       md.preprocessors.add('add_html_ext',AddHtmlExt(md),'_begin')
+       md.preprocessors.add('add_html_ext', AddHtmlExt(md), '_begin')
 
        #
        # Since Markdown's "save_mode='...'" option  is meanwhile deprec-
@@ -171,28 +150,45 @@ ReDel = r'(~~)(.*?)~~'   # Regular expression matching "strike through".
 
 class StrikeThrough(Extension):
    def extendMarkdown(self, md, md_globals):
-       md.inlinePatterns.add('del',
+       md.inlinePatterns.add('del'                         ,
                              SimpleTagPattern(ReDel, 'del'),
                              '>not_strong'
                             )
 
 #
+# Define a "slugify" function which does  the same thing as the standard
+# "slugify function built into the  Markdown "toc" extension  and addit-
+# ionally adds the Bitbucket specific "markdown-header-" prefix to head-
+# er line identifiers:
+
+import unicodedata
+
+def slugify(value, separator):
+    value = unicodedata.normalize('NFKD', value).encode('ascii', 'ignore')
+    value = 'markdown-header-' + value.strip().lower() # Bitbucket prefx.
+    value = re.sub('[^\w\s-]', '', value.decode('ascii'))
+
+    return re.sub('[%s\s]+' % separator, separator, value)
+
+#
 # Pass the input file to Markdown with all necessary extensions enabled,
 # including our own "FixHtml" and "StrikeThrough" extensions:
 
-markdown.markdownFromFile(extensions=['markdown.extensions.abbr'        ,
-                                      'markdown.extensions.def_list'    ,
-                                      'markdown.extensions.fenced_code' ,
-                                      'markdown.extensions.footnotes'   ,
-                                      'markdown.extensions.sane_lists'  ,
-                                      'markdown.extensions.tables'      ,
-                                      'markdown.extensions.toc'         ,
-                                      'markdown.extensions.wikilinks'   ,
-                                      FixHtml()                         ,
+markdown.markdownFromFile(extensions=['markdown.extensions.abbr'       ,
+                                      'markdown.extensions.def_list'   ,
+                                      'markdown.extensions.fenced_code',
+                                      'markdown.extensions.footnotes'  ,
+                                      'markdown.extensions.sane_lists' ,
+                                      'markdown.extensions.tables'     ,
+                                      'markdown.extensions.toc'        ,
+                                      'markdown.extensions.wikilinks'  ,
+                                      FixHtml()                        ,
                                       StrikeThrough()
                                      ],
-                          extension_configs={'markdown.extensions.wikilinks':
-                                                {'base_url': '' ,
+                          extension_configs={'markdown.extensions.toc':
+                                                {'slugify': slugify},
+                                             'markdown.extensions.wikilinks':
+                                                {'base_url': '',
                                                  'end_url':  '.html'
                                                 }
                                             },
