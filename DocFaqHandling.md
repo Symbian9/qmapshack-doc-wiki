@@ -40,6 +40,66 @@ right-key  | Move the map focus east, moving the map west
 
 When in text edit fields the usual hotkeys can be used.
 
+## How to select a range of a track?
+
+(_valid starting with QMS patch version  b9235da (18.11.2016)_)
+
+The user can select a range of a track, that is a sequence of trackpoints of the track, for further handling
+in several ways:
+
+* __Using a map window:__
+  * Display the track in a map window.
+  * Click with the left mouse button on the track and release the mouse button. 
+A bubble box pops-up. Choose the "_Select a range of points_" icon in this
+bubble box. The mouse cursor changes to the range selection icon. 
+  * Click with the left mouse button at the location of the start of the range to be selected in the track and
+release the mouse button. 
+  * Move the mouse to the location of the end of the range to be selected and click with the left mouse button.
+  
+![Range selection](images/DocFaq/RangeSelection.png)
+  
+* __Using graphs in an edit window:__
+  * Click with the left mouse button at the location of the start of the range to be selected in the graph/track and
+release the mouse button. A vertical red line jumps to the location of the nearest trackpoint of the track.
+  * Move the mouse to the location of the end of the range to be selected and click with the left mouse button.
+  
+In both cases the selected range will be highlighted in green color and the required action for the trackpoint range can be selected from 
+the bubble box that pops up.
+
+The user can
+* temporarily hide trackpoints in the selected range,
+* copy the selected trackpoints into a new track,
+* delete the hidden trackpoints (use the _Reduce visible track points_ filter),
+* assign an activity type to the range.
+
+If part of the track is hidden then this is shown in the track bubble box when moving the mouse pointer on the track
+in a map window as shown in the following image:
+
+![Hidden trackpoints](images/DocFaq/HiddenWPTs.png)
+  
+Here, the numbers of visible and of total points are different.
+
+## How to zoom track graphs?
+
+(_valid starting with QMS patch version  b9235da (18.11.2016)_)
+
+The edit window of a track can show up to 3 graphs displaying the track profile and at most 2 of the 3 features _progress_, 
+_speed_ and _slope_.
+
+The initial scaling of the graphs is so that the whole graph/track data can be seen.
+
+All graph scales allow horizontal and vertical zooming with the mouse wheel as follows:
+* move the mouse pointer on a graph,
+* use the mouse wheel to zoom in or out on the horzontal __and__ on the vertical scale at the same time,
+* press the _CTRL_ key and use the mouse wheel to zoom in or out on the vertical scale only,
+* press the _ALT_ key and use the mouse wheel to zoom in or out on the horizontal scale only.
+
+
+A red vertical or horizontal line at the scales shows how much of the whole scale is actually displayed in the graph.
+
+If only part of the graph is displayed (red line is shorter than the whole scale) then the graph can be moved by
+pressing the left mouse button, moving the mouse vertically or horizontally and releasing the mouse button.
+
 ## How to avoid or remove invalid data in a track?
 
 QMS is a software for
