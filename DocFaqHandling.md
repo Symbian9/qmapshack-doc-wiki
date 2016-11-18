@@ -69,6 +69,7 @@ In both cases the selected range will be highlighted in green color and the requ
 the bubble box that pops up.
 
 The user can
+
 * temporarily hide trackpoints in the selected range,
 * copy the selected trackpoints into a new track,
 * delete the hidden trackpoints (use the _Reduce visible track points_ filter),
