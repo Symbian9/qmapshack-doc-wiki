@@ -48,20 +48,22 @@ The user can select a range of a track, that is a sequence of trackpoints of the
 in several ways:
 
 * __Using a map window:__
-  * Display the track in a map window.
-  * Click with the left mouse button on the track and release the mouse button. 
+
+     * Display the track in a map window.
+     * Click with the left mouse button on the track and release the mouse button. 
 A bubble box pops-up. Choose the "_Select a range of points_" icon in this
 bubble box. The mouse cursor changes to the range selection icon. 
-  * Click with the left mouse button at the location of the start of the range to be selected in the track and
+     * Click with the left mouse button at the location of the start of the range to be selected in the track and
 release the mouse button. 
-  * Move the mouse to the location of the end of the range to be selected and click with the left mouse button.
+     * Move the mouse to the location of the end of the range to be selected and click with the left mouse button.
   
 ![Range selection](images/DocFaq/RangeSelection.png)
   
 * __Using graphs in an edit window:__
-  * Click with the left mouse button at the location of the start of the range to be selected in the graph/track and
+
+    * Click with the left mouse button at the location of the start of the range to be selected in the graph/track and
 release the mouse button. A vertical red line jumps to the location of the nearest trackpoint of the track.
-  * Move the mouse to the location of the end of the range to be selected and click with the left mouse button.
+    * Move the mouse to the location of the end of the range to be selected and click with the left mouse button.
   
 In both cases the selected range will be highlighted in green color and the required action for the trackpoint range can be selected from 
 the bubble box that pops up.
@@ -89,8 +91,9 @@ _speed_ and _slope_.
 The initial scaling of the graphs is so that the whole graph/track data can be seen.
 
 All graph scales allow horizontal and vertical zooming with the mouse wheel as follows:
+
 * move the mouse pointer on a graph,
-* use the mouse wheel to zoom in or out on the horzontal __and__ on the vertical scale at the same time,
+* use the mouse wheel to zoom in or out on the horizontal __and__ on the vertical scale at the same time,
 * press the _CTRL_ key and use the mouse wheel to zoom in or out on the vertical scale only,
 * press the _ALT_ key and use the mouse wheel to zoom in or out on the horizontal scale only.
 
