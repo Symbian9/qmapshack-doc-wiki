@@ -328,6 +328,7 @@ Selecting the `Activity` tab in the edit window shows various information about 
 ![activity overview](images/DocFaq/ActivityOverview.png)
 
 Selecting `Activity` in the `Style` tab of the edit window allows to assign a color for each activity type:
+
 * click the colored square for the activity under consideration,
 * a list shows the supported colors,
 * select one by clicking on it,
