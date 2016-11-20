@@ -34,7 +34,7 @@ The dialog has 3 areas:
 2) The track information area on the left bottom. It displays the same information as the on-screen summary. There are two icons:
 
    * ![maproom1.png](images/DocGisItemsTrk/Lock.png) If he lock is closed the track is read only. To edit track data you have to press it.
-   * ![maproom1.png](images/DocGisItemsTrk/Tainted.png) If the track has been imported and was changed it is considered as tainted. If the ink spot is visible you know the track has been altered.
+   * ![maproom1.png](images/DocGisItemsTrk/Tainted.png) If the track has been imported and was changed it is considered tainted. If the ink spot is visible you know the track has been altered.
 
 Note about displayed cumulative elevation gain :
 As this value is derived from raw data, some filtering is necessary to avoid exaggerated results.
@@ -53,7 +53,7 @@ If you move the mouse over the graph area you will see some information about th
 |---|---|---|
 |![maproom1.png](images/DocGisItemsTrk/PointHide.png)|Hide| Hide the selected track points|
 |![maproom1.png](images/DocGisItemsTrk/PointShow.png)|Show| Show all track points between the first and last point of the selection |
-|![maproom1.png](images/DocGisItemsTrk/Activity.png)|Activity| Mark the selected track points to be part of a activity to be selected|
+|![maproom1.png](images/DocGisItemsTrk/Activity.png)|Activity| Mark the selected track points to be part of an activity to be selected|
 |![maproom1.png](images/DocGisItemsTrk/Copy.png)|Copy| Copy selected track points as a new track|
 
 Another left click on the graph will abort. Doing a right click on the graph will display a context menu:
