@@ -287,12 +287,14 @@ upper right part of the roadbook.
     * to the end of the track
   
     are shown together with a summary of the track information. 
+
 * It may happen that a track passes several times through a waypoint (in the example __WPT3__).  This 
 happens if the track intersects itself and if an attached waypoint is located at an intersection.   
-  * If the option `Sort along track (multiple)` is used then the waypoint is shown several times in the list.
-  * If the option `Sort along track (single)` is used then the waypoint is shown only once in the list. The
+    * If the option `Sort along track (multiple)` is used then the waypoint is shown several times in the list.
+    * If the option `Sort along track (single)` is used then the waypoint is shown only once in the list. The
 information given in the roadbook window refers to the last pass through the waypoint.
-  ![Roadbook with attached waypoints](images/DocFaq/Roadbook.jpg)
+
+    ![Roadbook with attached waypoints](images/DocFaq/Roadbook.jpg)
 
 * If the option `Keep order of project`is used then the edit window of the project shows waypoints and tracks in different
 tables.
