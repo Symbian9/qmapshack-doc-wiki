@@ -309,5 +309,39 @@ track.
 A track can be copied together with its attached waypoints to a new project by selecting the track context menu entry
 `Copy Track with Waypoints`. 
 
+## How to assign colors to track activities?
+
+**Source:** [Newsgroup discussion](https://sourceforge.net/p/qlandkartegt/mailman/message/35502464)
+
+To assign an activity to a range of a track proceed as follows:
+
+* Select a track range (for details see [here](#markdown-header-how-to-select-a-range-of-a-track)).
+* In the bubble box that pops up click the `Select an activity` icon.
+* Choose the activity from the list which appears.
+
+The graphs in the track edit window show the track activity ranges:
+
+![activity types](images/DocFaq/ActivityType.png)
+
+Selecting the `Activity` tab in the edit window shows various information about the activities:
+
+![activity overview](images/DocFaq/ActivityOverview.png)
+
+Selecting `Activity` in the `Style` tab of the edit window allows to assign a color for each activity type:
+* click the colored square for the activity under consideration,
+* a list shows the supported colors,
+* select one by clicking on it,
+* if the list was opened but no color was changed then press the `ESC` to close the list.
+
+![activity color](images/DocFaq/ActivityColorSelection.png)
+
+Now the selected colors are displayed on the track (red color: color selected for the track itself - no activity was 
+assigned to red parts):
+
+![activity colors on track](images/DocFaq/TrackActivity.png)
+
+
+
+
 - - -
 [Prev](DocFaqData) (Databases and projects) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Routing) [Next](DocFaqRouting)
