@@ -61,9 +61,12 @@ release the mouse button.
   
 * __Using graphs in an edit window:__
 
-    * Click with the left mouse button at the location of the start of the range to be selected in the graph/track and
+    * Click with the left mouse button at the location of the start of the range to be selected in one of the track 
+    graphs and
 release the mouse button. A vertical red line jumps to the location of the nearest trackpoint of the track.
-    * Move the mouse to the location of the end of the range to be selected and click with the left mouse button.
+    * Move the mouse to the location of the end of the range to be selected __in the same graph__ and click with 
+the left mouse button. _Warning:_ If a `No go!` icon pops up at the location of the mouse pointer then the mouse
+was moved out of the graph selected with the first click!
   
 In both cases the selected range will be highlighted in green color and the required action for the trackpoint range can be selected from 
 the bubble box that pops up.
@@ -276,19 +279,24 @@ To display this information proceed as follows:
 
 * Right click on the project and select the context menu entry `Edit...`.
 * The project roadbook opens as additional tab in the upper right part of the user interface.  
-* Select the `Sort along track (multiple)` entry from the combobox in the upper right part of the roadbook.
-* Now for each attached waypoint its distance
+* Select the `Sort along track (multiple)` or `Sort along track (single)` entry from the combobox in the 
+upper right part of the roadbook.
+* Now for each attached waypoint its distance, ascent and descent
     * from the start of the track,
     * to the next attached waypoint, and
     * to the end of the track
   
-    is shown. 
-
-_Hint:_ It may happen that a waypoint is displayed several times in the list (in the example __WPT3__). This 
+    are shown together with a summary of the track information. 
+* It may happen that a track passes several times through a waypoint (in the example __WPT3__).  This 
 happens if the track intersects itself and if an attached waypoint is located at an intersection.   
-  
-![Roadbook with attached waypoints](images/DocFaq/Roadbook.jpg)
- 
+  * If the option `Sort along track (multiple)` is used then the waypoint is shown several times in the list.
+  * If the option `Sort along track (single)` is used then the waypoint is shown only once in the list. The
+information given in the roadbook window refers to the last pass through the waypoint.
+  ![Roadbook with attached waypoints](images/DocFaq/Roadbook.jpg)
+
+* If the option `Keep order of project`is used then the edit window of the project shows waypoints and tracks in different
+tables.
+   
 Attached waypoints are also shown with their icons - or in the case that the cursor is located at the waypoint position with 
 their name - 
 in the profile graph of the track (if elevation data is available). To see the profile graph open the edit window for the
@@ -296,7 +304,8 @@ track.
 
 ![Attached waypoints](images/DocFaq/TrackProfile.jpg)
 
-
+A track can be copied together with its attached waypoints to a new project by selecting the track context menu entry
+`Copy Track with Waypoints`. 
 
 - - -
 [Prev](DocFaqData) (Databases and projects) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Routing) [Next](DocFaqRouting)
