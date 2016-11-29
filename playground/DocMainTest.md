@@ -1,4 +1,3 @@
-
 [TOC]
 
 _This page is partially copied from DocMain.md. Links on this page don't work!_
@@ -190,6 +189,7 @@ pages for creating Navbars instead of DocMain)_
     * [Data organization](DocDataOrganization)
     * [Data handling](DocHandling)
     * [Other topics](DocEtc)
+
 1. __Getting Help__
 
     * [Frequently Asked Questions](DocFaqConfig)
@@ -198,7 +198,8 @@ pages for creating Navbars instead of DocMain)_
     * [Troubleshooting QMapShack](TroubleShooting)
     * [Reporting a bug](ReportBugs)
     * [Requesting a feature](RequestFeatures)
-    * [Dictionary of terms/Glossary/Terminology](DocGlossary)  (_why not having such a section?_)    
+    * [Dictionary of terms/Glossary/Terminology](DocGlossary)  (_why not having such a section?_)  
+  
 1. __Developing QMapShack__
 
     * [Coding Guideline](DeveloperCodingGuideline)
