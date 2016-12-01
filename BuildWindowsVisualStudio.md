@@ -76,12 +76,13 @@ Build instructions inspired by
   INSTDIR=M:\lib\PROJ
 ~~~~
 - On the Windows Desktop:
-	=> select Start | All Programs | Microsoft Visual Studio 2013 | Visual Studio Tools | VS 2013 x64 Native Tools Command Prompt.
-- in the command prompt:
-	=> change directory to the extracted PROJ4 source code root folder
-	=> nmake /f makefile.vc
-	=> nmake /f makefile.vc install-all
-
+  select Start | All Programs | Microsoft Visual Studio 2013 | Visual Studio Tools | VS 2013 x64 Native Tools Command Prompt.
+- in the command prompt: 
+  change directory to the extracted PROJ4 source code root folder:
+~~~~
+  nmake /f makefile.vc
+  nmake /f makefile.vc install-all
+~~~~
 ### C3.) Compile the routino library http://www.routino.org
 - Get the latest version from the SVN trunk http://www.routino.org/download/
 ~~~~
