@@ -1,4 +1,4 @@
-[Prev](DocMain) (Manual) | [Home](Home) | [Manual](DocMain) | (Compile Instructions for Windows) [Next](BuildWindowsVisualStudio)
+[Prev]() () | [Home](Home) | [Manual](DocMain) | (Compile Instructions for Windows) [Next](BuildWindowsVisualStudio)
 - - -
 [TOC]
 - - -
@@ -106,4 +106,4 @@ And install the application with:
     sudo make install
 
 - - -
-[Prev](DocMain) (Manual) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Compile Instructions for Windows) [Next](BuildWindowsVisualStudio)
+[Prev]() () | [Home](Home) | [Manual](DocMain) | [Top](#) | (Compile Instructions for Windows) [Next](BuildWindowsVisualStudio)

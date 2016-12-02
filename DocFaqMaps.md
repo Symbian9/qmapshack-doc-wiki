@@ -11,7 +11,7 @@
 
 _Example:_
 
-![Blue dots](images/DocFaq/BlueDots.jpg)
+![Blue dot waypoint icon](images/DocFaq/BlueDots.jpg "Blue dot waypoint icon")
 
 The blue dots shown on the map are not the icons of waypoints but they are used as indicators that at the given zoom level
 of the map and at the given locations there are several waypoints on the map. Thus, cluttering of the map is avoided.
@@ -19,7 +19,7 @@ of the map and at the given locations there are several waypoints on the map. Th
 Changing the zoom level results in the display of all waypoints at the given location with the necessary icons (exception:
 several waypoints with equal coordinates).
 
-![No Blue dots](images/DocFaq/NoBlueDots.jpg)
+![No blue dot waypoint icons](images/DocFaq/NoBlueDots.jpg "No blue dot waypoint icons")
 
 
 ## Is there a possibility to display small roads/tracks in a vector map without zooming in too much?
@@ -94,19 +94,19 @@ Consider the following hints:
   
   Raster map not displayed | Raster map displayed
   --------|--------- 
-  ![Raster map boundary](images/DocFaq/RasterMap1.jpg) |   ![Raster map](images/DocFaq/RasterMap2.jpg)  
+  ![Raster map boundary](images/DocFaq/RasterMap1.jpg "Raster map boundary") | ![Raster map](images/DocFaq/RasterMap2.jpg "Raster map")  
   
   If overview maps are supported (compare section [Basic knowledge about maps and DEM files](DocBasicsMapDem)) 
   then the raster map is displayed with lower
   level of detail when zooming out.
   
-  ![Overview raster map](images/DocFaq/RasterMap4.jpg)
+  ![Overview raster map](images/DocFaq/RasterMap4.jpg "Overview raster map")
   
   Data of raster maps may be outdated. To assess the data quality use the possibility to overlay the raster map
   with a map providing recent data (e.g. online Google map) in QMS. The following example reveals that the 
   German motorway A4 was reconstructed and avoids now some mountain area.
 
-  ![Raster map overlay](images/DocFaq/RasterMap3.jpg)
+  ![Raster map with overlay](images/DocFaq/RasterMap3.jpg "Raster map with overlay")
   
 * If you have a layer of raster maps reading the files and scaling the content to an upper zoom level is 
   getting more and more resource intensive the more you zoom out. To avoid endless map loading, QMS will 
