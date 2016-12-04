@@ -1,4 +1,4 @@
-[Prev](AdvTrkElevation) (Editing elevation data) | [Home](Home) | [Manual](DocMain) | (QMapShack hotkeys) [Next](AdvHotkeys)
+[Prev](AdvTrkElevation) (Editing elevation data) | [Home](Home) | [Manual](DocMain) | (Frequently Asked Questions) [Next](DocFaqConfig)
 - - -
 [TOC]
 - - -
@@ -163,4 +163,4 @@ _Remark:_ These methods work in the same way for track and for route creation.
 
 
 - - -
-[Prev](AdvTrkElevation) (Editing elevation data) | [Home](Home) | [Manual](DocMain) | [Top](#) | (QMapShack hotkeys) [Next](AdvHotkeys)
+[Prev](AdvTrkElevation) (Editing elevation data) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Frequently Asked Questions) [Next](DocFaqConfig)

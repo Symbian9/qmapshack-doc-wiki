@@ -52,5 +52,7 @@ Make sure to include the all the information listed below to ease both your and 
 ///Footnotes Go Here///
 
 ///Footnotes Go Here///
+
+///Footnotes Go Here///
 - - -
 [Prev](TroubleShooting) (Troubleshooting QMapShack) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Requesting a feature) [Next](RequestFeatures)

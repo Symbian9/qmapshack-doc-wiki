@@ -1,4 +1,4 @@
-[Prev](AdvHotkeys) (QMapShack hotkeys) | [Home](Home) | [Manual](DocMain) | (Databases and projects) [Next](DocFaqData)
+[Prev](AdvRoutes) (Routes and Routing) | [Home](Home) | [Manual](DocMain) | (Databases and projects) [Next](DocFaqData)
 - - -
 [TOC]
 - - -
@@ -23,4 +23,4 @@ QMS workspace data behaviour is unpredictable.
     * `c:\Users\your_user_name\.config\QLandkarte\workspace.db`: backup of last used workspace - used for rebuilding the last workspace when QMapShack is restarted
 
 - - -
-[Prev](AdvHotkeys) (QMapShack hotkeys) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Databases and projects) [Next](DocFaqData)
+[Prev](AdvRoutes) (Routes and Routing) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Databases and projects) [Next](DocFaqData)

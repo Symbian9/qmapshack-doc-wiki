@@ -1,4 +1,4 @@
-[Prev](DocPlayground) (Playground - start your new Wiki page) | [Home](Home) | [Manual](DocMain) | () Next
+[Prev](AxHotkeys) (QMapShack hotkeys) | [Home](Home) | [Manual](DocMain) | () Next
 - - -
 [TOC]
 - - -
@@ -43,4 +43,4 @@ Image caption | Used in
 [Waypoint distances](images/DocFaq/WPTDistances.jpg "Waypoint distances") | [DocFaqHandling](DocFaqHandling)
 
 - - -
-[Prev](DocPlayground) (Playground - start your new Wiki page) | [Home](Home) | [Manual](DocMain) | [Top](#) | () Next
+[Prev](AxHotkeys) (QMapShack hotkeys) | [Home](Home) | [Manual](DocMain) | [Top](#) | () Next

@@ -49,13 +49,13 @@ large changes to the GUI. However smaller changes will be ignored.
 1. __Advanced QMapShack usage__         
 
     * [Databases and projects](AdvProjects)
+        * [Working with projects](AdvProjActions)
     * [Data handling](AdvDataHandling)    
         * [Tracks](AdvTracks)    
             * [General topics](AdvTrkGeneral)
             * [Working with track graphs](AdvTrkGraphs)
             * [Editing elevation data](AdvTrkElevation)            
         * [Routes and Routing](AdvRoutes)
-        * [QMapShack hotkeys](AdvHotkeys) 
        
 1. __Getting Help__
 
@@ -78,8 +78,8 @@ large changes to the GUI. However smaller changes will be ignored.
     * [Playground - start your new Wiki page](DocPlayground)
 
 1. __Appendix__
-
-    * [List of images](WikiImages)
+    * [QMapShack hotkeys](AxHotkeys) 
+    * [List of images](AxWikiImages)
     
 - - -
 Prev () | [Home](Home) | [Manual](DocMain) | [Top](#) | () Next

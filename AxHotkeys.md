@@ -1,4 +1,4 @@
-[Prev](AdvRoutes) (Routes and Routing) | [Home](Home) | [Manual](DocMain) | (Frequently Asked Questions) [Next](DocFaqConfig)
+[Prev](DocPlayground) (Playground - start your new Wiki page) | [Home](Home) | [Manual](DocMain) | (List of images) [Next](AxWikiImages)
 - - -
 [TOC]
 - - -
@@ -40,4 +40,4 @@ CTRL-R | Select range of track points.
 When in text edit fields the usual hotkeys can be used.  
 
 - - -
-[Prev](AdvRoutes) (Routes and Routing) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Frequently Asked Questions) [Next](DocFaqConfig)
+[Prev](DocPlayground) (Playground - start your new Wiki page) | [Home](Home) | [Manual](DocMain) | [Top](#) | (List of images) [Next](AxWikiImages)

@@ -90,5 +90,7 @@ creating a command alias from the last command line above by executing
 ///Footnotes Go Here///
 
 ///Footnotes Go Here///
+
+///Footnotes Go Here///
 - - -
 [Prev](BuildWindowsVisualStudio) (Compile Instructions for Windows) | [Home](Home) | [Manual](DocMain) | [Top](#) | () [Next]()
