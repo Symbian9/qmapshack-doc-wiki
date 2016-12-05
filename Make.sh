@@ -38,23 +38,23 @@
 #
 ########################################################################
 
-if   [ "${1-}" = -n ]                    # Sanitize the files specified.
+if   [ "${1-}" = -n ]   # Update navigation bars in the files specified.
 then op=n
      shift
-elif [ "${1-}" = -d ]      # Create "*.html" files from files specified.
+elif [ "${1-}" = -d ]  # Create "*.html" files from the files specified.
 then shift
 fi
 
-files=$(ls "${@-}")                # Determine list of files to process.
+files=$(ls "${@-}")            # Determine the list of files to process.
 
-if [ -n "${op-}" ]                           # Sanitize specified files.
+if [ -n "${op-}" ]      # Update navigation bars in the files specified.
 then for f in $files
      do echo  ./DocFix.sh $f
               ./DocFix.sh $f
         echo  ./NavBar.sh DocMain.md $f
               ./NavBar.sh DocMain.md $f
      done
-else for f in $files                  # Convert specified files to HTML.
+else for f in $files              # Convert the files specified to HTML.
      do echo "./HtmlMake.py $f >" ${f%.md}.html
               ./HtmlMake.py $f >  ${f%.md}.html
      done
