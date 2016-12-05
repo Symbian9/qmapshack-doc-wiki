@@ -30,7 +30,9 @@
 #
 ########################################################################
 
-gawk '#
+gawk '{ sub("$","") } # Convert Windows style line ends to Unix style.
+
+      #
       # If the current input file is not "Home.md" and if its first line
       # does neither start with the "Home" link  nor with the new navig-
       # ation bar,  insert the "Home" link  at the top of the file (this
