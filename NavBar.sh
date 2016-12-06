@@ -110,19 +110,17 @@ gawk -v "toc=${1%.*}" '
        }
 
      #
-     # When the  table of contents  has been read,  correctly initialize
+     # After the table of contents  has been read,  correctly initialize
      # the "next file" navigation information  for the table of contents
      # file to the first file found  in this table of contents and init-
-     # ialize the  "previous file"  navigation information  for the next
-     # file with the  information for  the table  of contents  file (the
-     # "ENDFILE" rule will be executed twice, after reading the table of
-     # contents  and after processing  the source file,  but this second
-     # execution simply does not matter):
+     # ialize the "previous file"  navigation information  for the first
+     # file found in the table of contents file with the information for
+     # the table of contents file:
 
-     ENDFILE {
-        nxt[toc                                       ] = nxt[""]
-        prv[gensub("^.*[(]([^)]+).*$","\\1",1,nxt[""])] = "[Manual](" toc ")"
-             }
+     F { nxt[toc                                       ] = nxt[""]
+         prv[gensub("^.*[(]([^)]+).*$","\\1",1,nxt[""])] = "[Manual](" toc ")"
+         F = 0                                      # Do this only once.
+       }
 
      #
      # Replace the  original simple  navigation link(s)  with a slightly
@@ -148,14 +146,14 @@ gawk -v "toc=${1%.*}" '
      # old navigation bars,  the old "[TOC]"  directive,  as well as any
      # default footnote place markers:
 
-     /^(- - -|[[]TOC[]]|\/{3}Footnotes Go Here\/{3})$/ { next }
+     /^(- - -|[[]TOC[]]|\/\/\/Footnotes Go Here\/\/\/)$/ { next }
 
      #
      # At the beginning of the file drop both, empty lines and rules:
 
      begin && /^( *|---)$/ { next     }
 
-     /[[]\^/               { foot = 1 }       # File contains footnotes.
+     /^[[]\^/              { foot = 1 }       # File contains footnotes.
 
      { print                                       # Print normal lines.
 
@@ -191,7 +189,7 @@ gawk -v "toc=${1%.*}" '
 
            printf "- - -\n"                              # Create bottom
            nav(FILENAME,1)                             # navigation bar.
-         }            ' C=1 "$1" C= "$2" > "$2.out" &&
+         }            ' C=1 "$1" C= F=1 "$2" > "$2.out" &&
 
 if cmp  -s "$2" "$2.out"                          # File did not change,
 then rm -f      "$2.out"                        # so remove output file.
