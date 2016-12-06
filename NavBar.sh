@@ -155,7 +155,7 @@ gawk -v "toc=${1%.*}" '
 
      /^[[]\^/              { foot = 1 }       # File contains footnotes.
 
-     { print                                       # Print normal lines.
+     { printf "%s\n", $0               # Print normal lines, Unix style.
 
        begin = 0                          # Document is no longer empty.
 

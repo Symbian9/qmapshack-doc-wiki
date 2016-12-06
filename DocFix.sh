@@ -81,7 +81,7 @@ gawk '{ sub("$","") } # Convert Windows style line ends to Unix style.
 
         gsub("[]]=[(]","](")   # Again remove equal signs just inserted.
 
-        print        # Finally output the possibly modified source line.
+        printf "%s\n", $0    # Print possibly modified line, Unix style.
       }' "$1" > "$1.out" &&
 
 if cmp  -s "$1" "$1.out"                          # File did not change,
