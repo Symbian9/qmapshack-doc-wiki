@@ -1,4 +1,4 @@
-[Prev](DocFaqConfig) (Configuring and running QMapShack) | [Home](Home) | [Manual](DocMain) | (Data handling) [Next](DocFaqHandling)
+[Prev](DocFaqConfig) (Configuring and running) | [Home](Home) | [Manual](DocMain) | (Data handling) [Next](DocFaqHandling)
 - - -
 [TOC]
 - - -
@@ -43,5 +43,12 @@ window is then opened very quickly and the project name can be edited in it.
 Move the mouse pointer on the database name in the main window. A bubble box appears and shows the physical location of the
 database file.
 
+## How to find database to which a project belongs?
+
+Move the mouse pointer on the project name in the workspace. An information box pops-up. The filename shown ist the name of the
+database to which the project belongs. If no filename is shown then the project doesn't belong to any database.
+
+
+
 - - -
-[Prev](DocFaqConfig) (Configuring and running QMapShack) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Data handling) [Next](DocFaqHandling)
+[Prev](DocFaqConfig) (Configuring and running) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Data handling) [Next](DocFaqHandling)

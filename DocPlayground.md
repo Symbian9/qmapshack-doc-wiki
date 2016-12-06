@@ -1,4 +1,4 @@
-[Prev](DevelopingDocumentation) (Developing Documentation) | [Home](Home) | [Manual](DocMain) | (QMapShack hotkeys) [Next](AxHotkeys)
+[Prev](DevelopingDocumentation) (Developing Documentation) | [Home](Home) | [Manual](DocMain) | (Hotkeys) [Next](AxHotkeys)
 - - -
 [TOC]
 - - -
@@ -21,4 +21,4 @@ Articles currenly being developed:
 
 
 - - -
-[Prev](DevelopingDocumentation) (Developing Documentation) | [Home](Home) | [Manual](DocMain) | [Top](#) | (QMapShack hotkeys) [Next](AxHotkeys)
+[Prev](DevelopingDocumentation) (Developing Documentation) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Hotkeys) [Next](AxHotkeys)

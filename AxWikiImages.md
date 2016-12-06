@@ -1,4 +1,4 @@
-[Prev](AxHotkeys) (QMapShack hotkeys) | [Home](Home) | [Manual](DocMain) | () Next
+[Prev](AxAdvIndex) (Index (Advanced usage and FAQ parts only)) | [Home](Home) | [Manual](DocMain) | () Next
 - - -
 [TOC]
 - - -
@@ -9,6 +9,8 @@ _Currently only for parts_
 
 * Advanced QMapShack usage
 * FAQ
+
+___Do not edit - automatically created!___
 
 Image caption | Used in
 ---------|---------
@@ -43,4 +45,4 @@ Image caption | Used in
 [Waypoint distances](images/DocFaq/WPTDistances.jpg "Waypoint distances") | [DocFaqHandling](DocFaqHandling)
 
 - - -
-[Prev](AxHotkeys) (QMapShack hotkeys) | [Home](Home) | [Manual](DocMain) | [Top](#) | () Next
+[Prev](AxAdvIndex) (Index (Advanced usage and FAQ parts only)) | [Home](Home) | [Manual](DocMain) | [Top](#) | () Next

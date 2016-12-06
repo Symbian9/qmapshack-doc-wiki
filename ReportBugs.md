@@ -47,11 +47,8 @@ Make sure to include the all the information listed below to ease both your and 
 
 [^1]: Some files may contain sensitive data you do not want to share with the world (for instance, .gpx can contain your heart rate and home location).
 
-///Footnotes Go Here///
 
-///Footnotes Go Here///
 
-///Footnotes Go Here///
 
 ///Footnotes Go Here///
 - - -

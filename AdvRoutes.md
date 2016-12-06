@@ -1,4 +1,4 @@
-[Prev](AdvTrkElevation) (Editing elevation data) | [Home](Home) | [Manual](DocMain) | (Frequently Asked Questions) [Next](DocFaqConfig)
+[Prev](AdvTrkElevation) (Editing elevation data) | [Home](Home) | [Manual](DocMain) | (Frequently Asked Questions) [Next](DocFaq)
 - - -
 [TOC]
 - - -
@@ -52,7 +52,7 @@ lines. After saving the new route left-click on the route. In the toolbox shown 
 After a short time interval the online router returns its result and the final route is shown in the map
 window.
 
-## Modify/edit a route
+## Edit a route
 
 An existing route can be modified and edited in various ways:
 
@@ -163,4 +163,4 @@ _Remark:_ These methods work in the same way for track and for route creation.
 
 
 - - -
-[Prev](AdvTrkElevation) (Editing elevation data) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Frequently Asked Questions) [Next](DocFaqConfig)
+[Prev](AdvTrkElevation) (Editing elevation data) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Frequently Asked Questions) [Next](DocFaq)

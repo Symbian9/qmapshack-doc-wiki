@@ -3,9 +3,9 @@
 [TOC]
 - - -
 
-# Editing elevation data
+# Edit elevation data
 
-## Manually editing the elevation of a track point 
+## Manually edit elevation of a track point 
 
 * Open the edit window for the track, 
 * ensure that track data can be edited (open lock in description part of edit window - if lock is closed, click it!)
@@ -14,7 +14,7 @@
 * double-click in the elevation column,
 * set the new elevation in the pop-up window.
 
-## Handling invalid elevation data
+## Handle invalid elevation data
 
 _Remark: This explanation refers to QMapShack patch version a7dbbfb (11.11.2016) and later ones!_
 

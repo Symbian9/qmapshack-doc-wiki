@@ -80,7 +80,7 @@ track.
 A track can be copied together with its attached waypoints to a new project by selecting the track context menu entry
 `Copy Track with Waypoints`. 
 
-## Selecting a range of a track
+## Select a range of a track
 
 (_valid starting with QMS patch version  b9235da (18.11.2016)_)
 
@@ -125,7 +125,7 @@ in a map window as shown in the following image:
   
 Here, the numbers of visible and of total points are different.
 
-## Assigning colors to track activities
+## Assign colors to track activities
 
 **Source:** [Newsgroup discussion](https://sourceforge.net/p/qlandkartegt/mailman/message/35502464)
 
@@ -184,7 +184,7 @@ and both can be visualized in 2 different graphs.
 When editing a track with the `Change timestamps of trackpoints` filter the recorded _speed_ data remain unchanged 
 whereas the calculated _speed*_ data will change their values.
 
-## Avoiding and removing invalid data in a track
+## Avoid and remove invalid data in a track
 
 QMS is a software for
 

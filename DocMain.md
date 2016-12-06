@@ -1,9 +1,9 @@
-Prev () | [Home](Home) | [Manual](DocMain) | () Next
+Prev () | [Home](Home) | [Manual](DocMain) | (Getting started) [Next](DocGettingStarted)
 - - -
 [TOC]
 - - -
 
-**QMapShack Manual**
+# QMapShack Manual
 
 ![start](images/maproom1.png)
 
@@ -12,14 +12,16 @@ always reflect just a snapshot of the current state. Screenshots seen in this ma
 not reflect the current appearance of the program. The manual will be updated if there are 
 large changes to the GUI. However smaller changes will be ignored. 
 
-# __Basic QMapShack usage__
+## __Basic usage__
 
 * Installing QMapShack
+
     * [Install QMapShack](DocGetQMapShack)
     * [Compile Instructions for Windows](BuildWindowsVisualStudio)
     * [Create Offline Documentation](OfflineDocumentation)
 
 * Using QMapShack
+
     * [Getting started](DocGettingStarted)
     * [Command line parameters](DocCmdOptions)
     * [Maps & Digital Elevation Model (DEM)](DocInstallMapDem)
@@ -29,14 +31,14 @@ large changes to the GUI. However smaller changes will be ignored.
         * [Maps: Tips and Tricks](DocMapsTipsTricks)
     * [Working with Projects](DocWorkingWithProjects)
         * [Handle GPX and QMS files](DocHandleGpxFiles)
-        * [Search Google](DocSearchGoogle)    
+        * [Search Google](DocSearchGoogle)
     * [Tracks, Waypoints & Co](DocGisItems)
         * [Create new tracks, waypoints etc.](DocGisItemsNew)
         * [Tracks](DocGisItemsTrk2)
         * [Routes](DocGisItemsRte)
         * [Waypoints](DocGisItemsWpt)
         * [Areas](DocGisItemsArea)
-        * [Edit items with multiple points (tracks, routes, areas)](DocGisItemsEditMultiple)    
+        * [Edit items with multiple points (tracks, routes, areas)](DocGisItemsEditMultiple)
     * [Database](DocGisDatabase)
         * [Workspace and Database](DocGisDatabaseWorkspaceDatabase)
         * [Add/Remove/Synchronize/Search a Database](DocGisDatabaseAddRemove)
@@ -44,7 +46,7 @@ large changes to the GUI. However smaller changes will be ignored.
         * ['Lost & Found' Folder](DocGisDatabaseLostFound)
     * [GPS Devices](DocGisDevices)
 
-# __Advanced QMapShack usage__         
+## __Advanced usage__         
 
 * [Databases and projects](AdvProjects)
     * [Working with projects](AdvProjActions)
@@ -55,10 +57,10 @@ large changes to the GUI. However smaller changes will be ignored.
         * [Editing elevation data](AdvTrkElevation)            
     * [Routes and Routing](AdvRoutes)
        
-# __Getting Help__
+## __Getting Help__
 
-* [Frequently Asked Questions](DocFaqConfig)
-    * [Configuring and running QMapShack](DocFaqConfig)
+* [Frequently Asked Questions](DocFaq)
+    * [Configuring and running](DocFaqConfig)
     * [Databases and projects](DocFaqData)
     * [Data handling](DocFaqHandling)
     * [Routing](DocFaqRouting)
@@ -67,7 +69,7 @@ large changes to the GUI. However smaller changes will be ignored.
 * [Reporting a bug](ReportBugs)
 * [Requesting a feature](RequestFeatures)
 
-# __Developing QMapShack__
+## __Developing QMapShack__
 
 * [Coding Guideline](DeveloperCodingGuideline)
 * [Commit Code](DeveloperCommitCode)
@@ -75,10 +77,12 @@ large changes to the GUI. However smaller changes will be ignored.
 * [Developing Documentation](DevelopingDocumentation)
 * [Playground - start your new Wiki page](DocPlayground)
 
-# __Appendix__
+## __Appendix__
 
-* [QMapShack hotkeys](AxHotkeys) 
-* [List of images](AxWikiImages)
+* [Hotkeys](AxHotkeys) 
+* [Complete table of contents (Advanced usage and FAQ parts only)](AxAdvToc)
+* [Index (Advanced usage and FAQ parts only)](AxAdvIndex)
+* [List of images (Advanced usage and FAQ parts only)](AxWikiImages)
     
 - - -
-Prev () | [Home](Home) | [Manual](DocMain) | [Top](#) | () Next
+Prev () | [Home](Home) | [Manual](DocMain) | [Top](#) | (Getting started) [Next](DocGettingStarted)

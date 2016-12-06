@@ -5,7 +5,7 @@
 
 # Working with track graphs
 
-## Zooming track graphs
+## Zoom track graphs
 
 (_valid starting with QMS patch version  b9235da (18.11.2016)_)
 
@@ -27,7 +27,7 @@ A red vertical or horizontal line at the scales shows how much of the whole scal
 If only part of the graph is displayed (red line is shorter than the whole scale) then the graph can be moved by
 pressing the left mouse button, moving the mouse vertically or horizontally and releasing the mouse button.
 
-## Selecting a scale range for track data display
+## Select a scale range for track data display
 
 When displaying track graphs in the track edit window or when using different colors on a track shown in a map window 
 the user can select a scale range. There are 3 different strategies for such a selection that can be chosen by a click on 

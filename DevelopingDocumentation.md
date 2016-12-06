@@ -423,11 +423,8 @@ Bitbucket, the following conditions must be met:
     still residing in directory `playground/` nor check whether (yet)
     untracked files are referenced.
 
-///Footnotes Go Here///
 
-///Footnotes Go Here///
 
-///Footnotes Go Here///
 
 ///Footnotes Go Here///
 - - -
