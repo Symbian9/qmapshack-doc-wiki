@@ -38,14 +38,6 @@
 #                                                    R Woitok 2016-03-04
 #
 ########################################################################
-#
-# Make sure the file specified as second parameter  ends with a line end
-# indicator (either "\n" = "^J" = "0x0a" or "\r" = "^M" = "0x0d"):
-
-skip=`ls -Ggl "$2" | gawk '{ print $3 - 1 }'`
-char=`od -An -tx1 -j $skip "$2"`
-
-test $char = 0a -o $char = 0d || echo >> "$2"
 
 gawk -v "toc=${1%.*}" '
      #
