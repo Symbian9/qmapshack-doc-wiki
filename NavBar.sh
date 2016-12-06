@@ -51,7 +51,7 @@ gawk -v "toc=${1%.*}" '
      #
      # Define a function  which takes the  current "*.md"  input file as
      # argument and which  creates the Markdown code  for the navigation
-     # bar from the information stored in arrays "p[]" and "n[]":
+     # bar from the information stored in arrays "prv[]" and "nxt[]":
 
      function nav(file,bottom) {
         sub("[.]md$","",file)              # Remove the ".md" extension.
@@ -59,17 +59,17 @@ gawk -v "toc=${1%.*}" '
         #
         # Provide information for previous file:
 
-        if ( p[file] ) { match(p[file],"[[]([^]]*)[]][(]([^)]*)",m)
-                         pr = "[Prev](" m[2] ") (" m[1] ")"
-                       }
+        if ( prv[file] ) { match(prv[file],"[[]([^]]*)[]][(]([^)]*)",m)
+                           pr = "[Prev](" m[2] ") (" m[1] ")"
+                         }
         else             pr = "Prev ()"         # Non-clickable element.
 
         #
         # Provide information for next file:
 
-        if ( n[file] ) { match(n[file],"[[]([^]]*)[]][(]([^)]*)",m)
-                         nx = "(" m[1] ") [Next](" m[2] ")"
-                       }
+        if ( nxt[file] ) { match(nxt[file],"[[]([^]]*)[]][(]([^)]*)",m)
+                           nx = "(" m[1] ") [Next](" m[2] ")"
+                         }
         else             nx = "() Next"         # Non-clickable element.
 
         #
@@ -85,45 +85,37 @@ gawk -v "toc=${1%.*}" '
 
      #
      # Extract the sequence of documents mentioned  in the table of con-
-     # tents source file  and initialize  arrays  "p[]"  (previous), and
-     # "n[]" (next)  from this information  (both arrays take file names
+     # tents source  file and initialize  arrays "prv[]" (previous), and
+     # "nxt[]" (next) from this information (both arrays take file names
      # without extensions as indices):
 
-     C                                  { #
-                                          # Skip lines which do not dir-
-                                          # ectly belong to the table of
-                                          # contents:
+     C { #
+         # Skip lines which do not directly belong to the table of cont-
+         # ents:
 
-                                          if ( ! sub("^ *[*] +","") ) next
+         if ( ! sub("^ *[*] +","") ) next
 
-                                          #
-                                          # Set the "p[]" and "n[]" arr-
-                                          # ay components from the targ-
-                                          # et information extracted:
+         #
+         # Set the "prv[]" and "nxt[]" array components  from the target
+         # information extracted:
 
-                                          match($0,"[[][^]]*[]][(]([^)]*)",m)
+         match($0,"[[][^]]*[]][(]([^)]*)",m)
 
-                                          #
-                                          # If the previous entry is al-
-                                          # ready  set in  array  "p[]",
-                                          # this is  caused by  a header
-                                          # and an immediately following
-                                          # sub-header  in the  contents
-                                          # file  pointing  to the  same
-                                          # target  file.   In that case
-                                          # we do not again set the com-
-                                          # ponent in  "p[]"  to prevent
-                                          # it from pointing to the cur-
-                                          # rent file:
+         #
+         # If  the previous entry is already  set in array "prv[]", this
+         # is caused by a header and an immediately following sub-header
+         # in the contents file  pointing to the  same target file.   In
+         # that case we do not again  set the component in array "prv[]"
+         # to prevent it from pointing to the current file:
 
-                                          if ( ! (m[1] in p) ) p[m[1]] = last_info
+         if ( ! (m[1] in prv) ) prv[m[1]] = last_info
 
-                                          n[last_file] = $0
-                                          last_info    = $0
-                                          last_file    = m[1]
+         nxt[last_file] = $0
+         last_info      = $0
+         last_file      = m[1]
 
-                                          next
-                                        }
+         next
+       }
 
      #
      # When the  table of contents  has been read,  correctly initialize
@@ -135,10 +127,10 @@ gawk -v "toc=${1%.*}" '
      # contents  and after processing  the source file,  but this second
      # execution simply does not matter):
 
-     ENDFILE                            {
-        n[toc                                     ] = n[""]
-        p[gensub("^.*[(]([^)]+).*$","\\1",1,n[""])] = "[Manual](" toc ")"
-                                        }
+     ENDFILE {
+        nxt[toc                                       ] = nxt[""]
+        prv[gensub("^.*[(]([^)]+).*$","\\1",1,nxt[""])] = "[Manual](" toc ")"
+             }
 
      #
      # Replace the  original simple  navigation link(s)  with a slightly
@@ -147,15 +139,16 @@ gawk -v "toc=${1%.*}" '
      # is the bottom navigation bar,  which we remove here  to create it
      # anew in the "END" rule):
 
-     /^([[](Home|Prev)[]]|Prev [(][)])/ { if ( U ) next      # Skip bar.
+     /^([[](Home|Prev)[]]|Prev [(][)])/ {
+        if ( upper_done ) next         # Drop old bottom navigation bar.
 
-                                          nav(FILENAME,0)
-                                          printf "- - -\n[TOC]\n- - -\n\n"
+        nav(FILENAME,0)                                   # Create upper
+        printf "- - -\n[TOC]\n- - -\n\n"               # navigation bar.
 
-                                          e = 1  # Document still empty.
-                                          U = 1    # Upper nav bar done.
+        begin      = 1                        # Document is still empty.
+        upper_done = 1             # Upper navigation bar is dealt with.
 
-                                          next
+        next
                                         }
 
      #
@@ -168,13 +161,13 @@ gawk -v "toc=${1%.*}" '
      #
      # At the beginning of the file drop both, empty lines and rules:
 
-     e && /^( *|---)$/ { next }
+     begin && /^( *|---)$/ { next     }
 
-     /[[]\^/           { foot = 1 }           # File contains footnotes.
+     /[[]\^/               { foot = 1 }       # File contains footnotes.
 
      { print                                       # Print normal lines.
 
-       e = 0                              # Document is no longer empty.
+       begin = 0                          # Document is no longer empty.
 
        #
        # For the sake of the "END" clause check the current line for be-
@@ -183,28 +176,29 @@ gawk -v "toc=${1%.*}" '
        # itional empty line  before adding  the optional  footnote place
        # marker and the bottom navigation bar):
 
-       if ( $0 ~ /^ *$/ ) nl = 0                        # Line is empty.
-       else               nl = 1                    # Line is non-empty.
+       if ( $0 ~ /^ *$/ ) mark = 0                      # Line is empty.
+       else               mark = 1        # Line contains Markdown code.
      }
 
      #
      # Also insert a navigation bar at the end of the file,  provided we
      # have added or updated one at the beginning:
 
-     END { if ( ! U ) exit
+     END { if ( ! upper_done ) exit
 
            #
-           # Insert additional empty line, if necessary:
+           # Append an  additional empty line,  if the last  line in the
+           # file contained Markdown code:
 
-           if ( nl ) printf "\n"
+           if ( mark ) printf "\n"
 
            #
-           # Insert default footnote place marker, if necessary:
+           # Insert the default footnote place marker, if necessary:
 
            if ( foot ) printf "///Footnotes Go Here///\n"
 
-           printf "- - -\n"
-           nav(FILENAME,1)
+           printf "- - -\n"                              # Create bottom
+           nav(FILENAME,1)                             # navigation bar.
          }            ' C=1 "$1" C= "$2" > "$2.out" &&
 
 if cmp  -s "$2" "$2.out"                          # File did not change,
