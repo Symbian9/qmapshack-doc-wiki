@@ -85,20 +85,16 @@ gawk -v "toc=${1%.*}" '
          # Skip lines which do not directly belong to the table of cont-
          # ents:
 
-         if ( ! sub("^ *[*] +","") ) next
+         if ( ! match($0,"^ *[*][ \t]+[[][^]]+[]][(]([^ )]+)",m) ) next
 
          #
-         # Set the "prv[]" and "nxt[]" array components  from the target
-         # information extracted:
-
-         match($0,"[[][^]]*[]][(]([^)]*)",m)
-
-         #
-         # If  the previous entry is already  set in array "prv[]", this
-         # is caused by a header and an immediately following sub-header
-         # in the contents file  pointing to the  same target file.   In
-         # that case we do not again  set the component in array "prv[]"
-         # to prevent it from pointing to the current file:
+         # Set the "prv[]"  and "nxt[]" array components from the target
+         # information extracted  (if the entry  is already set in array
+         # "prv[]", this is caused by a bullet list entry and an immedi-
+         # ately following bullet list entry in the contents file point-
+         # ing to the same  target file.   In that case  we do not again
+         # set the component in array "prv[]" to  prevent it from point-
+         # ing to the current file):
 
          if ( ! (m[1] in prv) ) prv[m[1]] = last_info
 
