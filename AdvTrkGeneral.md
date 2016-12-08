@@ -217,5 +217,26 @@ The user should use the __Change timestamps of track points__ filter to remove i
 Different approaches for avoiding or removing invalid elevations are described 
 [here](#markdown-header-what-to-do-if-a-track-has-invalid-elevation-data).
 
+## Track filters
+
+### Convert track subpoints to points
+
+(_valid starting with QMS patch version 7ac34c818ec1/2016-12-06_)
+
+When creating a track the user creates with the help of mouse clicks (ordinary) trackpoints. Depending on the selected
+[routing method](AdvRoutes#markdown-header-description-of-routing-methods-in-qmapshack) 
+additional trackpoints can be added automatically by the routing algorithm. These additional trackpoints are 
+called _subpoints_. 
+
+Ordinary trackpoints (marked with a big black square when editing a track) can be moved to a new location or deleted 
+while editing the track.
+
+Subpoints (marked with a small black square when editing a track) can't be edited. They are adjusted automatically 
+if a neighboring ordinary trackpoint has changed.
+
+The given track filter converts each subpoint to an ordinary trackpoint.
+
+
+
 - - -
 [Prev](AdvTracks) (Tracks) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Working with track graphs) [Next](AdvTrkGraphs)

@@ -28,6 +28,32 @@
 
 ![Routed track distance](images/DocFaq/Routedtrack.jpg "Routed track distance")
 
+## Which track data is saved in GPX files?
+
+(_valid starting with QMS patch version 7ac34c818ec1/2016-12-06_)
+
+QMS supports 2 kinds of GPX files:
+
+* GPX files that follow strictly the rules of the GPX 1.1 standard,
+* GPX files using additional extensions (_special format_).
+
+In both cases the following track data is saved in the GPX file:
+
+* track name,
+* location of each trackpoint,
+* timestamp of each trackpoint (if available),
+* elevation of each trackpoint (if available).
+
+The additional extensions used in the _special format_ provide information about
+
+* the track history (can't be re-activated when GPX file is re-loaded into QMS),
+* the track display color
+* the type of a trackpoint (trackpoint created by routing engine (so-called subpoint) or 
+  trackpoint created by user interaction)
+
+Trackpoints created by a routing engine can't be edited by the user whereas trackpoints 
+created by a user can be 
+edited (compare section ["Edit items with multiple points"](DocGisItemsEditMultiple)).
 
 
 

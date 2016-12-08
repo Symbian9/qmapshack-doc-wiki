@@ -1,4 +1,4 @@
-Prev () | [Home](Home) | [Manual](DocMain) | (Getting started) [Next](DocGettingStarted)
+Prev () | [Home](Home) | [Manual](DocMain) | (Install QMapShack) [Next](DocGetQMapShack)
 - - -
 [TOC]
 - - -
@@ -85,4 +85,4 @@ large changes to the GUI. However smaller changes will be ignored.
 * [List of images (Advanced usage and FAQ parts only)](AxWikiImages)
     
 - - -
-Prev () | [Home](Home) | [Manual](DocMain) | [Top](#) | (Getting started) [Next](DocGettingStarted)
+Prev () | [Home](Home) | [Manual](DocMain) | [Top](#) | (Install QMapShack) [Next](DocGetQMapShack)

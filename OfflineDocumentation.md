@@ -1,4 +1,4 @@
-[Prev](BuildWindowsVisualStudio) (Compile Instructions for Windows) | [Home](Home) | [Manual](DocMain) | () [Next]()
+[Prev](BuildWindowsVisualStudio) (Compile Instructions for Windows) | [Home](Home) | [Manual](DocMain) | (Getting started) [Next](DocGettingStarted)
 - - -
 [TOC]
 - - -
@@ -90,4 +90,4 @@ creating a command alias from the last command line above by executing
 
 ///Footnotes Go Here///
 - - -
-[Prev](BuildWindowsVisualStudio) (Compile Instructions for Windows) | [Home](Home) | [Manual](DocMain) | [Top](#) | () [Next]()
+[Prev](BuildWindowsVisualStudio) (Compile Instructions for Windows) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Getting started) [Next](DocGettingStarted)
