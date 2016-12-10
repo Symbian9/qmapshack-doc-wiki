@@ -1,3 +1,10 @@
+[Prev](AxAdvToc) (Complete table of contents (Advanced usage and FAQ parts only)) | [Home](Home) | [Manual](DocMain) | (List of images (Advanced usage and FAQ parts only)) [Next](AxWikiImages)
+- - -
+[TOC]
+- - -
+
+
+
 
 # Index
 
@@ -178,3 +185,6 @@
 **Workspace**
 :    [database](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant QMapShack directories (Windows version)"),
      [project](DocFaqData#markdown-header-why-does-qmapshack-use-a-separate-workspacedb-to-save-data "Why does QMapShack use a separate workspace.db to save data?")
+
+- - -
+[Prev](AxAdvToc) (Complete table of contents (Advanced usage and FAQ parts only)) | [Home](Home) | [Manual](DocMain) | [Top](#) | (List of images (Advanced usage and FAQ parts only)) [Next](AxWikiImages)

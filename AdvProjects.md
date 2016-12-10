@@ -1,4 +1,4 @@
-[Prev](DocGisDevices) (GPS Devices) | [Home](Home) | [Manual](DocMain) | (Working with projects) [Next](AdvProjActions)
+[Prev](DocGisDevices) (GPS Devices) | [Home](Home) | [Manual](DocMain) | (General Actions) [Next](AdvProjActions)
 - - -
 [TOC]
 - - -
@@ -73,4 +73,4 @@ When creating a new reference to a data item QMS offers the choice either to cre
 clone (a copy) of the data item.
 
 - - -
-[Prev](DocGisDevices) (GPS Devices) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Working with projects) [Next](AdvProjActions)
+[Prev](DocGisDevices) (GPS Devices) | [Home](Home) | [Manual](DocMain) | [Top](#) | (General Actions) [Next](AdvProjActions)
