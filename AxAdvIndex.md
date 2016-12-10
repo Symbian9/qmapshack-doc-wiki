@@ -1,8 +1,3 @@
-[Prev](AxAdvToc) (Complete table of contents (Advanced usage and FAQ parts only)) | [Home](Home) | [Manual](DocMain) | (List of images (Advanced usage and FAQ parts only)) [Next](AxWikiImages)
-- - -
-[TOC]
-- - -
-
 
 # Index
 
@@ -31,10 +26,12 @@
      [workspace](AdvProjects#markdown-header-organization-of-qmapshack-data "Organization of QMapShack data")
 
 **Database**
-:    [group](AdvProjects#markdown-header-organization-of-qmapshack-data "Organization of QMapShack data"),
+:    [export as GPX file             ](AdvProjActions#markdown-header-export-database-to-gpx-file "Export database to GPX file"),
+     [group](AdvProjects#markdown-header-organization-of-qmapshack-data "Organization of QMapShack data"),
      [location](DocFaqData#markdown-header-how-to-find-the-location-of-a-database-file-used-in-qmapshack "How to find the location of a database file used in QMapShack?"),
      [lost & found](AdvProjects#markdown-header-organization-of-qmapshack-data "Organization of QMapShack data"),
      [project](AdvProjects#markdown-header-organization-of-qmapshack-data "Organization of QMapShack data"),
+     [save as GPX file](AdvProjActions#markdown-header-export-database-to-gpx-file "Export database to GPX file"),
      [workspace](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant QMapShack directories (Windows version)")
 
 **Directories**
@@ -50,13 +47,19 @@
      [filter](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data"),
      [invalid data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
 
+**Export as GPX file**
+:    [database](AdvProjActions#markdown-header-export-database-to-gpx-file "Export database to GPX file"),
+     [project](AdvProjActions#markdown-header-export-database-to-gpx-file "Export database to GPX file")
+
 **Filter**
 :    [elevation](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data"),
      [track](AdvTrkGeneral#markdown-header-avoid-and-remove-invalid-data-in-a-track "Avoid and remove invalid data in a track"),
      [track](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data "Recorded and calculated track data")
 
 **GPX**
-:    [extensions](DocFaqHandling#markdown-header-which-track-data-is-saved-in-gpx-files "Which track data is saved in GPX files?"),
+:    [database saved as GPX](AdvProjActions#markdown-header-export-database-to-gpx-file "Export database to GPX file"),
+     [extensions](DocFaqHandling#markdown-header-which-track-data-is-saved-in-gpx-files "Which track data is saved in GPX files?"),
+     [project saved as GPX](AdvProjActions#markdown-header-save-project "Save project"),
      [subpoint](DocFaqHandling#markdown-header-which-track-data-is-saved-in-gpx-files "Which track data is saved in GPX files?")
 
 **Logfile**
@@ -76,6 +79,7 @@
      [edit](DocFaqData#markdown-header-how-to-edit-quickly-the-name-of-a-project "How to edit quickly the name of a project?"),
      [merge ](AdvProjActions#markdown-header-merge-projects "Merge projects"),
      [roadbook](AdvTrkGeneral#markdown-header-attach-waypoints-to-a-track-to-get-additional-track-information "Attach waypoints to a track to get additional track information"),
+     [save](AdvProjActions#markdown-header-save-project "Save project"),
      [workspace](DocFaqData#markdown-header-why-does-qmapshack-use-a-separate-workspacedb-to-save-data "Why does QMapShack use a separate workspace.db to save data?")
 
 **QMapShack**
@@ -174,6 +178,3 @@
 **Workspace**
 :    [database](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant QMapShack directories (Windows version)"),
      [project](DocFaqData#markdown-header-why-does-qmapshack-use-a-separate-workspacedb-to-save-data "Why does QMapShack use a separate workspace.db to save data?")
-
-- - -
-[Prev](AxAdvToc) (Complete table of contents (Advanced usage and FAQ parts only)) | [Home](Home) | [Manual](DocMain) | [Top](#) | (List of images (Advanced usage and FAQ parts only)) [Next](AxWikiImages)

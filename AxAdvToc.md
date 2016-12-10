@@ -1,8 +1,3 @@
-[Prev](AxHotkeys) (Hotkeys) | [Home](Home) | [Manual](DocMain) | (Index (Advanced usage and FAQ parts only)) [Next](AxAdvIndex)
-- - -
-[TOC]
-- - -
-
 # Complete table of contents
 
  ___(Advanced usage and FAQ parts only!)___
@@ -14,9 +9,13 @@ ___Do not edit - automatically created from DocMain!___
 
 * [Databases and projects](AdvProjects)
     * [Organization of QMapShack data](AdvProjects#markdown-header-organization-of-qmapshack-data)
-    * [Working with projects](AdvProjActions)
-        * [Merge projects](AdvProjActions#markdown-header-merge-projects)
-        * [Copy project](AdvProjActions#markdown-header-copy-project)
+    * [General Actions](AdvProjActions)
+        * [Working with databases](AdvProjActions#markdown-header-working-with-databases)
+            * [Export database to GPX file](AdvProjActions#markdown-header-export-database-to-gpx-file)
+        * [Working with projects](AdvProjActions#markdown-header-working-with-projects)
+            * [Merge projects](AdvProjActions#markdown-header-merge-projects)
+            * [Copy project](AdvProjActions#markdown-header-copy-project)
+            * [Save project](AdvProjActions#markdown-header-save-project)
 * [Data handling](AdvDataHandling)    
     * [Tracks](AdvTracks)    
         * [General topics](AdvTrkGeneral)
@@ -67,6 +66,3 @@ ___Do not edit - automatically created from DocMain!___
         * [Why is a raster map not displayed?   ](DocFaqMaps#markdown-header-why-is-a-raster-map-not-displayed)
         * [How to find the location of a raster map?](DocFaqMaps#markdown-header-how-to-find-the-location-of-a-raster-map)
         * [Is it possible to use several VRT files?](DocFaqMaps#markdown-header-is-it-possible-to-use-several-vrt-files)
-
-- - -
-[Prev](AxHotkeys) (Hotkeys) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Index (Advanced usage and FAQ parts only)) [Next](AxAdvIndex)

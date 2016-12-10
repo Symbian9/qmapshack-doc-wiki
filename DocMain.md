@@ -49,7 +49,7 @@ large changes to the GUI. However smaller changes will be ignored.
 ## __Advanced usage__         
 
 * [Databases and projects](AdvProjects)
-    * [Working with projects](AdvProjActions)
+    * [General Actions](AdvProjActions)
 * [Data handling](AdvDataHandling)    
     * [Tracks](AdvTracks)    
         * [General topics](AdvTrkGeneral)
