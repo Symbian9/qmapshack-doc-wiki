@@ -3,16 +3,158 @@
 [TOC]
 - - -
 
-
-
 # Complete table of contents
-
- ___(Advanced usage and FAQ parts only!)___
 
 ___Do not edit - automatically created from DocMain!___
 
 
-## Advanced usage
+## Basic usage
+
+
+* Installing QMapShack
+    * [Install QMapShack](DocGetQMapShack)
+        * [Windows](DocGetQMapShack#markdown-header-windows)
+        * [OS X](DocGetQMapShack#markdown-header-os-x)
+        * [Linux](DocGetQMapShack#markdown-header-linux)
+            * [From distribution's package system](DocGetQMapShack#markdown-header-from-distributions-package-system)
+            * [From Source](DocGetQMapShack#markdown-header-from-source)
+                * [Prerequisites](DocGetQMapShack#markdown-header-prerequisites)
+                * [Obtaining the Source](DocGetQMapShack#markdown-header-obtaining-the-source)
+                * [Compiling and Installing](DocGetQMapShack#markdown-header-compiling-and-installing)
+    * [Compile Instructions for Windows](BuildWindowsVisualStudio)
+        * [Foreword](BuildWindowsVisualStudio#markdown-header-foreword)
+        * [General remarks](BuildWindowsVisualStudio#markdown-header-general-remarks)
+        * [Required tools for building and installing](BuildWindowsVisualStudio#markdown-header-required-tools-for-building-and-installing)
+        * [Compile instructions](BuildWindowsVisualStudio#markdown-header-compile-instructions)
+            * [C1.) Compile the GDAL library, http://www.gdal.org/](BuildWindowsVisualStudio#markdown-header-c1-compile-the-gdal-library-httpwwwgdalorg)
+            * [C2.) Compile the PROJ library http://trac.osgeo.org/proj/](BuildWindowsVisualStudio#markdown-header-c2-compile-the-proj-library-httptracosgeoorgproj)
+            * [C3.) Compile the routino library http://www.routino.org](BuildWindowsVisualStudio#markdown-header-c3-compile-the-routino-library-httpwwwroutinoorg)
+            * [C4.) Install Qt5.5 http://qt-project.org](BuildWindowsVisualStudio#markdown-header-c4-install-qt55-httpqt-projectorg)
+            * [C5.) Get the QMapShack source from the repository, e.g. ](BuildWindowsVisualStudio#markdown-header-c5-get-the-qmapshack-source-from-the-repository-eg)
+            * [C6.) Start the CMake GUI (you did install CMake before, didn't you)](BuildWindowsVisualStudio#markdown-header-c6-start-the-cmake-gui-you-did-install-cmake-before-didnt-you)
+            * [C7.) Open the generated  build\QMapShack.sln with VS2013](BuildWindowsVisualStudio#markdown-header-c7-open-the-generated-buildqmapshacksln-with-vs2013)
+        * [Creating a Windows binary installer](BuildWindowsVisualStudio#markdown-header-creating-a-windows-binary-installer)
+            * [I1.) Download the VC redistributable installer ](BuildWindowsVisualStudio#markdown-header-i1-download-the-vc-redistributable-installer)
+            * [I2.) [Optional] Download libmysql.dll from mariadb](BuildWindowsVisualStudio#markdown-header-i2-optional-download-libmysqldll-from-mariadb)
+            * [I3.) Copy all required files to intermediate directory](BuildWindowsVisualStudio#markdown-header-i3-copy-all-required-files-to-intermediate-directory)
+            * [I4.) Create the installer with NSIS(3.0b1)](BuildWindowsVisualStudio#markdown-header-i4-create-the-installer-with-nsis30b1)
+        * [TroubleShooting](BuildWindowsVisualStudio#markdown-header-troubleshooting)
+        * [Debugging with VS2013](BuildWindowsVisualStudio#markdown-header-debugging-with-vs2013)
+            * [D1.) Set the solution configuration type to "RelWithDebInfo"](BuildWindowsVisualStudio#markdown-header-d1-set-the-solution-configuration-type-to-relwithdebinfo)
+            * [D2.) Right-click on the project qmapshack and open the settings dialog](BuildWindowsVisualStudio#markdown-header-d2-right-click-on-the-project-qmapshack-and-open-the-settings-dialog)
+            * [D3.) Compile](BuildWindowsVisualStudio#markdown-header-d3-compile)
+            * [D4.) Run/Debug preparations](BuildWindowsVisualStudio#markdown-header-d4-rundebug-preparations)
+            * [D5.) Run/Debug ](BuildWindowsVisualStudio#markdown-header-d5-rundebug)
+    * [Create Offline Documentation](OfflineDocumentation)
+        * [Prerequisites](OfflineDocumentation#markdown-header-prerequisites)
+        * [Building the `*.html` files](OfflineDocumentation#markdown-header-building-the-html-files)
+* Using QMapShack
+    * [Getting started](DocGettingStarted)
+        * [Add maps](DocGettingStarted#markdown-header-add-maps)
+        * [Add digital elevation model](DocGettingStarted#markdown-header-add-digital-elevation-model)
+    * [Command line parameters](DocCmdOptions)
+    * [Maps & Digital Elevation Model (DEM)](DocInstallMapDem)
+        * [Organization of Maps & DEM](DocInstallMapDem#markdown-header-organization-of-maps-dem)
+        * [Installing Maps](DocInstallMapDem#markdown-header-installing-maps)
+        * [Installing Raster Maps or DEM Data](DocInstallMapDem#markdown-header-installing-raster-maps-or-dem-data)
+        * [Maps](DocInstallMapDem#markdown-header-maps)
+        * [DEM](DocInstallMapDem#markdown-header-dem)
+        * [Install Maps & DEM Data](DocInstallMapDem)
+            * [Organization of Maps & DEM](DocInstallMapDem#markdown-header-organization-of-maps-dem)
+            * [Installing Maps](DocInstallMapDem#markdown-header-installing-maps)
+            * [Installing Raster Maps or DEM Data](DocInstallMapDem#markdown-header-installing-raster-maps-or-dem-data)
+            * [Maps](DocInstallMapDem#markdown-header-maps)
+            * [DEM](DocInstallMapDem#markdown-header-dem)
+        * [Basics about maps and DEM files](DocBasicsMapDem)
+            * [Map formats](DocBasicsMapDem#markdown-header-map-formats)
+                * [Vector Maps](DocBasicsMapDem#markdown-header-vector-maps)
+                * [Raster Maps](DocBasicsMapDem#markdown-header-raster-maps)
+                * [Online Maps](DocBasicsMapDem#markdown-header-online-maps)
+                * [DEM Files](DocBasicsMapDem#markdown-header-dem-files)
+            * [Projection and Scaling](DocBasicsMapDem#markdown-header-projection-and-scaling)
+            * [GDAL *.vrt Maps](DocBasicsMapDem#markdown-header-gdal-vrt-maps)
+            * [WMTS Maps](DocBasicsMapDem#markdown-header-wmts-maps)
+            * [TMS Maps](DocBasicsMapDem#markdown-header-tms-maps)
+        * [Control maps and DEM files](DocControlMapDem)
+            * [Draw Order](DocControlMapDem#markdown-header-draw-order)
+            * [Map Properties](DocControlMapDem#markdown-header-map-properties)
+                * [Workspace](DocControlMapDem#markdown-header-workspace)
+                * [Map and DEM](DocControlMapDem#markdown-header-map-and-dem)
+                * [Vector Maps](DocControlMapDem#markdown-header-vector-maps)
+                * [Online Maps](DocControlMapDem#markdown-header-online-maps)
+                * [DEM Files](DocControlMapDem#markdown-header-dem-files)
+        * [Maps: Tips and Tricks](DocMapsTipsTricks)
+            * [Backdoor to use a WMS server as TMS server](DocMapsTipsTricks#markdown-header-backdoor-to-use-a-wms-server-as-tms-server)
+                * [Use ArcGIS Server like a TMS Server](DocMapsTipsTricks#markdown-header-use-arcgis-server-like-a-tms-server)
+            * [WMTS configuration to access French IGN maps ("Géoportail")](DocMapsTipsTricks#markdown-header-wmts-configuration-to-access-french-ign-maps-geoportail)
+            * [Contour lines](DocMapsTipsTricks#markdown-header-contour-lines)
+                * [Vector map in Garmin IMG format](DocMapsTipsTricks#markdown-header-vector-map-in-garmin-img-format)
+                * [Raster contour line layer](DocMapsTipsTricks#markdown-header-raster-contour-line-layer)
+            * [Using openmtbmap.org & velomap.org in QMapShack (Linux only)](DocMapsTipsTricks#markdown-header-using-openmtbmaporg-velomaporg-in-qmapshack-linux-only)
+                * [Script](DocMapsTipsTricks#markdown-header-script)
+                    * [Configuration](DocMapsTipsTricks#markdown-header-configuration)
+            * [TMS Configuration for NZ Topo](DocMapsTipsTricks#markdown-header-tms-configuration-for-nz-topo)
+            * [(Russian) Raster maps (ex-military (aka "Genshtab" /Maps of the General Staff/), non-classified maps and so on) ](DocMapsTipsTricks#markdown-header-russian-raster-maps-ex-military-aka-genshtab-maps-of-the-general-staff-non-classified-maps-and-so-on)
+            * [Some more WMS & WMTS Server Maps](DocMapsTipsTricks#markdown-header-some-more-wms-wmts-server-maps)
+    * [Working with Projects](DocWorkingWithProjects)
+        * [Handle GPX and QMS files](DocHandleGpxFiles)
+            * [Load GPX Files](DocHandleGpxFiles#markdown-header-load-gpx-files)
+            * [Data view](DocHandleGpxFiles#markdown-header-data-view)
+            * [Save GPX Files](DocHandleGpxFiles#markdown-header-save-gpx-files)
+        * [Search Google](DocSearchGoogle)
+    * [Tracks, Waypoints & Co](DocGisItems)
+        * [Cluttered items](DocGisItems#markdown-header-cluttered-items)
+        * [Draw Order & Copy Items](DocGisItems#markdown-header-draw-order-copy-items)
+        * [History of Changes & Undo/Redo](DocGisItems#markdown-header-history-of-changes-undoredo)
+        * [Create new tracks, waypoints etc.](DocGisItemsNew)
+            * [Waypoint](DocGisItemsNew#markdown-header-waypoint)
+            * [Track](DocGisItemsNew#markdown-header-track)
+            * [Area](DocGisItemsNew#markdown-header-area)
+        * [Tracks](DocGisItemsTrk2)
+            * [Track Details Dialog](DocGisItemsTrk2#markdown-header-track-details-dialog)
+                * [Graph Area](DocGisItemsTrk2#markdown-header-graph-area)
+                * [Info](DocGisItemsTrk2#markdown-header-info)
+                * [Style](DocGisItemsTrk2#markdown-header-style)
+                * [Graphs](DocGisItemsTrk2#markdown-header-graphs)
+                * [Activity](DocGisItemsTrk2#markdown-header-activity)
+                * [Points](DocGisItemsTrk2#markdown-header-points)
+                * [Filter](DocGisItemsTrk2#markdown-header-filter)
+                * [History](DocGisItemsTrk2#markdown-header-history)
+            * [Track Filter](DocGisItemsTrk2#markdown-header-track-filter)
+                * [Points](DocGisItemsTrk2#markdown-header-points)
+                * [Elevation](DocGisItemsTrk2#markdown-header-elevation)
+                * [Timestamps](DocGisItemsTrk2#markdown-header-timestamps)
+                * [Extensions](DocGisItemsTrk2#markdown-header-extensions)
+                * [Split Track](DocGisItemsTrk2#markdown-header-split-track)
+        * [Routes](DocGisItemsRte)
+            * [Routino](DocGisItemsRte#markdown-header-routino)
+                * [Create Own Routino database](DocGisItemsRte#markdown-header-create-own-routino-database)
+            * [MapQuest](DocGisItemsRte#markdown-header-mapquest)
+        * [Waypoints](DocGisItemsWpt)
+            * [View / Edit Details](DocGisItemsWpt#markdown-header-view-edit-details)
+                * [Custom Icons](DocGisItemsWpt#markdown-header-custom-icons)
+                * [The Photo Album](DocGisItemsWpt#markdown-header-the-photo-album)
+            * [Move Waypoint](DocGisItemsWpt#markdown-header-move-waypoint)
+            * [Project Waypoint](DocGisItemsWpt#markdown-header-project-waypoint)
+        * [Areas](DocGisItemsArea)
+            * [View / Edit Details](DocGisItemsArea#markdown-header-view-edit-details)
+        * [Edit items with multiple points (tracks, routes, areas)](DocGisItemsEditMultiple)
+            * [Saving data](DocGisItemsEditMultiple#markdown-header-saving-data)
+            * [Edit line](DocGisItemsEditMultiple#markdown-header-edit-line)
+            * [Routing](DocGisItemsEditMultiple#markdown-header-routing)
+            * [Undo/Redo](DocGisItemsEditMultiple#markdown-header-undoredo)
+    * [Database](DocGisDatabase)
+        * [Workspace and Database](DocGisDatabaseWorkspaceDatabase)
+        * [Add/Remove/Synchronize/Search a Database](DocGisDatabaseAddRemove)
+            * [SQLite](DocGisDatabaseAddRemove#markdown-header-sqlite)
+            * [MySQL (>= 5.6.5 ) ](DocGisDatabaseAddRemove#markdown-header-mysql-565-)
+        * [Folders and Items](DocGisDatabaseFoldersItems)
+        * ['Lost & Found' Folder](DocGisDatabaseLostFound)
+    * [GPS Devices](DocGisDevices)
+
+
+## Advanced usage         
+
 
 * [Databases and projects](AdvProjects)
     * [Organization of QMapShack data](AdvProjects#markdown-header-organization-of-qmapshack-data)
@@ -47,7 +189,8 @@ ___Do not edit - automatically created from DocMain!___
         * [Description of routing methods in QMapShack](AdvRoutes#markdown-header-description-of-routing-methods-in-qmapshack)
 
 
-## Frequently Asked Questions
+## Getting Help
+
 
 * [Frequently Asked Questions](DocFaq)
     * [Configuring and running](DocFaqConfig)
@@ -73,6 +216,45 @@ ___Do not edit - automatically created from DocMain!___
         * [Why is a raster map not displayed?   ](DocFaqMaps#markdown-header-why-is-a-raster-map-not-displayed)
         * [How to find the location of a raster map?](DocFaqMaps#markdown-header-how-to-find-the-location-of-a-raster-map)
         * [Is it possible to use several VRT files?](DocFaqMaps#markdown-header-is-it-possible-to-use-several-vrt-files)
+* [Troubleshooting QMapShack](TroubleShooting)
+    * [Qt comes without SSL support](TroubleShooting#markdown-header-qt-comes-without-ssl-support)
+    * [GDAL comes without curl support](TroubleShooting#markdown-header-gdal-comes-without-curl-support)
+    * [GDAL comes without support for exotic formats](TroubleShooting#markdown-header-gdal-comes-without-support-for-exotic-formats)
+* [Reporting a bug](ReportBugs)
+    * [Additional Tips](ReportBugs#markdown-header-additional-tips)
+        * [Remarks (see example above)](ReportBugs#markdown-header-remarks-see-example-above)
+* [Requesting a feature](RequestFeatures)
+    * [Implement it yourself](RequestFeatures#markdown-header-implement-it-yourself)
+
+
+## Developing QMapShack
+
+
+* [Coding Guideline](DeveloperCodingGuideline)
+* [Commit Code](DeveloperCommitCode)
+    * [Pull Request](DeveloperCommitCode#markdown-header-pull-request)
+* [Add translations](DeveloperTranslate)
+* [Developing Documentation](DevelopingDocumentation)
+    * [Prerequisites](DevelopingDocumentation#markdown-header-prerequisites)
+    * [The _Markdown_ Language](DevelopingDocumentation#markdown-header-the-_markdown_-language)
+    * [Dos and Don'ts](DevelopingDocumentation#markdown-header-dos-and-donts)
+    * [Online Editing](DevelopingDocumentation#markdown-header-online-editing)
+    * [Offline Editing](DevelopingDocumentation#markdown-header-offline-editing)
+* [Playground - start your new Wiki page](DocPlayground)
+
+
+## Appendix
+
+
+* [Hotkeys](AxHotkeys) 
+* [Complete table of contents](AxAdvToc)
+    * [Basic usage](AxAdvToc#markdown-header-basic-usage)
+    * [Advanced usage         ](AxAdvToc#markdown-header-advanced-usage)
+    * [Getting Help](AxAdvToc#markdown-header-getting-help)
+    * [Developing QMapShack](AxAdvToc#markdown-header-developing-qmapshack)
+    * [Appendix](AxAdvToc#markdown-header-appendix)
+* [Index (Advanced usage and FAQ parts only)](AxAdvIndex)
+* [List of images (Advanced usage and FAQ parts only)](AxWikiImages)
 
 - - -
 [Prev](AxHotkeys) (Hotkeys) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Index (Advanced usage and FAQ parts only)) [Next](AxAdvIndex)

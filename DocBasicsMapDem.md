@@ -5,6 +5,8 @@
 
 # Basic knowledge about maps and DEM files
 
+## Map formats
+
 QMapShack supports the following map formats:
 
 ### Vector Maps

@@ -12,7 +12,7 @@ always reflect just a snapshot of the current state. Screenshots seen in this ma
 not reflect the current appearance of the program. The manual will be updated if there are 
 large changes to the GUI. However smaller changes will be ignored. 
 
-## __Basic usage__
+## Basic usage
 
 * Installing QMapShack
 
@@ -46,7 +46,7 @@ large changes to the GUI. However smaller changes will be ignored.
         * ['Lost & Found' Folder](DocGisDatabaseLostFound)
     * [GPS Devices](DocGisDevices)
 
-## __Advanced usage__         
+## Advanced usage         
 
 * [Databases and projects](AdvProjects)
     * [General Actions](AdvProjActions)
@@ -57,7 +57,7 @@ large changes to the GUI. However smaller changes will be ignored.
         * [Editing elevation data](AdvTrkElevation)            
     * [Routes and Routing](AdvRoutes)
        
-## __Getting Help__
+## Getting Help
 
 * [Frequently Asked Questions](DocFaq)
     * [Configuring and running](DocFaqConfig)
@@ -69,7 +69,7 @@ large changes to the GUI. However smaller changes will be ignored.
 * [Reporting a bug](ReportBugs)
 * [Requesting a feature](RequestFeatures)
 
-## __Developing QMapShack__
+## Developing QMapShack
 
 * [Coding Guideline](DeveloperCodingGuideline)
 * [Commit Code](DeveloperCommitCode)
@@ -77,10 +77,10 @@ large changes to the GUI. However smaller changes will be ignored.
 * [Developing Documentation](DevelopingDocumentation)
 * [Playground - start your new Wiki page](DocPlayground)
 
-## __Appendix__
+## Appendix
 
 * [Hotkeys](AxHotkeys) 
-* [Complete table of contents (Advanced usage and FAQ parts only)](AxAdvToc)
+* [Complete table of contents](AxAdvToc)
 * [Index (Advanced usage and FAQ parts only)](AxAdvIndex)
 * [List of images (Advanced usage and FAQ parts only)](AxWikiImages)
     
