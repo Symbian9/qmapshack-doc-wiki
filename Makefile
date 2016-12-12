@@ -30,15 +30,13 @@
 #
 # Variables:
 #
-# Define the paths to the relevant scripts  ("fix",  "htm",  and "nav"),
-# the name  of the file  containing the  table of contents ("cnt"),  the
-# lists of files  to process  ("src" and "tgt"),  the names  of the time
-# stamp files used internally to record various actions ("fxt" and "nvt"
-# (the values of which must be mentioned in file ".hgignore")):
+# Define the names of the relevant scripts  ("htm" and "nav"),  the name
+# of the file  containing the  table of contents  ("cnt"),  the lists of
+# files to process  ("src" and "tgt"),  the name of the  time stamp file
+# used to record the date of the last call to "make nav" ("nvt", the va-
+# lue of which must be mentioned in file ".hgignore"):
 
 cnt ::= DocMain.md
-fix ::= ./DocFix.sh
-fxt ::= fix.time
 htm ::= ./HtmlMake.py
 nav ::= ./NavBar.sh
 nvt ::= nav.time
@@ -58,7 +56,7 @@ select = $(if $(shell test $(2) -ot $(1) && test $(3) -ot $(1) && echo 1),$?,$(s
 #
 # Target rules:
 
-.PHONY: check clean doc fix help nav
+.PHONY: check clean doc help nav
 
 #
 # Default rule  to display  "help" output  (mind that  the initial white
@@ -83,31 +81,12 @@ check:
 # Rule to remove all "*.html" files as well as any time stamp files:
 
 clean:
-	rm -f $(tgt) $(fxt) $(nvt)
+	rm -f $(tgt) $(nvt)
 
 #
 # Rule to update all outdated "*.html" files:
 
 doc: $(tgt)
-
-#
-# Rules to fix the individual  "*.md" Markdown source files  so they are
-# usable locally (this rule is implicitly called as prerequisite by rule
-# "nav", and thus there's hardly any need to call it directly):
-
-fix: $(fxt)
-
-#
-# Rule to either fix all  "*.md" files having changed  since the time of
-# the last fixing,  or all "*.md" files,  if the script performing these
-# fixes has  changed since then  (the recipe is using  function "select"
-# defined above to determine the set of files to be processed):
-
-$(fxt): $(fix) $(src)
-	@for f in $(call select,$(fxt),$(fix),$(fix)) ; \
-	 do echo $(fix) $$f ; $(fix) $$f              ; \
-	 done                                         ; \
-	 echo 'Last modified by "make fix".' > $(fxt)
 
 #
 # Rule to create  a single  "*.html" file from its  Markdown source file
@@ -120,7 +99,7 @@ $(fxt): $(fix) $(src)
 #
 # Rule to update the navigation bars in the "*.md" source files:
 
-nav: fix $(nvt)
+nav: $(nvt)
 
 #
 # Rule to either recreate the navigation bars in those "*.md" files hav-
@@ -128,12 +107,10 @@ nav: fix $(nvt)
 # es, if the source file containing the table of contents  or the script
 # generating the navigation bars  has changed since then  (the recipe is
 # using function "select" defined above to determine the set of files to
-# be processed,  and since the  "nav" target  has the  "fix" target as a
-# prerequisite, the changes  made by  this rule  should not  again cause
-# "make fix" to process any files):
+# be processed):
 
 $(nvt): $(cnt) $(nav) $(src)
 	@for f in $(call select,$(nvt),$(cnt),$(nav))  ; \
 	 do echo $(nav) $(cnt) $$f ; $(nav) $(cnt) $$f ; \
 	 done                                          ; \
-	 echo 'Last modified by "make nav".' | tee $(fxt) > $(nvt)
+	 echo 'Last modified by "make nav".' > $(nvt)

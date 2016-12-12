@@ -38,8 +38,52 @@
 #                                                    R Woitok 2016-03-04
 #
 ########################################################################
+#
+# Define the URL to the online documentation wiki on the Bitbucket serv-
+# er, the regular expression matching the default footnote place marker,
+# and the regular expression  matching lines belonging to old navigation
+# bars:
 
-gawk -v "toc=${1%.*}" '
+bitbucket='https://bitbucket.org/maproom/qmapshack/wiki/'
+footnote='///Footnotes Go Here///$'
+navbar='[[](Home|Prev)[]]|Prev [(][)]|- - -$|[[]TOC[]]$'
+
+#
+# The regular expression in variable "r0"  matches any line specifying a
+# default footnote place marker or belonging to an already existing nav-
+# igation bar.
+#
+# The regular expression  in variable "r1"  matches any inline or refer-
+# ence-style link to a file in the online documentation wiki on the Bit-
+# bucket server.  The first parenthesized sub-expression matches the be-
+# gin of the link definition up to but excluding the Bitbucket URL.
+#
+# The regular expression  in variable "r2"  matches any inline or refer-
+# ence-style link  to a local file specified with  ".html" or ".md" ext-
+# ension.   The first parenthesized  sub-expression matches the begin of
+# the link definition up to but excluding this extension.
+#
+# The regular expression  in variable "r3"  matches any inline or refer-
+# ence-style link  to a local file  with a fragment  identifier starting
+# with the Bitbucket "markdown-header-" prefix.  The first parenthesized
+# sub-expression matches the begin of the  link definition up to and in-
+# cluding the "#" character.
+#
+# The regular expression  in variable "r4"  matches any inline or refer-
+# ence-style link  to a local file  with a fragment identifier  not con-
+# taining a colon.   The first parenthesized  sub-expression matches the
+# begin of the link definition  up to and  including the  "#" character,
+# while the third  parenthesized sub-expression matches the fragment id-
+# entifier including  its delimiting character,  provided the identifier
+# isn't delimited by the end of the line.
+
+gawk -v "r0=^($footnote|$navbar)"                                             \
+     -v "r1=(^ *[[][^^][^]]*[]]:[ \t]+|[]][(] *)$bitbucket"                   \
+     -v 'r2=((^ *[[][^^][^]]*[]]:[ \t]+|[]][(] *)[^: #)]+)[.](md|html)'       \
+     -v 'r3=((^ *[[][^^][^]]*[]]:[ \t]+|[]][(] *)[^: #)]*#)markdown-header-'  \
+     -v 'r4=((^ *[[][^^][^]]*[]]:[ \t]+|[]][(] *)[^: #)]*#)([^: )]+([ )]|$))' \
+     -v "toc=${1%.*}" '
+
      #
      # Define a function  which takes the  current "*.md"  input file as
      # argument and which  creates the Markdown code  for the navigation
@@ -51,7 +95,7 @@ gawk -v "toc=${1%.*}" '
         #
         # Provide information for previous file:
 
-        if ( prv[file] ) { match(prv[file],"[[]([^]]*)[]][(]([^)]*)",m)
+        if ( prv[file] ) { match(prv[file],"^([^]]*)[]](.*)$",m)
                            pr = "[Prev](" m[2] ") (" m[1] ")"
                          }
         else             pr = "Prev ()"         # Non-clickable element.
@@ -59,7 +103,7 @@ gawk -v "toc=${1%.*}" '
         #
         # Provide information for next file:
 
-        if ( nxt[file] ) { match(nxt[file],"[[]([^]]*)[]][(]([^)]*)",m)
+        if ( nxt[file] ) { match(nxt[file],"^([^]]*)[]](.*)$",m)
                            nx = "(" m[1] ") [Next](" m[2] ")"
                          }
         else             nx = "() Next"         # Non-clickable element.
@@ -77,15 +121,23 @@ gawk -v "toc=${1%.*}" '
 
      #
      # Extract the sequence of documents mentioned  in the table of con-
-     # tents source  file and initialize  arrays "prv[]" (previous), and
+     # tents source file  and initialize arrays  "prv[]" (previous), and
      # "nxt[]" (next) from this information (both arrays take file names
-     # without extensions as indices):
+     # without extensions as indices and for each index contain the link
+     # text and the link target  separated with "]"  (because this char-
+     # acter is not allowed in link texts, anyway)):
 
      C { #
          # Skip lines which do not directly belong to the table of cont-
          # ents:
 
-         if ( ! match($0,"^ *[*][ \t]+[[][^]]+[]][(]([^ )]+)",m) ) next
+         if ( ! match($0,"^ *[*][ \t]+[[]([^]]+)[]][(] *([^ )]+)",m) ) next
+
+         #
+         # Remove a ".html" or ".md" extension from the link target:
+
+         tgt = gensub("[.](md|html)$","",1,m[2])
+         val = m[1] "]" tgt    # Separate link text and target with "]".
 
          #
          # Set the "prv[]"  and "nxt[]" array components from the target
@@ -96,11 +148,11 @@ gawk -v "toc=${1%.*}" '
          # set the component in array "prv[]" to  prevent it from point-
          # ing to the current file):
 
-         if ( ! (m[1] in prv) ) prv[m[1]] = last_info
+         if ( ! (tgt in prv) ) prv[tgt] = last_val
 
-         nxt[last_file] = $0
-         last_info      = $0
-         last_file      = m[1]
+         nxt[last_tgt] = val
+         last_tgt      = tgt
+         last_val      = val
 
          next
        }
@@ -113,36 +165,28 @@ gawk -v "toc=${1%.*}" '
      # file found in the table of contents file with the information for
      # the table of contents file:
 
-     F { nxt[toc                                       ] = nxt[""]
-         prv[gensub("^.*[(]([^)]+).*$","\\1",1,nxt[""])] = "[Manual](" toc ")"
-         F = 0                                      # Do this only once.
+     F { nxt[toc                          ] = nxt[""]
+         prv[gensub("^.*[]]","",1,nxt[""])] = "Manual]" toc
+         begin = 1                            # Document is still empty.
+         F     = 0                                  # Do this only once.
        }
 
      #
-     # Replace the  original simple  navigation link(s)  with a slightly
-     # more sophisticated  navigation bar  or update the  top navigation
-     # bar (if this regular expression should match  a second time, this
-     # is the bottom navigation bar,  which we remove here  to create it
-     # anew in the "END" rule):
+     # If the current input file is not "Home.md", insert a top navigat-
+     # ion bar at the very beginning:
 
-     /^([[](Home|Prev)[]]|Prev [(][)])/ {
-        if ( upper_done ) next         # Drop old bottom navigation bar.
-
+     ++i == 1 && FILENAME != "Home.md" {
         nav(FILENAME,0)                                   # Create upper
         printf "- - -\n[TOC]\n- - -\n\n"               # navigation bar.
 
-        begin      = 1                        # Document is still empty.
-        upper_done = 1             # Upper navigation bar is dealt with.
-
-        next
-                                        }
+        navbar = 1     # Also insert a bottom navigation bar at the end.
+                                       }
 
      #
-     # Remove our special rule line directives "- - -"  belonging to the
-     # old navigation bars,  the old "[TOC]"  directive,  as well as any
-     # default footnote place markers:
+     # Remove anything  belonging to the old navigation bars  as well as
+     # any default footnote place markers:
 
-     /^(- - -|[[]TOC[]]|\/\/\/Footnotes Go Here\/\/\/)$/ { next }
+     $0 ~ r0 { next }
 
      #
      # At the beginning of the file drop both, empty lines and rules:
@@ -151,11 +195,7 @@ gawk -v "toc=${1%.*}" '
 
      /^[[]\^/              { foot = 1 }       # File contains footnotes.
 
-     { printf "%s\n", $0               # Print normal lines, Unix style.
-
-       begin = 0                          # Document is no longer empty.
-
-       #
+     { #
        # For the sake of the "END" clause check the current line for be-
        # ing empty or not  (if it is  not empty and  the current line is
        # the last line of the file, the "END" clause will insert an add-
@@ -164,13 +204,31 @@ gawk -v "toc=${1%.*}" '
 
        if ( $0 ~ /^ *$/ ) mark = 0                      # Line is empty.
        else               mark = 1        # Line contains Markdown code.
+
+       #
+       # Replace Windows-style line ends  with Unix-style line ends, and
+       # from both,  inline and reference-style  link definitions remove
+       # the URL to the external Bitbucket server ("r1"),  any ".md" and
+       # ".html" extensions ("r2"),  as well as all Bitbucket "markdown-
+       # header-" prefixes ("r3")  to prevent their duplication,  and in
+       # all inline and reference-style  link definitions  again add the
+       # Bitbucket "markdown-header-" prefix to fragment identifiers re-
+       # ferring to header identifiers ("r4"):
+
+       printf "%s\n", gensub(r4,          "\\1markdown-header-\\3","G",
+                             gensub(r3,                      "\\1","G",
+                                    gensub(r2,               "\\1","G",
+                                           gensub(r1,        "\\1","G",
+                                                  gensub("\r$", "", 1)))))
+
+       begin = 0                          # Document is no longer empty.
      }
 
      #
      # Also insert a navigation bar at the end of the file,  provided we
-     # have added or updated one at the beginning:
+     # have added one at the beginning:
 
-     END { if ( ! upper_done ) exit
+     END { if ( ! navbar ) exit            # No navigation bar required.
 
            #
            # Append an  additional empty line,  if the last  line in the

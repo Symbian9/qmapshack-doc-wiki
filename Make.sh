@@ -49,14 +49,12 @@ files=$(ls "${@-}")            # Determine the list of files to process.
 
 if [ -n "${op-}" ]      # Update navigation bars in the files specified.
 then for f in $files
-     do echo  ./DocFix.sh $f
-              ./DocFix.sh $f
-        echo  ./NavBar.sh DocMain.md $f
-              ./NavBar.sh DocMain.md $f
+     do echo ./NavBar.sh DocMain.md $f
+             ./NavBar.sh DocMain.md $f
      done
 else for f in $files              # Convert the files specified to HTML.
-     do echo "./HtmlMake.py $f >" ${f%.md}.html
-              ./HtmlMake.py $f >  ${f%.md}.html
+     do echo ./HtmlMake.py $f ">" ${f%.md}.html
+             ./HtmlMake.py $f  >  ${f%.md}.html
      done
 fi                                           # End else [ -n "${op-}" ].
 
