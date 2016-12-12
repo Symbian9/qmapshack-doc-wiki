@@ -61,58 +61,31 @@ from markdown.preprocessors  import Preprocessor
 
 class AddHtmlExt(Preprocessor):
     def run(self, InLines):
-        OutLines  = []                    # To receive the output lines.
-        ReHash    = re.compile(r'#')  # Match fragment identifier separ.
+        OutLines = []                     # To receive the output lines.
 
         #
-        # Ignore all URLs  which refer  to a fragment identifier  in the
-        # current file ("#..."),  to a remote location  ("http://..." or
-        # "https://..."),  or which already contain an extension  (which
-        # is supposed to consist of a dot followed by a sequence of cha-
-        # racters other than slash, dot, and dash (the latter preventing
-        # the trailing ".04-HowTo"  in the "Ubuntu*" URL  to be mistaken
-        # for an extension)):
+        # Regular expression "ReExt" matches both, inline and reference-
+        # style, local link definitions  already featuring  an extension
+        # (without any dashes) which is again suffixed with an addition-
+        # al ".html" extension  (the first parenthesized  sub-expression
+        # matches the  beginning  of the link  definition  including the
+        # dash-free file name extension, provided this file name extens-
+        # ion is suffixed with ".html" and followed by a file name term-
+        # inating character, if any,  which is matched by the third par-
+        # enthesized sub-expression.  Not allowing dashes in the extens-
+        # ion prevents  "Ubuntu-14.04-HowTo"  from being  mistaken for a
+        # file name  with extension).   And regular  expression  "ReUrl"
+        # simply matches both, inline and reference-style local link de-
+        # finitions (the first parenthesized  sub-expression matches the
+        # beginning of the link definition  up to but excluding the file
+        # name terminating  character,  if any,  which is matched by the
+        # third parenthesized sub-expression):
 
-        ReIgnore  = re.compile(r'\]\((#|https?://|(.*/)?[^/]+\.[^/.-]+[#)])')
-        ReProtect = re.compile(r'\]=\(')                  # Match "]=(".
-        ReRPar    = re.compile(r'\)')                # Match end of URL.
-
-        #
-        # In Markdown a URL is always  prefixed with  "]("  and suffixed
-        # with ")":
-
-        ReUrl     = re.compile(r'\]\([^)]+\)')
+        ReExt = re.compile(r'((^ *\[[^^][^]]*\]:[ \t]+|\]\( *).*\.[^-/ )#]+)\.html([ )#]|$)')
+        ReUrl = re.compile(r'((^ *\[[^^][^]]*\]:[ \t]+|\]\( *)[^ :#)]+)([ )#]|$)')
 
         for line in InLines:                 # Process whole input file.
-            while True:                   # Process a single input line.
-                url = ReUrl.search(line)              # Locate next URL.
-
-                if url: Url = url.group()           # Fetch current URL.
-                else: break         # No further URL found in this line.
-
-                if ReIgnore.match(Url): pass            # Skip this URL.
-
-                #
-                # Depending on  whether or not  the URL contains a frag-
-                # ment identifier,  insert the ".html" file extension in
-                # the correct place:
-
-                elif ReHash.search(Url):
-                      Url = ReHash.sub('.html#', Url, count=1)
-                else: Url = ReRPar.sub('.html)', Url, count=1)
-
-                #
-                # Replace the initial "](" with "]=("  to prevent match-
-                # ing here again  and replace the URL with  the possibly
-                # modified version:
-
-                line = ReUrl.sub(']=(' + Url[2:], line, count=1)
-
-            #
-            # After having  processed all URLs  in this line,  again re-
-            # place "]=(" with "](" and output the line:
-
-            OutLines.append(ReProtect.sub('](', line))
+            OutLines.append(ReExt.sub(r'\1\3', ReUrl.sub(r'\1.html\3',line)))
 
         return OutLines
 

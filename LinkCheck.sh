@@ -46,8 +46,7 @@ gawk '#
             # If the current file is a "*.png" file, also mark the corr-
             # esponding "*.svg" file as referenced:
 
-            if ( match(file,"^(.*)[.]png$",mm) ) \
-               delete file_unref[mm[1] ".svg"]
+            delete file_unref[gensub("[.]png$",".svg",1,file)]
 
             #
             # Process each file mentioned in the current file:
@@ -60,9 +59,7 @@ gawk '#
       #
       # Provide input file name without extension:
 
-      BEGINFILE { filename = FILENAME
-                  sub("[.]md$","",filename)
-                }
+      BEGINFILE { filename = gensub("[.]md$","",1,FILENAME) }
 
       #
       # Read in  the names of  tracked files  from standard input,  skip
@@ -93,37 +90,111 @@ gawk '#
                                  }
 
       #
-      # Mark any links defined by footnotes as existing:
+      # Mark any links defined by  Markdown footnotes definitions as ex-
+      # isting:
 
-      match($0,"[[]\\^([^]]+)[]]:",m) { link_def[filename "#fn:"    m[1]] = 1
-                                        link_def[filename "#fnref:" m[1]] = 1
-                                      }
+      match($0,"^[[]\\^([^]]+)[]]:",m) {
+         link_def[filename "#fn:" m[1]] = \
+         def_fn1[filename][m[1]]        = def_fn2[filename][m[1]] = 1
+         next
+                                       }
 
       #
-      # Check every Markdown link in the current line (since regular ex-
-      # pressions are greedy,  we process the last link in the currently
-      # remaining line first and then we simply drop it.  And because we
-      # potentially modify the current input line in this loop, this ac-
-      # tion must be the last one):
+      # Process Markdown reference-style link definitions:
 
-      { while ( match($0,"^(.*)[]][(]([^)]+)[)]",m) ) {
-           $0 = m[1]                 # Drop last link from current line.
+      match($0,"^ {0,3}[[]([^]]+)[]]:[ \t]+([^ ]+)",m) {
+
+         #
+         # If this  is not a reference  to the current input  file, save
+         # the link target  associated with the reference identifier (we
+         # have to keep  two almost  identical arrays  "def_id1[][]" and
+         # "def_id2[][]" here because we will later compare them to arr-
+         # ay "link_id[][]" twice  (both ways),  thereby first  deleting
+         # any correct array components  in array "def_id1[][]" and then
+         # in array "link_id[][]"):
+
+         if ( m[2] == filename ) printf "Self-reference in %s\n", FILENAME
+         else def_id2[filename][m[1]] = m[2]
+
+         #
+         # By not recording a self-reference  in array "def_id2[][]" the
+         # reference identifier will be reported as being undefined, and
+         # by nevertheless  recording it  in array  "def_id1[][]" below,
+         # this self reference  will be reported as unreferenced, should
+         # this definition never be referenced:
+
+         def_id1[filename][m[1]] = m[2]
+         next
+                                                       }
+
+      #
+      # Process  every Markdown footnote   reference in the current line
+      # (since regular expressions are greedy, we  process the last link
+      # in the  currently remaining line first, and  then we simply drop
+      # it by iterating over "m[1]":
+
+      { m[1] = $0                                   # Save current line.
+
+        while ( match(m[1],"^(.*)[[]\\^([^]]+)[]]",m) ) {
+           link_def[filename "#fnref:" m[2]] = ref_fn[filename][m[2]] = 1
+      }                                                 }
+
+      #
+      # Process every  Markdown  reference-style  link reference  in the
+      # current line (since regular  expressions are greedy,  we process
+      # the last link in the currently remaining line first, and then we
+      # simply drop it by iterating over "m[1]":
+
+      { m[1] = $0                                   # Save current line.
+
+        while ( match(m[1],"^(.*)[[]([^]]+)[]] ?[[]([^]]*)[]]",m) ) {
+
+           #
+           # Prevent the rare case where the  "[...][...]" is part of an
+           # inline URL as in  "](http://.../x?y[...][...]=z)" (starting
+           # the greedy  regular  expression with  "^.*"  will check the
+           # rightmost remaining inline link):
+
+           if ( m[1] ~ "^.*[]][(][^)]*$" ) continue
+
+           #
+           # Replace empty link identifier with link text:
+
+           if ( ! m[3] ) m[3] = m[2]
+
+           #
+           # Record the reference to the link identifier in Boolean arr-
+           # ay "ref_id[][]":
+
+           ref_id[filename][m[3]] = 1
+      }                                                             }
+
+      #
+      # Process every  Markdown inline link  in the current line  (since
+      # regular expressions are greedy,  we process the last link in the
+      # currently remaining  line first,  and then we  simply drop it by
+      # iterating over "m[1]":
+
+      { m[1] = $0                                   # Save current line.
+
+        while ( match(m[1],"^(.*)[]][(] *([^ \")]+)( *[)]| +[\"])",m) ) {
 
            #
            # Skip links to external web pages as well as the "Top" link:
 
-           if ( match(m[2],"^http|#$") ) continue
+           if ( m[2] ~ "^http|#$" ) continue
 
            #
-           # If this is not  a self reference,  that is,  a reference to
-           # the current  input file,  add it to the list of  links con-
-           # tained in the current input file, and also mark the link as
-           # existing (mind however, that file "DocMain.md" contains two
-           # self references,  one each in the top and bottom navigation
-           # bars.  So suppress the correspondig message in that case):
+           # If this is not  a self-reference,  that is,  a reference to
+           # the current input file,  add it to arrays "linked_in[]" and
+           # "called_in[]",  otherwise complain (mind however, that file
+           # "DocMain.md" contains two self-references,  one each in the
+           # top and bottom navigation bars.  Thus suppress the corresp-
+           # onding message in that case):
 
            if ( m[2] == filename ) {
-              if ( filename != "DocMain" ) printf "Self-reference in %s\n", FILENAME
+              if ( filename != "DocMain" ) \
+                 printf "Self-reference in %s\n", FILENAME
                                    }
            else { f = l = m[2]
 
@@ -132,12 +203,95 @@ gawk '#
 
                   linked_in[filename] = linked_in[filename] " " f
                   called_in[l]        = called_in[l]        " " FILENAME
-      }         }                                     } # End while ....
+      }         }                                                     }
 
       END { #
             # Sort arrays ascending with respect to their indices:
 
             PROCINFO["sorted_in"] = "@ind_str_asc"
+
+            #
+            # Delete all footnote definition identifiers  in array "def_
+            # fn1[][]" which are also referenced in the same file:
+
+            for ( f in def_fn1 )                         \
+                for ( i in def_fn1[f] )                  \
+                    if ( f in ref_fn && i in ref_fn[f] ) \
+                       delete def_fn1[f][i]
+
+            #
+            # Any array components left  in array "def_fn1[][]" refer to
+            # defined but unreferenced footnote identifiers and are thus
+            # printed:
+
+            for ( f in def_fn1 ) if ( length(def_fn1[f]) ) {
+                printf "\nUnreferenced footnotes in %s.md:\n", f
+                for ( i in def_fn1[f] ) print i
+                                                           }
+
+            #
+            # Delete all footnote references in array "ref_fn[][]" which
+            # are also defined in the same file:
+
+            for ( f in def_fn2 )        \
+                for ( i in def_fn2[f] ) \
+                    if ( f in ref_fn ) delete ref_fn[f][i]
+
+            #
+            # Any array components  left in array "ref_fn[][]"  refer to
+            # referenced but undefined footnote identifiers and are thus
+            # printed:
+
+            for ( f in ref_fn ) if ( length(ref_fn[f]) ) {
+                printf "\nUndefined footnotes in %s.md:\n", f
+                for ( i in ref_fn[f] ) print i
+                                                         }
+
+            #
+            # Delete all reference-style link definitions in array "def_
+            # id1[][]" which are also referenced in the same file:
+
+            for ( f in def_id1 )                         \
+                for ( i in def_id1[f] )                  \
+                    if ( f in ref_id && i in ref_id[f] ) \
+                       delete def_id1[f][i]
+
+            #
+            # Any array components  left in array "def_id1[][]" refer to
+            # defined but  unreferenced reference-style  identifiers and
+            # are thus printed:
+
+            for ( f in def_id1 ) if ( length(def_id1[f]) ) {
+                printf "\nUnreferenced reference-style identifiers in %s.md:\n", f
+                for ( i in def_id1[f] ) print i
+                                                           }
+
+            #
+            # Delete all reference-style link references  in array "ref_
+            # id[][]" which are also defined  in the same file,  and add
+            # the link targets  of all defined  reference-style links to
+            # arrays "linked_in[]" and "called_in[]":
+
+            for ( f in def_id2 ) \
+                for ( i in def_id2[f] ) {
+                    if ( f in ref_id ) delete ref_id[f][i]
+
+                    l = def_id2[f][i]
+
+                    if ( l !~ "^http|#$" ) {
+                       linked_in[f] = linked_in[f] " " l
+                       called_in[l] = called_in[l] " " f ".md"
+                                        }  }
+
+            #
+            # Any array components  left in array "ref_id[][]"  refer to
+            # referenced  but undefined  reference-style identifiers and
+            # are thus printed:
+
+            for ( f in ref_id ) if ( length(ref_id[f]) ) {
+                printf "\nUndefined reference-style identifiers in %s.md:\n", f
+                for ( i in ref_id[f] ) print i
+                                                         }
 
             #
             # Remove all files from array "file_unref[]"  which are rec-
@@ -147,13 +301,8 @@ gawk '#
             referenced("Home")
 
             #
-            # Remove all links marked  as defined in  array "link_def[]"
-            # from array "called_in[]":
-
-            for ( l in called_in ) if ( l in link_def ) delete called_in[l]
-
-            #
-            # If there are any unreferenced files left, print them:
+            # Any array components left in array "file_unref[]" refer to
+            # unreferenced files and are thus printed:
 
             if ( length(file_unref) ) {
                printf "\nUnreferenced files:\n"
@@ -163,14 +312,23 @@ gawk '#
                    # If the file name already contains an extension, use
                    # it, otherwise append extension ".md":
 
-                   if ( f ~ "[.][a-z]+$" ) print f
-                   else                    print f ".md"
+                   if ( f ~ "[.][a-z]+$" ) printf "%s\n"   , f
+                   else                    printf "%s.md\n", f
                                       }}
+
             #
-            # If there are any undefined links left, print them:
+            # Remove all links marked  as defined in  array "link_def[]"
+            # from array "called_in[]":
+
+            for ( l in called_in ) if ( l in link_def ) delete called_in[l]
+
+            #
+            # Any array components left  in array "called_in[]" refer to
+            # non-existing link targets and are thus printed:
 
             if ( length(called_in) ) {
-               printf "\nUndefined links:\n"
-               for ( l in called_in ) print l, "in:" called_in[l]
+               printf "\nBroken links:\n"
+               for ( l in called_in ) \
+                   printf "%s in: %s\n", l, substr(called_in[l],2)
           }                          }
      ' F=1 - F= *.md
