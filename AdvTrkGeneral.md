@@ -162,7 +162,8 @@ Select the action to perform with the track range from this info window:
   replaced with a straight line. The track remains in the range selection mode, that is, more range selections
   can be made immediately.
            
-  The hidden part of the track is shown as a gray track while in range selection mode.
+    The hidden part of the track is shown as a gray track while in range selection mode.
+
 * Show all trackpoints in the range
 * Assign an activity type to the range
 * Copy range into new track
