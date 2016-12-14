@@ -168,6 +168,7 @@ ___Do not edit - automatically created from DocMain!___
 * [Data handling](AdvDataHandling)    
     * [Tracks](AdvTracks)    
         * [General topics](AdvTrkGeneral)
+            * [Get track information](AdvTrkGeneral#markdown-header-get-track-information)
             * [Attach waypoints to a track to get additional track information](AdvTrkGeneral#markdown-header-attach-waypoints-to-a-track-to-get-additional-track-information)
             * [Select a range of a track](AdvTrkGeneral#markdown-header-select-a-range-of-a-track)
             * [Assign colors to track activities](AdvTrkGeneral#markdown-header-assign-colors-to-track-activities)

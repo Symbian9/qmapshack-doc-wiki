@@ -10,7 +10,7 @@
 
 
 **Activity**
-:    [color](AdvTrkGeneral#markdown-header-assign-colors-to-track-activities "Assign colors to track activities"),
+:    [assign color](AdvTrkGeneral#markdown-header-assign-colors-to-track-activities "Assign colors to track activities"),
      [track](AdvTrkGeneral#markdown-header-assign-colors-to-track-activities "Assign colors to track activities")
 
 **Configuration**
@@ -91,6 +91,9 @@
 :    [running](DocFaqConfig#markdown-header-can-i-run-several-qms-instances-at-the-same-time "Can I run several QMS instances at the same time?"),
      [used directories](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant QMapShack directories (Windows version)")
 
+**Range**
+:    [of track](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track")
+
 **Raster map**
 :    [VRT file](DocFaqMaps#markdown-header-how-to-find-the-location-of-a-raster-map "How to find the location of a raster map?"),
      [VRT file](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack "How to use Russian military and similar raster maps with QMapShack?"),
@@ -143,6 +146,7 @@
 **Track**
 :    [GPX](DocFaqHandling#markdown-header-which-track-data-is-saved-in-gpx-files "Which track data is saved in GPX files?"),
      [activity](AdvTrkGeneral#markdown-header-assign-colors-to-track-activities "Assign colors to track activities"),
+     [assign activity](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track"),
      [attach waypoint](AdvTrkGeneral#markdown-header-attach-waypoints-to-a-track-to-get-additional-track-information "Attach waypoints to a track to get additional track information"),
      [calculated](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data "Recorded and calculated track data"),
      [edit window](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data "Recorded and calculated track data"),
@@ -150,6 +154,7 @@
      [filter](AdvTrkGeneral#markdown-header-avoid-and-remove-invalid-data-in-a-track "Avoid and remove invalid data in a track"),
      [filter](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data "Recorded and calculated track data"),
      [filter](AdvTrkGeneral#markdown-header-track-filters "Track filters"),
+     [get information                ](AdvTrkGeneral#markdown-header-get-track-information "Get track information"),
      [hidden trackpoints](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track"),
      [invalid data](AdvTrkGeneral#markdown-header-avoid-and-remove-invalid-data-in-a-track "Avoid and remove invalid data in a track"),
      [range](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track"),

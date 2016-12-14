@@ -6,6 +6,51 @@
 
 # Tracks
 
+## Get track information
+
+There are various ways to get information about a track.
+
+* _Using the workspace window:_
+    * Move mouse on the name of the track
+    * An info window pops up. This window gives summary information about the track:
+        * Track name
+        * Length
+        * Total ascent/descent
+        * Total and moving time
+        * Total and moving average speed         
+        * Start and end time
+        * Number of visible and total trackpoints in track
+       
+      Some of this information can be missing if the track is not recorded by a GPS device.
+* _Using the map window:_
+    * _Track is displayed without red frame:_
+        * Left click on the track
+        * An info window pops up that shows the same info as described in the previous point.
+
+      With the help of the icons shown in this info window the user can carry out various operations with the track.
+      
+      In the style tab of the track edit window the user can select one of the track properties (speed, slope, elevation, 
+      fitness data, ...) to be used for coloring the track.
+      
+    * _Track is displayed with red frame:_
+        * To get this state of a track in the map window double click on the track name in the workspace window. The map
+          window is zoomed so that the complete track is displayed in the window.
+        * Move the mouse pointer on the track
+        * An info window pops up that shows information about the closest trackpoint:
+            * Distance run from start and distance remaining to the end of the track
+            * Time run from start and remaining time to the end of the track
+            * Index of the trackpoint             
+            * Time at the trackpoint
+            * Elevation, slope, speed and fitness data at the trackpoint
+        * With a left click on the track the information described in the previous point is displayed.         
+        
+          Some of this information can be missing if the track is not recorded by a GPS device.
+ * _Using the track edit window:_         
+     * To open the track edit window right-click on the track name in the workspace window and select the `Edit...`
+       menu entry in the context menu.
+     * In the graphs tab the user can select up to 3 track properties (speed, slope, elevation, fitness data, ...) 
+       to be displayed as graphs.
+            
 ## Attach waypoints to a track to get additional track information
 
 (_inspired by_ [QMS issues list](https://bitbucket.org/maproom/qmapshack/issues/169/distance-between-waypoints-popup-window))
@@ -84,22 +129,22 @@ A track can be copied together with its attached waypoints to a new project by s
 
 (_valid starting with QMS patch version  b9235da (18.11.2016)_)
 
-The user can select a range of a track, that is a sequence of trackpoints of the track, for further handling
-in several ways:
+The user can select in several ways a range of a track, that is a sequence of trackpoints of the track, for further handling:
 
 * __Using a map window:__
 
      * Display the track in a map window.
      * Click with the left mouse button on the track and release the mouse button. 
-A bubble box pops-up. Choose the "_Select a range of points_" icon in this
-bubble box. The mouse cursor changes to the range selection icon. 
+       An info box pops up. Choose the "_Select a range of points_" icon in this
+       info box. The mouse cursor changes to the range selection icon. 
      * Click with the left mouse button at the location of the start of the range to be selected in the track and
-release the mouse button. 
-     * Move the mouse to the location of the end of the range to be selected and click with the left mouse button.
-  
+       release the mouse button. The clicked point is shown as a circle with red center.
+     * Move the mouse to the location of the end of the range to be selected. 
+     * Click with the left mouse button at the end of the range.
+
 ![Track range selection](images/DocFaq/RangeSelection.png "Track range selection")
   
-* __Using graphs in an edit window:__
+* __Using a graph in an edit window:__
 
     * Click with the left mouse button at the location of the start of the range to be selected in one of the track 
     graphs and
@@ -107,18 +152,22 @@ release the mouse button. A vertical red line jumps to the location of the neare
     * Move the mouse to the location of the end of the range to be selected __in the same graph__ and click with 
 the left mouse button. _Warning:_ If a `No go!` icon pops up at the location of the mouse pointer then the mouse
 was moved out of the graph selected with the first click!
+
+In both cases the selected range will be highlighted in green color and the required action for the trackpoint range 
+can be selected from the info box that pops up. This info box shows also some summary information about the range.
+
+Select the action to perform with the track range from this info window:
+
+* Hide trackpoints located in the range. The part of the track between start and end of the range will be
+  replaced with a straight line. The track remains in the range selection mode, that is, more range selections
+  can be made immediately.
+           
+  The hidden part of the track is shown as a gray track while in range selection mode.
+* Show all trackpoints in the range
+* Assign an activity type to the range
+* Copy range into new track
   
-In both cases the selected range will be highlighted in green color and the required action for the trackpoint range can be selected from 
-the bubble box that pops up.
-
-The user can
-
-* temporarily hide trackpoints in the selected range,
-* copy the selected trackpoints into a new track,
-* delete the hidden trackpoints (use the _Reduce visible track points_ filter),
-* assign an activity type to the range.
-
-If part of the track is hidden then this is shown in the track bubble box when moving the mouse pointer on the track
+If part of the track is hidden then this is shown in the track info box when moving the mouse pointer on the track
 in a map window as shown in the following image:
 
 ![Hidden trackpoints](images/DocFaq/HiddenWPTs.png "Hidden trackpoints")

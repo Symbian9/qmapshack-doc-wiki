@@ -49,7 +49,7 @@ The additional extensions used in the _special format_ provide information about
 * the track history (can't be re-activated when GPX file is re-loaded into QMS),
 * the track display color
 * the type of a trackpoint (trackpoint created by routing engine (so-called subpoint) or 
-  trackpoint created by user interaction)
+  trackpoint created by user interaction, hidden trackpoint, activity)
 
 Trackpoints created by a routing engine can't be edited by the user whereas trackpoints 
 created by a user can be 
