@@ -22,6 +22,7 @@ There are various ways to get information about a track.
         * Number of visible and total trackpoints in track
        
       Some of this information can be missing if the track is not recorded by a GPS device.
+
 * _Using the map window:_
     * _Track is displayed without red frame:_
         * Left click on the track
@@ -45,6 +46,7 @@ There are various ways to get information about a track.
         * With a left click on the track the information described in the previous point is displayed.         
         
           Some of this information can be missing if the track is not recorded by a GPS device.
+
  * _Using the track edit window:_         
      * To open the track edit window right-click on the track name in the workspace window and select the `Edit...`
        menu entry in the context menu.
