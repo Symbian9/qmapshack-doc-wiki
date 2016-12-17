@@ -1,4 +1,4 @@
-[Prev](AxAdvToc) (Complete table of contents) | [Home](Home) | [Manual](DocMain) | (List of images (Advanced usage and FAQ parts only)) [Next](AxWikiImages)
+[Prev](AxGlossary) (Glossary) | [Home](Home) | [Manual](DocMain) | (List of images (Advanced usage and FAQ parts only)) [Next](AxWikiImages)
 - - -
 [TOC]
 - - -
@@ -8,186 +8,356 @@
 
  ___(Advanced usage and FAQ parts only!)___
 
+ 
+_Each entry of this page consists of the name of the index in a separate line in the form_
 
-**Activity**
-:    [assign color](AdvTrkGeneral#markdown-header-assign-colors-to-track-activities "Assign colors to track activities"),
-     [track](AdvTrkGeneral#markdown-header-assign-colors-to-track-activities "Assign colors to track activities")
+"__**IndexName, subindexname**__"
 
-**Configuration**
-:    [Routino](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant QMapShack directories (Windows version)"),
-     [Routino](DocFaqRouting#markdown-header-is-there-a-possibility-to-choose-the-preferred-road-class-when-routing "Is there a possibility to choose the preferred road class when routing?")
+_followed by a comma-separated list of sections where this topic is discussed._
 
-**DEM file**
-:    [VRT file](DocFaqMaps#markdown-header-is-it-possible-to-use-several-vrt-files "Is it possible to use several VRT files?"),
-     [elevation](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
+_The index is in alphabetical order._
 
-**Data organization**
-:    [data items](AdvProjects#markdown-header-organization-of-qmapshack-data "Organization of QMapShack data"),
-     [databases](AdvProjects#markdown-header-organization-of-qmapshack-data "Organization of QMapShack data"),
-     [group in database](AdvProjects#markdown-header-organization-of-qmapshack-data "Organization of QMapShack data"),
-     [lost & found](AdvProjects#markdown-header-organization-of-qmapshack-data "Organization of QMapShack data"),
-     [projects](AdvProjects#markdown-header-organization-of-qmapshack-data "Organization of QMapShack data"),
-     [qms files](AdvProjects#markdown-header-organization-of-qmapshack-data "Organization of QMapShack data"),
-     [workspace](AdvProjects#markdown-header-organization-of-qmapshack-data "Organization of QMapShack data")
+_The symbol_ "__<#>__" _is used as a separator in the case that several links belong to a given index._
 
-**Database**
-:    [export as GPX file             ](AdvProjActions#markdown-header-export-database-to-gpx-file "Export database to GPX file"),
-     [group](AdvProjects#markdown-header-organization-of-qmapshack-data "Organization of QMapShack data"),
-     [location](DocFaqData#markdown-header-how-to-find-the-location-of-a-database-file-used-in-qmapshack "How to find the location of a database file used in QMapShack?"),
-     [lost & found](AdvProjects#markdown-header-organization-of-qmapshack-data "Organization of QMapShack data"),
-     [project](AdvProjects#markdown-header-organization-of-qmapshack-data "Organization of QMapShack data"),
-     [save as GPX file](AdvProjActions#markdown-header-export-database-to-gpx-file "Export database to GPX file"),
-     [workspace](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant QMapShack directories (Windows version)")
 
-**Directories**
-:    [used](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant QMapShack directories (Windows version)")
+**Activity, assign color**
+:  [Assign colors to track activities](AdvTrkGeneral#markdown-header-assign-colors-to-track-activities "Assign colors to track activities")
 
-**Edit window**
-:    [project](AdvTrkGeneral#markdown-header-attach-waypoints-to-a-track-to-get-additional-track-information "Attach waypoints to a track to get additional track information"),
-     [track](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data "Recorded and calculated track data")
+**Activity, of track**
+:  [Assign colors to track activities](AdvTrkGeneral#markdown-header-assign-colors-to-track-activities "Assign colors to track activities")
 
-**Elevation**
-:    [DEM data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data"),
-     [edit](AdvTrkElevation#markdown-header-manually-edit-elevation-of-a-track-point "Manually edit elevation of a track point "),
-     [filter](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data"),
-     [invalid data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
+**Configuration, Routino**
+:  [Is there a possibility to choose the preferred road class when routing?](DocFaqRouting#markdown-header-is-there-a-possibility-to-choose-the-preferred-road-class-when-routing "Is there a possibility to choose the preferred road class when routing?") __<#>__ 
+    [User-relevant QMapShack directories (Windows version)](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant QMapShack directories (Windows version)")
 
-**Export as GPX file**
-:    [database](AdvProjActions#markdown-header-export-database-to-gpx-file "Export database to GPX file"),
-     [project](AdvProjActions#markdown-header-export-database-to-gpx-file "Export database to GPX file")
+**DEM file, VRT file for**
+:  [Is it possible to use several VRT files?](DocFaqMaps#markdown-header-is-it-possible-to-use-several-vrt-files "Is it possible to use several VRT files?")
 
-**Filter**
-:    [elevation](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data"),
-     [track](AdvTrkGeneral#markdown-header-avoid-and-remove-invalid-data-in-a-track "Avoid and remove invalid data in a track"),
-     [track](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data "Recorded and calculated track data")
+**DEM file, elevation**
+:  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
 
-**GPX**
-:    [database saved as GPX](AdvProjActions#markdown-header-export-database-to-gpx-file "Export database to GPX file"),
-     [extensions](DocFaqHandling#markdown-header-which-track-data-is-saved-in-gpx-files "Which track data is saved in GPX files?"),
-     [project saved as GPX](AdvProjActions#markdown-header-save-project "Save project"),
-     [subpoint](DocFaqHandling#markdown-header-which-track-data-is-saved-in-gpx-files "Which track data is saved in GPX files?")
+**Data organization, data items**
+:  [Organization of QMapShack data](AdvProjects#markdown-header-organization-of-qmapshack-data "Organization of QMapShack data")
 
-**Logfile**
-:    [location](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant QMapShack directories (Windows version)")
+**Data organization, databases**
+:  [Organization of QMapShack data](AdvProjects#markdown-header-organization-of-qmapshack-data "Organization of QMapShack data")
 
-**Map**
-:    [cache](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant QMapShack directories (Windows version)"),
-     [zoom](DocFaqMaps#markdown-header-is-there-a-possibility-to-display-small-roadstracks-in-a-vector-map-without-zooming-in-too-much "Is there a possibility to display small roads/tracks in a vector map without zooming in too much?")
+**Data organization, groups in database**
+:  [Organization of QMapShack data](AdvProjects#markdown-header-organization-of-qmapshack-data "Organization of QMapShack data")
 
-**Planetsplitter**
-:    [Routino](DocFaqRouting#markdown-header-does-qmapshackroutino-support-cross-border-routing "Does QMapShack/Routino support cross-border routing?")
+**Data organization, lost & found**
+:  [Organization of QMapShack data](AdvProjects#markdown-header-organization-of-qmapshack-data "Organization of QMapShack data")
 
-**Project**
-:    [copy](AdvProjActions#markdown-header-copy-project "Copy project"),
-     [database ](DocFaqData#markdown-header-how-to-find-database-to-which-a-project-belongs "How to find database to which a project belongs?"),
-     [edit window](AdvTrkGeneral#markdown-header-attach-waypoints-to-a-track-to-get-additional-track-information "Attach waypoints to a track to get additional track information"),
-     [edit](DocFaqData#markdown-header-how-to-edit-quickly-the-name-of-a-project "How to edit quickly the name of a project?"),
-     [merge ](AdvProjActions#markdown-header-merge-projects "Merge projects"),
-     [roadbook](AdvTrkGeneral#markdown-header-attach-waypoints-to-a-track-to-get-additional-track-information "Attach waypoints to a track to get additional track information"),
-     [save](AdvProjActions#markdown-header-save-project "Save project"),
-     [workspace](DocFaqData#markdown-header-why-does-qmapshack-use-a-separate-workspacedb-to-save-data "Why does QMapShack use a separate workspace.db to save data?")
+**Data organization, projects**
+:  [Organization of QMapShack data](AdvProjects#markdown-header-organization-of-qmapshack-data "Organization of QMapShack data")
 
-**QMapShack**
-:    [running](DocFaqConfig#markdown-header-can-i-run-several-qms-instances-at-the-same-time "Can I run several QMS instances at the same time?"),
-     [used directories](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant QMapShack directories (Windows version)")
+**Data organization, qms files**
+:  [Organization of QMapShack data](AdvProjects#markdown-header-organization-of-qmapshack-data "Organization of QMapShack data")
 
-**Range**
-:    [of track](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track")
+**Data organization, workspace in**
+:  [Organization of QMapShack data](AdvProjects#markdown-header-organization-of-qmapshack-data "Organization of QMapShack data")
 
-**Raster map**
-:    [VRT file](DocFaqMaps#markdown-header-how-to-find-the-location-of-a-raster-map "How to find the location of a raster map?"),
-     [VRT file](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack "How to use Russian military and similar raster maps with QMapShack?"),
-     [display](DocFaqMaps#markdown-header-why-is-a-raster-map-not-displayed "Why is a raster map not displayed?   "),
-     [location](DocFaqMaps#markdown-header-how-to-find-the-location-of-a-raster-map "How to find the location of a raster map?"),
-     [overview map](DocFaqMaps#markdown-header-why-is-a-raster-map-not-displayed "Why is a raster map not displayed?   "),
-     [russian military map    ](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack "How to use Russian military and similar raster maps with QMapShack?"),
-     [sources](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack "How to use Russian military and similar raster maps with QMapShack?")
+**Database, export as GPX file**
+:  [Export database to GPX file](AdvProjActions#markdown-header-export-database-to-gpx-file "Export database to GPX file")
 
-**Route**
-:    [create](AdvRoutes#markdown-header-create-a-route "Create a route"),
-     [edit](AdvRoutes#markdown-header-edit-a-route "Edit a route"),
-     [recalculate](AdvRoutes#markdown-header-edit-a-route "Edit a route"),
-     [route instructions](AdvRoutes#markdown-header-get-route-instructions "Get route instructions"),
-     [route instructions](DocFaqRouting#markdown-header-why-do-route-instructions-use-different-languages "Why do route instructions use different languages?"),
-     [routing engine](AdvRoutes#markdown-header-create-a-route "Create a route"),
-     [routing strategy](AdvRoutes#markdown-header-create-a-route "Create a route"),
-     [save](AdvRoutes#markdown-header-save-route-in-gpx-file "Save route in GPX file")
+**Database, group in**
+:  [Organization of QMapShack data](AdvProjects#markdown-header-organization-of-qmapshack-data "Organization of QMapShack data")
 
-**Route instruction**
-:    [get](AdvRoutes#markdown-header-get-route-instructions "Get route instructions"),
-     [language](DocFaqRouting#markdown-header-why-do-route-instructions-use-different-languages "Why do route instructions use different languages?")
+**Database, location**
+:  [How to find the location of a database file used in QMapShack?](DocFaqData#markdown-header-how-to-find-the-location-of-a-database-file-used-in-qmapshack "How to find the location of a database file used in QMapShack?")
 
-**Routing**
-:    [Routing strategy](AdvRoutes#markdown-header-create-a-route "Create a route"),
-     [Routino](DocFaqRouting#markdown-header-is-there-a-possibility-to-choose-the-preferred-road-class-when-routing "Is there a possibility to choose the preferred road class when routing?"),
-     [road class preference](DocFaqRouting#markdown-header-is-there-a-possibility-to-choose-the-preferred-road-class-when-routing "Is there a possibility to choose the preferred road class when routing?")
+**Database, lost & found**
+:  [Organization of QMapShack data](AdvProjects#markdown-header-organization-of-qmapshack-data "Organization of QMapShack data")
 
-**Routing engine**
-:    [Routino](AdvRoutes#markdown-header-create-a-route "Create a route")
+**Database, project in**
+:  [Organization of QMapShack data](AdvProjects#markdown-header-organization-of-qmapshack-data "Organization of QMapShack data")
 
-**Routing method**
-:    [Routino](AdvRoutes#markdown-header-description-of-routing-methods-in-qmapshack "Description of routing methods in QMapShack"),
-     [off-road routing](AdvRoutes#markdown-header-description-of-routing-methods-in-qmapshack "Description of routing methods in QMapShack"),
-     [vector map            ](AdvRoutes#markdown-header-description-of-routing-methods-in-qmapshack "Description of routing methods in QMapShack")
+**Database, save as GPX file**
+:  [Export database to GPX file](AdvProjActions#markdown-header-export-database-to-gpx-file "Export database to GPX file")
 
-**Routino**
-:    [configuration](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant QMapShack directories (Windows version)"),
-     [configuration](DocFaqRouting#markdown-header-is-there-a-possibility-to-choose-the-preferred-road-class-when-routing "Is there a possibility to choose the preferred road class when routing?"),
-     [cross-border routing](DocFaqRouting#markdown-header-does-qmapshackroutino-support-cross-border-routing "Does QMapShack/Routino support cross-border routing?"),
-     [database size](DocFaqRouting#markdown-header-what-is-the-maximum-routino-databases-file-size-that-can-be-handled-by-the-qmapshack-windows-version "What is the maximum Routino databases file size that can be handled by the QMapShack Windows version?"),
-     [planetsplitter](DocFaqRouting#markdown-header-does-qmapshackroutino-support-cross-border-routing "Does QMapShack/Routino support cross-border routing?"),
-     [road class preference](DocFaqRouting#markdown-header-is-there-a-possibility-to-choose-the-preferred-road-class-when-routing "Is there a possibility to choose the preferred road class when routing?"),
-     [routing engine](AdvRoutes#markdown-header-create-a-route "Create a route"),
-     [routing method](AdvRoutes#markdown-header-description-of-routing-methods-in-qmapshack "Description of routing methods in QMapShack")
+**Database, workspace**
+:  [User-relevant QMapShack directories (Windows version)](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant QMapShack directories (Windows version)")
 
-**Subpoint**
-:    [filter](AdvTrkGeneral#markdown-header-convert-track-subpoints-to-points "Convert track subpoints to points")
+**Directories, used**
+:  [User-relevant QMapShack directories (Windows version)](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant QMapShack directories (Windows version)")
 
-**Track**
-:    [GPX](DocFaqHandling#markdown-header-which-track-data-is-saved-in-gpx-files "Which track data is saved in GPX files?"),
-     [activity](AdvTrkGeneral#markdown-header-assign-colors-to-track-activities "Assign colors to track activities"),
-     [assign activity](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track"),
-     [attach waypoint](AdvTrkGeneral#markdown-header-attach-waypoints-to-a-track-to-get-additional-track-information "Attach waypoints to a track to get additional track information"),
-     [calculated](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data "Recorded and calculated track data"),
-     [edit window](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data "Recorded and calculated track data"),
-     [edit window](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track"),
-     [filter](AdvTrkGeneral#markdown-header-avoid-and-remove-invalid-data-in-a-track "Avoid and remove invalid data in a track"),
-     [filter](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data "Recorded and calculated track data"),
-     [filter](AdvTrkGeneral#markdown-header-track-filters "Track filters"),
-     [get information                ](AdvTrkGeneral#markdown-header-get-track-information "Get track information"),
-     [hidden trackpoints](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track"),
-     [invalid data](AdvTrkGeneral#markdown-header-avoid-and-remove-invalid-data-in-a-track "Avoid and remove invalid data in a track"),
-     [range](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track"),
-     [recorded](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data "Recorded and calculated track data"),
-     [subpoint](AdvTrkGeneral#markdown-header-convert-track-subpoints-to-points "Convert track subpoints to points"),
-     [subpoint](DocFaqHandling#markdown-header-which-track-data-is-saved-in-gpx-files "Which track data is saved in GPX files?")
+**Edit window, of project**
+:  [Attach waypoints to a track to get additional track information](AdvTrkGeneral#markdown-header-attach-waypoints-to-a-track-to-get-additional-track-information "Attach waypoints to a track to get additional track information")
 
-**Track graph**
-:    [activity](AdvTrkGeneral#markdown-header-assign-colors-to-track-activities "Assign colors to track activities"),
-     [scales](AdvTrkGraphs#markdown-header-select-a-scale-range-for-track-data-display "Select a scale range for track data display"),
-     [track range](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track"),
-     [zoom](AdvTrkGraphs#markdown-header-zoom-track-graphs "Zoom track graphs")
+**Edit window, of track**
+:  [Recorded and calculated track data](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data "Recorded and calculated track data")
 
-**Trackpoint**
-:    [elevation](AdvTrkElevation#markdown-header-manually-edit-elevation-of-a-track-point "Manually edit elevation of a track point "),
-     [hidden](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track"),
-     [properties](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data "Recorded and calculated track data")
+**Elevation, DEM data**
+:  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
 
-**VRT file**
-:    [DEM file](DocFaqMaps#markdown-header-is-it-possible-to-use-several-vrt-files "Is it possible to use several VRT files?"),
-     [raster map    ](DocFaqMaps#markdown-header-how-to-find-the-location-of-a-raster-map "How to find the location of a raster map?"),
-     [raster map](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack "How to use Russian military and similar raster maps with QMapShack?"),
-     [use](DocFaqMaps#markdown-header-is-it-possible-to-use-several-vrt-files "Is it possible to use several VRT files?")
+**Elevation, edit**
+:  [Manually edit elevation of a track point](AdvTrkElevation#markdown-header-manually-edit-elevation-of-a-track-point "Manually edit elevation of a track point")
 
-**Waypoint**
-:    [attached to track](AdvTrkGeneral#markdown-header-attach-waypoints-to-a-track-to-get-additional-track-information "Attach waypoints to a track to get additional track information"),
-     [blue icon](DocFaqMaps#markdown-header-why-are-waypoints-shown-with-a-blue-dot-icon "Why are waypoints shown with a blue dot icon?"),
-     [distance](DocFaqHandling#markdown-header-how-to-find-distance-between-waypoints "How to find distance between waypoints"),
-     [proximity](DocFaqHandling#markdown-header-how-to-find-distance-between-waypoints "How to find distance between waypoints")
+**Elevation, filter**
+:  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
 
-**Workspace**
-:    [database](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant QMapShack directories (Windows version)"),
-     [project](DocFaqData#markdown-header-why-does-qmapshack-use-a-separate-workspacedb-to-save-data "Why does QMapShack use a separate workspace.db to save data?")
+**Elevation, invalid data**
+:  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
+
+**Export as GPX file, database**
+:  [Export database to GPX file](AdvProjActions#markdown-header-export-database-to-gpx-file "Export database to GPX file")
+
+**Export as GPX file, project**
+:  [Export database to GPX file](AdvProjActions#markdown-header-export-database-to-gpx-file "Export database to GPX file")
+
+**Filter, elevation**
+:  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
+
+**Filter, track**
+:  [Avoid and remove invalid data in a track](AdvTrkGeneral#markdown-header-avoid-and-remove-invalid-data-in-a-track "Avoid and remove invalid data in a track") __<#>__ 
+    [Recorded and calculated track data](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data "Recorded and calculated track data")
+
+**GPX, database saved as GPX**
+:  [Export database to GPX file](AdvProjActions#markdown-header-export-database-to-gpx-file "Export database to GPX file")
+
+**GPX, extensions**
+:  [Which track data is saved in GPX files?](DocFaqHandling#markdown-header-which-track-data-is-saved-in-gpx-files "Which track data is saved in GPX files?")
+
+**GPX, save project as GPX**
+:  [Save project](AdvProjActions#markdown-header-save-project "Save project")
+
+**GPX, subpoint handling in**
+:  [Which track data is saved in GPX files?](DocFaqHandling#markdown-header-which-track-data-is-saved-in-gpx-files "Which track data is saved in GPX files?")
+
+**Logfile, location**
+:  [User-relevant QMapShack directories (Windows version)](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant QMapShack directories (Windows version)")
+
+**Map, cache**
+:  [User-relevant QMapShack directories (Windows version)](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant QMapShack directories (Windows version)")
+
+**Map, copy position**
+:  [What is the difference between `Copy position` and `Copy position (Grid)`?](DocFaqMaps#markdown-header-what-is-the-difference-between-copy-position-and-copy-position-grid "What is the difference between `Copy position` and `Copy position (Grid)`?")
+
+**Map, zoom**
+:  [Is there a possibility to display small roads/tracks in a vector map without zooming in too much?](DocFaqMaps#markdown-header-is-there-a-possibility-to-display-small-roadstracks-in-a-vector-map-without-zooming-in-too-much "Is there a possibility to display small roads/tracks in a vector map without zooming in too much?")
+
+**Planetsplitter, Routino**
+:  [Does QMapShack/Routino support cross-border routing?](DocFaqRouting#markdown-header-does-qmapshackroutino-support-cross-border-routing "Does QMapShack/Routino support cross-border routing?")
+
+**Project, copy**
+:  [Copy project](AdvProjActions#markdown-header-copy-project "Copy project")
+
+**Project, edit window**
+:  [Attach waypoints to a track to get additional track information](AdvTrkGeneral#markdown-header-attach-waypoints-to-a-track-to-get-additional-track-information "Attach waypoints to a track to get additional track information")
+
+**Project, edit**
+:  [How to edit quickly the name of a project?](DocFaqData#markdown-header-how-to-edit-quickly-the-name-of-a-project "How to edit quickly the name of a project?")
+
+**Project, in database**
+:  [How to find database to which a project belongs?](DocFaqData#markdown-header-how-to-find-database-to-which-a-project-belongs "How to find database to which a project belongs?")
+
+**Project, in workspace**
+:  [Why does QMapShack use a separate workspace.db to save data?](DocFaqData#markdown-header-why-does-qmapshack-use-a-separate-workspacedb-to-save-data "Why does QMapShack use a separate workspace.db to save data?")
+
+**Project, merge**
+:  [Merge projects](AdvProjActions#markdown-header-merge-projects "Merge projects")
+
+**Project, roadbook**
+:  [Attach waypoints to a track to get additional track information](AdvTrkGeneral#markdown-header-attach-waypoints-to-a-track-to-get-additional-track-information "Attach waypoints to a track to get additional track information")
+
+**Project, save**
+:  [Save project](AdvProjActions#markdown-header-save-project "Save project")
+
+**QMapShack, running**
+:  [Can I run several QMS instances at the same time?](DocFaqConfig#markdown-header-can-i-run-several-qms-instances-at-the-same-time "Can I run several QMS instances at the same time?")
+
+**QMapShack, used directories**
+:  [User-relevant QMapShack directories (Windows version)](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant QMapShack directories (Windows version)")
+
+**Range, of track**
+:  [Select a range of a track](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track")
+
+**Raster map, VRT file for**
+:  [How to use Russian military and similar raster maps with QMapShack?](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack "How to use Russian military and similar raster maps with QMapShack?")
+
+**Raster map, VRT file**
+:  [How to find the location of a raster map?](DocFaqMaps#markdown-header-how-to-find-the-location-of-a-raster-map "How to find the location of a raster map?")
+
+**Raster map, display**
+:  [Why is a raster map not displayed?](DocFaqMaps#markdown-header-why-is-a-raster-map-not-displayed "Why is a raster map not displayed?")
+
+**Raster map, location**
+:  [How to find the location of a raster map?](DocFaqMaps#markdown-header-how-to-find-the-location-of-a-raster-map "How to find the location of a raster map?")
+
+**Raster map, overview map of**
+:  [Why is a raster map not displayed?](DocFaqMaps#markdown-header-why-is-a-raster-map-not-displayed "Why is a raster map not displayed?")
+
+**Raster map, russian military map**
+:  [How to use Russian military and similar raster maps with QMapShack?](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack "How to use Russian military and similar raster maps with QMapShack?")
+
+**Raster map, sources**
+:  [How to use Russian military and similar raster maps with QMapShack?](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack "How to use Russian military and similar raster maps with QMapShack?")
+
+**Route instruction, get**
+:  [Get route instructions](AdvRoutes#markdown-header-get-route-instructions "Get route instructions")
+
+**Route instruction, used language**
+:  [Why do route instructions use different languages?](DocFaqRouting#markdown-header-why-do-route-instructions-use-different-languages "Why do route instructions use different languages?")
+
+**Route, create**
+:  [Create a route](AdvRoutes#markdown-header-create-a-route "Create a route")
+
+**Route, edit**
+:  [Edit a route](AdvRoutes#markdown-header-edit-a-route "Edit a route")
+
+**Route, recalculate**
+:  [Edit a route](AdvRoutes#markdown-header-edit-a-route "Edit a route")
+
+**Route, route instructions**
+:  [Get route instructions](AdvRoutes#markdown-header-get-route-instructions "Get route instructions") __<#>__ 
+    [Why do route instructions use different languages?](DocFaqRouting#markdown-header-why-do-route-instructions-use-different-languages "Why do route instructions use different languages?")
+
+**Route, routing engine**
+:  [Create a route](AdvRoutes#markdown-header-create-a-route "Create a route")
+
+**Route, routing strategy**
+:  [Create a route](AdvRoutes#markdown-header-create-a-route "Create a route")
+
+**Route, save**
+:  [Save route in GPX file](AdvRoutes#markdown-header-save-route-in-gpx-file "Save route in GPX file")
+
+**Routing engine, Routino**
+:  [Create a route](AdvRoutes#markdown-header-create-a-route "Create a route")
+
+**Routing method, Routino**
+:  [Description of routing methods in QMapShack](AdvRoutes#markdown-header-description-of-routing-methods-in-qmapshack "Description of routing methods in QMapShack")
+
+**Routing method, off-road routing**
+:  [Description of routing methods in QMapShack](AdvRoutes#markdown-header-description-of-routing-methods-in-qmapshack "Description of routing methods in QMapShack")
+
+**Routing method, using vector map**
+:  [Description of routing methods in QMapShack](AdvRoutes#markdown-header-description-of-routing-methods-in-qmapshack "Description of routing methods in QMapShack")
+
+**Routing, Routino**
+:  [Is there a possibility to choose the preferred road class when routing?](DocFaqRouting#markdown-header-is-there-a-possibility-to-choose-the-preferred-road-class-when-routing "Is there a possibility to choose the preferred road class when routing?")
+
+**Routing, road class preference**
+:  [Is there a possibility to choose the preferred road class when routing?](DocFaqRouting#markdown-header-is-there-a-possibility-to-choose-the-preferred-road-class-when-routing "Is there a possibility to choose the preferred road class when routing?")
+
+**Routing, routing strategy**
+:  [Create a route](AdvRoutes#markdown-header-create-a-route "Create a route")
+
+**Routino, configuration**
+:  [Is there a possibility to choose the preferred road class when routing?](DocFaqRouting#markdown-header-is-there-a-possibility-to-choose-the-preferred-road-class-when-routing "Is there a possibility to choose the preferred road class when routing?") __<#>__ 
+    [User-relevant QMapShack directories (Windows version)](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant QMapShack directories (Windows version)")
+
+**Routino, cross-border routing**
+:  [Does QMapShack/Routino support cross-border routing?](DocFaqRouting#markdown-header-does-qmapshackroutino-support-cross-border-routing "Does QMapShack/Routino support cross-border routing?")
+
+**Routino, maximum database size**
+:  [What is the maximum Routino databases file size that can be handled by the QMapShack Windows version?](DocFaqRouting#markdown-header-what-is-the-maximum-routino-databases-file-size-that-can-be-handled-by-the-qmapshack-windows-version "What is the maximum Routino databases file size that can be handled by the QMapShack Windows version?")
+
+**Routino, planetsplitter**
+:  [Does QMapShack/Routino support cross-border routing?](DocFaqRouting#markdown-header-does-qmapshackroutino-support-cross-border-routing "Does QMapShack/Routino support cross-border routing?")
+
+**Routino, road class preference**
+:  [Is there a possibility to choose the preferred road class when routing?](DocFaqRouting#markdown-header-is-there-a-possibility-to-choose-the-preferred-road-class-when-routing "Is there a possibility to choose the preferred road class when routing?")
+
+**Routino, routing engine**
+:  [Create a route](AdvRoutes#markdown-header-create-a-route "Create a route")
+
+**Routino, routing method**
+:  [Description of routing methods in QMapShack](AdvRoutes#markdown-header-description-of-routing-methods-in-qmapshack "Description of routing methods in QMapShack")
+
+**Subpoint, filter**
+:  [Convert track subpoints to points](AdvTrkGeneral#markdown-header-convert-track-subpoints-to-points "Convert track subpoints to points")
+
+**Track graph, activity handling**
+:  [Assign colors to track activities](AdvTrkGeneral#markdown-header-assign-colors-to-track-activities "Assign colors to track activities")
+
+**Track graph, scales**
+:  [Select a scale range for track data display](AdvTrkGraphs#markdown-header-select-a-scale-range-for-track-data-display "Select a scale range for track data display")
+
+**Track graph, track range in**
+:  [Select a range of a track](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track")
+
+**Track graph, zoom**
+:  [Zoom track graphs](AdvTrkGraphs#markdown-header-zoom-track-graphs "Zoom track graphs")
+
+**Track, activity**
+:  [Assign colors to track activities](AdvTrkGeneral#markdown-header-assign-colors-to-track-activities "Assign colors to track activities")
+
+**Track, assign activity**
+:  [Select a range of a track](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track")
+
+**Track, attach waypoint**
+:  [Attach waypoints to a track to get additional track information](AdvTrkGeneral#markdown-header-attach-waypoints-to-a-track-to-get-additional-track-information "Attach waypoints to a track to get additional track information")
+
+**Track, calculated**
+:  [Recorded and calculated track data](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data "Recorded and calculated track data")
+
+**Track, edit window**
+:  [Recorded and calculated track data](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data "Recorded and calculated track data") __<#>__ 
+    [Select a range of a track](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track")
+
+**Track, filter**
+:  [Avoid and remove invalid data in a track](AdvTrkGeneral#markdown-header-avoid-and-remove-invalid-data-in-a-track "Avoid and remove invalid data in a track") __<#>__ 
+    [Recorded and calculated track data](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data "Recorded and calculated track data") __<#>__ 
+    [Track filters](AdvTrkGeneral#markdown-header-track-filters "Track filters")
+
+**Track, get information**
+:  [Get track information](AdvTrkGeneral#markdown-header-get-track-information "Get track information")
+
+**Track, hidden trackpoints**
+:  [Select a range of a track](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track")
+
+**Track, invalid data**
+:  [Avoid and remove invalid data in a track](AdvTrkGeneral#markdown-header-avoid-and-remove-invalid-data-in-a-track "Avoid and remove invalid data in a track")
+
+**Track, range**
+:  [Select a range of a track](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track")
+
+**Track, recorded**
+:  [Recorded and calculated track data](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data "Recorded and calculated track data")
+
+**Track, saved in GPX**
+:  [Which track data is saved in GPX files?](DocFaqHandling#markdown-header-which-track-data-is-saved-in-gpx-files "Which track data is saved in GPX files?")
+
+**Track, subpoint**
+:  [Convert track subpoints to points](AdvTrkGeneral#markdown-header-convert-track-subpoints-to-points "Convert track subpoints to points") __<#>__ 
+    [Which track data is saved in GPX files?](DocFaqHandling#markdown-header-which-track-data-is-saved-in-gpx-files "Which track data is saved in GPX files?")
+
+**Trackpoint, elevation**
+:  [Manually edit elevation of a track point](AdvTrkElevation#markdown-header-manually-edit-elevation-of-a-track-point "Manually edit elevation of a track point")
+
+**Trackpoint, hidden**
+:  [Select a range of a track](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track")
+
+**Trackpoint, properties**
+:  [Recorded and calculated track data](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data "Recorded and calculated track data")
+
+**VRT file, for DEM file**
+:  [Is it possible to use several VRT files?](DocFaqMaps#markdown-header-is-it-possible-to-use-several-vrt-files "Is it possible to use several VRT files?")
+
+**VRT file, for raster map**
+:  [How to find the location of a raster map?](DocFaqMaps#markdown-header-how-to-find-the-location-of-a-raster-map "How to find the location of a raster map?") __<#>__ 
+    [How to use Russian military and similar raster maps with QMapShack?](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack "How to use Russian military and similar raster maps with QMapShack?")
+
+**VRT file, use**
+:  [Is it possible to use several VRT files?](DocFaqMaps#markdown-header-is-it-possible-to-use-several-vrt-files "Is it possible to use several VRT files?")
+
+**Waypoint, attached to track**
+:  [Attach waypoints to a track to get additional track information](AdvTrkGeneral#markdown-header-attach-waypoints-to-a-track-to-get-additional-track-information "Attach waypoints to a track to get additional track information")
+
+**Waypoint, distance**
+:  [How to find distance between waypoints](DocFaqHandling#markdown-header-how-to-find-distance-between-waypoints "How to find distance between waypoints")
+
+**Waypoint, proximity**
+:  [How to find distance between waypoints](DocFaqHandling#markdown-header-how-to-find-distance-between-waypoints "How to find distance between waypoints")
+
+**Waypoint, with blue icon**
+:  [Why are waypoints shown with a blue dot icon?](DocFaqMaps#markdown-header-why-are-waypoints-shown-with-a-blue-dot-icon "Why are waypoints shown with a blue dot icon?")
+
+**Workspace, database**
+:  [User-relevant QMapShack directories (Windows version)](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant QMapShack directories (Windows version)")
+
+**Workspace, project in**
+:  [Why does QMapShack use a separate workspace.db to save data?](DocFaqData#markdown-header-why-does-qmapshack-use-a-separate-workspacedb-to-save-data "Why does QMapShack use a separate workspace.db to save data?")
 
 - - -
-[Prev](AxAdvToc) (Complete table of contents) | [Home](Home) | [Manual](DocMain) | [Top](#) | (List of images (Advanced usage and FAQ parts only)) [Next](AxWikiImages)
+[Prev](AxGlossary) (Glossary) | [Home](Home) | [Manual](DocMain) | [Top](#) | (List of images (Advanced usage and FAQ parts only)) [Next](AxWikiImages)

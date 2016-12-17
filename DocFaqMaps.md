@@ -21,6 +21,19 @@ several waypoints with equal coordinates).
 
 ![No blue dot waypoint icons](images/DocFaq/NoBlueDots.jpg "No blue dot waypoint icons")
 
+## What is the difference between `Copy position` and `Copy position (Grid)`?
+
+A right click in a map window at a certain positions opens a context menu which offers (among others) the 2 choices:
+
+* `Copy position`
+* `Copy position (grid)`
+
+In the first case the position is copied in the form `N49.599924° E10.599991°`or `S15.065344° W39.915421°`.
+
+In the second case the position is copied in the form `49.599924 10.599991`or `-15.065344 -39.915421`.
+
+  
+
 
 ## Is there a possibility to display small roads/tracks in a vector map without zooming in too much?
 
@@ -77,7 +90,7 @@ georeference data can't be found within the MAP files.
     * [http://htrd.su/wiki](http://htrd.su/wiki/start?btng[post][tags]=qmapshack) (Russian). This link leads also to a short Russian description of the basic QMapShack features.
     * [Quick way to prepare raster map for QMapShack](QuickWayToPrepareRasterMapForQMapShack)
 
-## Why is a raster map not displayed?   
+## Why is a raster map not displayed?
   
 **Source:** [http://article.gmane.org/gmane.comp.gis.qlandkartegt.user/2624](http://article.gmane.org/gmane.comp.gis.qlandkartegt.user/2624)
 

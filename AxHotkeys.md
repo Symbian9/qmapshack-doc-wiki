@@ -3,7 +3,6 @@
 [TOC]
 - - -
 
-
 # Hotkeys used in QMapShack
 
 Hotkey | Meaning

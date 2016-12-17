@@ -81,6 +81,7 @@ large changes to the GUI. However smaller changes will be ignored.
 
 * [Hotkeys](AxHotkeys) 
 * [Complete table of contents](AxAdvToc)
+* [Glossary](AxGlossary)
 * [Index (Advanced usage and FAQ parts only)](AxAdvIndex)
 * [List of images (Advanced usage and FAQ parts only)](AxWikiImages)
     

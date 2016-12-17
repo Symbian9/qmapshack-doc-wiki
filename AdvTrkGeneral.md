@@ -3,7 +3,6 @@
 [TOC]
 - - -
 
-
 # Tracks
 
 ## Get track information
@@ -46,6 +45,9 @@ There are various ways to get information about a track.
         * With a left click on the track the information described in the previous point is displayed.         
         
           Some of this information can be missing if the track is not recorded by a GPS device.
+          
+        Get out of this track state by then double clicking
+        on a location without a track.        
 
  * _Using the track edit window:_         
      * To open the track edit window right-click on the track name in the workspace window and select the `Edit...`

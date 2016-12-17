@@ -3,7 +3,6 @@
 [TOC]
 - - -
 
-
 # Routes and Routing
 
 ## Create a route

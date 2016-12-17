@@ -1,4 +1,4 @@
-[Prev](AxHotkeys) (Hotkeys) | [Home](Home) | [Manual](DocMain) | (Index (Advanced usage and FAQ parts only)) [Next](AxAdvIndex)
+[Prev](AxHotkeys) (Hotkeys) | [Home](Home) | [Manual](DocMain) | (Glossary) [Next](AxGlossary)
 - - -
 [TOC]
 - - -
@@ -212,9 +212,10 @@ ___Do not edit - automatically created from DocMain!___
         * [Does QMapShack/Routino support cross-border routing?](DocFaqRouting#markdown-header-does-qmapshackroutino-support-cross-border-routing)
     * [Maps](DocFaqMaps)
         * [Why are waypoints shown with a blue dot icon?](DocFaqMaps#markdown-header-why-are-waypoints-shown-with-a-blue-dot-icon)
+        * [What is the difference between `Copy position` and `Copy position (Grid)`?](DocFaqMaps#markdown-header-what-is-the-difference-between-copy-position-and-copy-position-grid)
         * [Is there a possibility to display small roads/tracks in a vector map without zooming in too much?](DocFaqMaps#markdown-header-is-there-a-possibility-to-display-small-roadstracks-in-a-vector-map-without-zooming-in-too-much)
         * [How to use Russian military and similar raster maps with QMapShack?](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack)
-        * [Why is a raster map not displayed?   ](DocFaqMaps#markdown-header-why-is-a-raster-map-not-displayed)
+        * [Why is a raster map not displayed?](DocFaqMaps#markdown-header-why-is-a-raster-map-not-displayed)
         * [How to find the location of a raster map?](DocFaqMaps#markdown-header-how-to-find-the-location-of-a-raster-map)
         * [Is it possible to use several VRT files?](DocFaqMaps#markdown-header-is-it-possible-to-use-several-vrt-files)
 * [Troubleshooting QMapShack](TroubleShooting)
@@ -254,8 +255,9 @@ ___Do not edit - automatically created from DocMain!___
     * [Getting Help](AxAdvToc#markdown-header-getting-help)
     * [Developing QMapShack](AxAdvToc#markdown-header-developing-qmapshack)
     * [Appendix](AxAdvToc#markdown-header-appendix)
+* [Glossary](AxGlossary)
 * [Index (Advanced usage and FAQ parts only)](AxAdvIndex)
 * [List of images (Advanced usage and FAQ parts only)](AxWikiImages)
 
 - - -
-[Prev](AxHotkeys) (Hotkeys) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Index (Advanced usage and FAQ parts only)) [Next](AxAdvIndex)
+[Prev](AxHotkeys) (Hotkeys) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Glossary) [Next](AxGlossary)
