@@ -28,11 +28,9 @@ A right click in a map window at a certain positions opens a context menu which 
 * `Copy position`
 * `Copy position (grid)`
 
-In the first case the position is copied in the form `N49.599924° E10.599991°`or `S15.065344° W39.915421°`.
+In the first case the position is copied in the format used to display coordinates (see menu->View->Setup Coord. Format), e.g `N49° 21.734 E012° 44.146`
 
-In the second case the position is copied in the form `49.599924 10.599991`or `-15.065344 -39.915421`.
-
-  
+In the second case the position is copied as a pure grid coordinate. For long/lat coordinates it's degrees (`49.599924 10.599991` or `-15.065344 -39.915421`). For northing/easting coordinates it's meters. (`6307013m, 1415953m`)
 
 
 ## Is there a possibility to display small roads/tracks in a vector map without zooming in too much?
