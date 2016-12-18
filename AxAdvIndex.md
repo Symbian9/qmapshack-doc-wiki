@@ -3,7 +3,6 @@
 [TOC]
 - - -
 
-
 # Index
 
  ___(Advanced usage and FAQ parts only!)___
@@ -106,7 +105,26 @@ _The symbol_ "__<#>__" _is used as a separator in the case that several links be
 :  [Export database to GPX file](AdvProjActions#markdown-header-export-database-to-gpx-file "Export database to GPX file")
 
 **Filter, elevation**
-:  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
+:  [Elevation filters](AdvTrkFilters#markdown-header-elevation-filters "Elevation filters") __<#>__ 
+    [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
+
+**Filter, interpolation**
+:  [Interpolation filter](AdvTrkFilters#markdown-header-interpolation-filter "Interpolation filter")
+
+**Filter, median**
+:  [Median filter](AdvTrkFilters#markdown-header-median-filter "Median filter")
+
+**Filter, offset elevation**
+:  [Offset elevation](AdvTrkFilters#markdown-header-offset-elevation "Offset elevation")
+
+**Filter, remove extension**
+:  [Remove extension from all trackpoints](AdvTrkFilters#markdown-header-remove-extension-from-all-trackpoints "Remove extension from all trackpoints")
+
+**Filter, replace elevation**
+:  [Replace elevation data](AdvTrkFilters#markdown-header-replace-elevation-data "Replace elevation data")
+
+**Filter, split segments**
+:  [Split segments into tracks](AdvTrkFilters#markdown-header-split-segments-into-tracks "Split segments into tracks")
 
 **Filter, track**
 :  [Avoid and remove invalid data in a track](AdvTrkGeneral#markdown-header-avoid-and-remove-invalid-data-in-a-track "Avoid and remove invalid data in a track") __<#>__ 
@@ -264,8 +282,8 @@ _The symbol_ "__<#>__" _is used as a separator in the case that several links be
 **Routino, routing method**
 :  [Description of routing methods in QMapShack](AdvRoutes#markdown-header-description-of-routing-methods-in-qmapshack "Description of routing methods in QMapShack")
 
-**Subpoint, filter**
-:  [Convert track subpoints to points](AdvTrkGeneral#markdown-header-convert-track-subpoints-to-points "Convert track subpoints to points")
+**Subpoint, convert subpoint filter**
+:  [Convert track subpoints to points](AdvTrkFilters#markdown-header-convert-track-subpoints-to-points "Convert track subpoints to points")
 
 **Track graph, activity handling**
 :  [Assign colors to track activities](AdvTrkGeneral#markdown-header-assign-colors-to-track-activities "Assign colors to track activities")
@@ -279,6 +297,9 @@ _The symbol_ "__<#>__" _is used as a separator in the case that several links be
 **Track graph, zoom**
 :  [Zoom track graphs](AdvTrkGraphs#markdown-header-zoom-track-graphs "Zoom track graphs")
 
+**Track segment, split segments to tracks**
+:  [Split segments into tracks](AdvTrkFilters#markdown-header-split-segments-into-tracks "Split segments into tracks")
+
 **Track, activity**
 :  [Assign colors to track activities](AdvTrkGeneral#markdown-header-assign-colors-to-track-activities "Assign colors to track activities")
 
@@ -291,14 +312,22 @@ _The symbol_ "__<#>__" _is used as a separator in the case that several links be
 **Track, calculated**
 :  [Recorded and calculated track data](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data "Recorded and calculated track data")
 
+**Track, combine tracks**
+:  [Split segments into tracks](AdvTrkFilters#markdown-header-split-segments-into-tracks "Split segments into tracks")
+
+**Track, convert subpoint filter**
+:  [Convert track subpoints to points](AdvTrkFilters#markdown-header-convert-track-subpoints-to-points "Convert track subpoints to points")
+
 **Track, edit window**
 :  [Recorded and calculated track data](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data "Recorded and calculated track data") __<#>__ 
     [Select a range of a track](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track")
 
+**Track, elevation filter**
+:  [Elevation filters](AdvTrkFilters#markdown-header-elevation-filters "Elevation filters")
+
 **Track, filter**
 :  [Avoid and remove invalid data in a track](AdvTrkGeneral#markdown-header-avoid-and-remove-invalid-data-in-a-track "Avoid and remove invalid data in a track") __<#>__ 
-    [Recorded and calculated track data](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data "Recorded and calculated track data") __<#>__ 
-    [Track filters](AdvTrkGeneral#markdown-header-track-filters "Track filters")
+    [Recorded and calculated track data](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data "Recorded and calculated track data")
 
 **Track, get information**
 :  [Get track information](AdvTrkGeneral#markdown-header-get-track-information "Get track information")
@@ -306,8 +335,17 @@ _The symbol_ "__<#>__" _is used as a separator in the case that several links be
 **Track, hidden trackpoints**
 :  [Select a range of a track](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track")
 
+**Track, interpolation filter**
+:  [Interpolation filter](AdvTrkFilters#markdown-header-interpolation-filter "Interpolation filter")
+
 **Track, invalid data**
 :  [Avoid and remove invalid data in a track](AdvTrkGeneral#markdown-header-avoid-and-remove-invalid-data-in-a-track "Avoid and remove invalid data in a track")
+
+**Track, median filter**
+:  [Median filter](AdvTrkFilters#markdown-header-median-filter "Median filter")
+
+**Track, offset elevation filter**
+:  [Offset elevation](AdvTrkFilters#markdown-header-offset-elevation "Offset elevation")
 
 **Track, range**
 :  [Select a range of a track](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track")
@@ -315,12 +353,20 @@ _The symbol_ "__<#>__" _is used as a separator in the case that several links be
 **Track, recorded**
 :  [Recorded and calculated track data](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data "Recorded and calculated track data")
 
+**Track, remove extension filter**
+:  [Remove extension from all trackpoints](AdvTrkFilters#markdown-header-remove-extension-from-all-trackpoints "Remove extension from all trackpoints")
+
+**Track, replace elevation filter**
+:  [Replace elevation data](AdvTrkFilters#markdown-header-replace-elevation-data "Replace elevation data")
+
 **Track, saved in GPX**
 :  [Which track data is saved in GPX files?](DocFaqHandling#markdown-header-which-track-data-is-saved-in-gpx-files "Which track data is saved in GPX files?")
 
+**Track, split segments filter**
+:  [Split segments into tracks](AdvTrkFilters#markdown-header-split-segments-into-tracks "Split segments into tracks")
+
 **Track, subpoint**
-:  [Convert track subpoints to points](AdvTrkGeneral#markdown-header-convert-track-subpoints-to-points "Convert track subpoints to points") __<#>__ 
-    [Which track data is saved in GPX files?](DocFaqHandling#markdown-header-which-track-data-is-saved-in-gpx-files "Which track data is saved in GPX files?")
+:  [Which track data is saved in GPX files?](DocFaqHandling#markdown-header-which-track-data-is-saved-in-gpx-files "Which track data is saved in GPX files?")
 
 **Trackpoint, elevation**
 :  [Manually edit elevation of a track point](AdvTrkElevation#markdown-header-manually-edit-elevation-of-a-track-point "Manually edit elevation of a track point")
@@ -330,6 +376,9 @@ _The symbol_ "__<#>__" _is used as a separator in the case that several links be
 
 **Trackpoint, properties**
 :  [Recorded and calculated track data](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data "Recorded and calculated track data")
+
+**Trackpoint, remove extension**
+:  [Remove extension from all trackpoints](AdvTrkFilters#markdown-header-remove-extension-from-all-trackpoints "Remove extension from all trackpoints")
 
 **VRT file, for DEM file**
 :  [Is it possible to use several VRT files?](DocFaqMaps#markdown-header-is-it-possible-to-use-several-vrt-files "Is it possible to use several VRT files?")

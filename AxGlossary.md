@@ -3,11 +3,6 @@
 [TOC]
 - - -
 
-- - -
-[TOC]
-- - -
-
-
 # Glossary
 
 **Activity**
@@ -17,6 +12,9 @@
 : Abbreviation for __D__igital __E__levation __M__odel. DEM data provides elevation data for maps. 
   QMapShack can handle this data from different sources with the help of _VRT_ files that describe the properties of
   the downloaded elevation data.
+
+**Diary**
+: See __Roadbook__.
 
 **Douglas-Peuker filter**
 : A track filter for smoothing recorded tracks and for removing superfluous trackpoints from a track.
@@ -28,6 +26,11 @@
 : Abbreviation for __G__eographic __I__nformation __S__ystems data.  This data includes all tracks, routes and
   waypoints used in GMapShack.
   
+**Map cache**
+: Special storage location where map data is saved temporarily in a format suitable for fast reloading. One of the
+advantages of the map cache is that cached online map tiles can be displayed immediately instead of waiting for the online
+map server.
+
 **Map view**
 : A window where different types of maps and where tracks, routes and waypoints are displayed and handled.
 
@@ -35,7 +38,7 @@
 : Window/tab in QMapShack where the user can define and activate the vector, raster or online maps for a map view.
 
 **Roadbook**
-: A tabular overview of all data in a project.
+: Also denoted as "_Diary_". A tabular overview of all data in a project.
 
 **Routing method**
 : The method used for creating automatically intermediate subpoints of a track or route between 2 consecutive given
@@ -52,8 +55,15 @@
 : Abbreviation for __T__ile __M__ap __S__ervice. A __TMS__ file provides access to cartographic maps 
   on special map servers. 
 
+**Track details dialog**
+: Also denoted as "_Track edit window_". Window that displays various information about a track and that allows editing
+of some track data.
+
+**Track edit window**
+: See _Track details dialog__.
+
 **Track filter**
-: Tool to manipulate track in a predefined way. QMS supports track filters for elevation, timestamps, splitting tracks and
+: Tool to manipulate a track in a predefined way. QMS supports track filters for elevation, timestamps, splitting tracks and
   others.
 
 **Track range**
@@ -96,13 +106,6 @@
   _Remark:_ From time to time the data view window itself is denoted as workspace.
 
 
-
-
-
-
-
-
-- - -
 
 - - -
 [Prev](AxAdvToc) (Complete table of contents) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Index (Advanced usage and FAQ parts only)) [Next](AxAdvIndex)

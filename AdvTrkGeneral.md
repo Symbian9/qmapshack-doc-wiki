@@ -1,4 +1,4 @@
-[Prev](AdvTracks) (Tracks) | [Home](Home) | [Manual](DocMain) | (Working with track graphs) [Next](AdvTrkGraphs)
+[Prev](AdvTracks) (Tracks) | [Home](Home) | [Manual](DocMain) | (Track filters) [Next](AdvTrkFilters)
 - - -
 [TOC]
 - - -
@@ -185,7 +185,7 @@ Here, the numbers of visible and of total points are different.
 
 To assign an activity to a range of a track proceed as follows:
 
-* Select a track range (for details see [here](#markdown-header-how-to-select-a-range-of-a-track)).
+* Select a track range (for details see [here](#markdown-header-select-a-range-of-a-track)).
 * In the bubble box that pops up click the `Select an activity` icon.
 * Choose the activity from the list which appears.
 
@@ -262,35 +262,15 @@ In a track created with the methods mentioned in the last paragraph
 * can be trackpoints with or without timestamps,
 * can different track segments have trackpoints with inconsistent (invalid) timestamps,
 * can elevation data be available or not or can be even invalid (see discussion 
-[here](#markdown-header-what-to-do-if-a-track-has-invalid-elevation-data)).
+[here](AdvTrkElevation#markdown-header-handle-invalid-elevation-data)).
 
 If there are invalid timestamps or elevation data in a newly created or edited track then QMS displays a red warning message in the track info box.
 
 The user should use the __Change timestamps of track points__ filter to remove invalid timestamps.
 
 Different approaches for avoiding or removing invalid elevations are described 
-[here](#markdown-header-what-to-do-if-a-track-has-invalid-elevation-data).
-
-## Track filters
-
-### Convert track subpoints to points
-
-(_valid starting with QMS patch version 7ac34c818ec1/2016-12-06_)
-
-When creating a track the user creates with the help of mouse clicks (ordinary) trackpoints. Depending on the selected
-[routing method](AdvRoutes#markdown-header-description-of-routing-methods-in-qmapshack) 
-additional trackpoints can be added automatically by the routing algorithm. These additional trackpoints are 
-called _subpoints_. 
-
-Ordinary trackpoints (marked with a big black square when editing a track) can be moved to a new location or deleted 
-while editing the track.
-
-Subpoints (marked with a small black square when editing a track) can't be edited. They are adjusted automatically 
-if a neighboring ordinary trackpoint has changed.
-
-The given track filter converts each subpoint to an ordinary trackpoint.
-
+[here](AdvTrkElevation#markdown-header-handle-invalid-elevation-data).
 
 
 - - -
-[Prev](AdvTracks) (Tracks) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Working with track graphs) [Next](AdvTrkGraphs)
+[Prev](AdvTracks) (Tracks) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Track filters) [Next](AdvTrkFilters)

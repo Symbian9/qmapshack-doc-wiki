@@ -53,6 +53,7 @@ large changes to the GUI. However smaller changes will be ignored.
 * [Data handling](AdvDataHandling)    
     * [Tracks](AdvTracks)    
         * [General topics](AdvTrkGeneral)
+        * [Track filters](AdvTrkFilters)
         * [Working with track graphs](AdvTrkGraphs)
         * [Editing elevation data](AdvTrkElevation)            
     * [Routes and Routing](AdvRoutes)
