@@ -76,8 +76,14 @@ navbar='[[](Home|Prev)[]]|Prev [(][)]|- - -$|[[]TOC[]]$'
 # while the third  parenthesized sub-expression matches the fragment id-
 # entifier including  its delimiting character,  provided the identifier
 # isn't delimited by the end of the line.
+#
+# To prevent MinGW "gawk" on Windows  from producing  Windows-style line
+# ends  we set MinGW specific "gawk" variable  "BINMODE" to "w" and just
+# to make sure we also set standard "gawk" variable "ORS" (output record
+# separator) to just "\n":
 
-gawk -v "r0=^($footnote|$navbar)"                                             \
+gawk -v BINMODE=w -v ORS='\n'                                                 \
+     -v "r0=^($footnote|$navbar)"                                             \
      -v "r1=(^ *[[][^^][^]]*[]]:[ \t]+|[]][(] *)$bitbucket"                   \
      -v 'r2=((^ *[[][^^][^]]*[]]:[ \t]+|[]][(] *)[^: #)]+)[.](md|html)'       \
      -v 'r3=((^ *[[][^^][^]]*[]]:[ \t]+|[]][(] *)[^: #)]*#)markdown-header-'  \
