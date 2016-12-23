@@ -1,4 +1,4 @@
-[Prev](DocControlMapDem) (Control maps and DEM files) | [Home](Home) | [Manual](DocMain) | (Working with Projects) [Next](DocWorkingWithProjects)
+[Prev](AdvProjActions) (General Actions) | [Home](Home) | [Manual](DocMain) | (Data handling) [Next](AdvDataHandling)
 - - -
 [TOC]
 - - -
@@ -327,4 +327,4 @@ Script converts to OSGEO TMS (http://www.maptiler.org/google-maps-coordinates-ti
 * Strava: Running & Cycling Heatmap
 
 - - -
-[Prev](DocControlMapDem) (Control maps and DEM files) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Working with Projects) [Next](DocWorkingWithProjects)
+[Prev](AdvProjActions) (General Actions) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Data handling) [Next](AdvDataHandling)

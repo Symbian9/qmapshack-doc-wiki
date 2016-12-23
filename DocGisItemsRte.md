@@ -5,6 +5,8 @@
 
 # Routes
 
+## Create route
+
 A route is a collection of waypoints with an order. The path between each point is usually a straight line. With routing information a path using the street network can be derived. The calculation can be done by a server (online routing) or with a local database (offline routing).
 
 ![maproom1.png](images/DocGisItemsRte/qms1.png) ![maproom1.png](images/DocGisItemsRte/qms2.png)
@@ -27,11 +29,11 @@ If you click on the highlighted route you get a short on-screen-summary and a fe
 
 ![maproom1.png](images/DocGisItemsRte/LineMove.png) Edit the route. Move waypoints, add waypoints, delete waypoints.
 
-# Routing Engines #
+## Routing Engines #
 
 Currently Routino is supported as offline router and MapQuest as online routing service.
 
-## Routino ##
+### Routino ##
 
 ![maproom1.png](images/DocGisItemsRte/qms4.png)
 
@@ -51,7 +53,7 @@ To create a database use planetsplitter from the Routino package. Currently this
 
 There is also a ready to use collection of database files for [download](https://jeepxj.de/pub/routino/). You have to un-zip the files into a directory and use QMapShack's Routino setup to register the path. Click the blue folder to do so.
 
-### Create Own Routino database ###
+#### Create Own Routino database ###
 
 A Routino database is created from OSM data. The used file format is *pbf. You find these files at [GeoFabrik](http://download.geofabrik.de/).
 
@@ -59,7 +61,7 @@ A Routino database is created from OSM data. The used file format is *pbf. You f
 
 Add one or more *pbf files to the input list. Select an output path and name prefix. Press start to compile a new database.
 
-## MapQuest ##
+### MapQuest ##
 
 ![maproom1.png](images/DocGisItemsRte/qms6.png)
 

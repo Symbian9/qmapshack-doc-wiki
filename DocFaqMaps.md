@@ -28,10 +28,27 @@ A right click in a map window at a certain positions opens a context menu which 
 * `Copy position`
 * `Copy position (grid)`
 
-In the first case the position is copied in the format used to display coordinates (see menu->View->Setup Coord. Format), e.g `N49° 21.734 E012° 44.146`
+In the first case the position is copied in the format used to display coordinates (see menu `View - Setup Coord. Format`),
+e.g `N49° 21.734 E012° 44.146`
 
-In the second case the position is copied as a pure grid coordinate. For long/lat coordinates it's degrees (`49.599924 10.599991` or `-15.065344 -39.915421`). For northing/easting coordinates it's meters. (`6307013m, 1415953m`)
+In the second case the position is copied as a pure grid coordinate. 
+For long/lat coordinates it's degrees (`49.599924 10.599991` or `-15.065344 -39.915421`). For northing/easting 
+coordinates it's meters. (`6307013m, 1415953m`)
 
+## What is the result of changing the scale type (logarithmic/square)?
+
+Selecting the menu `View  - Setup Map View` opens a map view setup window.
+In this window the user can set the map scales to _Logarithmic_ or _Square_.
+
+A change of this option leads to a different zoom behaviour of maps. 
+
+Logarithmic scales support more zoom levels than square ones. As a consequence,
+zooming with a square scale changes the scale faster than zooming with a logarithmic scale.
+
+The minimum and maximum zoom levels (scales) are nearly the same for both scales.
+
+For square scales the next zoom step leads to a scale which is approximately changed by a factor 2
+compared with the previous one. This scale is recommended for online (TMS, WMTS) maps.
 
 ## Is there a possibility to display small roads/tracks in a vector map without zooming in too much?
 
@@ -49,7 +66,16 @@ Users reported about the following ways to improve the visibility of small roads
 * Append to the given configuration string one of the following strings:
   * `+lat_ts=60` This sets the *latitude of true scale* for a Mercator projection. The closer you get to the polar regions the more the map will be skewed horizontally in comparison to the vertical scale. At the *latitude of true scale* (usually 0 for the equator) the scales are equal.
   * `+k_0=0.3` (**Source:** [gmane.comp.gis.qlandkartegt](http://article.gmane.org/gmane.comp.gis.qlandkartegt.user/2688))  This is an additional scale factor on the normal scale. A value of 1.0 will have no effect. Try to increase or decrease the given value to get the wanted result
-    
+
+## Does QMS support the use of single Garmin-style map tiles?
+
+A map in the Garmin format consists of single map tiles plus a so-called _type file_ which describes how the elements
+in the map should be displayed. The map tiles for a given area are typically packed together with a type file
+into a special container format. A typical name for such a container file is _gmapsupp_xxx.img_.
+
+QMS does support maps loaded from gmapsupp container files. It doesn't allow the use of single tiles.
+  
+  
 ## How to use Russian military and similar raster maps with QMapShack?
 
 **Source:** Newsgroup thread [sourceforge.net/p/qlandkartegt](https://sourceforge.net/p/qlandkartegt/mailman/message/34518807/)

@@ -5,7 +5,7 @@
 
 # The Workspace and the Database
 
-![maproom2](images/DocGisDatabaseWorkspaceDatabase/maproom2.png)
+![Database - workspace relation](images/DocGisDatabaseWorkspaceDatabase/maproom2.png "Database - workspace relation")
 
 To work with the database you have to keep a single fundamental rule in mind. The database view is to load, unload and delete items from the database only. Everything else like adding/copying/editing data is done in the workspace. Thus you have to load the item into the workspace first. And after you have done your work you have to save it into the database.
 

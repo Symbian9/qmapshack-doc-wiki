@@ -24,11 +24,9 @@ large changes to the GUI. However smaller changes will be ignored.
 
     * [Getting started](DocGettingStarted)
     * [Command line parameters](DocCmdOptions)
-    * [Maps & Digital Elevation Model (DEM)](DocInstallMapDem)
-        * [Install Maps & DEM Data](DocInstallMapDem)
-        * [Basics about maps and DEM files](DocBasicsMapDem)
-        * [Control maps and DEM files](DocControlMapDem)
-        * [Maps: Tips and Tricks](DocMapsTipsTricks)
+    * [Install Maps & DEM Data](DocInstallMapDem)
+        * [Maps & DEM](DocBasicsMapDem)
+        * [Control maps and DEM files](DocControlMapDem)   
     * [Working with Projects](DocWorkingWithProjects)
         * [Handle GPX and QMS files](DocHandleGpxFiles)
         * [Search Google](DocSearchGoogle)
@@ -50,6 +48,7 @@ large changes to the GUI. However smaller changes will be ignored.
 
 * [Databases and projects](AdvProjects)
     * [General Actions](AdvProjActions)
+* [Maps: Tips and Tricks](DocMapsTipsTricks)              
 * [Data handling](AdvDataHandling)    
     * [Tracks](AdvTracks)    
         * [General topics](AdvTrkGeneral)

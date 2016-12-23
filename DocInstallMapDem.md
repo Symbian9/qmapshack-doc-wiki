@@ -1,4 +1,4 @@
-[Prev](DocCmdOptions) (Command line parameters) | [Home](Home) | [Manual](DocMain) | (Basics about maps and DEM files) [Next](DocBasicsMapDem)
+[Prev](DocCmdOptions) (Command line parameters) | [Home](Home) | [Manual](DocMain) | (Maps & DEM) [Next](DocBasicsMapDem)
 - - -
 [TOC]
 - - -
@@ -40,18 +40,17 @@ When done you can reload the map or DEM list by a right click on the list. Choos
 
 If you want to know more about the details of creating a \*.vrt file jump [here](DocBasicsMapDem#markdown-header-gdal-vrt-maps)
 
----
-# Sources of Maps and DEM files
+## Sources of Maps and DEM files
 
-## Maps
+### Maps
 * A nice collection of Garmin vector maps can be found at [_Freizeitkarte OSM_](http://www.freizeitkarte-osm.de/). Next to ready to use maps they publish their tool chain, too. With the tool chain you can produce your own OSM based maps for any region. 
 * You can use the [\*.tms files](https://sourceforge.net/projects/qlandkartegt/files/WMS%20Maps/) from QLankdarte GT (Note: the \*.xml ones won't work)
 
-## DEM
+### DEM
 * Still the best place to look for DEM data is [VIEWFINDER PANORAMAS](http://www.viewfinderpanoramas.org/). 
 * For Europe the EEA offers [DEM files with quite good resolution](http://www.eea.europa.eu/data-and-maps/data/eu-dem). 
 * For Austria you can download quite high detailed data [here](https://www.data.gv.at/katalog/dataset/d88a1246-9684-480b-a480-ff63286b35b7).
 * For Bavaria, the survey authorities offer DEM data as part of their [OpenData program](http://www.ldbv.bayern.de/produkte/weitere/opendata.html). Scroll down until "DGM50 und DGM200".
 
 - - -
-[Prev](DocCmdOptions) (Command line parameters) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Basics about maps and DEM files) [Next](DocBasicsMapDem)
+[Prev](DocCmdOptions) (Command line parameters) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Maps & DEM) [Next](DocBasicsMapDem)

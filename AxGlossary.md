@@ -25,7 +25,13 @@
 **GIS data**
 : Abbreviation for __G__eographic __I__nformation __S__ystems data.  This data includes all tracks, routes and
   waypoints used in GMapShack.
-  
+
+**gmapsupp.img**
+: Typical file name and at the same time term for describing widely used container format for Garmin-style vector maps.
+
+**Line**
+: See __Polyline__.
+
 **Map cache**
 : Special storage location where map data is saved temporarily in a format suitable for fast reloading. One of the
 advantages of the map cache is that cached online map tiles can be displayed immediately instead of waiting for the online
@@ -36,6 +42,10 @@ map server.
 
 **Maps window/tab**
 : Window/tab in QMapShack where the user can define and activate the vector, raster or online maps for a map view.
+
+**Polyline**
+: Also denoted as _Line_ or _GIS item with multiple points_. A series of connected straight line intervals linking
+given points. Tracks, routes, and area boundaries are polylines.
 
 **Roadbook**
 : Also denoted as "_Diary_". A tabular overview of all data in a project.
@@ -60,7 +70,7 @@ map server.
 of some track data.
 
 **Track edit window**
-: See _Track details dialog__.
+: See __Track details dialog__.
 
 **Track filter**
 : Tool to manipulate a track in a predefined way. QMS supports track filters for elevation, timestamps, splitting tracks and
@@ -76,7 +86,7 @@ of some track data.
 
 **Track subpoint**
 : When creating a track the user creates with the help of mouse clicks (ordinary) trackpoints. Depending on the selected
-  [routing method](AdvRoutes#markdown-header-description-of-routing-methods-in-qmapshack) 
+  routing method 
   additional trackpoints can be added automatically by the routing algorithm. These additional trackpoints are 
   called _subpoints_.  
 
