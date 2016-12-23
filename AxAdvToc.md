@@ -268,7 +268,7 @@ ___Do not edit - automatically created from DocMain!___
     * [Developing QMapShack](AxAdvToc#markdown-header-developing-qmapshack)
     * [Appendix](AxAdvToc#markdown-header-appendix)
 * [Glossary](AxGlossary)
-* [Index (Advanced usage and FAQ parts only)](AxAdvIndex)
+* [Index](AxAdvIndex)
 * [List of images (Advanced usage and FAQ parts only)](AxWikiImages)
 
 - - -

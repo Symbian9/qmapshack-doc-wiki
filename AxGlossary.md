@@ -1,4 +1,4 @@
-[Prev](AxAdvToc) (Complete table of contents) | [Home](Home) | [Manual](DocMain) | (Index (Advanced usage and FAQ parts only)) [Next](AxAdvIndex)
+[Prev](AxAdvToc) (Complete table of contents) | [Home](Home) | [Manual](DocMain) | (Index) [Next](AxAdvIndex)
 - - -
 [TOC]
 - - -
@@ -118,4 +118,4 @@ of some track data.
 
 
 - - -
-[Prev](AxAdvToc) (Complete table of contents) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Index (Advanced usage and FAQ parts only)) [Next](AxAdvIndex)
+[Prev](AxAdvToc) (Complete table of contents) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Index) [Next](AxAdvIndex)

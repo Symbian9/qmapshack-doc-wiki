@@ -1,4 +1,4 @@
-[Prev](AxAdvIndex) (Index (Advanced usage and FAQ parts only)) | [Home](Home) | [Manual](DocMain) | () Next
+[Prev](AxAdvIndex) (Index) | [Home](Home) | [Manual](DocMain) | () Next
 - - -
 [TOC]
 - - -
@@ -53,4 +53,4 @@ Image caption | Used in
 [Waypoint distances](images/DocFaq/WPTDistances.jpg "Waypoint distances") | [DocFaqHandling](DocFaqHandling)
 
 - - -
-[Prev](AxAdvIndex) (Index (Advanced usage and FAQ parts only)) | [Home](Home) | [Manual](DocMain) | [Top](#) | () Next
+[Prev](AxAdvIndex) (Index) | [Home](Home) | [Manual](DocMain) | [Top](#) | () Next

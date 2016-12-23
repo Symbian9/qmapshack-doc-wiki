@@ -131,7 +131,7 @@ A track can be copied together with its attached waypoints to a new project by s
 
 ## Select a range of a track
 
-(_valid starting with QMS patch version  b9235da (18.11.2016)_)
+(_valid starting with QMS patch version 676511d9ba16 (2016-12-22)_)
 
 The user can select in several ways a range of a track, that is a sequence of trackpoints of the track, for further handling:
 
@@ -144,7 +144,13 @@ The user can select in several ways a range of a track, that is a sequence of tr
      * Click with the left mouse button at the location of the start of the range to be selected in the track and
        release the mouse button. The clicked point is shown as a circle with red center.
      * Move the mouse to the location of the end of the range to be selected. 
-     * Click with the left mouse button at the end of the range.
+     * Left-click at the end of the range.
+     * If the end of the range is not in the map view: left-click on the map and __don't release__ the mouse button.
+     * The map is attached to the mouse.
+     * Move the map to the wanted location and release the mouse button.
+     * The map is fixed again.
+     * Move the mouse to the wanted end of the range and left-click.
+     * Select the necessary range operation from the info window that pops-up.
 
 ![Track range selection](images/DocFaq/RangeSelection.png "Track range selection")
   

@@ -64,7 +64,22 @@ This functionality comes with several limitations, as it is primarily meant to p
 
 ## ![WptMove](images/DocGisItemsWpt/WptMove.png) Move Waypoint
 
-When moving the waypoint the cursor will be locked to move mode. On a right mouse button click the move action is aborted. On a left mouse button click the waypoint is dropped at the new position. If the cursor is close to the viewport's border, the map is moved. 
+(_valid starting with QMS patch version  676511d9ba16 (2016-12-22)_)
+
+To move a waypoint to a new location 
+
+* left-click the waypoint on the map.
+* Select the `Move waypoint to new location` icon from the info window that pops-up.
+* The mouse cursor changes to the `Move` icon.
+* Move the mouse pointer to the new location (don't click).
+* The distance of the new to the old waypoint and the direction of change are shown.
+* If the new location is not in the map view: left-click on the map and __don't release__ the mouse button.
+* The map is attached to the mouse.
+* Move the map to the wanted location and release the mouse button.
+* The map is fixed again.
+* Move the mouse to the wanted new location of the waypoint.
+* Left-click to fix the new position of the waypoint.
+
 
 ![Move Waypoint](images/DocGisItemsWpt/Move.png)
 
