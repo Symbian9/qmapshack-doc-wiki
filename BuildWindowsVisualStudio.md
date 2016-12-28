@@ -113,7 +113,7 @@ Note: you might have to install TortoiseHG or any other mercurial client
 ### C6.) Start the CMake GUI (you did install CMake before, didn't you)
 - Enter the path to the source directory (which has been created by cloning the hg repository in the previous step)
 - Enter the path where you want to build the binaries (should be a new directory)
-- Select "Visual Studio 12 2013 Win64" and "Native Compilers"
+- Select "Visual Studio 12 2013 Win64" and "Use default native compilers"
 - Configure 
     - In the first run there will be errors. 
     - Now enter the directories where you have installed Qt5, GDAL, 
