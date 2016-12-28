@@ -55,6 +55,50 @@ There are various ways to get information about a track.
      * In the graphs tab the user can select up to 3 track properties (speed, slope, elevation, fitness data, ...) 
        to be displayed as graphs.
             
+## Symbols for trackpoints
+
+The points of a track may have different properties. These properties can be seen when clicking on a track
+in a map view and then selecting the `Select a range` or `Edit position ...` icons from the track info window.
+
+The next image shows the collection of possible trackpoint icons (slightly enlarged):
+
+![Trackpoint icons](images/DocAdv/TrackpointIcons.png "Overview of trackpoint icons")
+
+The meaning of the icons is as follows:
+
+1. _Black square with yellow border._ Startpoint of track. Properties like big black square.
+1. _Black square with green border._ Endpoint of track. Properties like big black square.
+1. _Big black square._ Routing point of a track. Can be moved to new position after selection. Changes to red square if selected (clicked).
+1. _Small black square._ Track subpoint automatically created by a routing engine. Can't be moved to new position. Is automatically readjusted
+   if a neighboring routing point is changed.
+1. _Red square._ Selected routing point. Can be moved to new position.
+1. _Magenta circle with dark grey border._ Start or end of a track range.
+1. _Small grey square._ Hidden trackpoint.
+
+Icons 1 - 5 are related to the edit position mode. Icons 6 and 7 are related to the track range selection und hide trackpoint modes.           
+
+## Add point to track
+
+Given a track more points can be added to it using the following procedure:
+
+* Display the track in a map view, e.g. by double clicking the track name in the workspace.
+* Check if the settings for the used routing engine are correct.
+* Click on the track in the map view to open the track info window.
+* Click the `Edit position of track points` icon in the track info window.
+* A new toolbar pops-up at the top of the map view. Click the `Add new points` icon in this toolbar. The cursor shows now a bold "__+__" icon.            
+* Move the mouse to the track. As soon as the mouse hits the track, the color of the track part between the closest routing trackpoints is 
+  changed to red. This is the smallest part of the track that can be recalculated by the routing engine. The neighboring routing
+  trackpoints are shown as big red squares.
+* With a click on the track a new routing trackpoint (big black square) is attached to the mouse at the selected location. 
+* Move the mouse to the wanted location of the new routing trackpoint. While moving the mouse the new trackpoint and its neighboring routing
+  trackpoints are connected with straight line segments. As soon as the mouse comes to a standstill, the track is recalculated in
+  accordance with the selected routing options (Avoid the `Snap line ...` routing option!).
+* Click at the wanted location to add the new routing trackpoint to the track and to fix it at this location.
+* Clicking `Save to original` or `Save as new`in the toolbar at the top of the map view saves the new track.
+
+
+
+            
 ## Attach waypoints to a track to get additional track information
 
 (_inspired by_ [QMS issues list](https://bitbucket.org/maproom/qmapshack/issues/169/distance-between-waypoints-popup-window))
@@ -80,7 +124,7 @@ There are several ways to do this:
   * Move the mouse pointer to the required waypoint location on the track. 
   * A bubble box pops up at the closest trackpoint.
   * Move the mouse pointer to the bubble box, right click and select `Add waypoint` from the context menu.
-_Remark:_ If a the selected waypoint has a distance of less than 50m to a trackpoint than it is attached to the track.
+_Remark:_ If a selected waypoint has a distance of less than 50m to a trackpoint than it is attached to the track.
   
   ![Trackpoint info box](images/DocFaq/BubbleBox.jpg "Trackpoint info box")
   
@@ -90,7 +134,7 @@ _Remark:_ If a the selected waypoint has a distance of less than 50m to a trackp
   * Move the mouse cursor on the profile graph to a location where the index shown in the upper left corner
 jumps to a new value (i.e. where a trackpoint is located).
   * Right click and select `Add waypoint` to attach a waypoint to the track.
-_Remark:_ If a the selected waypoint has a distance of less than 50m to a trackpoint than it is attached to the track.
+_Remark:_ If a selected waypoint has a distance of less than 50m to a trackpoint than it is attached to the track.
   
 Having waypoints attached to a track additional information about the waypoints is available in the roadbook of the
 project.
@@ -225,13 +269,13 @@ other data such as
 * elevation
 * speed
 * heart rate
-* temparature
+* temperature
 
 depend on the used device. There can be even a dependence between different data fields. Thus, speed can
 be calculated from locations and timestamps and can be recorded directly.
 
 QMS is in a position to visualize track data in form of graphs in the track edit window and in form
-of various colours on the track in map windows. In the _Graphs_ and _Style_ tabs of the track edit window
+of various colors on the track in map windows. In the _Graphs_ and _Style_ tabs of the track edit window
 the user can select the type of data to be displayed. 
 
 A track data field may have a star at the end of its name (_speed*_). This is an indication that the values for 
@@ -249,16 +293,16 @@ whereas the calculated _speed*_ data will change their values.
 QMS is a software for
 
 * _managing and displaying of recorded waypoints and tracks_ (GPS data). A recorded track consists of a sequence of recorded
-trackpoints. The trackpoint data consists of location, elevation, timestamp and some other data. With the
-exception of rare failures caused by the recording GPS device this data is consistent (valid).
+trackpoints. The trackpoint data consists of location, elevation, timestamp and some other data. Except for
+rare failures caused by the recording GPS device this data is consistent (valid).
  
 * _creating new waypoints and tracks_. The creation of a track requires a map so that track points can be properly located.
-If elevation data should be added to the track then this data (DEM data) should be available in QMS. Finally,
+If elevation data should be added to the track, then this data (DEM data) should be available in QMS. Finally,
 if routing should be used for track creation then routing data should be available in QMS.
 
 QMS offers quite a few easy ways to create and edit tracks. Among others 
 
-* copy, cut and paste and
+* copy, cut-and-paste and
 * adding and deleting 
 
 of trackpoints are supported.

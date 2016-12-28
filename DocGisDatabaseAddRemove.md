@@ -32,7 +32,7 @@ The provided name must be unique.
 
 
 
-### MySQL (>= 5.6.5 ) 
+### MySQL (>= 5.6.5)
 
 To use MySQL as database you need to enter some commands on the server first. To enter the MySQL console from the command line you do:
 

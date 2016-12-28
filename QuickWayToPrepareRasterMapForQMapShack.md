@@ -5,7 +5,7 @@ Prev () | [Home](Home) | [Manual](DocMain) | () Next
 
 # Quick way to prepare raster maps for use in QMapShack
 
-This is translation of the original article in the blog: 
+This is a translation of the original article in the blog: 
 [http://htrd.su/wiki](http://htrd.su/wiki/zhurnal/2016/02/11/bystro_i_nenavjazchivo_gotovim_kartu_dlja_otkrytija_v_qmapshack).
 
 Let us take [http://loadmap.net](http://loadmap.net) as an example server for getting raster maps 

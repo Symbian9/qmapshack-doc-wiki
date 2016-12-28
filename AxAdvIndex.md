@@ -42,7 +42,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **ArcGIS, accessed with TMS**
 :  [Use ArcGIS server as TMS server](DocMapsTipsTricks#markdown-header-use-arcgis-server-like-a-tms-server "Use ArcGIS server as TMS server")
 
-**Area, as overlay**
+**Area, as map overlay**
 :  [Areas](DocGisItemsArea "Areas")
 
 **Area, create**
@@ -95,7 +95,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Data organization, groups in database**
 :  [Data organization](AdvProjects#markdown-header-organization-of-qmapshack-data "Data organization")
 
-**Data organization, lost & found**
+**Data organization, lost & found folder**
 :  [Data organization](AdvProjects#markdown-header-organization-of-qmapshack-data "Data organization")
 
 **Data organization, projects**
@@ -106,6 +106,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Data organization, workspace in**
 :  [Data organization](AdvProjects#markdown-header-organization-of-qmapshack-data "Data organization")
+
+**Database, add folder**
+:  [Database folders and items](DocGisDatabaseFoldersItems "Database folders and items")
 
 **Database, add**
 :  [Add/Remove a database](DocGisDatabaseAddRemove#markdown-header-addremove-a-database "Add/Remove a database")
@@ -122,8 +125,8 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Database, location**
 :  [Find location of database file](DocFaqData#markdown-header-how-to-find-the-location-of-a-database-file-used-in-qmapshack "Find location of database file")
 
-**Database, lost & found**
-:  [Data organization](AdvProjects#markdown-header-organization-of-qmapshack-data "Data organization")
+**Database, lost & found folder**
+:  [Data organization](AdvProjects#markdown-header-organization-of-qmapshack-data "Data organization") ⊞ [Lost&found folder](DocGisDatabaseLostFound "Purpose of lost and found folder")
 
 **Database, multi-user access**
 :  [Multi-user access](DocGisDatabaseAddRemove#markdown-header-multi-user-access "Multi-user access")
@@ -173,7 +176,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **DEM, folder organization**
 :  [Organization of Maps & DEM](DocInstallMapDem#markdown-header-organization-of-maps-dem "Organization of Maps & DEM")
 
-**DEM, hillshading**
+**DEM, hill shading**
 :  [DEM Files](DocControlMapDem#markdown-header-dem-files "DEM Files")
 
 **DEM, installation**
@@ -231,11 +234,11 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Elevation, edit**
 :  [Edit track elevation](AdvTrkElevation#markdown-header-manually-edit-elevation-of-a-track-point "Edit track elevation")
 
-**Elevation, filter**
-:  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
-
 **Elevation, Filter**
 :  [Track elevation filter](DocGisItemsTrk2#markdown-header-elevation "Track elevation filter")
+
+**Elevation, filter**
+:  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
 
 **Elevation, invalid data**
 :  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
@@ -301,6 +304,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **GDAL, VRT**
 :  [Maps in GDAL VRT format](DocBasicsMapDem#markdown-header-gdal-vrt-maps "Maps in GDAL VRT format")
+
+**gdalinfo, get VRT file info**
+:  [Find raster map location](DocFaqMaps#markdown-header-how-to-find-the-location-of-a-raster-map "Find raster map location with gdalinfo")
 
 **GIS data, create**
 :  [Create new tracks, waypoints etc.](DocGisItemsNew "Create new tracks, waypoints etc.")
@@ -369,7 +375,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 # H
 
 
-**Hillshading, DEM**
+**Hill shading, DEM**
 :  [DEM Files](DocControlMapDem#markdown-header-dem-files "DEM Files")
 
 
@@ -516,6 +522,36 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **MapQuest, routing engine**
 :  [MapQuest router](DocGisItemsRte#markdown-header-mapquest "MapQuest router")
 
+**Menu, File - Load GIS Data**
+:  [Load GPX Files](DocHandleGpxFiles#markdown-header-load-gpx-files "Load GPX Files")
+
+**Menu, File - Save all GIS data**
+:  [Save project](AdvProjActions#markdown-header-save-project "Save project")
+
+**Menu, Project - Setup Workspace**
+:  [Data organization](AdvProjects#markdown-header-organization-of-qmapshack-data "Data organization") ⊞ [Multi-user access](DocGisDatabaseAddRemove#markdown-header-multi-user-access "Multi-user access")
+
+**Menu, Project**
+:  [Working with Projects](DocWorkingWithProjects "Working with Projects")
+
+**Menu, Tool - Create Routino Database**
+:  [Create Routino database](DocGisItemsRte#markdown-header-create-own-routino-database "Create Routino database using planetsplitter")
+
+**Menu, Tool - VRT Builder**
+:  [Installing Raster Maps or DEM Data](DocInstallMapDem#markdown-header-installing-raster-maps-or-dem-data "Installing Raster Maps or DEM Data")
+
+**Menu, View - Setup Coord. Format**
+:  [Position in map](DocFaqMaps#markdown-header-what-is-the-difference-between-copy-position-and-copy-position-grid "What is the difference between map position and map grid position?")
+
+**Menu, View - Setup Map View - Projections&Datum**
+:  [Zooming maps](DocFaqMaps#markdown-header-is-there-a-possibility-to-display-small-roadstracks-in-a-vector-map-without-zooming-in-too-much "Display of small roads/tracks in a vector map and zooming")
+
+**Menu, View - Setup Map View**
+:  [Change scale type](DocFaqMaps#markdown-header-what-is-the-result-of-changing-the-scale-type-logarithmicsquare "Change scale type (logarithmic/square)")
+
+**Menu, View**
+:  [Workspace](DocControlMapDem#markdown-header-workspace "Workspace")
+
 **MySQL, database**
 :  [MySQL database](DocGisDatabaseAddRemove#markdown-header-mysql-565 "MySQL database")
 
@@ -524,17 +560,23 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 
 **Offline routing, Routino**
-:  [Routino](DocGisItemsRte#markdown-header-routino "Routino")
+:  [Routino router](DocGisItemsRte#markdown-header-routino "Routino router")
 
 **Online routing, MapQuest**
 :  [MapQuest router](DocGisItemsRte#markdown-header-mapquest "MapQuest router")
+
+**OziExplorer, use of map**
+:  [Use of raster maps](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack "Use of Russian military raster maps")
 
 
 # P
 
 
 **PBF, Routino**
-:  [Create Own Routino database](DocGisItemsRte#markdown-header-create-own-routino-database "Create Own Routino database")
+:  [Create Routino database](DocGisItemsRte#markdown-header-create-own-routino-database "Create Routino database using planetsplitter")
+
+**Planetsplitter, create routing database**
+:  [Create Routino database](DocGisItemsRte#markdown-header-create-own-routino-database "Create Routino database using planetsplitter")
 
 **Planetsplitter, Routino**
 :  [Routino cross-border routing](DocFaqRouting#markdown-header-does-qmapshackroutino-support-cross-border-routing "Routino cross-border routing")
@@ -604,26 +646,26 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Raster map, display**
 :  [Display of raster maps](DocFaqMaps#markdown-header-why-is-a-raster-map-not-displayed "Why is a raster map not displayed?")
 
+**Raster map, find location**
+:  [Find raster map location](DocFaqMaps#markdown-header-how-to-find-the-location-of-a-raster-map "Find raster map location with gdalinfo")
+
 **Raster map, installation**
 :  [Installing Raster Maps or DEM Data](DocInstallMapDem#markdown-header-installing-raster-maps-or-dem-data "Installing Raster Maps or DEM Data")
-
-**Raster map, location**
-:  [Find raster map location](DocFaqMaps#markdown-header-how-to-find-the-location-of-a-raster-map "Find raster map location")
 
 **Raster map, overview map of**
 :  [Display of raster maps](DocFaqMaps#markdown-header-why-is-a-raster-map-not-displayed "Why is a raster map not displayed?")
 
-**Raster map, russian military map**
-:  [Use of (Russian military) raster maps](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack "Use of (Russian military) raster maps")
-
 **Raster map, sources**
-:  [Use of (Russian military) raster maps](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack "Use of (Russian military) raster maps")
+:  [Use of raster maps](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack "Use of Russian military raster maps")
+
+**Raster map, use of Russian military map**
+:  [Use of raster maps](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack "Use of Russian military raster maps")
 
 **Raster map, VRT file for**
-:  [Use of (Russian military) raster maps](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack "Use of (Russian military) raster maps")
+:  [Use of raster maps](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack "Use of Russian military raster maps")
 
-**Raster map, VRT file**
-:  [Find raster map location](DocFaqMaps#markdown-header-how-to-find-the-location-of-a-raster-map "Find raster map location")
+**Raster map, VRT file of**
+:  [Find raster map location](DocFaqMaps#markdown-header-how-to-find-the-location-of-a-raster-map "Find raster map location with gdalinfo")
 
 **Redo, edit**
 :  [Undo/Redo](DocGisItemsEditMultiple#markdown-header-undoredo "Undo/Redo")
@@ -659,7 +701,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [MapQuest router](DocGisItemsRte#markdown-header-mapquest "MapQuest router")
 
 **Routing engine, Routino**
-:  [Create a route](AdvRoutes#markdown-header-create-a-route "Create a route") ⊞ [Routino](DocGisItemsRte#markdown-header-routino "Routino")
+:  [Create a route](AdvRoutes#markdown-header-create-a-route "Create a route") ⊞ [Routino router](DocGisItemsRte#markdown-header-routino "Routino router")
 
 **Routing method, off-road routing**
 :  [Description of routing methods in QMapShack](AdvRoutes#markdown-header-description-of-routing-methods-in-qmapshack "Description of routing methods in QMapShack")
@@ -686,7 +728,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Choose preferred routing road class](DocFaqRouting#markdown-header-is-there-a-possibility-to-choose-the-preferred-road-class-when-routing "Choose preferred routing road class") ⊞ [User-relevant directories (Windows)](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant directories (Windows)")
 
 **Routino, create database**
-:  [Create Own Routino database](DocGisItemsRte#markdown-header-create-own-routino-database "Create Own Routino database")
+:  [Create Routino database](DocGisItemsRte#markdown-header-create-own-routino-database "Create Routino database using planetsplitter")
 
 **Routino, cross-border routing**
 :  [Routino cross-border routing](DocFaqRouting#markdown-header-does-qmapshackroutino-support-cross-border-routing "Routino cross-border routing")
@@ -695,7 +737,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Maximum Routino database file size](DocFaqRouting#markdown-header-what-is-the-maximum-routino-databases-file-size-that-can-be-handled-by-the-qmapshack-windows-version "Maximum Routino database file size")
 
 **Routino, PBF file**
-:  [Create Own Routino database](DocGisItemsRte#markdown-header-create-own-routino-database "Create Own Routino database")
+:  [Create Routino database](DocGisItemsRte#markdown-header-create-own-routino-database "Create Routino database using planetsplitter")
 
 **Routino, planetsplitter**
 :  [Routino cross-border routing](DocFaqRouting#markdown-header-does-qmapshackroutino-support-cross-border-routing "Routino cross-border routing")
@@ -704,10 +746,10 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Choose preferred routing road class](DocFaqRouting#markdown-header-is-there-a-possibility-to-choose-the-preferred-road-class-when-routing "Choose preferred routing road class")
 
 **Routino, routing database**
-:  [Routino](DocGisItemsRte#markdown-header-routino "Routino")
+:  [Routino router](DocGisItemsRte#markdown-header-routino "Routino router")
 
 **Routino, routing engine**
-:  [Create a route](AdvRoutes#markdown-header-create-a-route "Create a route") ⊞ [Routino](DocGisItemsRte#markdown-header-routino "Routino")
+:  [Create a route](AdvRoutes#markdown-header-create-a-route "Create a route") ⊞ [Routino router](DocGisItemsRte#markdown-header-routino "Routino router")
 
 **Routino, routing method**
 :  [Description of routing methods in QMapShack](AdvRoutes#markdown-header-description-of-routing-methods-in-qmapshack "Description of routing methods in QMapShack")
@@ -768,6 +810,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Track, activity**
 :  [Assign colors to track activities](AdvTrkGeneral#markdown-header-assign-colors-to-track-activities "Assign colors to track activities")
 
+**Track, add new trackpoint**
+:  [Add point to track](AdvTrkGeneral#markdown-header-add-point-to-track "Add point to track")
+
 **Track, assign activity**
 :  [Select a range of a track](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track") ⊞ [Track activity](DocGisItemsTrk2#markdown-header-activity "Track details, activity tab")
 
@@ -793,7 +838,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Recorded and calculated track data](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data "Recorded and calculated track data") ⊞ [Select a range of a track](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track")
 
 **Track, edit**
-:  [Edit items with multiple points](DocGisItemsEditMultiple "Edit items with multiple points") ⊞ [Edit line](DocGisItemsEditMultiple#markdown-header-edit-line "Edit line")
+:  [Edit items with multiple points](DocGisItemsEditMultiple "Edit items with multiple points") ⊞ [Edit line](DocGisItemsEditMultiple#markdown-header-edit-line "Edit line") ⊞ [Symbols for trackpoints](AdvTrkGeneral#markdown-header-symbols-for-trackpoints "Symbols for trackpoints")
 
 **Track, elevation filter**
 :  [Description of track elevation filters](AdvTrkFilters#markdown-header-elevation-filters "Description of track elevation filters") ⊞ [Track elevation filter](DocGisItemsTrk2#markdown-header-elevation "Track elevation filter")
@@ -861,6 +906,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Track, saved in GPX**
 :  [Track data in GPX file](DocFaqHandling#markdown-header-which-track-data-is-saved-in-gpx-files "Which track data is saved in GPX file?")
 
+**Track, select range**
+:  [Symbols for trackpoints](AdvTrkGeneral#markdown-header-symbols-for-trackpoints "Symbols for trackpoints")
+
 **Track, split filter**
 :  [Split Track](DocGisItemsTrk2#markdown-header-split-track "Split Track")
 
@@ -871,7 +919,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Style](DocGisItemsTrk2#markdown-header-style "Style")
 
 **Track, subpoint**
-:  [Track data in GPX file](DocFaqHandling#markdown-header-which-track-data-is-saved-in-gpx-files "Which track data is saved in GPX file?")
+:  [Symbols for trackpoints](AdvTrkGeneral#markdown-header-symbols-for-trackpoints "Symbols for trackpoints") ⊞ [Track data in GPX file](DocFaqHandling#markdown-header-which-track-data-is-saved-in-gpx-files "Which track data is saved in GPX file?")
 
 **Track, timestamps filter**
 :  [Track timestamps filter](DocGisItemsTrk2#markdown-header-timestamps "Track timestamps filter")
@@ -879,17 +927,26 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Track, track points filter**
 :  [Track points filter](DocGisItemsTrk2#markdown-header-points "Track points filter")
 
+**Track, used trackpoint symbols**
+:  [Symbols for trackpoints](AdvTrkGeneral#markdown-header-symbols-for-trackpoints "Symbols for trackpoints")
+
+**Trackpoint, add new to track**
+:  [Add point to track](AdvTrkGeneral#markdown-header-add-point-to-track "Add point to track")
+
 **Trackpoint, elevation**
 :  [Edit track elevation](AdvTrkElevation#markdown-header-manually-edit-elevation-of-a-track-point "Edit track elevation")
 
 **Trackpoint, hidden**
-:  [Select a range of a track](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track")
+:  [Select a range of a track](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track") ⊞ [Symbols for trackpoints](AdvTrkGeneral#markdown-header-symbols-for-trackpoints "Symbols for trackpoints")
 
 **Trackpoint, properties**
 :  [Recorded and calculated track data](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data "Recorded and calculated track data")
 
 **Trackpoint, remove extension**
 :  [Remove extension from all trackpoints](AdvTrkFilters#markdown-header-remove-extension-from-all-trackpoints "Remove extension from all trackpoints")
+
+**Trackpoint, used symbols/icons**
+:  [Symbols for trackpoints](AdvTrkGeneral#markdown-header-symbols-for-trackpoints "Symbols for trackpoints")
 
 
 # U
@@ -909,7 +966,10 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Use of VRT files](DocFaqMaps#markdown-header-is-it-possible-to-use-several-vrt-files "Use of several VRT files")
 
 **VRT, for raster map**
-:  [Find raster map location](DocFaqMaps#markdown-header-how-to-find-the-location-of-a-raster-map "Find raster map location") ⊞ [Use of (Russian military) raster maps](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack "Use of (Russian military) raster maps")
+:  [Find raster map location](DocFaqMaps#markdown-header-how-to-find-the-location-of-a-raster-map "Find raster map location with gdalinfo") ⊞ [Use of raster maps](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack "Use of Russian military raster maps")
+
+**VRT, get file info with gdalinfo**
+:  [Find raster map location](DocFaqMaps#markdown-header-how-to-find-the-location-of-a-raster-map "Find raster map location with gdalinfo")
 
 **VRT, map**
 :  [Raster Maps](DocBasicsMapDem#markdown-header-raster-maps "Raster Maps")
@@ -917,7 +977,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **VRT, raster map**
 :  [Installing Raster Maps or DEM Data](DocInstallMapDem#markdown-header-installing-raster-maps-or-dem-data "Installing Raster Maps or DEM Data") ⊞ [Maps in GDAL VRT format](DocBasicsMapDem#markdown-header-gdal-vrt-maps "Maps in GDAL VRT format")
 
-**VRT, use**
+**VRT, use of several files**
 :  [Use of VRT files](DocFaqMaps#markdown-header-is-it-possible-to-use-several-vrt-files "Use of several VRT files")
 
 
@@ -934,13 +994,13 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Custom icons](DocGisItemsWpt#markdown-header-custom-icons "Custom icons")
 
 **Waypoint, details window**
-:  [View / Edit Details](DocGisItemsWpt#markdown-header-view-edit-details "View / Edit Details")
+:  [View/edit waypoint](DocGisItemsWpt#markdown-header-view-edit-details "View/edit waypoint")
 
 **Waypoint, distance**
 :  [Find waypoint distance](DocFaqHandling#markdown-header-how-to-find-distance-between-waypoints "Find waypoint distance")
 
 **Waypoint, edit window**
-:  [View / Edit Details](DocGisItemsWpt#markdown-header-view-edit-details "View / Edit Details")
+:  [View/edit waypoint](DocGisItemsWpt#markdown-header-view-edit-details "View/edit waypoint")
 
 **Waypoint, get info**
 :  [Waypoints](DocGisItemsWpt "Waypoints")

@@ -22,6 +22,9 @@
 **Filter**
 : See __Track filter__.
 
+**GDAL**
+: Abbreviation for __G__eospatial __D__ata __A__bstraction __L__ibrary. Library for handling raster and vector geospatial data formats.
+
 **GIS data**
 : Abbreviation for __G__eographic __I__nformation __S__ystems data.  This data includes all tracks, routes and
   waypoints used in GMapShack.
@@ -43,6 +46,9 @@ map server.
 **Maps window/tab**
 : Window/tab in QMapShack where the user can define and activate the vector, raster or online maps for a map view.
 
+**Planetsplitter**
+: Part of the Routino offline router package. Planetsplitter creates an efficient routing database from OpenStreetMap data.
+
 **Polyline**
 : Also denoted as _Line_ or _GIS item with multiple points_. A series of connected straight line intervals linking
 given points. Tracks, routes, and area boundaries are polylines.
@@ -59,7 +65,7 @@ given points. Tracks, routes, and area boundaries are polylines.
 
 **Routino**
 : Offline router application for finding a route between two points using the topographical data from 
-[OpenStreetMap](http://www.OpenStreetMap.org). To optimise the routing a custom database format is used. 
+[OpenStreetMap](http://www.OpenStreetMap.org). To optimize the routing a custom database format is used. 
 
 **TMS**
 : Abbreviation for __T__ile __M__ap __S__ervice. A __TMS__ file provides access to cartographic maps 
@@ -82,7 +88,7 @@ of some track data.
 **Track segment**
 : Each track consists of an ordered list of one or more track segments. A track segment consists of an ordered 
   list of trackpoints.
-  When combining (joining) tracks in QMS the track segments of all selected tracks are combined.
+  When combining (joining) tracks in QMS, the track segments of all selected tracks are combined.
 
 **Track subpoint**
 : When creating a track the user creates with the help of mouse clicks (ordinary) trackpoints. Depending on the selected
@@ -95,7 +101,8 @@ of some track data.
   (length, ascent, ...).  
   
 **VRT Builder**
-: QMapShack tool for building VRT files from other data such as elevation data or raster maps.
+: QMapShack tool for building VRT files from other data such as elevation data or raster maps. This tool calls the 
+`gdalbuildvrt` tool of the GDAL package.
 
 **VRT**
 : The __VRT__ file format is a format used for describing virtual geospatial data composed from various
@@ -114,8 +121,6 @@ of some track data.
 : The part of the user interface (GUI) where the user can work with projects and their data (waypoints, tracks, routes).
   The workspace is the upper part of the data view window of the GUI.
   _Remark:_ From time to time the data view window itself is denoted as workspace.
-
-
 
 - - -
 [Prev](AxAdvToc) (Complete table of contents) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Index) [Next](AxAdvIndex)

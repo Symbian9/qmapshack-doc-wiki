@@ -44,7 +44,7 @@ large changes to the GUI. However smaller changes will be ignored.
         * ['Lost & Found' Folder](DocGisDatabaseLostFound)
     * [GPS Devices](DocGisDevices)
 
-## Advanced usage         
+## Advanced usage
 
 * [Databases and projects](AdvProjects)
     * [General Actions](AdvProjActions)

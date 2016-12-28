@@ -48,6 +48,7 @@ Image caption | Used in
 [Status line without elevation](images/DocFaq/DEM12.jpg "Status line without elevation") | [AdvTrkElevation](AdvTrkElevation)
 [Track activity overview](images/DocFaq/ActivityOverview.png "Track activity overview") | [AdvTrkGeneral](AdvTrkGeneral)
 [Track range selection](images/DocFaq/RangeSelection.png "Track range selection") | [AdvTrkGeneral](AdvTrkGeneral)
+[Trackpoint icons](images/DocAdv/TrackpointIcons.png "Overview of trackpoint icons") | [AdvTrkGeneral](AdvTrkGeneral)
 [Trackpoint info box](images/DocFaq/BubbleBox.jpg "Trackpoint info box") | [AdvTrkGeneral](AdvTrkGeneral)
 [Trackpoints with corrected elevation](images/DocFaq/DEM13.jpg "Trackpoints with corrected elevation") | [AdvTrkElevation](AdvTrkElevation)
 [Waypoint distances](images/DocFaq/WPTDistances.jpg "Waypoint distances") | [DocFaqHandling](DocFaqHandling)

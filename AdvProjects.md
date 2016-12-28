@@ -17,7 +17,7 @@ There are 3 physical storage types used in QMS for saving data items:
 * `QMS` files (proprietary efficient binary data format)
 * `SQLite` or `MySQL` databases
 
-If selected in the menu `Projects - Setup Workspace` data is saved automatically at the end of a QMS run and 
+If selected in the menu `Project - Setup Workspace` data is saved automatically at the end of a QMS run and 
 regularly after some user-defined time interval.
 A backup of databases is recommended from time to time.
 

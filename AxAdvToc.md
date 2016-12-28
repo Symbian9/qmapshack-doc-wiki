@@ -132,7 +132,7 @@ ___Do not edit - automatically created from DocMain!___
         * [Add/Remove/Synchronize/Search a Database](DocGisDatabaseAddRemove)
             * [Add/Remove a database](DocGisDatabaseAddRemove#markdown-header-addremove-a-database)
                 * [SQLite](DocGisDatabaseAddRemove#markdown-header-sqlite)
-                * [MySQL (>= 5.6.5 ) ](DocGisDatabaseAddRemove#markdown-header-mysql-565)
+                * [MySQL (>= 5.6.5)](DocGisDatabaseAddRemove#markdown-header-mysql-565)
             * [Multi-user access](DocGisDatabaseAddRemove#markdown-header-multi-user-access)
             * [Search the database](DocGisDatabaseAddRemove#markdown-header-search-the-database)
         * [Folders and Items](DocGisDatabaseFoldersItems)
@@ -142,7 +142,7 @@ ___Do not edit - automatically created from DocMain!___
         * [Remark about Garmin GPSmap 60CSx and similar devices](DocGisDevices#markdown-header-remark-about-garmin-gpsmap-60csx-and-similar-devices)
 
 
-## Advanced usage         
+## Advanced usage
 
 
 * [Databases and projects](AdvProjects)
@@ -171,6 +171,8 @@ ___Do not edit - automatically created from DocMain!___
     * [Tracks](AdvTracks)    
         * [General topics](AdvTrkGeneral)
             * [Get track information](AdvTrkGeneral#markdown-header-get-track-information)
+            * [Symbols for trackpoints](AdvTrkGeneral#markdown-header-symbols-for-trackpoints)
+            * [Add point to track](AdvTrkGeneral#markdown-header-add-point-to-track)
             * [Attach waypoints to a track to get additional track information](AdvTrkGeneral#markdown-header-attach-waypoints-to-a-track-to-get-additional-track-information)
             * [Select a range of a track](AdvTrkGeneral#markdown-header-select-a-range-of-a-track)
             * [Assign colors to track activities](AdvTrkGeneral#markdown-header-assign-colors-to-track-activities)
@@ -263,7 +265,7 @@ ___Do not edit - automatically created from DocMain!___
 * [Hotkeys](AxHotkeys) 
 * [Complete table of contents](AxAdvToc)
     * [Basic usage](AxAdvToc#markdown-header-basic-usage)
-    * [Advanced usage         ](AxAdvToc#markdown-header-advanced-usage)
+    * [Advanced usage](AxAdvToc#markdown-header-advanced-usage)
     * [Getting Help](AxAdvToc#markdown-header-getting-help)
     * [Developing QMapShack](AxAdvToc#markdown-header-developing-qmapshack)
     * [Appendix](AxAdvToc#markdown-header-appendix)

@@ -55,11 +55,15 @@ There is also a ready to use collection of database files for [download](https:/
 
 #### Create Own Routino database ###
 
-A Routino database is created from OSM data. The used file format is *pbf. You find these files at [GeoFabrik](http://download.geofabrik.de/).
+A Routino database is created from OSM data. The used file format is *.pbf. You find these files at 
+[GeoFabrik](http://download.geofabrik.de/ "GeoFabrik as source of PBF files").
 
-![maproom1.png](images/DocGisItemsRte/qms5.png)
+If you want to use planetsplitter select the menu `Tool - Create Routino Database`. 
 
-Add one or more *pbf files to the input list. Select an output path and name prefix. Press start to compile a new database.
+![Planetsplitter tool](images/DocGisItemsRte/qms5.png "Planetsplitter tool layout")
+
+Add one or more *.pbf files to the input list. Select an output path and name prefix. Press start to 
+compile a new database.
 
 ### MapQuest ##
 
