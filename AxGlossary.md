@@ -83,7 +83,8 @@ of some track data.
   others.
 
 **Track range**
-: A sequence of trackpoints of a track which can be handled separately (copy, assign activity, hide, ...).
+: A sequence of trackpoints of a track which can be handled separately (copy, assign activity, hide, 
+  delete, recalculate,...).
 
 **Track segment**
 : Each track consists of an ordered list of one or more track segments. A track segment consists of an ordered 

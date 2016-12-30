@@ -72,10 +72,10 @@ The meaning of the icons is as follows:
 1. _Small black square._ Track subpoint automatically created by a routing engine. Can't be moved to new position. Is automatically readjusted
    if a neighboring routing point is changed.
 1. _Red square._ Selected routing point. Can be moved to new position.
-1. _Magenta circle with dark grey border._ Start or end of a track range.
-1. _Small grey square._ Hidden trackpoint.
+1. _Magenta circle with dark gray border._ Start or end of a track range.
+1. _Small gray square._ Hidden trackpoint.
 
-Icons 1 - 5 are related to the edit position mode. Icons 6 and 7 are related to the track range selection und hide trackpoint modes.           
+Icons 1 - 5 are related to the edit position mode. Icons 6 and 7 are related to the track range selection and hide trackpoint modes.           
 
 ## Add point to track
 
@@ -194,8 +194,14 @@ The user can select in several ways a range of a track, that is a sequence of tr
      * Move the map to the wanted location and release the mouse button.
      * The map is fixed again.
      * Move the mouse to the wanted end of the range and left-click.
-     * Select the necessary range operation from the info window that pops-up.
+     * Select the necessary range operation (hide/show points, assign activity/copy) from the info window that pops-up.
 
+     _Remarks:_
+
+       * When selecting the start and end points of the range any trackpoint (ordinary trackpoints as well as subpoints
+         created by a routing engine) can be selected.
+       * This procedure is recommended for recorded tracks.       
+     
 ![Track range selection](images/DocFaq/RangeSelection.png "Track range selection")
   
 * __Using a graph in an edit window:__
@@ -222,12 +228,49 @@ Select the action to perform with the track range from this info window:
 * Assign an activity type to the range
 * Copy range into new track
   
-If part of the track is hidden then this is shown in the track info box when moving the mouse pointer on the track
+If part of the track is hidden, then this is shown in the track info box when moving the mouse pointer on the track
 in a map window as shown in the following image:
 
 ![Hidden trackpoints](images/DocFaq/HiddenWPTs.png "Hidden trackpoints")
   
 Here, the numbers of visible and of total points are different.
+
+## Select a range of a track in edit mode
+
+(_valid starting with QMS patch version 880e20099637 (2016-12-28)_)
+
+This form of range selection can be used if the track is in the edit mode. It is different from the one described in the
+previous subsection. _Remember when working in edit mode:_ The edit mode is intended to modify trackpoints. 
+Subpoints are - in contrast to 
+ordinary trackpoints - not designed to be modified manually.
+
+This track range selection mode is useful when refining planned tracks.
+
+* Display the track in a map window.
+* Click with the left mouse button on the track and release the mouse button. 
+  An info box pops up. Choose the "_Edit position of track points_" icon in this
+  info box. This starts the track edit mode. The mouse cursor changes to the edit position icon. 
+* In the toolbar that appears at the top of the map window click the "_Select a range of points_" icon.
+  The mouse cursor changes to the range selection icon. 
+* Click with the left mouse button at an ordinary  trackpoint (big black square changed to red square if mouse is moved on it,
+  not a subpoint with small black square!)
+  as the start of the range to be selected in the track and release the mouse button.   
+* Move the mouse in the direction of the track. The color of the selected track range is changed to green.
+  Left click at the end of the wanted range.
+  
+    ![Range in track edit mode](images/DocAdv/RangeSelected.jpg "Selected range in track edit mode")
+  
+* An info window with 2 icons pops-up:
+    * _Delete all points between first and last one_: If icon is active: The selected range of the track is
+      replaced with a straight line segment between the first and the last ordinary trackpoint in the range.
+      
+        ![Points deleted from range](images/DocAdv/RangeDeleted.jpg "Points deleted from range in track edit mode")
+      
+    * _Calculate a route between the first and last selected point_: Use the selected routing engine with the selected options
+      and recalculate the track between the first and the last point of the track range. _Hint:_ If in a previous step
+      one of the ordinary trackpoints had been deleted, then this does not re-establish the original track!
+
+        ![Points recalculated in range](images/DocAdv/RangeRecalculated.jpg "Points recalculated for range in track edit mode")
 
 ## Assign colors to track activities
 

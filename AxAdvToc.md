@@ -175,6 +175,7 @@ ___Do not edit - automatically created from DocMain!___
             * [Add point to track](AdvTrkGeneral#markdown-header-add-point-to-track)
             * [Attach waypoints to a track to get additional track information](AdvTrkGeneral#markdown-header-attach-waypoints-to-a-track-to-get-additional-track-information)
             * [Select a range of a track](AdvTrkGeneral#markdown-header-select-a-range-of-a-track)
+            * [Select a range of a track in edit mode](AdvTrkGeneral#markdown-header-select-a-range-of-a-track-in-edit-mode)
             * [Assign colors to track activities](AdvTrkGeneral#markdown-header-assign-colors-to-track-activities)
             * [Recorded and calculated track data](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data)
             * [Avoid and remove invalid data in a track](AdvTrkGeneral#markdown-header-avoid-and-remove-invalid-data-in-a-track)

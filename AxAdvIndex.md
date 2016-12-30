@@ -640,6 +640,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 # R
 
 
+**Range, of track in edit mode**
+:  [Select a range of a track in edit mode](AdvTrkGeneral#markdown-header-select-a-range-of-a-track-in-edit-mode "Select a range of a track in edit mode")
+
 **Range, of track**
 :  [Select a range of a track](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track")
 
@@ -831,6 +834,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Track, create**
 :  [Track](DocGisItemsNew#markdown-header-track "Track")
 
+**Track, delete points in range**
+:  [Select a range of a track in edit mode](AdvTrkGeneral#markdown-header-select-a-range-of-a-track-in-edit-mode "Select a range of a track in edit mode")
+
 **Track, details dialog**
 :  [Track Details Dialog](DocGisItemsTrk2#markdown-header-track-details-dialog "Track Details Dialog")
 
@@ -888,8 +894,11 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Track, points tab**
 :  [Track points tab](DocGisItemsTrk2#markdown-header-points "Track details, points tab")
 
+**Track, range in edit mode**
+:  [Select a range of a track in edit mode](AdvTrkGeneral#markdown-header-select-a-range-of-a-track-in-edit-mode "Select a range of a track in edit mode")
+
 **Track, range**
-:  [Select a range of a track](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track")
+:  [Select a range of a track](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track") ⊞ [Symbols for trackpoints](AdvTrkGeneral#markdown-header-symbols-for-trackpoints "Symbols for trackpoints")
 
 **Track, recorded**
 :  [Recorded and calculated track data](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data "Recorded and calculated track data")
@@ -905,9 +914,6 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Track, saved in GPX**
 :  [Track data in GPX file](DocFaqHandling#markdown-header-which-track-data-is-saved-in-gpx-files "Which track data is saved in GPX file?")
-
-**Track, select range**
-:  [Symbols for trackpoints](AdvTrkGeneral#markdown-header-symbols-for-trackpoints "Symbols for trackpoints")
 
 **Track, split filter**
 :  [Split Track](DocGisItemsTrk2#markdown-header-split-track "Split Track")
