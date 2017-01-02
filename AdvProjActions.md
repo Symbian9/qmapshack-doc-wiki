@@ -1,4 +1,4 @@
-[Prev](AdvProjects) (Databases and projects) | [Home](Home) | [Manual](DocMain) | (Maps: Tips and Tricks) [Next](DocMapsTipsTricks)
+[Prev](AdvProjects) (Databases and projects) | [Home](Home) | [Manual](DocMain) | (Details of map use) [Next](AdvMapDetails)
 - - -
 [TOC]
 - - -
@@ -87,4 +87,4 @@ To move a project from the workspace into a group in a database and keep the wor
 
 
 - - -
-[Prev](AdvProjects) (Databases and projects) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Maps: Tips and Tricks) [Next](DocMapsTipsTricks)
+[Prev](AdvProjects) (Databases and projects) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Details of map use) [Next](AdvMapDetails)

@@ -107,6 +107,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Data organization, workspace in**
 :  [Data organization](AdvProjects#markdown-header-organization-of-qmapshack-data "Data organization")
 
+**Data, opacity selection**
+:  [Adjust map properties](AdvMapDetails#markdown-header-adjustable-map-properties "Adjust map properties")
+
 **Database, add folder**
 :  [Database folders and items](DocGisDatabaseFoldersItems "Database folders and items")
 
@@ -167,6 +170,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **DEM, add elevation data**
 :  [Add digital elevation model](DocGettingStarted#markdown-header-add-digital-elevation-model "Add digital elevation model")
 
+**DEM, display properties**
+:  [Adjust elevation properties](AdvMapDetails#markdown-header-adjustable-elevation-properties "Adjust elevation properties")
+
 **DEM, draw order**
 :  [Draw Order](DocControlMapDem#markdown-header-draw-order "Draw Order")
 
@@ -177,7 +183,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Organization of Maps & DEM](DocInstallMapDem#markdown-header-organization-of-maps-dem "Organization of Maps & DEM")
 
 **DEM, hill shading**
-:  [DEM Files](DocControlMapDem#markdown-header-dem-files "DEM Files")
+:  [Adjust elevation properties](AdvMapDetails#markdown-header-adjustable-elevation-properties "Adjust elevation properties") ⊞ [DEM Files](DocControlMapDem#markdown-header-dem-files "DEM Files")
 
 **DEM, installation**
 :  [Installing Raster Maps or DEM Data](DocInstallMapDem#markdown-header-installing-raster-maps-or-dem-data "Installing Raster Maps or DEM Data")
@@ -185,11 +191,17 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **DEM, properties of DEM**
 :  [DEM Files](DocControlMapDem#markdown-header-dem-files "DEM Files")
 
+**DEM, slope**
+:  [Adjust elevation properties](AdvMapDetails#markdown-header-adjustable-elevation-properties "Adjust elevation properties")
+
 **DEM, sources**
 :  [DEM](DocInstallMapDem#markdown-header-dem "DEM")
 
 **DEM, VRT file for**
-:  [DEM Files](DocBasicsMapDem#markdown-header-dem-files "DEM Files") ⊞ [Use of VRT files](DocFaqMaps#markdown-header-is-it-possible-to-use-several-vrt-files "Use of several VRT files")
+:  [Use of VRT files](DocFaqMaps#markdown-header-is-it-possible-to-use-several-vrt-files "Use of several VRT files")
+
+**DEM, VRT file of**
+:  [DEM Files](DocBasicsMapDem#markdown-header-dem-files "DEM Files")
 
 **Directories, used**
 :  [User-relevant directories (Windows)](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant directories (Windows)")
@@ -234,11 +246,11 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Elevation, edit**
 :  [Edit track elevation](AdvTrkElevation#markdown-header-manually-edit-elevation-of-a-track-point "Edit track elevation")
 
-**Elevation, Filter**
-:  [Track elevation filter](DocGisItemsTrk2#markdown-header-elevation "Track elevation filter")
-
 **Elevation, filter**
 :  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
+
+**Elevation, Filter**
+:  [Track elevation filter](DocGisItemsTrk2#markdown-header-elevation "Track elevation filter")
 
 **Elevation, invalid data**
 :  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
@@ -378,6 +390,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Hill shading, DEM**
 :  [DEM Files](DocControlMapDem#markdown-header-dem-files "DEM Files")
 
+**Hill shading, visualization**
+:  [Adjust elevation properties](AdvMapDetails#markdown-header-adjustable-elevation-properties "Adjust elevation properties")
+
 
 # I
 
@@ -424,7 +439,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Add maps](DocGettingStarted#markdown-header-add-maps "Add maps")
 
 **Map, cache**
-:  [User-relevant directories (Windows)](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant directories (Windows)")
+:  [Adjust map properties](AdvMapDetails#markdown-header-adjustable-map-properties "Adjust map properties") ⊞ [User-relevant directories (Windows)](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant directories (Windows)")
 
 **Map, CompeGPS (rmap)**
 :  [Raster Maps](DocBasicsMapDem#markdown-header-raster-maps "Raster Maps")
@@ -434,6 +449,12 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Map, datum**
 :  [Projection and Scaling](DocBasicsMapDem#markdown-header-projection-and-scaling "Projection and Scaling")
+
+**Map, details level**
+:  [Adjust map properties](AdvMapDetails#markdown-header-adjustable-map-properties "Adjust map properties")
+
+**Map, display properties**
+:  [Adjust map properties](AdvMapDetails#markdown-header-adjustable-map-properties "Adjust map properties")
 
 **Map, draw order**
 :  [Draw Order](DocControlMapDem#markdown-header-draw-order "Draw Order")
@@ -506,6 +527,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Map, velomap (Linux)**
 :  [openmtbmap.org & velomap.org maps](DocMapsTipsTricks#markdown-header-using-openmtbmaporg-velomaporg-in-qmapshack-linux-only "Using openmtbmap.org & velomap.org (Linux only)")
+
+**Map, visibility range**
+:  [Adjust map properties](AdvMapDetails#markdown-header-adjustable-map-properties "Adjust map properties")
 
 **Map, visibility**
 :  [Map and DEM](DocControlMapDem#markdown-header-map-and-dem "Map and DEM")
@@ -646,6 +670,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Range, of track**
 :  [Select a range of a track](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track")
 
+**Raster map, cache handling**
+:  [Adjust map properties](AdvMapDetails#markdown-header-adjustable-map-properties "Adjust map properties")
+
 **Raster map, display**
 :  [Display of raster maps](DocFaqMaps#markdown-header-why-is-a-raster-map-not-displayed "Why is a raster map not displayed?")
 
@@ -654,6 +681,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Raster map, installation**
 :  [Installing Raster Maps or DEM Data](DocInstallMapDem#markdown-header-installing-raster-maps-or-dem-data "Installing Raster Maps or DEM Data")
+
+**Raster map, layer selection**
+:  [Adjust map properties](AdvMapDetails#markdown-header-adjustable-map-properties "Adjust map properties")
 
 **Raster map, overview map of**
 :  [Display of raster maps](DocFaqMaps#markdown-header-why-is-a-raster-map-not-displayed "Why is a raster map not displayed?")
@@ -763,6 +793,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Scale, of map**
 :  [Change scale type](DocFaqMaps#markdown-header-what-is-the-result-of-changing-the-scale-type-logarithmicsquare "Change scale type (logarithmic/square)")
+
+**Slope, visualization**
+:  [Adjust elevation properties](AdvMapDetails#markdown-header-adjustable-elevation-properties "Adjust elevation properties")
 
 **SQLite, database**
 :  [SQLite database](DocGisDatabaseAddRemove#markdown-header-sqlite "SQLite database")
@@ -884,6 +917,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Track, median filter**
 :  [Median filter](AdvTrkFilters#markdown-header-median-filter "Median filter")
+
+**Track, move range to new location**
+:  [Move track range to new location](AdvTrkGeneral#markdown-header-move-track-range-to-new-location "Move track range to new location")
 
 **Track, offset elevation filter**
 :  [Offset elevation](AdvTrkFilters#markdown-header-offset-elevation "Offset elevation")

@@ -48,7 +48,8 @@ large changes to the GUI. However smaller changes will be ignored.
 
 * [Databases and projects](AdvProjects)
     * [General Actions](AdvProjActions)
-* [Maps: Tips and Tricks](DocMapsTipsTricks)              
+* [Details of map use](AdvMapDetails)
+    * [Maps: Tips and Tricks](DocMapsTipsTricks)              
 * [Data handling](AdvDataHandling)    
     * [Tracks](AdvTracks)    
         * [General topics](AdvTrkGeneral)

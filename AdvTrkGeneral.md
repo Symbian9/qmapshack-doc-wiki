@@ -154,13 +154,13 @@ upper right part of the roadbook.
 
 * It may happen that a track passes several times through a waypoint (in the example __WPT3__).  This 
 happens if the track intersects itself and if an attached waypoint is located at an intersection.   
-    * If the option `Sort along track (multiple)` is used then the waypoint is shown several times in the list.
+    * If the option `Sort along track (multiple)` is used, then the waypoint is shown several times in the list.
     * If the option `Sort along track (single)` is used then the waypoint is shown only once in the list. The
 information given in the roadbook window refers to the last pass through the waypoint.
 
     ![Roadbook with waypoints attached to track](images/DocFaq/Roadbook.jpg "Roadbook with waypoints attached to track")
 
-* If the option `Keep order of project`is used then the edit window of the project shows waypoints and tracks in different
+* If the option `Keep order of project` is used, then the edit window of the project shows waypoints and tracks in different
 tables.
    
 Attached waypoints are also shown with their icons - or in the case that the cursor is located at the waypoint position with 
@@ -272,6 +272,49 @@ This track range selection mode is useful when refining planned tracks.
 
         ![Points recalculated in range](images/DocAdv/RangeRecalculated.jpg "Points recalculated for range in track edit mode")
 
+## Move track range to new location
+
+The user can quickly move part of a track to a new location using a range of the track in edit mode. Proceed as
+described below:
+
+* Click the `Edit...` context menu of the track.
+* Go to the `Filter - Miscellaneous - Convert subpoint to points` filter and apply this filter. Now, each trackpoint
+  of the track is an ordinary trackpoint (big black square in edit mode) and can be edited. _Remark:_ If there are already
+  enough ordinary trackpoints to select the track range, then this step is superfluous.
+* Display the track in a map view.
+* Zoom the map view so that you can see the wanted details of the track.
+* Click with the left mouse button on the track and release the mouse button. 
+  An info box pops up. Choose the "_Edit position of track points_" icon in this
+  info box. This starts the track edit mode.
+
+    ![Track in edit mode](images/DocAdv/MoveTrack.jpg "Track in edit mode. Only ordinary trackpoints")
+  
+* In the toolbar that appears at the top of the map window click the "_Select a range of points_" icon.
+  The mouse cursor changes to the range selection icon. 
+* Click with the left mouse button at the start of the range that should be moved to a new location and 
+  release the mouse button.   
+* Move the mouse in the direction of the track. The color of the selected track range is changed to green.
+  Left click at the end of the wanted range.
+  
+    ![Track range in edit mode](images/DocAdv/MoveTrackRange.jpg "Track range in edit mode")
+  
+* Click the `Delete all points ...` icon. The first and the last point of the range are now connected
+  with a straight line segment.
+
+    ![Trackpoints removed](images/DocAdv/MoveTrack_DeletedPts.jpg "Trackpoints in range removed")
+
+* Click the `Add new points` icon at the top of the map view.  
+
+* Move the mouse on the straight line segment.
+* Left click and release the mouse button. A new trackpoint is attached to the mouse.
+* Move the mouse (i.e. the new trackpoint) to the wanted new location and left click. The track is re-routed using
+  this additional trackpoint. 
+* If necessary, repeat the last step to get the wanted new location of the track.  
+  
+    ![Track moved to new position](images/DocAdv/MoveTrack_NewPosition.jpg "Track range moved to new position")
+  
+* Save the edited track by either clicking the `Save to original` or the `Save as new` button on top of the map view.  
+  
 ## Assign colors to track activities
 
 **Source:** [Newsgroup discussion](https://sourceforge.net/p/qlandkartegt/mailman/message/35502464)
