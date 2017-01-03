@@ -20,7 +20,7 @@ Visibility by object type | ✔ | ✘ | ✘
 Details visibility        | ✔ | ✘ | ✘
 Cache size                | ✘ | ✘ | ✔
 Cache expiration          | ✘ | ✘ | ✔
-Layer selection           | ✘ | __?__ | ✔
+Layer selection           | ✘ | ✘ | ✔
 _Data opacity_            | ✔ | ✔ | ✔
 
 The following image shows the layout of the various selection possibilities in the map tab:
