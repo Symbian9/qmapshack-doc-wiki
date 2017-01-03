@@ -76,6 +76,8 @@ large changes to the GUI. However smaller changes will be ignored.
 * [Commit Code](DeveloperCommitCode)
 * [Add translations](DeveloperTranslate)
 * [Developing Documentation](DevelopingDocumentation)
+    * [Recommendations for editing QMS Wiki pages](AxMaintainAutoPages)
+    * [Maintaining the QMS Wiki Index](AxMaintainIndex)
 * [Playground - start your new Wiki page](DocPlayground)
 
 ## Appendix

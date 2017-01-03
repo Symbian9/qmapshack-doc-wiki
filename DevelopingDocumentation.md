@@ -1,4 +1,4 @@
-[Prev](DeveloperTranslate) (Add translations) | [Home](Home) | [Manual](DocMain) | (Playground - start your new Wiki page) [Next](DocPlayground)
+[Prev](DeveloperTranslate) (Add translations) | [Home](Home) | [Manual](DocMain) | (Recommendations for editing QMS Wiki pages) [Next](AxMaintainAutoPages)
 - - -
 [TOC]
 - - -
@@ -428,4 +428,4 @@ Bitbucket, the following conditions must be met:
 
 ///Footnotes Go Here///
 - - -
-[Prev](DeveloperTranslate) (Add translations) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Playground - start your new Wiki page) [Next](DocPlayground)
+[Prev](DeveloperTranslate) (Add translations) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Recommendations for editing QMS Wiki pages) [Next](AxMaintainAutoPages)

@@ -1,4 +1,4 @@
-[Prev](DevelopingDocumentation) (Developing Documentation) | [Home](Home) | [Manual](DocMain) | (Hotkeys) [Next](AxHotkeys)
+[Prev](AxMaintainIndex) (Maintaining the QMS Wiki Index) | [Home](Home) | [Manual](DocMain) | (Hotkeys) [Next](AxHotkeys)
 - - -
 [TOC]
 - - -
@@ -21,4 +21,4 @@ Articles currenly being developed:
 * [Use case motorcycle navigation](playground/DocUseCaseMotorcycleNavigation) - August 2016
 
 - - -
-[Prev](DevelopingDocumentation) (Developing Documentation) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Hotkeys) [Next](AxHotkeys)
+[Prev](AxMaintainIndex) (Maintaining the QMS Wiki Index) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Hotkeys) [Next](AxHotkeys)
