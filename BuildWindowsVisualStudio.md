@@ -45,7 +45,7 @@ Build instructions inspired by
   http://dominoc925.blogspot.de/2013/03/build-64-bit-gdal-for-windows.html
 
 - Download the source code of the version 1.11 (or latest) 
-  from http://trac.osgeo.org/gdal/wiki/DownloadSource and unzip
+  from http://trac.osgeo.org/gdal/wiki/DownloadSource or http://download.osgeo.org/gdal/ and unzip
 - In nmake.opt, adapt the following lines, 
   according to your build environment [my settings are given as example]
 ~~~~
