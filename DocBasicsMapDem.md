@@ -23,6 +23,7 @@ QMapShack supports the following map formats:
 *.vrt   | GDAL Virtual File. This is a wrapper format for all files supported by GDAL. (see details below)
 *.jnx   | Garmin Birds Eye.
 *.rmap  | CompeGPS Map Container. Just a very reduced feature set is supported. The tile format must be JPEG. The projection can be Mercator or Gauss Krueger 4/3
+*.gemf  | [Map file format](http://www.cgtk.co.uk/gemf "Description of GEMF file format") that is mainly used with the mobile phone [Osmdroid app](https://github.com/osmdroid/osmdroid "Osmdroid homepage"). 
 
 ### Online Maps
 
@@ -40,7 +41,7 @@ QMapShack supports the following map formats:
 
 ## Projection and Scaling
 
-The default basic projection used by QMapShack is Mercator. The geographic datum is WGS84. However you can use maps with different projections and datums as QMapShack will re-project them on-the-fly. The same applies to the scale. 
+The default basic projection used by QMapShack is Mercator. The geographic datum is WGS84. However, you can use maps with different projections and datums as QMapShack will re-project them on-the-fly. The same applies to the scale. 
 QMapShack uses a fixed logarithmic scale. All maps will be re-scaled to this scale on-the-fly. 
 
 It is also possible to change the basic projection via "View->Setup Map Workspace".
@@ -78,11 +79,11 @@ _2 4 8 16_.
 
 ## WMTS Maps
 
-A Web Map Tile Service (WMTS) is a standard protocol for serving pre-rendered georeferenced map tiles over the Internet (says Wikipedia). The capabilities of a WMTS server are defines in a XML document named WMTSCapabilities.xml. It can be found on the server:
+A Web Map Tile Service (WMTS) is a standard protocol for serving pre-rendered georeferenced map tiles over the Internet (says Wikipedia). The capabilities of a WMTS server are defined in an XML document named WMTSCapabilities.xml. It can be found on the server:
 
     http://<server_address>/<optional_path>/1.0.0/WMTSCapabilities.xml
 
-For example there is a variety of free world wide WMTS map from [Arcgis](http://services.arcgisonline.com/arcgis/rest/services). The capability sheet of the topo map can be found at:
+For example there is a variety of free worldwide WMTS map from [Arcgis](http://services.arcgisonline.com/arcgis/rest/services). The capability sheet of the topo map can be found at:
 
     http://services.arcgisonline.com/arcgis/rest/services/World_Topo_Map/MapServer/WMTS/1.0.0/WMTSCapabilities.xml
 
@@ -90,7 +91,7 @@ Or satellite images:
 
     http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/WMTS/1.0.0/WMTSCapabilities.xml
 
-To use the map you download the XML file and rename it, let's say: _World_Topo.wmts_. Move the file into QMapShack's map path and you can use the map online.
+To use the map you download the XML file and rename it, let's say: _World_Topo.wmts_. Move the file into QMapShack's map path and you can use the map on-line.
 
 For some servers, the "capabilities" XML sheet may need some hand tuning (comparing with the above working ones from Arcgis may greatly help in fixing it). For example, there is some detailed info about French IGN WMTS server in the ["maps tips & tricks"](DocMapsTipsTricks) section.
 
@@ -148,9 +149,9 @@ MinZoomLevel and MaxZoomLevel will be taken as default for the layers. _Note_: z
 
 On each layer you can define:
 
-**<Title>** A name for the layer. If no title is given "Layer" with the index number is used.
+**<Title>** A name for the layer. If no title is given, "Layer" with the index number is used.
   
-**<ServerUrl>** This is the servers URL with placeholders. %1 is for the map level (z), %2 for the column (x) and %3 for the row (y). If the URL contains special characters you have to escape them according to the HTML specification, e.g. & becomes &amp;
+**<ServerUrl>** This is the servers URL with placeholders. %1 is for the map level (z), %2 for the column (x) and %3 for the row (y). If the URL contains special characters, you have to escape them according to the HTML specification, e.g. & becomes &amp;
 
 **<MinZoomLevel>** Override the default MinZoomLevel for this layer. Can be 0..17. 0 is the most detailed level. Below this level tiles from the specified level will be taken and scaled.
 

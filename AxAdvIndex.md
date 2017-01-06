@@ -65,7 +65,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Command line options](DocCmdOptions "Command line options")
 
 **CompeGPS, map**
-:  [Raster Maps](DocBasicsMapDem#markdown-header-raster-maps "Raster Maps")
+:  [Supported raster maps](DocBasicsMapDem#markdown-header-raster-maps "Supported raster maps")
 
 **Compilation, Linux**
 :  [Compiling and Installing](DocGetQMapShack#markdown-header-compiling-and-installing "Compiling and Installing")
@@ -206,10 +206,10 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Directories, used**
 :  [User-relevant directories (Windows)](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant directories (Windows)")
 
-**Documentation, building HTML offline version**
+**Documentation, building HTML off-line version**
 :  [Building the `*.html` files](OfflineDocumentation#markdown-header-building-the-html-files "Building the `*.html` files")
 
-**Documentation, create offline version**
+**Documentation, create off-line version**
 :  [Create Offline Documentation](OfflineDocumentation "Create Offline Documentation")
 
 **Douglas-Peuker, filter**
@@ -246,11 +246,11 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Elevation, edit**
 :  [Edit track elevation](AdvTrkElevation#markdown-header-manually-edit-elevation-of-a-track-point "Edit track elevation")
 
-**Elevation, Filter**
-:  [Track elevation filter](DocGisItemsTrk2#markdown-header-elevation "Track elevation filter")
-
 **Elevation, filter**
 :  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
+
+**Elevation, Filter**
+:  [Track elevation filter](DocGisItemsTrk2#markdown-header-elevation "Track elevation filter")
 
 **Elevation, invalid data**
 :  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
@@ -309,10 +309,10 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 
 **Garmin Birds Eye, map**
-:  [Raster Maps](DocBasicsMapDem#markdown-header-raster-maps "Raster Maps")
+:  [Supported raster maps](DocBasicsMapDem#markdown-header-raster-maps "Supported raster maps")
 
 **Garmin, map images**
-:  [Vector Maps](DocBasicsMapDem#markdown-header-vector-maps "Vector Maps")
+:  [Supported vector maps](DocBasicsMapDem#markdown-header-vector-maps "Supported vector maps")
 
 **GDAL, VRT**
 :  [Maps in GDAL VRT format](DocBasicsMapDem#markdown-header-gdal-vrt-maps "Maps in GDAL VRT format")
@@ -442,7 +442,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Adjust map properties](AdvMapDetails#markdown-header-adjustable-map-properties "Adjust map properties") ⊞ [User-relevant directories (Windows)](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant directories (Windows)")
 
 **Map, CompeGPS (rmap)**
-:  [Raster Maps](DocBasicsMapDem#markdown-header-raster-maps "Raster Maps")
+:  [Supported raster maps](DocBasicsMapDem#markdown-header-raster-maps "Supported raster maps")
 
 **Map, copy position**
 :  [Position in map](DocFaqMaps#markdown-header-what-is-the-difference-between-copy-position-and-copy-position-grid "What is the difference between map position and map grid position?")
@@ -463,13 +463,16 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Organization of Maps & DEM](DocInstallMapDem#markdown-header-organization-of-maps-dem "Organization of Maps & DEM")
 
 **Map, Garmin Birds Eye (JNX)**
-:  [Raster Maps](DocBasicsMapDem#markdown-header-raster-maps "Raster Maps")
+:  [Supported raster maps](DocBasicsMapDem#markdown-header-raster-maps "Supported raster maps")
 
 **Map, Garmin map image**
-:  [Vector Maps](DocBasicsMapDem#markdown-header-vector-maps "Vector Maps")
+:  [Supported vector maps](DocBasicsMapDem#markdown-header-vector-maps "Supported vector maps")
 
 **Map, Garmin**
 :  [Use of Garmin map tiles](DocFaqMaps#markdown-header-does-qms-support-the-use-of-single-garmin-style-map-tiles "Use of single Garmin-style map tiles")
+
+**Map, GEMF**
+:  [Supported raster maps](DocBasicsMapDem#markdown-header-raster-maps "Supported raster maps")
 
 **Map, installation**
 :  [Installing Maps](DocInstallMapDem#markdown-header-installing-maps "Installing Maps")
@@ -477,8 +480,8 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Map, NZ topo configuration**
 :  [TMS Configuration for NZ Topo](DocMapsTipsTricks#markdown-header-tms-configuration-for-nz-topo "TMS Configuration for NZ Topo")
 
-**Map, online**
-:  [Online Maps](DocBasicsMapDem#markdown-header-online-maps "Online Maps")
+**Map, on-line**
+:  [Supported on-line maps](DocBasicsMapDem#markdown-header-online-maps "Supported on-line maps")
 
 **Map, opacity**
 :  [Map and DEM](DocControlMapDem#markdown-header-map-and-dem "Map and DEM")
@@ -489,7 +492,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Map, projection**
 :  [Projection and Scaling](DocBasicsMapDem#markdown-header-projection-and-scaling "Projection and Scaling")
 
-**Map, properties of online maps**
+**Map, properties of on-line maps**
 :  [Online Maps](DocControlMapDem#markdown-header-online-maps "Online Maps")
 
 **Map, properties of vector map**
@@ -499,13 +502,13 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Map Properties](DocControlMapDem#markdown-header-map-properties "Map Properties")
 
 **Map, raster map**
-:  [Raster Maps](DocBasicsMapDem#markdown-header-raster-maps "Raster Maps")
+:  [Supported raster maps](DocBasicsMapDem#markdown-header-raster-maps "Supported raster maps")
 
 **Map, Russian military map**
 :  [Use of (Russian military) raster maps](DocMapsTipsTricks#markdown-header-russian-raster-maps-ex-military-aka-genshtab-maps-of-the-general-staff-non-classified-maps-and-so-on "Use of (Russian military) raster maps")
 
 **Map, scale (logarithmic/quadratic)**
-:  [Change scale type](DocFaqMaps#markdown-header-what-is-the-result-of-changing-the-scale-type-logarithmicsquare "Change scale type (logarithmic/square)")
+:  [Change scale type](AdvMapDetails#markdown-header-map-scale-type "Change scale type (logarithmic/square)")
 
 **Map, sources of vector maps**
 :  [Maps](DocInstallMapDem#markdown-header-maps "Maps")
@@ -520,10 +523,10 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Use of Garmin map tiles](DocFaqMaps#markdown-header-does-qms-support-the-use-of-single-garmin-style-map-tiles "Use of single Garmin-style map tiles")
 
 **Map, TMS**
-:  [Online Maps](DocBasicsMapDem#markdown-header-online-maps "Online Maps") ⊞ [TMS Maps](DocBasicsMapDem#markdown-header-tms-maps "TMS Maps")
+:  [Supported on-line maps](DocBasicsMapDem#markdown-header-online-maps "Supported on-line maps") ⊞ [TMS Maps](DocBasicsMapDem#markdown-header-tms-maps "TMS Maps")
 
 **Map, vector map**
-:  [Vector Maps](DocBasicsMapDem#markdown-header-vector-maps "Vector Maps")
+:  [Supported vector maps](DocBasicsMapDem#markdown-header-vector-maps "Supported vector maps")
 
 **Map, velomap (Linux)**
 :  [openmtbmap.org & velomap.org maps](DocMapsTipsTricks#markdown-header-using-openmtbmaporg-velomaporg-in-qmapshack-linux-only "Using openmtbmap.org & velomap.org (Linux only)")
@@ -535,13 +538,13 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Map and DEM](DocControlMapDem#markdown-header-map-and-dem "Map and DEM")
 
 **Map, VRT**
-:  [Raster Maps](DocBasicsMapDem#markdown-header-raster-maps "Raster Maps")
+:  [Supported raster maps](DocBasicsMapDem#markdown-header-raster-maps "Supported raster maps")
 
 **Map, WMTS**
-:  [Online Maps](DocBasicsMapDem#markdown-header-online-maps "Online Maps") ⊞ [WMTS Maps](DocBasicsMapDem#markdown-header-wmts-maps "WMTS Maps")
+:  [Supported on-line maps](DocBasicsMapDem#markdown-header-online-maps "Supported on-line maps") ⊞ [WMTS Maps](DocBasicsMapDem#markdown-header-wmts-maps "WMTS Maps")
 
 **Map, zoom**
-:  [Change scale type](DocFaqMaps#markdown-header-what-is-the-result-of-changing-the-scale-type-logarithmicsquare "Change scale type (logarithmic/square)") ⊞ [Zooming maps](DocFaqMaps#markdown-header-is-there-a-possibility-to-display-small-roadstracks-in-a-vector-map-without-zooming-in-too-much "Display of small roads/tracks in a vector map and zooming")
+:  [Change scale type](AdvMapDetails#markdown-header-map-scale-type "Change scale type (logarithmic/square)") ⊞ [Zooming maps](DocFaqMaps#markdown-header-is-there-a-possibility-to-display-small-roadstracks-in-a-vector-map-without-zooming-in-too-much "Display of small roads/tracks in a vector map and zooming")
 
 **MapQuest, routing engine**
 :  [MapQuest router](DocGisItemsRte#markdown-header-mapquest "MapQuest router")
@@ -571,7 +574,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Zooming maps](DocFaqMaps#markdown-header-is-there-a-possibility-to-display-small-roadstracks-in-a-vector-map-without-zooming-in-too-much "Display of small roads/tracks in a vector map and zooming")
 
 **Menu, View - Setup Map View**
-:  [Change scale type](DocFaqMaps#markdown-header-what-is-the-result-of-changing-the-scale-type-logarithmicsquare "Change scale type (logarithmic/square)")
+:  [Change scale type](AdvMapDetails#markdown-header-map-scale-type "Change scale type (logarithmic/square)")
 
 **Menu, View**
 :  [Workspace](DocControlMapDem#markdown-header-workspace "Workspace")
@@ -583,10 +586,10 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 # O
 
 
-**Offline routing, Routino**
+**Off-line routing, Routino**
 :  [Routino router](DocGisItemsRte#markdown-header-routino "Routino router")
 
-**Online routing, MapQuest**
+**On-line routing, MapQuest**
 :  [MapQuest router](DocGisItemsRte#markdown-header-mapquest "MapQuest router")
 
 **OziExplorer, use of map**
@@ -792,7 +795,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 
 **Scale, of map**
-:  [Change scale type](DocFaqMaps#markdown-header-what-is-the-result-of-changing-the-scale-type-logarithmicsquare "Change scale type (logarithmic/square)")
+:  [Change scale type](AdvMapDetails#markdown-header-map-scale-type "Change scale type (logarithmic/square)")
 
 **Slope, visualization**
 :  [Adjust elevation properties](AdvMapDetails#markdown-header-adjustable-elevation-properties "Adjust elevation properties")
@@ -811,13 +814,13 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Raster contour line layer](DocMapsTipsTricks#markdown-header-raster-contour-line-layer "Raster contour line layer")
 
 **TMS, map**
-:  [Online Maps](DocBasicsMapDem#markdown-header-online-maps "Online Maps") ⊞ [TMS Maps](DocBasicsMapDem#markdown-header-tms-maps "TMS Maps")
+:  [Supported on-line maps](DocBasicsMapDem#markdown-header-online-maps "Supported on-line maps") ⊞ [TMS Maps](DocBasicsMapDem#markdown-header-tms-maps "TMS Maps")
 
 **TMS, NZ topo configuration**
 :  [TMS Configuration for NZ Topo](DocMapsTipsTricks#markdown-header-tms-configuration-for-nz-topo "TMS Configuration for NZ Topo")
 
 **TMS, recommended map scale**
-:  [Change scale type](DocFaqMaps#markdown-header-what-is-the-result-of-changing-the-scale-type-logarithmicsquare "Change scale type (logarithmic/square)")
+:  [Change scale type](AdvMapDetails#markdown-header-map-scale-type "Change scale type (logarithmic/square)")
 
 **TMS, use for ArcGIS**
 :  [Use ArcGIS server as TMS server](DocMapsTipsTricks#markdown-header-use-arcgis-server-like-a-tms-server "Use ArcGIS server as TMS server")
@@ -1014,7 +1017,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Find raster map location](DocFaqMaps#markdown-header-how-to-find-the-location-of-a-raster-map "Find raster map location with gdalinfo")
 
 **VRT, map**
-:  [Raster Maps](DocBasicsMapDem#markdown-header-raster-maps "Raster Maps")
+:  [Supported raster maps](DocBasicsMapDem#markdown-header-raster-maps "Supported raster maps")
 
 **VRT, raster map**
 :  [Installing Raster Maps or DEM Data](DocInstallMapDem#markdown-header-installing-raster-maps-or-dem-data "Installing Raster Maps or DEM Data") ⊞ [Maps in GDAL VRT format](DocBasicsMapDem#markdown-header-gdal-vrt-maps "Maps in GDAL VRT format")
@@ -1075,10 +1078,10 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [WMTS for French IGN maps](DocMapsTipsTricks#markdown-header-wmts-configuration-to-access-french-ign-maps-geoportail "WMTS configuration for French IGN maps")
 
 **WMTS, map**
-:  [Online Maps](DocBasicsMapDem#markdown-header-online-maps "Online Maps") ⊞ [WMTS Maps](DocBasicsMapDem#markdown-header-wmts-maps "WMTS Maps")
+:  [Supported on-line maps](DocBasicsMapDem#markdown-header-online-maps "Supported on-line maps") ⊞ [WMTS Maps](DocBasicsMapDem#markdown-header-wmts-maps "WMTS Maps")
 
 **WMTS, recommended map scale**
-:  [Change scale type](DocFaqMaps#markdown-header-what-is-the-result-of-changing-the-scale-type-logarithmicsquare "Change scale type (logarithmic/square)")
+:  [Change scale type](AdvMapDetails#markdown-header-map-scale-type "Change scale type (logarithmic/square)")
 
 **WMTS, server list**
 :  [List of WMS & WMTS maps](DocMapsTipsTricks#markdown-header-some-more-wms-wmts-server-maps "List of WMS & WMTS maps")

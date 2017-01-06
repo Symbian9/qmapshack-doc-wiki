@@ -3,6 +3,9 @@
 [TOC]
 - - -
 
+_Attention: This page contains examples for formatting links. The anchors of these links don't exist. The
+links therefore are classified as "__Broken__" by the script `LinkCheck.sh`!_
+
 # Maintaining the QMS Wiki Index
 
 This page describes how to maintain (edit) the index of the QMS Wiki.
@@ -22,8 +25,8 @@ This page describes how to maintain (edit) the index of the QMS Wiki.
   cases described later it is recommended to contact a user who can run the tools to help you. 
 
 * _Remember:_ 
-    * The (online) manual is maintained with the help of the Bitbucket version control system. Any change you make can
-      be undone. _You can never make irreversible changes to the (online) manual! 
+    * The (on-line) manual is maintained with the help of the Bitbucket version control system. Any change you make can
+      be undone. _You can never make irreversible changes to the (on-line) manual! 
       You never can destroy manual pages forever!_
     * The editor used for editing some text in a manual page must use UTF-8 encoding (without BOM). Other encodings 
       (such as Latin1) are not allowed even when using ASCII characters only! Others might have used non-ASCII
@@ -212,7 +215,7 @@ These steps are required to remove inconsistencies of this type:
 * _Example of script output:_
   
          + Track, select range in edit mode ---> [Select a range...](AdvTrkGeneral#markdown-header-select-a-range...)
-         - Tratck, select range in edit mode ---> [Select a range...](AdvTrkGeneral#markdown-header-select-a-range...)
+         - Track, select range in edit mode ---> [Select a range...](AdvTrkGeneral#markdown-header-select-a-range...)
      
      
      These lines mean
@@ -274,7 +277,7 @@ This is a recommended sequence of steps when editing the index in a local copy o
     * can upload (push) edited manual pages to the Bitbucket server.
 
 * _Not recommended but possible:_ If a local copy of the manual can't be made available, then make your changes
-  online in the Bitbucket Wiki. Other users editing the manual will see your changes and carry out the 
+  on-line in the Bitbucket Wiki. Other users editing the manual will see your changes and carry out the 
   maintenance steps described on this page. 
 
 * No index entries are inserted for the following manual pages:  

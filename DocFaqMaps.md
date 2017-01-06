@@ -35,20 +35,6 @@ In the second case the position is copied as a pure grid coordinate.
 For long/lat coordinates it's degrees (`49.599924 10.599991` or `-15.065344 -39.915421`). For northing/easting 
 coordinates it's meters. (`6307013m, 1415953m`)
 
-## What is the result of changing the scale type (logarithmic/square)?
-
-Selecting the menu `View  - Setup Map View` opens a map view setup window.
-In this window the user can set the map scales to _Logarithmic_ or _Square_.
-
-A change of this option leads to a different zoom behaviour of maps. 
-
-Logarithmic scales support more zoom levels than square ones. As a consequence,
-zooming with a square scale changes the scale faster than zooming with a logarithmic scale.
-
-The minimum and maximum zoom levels (scales) are nearly the same for both scales.
-
-For square scales the next zoom step leads to a scale which is approximately changed by a factor 2
-compared with the previous one. This scale is recommended for online (TMS, WMTS) maps.
 
 ## Is there a possibility to display small roads/tracks in a vector map without zooming in too much?
 
@@ -119,7 +105,7 @@ georeference data can't be found within the MAP files.
 **Source:** [http://article.gmane.org/gmane.comp.gis.qlandkartegt.user/2624](http://article.gmane.org/gmane.comp.gis.qlandkartegt.user/2624)
 
 Consider the following hints:
-* Use `gdalinfo` to verify if the required vrt file provides proper information. Keep in mind that the VRT file 
+* Use `gdalinfo` to verify if the required VRT file provides proper information. Keep in mind that the VRT file 
   is just an XML wrapper around your
   real raster map file. It stores a path to that file. If the path changes
   the VRT file has to be created again.
@@ -140,7 +126,7 @@ Consider the following hints:
   ![Overview raster map](images/DocFaq/RasterMap4.jpg "Overview raster map")
   
   Data of raster maps may be outdated. To assess the data quality use the possibility to overlay the raster map
-  with a map providing recent data (e.g. online Google map) in QMS. The following example reveals that the 
+  with a map providing recent data (e.g. on-line Google map) in QMS. The following example reveals that the 
   German motorway A4 was reconstructed and avoids now some mountain area.
 
   ![Raster map with overlay](images/DocFaq/RasterMap3.jpg "Raster map with overlay")
@@ -148,7 +134,7 @@ Consider the following hints:
 * If you have a layer of raster maps reading the files and scaling the content to an upper zoom level is 
   getting more and more resource intensive the more you zoom out. To avoid endless map loading, QMS will 
   skip the map if the effort to display it is getting too large.
-  However if QMS detects overview levels attached to the map it will use them. `gdaladdo` is the tool to do so. 
+  However, if QMS detects overview levels attached to the map it will use them. `gdaladdo` is the tool to do so. 
   Things are getting a bit more difficult for insane large map collections. `gdaladdo` will create an overview 
   file over all maps combined in the VRT file. That might get too large. In this case you have to create single
   overview files and combine them in a VRT file. 
@@ -187,7 +173,7 @@ waypoint. This centers the map in QMS to the waypoint and thus to the raster map
 **Compare:** [naviboard.de newsgroup](http://www.naviboard.de/vb/showthread.php?t=60385)
 
 Raster maps and DEM (**D**igital **E**levation **M**odel) data are supported in QMS via corresponding VRT files.
-Several VRT files can be used. It is up to the user to organize the files in a proper way.
+Several VRT files can be used. It is up to the user to organize the files properly.
  
 - - -
 [Prev](DocFaqRouting) (Routing) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Troubleshooting QMapShack) [Next](TroubleShooting)

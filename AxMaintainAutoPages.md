@@ -3,6 +3,9 @@
 [TOC]
 - - -
 
+_Attention: This page contains examples for formatting links. The anchors of these links don't exist. The
+links therefore are classified as "__Broken__" by the script `LinkCheck.sh`!_
+
 # Recommendations for editing QMS Wiki pages
 
 This page is a collection of recommendations for people editing the QMS manual.
@@ -73,11 +76,11 @@ the preface section of that page.
 
 This section describes the necessary workflow after making some special changes in manual pages.
 
-* In the case that you have to run a script mentioned in this section carry out the follwoing steps:
+* In the case that you have to run a script mentioned in this section carry out the following steps:
 
     * Open a command line window.
     * Change to the `doc\Tools` folder and run the Python scripts from this folder. 
-    * If you want to run the navbat tools, then change to the `doc` folder and run the scripts from this folder.
+    * If you want to run the navbar tools, then change to the `doc` folder and run the scripts from this folder.
 
 * Change of a section header, new section, or change in the table of contents of the manual main page
   `DocMain`:
@@ -90,7 +93,7 @@ This section describes the necessary workflow after making some special changes 
   Subsections of the manual can be used as targets for links. A special marker is added by the Markdown processor
   to each section header. This marker can be found as follows:
   
-  * Open the online Wiki page in your browser.
+  * Open the on-line Wiki page in your browser.
   * Open the source text of this page.
   * Find the wanted section header in the source text.
   * The `<a href="#markdown-header-some_text">` string in front of the section header shows the quoted marker.
@@ -149,7 +152,7 @@ the navigation bars you have to run the navbar tools!
 * The script displays in a console window a list of used and unused images in the `doc\images\FAQ` and `doc\images\DocAdv`
   folders.
 * Don't use the local Markdown variant of the file - it doesn't have the correct link form. Correct links can be found
-  either in the online Bitbucket Wiki or in the offline HTML form of the page!
+  either in the on-line Bitbucket Wiki or in the off-line HTML form of the page!
 
 ### BuildToc.py and AxAdvToc.md
 

@@ -75,6 +75,11 @@ given points. Tracks, routes, and area boundaries are polylines.
 : Also denoted as "_Track edit window_". Window that displays various information about a track and that allows editing
 of some track data.
 
+**Track edit mode**
+: Special state of a track in which trackpoints can be edited. To do this a copy of the track is created. The user carries out the editing
+  (add, move, delete of points, assign activity, ...) on this copy and at the end he decides whether to save the changes to the original or 
+  to a new track, or if he wants to abort editing.
+
 **Track edit window**
 : See __Track details dialog__.
 

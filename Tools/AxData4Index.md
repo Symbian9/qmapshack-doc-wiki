@@ -54,12 +54,12 @@ ___Basic usage___
             * [D5.) Run/Debug ](BuildWindowsVisualStudio#markdown-header-d5-rundebug)
             
     * [Create Offline Documentation](OfflineDocumentation)
-         1. Documentation|create offline version
+         1. Documentation|create off-line version
     
         * [Prerequisites](OfflineDocumentation#markdown-header-prerequisites)
         * [Building the `*.html` files](OfflineDocumentation#markdown-header-building-the-html-files)
         * Building HTML files
-            1. Documentation|building HTML offline version     
+            1. Documentation|building HTML off-line version     
         
 * [Using QMapShack](Don'tInsertIndexEntriesHere)
     * [Getting started](DocGettingStarted)
@@ -109,11 +109,13 @@ ___Basic usage___
             
             * [Map formats](DocBasicsMapDem#markdown-header-map-formats)
                 * [Vector Maps](DocBasicsMapDem#markdown-header-vector-maps)
+                + Supported vector maps
                     1. Map|Garmin map image
                     1. Garmin|map images
                     1. Map|vector map
                     
                 * [Raster Maps](DocBasicsMapDem#markdown-header-raster-maps)
+                + Supported raster maps
                     1. Map|raster map
                     1. Map|VRT
                     1. VRT|map
@@ -121,13 +123,16 @@ ___Basic usage___
                     1. Garmin Birds Eye|map
                     1. Map|CompeGPS (rmap)
                     1. CompeGPS|map
+                    1. Map|GEMF
+                    
                     
                 * [Online Maps](DocBasicsMapDem#markdown-header-online-maps)
+                + Supported on-line maps
                     1. WMTS|map
                     1. Map|WMTS
                     1. TMS|map
                     1. Map|TMS
-                    1. Map|online
+                    1. Map|on-line
 
                 * [DEM Files](DocBasicsMapDem#markdown-header-dem-files)
                     1. DEM|VRT file of
@@ -176,7 +181,7 @@ ___Basic usage___
                     1. Map|properties of vector map
                     
                 * [Online Maps](DocControlMapDem#markdown-header-online-maps)
-                    1. Map|properties of online maps
+                    1. Map|properties of on-line maps
                     1. Map|tile cache                  
                     
                 * [DEM Files](DocControlMapDem#markdown-header-dem-files)
@@ -312,7 +317,7 @@ ___Basic usage___
                 + Routino router
                     1. Routing engine|Routino
                     1. Routino|routing engine
-                    1. Offline routing|Routino
+                    1. Off-line routing|Routino
                     1. Routino|routing database                    
                     
                     * [Create Own Routino database](DocGisItemsRte#markdown-header-create-own-routino-database)
@@ -328,7 +333,7 @@ ___Basic usage___
                 + MapQuest router
                     1. Routing engine|MapQuest
                     1. MapQuest|routing engine
-                    1. Online routing|MapQuest
+                    1. On-line routing|MapQuest
                     
                     
         * [Waypoints](DocGisItemsWpt)
@@ -494,6 +499,16 @@ ___Basic usage___
         1. Hill shading|visualization
         1. DEM|display properties
     
+    * [Map scale type](AdvMapDetails#markdown-header-map-scale-type)    
+    + Change scale type
+    ++ Change scale type (logarithmic/square)
+        1. Map|zoom
+        1. Map|scale (logarithmic/quadratic)
+        1. Scale|of map
+        1. TMS|recommended map scale
+        1. WMTS|recommended map scale
+        1. Menu|View - Setup Map View
+     
     * [Maps: Tips and Tricks](DocMapsTipsTricks)
         * [Backdoor to use a WMS server as TMS server](DocMapsTipsTricks#markdown-header-backdoor-to-use-a-wms-server-as-tms-server)
         + Use WMS server as TMS server
@@ -772,17 +787,7 @@ ___Basic usage___
             ++ What is the difference between map position and map grid position?
                 1. Map|copy position 
                 1. Menu|View - Setup Coord. Format
-                
-            * [What is the result of changing the scale type (logarithmic/square)?](DocFaqMaps#markdown-header-what-is-the-result-of-changing-the-scale-type-logarithmicsquare)
-            + Change scale type
-            ++ Change scale type (logarithmic/square)
-                1. Map|zoom
-                1. Map|scale (logarithmic/quadratic)
-                1. Scale|of map
-                1. TMS|recommended map scale
-                1. WMTS|recommended map scale
-                1. Menu|View - Setup Map View
-            
+                           
             * [Is there a possibility to display small roads/tracks in a vector map without zooming in too much?](DocFaqMaps#markdown-header-is-there-a-possibility-to-display-small-roadstracks-in-a-vector-map-without-zooming-in-too-much)
             + Zooming maps
             ++ Display of small roads/tracks in a vector map and zooming
