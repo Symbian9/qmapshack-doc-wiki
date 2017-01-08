@@ -12,6 +12,11 @@ always reflect just a snapshot of the current state. Screenshots seen in this ma
 not reflect the current appearance of the program. The manual will be updated if there are 
 large changes to the GUI. However smaller changes will be ignored. 
 
+German users can find a short quickstart description here:
+
+![German flag](images/DocGettingStarted/FlagDe.jpg)  [__Schnellstartanleitung (deutsch)__](DocQuickStartGerman "German quickstart description")
+
+
 ## Basic usage
 
 * Installing QMapShack

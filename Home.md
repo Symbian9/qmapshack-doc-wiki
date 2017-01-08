@@ -6,6 +6,11 @@ If you want to download QMapShack visit the [**download page**](https://bitbucke
 
 If you want to see **screenshots** or start with QMapShack visit the [**documentation page**](DocMain).
 
+German users can find a short quickstart description here:
+
+![German flag](images/DocGettingStarted/FlagDe.jpg)  [__Schnellstartanleitung (deutsch)__](DocQuickStartGerman "German quickstart description")
+
+
 [**Found a bug?** Read this!](ReportBugs)
 
 [**Missing a feature?** Read this!](RequestFeatures)
