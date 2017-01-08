@@ -11,21 +11,21 @@
 
 **Source:** [Newsgroup discussion about QMS INI information](https://sourceforge.net/p/qlandkartegt/mailman/message/35276035)
 
-The philosophy of the QMS workspace concept is to support handling of temporary project data which exists only for a short time 
-period and for which there is no need to save it permanently into a user-defined database 
-(shown in the lower part of the "Data" dock widget). 
+The philosophy of the QMS workspace concept is to support handling of temporary project data which exists only for a short time
+period and for which there is no need to save it permanently into a user-defined database
+(shown in the lower part of the "Data" dock widget).
 In order to avoid the loss of such temporary project data without
-forcing the user to save it as permanent data QMS uses the `workspace.db` database. This file contains all the data of the 
-current QMS workspace (upper part of the "Data" dock widget). Thus, this state of the workspace can be restored after a 
+forcing the user to save it as permanent data QMS uses the `workspace.db` database. This file contains all the data of the
+current QMS workspace (upper part of the "Data" dock widget). Thus, this state of the workspace can be restored after a
 restart of QMS.
 
-The database setup is part of the configuration and saved in a configuration file (*.config or *.ini file, Windows registry). The workspace setup 
+The database setup is part of the configuration and saved in a configuration file (*.config or *.ini file, Windows registry). The workspace setup
 is considered as temporary and therefore not part of the configuration.
 
-**Warnings:** 
+**Warnings:**
 * QMS maintains only one `workspace.db` file!
-* The workspace data can be linked to data in a database. When restarting QMS with a different configuration 
-(with different databases) workspace data gets lost if a link to the database can't be restored! 
+* The workspace data can be linked to data in a database. When restarting QMS with a different configuration
+(with different databases) workspace data gets lost if a link to the database can't be restored!
 
 ## How to edit quickly the name of a project?
 
@@ -45,7 +45,7 @@ database file.
 
 ## How to find database to which a project belongs?
 
-Move the mouse pointer on the project name in the workspace. An information box pops-up. The filename shown ist the name of the
+Move the mouse pointer on the project name in the workspace. An information box pops-up. The filename shown is the name of the
 database to which the project belongs. If no filename is shown then the project doesn't belong to any database.
 
 

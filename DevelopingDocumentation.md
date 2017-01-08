@@ -165,14 +165,14 @@ Bitbucket, the following conditions must be met:
     navigation bars at the top and bottom of it alone.  The top
     navigation bar looks like
 
-            [Prev](... | [Home](... | [Manual](... | ...  
-            - - -  
-            [TOC]  
+            [Prev](... | [Home](... | [Manual](... | ...
+            - - -
+            [TOC]
             - - -
 
     while the bottom navigation bar looks like
 
-            - - -  
+            - - -
             [Prev](... | [Home](... | [Manual](... | ...
 
     When running `make nav` later, these lines will be updated
@@ -320,7 +320,7 @@ Bitbucket, the following conditions must be met:
     save the edited file to disk, `cd` to the top level of the wiki
     repository, if necessary, and then run the commands
 
-    >    ./Make.sh _YourFilePath_.md  
+    >    ./Make.sh _YourFilePath_.md
     >    _YourBrowser_ _YourFilePath_.html
 
     where _YourFilePath_ has to start with `playground/`, if you created
@@ -355,7 +355,7 @@ Bitbucket, the following conditions must be met:
 
         >    mv playground/_YourNewFileName_.md .
 
-    *   If your file isn't reachable via some link occuring in one of
+    *   If your file isn't reachable via some link occurring in one of
         the other `*.md` files, it is dead.  Or at least as good as
         dead.  There is a good chance that nobody ever reads your text.
         So there should always be at least one link to it in the other

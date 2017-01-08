@@ -15,18 +15,18 @@ The data of a whole database or one of its subfolders (project, group, other) ca
 
 * right-click the database or folder name and select the context menu entry `Export to GPX...`,
 * the window that pops-up ("_export window_") allows to select the target folder and the type of GPX file wanted,
-* click the `Start` button to start the save operation. 
+* click the `Start` button to start the save operation.
 
   _Attention:_ Saving of big databases
-  can take a while. The export window shows the progress of the operation and the storage location of each 
+  can take a while. The export window shows the progress of the operation and the storage location of each
   newly created folder and GPX file. Wait for the `Done` information in the export window!
-  
-If a database is saved a new folder is created in the selected target directory. Subfolders to this folder for projects 
-and groups in the database are created - if necessary - to mirror the tree structure of the database. Data items (waypoints, tracks, 
-routes) in a database folder are saved into a GPX file having the name of the folder to which they belong. 
+
+If a database is saved a new folder is created in the selected target directory. Subfolders to this folder for projects
+and groups in the database are created - if necessary - to mirror the tree structure of the database. Data items (waypoints, tracks,
+routes) in a database folder are saved into a GPX file having the name of the folder to which they belong.
 
 If a subfolder (project or group) of a database is saved then this rule is applied in a similar way.
-  
+
 ## Working with projects
 
 ### Merge projects
@@ -47,7 +47,7 @@ If you use a database you do not have to load all data of a project.
 You can load only the items needed. Additionally, if you store a newly created
 project into the database you do not need to clone (duplicate) the data.
 
-In the same way all the contents of one project can be dragged into another project. 
+In the same way all the contents of one project can be dragged into another project.
 
 
 ### Copy project
@@ -56,7 +56,7 @@ In the same way all the contents of one project can be dragged into another proj
 
 To move a project from the workspace into a group in a database and keep the workspace project name proceed as follows:
 
-* Right click on the project folder in the workspace and select `Copy to...` 
+* Right click on the project folder in the workspace and select `Copy to...`
 * Enter the name you want it to have in the database
 * Select the destination database and in the next dialog the location in the database
 
@@ -64,7 +64,7 @@ To move a project from the workspace into a group in a database and keep the wor
 
 * _Save a single workspace project:_
 
-    When saving a project from the workspace exactly the project data displayed in the workspace is saved. 
+    When saving a project from the workspace exactly the project data displayed in the workspace is saved.
     _Remark:_ If the project belongs to a database then the user can select the data to be displayed in the workspace.
     The part of the project data not selected for display is not saved by this method!
     * Right-click on the project name in the workspace
@@ -79,7 +79,7 @@ To move a project from the workspace into a group in a database and keep the wor
 * _Save all projects in workspace:_
 
     Select menu entry `File - Save all GIS data` or press `CTRL-S`. Depending on the type of the project (QMS, GPX or database)
-    the data is saved to a file or to a database.    
+    the data is saved to a file or to a database.
 
 * _Save (export) project as part of a database:_
 

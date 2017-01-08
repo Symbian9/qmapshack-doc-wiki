@@ -17,11 +17,11 @@ Try to be as accurate as possible; don't assume we'll just "know".
 
 The request should be **self-contained**, avoid untraceable references (such as `as discussed on IRC`).
 
-1. Give a **detailed description** of what you want and **why it is of general interest** (in your opinion). Just because software XYZ does it, is a bad reason. 
+1. Give a **detailed description** of what you want and **why it is of general interest** (in your opinion). Just because software XYZ does it, is a bad reason.
 2. Sketch in detail how you think the feature should be integrated into the GUI or the workflow.
 3. If possible, **provide ressources** (such as icons) required when implementing your feature.
 
-**Do not assign the feature request to anyone!** It will be assigned when someone volunteers to implement it. 
+**Do not assign the feature request to anyone!** It will be assigned when someone volunteers to implement it.
 
 
 ## Implement it yourself

@@ -5,7 +5,7 @@
 
 # Track filters
 
-Track filters are tools to manipulate a track in a predefined way. QMS supports track filters for elevation, 
+Track filters are tools to manipulate a track in a predefined way. QMS supports track filters for elevation,
 timestamps, splitting of tracks and others.
 
 To apply a track filter proceed as follows:
@@ -39,12 +39,12 @@ This is a filter for smoothing the elevation profile of a (recorded) track.
 
 The user has to select a number of trackpoints (5, 7, or 9) as a parameter to the filter.
 
-The new elevation of a trackpoint is the median of the elevations of the selected number of trackpoints 
+The new elevation of a trackpoint is the median of the elevations of the selected number of trackpoints
 around the trackpoint. Assuming 5 points then 2 trackpoints before and 2 trackpoints after the given one
 are selected, the 5 elevations are ordered and the middle one (the _median_) is used as new elevation.
 
-A lower number of selected points results in a smoother elevation profile as can be seen in the following 
-images (showing the original profile and the results of the 5, 7, and 9 points filter). 
+A lower number of selected points results in a smoother elevation profile as can be seen in the following
+images (showing the original profile and the results of the 5, 7, and 9 points filter).
 A higher number of selected points results in an elevation profile closer to the original one.
 
 ![Original elevation profile](images/DocAdv/FilterMedian0.jpg "Original elevation profile")
@@ -65,7 +65,7 @@ The new elevation of a trackpoint is calculated from a cubic spline interpolatio
 
 The smoothness of the elevation profile increases in the order _fine - medium - coarse_. The fine interpolation filter
 results in an elevation profile closer to the original one than the elevation profile obtained from the coarse filter
-as can be seen in the following images (showing the original profile and the results of the coarse, medium, and fine 
+as can be seen in the following images (showing the original profile and the results of the coarse, medium, and fine
 filter).
 
 ![Original elevation profile](images/DocAdv/FilterInterpolate0.jpg "Original elevation profile")
@@ -79,7 +79,7 @@ otherwise it can't be used.
 ### Replace elevation data
 
 This filter replaces the elevation data of the given track with elevation data taken from the DEM data loaded
-into QMS. 
+into QMS.
 
 If a track doesn't have elevation data, then elevation data can be added to the track with the help of this filter.
 
@@ -93,11 +93,11 @@ A fixed value selected by the user is added to the elevation of each trackpoint.
 ### Remove extension from all trackpoints
 
 Depending on their source trackpoints may have different sets of properties.
-This makes it possible to add fitness data to trackpoints. These additional properties are saved as extensions 
+This makes it possible to add fitness data to trackpoints. These additional properties are saved as extensions
 in a GPX file.
 
 This filter displays for a given track a list of available extensions (properties). Applying the filter
-removes the selected extension (temperature, heart rate, recorded speed, ...) from the trackpoint data. 
+removes the selected extension (temperature, heart rate, recorded speed, ...) from the trackpoint data.
 
 ### Split segments into tracks
 
@@ -117,14 +117,14 @@ with a _(segment xx)_ suffix.
 (_valid starting with QMS patch version 7ac34c818ec1/2016-12-06_)
 
 When creating a track, the user creates with the help of mouse clicks (ordinary) trackpoints. Depending on the selected
-[routing method](AdvRoutes#markdown-header-description-of-routing-methods-in-qmapshack) 
-additional trackpoints are be added automatically by the routing algorithm. These additional trackpoints are 
-called _subpoints_. 
+[routing method](AdvRoutes#markdown-header-description-of-routing-methods-in-qmapshack)
+additional trackpoints are be added automatically by the routing algorithm. These additional trackpoints are
+called _subpoints_.
 
-Ordinary trackpoints (marked with a big black square when editing a track) can be moved to a new location or deleted 
+Ordinary trackpoints (marked with a big black square when editing a track) can be moved to a new location or deleted
 while editing the track.
 
-Subpoints (marked with a small black square when editing a track) can't be edited. They are adjusted automatically 
+Subpoints (marked with a small black square when editing a track) can't be edited. They are adjusted automatically
 if a neighboring ordinary trackpoint has changed.
 
 The given track filter converts each subpoint to an ordinary trackpoint.

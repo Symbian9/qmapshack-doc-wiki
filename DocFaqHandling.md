@@ -5,12 +5,12 @@
 
 # Frequently Asked Questions - Data handling
 
-  
+
 ## How to find distance between waypoints
 
 (_inspired by and partially copied from_ [QMS issues list](https://bitbucket.org/maproom/qmapshack/issues/169/distance-between-waypoints-popup-window))
- 
-* _Find the direct distance from a waypoint to some other point:_ set a waypoint and move it to the other point. 
+
+* _Find the direct distance from a waypoint to some other point:_ set a waypoint and move it to the other point.
   This will give you the distance and the course (direction) to the other point. When done abort the operation (right mouse click) and remove the waypoint.
 
 ![Distance between waypoints](images/DocFaq/WPTDistance.jpg "Distance between waypoints")
@@ -48,11 +48,11 @@ The additional extensions used in the _special format_ provide information about
 
 * the track history (can't be re-activated when GPX file is re-loaded into QMS),
 * the track display color
-* the type of a trackpoint (trackpoint created by routing engine (so-called subpoint) or 
+* the type of a trackpoint (trackpoint created by routing engine (so-called subpoint) or
   trackpoint created by user interaction, hidden trackpoint, activity)
 
-Trackpoints created by a routing engine can't be edited by the user whereas trackpoints 
-created by a user can be 
+Trackpoints created by a routing engine can't be edited by the user whereas trackpoints
+created by a user can be
 edited (compare section ["Edit items with multiple points"](DocGisItemsEditMultiple)).
 
 

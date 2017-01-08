@@ -52,7 +52,7 @@ these are also the only extensions of the _Extra_ extension used by the
 conversion script.
 
 [^2]: If your version of `make` can't handle "`::=`" and you can't find
-or install another one, simply replace all occurances of "`::=`" in file
+or install another one, simply replace all occurrences of "`::=`" in file
 `Makefile` in the documentation directory with "`=`".  In this makefile
 using "simply expanded variables" (defined via the "`::=`" assignment)
 rather than "recursively expanded variables" (defined via the normal

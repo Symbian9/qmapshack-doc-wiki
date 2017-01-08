@@ -5,12 +5,12 @@
 
 # Edit elevation data
 
-## Manually edit elevation of a track point 
+## Manually edit elevation of a track point
 
-* Open the edit window for the track, 
+* Open the edit window for the track,
 * ensure that track data can be edited (open lock in description part of edit window - if lock is closed, click it!)
-* go to the _Points_ tab, 
-* find the track point to be edited, 
+* go to the _Points_ tab,
+* find the track point to be edited,
 * double-click in the elevation column,
 * set the new elevation in the pop-up window.
 
@@ -41,7 +41,7 @@ The area (map) in which the track is located doesn't show anything special:
 
 ![DEM data with gaps](images/DocFaq/DEM0.jpg "DEM data with gaps")
 
-The reason for the missing elevation data is the source of the elevation data (in the example discussed 
+The reason for the missing elevation data is the source of the elevation data (in the example discussed
 a file `N51E011.hgt`). Elevation data
 is normally taken from satellite measurement (SRTM data) and this data may have gaps (elsewhere called voids), i.e. small areas without valid elevation
 data. These gaps are marked in the HGT files as `NODATA` areas. If a trackpoint is located in such an area then QMS can't
@@ -51,25 +51,25 @@ If there is an urgent need to avoid these missing elevation values the user can 
 
 * (_optimal procedure_) Try to find a source of DEM (SRTM) data with improved quality, i.e. with data where the
 above mentioned gaps have been removed using various techniques. For Germany the
-[opendem.info](http://opendem.info/download_srtm.html) server is such a source. 
-* Use the QMS __Reduce visible track points__ filter to __hide invalid track points__. Check if 
-the resulting changes of the track can be accepted. If so, use this filter again to finally __remove 
+[opendem.info](http://opendem.info/download_srtm.html) server is such a source.
+* Use the QMS __Reduce visible track points__ filter to __hide invalid track points__. Check if
+the resulting changes of the track can be accepted. If so, use this filter again to finally __remove
 invalid points__.
 
-* Use the QMS __Change elevation of track points__ filter to __interpolate elevation data__. Check in the __preview__ 
+* Use the QMS __Change elevation of track points__ filter to __interpolate elevation data__. Check in the __preview__
 if the resulting interpolated (smoothed) track profile can be accepted. If so, apply the filter.
 
 * (_tedious procedure_) Manually edit elevation data with data taken from a different source (e.g. raster map
 with elevation data).
 
-* (_unreliable procedure_) If the area is rather flat then gaps in HGT files can be filled in with a default average elevation 
-value with the help of the `GDAL` package. On a command line 2 steps have to be executed:  
+* (_unreliable procedure_) If the area is rather flat then gaps in HGT files can be filled in with a default average elevation
+value with the help of the `GDAL` package. On a command line 2 steps have to be executed:
 
     * Convert the `NODATA` value of the source file to the wanted average value (in the example 50m, use full paths!)
 
              gdalwarp N51E011.hgt -of VRT N51E0111.hgt -dstnodata 50
 
-    * Unset the `NODATA` flag in the HGT file so that 100 is considered as a regular value.  
+    * Unset the `NODATA` flag in the HGT file so that 100 is considered as a regular value.
 
              gdal_translate N51E0111.hgt -of VRT N51E01111.hgt -a_nodata none
 

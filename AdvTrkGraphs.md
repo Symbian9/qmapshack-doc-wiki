@@ -9,7 +9,7 @@
 
 (_valid starting with QMS patch version  b9235da (18.11.2016)_)
 
-The edit window of a track can show up to 3 graphs displaying the track profile and at most 2 of the 3 features _progress_, 
+The edit window of a track can show up to 3 graphs displaying the track profile and at most 2 of the 3 features _progress_,
 _speed_ and _slope_.
 
 The initial scaling of the graphs is so that the whole graph/track data can be seen.
@@ -29,8 +29,8 @@ pressing the left mouse button, moving the mouse vertically or horizontally and 
 
 ## Select a scale range for track data display
 
-When displaying track graphs in the track edit window or when using different colors on a track shown in a map window 
-the user can select a scale range. There are 3 different strategies for such a selection that can be chosen by a click on 
+When displaying track graphs in the track edit window or when using different colors on a track shown in a map window
+the user can select a scale range. There are 3 different strategies for such a selection that can be chosen by a click on
 the respective icon in the _Graphs_ resp. _Style_ tabs of the edit window:
 
 * User defined limits for this track

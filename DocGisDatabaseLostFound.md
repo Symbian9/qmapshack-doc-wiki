@@ -9,11 +9,11 @@ When deleting an item from a database folder the item is not deleted itself. Jus
 
 ![maproom2](images/DocGisDatabaseLostFound/maproom1.png) ![maproom2](images/DocGisDatabaseLostFound/maproom2.png)
 
-If you want to restore deleted items you have to load the Lost & Found folder into the workspace. 
+If you want to restore deleted items you have to load the Lost & Found folder into the workspace.
 
 ![maproom2](images/DocGisDatabaseLostFound/maproom4.png)
 
-Next you copy the items you want to restore to another project. 
+Next you copy the items you want to restore to another project.
 
 ![maproom2](images/DocGisDatabaseLostFound/maproom5.png)
 

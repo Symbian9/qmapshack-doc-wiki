@@ -14,7 +14,7 @@ QMapShack supports the following map formats:
  Ext.   | Comment
 --------|-------------
 .img    | Garmin Map Images. This must be the same container files as used on the devices (often named gmapsupp_*.img). Garmin map images consisting of several mapsets (required for older Garmin devices) can be used only if all included mapsets use the same type file. Freely available software tools can be used to find the properties of a map image container and to create map images with just 1 mapset from map image containers with several mapsets. A collection with a \*tdb file and several \*img map tile files won't do.
-            
+
 
 ### Raster Maps
 
@@ -23,7 +23,7 @@ QMapShack supports the following map formats:
 *.vrt   | GDAL Virtual File. This is a wrapper format for all files supported by GDAL. (see details below)
 *.jnx   | Garmin Birds Eye.
 *.rmap  | CompeGPS Map Container. Just a very reduced feature set is supported. The tile format must be JPEG. The projection can be Mercator or Gauss Krueger 4/3
-*.gemf  | [Map file format](http://www.cgtk.co.uk/gemf "Description of GEMF file format") that is mainly used with the mobile phone [Osmdroid app](https://github.com/osmdroid/osmdroid "Osmdroid homepage"). 
+*.gemf  | [Map file format](http://www.cgtk.co.uk/gemf "Description of GEMF file format") that is mainly used with the mobile phone [Osmdroid app](https://github.com/osmdroid/osmdroid "Osmdroid homepage").
 
 ### Online Maps
 
@@ -33,7 +33,7 @@ QMapShack supports the following map formats:
 *.tms | This is a small XML file to define all data needed to access TMS serves. (see details below)
 
 ### DEM Files
- 
+
  Ext.   | Comment
 --------|-------------
 *.vrt | GDAL Virtual File. This is a wrapper format for all files supported by GDAL. (see details below)
@@ -41,14 +41,14 @@ QMapShack supports the following map formats:
 
 ## Projection and Scaling
 
-The default basic projection used by QMapShack is Mercator. The geographic datum is WGS84. However, you can use maps with different projections and datums as QMapShack will re-project them on-the-fly. The same applies to the scale. 
-QMapShack uses a fixed logarithmic scale. All maps will be re-scaled to this scale on-the-fly. 
+The default basic projection used by QMapShack is Mercator. The geographic datum is WGS84. However, you can use maps with different projections and datums as QMapShack will re-project them on-the-fly. The same applies to the scale.
+QMapShack uses a fixed logarithmic scale. All maps will be re-scaled to this scale on-the-fly.
 
 It is also possible to change the basic projection via "View->Setup Map Workspace".
 
 ## GDAL *.vrt Maps
 
-All raster maps handled by GDAL have to be wrapped by a virtual map. You can do this with _gdalbuildvrt_. 
+All raster maps handled by GDAL have to be wrapped by a virtual map. You can do this with _gdalbuildvrt_.
 A virtual map can contain one or several map files (you can replace \*.tif with any other extension supported by GDAL, e.g. \*.hgt).
 
     gdalbuildvrt My_Map_Name.vrt path1/file1.tif path2/file2.tif
@@ -68,12 +68,12 @@ You can define a no data value, too. This is quite useful for DEM data that does
 
 **Important:** All files must have the same color mode and the same projection/datum/scaling.
 
-If the files are large it will take a lot of memory and time to display them in the outer zoom levels. 
-You might consider to use gdaladdo to add overview levels to the files. 
+If the files are large it will take a lot of memory and time to display them in the outer zoom levels.
+You might consider to use gdaladdo to add overview levels to the files.
 
     gdaladdo My_Map_Name.vrt 2 4 8 16
 
-This will create a file _My_Map_Name.vrt.ovr_ next to _My_Map_Name.vrt_ containing scaled overviews by factor 
+This will create a file _My_Map_Name.vrt.ovr_ next to _My_Map_Name.vrt_ containing scaled overviews by factor
 _2 4 8 16_.
 
 
@@ -150,7 +150,7 @@ MinZoomLevel and MaxZoomLevel will be taken as default for the layers. _Note_: z
 On each layer you can define:
 
 **<Title>** A name for the layer. If no title is given, "Layer" with the index number is used.
-  
+
 **<ServerUrl>** This is the servers URL with placeholders. %1 is for the map level (z), %2 for the column (x) and %3 for the row (y). If the URL contains special characters, you have to escape them according to the HTML specification, e.g. & becomes &amp;
 
 **<MinZoomLevel>** Override the default MinZoomLevel for this layer. Can be 0..17. 0 is the most detailed level. Below this level tiles from the specified level will be taken and scaled.

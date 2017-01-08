@@ -20,7 +20,7 @@ CTRL-T | Add new view tab.
 CTRL-SHIFT-T | Clone map view.
 CTRL-W | Close tab that is not a map view (_patch version cff9526 (15.11.2016) and later ones_).
 __Map__ |
-up-key     | Move the map focus north, moving the map south 
+up-key     | Move the map focus north, moving the map south
 down-key   | Move the map focus south, moving the map north
 left-key   | Move the map focus west, moving the map east
 right-key  | Move the map focus east, moving the map west
@@ -28,7 +28,7 @@ right-key  | Move the map focus east, moving the map west
 -          | Zoom out of the map
 __Routing__ |
 CTRL-A | Use routing algorithm with options selected in the routing window when creating route or track. Choice can be modified during routing. No map data required.
-CTRL-O | Use straight lines for routing when creating route or track. Choice can be modified during routing. 
+CTRL-O | Use straight lines for routing when creating route or track. Choice can be modified during routing.
 CTRL-V | If available use polyline from map for routing from one point to the next one (_snap to line_), otherwise use straight lines. Choice can be modified during routing. No routing data required
 __Track edit mode__ |
 CTRL-+ | Add trackpoints to track.
@@ -36,7 +36,7 @@ CTRL-D | Delete trackpoints.
 CTRL-M | Move trackpoints.
 CTRL-R | Select range of track points.
 
-When in text edit fields the usual hotkeys can be used.  
+When in text edit fields the usual hotkeys can be used.
 
 - - -
 [Prev](DocPlayground) (Playground - start your new Wiki page) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Complete table of contents) [Next](AxAdvToc)

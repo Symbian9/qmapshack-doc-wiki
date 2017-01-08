@@ -17,13 +17,13 @@ To remove a database you do a right click on the root entry of the database and 
 
 ![Database context menu](images/DocGisDatabaseAddRemove/maproom3.png "Database context menu")
 
-This will remove the database from the database list, but not from your hard disk. You can load it later again.  
+This will remove the database from the database list, but not from your hard disk. You can load it later again.
 
 ### SQLite
 
 ![Add SQLite DB](images/DocGisDatabaseAddRemove/maproom1.png "Add SQLite DB")
 
-The provided name must be unique. 
+The provided name must be unique.
 
 | | |
 |-|-|
@@ -90,7 +90,7 @@ The provided database name must be the one of the MySQL database (e.g. MyData)
 
 ## Multi-user access
 
-The database can be used by multiple users at the same time. QMapShack will detect conflicts if items have been changed by two users at the same time and offer options for mitigation.  
+The database can be used by multiple users at the same time. QMapShack will detect conflicts if items have been changed by two users at the same time and offer options for mitigation.
 
 To see changes in the database by someone else as soon as they are saved to the database you can enable a UDP broadcast package based notification system. As notifications are distributed by QMapShack this will only work if all instances are in the same local network. To enable notifications you have to select *Project->Setup Workspace* from the menu.
 

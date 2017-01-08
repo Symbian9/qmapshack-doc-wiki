@@ -6,21 +6,21 @@
 # Control of Maps and DEM Files
 
 The render engine of QMapShack is quite flexible and lets you create map stacks with
-maps of different binary geographic datum, projection and binary format. Additionally 
-it adds elevation information to the displayed maps if DEM data is loaded. The DEM data 
-is completely independent from the loaded map. However the same concepts as for maps 
+maps of different binary geographic datum, projection and binary format. Additionally
+it adds elevation information to the displayed maps if DEM data is loaded. The DEM data
+is completely independent from the loaded map. However the same concepts as for maps
 apply.
 
-By opening additional workspaces you can have several different map stacks. This allows 
+By opening additional workspaces you can have several different map stacks. This allows
 you to quickly view your data on different maps.
 
 ## Draw Order
 
-* Maps are handled by the topmost item fist, down to the bottom item last. Thus 
+* Maps are handled by the topmost item fist, down to the bottom item last. Thus
 the item at the bottom of the list will overlay all other items
 
 * DEM files are handled by the topmost item fist, down to the bottom item last. Doing
-an elevation data query the first match will stop the query. Thus the topmost item wins. 
+an elevation data query the first match will stop the query. Thus the topmost item wins.
 Doing hill shading or similar the item at the bottom will overlay all other items.
 
 * The draw order can be changed by moving the item in the list via drag-n-drop.
@@ -31,7 +31,7 @@ Doing hill shading or similar the item at the bottom will overlay all other item
 
 ### Workspace
 
-Some properties are set globally for all workspaces. You find them below the _View_ menu. 
+Some properties are set globally for all workspaces. You find them below the _View_ menu.
 
 ![Alt text](images/DocControlMapDem/maproom3.png)
 
@@ -62,7 +62,7 @@ If you expand a map or DEM item you can see the  property setup of this item for
 
 ![Alt text](images/DocControlMapDem/maproom5.png)
 
-1. The slider on the top controls the opacity. 
+1. The slider on the top controls the opacity.
 
 2. With the bar and the two buttons you can control the range of scale the map is visible. The blue square on the bar indicates the actual scale. Zoom to the minimum scale you want to see the map and press the left button. Now zoom to the maximum scale to display the map and press the right button. The green bar will indicate the range of visibility now.
 
@@ -72,7 +72,7 @@ Vector maps have additional properties.
 
 ![Alt text](images/DocControlMapDem/maproom6.png)
 
-Use the check boxes to control what major map elements are displayed. For example you can overlay your raster map with a vector map and display the points of interest only, to add more information to your map. 
+Use the check boxes to control what major map elements are displayed. For example you can overlay your raster map with a vector map and display the points of interest only, to add more information to your map.
 
 ### Online Maps
 

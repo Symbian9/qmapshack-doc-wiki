@@ -17,16 +17,16 @@ There are 3 physical storage types used in QMS for saving data items:
 * `QMS` files (proprietary efficient binary data format)
 * `SQLite` or `MySQL` databases
 
-If selected in the menu `Project - Setup Workspace` data is saved automatically at the end of a QMS run and 
+If selected in the menu `Project - Setup Workspace` data is saved automatically at the end of a QMS run and
 regularly after some user-defined time interval.
 A backup of databases is recommended from time to time.
 
-All QMS data items belong to a **project**. 
+All QMS data items belong to a **project**.
 
 In the case of a `GPX` or `QMS` file all data in the file belong to one project.
 This can be loaded into the QMS workspace and saved from here to the file.
 
-QMS allows the use of one or more databases. 
+QMS allows the use of one or more databases.
 
 Each database consists of a tree. Each node of the tree is either a **folder** or a **data item**.
 Nodes on the highest level must be folders.
@@ -59,8 +59,8 @@ Data items are saved only once in database. They can be referenced in various pr
 
 _Example of data organisation:_
 
-A group folder (blue) with each hike track and its waypoints in a project folder (green). 
-Additionally, a green _summary_ folder 
+A group folder (blue) with each hike track and its waypoints in a project folder (green).
+Additionally, a green _summary_ folder
 that contains again all tracks from the other green folders. As the tracks are just referenced by the
 folders they are not stored several times as would have done with `GPX` or `QMS` files.
 
@@ -69,7 +69,7 @@ Other advantages of the use of databases are the possibility
 * to load just a few data items of a project into the workspace. With a `GPX` file everything in the file is completely loaded into the workspace,
 * to search for data items with a given text string using the context menu entry `Search database` of the database (starting with QMS version 1.6.3.post).
 
-When creating a new reference to a data item QMS offers the choice either to create simply a reference or a 
+When creating a new reference to a data item QMS offers the choice either to create simply a reference or a
 clone (a copy) of the data item.
 
 - - -

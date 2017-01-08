@@ -18,7 +18,7 @@ A binary bundle is available [in the download section](https://bitbucket.org/map
 The binary is build with compatibility for Mac OS X 10.5 (Leopard) and later. The build is done with the Xcode 7.0.1 and tested on OS-X 10.10.5 (Yosemite) and partly on OS-X 10.11 (El Capitan).
 
 The application can also be installed through cask (homebrew addition).
-Installing homebrew and cask, if not already done: 
+Installing homebrew and cask, if not already done:
 
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     brew install caskroom/cask/brew-cask
@@ -29,8 +29,8 @@ Installing QMapShack (latest provided version):
 
 Update QMapShack to the latest version:
 
-    brew cask install qmapshack --force 
-   
+    brew cask install qmapshack --force
+
 ## Linux
 
 **Check out your distribution's package system. Probably there is a binary package already.**
