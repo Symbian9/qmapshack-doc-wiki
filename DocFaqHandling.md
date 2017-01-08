@@ -55,7 +55,23 @@ Trackpoints created by a routing engine can't be edited by the user whereas trac
 created by a user can be
 edited (compare section ["Edit items with multiple points"](DocGisItemsEditMultiple)).
 
+## What is the difference between speed and gpxtpx:speed?
 
+Various GPS receivers record different data for trackpoints. Some Garmin navigators use for this purpose
+a special [GPX trackpoint extension](http://www8.garmin.com/xmlschemas/TrackPointExtensionv2.xsd "Garmin gpxtpx trackpoint extension")
+named `gpxtpx`. One of the data fields within this extension is `gpxtpx:speed`. It records the speed at the given trackpoint.
+This speed is measured in meters per second whereas the calculated speed at a trackpoint is measured in kilometers per hour.
+
+QMS reads this speed value and can display it in form of a graph in the track edit window.
+
+A similar data field is `gpxtpx:course`. This field contains an angle measured in degrees in a clockwise direction from the true north line
+(the _course_).
+
+Compare also section 
+[Recorded and calculated track data](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data "Recorded and calculated track data").
+
+
+![Recorded gpxtpx:speed vs. speed graphs](images/DocFaq/FaqGpxTpxSpeed.jpg "Recorded gpxtpx:speed vs. speed graphs")
 
 - - -
 [Prev](DocFaqData) (Databases and projects) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Routing) [Next](DocFaqRouting)

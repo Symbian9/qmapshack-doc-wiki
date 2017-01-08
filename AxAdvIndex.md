@@ -82,6 +82,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Contour lines, from raster map**
 :  [Raster contour line layer](DocMapsTipsTricks#markdown-header-raster-contour-line-layer "Raster contour line layer")
 
+**Course, as trackpoint extension**
+:  [GPXTPX track extension](DocFaqHandling#markdown-header-what-is-the-difference-between-speed-and-gpxtpxspeed "Speed in GPXTPX track extension")
+
 
 # D
 
@@ -366,7 +369,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Export database to GPX file](AdvProjActions#markdown-header-export-database-to-gpx-file "Export database to GPX file")
 
 **GPX, extensions**
-:  [Track data in GPX file](DocFaqHandling#markdown-header-which-track-data-is-saved-in-gpx-files "Which track data is saved in GPX file?")
+:  [GPXTPX track extension](DocFaqHandling#markdown-header-what-is-the-difference-between-speed-and-gpxtpxspeed "Speed in GPXTPX track extension") ⊞ [Track data in GPX file](DocFaqHandling#markdown-header-which-track-data-is-saved-in-gpx-files "Which track data is saved in GPX file?")
 
 **GPX, general remark**
 :  [Handle GPX and QMS files](DocHandleGpxFiles "Handle GPX and QMS files")
@@ -978,6 +981,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Trackpoint, add new to track**
 :  [Add point to track](AdvTrkGeneral#markdown-header-add-point-to-track "Add point to track")
 
+**Trackpoint, course in track extension**
+:  [GPXTPX track extension](DocFaqHandling#markdown-header-what-is-the-difference-between-speed-and-gpxtpxspeed "Speed in GPXTPX track extension")
+
 **Trackpoint, elevation**
 :  [Edit track elevation](AdvTrkElevation#markdown-header-manually-edit-elevation-of-a-track-point "Edit track elevation")
 
@@ -989,6 +995,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Trackpoint, remove extension**
 :  [Remove extension from all trackpoints](AdvTrkFilters#markdown-header-remove-extension-from-all-trackpoints "Remove extension from all trackpoints")
+
+**Trackpoint, speed in track extension**
+:  [GPXTPX track extension](DocFaqHandling#markdown-header-what-is-the-difference-between-speed-and-gpxtpxspeed "Speed in GPXTPX track extension")
 
 **Trackpoint, used symbols/icons**
 :  [Symbols for trackpoints](AdvTrkGeneral#markdown-header-symbols-for-trackpoints "Symbols for trackpoints")
