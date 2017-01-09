@@ -8,7 +8,7 @@ If you want to see **screenshots** or start with QMapShack visit the [**document
 
 German users can find a short quickstart description here:
 
-![German flag](images/DocGettingStarted/FlagDe.jpg)  [__Schnellstartanleitung (deutsch)__](DocQuickStartGerman "German quickstart description")
+[__Schnellstartanleitung__](DocQuickStartGerman "German quickstart description") ![German flag](images/DocGettingStarted/FlagDe.jpg)
 
 
 [**Found a bug?** Read this!](ReportBugs)
