@@ -189,7 +189,7 @@ start as described in
 http://stackoverflow.com/questions/19197791/projapi-gis-library-heap-overflow
 The reason for this problem is currently unknown. Any help is welcome.
 
-### D2.) Right-click on the project qmapshack and open the "Properties" dialog
+### D2.) Right-click on the "qmapshack" project and open the "Properties" dialog
 - In C/C++->Optimization: deactivate optimization (/Od)
 - In Debugging->Environment set the path such that all required .dll's are found
   (see http://stackoverflow.com/questions/2119539/visual-studio-how-to-set-path-to-dll)
@@ -225,6 +225,7 @@ not .dll's + all directories)
 ### D5.) Run/Debug
 Congratulations: all preparations finished.
 Now you can _really_ start debugging!
+Right click on "qmapshack" project and select Debug -> Start new instance
 
 - - -
 [Prev](DocGetQMapShack) (Install QMapShack) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Create Offline Documentation) [Next](OfflineDocumentation)
