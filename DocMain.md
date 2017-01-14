@@ -12,11 +12,11 @@ always reflect just a snapshot of the current state. Screenshots seen in this ma
 not reflect the current appearance of the program. The manual will be updated if there are 
 large changes to the GUI. However, smaller changes will be ignored. 
 
-Users can find short quickstart descriptions here:
+Users can find short quickstart help here:
 
 ![UK flag](images/DocGettingStarted/FlagUk.jpg)  [__Quick start__](DocQuickStartEnglish "English quickstart description")
 
-![German flag](images/DocGettingStarted/FlagDe.jpg)  [__Schnellstartanleitung (deutsch)__](DocQuickStartGerman "German quickstart description")
+![German flag](images/DocGettingStarted/FlagDe.jpg)  [__Schnellstartanleitung__](DocQuickStartGerman "German quickstart description")
 
 
 ## Basic usage
