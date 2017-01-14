@@ -10,9 +10,11 @@ Prev () | [Home](Home) | [Manual](DocMain) | (Install QMapShack) [Next](DocGetQM
 **Note**: As the software is subject to a constant development progress, this manual will
 always reflect just a snapshot of the current state. Screenshots seen in this manual might 
 not reflect the current appearance of the program. The manual will be updated if there are 
-large changes to the GUI. However smaller changes will be ignored. 
+large changes to the GUI. However, smaller changes will be ignored. 
 
-German users can find a short quickstart description here:
+Users can find short quickstart descriptions here:
+
+![UK flag](images/DocGettingStarted/FlagUk.jpg)  [__Quick start__](DocQuickStartGerman "English quickstart description")
 
 ![German flag](images/DocGettingStarted/FlagDe.jpg)  [__Schnellstartanleitung (deutsch)__](DocQuickStartGerman "German quickstart description")
 

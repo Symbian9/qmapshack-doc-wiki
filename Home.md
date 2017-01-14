@@ -2,18 +2,22 @@
 
 Use QMapShack to plan your next outdoor trip or to visualize and archive all the GPS recordings of your past exciting adventures. QMapShack is the next generation of the famous QLandkarte GT application. And of course it's even better and easier to use.
 
-If you want to download QMapShack visit the [**download page**](https://bitbucket.org/maproom/qmapshack/downloads)
+If you want to download QMapShack, visit the [**download page**](https://bitbucket.org/maproom/qmapshack/downloads)
 
-If you want to see **screenshots** or start with QMapShack visit the [**documentation page**](DocMain).
+If you want to see **screenshots** or start with QMapShack, visit the [**documentation page**](DocMain).
 
-German users can find a short quickstart description here: [__Schnellstartanleitung__](DocQuickStartGerman "German quickstart description") ![German flag](images/DocGettingStarted/FlagDe.jpg)
+Users can find a short quickstart description here: 
+
+[__Quickstart description__](DocQuickStartGerman "English quickstart description") ![UK flag](images/DocGettingStarted/FlagUk.jpg)
+
+[__Schnellstartanleitung__](DocQuickStartGerman "German quickstart description") ![German flag](images/DocGettingStarted/FlagDe.jpg)
 
 
 [**Found a bug?** Read this!](ReportBugs)
 
 [**Missing a feature?** Read this!](RequestFeatures)
 
-If you need **troubleshooting** have a look [**here**](TroubleShooting)
+If you need **troubleshooting**, have a look [**here**](TroubleShooting)
 
 ## Support
 

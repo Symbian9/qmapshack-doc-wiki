@@ -33,7 +33,7 @@ heruntergeladen werden können.
 
 * _QMapShack_:
 
-    * [QMS vom Bitbucket-Server laden](https://bitbucket.org/maproom/qmapshack/downloads "QMS Installatinsdatei laden").
+    * [QMS vom Bitbucket-Server laden](https://bitbucket.org/maproom/qmapshack/downloads "QMS Installationsdatei laden").
       Von dieser Seite Datei `QMapShack_Install_Windows64bit__1.7.2.exe` laden (etwa 50 MB, Versionsnummer kann verschieden sein).
 
 * _Kartenunterstützung (empfohlen)_:
@@ -46,7 +46,7 @@ heruntergeladen werden können.
     
 * _Routingunterstützung (empfohlen zum Erstellen neuer Strecken)_:
 
-    * [Routino-Daten laden](http://download.geofabrik.de/europe/germany.html). Auf dieser Seite z.B. in Zeile `Berlin` gehen und 
+    * [Routino-Daten laden](http://download.geofabrik.de/europe/germany.html "Routino-Daten laden"). Auf dieser Seite z.B. in Zeile `Berlin` gehen und 
       in dieser Zeile auf `.osm.pbf` klicken. Liefert Datei `berlin-latest.osm.pbf`.
     
 * _Höhendaten (empfohlen, falls Höhenangaben für neue Strecken erforderlich sind)_:     
@@ -61,6 +61,8 @@ heruntergeladen werden können.
       angezeigten Karte passende Region wählen und auf diese klicken. Es wird z.B. eine Datei `N32.zip` heruntergeladen. `N32` ist dabei
       die Bezeichnung für die sogenannte UTM-Zone.
 
+    _Hinweis:_ Es sollten alle für die gewählte Region erforderlichen Dateien heruntergeladen werden!
+    
 ## Installation
 * Alle heruntergeladenen Dateien sind im Downloadverzeichnis des Nutzers zu finden.
 * Finde die Datei `QMapShack_Install_Windows64bit__1.7.2.exe` im Download-Verzeichnis.
@@ -110,7 +112,7 @@ heruntergeladen werden können.
     anders angeordnet werden. Mit dem Menüpunkt `Fenster` können sie geöffnet und geschlossen werden.
   
 * Die Arbeitsoberfläche enthält einige Hinweise über empfohlene erste Aktionen. Diese werden in den folgenden Punkten beschrieben. Ähnliche
-  Hinweise  in Form von Infoblasen erhält man häufig beim Arbeiten mit QMS, wenn man mit der Maus auf ein angezeigtes Objekt weist. 
+  Hinweise in Form von Infoblasen erhält man häufig beim Arbeiten mit QMS, wenn man mit der Maus auf ein angezeigtes Objekt weist. 
 * _Vektorkarten aktivieren:_ 
     * Gehe mit der Maus in das Fenster `Karten`.
     * Öffne mit Rechtsklick das Kontextmenu und wähle `Kartenverzeichnis angeben`.
@@ -134,7 +136,7 @@ heruntergeladen werden können.
     * Wähle den Menüpunkt `Werkzeug - Routino Datenbank erstellen`.
     * Es öffnet sich ein neues Fenster.
     * Wähle als Quelldatei `QMS\Routino\berlin-latest.osm.pbf` und als Zielpfad `QMS\Routino` aus.
-    * Wähle als Dateipräfix z.B. `BE` aus.
+    * Gib als Dateipräfix z.B. `BE` ein.
     * Wähle `Starten`.
     * In der rechten Spalte des Fensters kann man die ablaufenden Aktionen verfolgen. Dieser Vorgang kann einige Zeit dauern!
       Der Abschluss der Operation wird angezeigt.
@@ -177,13 +179,13 @@ heruntergeladen werden können.
 Mit diesen Schritten ist ein arbeitsfähiger Zustand für QMS hergestellt.
 
    
-## Typische Arbeitsschritte
+## Einige typische Arbeitsschritte
 
 ### Karte bewegen und zoomen
 
 * _Mit der Tastatur:_ 
     * Pfeiltasten bewegen die Karte in die jeweilige Richtung.
-    * Die "__+__" und die "__-__" vergrößern bzw. verkleinern den Kartenmaßstab.
+    * Die Tasten "__+__" und die "__-__" vergrößern bzw. verkleinern den Kartenmaßstab.
 * _Mit der Maus:_
     * Linke Maustaste drücken und gedrückt halten fixiert die Karte an der Maus. Beim Bewegen der Maus (ohne Loslassen der gedrückten Taste)
       wird die Karte bewegt. Ist die gewünschte Kartenposition erreicht, Maustaste loslassen.
@@ -195,15 +197,15 @@ Mit diesen Schritten ist ein arbeitsfähiger Zustand für QMS hergestellt.
 * Wähle Menüpunkt `Datei - GIS Daten laden` und wähle `QMS\MeinProjekt.gpx` im Dateiauswahlfenster aus.
 * Im oberen Teil des Fensters `Daten` (_Projektfenster_) erscheint ein neuer Projekteintrag mit Namen `MeinProjekt`.
 * Nach Öffnen des Projekts werden die in der GPX-Datei (d.h. die im Projekt) vorhandenen Wegpunkte und Tracks angezeigt.
-* Bewegt man den Mauszeiger auf eine der angezeigten Zeilen, so erhält man einige Informationen über die jeweiligen Objekte.
+* Bewegt man den Mauszeiger auf eine der angezeigten Zeilen, so erhält man einige Informationen über das jeweilige Objekt.
 * Ein Doppelklick auf einen Wegpunkt oder einen Track zentriert die gewählte Karte um dieses Objekt.
 
-   ![Projekt anzeigen](images/DocAdv/InstallProject.jpg "Projekt anzeigen")
+     ![Projekt anzeigen](images/DocAdv/InstallProject.jpg "Projekt anzeigen")
 
 ### Datenbank anlegen
 
 QMS bietet verschiedene Formen der Datenspeicherung an. Eine empfohlene und leistungsfähige Form ist das Speichern der Daten in
-einer Datenbank. Dazu sind folgende Beispielschritte erforderlich:
+einer Datenbank. Zum Anlegen einer Datenbank sind folgende Schritte erforderlich:
 
 * Gehe mit der Maus in die untere Hälfte des Fensters `Daten` (_Datenbankfenster_).
 * Öffne mit einem Rechtsklick das Kontextmenü und wähle `Datenbank hinzufügen`.
@@ -211,28 +213,76 @@ einer Datenbank. Dazu sind folgende Beispielschritte erforderlich:
   (`SQLite` ausgewählt lassen!). 
 * Der gewählte Datenbankname erscheint als neue Zeile im Datenbankfenster.
 
+### Datenorganisation in der Datenbank
+
+QMS Datenbanken ermöglichen eine übersichtliche baumförmige Datenanordnung ähnlich der in einem Verzeichnisbaum. 
+Den Knoten des Baums (auch als Ordner bezeichnet) 
+kann einer von drei verschiedene Typen 
+zur übersichtlicheren Organisation der Daten zugeordnet werden:
+
+* _Gruppe:_ dient lediglich zur Zusammenfassung von untergeordneten Ordnern. Kann nur Unterordner, aber keine Daten enthalten.
+* _Projekt, Sonstige:_ Kann Unterordner und Daten enthalten. Anzeige und Bearbeitung von Daten im Projektfenster möglich.
+
+Physisch gespeichert werden Datenbanken. Speichern kann manuell oder nach Einstellung über den Menüpunkt `Projekt - Arbeitsplatz konfigurieren`
+ auch automatisch innerhalb bestimmter
+Zeitintervalle erfolgen.
+
+_Beispiel:_
+
+![Beispiel Datenbankstruktur](images/DocAdv/DbStructureExample.jpg "Beispiel für Projektorganisation in einer Datenbank")
+
+Die im Beispiel gewählten Namen beschreiben den Zweck der Datenbank bzw. des jeweiligen Ordners.
+
+Die Gruppe _Radfahren_ kann mit einer analogen Struktur angelegt werden.
    
+Das Anlegen von Datenbanken wurde im vorangegangenen Schritt beschrieben.
+  
+Das Anlegen von Gruppen-, Projekt und sonstigen Ordner erfolgt nach dem gleichen Schema:
+ 
+* Mit Rechtsklick auf Datenbank- bzw. Ordnernamen Kontextmenü öffnen.
+* Menüpunkt `Ordner hinzufügen` auswählen.
+* Im nächsten Fenster Ordnername und Ordnertyp (unterschiedliche Typen zeigen unterschiedliche Ordnerfarben) auswählen.
+ 
+_Weitere Informationen:_ 
+
+* Durch Setzen eines Hakens im Feld vor dem Ordnernamen wird der Ordner im Projektfenster geöffnet und die darin enthaltenen Daten
+  werden (so sie ebenfalls ausgewählt sind) im Kartenfenster angezeigt. Zur deutlicheren Kennzeichnung der
+  Herkunft des Ordners wird an den Ordnernamen nach dem Trennzeichen "__@__" der Name des nächsthöheren Ordners angefügt. 
+  Dieser Zusatz entfällt bei Ordnern auf
+  der obersten Ebene. Dieses Vorgehen ermöglicht ein gezieltes und strukturiertes Anzeigen ausgewählter Daten im Projekt- und im Kartenfenster.
+* Ändern und Löschen von Daten erfolgt im Projektfenster. 
+  Wurden Daten eines Ordners bearbeitet, so wird das durch einen Punkt vor dem Ordner- und dem Datennamen angezeigt (im Beispiel ist der
+  Track _Süßer See_ neu angelegt, noch nicht gespeichert und deshalb auch noch nicht in der Datenbank vorhanden). Geänderte Projekte
+  sollten regelmäßig über den Kontextmenüeintrag `Speichern` in der Datenbank gespeichert werden.
+* Vollständiges Löschen von Daten hat im Datenbankfenster zu erfolgen. Gelöschte Daten werden in den automatisch angelegten 
+  Ordner `Verloren & Gefunden` verschoben und können von hier
+  aus endgültig gelöscht werden. Löschen im Projektfenster löscht die Daten aus dem angezeigten Projekt, aber nicht aus der
+  Datenbank.  
+* Außer Ordnern (Projekten), die zu Datenbanken gehören, gibt es noch Projekte, die direkt in einer GPX- oder QMS-Datei gespeichert werden. 
+
+
 ### Track erzeugen
 
 * _Annahme:_ Die Routingunterstützung wurde installiert.
 * Gehe mit der Maus zum Fenster `Route`.
-* In der obersten Auswahlliste wähle `Routino (offline)`.
-* In den weiteren Listen wähle das Profil (die Fortbewegungsart), die Sprache (für Abbiegehinweise), den Modus sowie eine der
+* Wähle in der obersten Auswahlliste des Fensters `Routino (offline)`.
+* Wähle in den weiteren Listen das Profil (die Fortbewegungsart), die Sprache (für Abbiegehinweise), den Modus (kürzeste/schnellste) 
+  sowie eine der
   vorhandenen Routingdatenbanken (im Beispiel `BE`) aus.
-* Wähle mit der Maus den Anfangspunkt des Tracks im Kartenfenster aus.
+* Verschiebe die Maus zum Anfangspunkt des Tracks im Kartenfenster aus.
 * Öffne mit Rechtsklick das Kontextmenü und wähle `Track hinzufügen`.
 * Drücke `Strg-A` auf der Tastatur (dies wählt den automatischen Routingmodus aus).
-* Bewege die Maus zum nächsten gewünschten Zwischenpunkt des Tracks und fixiere diesen mit einem Linksklick. Zwischen den zuletzt
-  gewählten 2 Punkten wird automatisch in Übereinstimmung mit den gewählten Routingoptionen eine Zwischenstrecke ermittelt und angezeigt.
-* Wiederhole den vorhergehenden Punkt solange, bis das Ende des Tracks erreicht ist.
+* Bewege die Maus zum nächsten gewünschten Zwischenpunkt des Tracks und fixiere diesen mit einem Linksklick. Zwischen den zwei zuletzt
+  gewählten Punkten wird automatisch in Übereinstimmung mit den gewählten Routingoptionen eine Zwischenstrecke ermittelt und angezeigt.
+* Wiederhole den vorhergehenden Schritt solange, bis das Ende des Tracks erreicht ist.
 * Schließe mit einem Rechtsklick das Hinzufügen neuer Trackpunkte ab.
 * Wähle aus der Werkzeugleiste am oberen Rand des Kartenfensters den Punkt `Als neu speichern`.
 * Gib einen Tracknamen ein.
-* Wähle einen neuen Projektnamen und wähle `Datenbank` als Typ des Projekts.
+* Wähle einen neuen Projektnamen und `Datenbank` als Typ des Projekts.
 * Wähle die verfügbare Datenbank.
 * Wähle einen Namen für einen Datenbankordner.
 * Im Projektfenster wird ein neues Projekt mit dem gewählten Namen angezeigt. In diesem ist der neu erzeugte Track enthalten.
-* Im Datenbankfenster wird ein neuer Ordner für die gewählte Datenbank angezeigt.
+* Im Datenbankfenster wird ein neuer Ordner für die benutzte Datenbank angezeigt.
 * Öffne mit einem Rechtsklick auf den Projektnamen das Kontextmenü und wähle `Speichern`. Das Projekt mit seinen
   Daten wird in dem gewählten Datenbankordner permanent gespeichert. Der gespeicherte Track erscheint als Zeile im Datenbankordner.
   

@@ -41,7 +41,7 @@ ___Do not edit - automatically created from DocMain!___
         * [TroubleShooting](BuildWindowsVisualStudio#markdown-header-troubleshooting)
         * [Debugging with VS2013](BuildWindowsVisualStudio#markdown-header-debugging-with-vs2013)
             * [D1.) Set the solution configuration type to "RelWithDebInfo"](BuildWindowsVisualStudio#markdown-header-d1-set-the-solution-configuration-type-to-relwithdebinfo)
-            * [D2.) Right-click on the project qmapshack and open the settings dialog](BuildWindowsVisualStudio#markdown-header-d2-right-click-on-the-project-qmapshack-and-open-the-settings-dialog)
+            * [D2.) Right-click on the "qmapshack" project and open the "Properties" dialog](BuildWindowsVisualStudio#markdown-header-d2-right-click-on-the-qmapshack-project-and-open-the-properties-dialog)
             * [D3.) Compile](BuildWindowsVisualStudio#markdown-header-d3-compile)
             * [D4.) Run/Debug preparations](BuildWindowsVisualStudio#markdown-header-d4-rundebug-preparations)
             * [D5.) Run/Debug](BuildWindowsVisualStudio#markdown-header-d5-rundebug)

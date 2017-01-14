@@ -42,6 +42,7 @@ Image caption | Used in
 [Raster map boundary](images/DocFaq/RasterMap1.jpg "Raster map boundary") | [DocFaqMaps](DocFaqMaps)
 [Raster map with overlay](images/DocFaq/RasterMap3.jpg "Raster map with overlay") | [DocFaqMaps](DocFaqMaps)
 [Raster map](images/DocFaq/RasterMap2.jpg "Raster map") | [DocFaqMaps](DocFaqMaps)
+[Recorded gpxtpx:speed vs. speed graphs](images/DocFaq/FaqGpxTpxSpeed.jpg "Recorded gpxtpx:speed vs. speed graphs") | [DocFaqHandling](DocFaqHandling)
 [Roadbook with waypoints attached to track](images/DocFaq/Roadbook.jpg "Roadbook with waypoints attached to track") | [AdvTrkGeneral](AdvTrkGeneral)
 [Route instructions info box](images/DocFaq/RouteInstructions.png "Route instructions info box") | [AdvRoutes](AdvRoutes)
 [Route waypoints and junctions](images/DocFaq/RouteExample.png "Route waypoints and junctions") | [AdvRoutes](AdvRoutes)
