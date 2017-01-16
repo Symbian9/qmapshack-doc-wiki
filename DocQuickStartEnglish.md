@@ -177,7 +177,7 @@ With these steps, a workable state of QMS is reached.
 
 * _With the keyboard:_ 
     * Arrow keys move the map in the selected direction.
-    * The keys "__+__" and die "__-__" increase or decrease the map scale (zoom in and out).
+    * The keys "__+__" and "__-__" increase or decrease the map scale (zoom in and out).
 * _With the mouse:_
     * Press and hold the left mouse button to fix the map to the mouse. When moving the mouse (without releasing the pressed key),
       the map is moved. Once the desired map position has been reached, release the mouse key.

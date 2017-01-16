@@ -14,10 +14,9 @@ large changes to the GUI. However, smaller changes will be ignored.
 
 Users can find short quickstart help here:
 
-![UK flag](images/DocGettingStarted/FlagUk.jpg)  [__Quick start__](DocQuickStartEnglish "English quickstart description")
-
-![German flag](images/DocGettingStarted/FlagDe.jpg)  [__Schnellstartanleitung__](DocQuickStartGerman "German quickstart description")
-
+* ![UK flag](images/DocGettingStarted/FlagUk.jpg)  [__Quick start__](DocQuickStartEnglish "English quickstart description")
+* ![German flag](images/DocGettingStarted/FlagDe.jpg)  [__Schnellstartanleitung__](DocQuickStartGerman "German quickstart description")
+* ![Russian flag](images/DocGettingStarted/FlagRu.jpg)  [__Быстрый старт__](DocQuickStartRussian "Russian quickstart description")
 
 ## Basic usage
 
