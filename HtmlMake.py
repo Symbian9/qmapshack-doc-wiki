@@ -3,10 +3,10 @@
 ########################################################################
 ########################################################################
 ##                                                                    ##
-## Copyright (C) 2016 Rainer Woitok, Rainer.Woitok@Gmail.Com          ##
+## Copyright (C) 2016 - 2017 Rainer Woitok, <Rainer.Woitok@Gmail.Com> ##
 ##                                                                    ##
-## This Shell script is free software: you can redistribute it and/or ##
-## modify it  under the terms  of the  GNU General  Public License as ##
+## This Python script is free software:  you can redistribute it and/ ##
+## or modify it under the terms  of the GNU General Public License as ##
 ## published by the Free Software Foundation, either version 3 of the ##
 ## License, or (at your option) any later version.                    ##
 ##                                                                    ##
@@ -32,6 +32,13 @@
 #                                                    R Woitok 2016-03-04
 #
 ########################################################################
+
+from __future__ import unicode_literals
+import markdown, re, sys, unicodedata
+from markdown.extensions     import Extension
+from markdown.inlinepatterns import Pattern, SimpleTagPattern
+from markdown.preprocessors  import Preprocessor
+
 #
 # Specify UTF-8 encoding for the HTML file to be created  (since we esc-
 # ape the angle brackets in our own extension below, the following three
@@ -41,17 +48,11 @@ print('<head>')
 print('<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">')
 print('</head>')
 
-import markdown, re, sys
-
 #
 # Check the argument,  and if there is none,  provide an  empty argument
 # causing standard input to be read:
 
 if len(sys.argv) == 1: sys.argv.extend([''])  # Default: standard input.
-
-from markdown.extensions     import Extension
-from markdown.inlinepatterns import Pattern, SimpleTagPattern
-from markdown.preprocessors  import Preprocessor
 
 #
 # References to local files in the various "*.md" source files are requ-
@@ -133,8 +134,6 @@ class StrikeThrough(Extension):
 # "slugify function built into the  Markdown "toc" extension  and addit-
 # ionally adds the Bitbucket specific "markdown-header-" prefix to head-
 # er line identifiers:
-
-import unicodedata
 
 def slugify(value, separator):
     value = unicodedata.normalize('NFKD', value).encode('ascii', 'ignore')
