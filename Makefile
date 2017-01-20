@@ -75,7 +75,7 @@ help:
 # well as for self references:
 
 check:
-	@./LinkCheck.sh
+	@./LinkCheck.py
 
 #
 # Rule to remove all "*.html" files as well as any time stamp files:
