@@ -6,6 +6,9 @@
 # Complete table of contents
 
 ___Do not edit - automatically created from DocMain!___
+* ![UK flag](images/DocGettingStarted/FlagUk.jpg)  [__Quick start__](DocQuickStartEnglish "English quickstart description")
+* ![German flag](images/DocGettingStarted/FlagDe.jpg)  [__Schnellstartanleitung__](DocQuickStartGerman "German quickstart description")
+* ![Russian flag](images/DocGettingStarted/FlagRu.jpg)  [__Быстрый старт__](DocQuickStartRussian "Russian quickstart description")
 
 
 ## Basic usage
@@ -220,6 +223,7 @@ ___Do not edit - automatically created from DocMain!___
         * [How to edit quickly the name of a project?](DocFaqData#markdown-header-how-to-edit-quickly-the-name-of-a-project)
         * [How to find the location of a database file used in QMapShack?](DocFaqData#markdown-header-how-to-find-the-location-of-a-database-file-used-in-qmapshack)
         * [How to find database to which a project belongs?](DocFaqData#markdown-header-how-to-find-database-to-which-a-project-belongs)
+        * [Why does a database not allow creating new folders?](DocFaqData#markdown-header-why-does-a-database-not-allow-creating-new-folders)
     * [Data handling](DocFaqHandling)
         * [How to find distance between waypoints](DocFaqHandling#markdown-header-how-to-find-distance-between-waypoints)
         * [Which track data is saved in GPX files?](DocFaqHandling#markdown-header-which-track-data-is-saved-in-gpx-files)
@@ -234,6 +238,7 @@ ___Do not edit - automatically created from DocMain!___
         * [What is the difference between `Copy position` and `Copy position (Grid)`?](DocFaqMaps#markdown-header-what-is-the-difference-between-copy-position-and-copy-position-grid)
         * [Is there a possibility to display small roads/tracks in a vector map without zooming in too much?](DocFaqMaps#markdown-header-is-there-a-possibility-to-display-small-roadstracks-in-a-vector-map-without-zooming-in-too-much)
         * [Does QMS support the use of single Garmin-style map tiles?](DocFaqMaps#markdown-header-does-qms-support-the-use-of-single-garmin-style-map-tiles)
+        * [Which raster map formats are supported?](DocFaqMaps#markdown-header-which-raster-map-formats-are-supported)
         * [How to use Russian military and similar raster maps with QMapShack?](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack)
         * [Why is a raster map not displayed?](DocFaqMaps#markdown-header-why-is-a-raster-map-not-displayed)
         * [How to find the location of a raster map?](DocFaqMaps#markdown-header-how-to-find-the-location-of-a-raster-map)

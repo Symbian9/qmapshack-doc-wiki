@@ -46,9 +46,28 @@ database file.
 ## How to find database to which a project belongs?
 
 Move the mouse pointer on the project name in the workspace. An information box pops-up. The filename shown is the name of the
-database to which the project belongs. If no filename is shown then the project doesn't belong to any database.
+database to which the project belongs. If no filename is shown, then the project doesn't belong to any database.
 
+## Why does a database not allow creating new folders?
 
+When opening the context menu of a database it may happen that the menu entry `Add folder` is grayed out. Thus, no new folders can't be
+created in this database.
 
+![Database menu grayed out](images/DocFaq/MySqlNoFolder.jpg "Add folder menu grayed out")
+
+At the same time a red "__X__" is shown on the database icon and, when moving the mouse on the database entry, an info window pops-up
+with an error message
+
+![Database error](images/DocFaq/MySqlNoConnect.jpg "Database error")
+
+There can be several reasons for this error:
+
+* Wrong installation of files related to MySQL database handling. For Windows users:
+    * Check if there is a file `libmysql.dll` in the directory where `qmapshack.exe` is located. If not, move the file to this location.
+    * Check if there is a file `sqldrivers\qsqlmysql.dll` relative to the directory where `qmapshack.exe` is located. If not, move the 
+      file to this location.  
+* Check if your MySQL client is running. If not, start it.
+* Check if your user name and password is correct.
+        
 - - -
 [Prev](DocFaqConfig) (Configuring and running) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Data handling) [Next](DocFaqHandling)

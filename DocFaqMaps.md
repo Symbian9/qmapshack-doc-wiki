@@ -32,8 +32,8 @@ In the first case the position is copied in the format used to display coordinat
 e.g `N49° 21.734 E012° 44.146`
 
 In the second case the position is copied as a pure grid coordinate.
-For long/lat coordinates it's degrees (`49.599924 10.599991` or `-15.065344 -39.915421`). For northing/easting
-coordinates it's meters. (`6307013m, 1415953m`)
+For long/lat coordinates it is degrees (`49.599924 10.599991` or `-15.065344 -39.915421`). For northing/easting
+coordinates it is meters. (`6307013m, 1415953m`)
 
 
 ## Is there a possibility to display small roads/tracks in a vector map without zooming in too much?
@@ -60,6 +60,29 @@ in the map should be displayed. The map tiles for a given area are typically pac
 into a special container format. A typical name for such a container file is _gmapsupp_xxx.img_.
 
 QMS does support maps loaded from gmapsupp container files. It doesn't allow the use of single tiles.
+
+## Which raster map formats are supported?
+
+There are various sources of raster maps in various formats.
+
+QMS supports raster formats that are
+* supported by `GDAL`. Create a VRT file for the given raster map. Then it can be used in QMS. To get a list of formats supported 
+  by `GDAL` run `gdaltransform.exe --formats` in a console window.
+* of type RMAP, GEMF, JNX (formats directly loaded by QMS).
+
+An advantage of the GEMF format is that reading the tiles from the map file is very fast.
+
+The [MOBAC Mobile Atlas Creator](http://mobac.sourceforge.net/ "MOBAC main page") can be used as a source of raster maps. 
+With the help of this application
+the user can load tiles of on-line maps as well as some other map formats and save them as raster maps. Use GEMF or RMAP as output formats.
+For details check the [MOBAC Wiki](http://mobac.sourceforge.net/wiki/index.php/Main_Page "MOBAC wiki main page").
+
+The proprietary Mapsforge vector map format, which is rather popular on mobile phones, can be read by the latest version of MOBAC.
+After converting a mapsforge map to a GEMF map with MOBAC, the GEMF map can be loaded with QMS. _Remark:_ This conversion can take
+some time depending on the size and the structure of the map!
+
+The [MAPC2MAPC64 map converter](http://mapc2mapc64.software.informer.com/5.1/ "MAPC2MAC64 map converter") is designed as a 
+converter between various raster map formats.
 
 
 ## How to use Russian military and similar raster maps with QMapShack?
@@ -107,9 +130,9 @@ georeference data can't be found within the MAP files.
 Consider the following hints:
 * Use `gdalinfo` to verify if the required VRT file provides proper information. Keep in mind that the VRT file
   is just an XML wrapper around your
-  real raster map file. It stores a path to that file. If the path changes
+  real raster map file. It stores a path to that file. If the path changes,
   the VRT file has to be created again.
-* If the map is loaded correctly QMS may suppress drawing the map because it
+* If the map is loaded correctly, QMS may suppress drawing the map because it
   would take too long. In this case the map boundary is still visible as a black frame as shown on the left of
   the following images.
 

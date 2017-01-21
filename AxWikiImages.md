@@ -21,6 +21,8 @@ Image caption | Used in
 [Blue dot waypoint icon](images/DocFaq/BlueDots.jpg "Blue dot waypoint icon") | [DocFaqMaps](DocFaqMaps)
 [DEM data with gaps](images/DocFaq/DEM0.jpg "DEM data with gaps") | [AdvTrkElevation](AdvTrkElevation)
 [DEM properties selection](images/DocAdv/DemProperties.jpg "Elevation data properties selection") | [AdvMapDetails](AdvMapDetails)
+[Database error](images/DocFaq/MySqlNoConnect.jpg "Database error") | [DocFaqData](DocFaqData)
+[Database menu grayed out](images/DocFaq/MySqlNoFolder.jpg "Add folder menu grayed out") | [DocFaqData](DocFaqData)
 [Direct track distance](images/DocFaq/Directtrack.jpg "Direct track distance") | [DocFaqHandling](DocFaqHandling)
 [Distance between waypoints](images/DocFaq/WPTDistance.jpg "Distance between waypoints") | [DocFaqHandling](DocFaqHandling)
 [Hidden trackpoints](images/DocFaq/HiddenWPTs.png "Hidden trackpoints") | [AdvTrkGeneral](AdvTrkGeneral)

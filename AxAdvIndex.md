@@ -137,6 +137,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Database, multi-user access**
 :  [Multi-user access](DocGisDatabaseAddRemove#markdown-header-multi-user-access "Multi-user access")
 
+**Database, MySQL errors**
+:  [Why does a database not allow creating new folders?](DocFaqData#markdown-header-why-does-a-database-not-allow-creating-new-folders "Why does a database not allow creating new folders?")
+
 **Database, MySQL**
 :  [MySQL database](DocGisDatabaseAddRemove#markdown-header-mysql-565 "MySQL database")
 
@@ -249,11 +252,11 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Elevation, edit**
 :  [Edit track elevation](AdvTrkElevation#markdown-header-manually-edit-elevation-of-a-track-point "Edit track elevation")
 
-**Elevation, Filter**
-:  [Track elevation filter](DocGisItemsTrk2#markdown-header-elevation "Track elevation filter")
-
 **Elevation, filter**
 :  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
+
+**Elevation, Filter**
+:  [Track elevation filter](DocGisItemsTrk2#markdown-header-elevation "Track elevation filter")
 
 **Elevation, invalid data**
 :  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
@@ -307,6 +310,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Filter, track**
 :  [Avoid and remove invalid data in a track](AdvTrkGeneral#markdown-header-avoid-and-remove-invalid-data-in-a-track "Avoid and remove invalid data in a track") ⊞ [Recorded and calculated track data](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data "Recorded and calculated track data")
 
+**FIT, load file**
+:  [Load GPX Files](DocHandleGpxFiles#markdown-header-load-gpx-files "Load GPX Files")
+
 
 # G
 
@@ -318,7 +324,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Supported vector maps](DocBasicsMapDem#markdown-header-vector-maps "Supported vector maps")
 
 **GDAL, VRT**
-:  [Maps in GDAL VRT format](DocBasicsMapDem#markdown-header-gdal-vrt-maps "Maps in GDAL VRT format")
+:  [Maps in GDAL VRT format](DocBasicsMapDem#markdown-header-gdal-vrt-maps "Maps in GDAL VRT format") ⊞ [Supported raster maps](DocFaqMaps#markdown-header-which-raster-map-formats-are-supported "Supported raster maps")
 
 **gdalinfo, get VRT file info**
 :  [Find raster map location](DocFaqMaps#markdown-header-how-to-find-the-location-of-a-raster-map "Find raster map location with gdalinfo")
@@ -552,6 +558,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **MapQuest, routing engine**
 :  [MapQuest router](DocGisItemsRte#markdown-header-mapquest "MapQuest router")
 
+**Mapsforge map, convert to raster map**
+:  [Supported raster maps](DocFaqMaps#markdown-header-which-raster-map-formats-are-supported "Supported raster maps")
+
 **Menu, File - Load GIS Data**
 :  [Load GPX Files](DocHandleGpxFiles#markdown-header-load-gpx-files "Load GPX Files")
 
@@ -581,6 +590,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Menu, View**
 :  [Workspace](DocControlMapDem#markdown-header-workspace "Workspace")
+
+**MySQL, database errors**
+:  [Why does a database not allow creating new folders?](DocFaqData#markdown-header-why-does-a-database-not-allow-creating-new-folders "Why does a database not allow creating new folders?")
 
 **MySQL, database**
 :  [MySQL database](DocGisDatabaseAddRemove#markdown-header-mysql-565 "MySQL database")
@@ -679,11 +691,17 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Raster map, cache handling**
 :  [Adjust map properties](AdvMapDetails#markdown-header-adjustable-map-properties "Adjust map properties")
 
+**Raster map, convert to other format**
+:  [Supported raster maps](DocFaqMaps#markdown-header-which-raster-map-formats-are-supported "Supported raster maps")
+
 **Raster map, display**
 :  [Display of raster maps](DocFaqMaps#markdown-header-why-is-a-raster-map-not-displayed "Why is a raster map not displayed?")
 
 **Raster map, find location**
 :  [Find raster map location](DocFaqMaps#markdown-header-how-to-find-the-location-of-a-raster-map "Find raster map location with gdalinfo")
+
+**Raster map, from on-line map**
+:  [Supported raster maps](DocFaqMaps#markdown-header-which-raster-map-formats-are-supported "Supported raster maps")
 
 **Raster map, installation**
 :  [Installing Raster Maps or DEM Data](DocInstallMapDem#markdown-header-installing-raster-maps-or-dem-data "Installing Raster Maps or DEM Data")
@@ -695,16 +713,16 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Display of raster maps](DocFaqMaps#markdown-header-why-is-a-raster-map-not-displayed "Why is a raster map not displayed?")
 
 **Raster map, sources**
-:  [Use of raster maps](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack "Use of Russian military raster maps")
+:  [Supported raster maps](DocFaqMaps#markdown-header-which-raster-map-formats-are-supported "Supported raster maps") ⊞ [Use of raster maps](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack "Use of Russian military raster maps")
+
+**Raster map, supported formats**
+:  [Supported raster maps](DocFaqMaps#markdown-header-which-raster-map-formats-are-supported "Supported raster maps")
 
 **Raster map, use of Russian military map**
 :  [Use of raster maps](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack "Use of Russian military raster maps")
 
-**Raster map, VRT file for**
-:  [Use of raster maps](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack "Use of Russian military raster maps")
-
 **Raster map, VRT file of**
-:  [Find raster map location](DocFaqMaps#markdown-header-how-to-find-the-location-of-a-raster-map "Find raster map location with gdalinfo")
+:  [Find raster map location](DocFaqMaps#markdown-header-how-to-find-the-location-of-a-raster-map "Find raster map location with gdalinfo") ⊞ [Use of raster maps](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack "Use of Russian military raster maps")
 
 **Redo, edit**
 :  [Undo/Redo](DocGisItemsEditMultiple#markdown-header-undoredo "Undo/Redo")
@@ -800,6 +818,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Scale, of map**
 :  [Change scale type](AdvMapDetails#markdown-header-map-scale-type "Change scale type (logarithmic/square)")
 
+**SLF, load file**
+:  [Load GPX Files](DocHandleGpxFiles#markdown-header-load-gpx-files "Load GPX Files")
+
 **Slope, visualization**
 :  [Adjust elevation properties](AdvMapDetails#markdown-header-adjustable-elevation-properties "Adjust elevation properties")
 
@@ -812,6 +833,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 # T
 
+
+**TCX, load file**
+:  [Load GPX Files](DocHandleGpxFiles#markdown-header-load-gpx-files "Load GPX Files")
 
 **TMS, for contour lines**
 :  [Raster contour line layer](DocMapsTipsTricks#markdown-header-raster-contour-line-layer "Raster contour line layer")

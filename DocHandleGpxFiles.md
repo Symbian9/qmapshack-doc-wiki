@@ -21,6 +21,8 @@ There are two ways to load GPX or QMS files.
 
 ![Alt text](images/DocHandleGpxFiles/maproom1.png)
 
+FIT, SLF and TCX files can be loaded in the same way.
+
 ## Data view
 
 Each file will create a new top level item in the data view's workspace list. 
