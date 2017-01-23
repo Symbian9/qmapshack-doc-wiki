@@ -125,7 +125,7 @@ Note: you might have to install TortoiseHG or any other mercurial client
 
 ### C7.) Open the generated  build\QMapShack.sln with VS2013
 - Change solution configuration type to "Release"
-- Set the qmapshack project as start project (may not be necessary)
+- Set the qmapshack project as start project by right-clicking and selecting "Set as StartUp Project" (may not be necessary)
 - Right-Click on the ALL_BUILD project and select build to start the compilation
 
 
