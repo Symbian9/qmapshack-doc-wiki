@@ -37,21 +37,21 @@ ___Basic usage___
             * [C2.) Compile the PROJ library http://trac.osgeo.org/proj/](BuildWindowsVisualStudio#markdown-header-c2-compile-the-proj-library-httptracosgeoorgproj)
             * [C3.) Compile the routino library http://www.routino.org](BuildWindowsVisualStudio#markdown-header-c3-compile-the-routino-library-httpwwwroutinoorg)
             * [C4.) Install Qt5.5 http://qt-project.org](BuildWindowsVisualStudio#markdown-header-c4-install-qt55-httpqt-projectorg)
-            * [C5.) Get the QMapShack source from the repository, e.g. ](BuildWindowsVisualStudio#markdown-header-c5-get-the-qmapshack-source-from-the-repository-eg)
+            * [C5.) Get the QMapShack source from the repository, e.g.](BuildWindowsVisualStudio#markdown-header-c5-get-the-qmapshack-source-from-the-repository-eg)
             * [C6.) Start the CMake GUI (you did install CMake before, didn't you)](BuildWindowsVisualStudio#markdown-header-c6-start-the-cmake-gui-you-did-install-cmake-before-didnt-you)
             * [C7.) Open the generated  build\QMapShack.sln with VS2013](BuildWindowsVisualStudio#markdown-header-c7-open-the-generated-buildqmapshacksln-with-vs2013)
         * [Creating a Windows binary installer](BuildWindowsVisualStudio#markdown-header-creating-a-windows-binary-installer)
-            * [I1.) Download the VC redistributable installer ](BuildWindowsVisualStudio#markdown-header-i1-download-the-vc-redistributable-installer)
+            * [I1.) Download the VC redistributable installer](BuildWindowsVisualStudio#markdown-header-i1-download-the-vc-redistributable-installer)
             * [I2.) [Optional] Download libmysql.dll from mariadb](BuildWindowsVisualStudio#markdown-header-i2-optional-download-libmysqldll-from-mariadb)
             * [I3.) Copy all required files to intermediate directory](BuildWindowsVisualStudio#markdown-header-i3-copy-all-required-files-to-intermediate-directory)
             * [I4.) Create the installer with NSIS(3.0b1)](BuildWindowsVisualStudio#markdown-header-i4-create-the-installer-with-nsis30b1)
         * [TroubleShooting](BuildWindowsVisualStudio#markdown-header-troubleshooting)
         * [Debugging with VS2013](BuildWindowsVisualStudio#markdown-header-debugging-with-vs2013)
             * [D1.) Set the solution configuration type to "RelWithDebInfo"](BuildWindowsVisualStudio#markdown-header-d1-set-the-solution-configuration-type-to-relwithdebinfo)
-            * [D2.) Right-click on the project qmapshack and open the settings dialog](BuildWindowsVisualStudio#markdown-header-d2-right-click-on-the-project-qmapshack-and-open-the-settings-dialog)
+            * [D2.) Right-click on the "qmapshack" project and open the "Properties" dialog](BuildWindowsVisualStudio#markdown-header-d2-right-click-on-the-qmapshack-project-and-open-the-properties-dialog)                        
             * [D3.) Compile](BuildWindowsVisualStudio#markdown-header-d3-compile)
             * [D4.) Run/Debug preparations](BuildWindowsVisualStudio#markdown-header-d4-rundebug-preparations)
-            * [D5.) Run/Debug ](BuildWindowsVisualStudio#markdown-header-d5-rundebug)
+            * [D5.) Run/Debug](BuildWindowsVisualStudio#markdown-header-d5-rundebug)
             
     * [Create Offline Documentation](OfflineDocumentation)
          1. Documentation|create off-line version
@@ -200,6 +200,9 @@ ___Basic usage___
                 1. GPX|load file
                 1. QMS|load file
                 1. Menu|File - Load GIS Data
+                1. FIT|load file
+                1. SLF|load file
+                1. TCX|load file
                 
             * [Data view](DocHandleGpxFiles#markdown-header-data-view)
                 1. Workspace|data view
@@ -458,7 +461,7 @@ ___Basic usage___
         1. Database|group in
         1. Database|project in
         1. Menu|Project - Setup Workspace
-    
+        
     * [General Actions](AdvProjActions)
         * [Working with databases](AdvProjActions#markdown-header-working-with-databases)
             * [Export database to GPX file](AdvProjActions#markdown-header-export-database-to-gpx-file)    
@@ -665,7 +668,7 @@ ___Basic usage___
                 1. Track graph|scales
                 
         * [Editing elevation data](AdvTrkElevation)            
-            * [Manually edit elevation of a track point ](AdvTrkElevation#markdown-header-manually-edit-elevation-of-a-track-point)
+            * [Manually edit elevation of a track point](AdvTrkElevation#markdown-header-manually-edit-elevation-of-a-track-point)
             + Edit track elevation
                 1. Trackpoint|elevation
                 1. Elevation|edit
@@ -737,6 +740,10 @@ ___Basic usage___
             * [How to find database to which a project belongs?](DocFaqData#markdown-header-how-to-find-database-to-which-a-project-belongs)
             + Find database for project
                 1. Project|in database 
+                
+            * [Why does a database not allow creating new folders?](DocFaqData#markdown-header-why-does-a-database-not-allow-creating-new-folders)    
+                1. Database|MySQL errors
+                1. MySQL|database errors
             
         * [Data handling](DocFaqHandling)
             * [How to find distance between waypoints](DocFaqHandling#markdown-header-how-to-find-distance-between-waypoints)
@@ -751,6 +758,14 @@ ___Basic usage___
                 1. GPX|extensions
                 1. Track|subpoint
                 1. GPX|subpoint handling in
+            
+            * [What is the difference between speed and gpxtpx:speed?](DocFaqHandling#markdown-header-what-is-the-difference-between-speed-and-gpxtpxspeed)
+            + GPXTPX track extension
+            ++ Speed in GPXTPX track extension
+                1. Trackpoint|speed in track extension
+                1. GPX|extensions
+                1. Course|as trackpoint extension
+                1. Trackpoint|course in track extension
             
         * [Routing](DocFaqRouting)
             * [Why do route instructions use different languages?](DocFaqRouting#markdown-header-why-do-route-instructions-use-different-languages)
@@ -801,12 +816,22 @@ ___Basic usage___
                 1. gmapsupp.img|map
                 1. Map|Garmin                
                 
+            * [Which raster map formats are supported?](DocFaqMaps#markdown-header-which-raster-map-formats-are-supported)
+            + Supported raster maps
+                1. Raster map|sources
+                1. Raster map|supported formats
+                1. Raster map|from on-line map
+                1. Raster map|convert to other format
+                1. Mapsforge map|convert to raster map
+                1. GDAL|VRT
+                
+                
             * [How to use Russian military and similar raster maps with QMapShack?](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack)
             + Use of raster maps
             ++ Use of Russian military raster maps            
                 1. Raster map|use of Russian military map    
                 1. Raster map|sources
-                1. Raster map|VRT file for
+                1. Raster map|VRT file of
                 1. VRT|for raster map
                 1. OziExplorer|use of map
             
@@ -858,7 +883,7 @@ ___Developing QMapShack___
 
     * [Recommendations for editing QMS Wiki pages](AxMaintainAutoPages)
         * [General recommendations for editing the manual](AxMaintainAutoPages#markdown-header-general-recommendations-for-editing-the-manual)
-        * [More recommendations  ](AxMaintainAutoPages#markdown-header-more-recommendations)
+        * [More recommendations](AxMaintainAutoPages#markdown-header-more-recommendations)
         * [Workflow after editing page](AxMaintainAutoPages#markdown-header-workflow-after-editing-page)
         * [Formatting rules:](AxMaintainAutoPages#markdown-header-formatting-rules)
         * [Comments on some script-created pages in the Appendix part](AxMaintainAutoPages#markdown-header-comments-on-some-script-created-pages-in-the-appendix-part)
@@ -877,7 +902,7 @@ ___Developing QMapShack___
         * [Updating the index](AxMaintainIndex#markdown-header-updating-the-index)
         * [Updating the navigation bars](AxMaintainIndex#markdown-header-updating-the-navigation-bars)
         * [Summary of recommended workflow for index maintenance](AxMaintainIndex#markdown-header-summary-of-recommended-workflow-for-index-maintenance)
-        * [Further remarks   ](AxMaintainIndex#markdown-header-further-remarks)
+        * [Further remarks](AxMaintainIndex#markdown-header-further-remarks)
         * [Some remarks on the design of the index page](AxMaintainIndex#markdown-header-some-remarks-on-the-design-of-the-index-page)
     
 ___No indices maintained in the following sections:___
