@@ -285,13 +285,13 @@ trk.close()                                          # Close input file.
 #
 # The regular expression "footdef" matches  a Markdown footnote definit-
 # ion, "header" matches a Markdown header line, "ignore" matches extern-
-# al links  as well as  the local  top link "#", "inlref" matches inline
-# link,  reference-style link,  and footnote references,  while "refdef"
-# matches a reference-style link definition:
+# al links, the top link "#", as well as any links ending in three dots,
+# "inlref" matches inline link, reference-style link,  and footnote ref-
+# erences, while "refdef" matches a reference-style link definition:
 
 footdef = re.compile(r'^\[\^([^]]+)\]:') # Markdown footnote definition.
 header  = re.compile(r'^ *#+ *[*_`]* *(.*)$')         # Markdown header.
-ignore  = re.compile(r'^http|#$')                     # Links to ignore.
+ignore  = re.compile(r'^http|^#$|\.{3}$')             # Links to ignore.
 inlref  = re.compile(r'\[([^]]+)\]((\() *([^ )]+)[^)]*\)| ?(\[)([^]]*)\]|.?)')
 refdef  = re.compile(r'^ {0,3}\[([^]]+)\]:\s+([^ \r\n]+)')
 
