@@ -34,7 +34,7 @@
 ########################################################################
 
 from __future__ import unicode_literals
-import copy, os, re, sys, tempfile, unicodedata
+import codecs, copy, os, re, sys, tempfile, unicodedata
 
 #
 # Define global dicts:
@@ -269,7 +269,8 @@ if err:
 
 ignore = re.compile(r'^\.hg|^Makefile$|\.(py|sh|txt)$') # Files to skip.
 md     = re.compile(r'(\.md)?[\r\n]*$')  # To drop ".md" file extension.
-trk    = open(tmp, 'r')               # List of tracked Mercurial files.
+trk    = codecs.open(tmp, 'r',                         # List of tracked
+                     encoding='ascii')                # Mercurial files.
 
 for ln in trk:                             # Read list of tracked files.
     if ignore.search(ln): continue
@@ -303,11 +304,13 @@ if err:
    os.remove(tmp)                                # Delete temporary file
    sys.exit(err >> 8)                                    # and bail out.
 
-mkd = open(tmp, 'r')           # List of toplevel Markdown source files.
+mkd = codecs.open(tmp, 'r',                           # List of toplevel
+                  encoding='ascii')             # Markdown source files.
 
 for fl in mkd:                    # Process all toplevel Markdown files.
     fn = md.sub('', fl)       # Input file name without ".md" extension.
-    sf = open(fl.rstrip(), 'r')     # Open current Markdown source file.
+    sf = codecs.open(fl.rstrip(), 'r',                    # Open current
+                     encoding='utf-8')           # Markdown source file.
 
     for ln in sf:            # Process all lines in current source file.
 
@@ -321,7 +324,7 @@ for fl in mkd:                    # Process all toplevel Markdown files.
         m = header.match(ln)      # Test for Markdown header definition.
 
         if m:        # Record header identifier in this file as defined.
-           LkDef['%s#%s' % (fn, slugify(m.group(1).decode('utf_8')))] = 1
+           LkDef['%s#%s' % (fn, slugify(m.group(1)))] = 1
         else:
            m = footdef.match(ln)       # Test for Markdown footnote def.
 
@@ -406,6 +409,7 @@ for fl in mkd:                    # Process all toplevel Markdown files.
 
     sf.close()                              # Close current source file.
 
+mkd.close()                                          # Close input file.
 os.remove(tmp)                                  # Delete temporary file.
 
 #
