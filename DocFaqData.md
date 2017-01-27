@@ -66,6 +66,7 @@ There can be several reasons for this error:
     * Check if there is a file `libmysql.dll` in the directory where `qmapshack.exe` is located. If not, move the file to this location.
     * Check if there is a file `sqldrivers\qsqlmysql.dll` relative to the directory where `qmapshack.exe` is located. If not, move the 
       file to this location.  
+* Check if MySQL version is 5.6.5 or greater.
 * Check if your MySQL client is running. If not, start it.
 * Check if your user name and password is correct.
         

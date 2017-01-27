@@ -3,8 +3,9 @@
 [TOC]
 - - -
 
-_Attention: This page contains examples for formatting links. The anchors of these links don't exist. The
-links therefore are classified as "__Broken__" by the script `LinkCheck.sh`!_
+_Attention: This page contains examples for formatting links. The anchors of these links don't exist. To avoid that these
+links cause problems with the scripts `LinkCheck.sh` and `HtmlMake.py` a point is added in the middle of some file names and 3 points are added
+at the end of a reference!_
 
 # Recommendations for editing QMS Wiki pages
 
@@ -35,7 +36,7 @@ the preface section of that page.
 
 * The format of links should be as follows:
 
-        [short_link_description](relative_path_to_section "longer_link_description")
+        [short_link_description](relative_path_to_section... "longer_link_description")
 
     * The _short_link_description_ should formulated so that the phrase in which the link appears is well-formatted.
     * The _longer_link_description_ can be used for a more detailed description of the content of the link.
@@ -43,7 +44,7 @@ the preface section of that page.
 
 * The format of image links should be as follows:
 
-        ![short_image_description](relative_path_to_image "longer_image_description")
+        ![short_image_description](relative_path_to_image... "longer_image_description")
 
     * The _short_image_description_ should give a short description of the content of the image.
     * The _longer_image_description_ can be used for a more detailed image description. It is displayed as

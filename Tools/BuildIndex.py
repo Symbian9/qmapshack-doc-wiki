@@ -1,10 +1,10 @@
 #!python3
 # -*- coding: utf-8 -*-
 
-# Convert raw index info from AxData4Index.md into formatted MD page AxAdvIndex.md
+# Convert raw index info from AxData4Index.txt into formatted MD page AxAdvIndex.md
 
 '''
-Structure of AxData4Index.md:
+Structure of AxData4Index.txt:
 -----------------------------
 
 * [Test](TestPage#label)   <-------- Taken from section headers - don't change
@@ -46,7 +46,7 @@ import re
 
 # names of index files
 indexfile = r"../AxAdvIndex.md"
-rawindexfile = r"AxData4Index.md"
+rawindexfile = r"AxData4Index.txt"
 
 def sortentries(key):              # key used for sorting entries list (lowercase index)
   return key[0].lower() 

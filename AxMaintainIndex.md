@@ -3,8 +3,9 @@
 [TOC]
 - - -
 
-_Attention: This page contains examples for formatting links. The anchors of these links don't exist. The
-links therefore are classified as "__Broken__" by the script `LinkCheck.sh`!_
+_Attention: This page contains examples for formatting links. The anchors of these links don't exist. To avoid that these
+links cause problems with the scripts `LinkCheck.sh` and `HtmlMake.py` a point is added in the middle of some file names and 3 points are added
+at the end of a reference!_
 
 # Maintaining the QMS Wiki Index
 
@@ -35,7 +36,7 @@ This page describes how to maintain (edit) the index of the QMS Wiki.
 ## Short description of index maintenance
 
 The QMS index is saved in the Wiki page `AxAdvIndex.md` (the so-called _index file_ or _index_). This page is
-created with the help of a Python script from the file `AxData4Index.md` (the so called _index raw file_ or
+created with the help of a Python script from the file `AxData4Index.txt` (the so called _index raw file_ or
 _raw index_). The preferred procedure for editing the index is
 
 * to make the required changes in the raw index,
@@ -55,12 +56,12 @@ you should manually adjust/edit the raw index in order to remove the inconsisten
 
 ## Structure of the raw index
 
-The raw index is saved in the file `AxData4Index.md`. It is formatted in the Markdown format.
+The raw index is saved in the file `AxData4Index.txt`. It is formatted in the Markdown format.
 This page is not part of the manual. It is not referenced from the manual main page.
 
 Index entries in the raw index should be defined on a per-section basis as follows:
 
-    * [Test](TestPage#markdown-header-label)   <-------- link taken from section headers - don't change
+    * [Test](Test.Page#markdown-header-label...)   <-------- link taken from section headers - don't change
     + Short Linktext           <-------- insert short but concise link text (optional)
     ++ Longer Linkcaption      <-------- insert longer link description, appears as caption text of the link (optional)
         1. MainIndex|subindex  <-------- MainIndex must be sortable!
@@ -68,7 +69,7 @@ Index entries in the raw index should be defined on a per-section basis as follo
         1. MainIndex3|         <-------- possible variant of previous line
         1. MainIndex
 
-    * [Test1](TestPage1#markdown-header-label)
+    * [Test1](Test.Page1#markdown-header-label...)
     + Short Linktext1
     ++ longer Linkcaption1
         1. MainIndex|subindex  <-------- MainIndex with uppercase first character, subindex lowercase as a rule
@@ -99,19 +100,20 @@ following part of the definition list in the index:
 
 
     **MainIndex**
-    :  [Short Linktext](TestPage#markdown-header-label "longer Linkcaption")
+    :  [Short Linktext](Test.Page#markdown-header-label... "longer Linkcaption")
 
     **MainIndex, subindex**
-    :  [Short Linktext1](TestPage1#markdown-header-label "longer Linkcaption1") ⊞ [Short Linktext](TestPage#markdown-header-label "longer Linkcaption")
+    :  [Short Linktext1](Test.Page1#markdown-header-label... "longer Linkcaption1")
+        ⊞ [Short Linktext](Test.Page#markdown-header-label... "longer Linkcaption")
 
     **MainIndex1, subindex1**
-    :  [Short Linktext1](TestPage1#markdown-header-label "longer Linkcaption1")
+    :  [Short Linktext1](Test.Page1#markdown-header-label... "longer Linkcaption1")
 
     **MainIndex2**
-    :  [Short Linktext](TestPage#markdown-header-label "longer Linkcaption")
+    :  [Short Linktext](Test.Page#markdown-header-label... "longer Linkcaption")
 
     **MainIndex3**
-    :  [Short Linktext](TestPage#markdown-header-label "longer Linkcaption")
+    :  [Short Linktext](Test.Page#markdown-header-label... "longer Linkcaption")
 
 If several links are shown for an index entry, this means that the index entry is discussed in different subsections of the
 manual. In this case the "⊞" character is inserted as a separator between links.
@@ -126,7 +128,7 @@ If you found an index entry "__MainIndex, subindex__" in the index that you want
 * Find the text string "__MainIndex, subindex__" in the index file.
 * Select the link part of the index entry (the subsection to which the index entry belongs), e.g.
 
-        [Short Linktext](TestPage#markdown-header-label "longer Linkcaption")
+        [Short Linktext](Test.Page#markdown-header-label... "longer Linkcaption")
 
 * Open the raw index in an editor and find the link part (the `TestPage#label` part).
   There should be exactly 1 line with a "__*__"
@@ -171,7 +173,7 @@ of the raw index.
 * The result is in a Diff-like form and shows the differences between the complete table of contents and the
   lines marked with a "__*__" in the raw index as follows:
 
-        - * [Test1](TestPage1#markdown-header-label)
+        - * [Test1](Test.Page1#markdown-header-label...)
 
     Here the "**-**"" means that there is a line in the raw index that doesn't appear in the table of contents.
 
@@ -182,12 +184,12 @@ Use the script results to manually adjust/edit the raw index in order to remove 
 * Case "**+**":
     * Find location of line in `AxAdvToc.md`.
     * Find parent section to this line in `AxAdvToc.md`.
-    * Find this parent section in `AxData4Index.md`.
+    * Find this parent section in `AxData4Index.txt`.
     * Insert
 
-            * [Test1](TestPage1#markdown-header-label)
+            * [Test1](Test.Page1#markdown-header-label...)
 
-         into `AxData4Index.md` after the parent header block.
+         into `AxData4Index.txt` after the parent header block.
 
     * If necessary, add index entries and link descriptions to the new section block.
     * _Remark:_ It may happen that the inserted line replaces an existing line. In this case insert
@@ -196,7 +198,7 @@ Use the script results to manually adjust/edit the raw index in order to remove 
 
 * Case "**-**":
 
-    Find line in `AxData4Index.md` and remove it together with all index entries. _Attention:_
+    Find line in `AxData4Index.txt` and remove it together with all index entries. _Attention:_
     The section block might have been renamed or moved to another location. In this case the index entries should be
     kept and moved to the correct location.
 
@@ -214,8 +216,8 @@ These steps are required to remove inconsistencies of this type:
   to manually adjust/edit the raw index in order to remove the inconsistencies.
 * _Example of script output:_
 
-         + Track, select range in edit mode ---> [Select a range...](AdvTrkGeneral#markdown-header-select-a-range...)
-         - Track, select range in edit mode ---> [Select a range...](AdvTrkGeneral#markdown-header-select-a-range...)
+         + Track, select range in edit mode ---> [Select a range...](AdvTrk.General#markdown-header-select-a-range...)
+         - Track, select range in edit mode ---> [Select a range...](AdvTrk.General#markdown-header-select-a-range...)
 
 
      These lines mean

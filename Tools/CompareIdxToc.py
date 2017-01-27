@@ -1,13 +1,13 @@
 #!python3
 # -*- coding: utf-8 -*-
 
-# Find inconsistencies between the TOC in AxAdvToc.md and AxData4Index.md
+# Find inconsistencies between the TOC in AxAdvToc.md and AxData4Index.txt
 
 import difflib
 import re
 
 tocfile = r"../AxAdvToc.md"             # complete TOC file 
-idxfile = r"AxData4Index.md"            # raw index file
+idxfile = r"AxData4Index.txt"            # raw index file
 
 r2 = re.compile("^[-+]*\s*$")  # result lines of diff with "+" or "-" in first position and empty in the rest
 
