@@ -110,7 +110,6 @@ A track can be cut (split) into 2 parts. To do this use the following procedure:
   
   Mouse not on trackpoint | Mouse on trackpoint
   ------------------------|--------------------
-  
   ![Mouse not on trackpoint](images/DocAdv/CutNoTrkPt.jpg "Mouse not on trackpoint") | ![Mouse on trackpoint](images/DocAdv/CutTrkPt.jpg "Mouse on trackpoint")
   
 * Left click on the trackpoint. A toolbox window pops-up.
@@ -122,13 +121,13 @@ A track can be cut (split) into 2 parts. To do this use the following procedure:
 
   ![Select cut options](images/DocAdv/CutOptSel.jpg "Select cut options")
 
-    * The upper 3 radio buttons define how to handle the split parts (keep first/last/both parts).
-    * The 2 radio buttons for the cut mode define how to handle the track segment between the selected cut point and its predecessor
+* The upper 3 radio buttons define how to handle the split parts (keep first/last/both parts).
+* The 2 radio buttons for the cut mode define how to handle the track segment between the selected cut point and its predecessor
       trackpoint.
-        * If the left mode is selected, then this segment is removed from the first part. _Remark:_ If the proposed default names
+    * If the left mode is selected, then this segment is removed from the first part. _Remark:_ If the proposed default names
           for the split parts are used, then the point indices shown indicate clearly the cut mode used (in the next image: 
           point 0 - 6 and 7 - 12, in the other mode this would be 0 - 7 and 7 - 12).
-        * If the right mode is selected, then this segment remains in the first part.
+    * If the right mode is selected, then this segment remains in the first part.
   
       Track cut, segment removed | Removed segment in default track names
       ---------------------------|---------------------------------------      
