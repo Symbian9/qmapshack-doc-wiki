@@ -23,7 +23,7 @@ the preface section of that page.
   (such as Latin1) are not allowed even when using ASCII characters only! Others might have used non-ASCII
   characters!
 
-* An MD page should have __only one__ top-level section, i.e. a line of the form
+* An MD page should have __exactly one__ top-level section, i.e. a line of the form
 
         # Header_of_page
 

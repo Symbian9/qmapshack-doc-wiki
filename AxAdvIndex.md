@@ -30,7 +30,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 
 
-# A
+## A
 
 
 **Activity, assign color to**
@@ -58,7 +58,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Saving data](DocGisItemsEditMultiple#markdown-header-saving-data "Saving data")
 
 
-# C
+## C
 
 
 **Command line, options**
@@ -86,7 +86,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [GPXTPX track extension](DocFaqHandling#markdown-header-what-is-the-difference-between-speed-and-gpxtpxspeed "Speed in GPXTPX track extension")
 
 
-# D
+## D
 
 
 **Data organization, data items**
@@ -119,6 +119,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Database, add**
 :  [Add/Remove a database](DocGisDatabaseAddRemove#markdown-header-addremove-a-database "Add/Remove a database")
 
+**Database, delete data**
+:  [Workspace and database windows](AdvProjects#markdown-header-workspace-and-database-windows "Workspace and database windows")
+
 **Database, export as GPX file**
 :  [Export database to GPX file](AdvProjActions#markdown-header-export-database-to-gpx-file "Export database to GPX file")
 
@@ -147,7 +150,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Data organization](AdvProjects#markdown-header-organization-of-qmapshack-data "Data organization")
 
 **Database, relation between database and workspace**
-:  [Workspace and Database](DocGisDatabaseWorkspaceDatabase "Workspace and Database")
+:  [Workspace and Database](DocGisDatabaseWorkspaceDatabase "Workspace and Database") ⊞ [Workspace and database windows](AdvProjects#markdown-header-workspace-and-database-windows "Workspace and database windows")
 
 **Database, remove**
 :  [Add/Remove a database](DocGisDatabaseAddRemove#markdown-header-addremove-a-database "Add/Remove a database")
@@ -172,6 +175,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Datum, WGS84**
 :  [Projection and Scaling](DocBasicsMapDem#markdown-header-projection-and-scaling "Projection and Scaling")
+
+**Delete data, in workspace & database**
+:  [Workspace and database windows](AdvProjects#markdown-header-workspace-and-database-windows "Workspace and database windows")
 
 **DEM, add elevation data**
 :  [Add digital elevation model](DocGettingStarted#markdown-header-add-digital-elevation-model "Add digital elevation model")
@@ -222,7 +228,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Track points filter](DocGisItemsTrk2#markdown-header-points "Track points filter")
 
 
-# E
+## E
 
 
 **Edit mode, for items with multiple points**
@@ -252,11 +258,11 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Elevation, edit**
 :  [Edit track elevation](AdvTrkElevation#markdown-header-manually-edit-elevation-of-a-track-point "Edit track elevation")
 
-**Elevation, Filter**
-:  [Track elevation filter](DocGisItemsTrk2#markdown-header-elevation "Track elevation filter")
-
 **Elevation, filter**
 :  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
+
+**Elevation, Filter**
+:  [Track elevation filter](DocGisItemsTrk2#markdown-header-elevation "Track elevation filter")
 
 **Elevation, invalid data**
 :  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
@@ -268,7 +274,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Export database to GPX file](AdvProjActions#markdown-header-export-database-to-gpx-file "Export database to GPX file")
 
 
-# F
+## F
 
 
 **Filter, Douglas-Peuker**
@@ -314,7 +320,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Load GPX Files](DocHandleGpxFiles#markdown-header-load-gpx-files "Load GPX Files")
 
 
-# G
+## G
 
 
 **Garmin Birds Eye, map**
@@ -392,8 +398,11 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **GPX, subpoint handling in**
 :  [Track data in GPX file](DocFaqHandling#markdown-header-which-track-data-is-saved-in-gpx-files "Which track data is saved in GPX file?")
 
+**GUI, language selection and change**
+:  [Change GUI language](DocFaqConfig#markdown-header-how-to-change-the-gui-language "Change GUI language")
 
-# H
+
+## H
 
 
 **Hill shading, DEM**
@@ -403,11 +412,14 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Adjust elevation properties](AdvMapDetails#markdown-header-adjustable-elevation-properties "Adjust elevation properties")
 
 
-# I
+## I
 
 
 **IGN map, accessed with WMTS**
 :  [WMTS for French IGN maps](DocMapsTipsTricks#markdown-header-wmts-configuration-to-access-french-ign-maps-geoportail "WMTS configuration for French IGN maps")
+
+**Installation, language selection and change**
+:  [Change GUI language](DocFaqConfig#markdown-header-how-to-change-the-gui-language "Change GUI language")
 
 **Installation, Linux**
 :  [Linux installation](DocGetQMapShack#markdown-header-linux "Linux installation")
@@ -425,14 +437,20 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [General remarks](BuildWindowsVisualStudio#markdown-header-general-remarks "General remarks") ⊞ [Windows installation](DocGetQMapShack#markdown-header-windows "Windows installation")
 
 
-# L
+## L
 
+
+**Logfile, enable debug output**
+:  [Command line options](DocCmdOptions "Command line options")
+
+**Logfile, find used locale and language file**
+:  [Change GUI language](DocFaqConfig#markdown-header-how-to-change-the-gui-language "Change GUI language")
 
 **Logfile, location**
 :  [User-relevant directories (Windows)](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant directories (Windows)")
 
 
-# M
+## M
 
 
 **Main window, layout**
@@ -598,7 +616,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [MySQL database](DocGisDatabaseAddRemove#markdown-header-mysql-565 "MySQL database")
 
 
-# O
+## O
 
 
 **Off-line routing, Routino**
@@ -611,7 +629,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Use of raster maps](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack "Use of Russian military raster maps")
 
 
-# P
+## P
 
 
 **PBF, Routino**
@@ -657,17 +675,23 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Projection and Scaling](DocBasicsMapDem#markdown-header-projection-and-scaling "Projection and Scaling")
 
 
-# Q
+## Q
 
 
 **QMapShack, INI file**
 :  [Command line options](DocCmdOptions "Command line options")
+
+**QMapShack, language selection and change**
+:  [Change GUI language](DocFaqConfig#markdown-header-how-to-change-the-gui-language "Change GUI language")
 
 **QMapShack, logfile**
 :  [Command line options](DocCmdOptions "Command line options")
 
 **QMapShack, running**
 :  [Running several QMS instances](DocFaqConfig#markdown-header-can-i-run-several-qms-instances-at-the-same-time "Running several QMS instances")
+
+**QMapShack, supported languages**
+:  [Change GUI language](DocFaqConfig#markdown-header-how-to-change-the-gui-language "Change GUI language")
 
 **QMapShack, use of Windows registry**
 :  [Command line options](DocCmdOptions "Command line options")
@@ -679,7 +703,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Load GPX Files](DocHandleGpxFiles#markdown-header-load-gpx-files "Load GPX Files")
 
 
-# R
+## R
 
 
 **Range, of track in edit mode**
@@ -812,7 +836,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Description of routing methods in QMapShack](AdvRoutes#markdown-header-description-of-routing-methods-in-qmapshack "Description of routing methods in QMapShack")
 
 
-# S
+## S
 
 
 **Scale, of map**
@@ -831,7 +855,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Convert track subpoints to points](AdvTrkFilters#markdown-header-convert-track-subpoints-to-points "Convert track subpoints to points")
 
 
-# T
+## T
 
 
 **TCX, load file**
@@ -896,6 +920,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Track, create**
 :  [Track](DocGisItemsNew#markdown-header-track "Track")
+
+**Track, cut into parts**
+:  [Cut track](AdvTrkGeneral#markdown-header-cut-track "Cut track")
 
 **Track, delete points in range**
 :  [Select a range of a track in edit mode](AdvTrkGeneral#markdown-header-select-a-range-of-a-track-in-edit-mode "Select a range of a track in edit mode")
@@ -1027,14 +1054,14 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Symbols for trackpoints](AdvTrkGeneral#markdown-header-symbols-for-trackpoints "Symbols for trackpoints")
 
 
-# U
+## U
 
 
 **Undo, edit**
 :  [Undo/Redo](DocGisItemsEditMultiple#markdown-header-undoredo "Undo/Redo")
 
 
-# V
+## V
 
 
 **VRT, DEM**
@@ -1059,7 +1086,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Use of VRT files](DocFaqMaps#markdown-header-is-it-possible-to-use-several-vrt-files "Use of several VRT files")
 
 
-# W
+## W
 
 
 **Waypoint, attached to track**
@@ -1128,11 +1155,14 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Workspace, database**
 :  [User-relevant directories (Windows)](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant directories (Windows)")
 
+**Workspace, delete data**
+:  [Workspace and database windows](AdvProjects#markdown-header-workspace-and-database-windows "Workspace and database windows")
+
 **Workspace, project in**
 :  [QMS workspace database](DocFaqData#markdown-header-why-does-qmapshack-use-a-separate-workspacedb-to-save-data "QMS workspace database")
 
 **Workspace, relation between database and workspace**
-:  [Workspace and Database](DocGisDatabaseWorkspaceDatabase "Workspace and Database")
+:  [Workspace and Database](DocGisDatabaseWorkspaceDatabase "Workspace and Database") ⊞ [Workspace and database windows](AdvProjects#markdown-header-workspace-and-database-windows "Workspace and database windows")
 
 - - -
 [Prev](AxGlossary) (Glossary) | [Home](Home) | [Manual](DocMain) | [Top](#) | (List of images (Advanced usage and FAQ parts only)) [Next](AxWikiImages)

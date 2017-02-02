@@ -79,6 +79,7 @@ ___Basic usage___
         1. QMapShack|INI file    
         1. QMapShack|use of Windows registry        
         1. Windows registry|use
+        1. Logfile|enable debug output
        
     * [Install Maps & DEM Data](DocInstallMapDem)
         * [Organization of Maps & DEM](DocInstallMapDem#markdown-header-organization-of-maps-dem)
@@ -461,7 +462,14 @@ ___Basic usage___
         1. Database|group in
         1. Database|project in
         1. Menu|Project - Setup Workspace
-        
+
+    * [Workspace and database windows](AdvProjects#markdown-header-workspace-and-database-windows)
+        1. Delete data|in workspace & database
+        1. Workspace|delete data
+        1. Database|delete data   
+        1. Database|relation between database and workspace     
+        1. Workspace|relation between database and workspace
+    
     * [General Actions](AdvProjActions)
         * [Working with databases](AdvProjActions#markdown-header-working-with-databases)
             * [Export database to GPX file](AdvProjActions#markdown-header-export-database-to-gpx-file)    
@@ -574,6 +582,9 @@ ___Basic usage___
             * [Add point to track](AdvTrkGeneral#markdown-header-add-point-to-track)
                 1. Track|add new trackpoint
                 1. Trackpoint|add new to track   
+                
+            * [Cut track](AdvTrkGeneral#markdown-header-cut-track)
+                1. Track|cut into parts
                 
             * [Attach waypoints to a track to get additional track information](AdvTrkGeneral#markdown-header-attach-waypoints-to-a-track-to-get-additional-track-information)
             + Attach waypoint to track
@@ -711,7 +722,7 @@ ___Basic usage___
         * [Can I run several QMS instances at the same time?](DocFaqConfig#markdown-header-can-i-run-several-qms-instances-at-the-same-time)
         + Running several QMS instances
             1. QMapShack|running
-        
+                      
         * [User-relevant QMapShack directories (Windows version)](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version)
         + User-relevant directories (Windows)
             1. QMapShack|used directories
@@ -722,7 +733,15 @@ ___Basic usage___
             1. Workspace|database
             1. Database|workspace
             1. Configuration|Routino
-        
+
+        * [How to change the GUI language?](DocFaqConfig#markdown-header-how-to-change-the-gui-language)    
+        + Change GUI language
+            1. Installation|language selection and change
+            1. QMapShack|language selection and change
+            1. GUI|language selection and change
+            1. QMapShack|supported languages
+            1. Logfile|find used locale and language file
+              
         * [Databases and projects](DocFaqData)
             * [Why does QMapShack use a separate workspace.db to save data?](DocFaqData#markdown-header-why-does-qmapshack-use-a-separate-workspacedb-to-save-data)
             + QMS workspace database

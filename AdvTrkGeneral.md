@@ -94,10 +94,51 @@ Given a track more points can be added to it using the following procedure:
   trackpoints are connected with straight line segments. As soon as the mouse comes to a standstill, the track is recalculated in
   accordance with the selected routing options (Avoid the `Snap line ...` routing option!).
 * Click at the wanted location to add the new routing trackpoint to the track and to fix it at this location.
-* Clicking `Save to original` or `Save as new`in the toolbar at the top of the map view saves the new track.
+* Clicking `Save to original` or `Save as new` in the toolbar at the top of the map view saves the new track.
 
 
+## Cut track
 
+_Valid from patch version a849e5a (02.02.2017)._
+
+A track can be cut (split) into 2 parts. To do this use the following procedure:
+
+* Double-click on the track name in the workspace window to display the track in the map window.
+* Move the mouse to the trackpoint on the map at which the track should be cut. _Remark:_ If the mouse is on the track,
+  then an info window pops-up giving some information about the nearest trackpoint of the track. The mouse pointer is located on a
+  trackpoint, if it is located on the pointer of the info window.
+  
+  Mouse not on trackpoint | Mouse on trackpoint
+  ------------------------|--------------------
+  
+  ![Mouse not on trackpoint](images/DocAdv/CutNoTrkPt.jpg "Mouse not on trackpoint") | ![Mouse on trackpoint](images/DocAdv/CutTrkPt.jpg "Mouse on trackpoint")
+  
+* Left click on the trackpoint. A toolbox window pops-up.
+
+  ![Toolbox with cut icon](images/DocAdv/CutTools.jpg "Toolbox with cut icon")
+
+* Click the `Cut` icon in the toolbox. A new window pops-up in which some cut options should be selected.
+  _Remark_: If this icon is inactive, then the mouse was not located on a trackpoint!
+
+  ![Select cut options](images/DocAdv/CutOptSel.jpg "Select cut options")
+
+    * The upper 3 radio buttons define how to handle the split parts (keep first/last/both parts).
+    * The 2 radio buttons for the cut mode define how to handle the track segment between the selected cut point and its predecessor
+      trackpoint.
+        * If the left mode is selected, then this segment is removed from the first part. _Remark:_ If the proposed default names
+          for the split parts are used, then the point indices shown indicate clearly the cut mode used (in the next image: 
+          point 0 - 6 and 7 - 12, in the other mode this would be 0 - 7 and 7 - 12).
+        * If the right mode is selected, then this segment remains in the first part.
+  
+      Track cut, segment removed | Removed segment in default track names
+      ---------------------------|---------------------------------------      
+      ![Cut mode selection](images/DocAdv/CutMode.jpg "Cut mode: remove segment") | ![Cut parts with default names](images/DocAdv/CutTrkParts.jpg "Cut mode: remove segment")
+
+    * The checkbox at the bottom of the window (`Create a new track`) is not active if both split parts should be kept. 
+      If only one part should be kept and the checkbox is not selected, then the split part replaces the original track.
+    
+* In the next windows names and projects should be assigned to the split parts.
+* _Remark:_ Cutting a track can also be started from the graphs in the track edit window using the context menu.
 
 ## Attach waypoints to a track to get additional track information
 

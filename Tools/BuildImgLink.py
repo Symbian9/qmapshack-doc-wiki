@@ -13,7 +13,8 @@ import re
 # define folders and file mask to be considered
 filedir = r".."                 # script runs from Tools subfolder - goto parent folder
 filemasks = (r"DocFaq*.md",     # file masks used for scan
-             r"Adv*.md"
+             r"Adv*.md",
+             r"DocQuickStart*.md",
             ) 
 
 r1 = re.compile("(!\[(.*?)\]\((.*?)\))") # pattern for image link

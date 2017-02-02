@@ -168,7 +168,7 @@ print("Number of entries in index file: %3d." % len(idxlistd))
 for x in idxlistd:
   if not lastused == x[0][2].upper():       # new first letter
     lastused = x[0][2].upper()
-    outpf.write("\n\n# %s\n\n" % lastused)  # output of capital letter as section header
+    outpf.write("\n\n## %s\n\n" % lastused)  # output of capital letter as section header
     
   xx = x[1]
   xx.sort()  
