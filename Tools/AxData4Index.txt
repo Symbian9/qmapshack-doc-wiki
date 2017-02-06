@@ -472,6 +472,10 @@ ___Basic usage___
     
     * [General Actions](AdvProjActions)
         * [Working with databases](AdvProjActions#markdown-header-working-with-databases)
+            * [Import of GIS data](AdvProjActions#markdown-header-import-of-gis-data)
+                1. Database|import GIS data
+                1. GIS data|import to database
+                
             * [Export database to GPX file](AdvProjActions#markdown-header-export-database-to-gpx-file)    
                 1. Database|save as GPX file
                 1. Database|export as GPX file             

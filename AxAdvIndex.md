@@ -128,6 +128,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Database, group in**
 :  [Data organization](AdvProjects#markdown-header-organization-of-qmapshack-data "Data organization")
 
+**Database, import GIS data**
+:  [Import of GIS data](AdvProjActions#markdown-header-import-of-gis-data "Import of GIS data")
+
 **Database, in workspace**
 :  [Database](DocGisDatabase "Database")
 
@@ -349,6 +352,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **GIS data, history**
 :  [Tracks, Waypoints & Co](DocGisItems "Tracks, Waypoints & Co")
+
+**GIS data, import to database**
+:  [Import of GIS data](AdvProjActions#markdown-header-import-of-gis-data "Import of GIS data")
 
 **GIS data, locked**
 :  [Tracks, Waypoints & Co](DocGisItems "Tracks, Waypoints & Co")

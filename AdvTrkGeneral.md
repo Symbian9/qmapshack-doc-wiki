@@ -108,18 +108,18 @@ A track can be cut (split) into 2 parts. To do this use the following procedure:
   then an info window pops-up giving some information about the nearest trackpoint of the track. The mouse pointer is located on a
   trackpoint, if it is located on the pointer of the info window.
   
-  Mouse not on trackpoint | Mouse on trackpoint
-  ------------------------|--------------------
-  ![Mouse not on trackpoint](images/DocAdv/CutNoTrkPt.jpg "Mouse not on trackpoint") | ![Mouse on trackpoint](images/DocAdv/CutTrkPt.jpg "Mouse on trackpoint")
+    Mouse not on trackpoint | Mouse on trackpoint
+    ------------------------|--------------------
+    ![Mouse not on trackpoint](images/DocAdv/CutNoTrkPt.jpg "Mouse not on trackpoint") | ![Mouse on trackpoint](images/DocAdv/CutTrkPt.jpg "Mouse on trackpoint")
   
 * Left click on the trackpoint. A toolbox window pops-up.
 
-  ![Toolbox with cut icon](images/DocAdv/CutTools.jpg "Toolbox with cut icon")
+    ![Toolbox with cut icon](images/DocAdv/CutTools.jpg "Toolbox with cut icon")
 
 * Click the `Cut` icon in the toolbox. A new window pops-up in which some cut options should be selected.
   _Remark_: If this icon is inactive, then the mouse was not located on a trackpoint!
 
-  ![Select cut options](images/DocAdv/CutOptSel.jpg "Select cut options")
+    ![Select cut options](images/DocAdv/CutOptSel.jpg "Select cut options")
 
 * The upper 3 radio buttons define how to handle the split parts (keep first/last/both parts).
 * The 2 radio buttons for the cut mode define how to handle the track segment between the selected cut point and its predecessor
@@ -129,9 +129,9 @@ A track can be cut (split) into 2 parts. To do this use the following procedure:
           point 0 - 6 and 7 - 12, in the other mode this would be 0 - 7 and 7 - 12).
     * If the right mode is selected, then this segment remains in the first part.
   
-      Track cut, segment removed | Removed segment in default track names
-      ---------------------------|---------------------------------------      
-      ![Cut mode selection](images/DocAdv/CutMode.jpg "Cut mode: remove segment") | ![Cut parts with default names](images/DocAdv/CutTrkParts.jpg "Cut mode: remove segment")
+        Track cut, segment removed | Removed segment in default track names
+        ---------------------------|---------------------------------------      
+        ![Cut mode selection](images/DocAdv/CutMode.jpg "Cut mode: remove segment") | ![Cut parts with default names](images/DocAdv/CutTrkParts.jpg "Cut mode: remove segment")
 
     * The checkbox at the bottom of the window (`Create a new track`) is not active if both split parts should be kept. 
       If only one part should be kept and the checkbox is not selected, then the split part replaces the original track.
@@ -166,7 +166,7 @@ There are several ways to do this:
   * Move the mouse pointer to the bubble box, right click and select `Add waypoint` from the context menu.
 _Remark:_ If a selected waypoint has a distance of less than 50m to a trackpoint than it is attached to the track.
 
-  ![Trackpoint info box](images/DocFaq/BubbleBox.jpg "Trackpoint info box")
+    ![Trackpoint info box](images/DocFaq/BubbleBox.jpg "Trackpoint info box")
 
 * If elevation data for the track is available:
   * Open the edit window for the track and ensure that the profile graph of the track is displayed.
@@ -242,7 +242,7 @@ The user can select in several ways a range of a track, that is a sequence of tr
          created by a routing engine) can be selected.
        * This procedure is recommended for recorded tracks.
 
-![Track range selection](images/DocFaq/RangeSelection.png "Track range selection")
+         ![Track range selection](images/DocFaq/RangeSelection.png "Track range selection")
 
 * __Using a graph in an edit window:__
 

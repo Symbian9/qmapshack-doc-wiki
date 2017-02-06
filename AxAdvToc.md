@@ -153,6 +153,7 @@ ___Do not edit - automatically created from DocMain!___
     * [Workspace and database windows](AdvProjects#markdown-header-workspace-and-database-windows)
     * [General Actions](AdvProjActions)
         * [Working with databases](AdvProjActions#markdown-header-working-with-databases)
+            * [Import of GIS data](AdvProjActions#markdown-header-import-of-gis-data)
             * [Export database to GPX file](AdvProjActions#markdown-header-export-database-to-gpx-file)
         * [Working with projects](AdvProjActions#markdown-header-working-with-projects)
             * [Merge projects](AdvProjActions#markdown-header-merge-projects)

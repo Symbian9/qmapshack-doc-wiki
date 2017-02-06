@@ -7,6 +7,21 @@
 
 ## Working with databases
 
+### Import of GIS data
+
+(_valid starting with QMS patch version  52659732fc97 (2017-02-05)_)
+
+Files with GIS data (e.g. GPX files) can be loaded as new projects
+
+* into the workspace (use the menu entry `File - Load GIS data`),
+* into a database (use context menu entry `Import from files...` of the database),
+* into a project of a database (use context menu entry `Import from files...` of the project of the database).
+
+With the last 2 options the user can transfer quickly GIS data from a file to a database.
+
+The name of a new project from a GPX file is the name saved in the GPX metadata part of the file or, if this name is missing, the file
+name.
+
 ### Export database to GPX file
 
 (_valid starting with QMS patch version  f2297514ff5f (2016-12-08)_)
@@ -25,7 +40,7 @@ If a database is saved a new folder is created in the selected target directory.
 and groups in the database are created - if necessary - to mirror the tree structure of the database. Data items (waypoints, tracks,
 routes) in a database folder are saved into a GPX file having the name of the folder to which they belong.
 
-If a subfolder (project or group) of a database is saved then this rule is applied in a similar way.
+If a subfolder (project or group) of a database is saved then this rule is applied similarly.
 
 ## Working with projects
 
@@ -64,7 +79,7 @@ To move a project from the workspace into a group in a database and keep the wor
 
 * _Save a single workspace project:_
 
-    When saving a project from the workspace exactly the project data displayed in the workspace is saved.
+    When saving a project from the workspace, exactly the project data displayed in the workspace is saved.
     _Remark:_ If the project belongs to a database then the user can select the data to be displayed in the workspace.
     The part of the project data not selected for display is not saved by this method!
     * Right-click on the project name in the workspace
