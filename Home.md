@@ -8,9 +8,9 @@ If you want to see **screenshots** or start with QMapShack, visit the [**documen
 
 Users can find a short quickstart description here: 
 
-* [__Quickstart help__](DocQuickStartEnglish "English quickstart description") ![UK flag](images/DocGettingStarted/FlagUk.jpg)
-* [__Schnellstartanleitung__](DocQuickStartGerman "German quickstart description") ![German flag](images/DocGettingStarted/FlagDe.jpg)
-* [__Быстрый старт__](DocQuickStartRussian "Russian quickstart description") ![Russian flag](images/DocGettingStarted/FlagRu.jpg)  
+* ![UK flag](images/DocGettingStarted/FlagUk.jpg)  [__Quick start__](DocQuickStartEnglish "English quickstart description")
+* ![German flag](images/DocGettingStarted/FlagDe.jpg)  [__Schnellstartanleitung__](DocQuickStartGerman "German quickstart description")
+* ![Russian flag](images/DocGettingStarted/FlagRu.jpg)  [__Быстрый старт__](DocQuickStartRussian "Russian quickstart description")
 
 [**Found a bug?** Read this!](ReportBugs)
 
