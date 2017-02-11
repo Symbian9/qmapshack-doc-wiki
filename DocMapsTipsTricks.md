@@ -64,6 +64,145 @@ For documentation of export command refer to:
 
 ---
 
+## Access most online maps as TMS using MapProxy
+
+Preparing your next outdoors adventure using all available information sources in a single software (QMapShack) is quite useful. For some parts of the world, access to local topo maps may even be paramount to your safe return. Yet, QMapShack has less support for web maps than QLandkarteGT did, and even in QLGT crafting a GDAL source file was already akin to black magic.
+
+This section describes how to coerce most online maps into a format that QMapShack can use using MapProxy.
+
+Pros:
+
+* Can use maps in SRS (projections) incompatible with QMapShack. QMapShack can only use the web-standard EPSG:3857 and EPSG:900913.
+* Can access maps through different protocols. QMapShack only supports natively Web-TMS, and WMS-C through hacks.
+* Can rescale a layer, for example if you prefer to have an overview with that rich topo map scaled down to 1:100k rather than an 1:100k OSM map that's empty in that part of the world.
+* No JavaScript hackery.
+
+Cons:
+
+* It requires an extra piece of software to run along QMapShack.
+
+### Gathering information
+
+Required information, for each map layer you want to display:
+
+* Layer name.
+* Source URL.
+* Source SRS, EPSG:xxxx.
+* Bounding box of the served map.
+* Size of the served tiles, in pixels.
+* Supported resolutions (in pixels per ground unit).
+
+Most public map servers are configured to serve only map tiles already in their cache. Otherwise, the server would consume a lot of resources to reproject, scale and tile the source material to meet your requirements.
+
+So, please double-check that your requests match precisely (coordinates etc.) the usage examples you found, even if "it works": not only it wouldn't be fair to other users, but you'd probably attract unwanted attention and get yourself banned. If it doesn't work or your requests are wrong, you probably got one of the parameters above wrong.
+
+### MapProxy basic usage
+
+This example uses the libre [MapProxy](https://mapproxy.org). See their documentation for installation options, configuration etc. In its simplest deployment option, just start it like this:
+
+    mapproxy-util serve-develop ./myconf.yaml
+
+And configure this URL as a TMS source in QMapShack or QLandkarteGT:
+
+    http://localhost:8080/tiles/base_EPSG3857/%1/%2/%3.png?origin=nw
+
+You can also access `http://localhost:8080/` for a basic web GUI ("demo") with an OpenLayer demo of your setup.
+
+### Configuration template
+
+Here is a template for myconf.yaml, with the following fictious values. Adapt it to suit your needs.
+
+* Layer name: mylayer.
+* Source SRS, EPSG:1234.
+* Bounding box of the served map: `0,0` -> `24000000,42000000` in the EPSG:1234.
+* Size of the served tiles, in pixels: 256x256.
+* Supported resolutions: 2 (only).
+
+NB: There is a `fallback` OSM-based source for areas or resolutions not covered by `upstream` (the target web map). That fallback is useful when testing the configuration with the MapProxy built-in "demo" page (see above). You can strip it out of the configuration once it works.
+
+```yaml
+services:
+  demo:
+  tms:
+
+sources:
+  upstream_mylayer:
+    # That server is speaking WMS-C, but the tile type will let us mimic the
+    # example URL exactly.
+    type: tile
+    url: https://example.com/mapserver/wms?KEY=&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&FORMAT=image%%2Fpng&LAYERS=mylayer&SRS=EPSG%%3A1234&BBOX=%(bbox)s&WIDTH=256&HEIGHT=256
+    grid: upstream_mylayer_grid
+    # Upstream's native resolution for this layer is 2. We *don't* set this
+    # here, it's already in the upstream_mylayer_grid definition. Instead, we
+    # specificy that content from this source is to be used scaled, down to res
+    # 10 if needed (larger res numbers mean lower-detail map!).
+    # min/max_res in sources is the key to setting which source serves which
+    # resolution.
+    min_res: 10
+    coverage:
+      bbox: [ 0, 0, 24000000, 42000000 ]
+      srs: 'EPSG:1234'
+  fallback:
+    type: tile
+    url: https://tile.thunderforest.com/landscape/%(tms_path)s.png
+    grid: GLOBAL_WEBMERCATOR
+    # We don't restrict resolutions here: we're only a fallback. upstream will
+    # get precedence because of the cache source order and will serve all
+    # resolutions we allowed for it.
+
+layers:
+  - name: base
+    title: base
+    sources: [output_cache]
+
+grids:
+  upstream_mylayer_grid:
+    # Adapt `origin` to the actual origin in EPSG:1234.
+    srs: 'EPSG:1234'
+    origin: sw
+    tile_size: [ 256, 256 ]
+    # That's the only resolution we're interested into in this layer.
+    # This will prevent MapProxy from attempting to fetch higher/lower
+    # resolutions for this layer. Instead, it'll scale up/down the 2 res as
+    # needed.
+    res: [ 2 ]
+    bbox: [ 0, 0, 24000000, 42000000 ]
+    max_shrink_factor: 16
+
+caches:
+  output_cache:
+    sources: [fallback, upstream_cache]
+    grids: [GLOBAL_WEBMERCATOR]
+  upstream_cache:
+    sources: [upstream_mylayer]
+    grids: [upstream_mylayer_grid]
+
+globals:
+  cache:
+    # upstream does not support this, and MapProxy whines if we compose a layer
+    # from caches with different such settings.
+    meta_size: [1, 1]
+    meta_buffer: 0
+  http:
+    ssl_no_cert_checks: true
+```
+
+### Troubleshooting
+
+* No map for `upstream`:
+    * Check the MapProxy log for errors.
+    * Try one of the upstream GET requests in your browser: most likely you'll get an error message that may hint at which parameters you got wrong.
+    * Double-check your parameters from "Gathering information" (yes, again) and how you filled them in the configuration template.
+    * Some map servers may reject requests that do not originate from their web-based map viewer, based on HTTP headers like User-Agent and Referer. Check what your regular browser sends for these and replicate them in `sources.upstream_mylayer.http.headers` (see the [MapProxy documentation](https://mapproxy.org/docs/nightly/sources.html#id7)).
+* No map for `fallback`:
+    * ThunderForest announced they would require an API key in the URLs in early 2017, try adding one.
+* Tiles are misplaced or upside-down:
+    * Check that `grids.upstream_mylayer_grid.origin` is correct: where is the 0,0 point in that SRS? Top-left or bottom-left?
+    * Make sure that you are passing `?origin=nw` in your requests to MapProxy.
+    * Do not attempt to customize the resolution list for real web-TMS sources, IOW those with a %z parameter. At least, it didn't work for me (user error or MapProxy bug?). It's OK to use a subset of available resolutions for WMS-C sources however (those with a bounding box).
+
+---
+
 ## WMTS configuration to access French IGN maps ("Géoportail")
 
 As an individual, you can apply for a free non-commercial access to the French IGN WMTS servers (for example through their "Géoportail API", but also works with other WMTS clients like QGIS and QMapShack). Lots of thanks to them for this free access because their maps are truly awesome. The original source of information about this is at the following URL (in French):
