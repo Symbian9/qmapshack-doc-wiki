@@ -308,7 +308,7 @@ Now start your console, browse to your folder and copy the following code:
 ```
 #!sh
 
-java  -Xmx2048M -jar --index --family-id=6528 --description="openmtbmap_alps" --series-name="openmtbmap_alps" --family-name="openmtbmap_alps" --product-id=1 --gmapsupp 6*.img 7*.img widealp.TYP
+java  -Xmx2048M -jar mkgmap.jar --index --family-id=6528 --description="openmtbmap_alps" --series-name="openmtbmap_alps" --family-name="openmtbmap_alps" --product-id=1 --gmapsupp 6*.img 7*.img widealp.TYP
 ```
 
 
