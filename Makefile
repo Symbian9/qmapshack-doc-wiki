@@ -1,7 +1,7 @@
 ########################################################################
 ########################################################################
 ##                                                                    ##
-## Copyright (C) 2016 Rainer Woitok, <Rainer.Woitok@Gmail.Com>        ##
+## Copyright (C) 2016 - 2017 Rainer Woitok, <Rainer.Woitok@Gmail.Com> ##
 ##                                                                    ##
 ## This makefile  is free software:  you can  redistribute it  and/or ##
 ## modify it  under the terms  of the  GNU General  Public License as ##
@@ -48,7 +48,7 @@ tgt ::= $(src:.md=.html)
 # being younger than the target, or all "*.md" files,  depending on whe-
 # ther or not  the files passed  as second and third  arguments are both
 # older than the file passed as first argument (this function is used in
-# the "fxt" and "nvt" targets):
+# the "nvt" target):
 
 select = $(if $(shell test $(2) -ot $(1) && test $(3) -ot $(1) && echo 1),$?,$(src))
 
