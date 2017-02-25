@@ -7,9 +7,16 @@
 
 ## Can I run several QMS instances at the same time?
 
-As a general rule, don't do this. QMS saves workspace information in the file `workspace.db`. There is only one such
-file for all QMS instances. If this file is used by several QMS instances at the same time, then the 
-QMS workspace data behavior is unpredictable.
+
+_Valid from patch version aa576e2 (22.02.2017)._ 
+
+No. QMS saves workspace information in the file `workspace.db`. There is only one such
+file. If this file would be used by several QMS instances at the same time, then the 
+QMS workspace data behavior would be unpredictable.
+
+If an attempt is made to start a second QMS instance, then the file parameters of this call are transferred to the first QMS instance
+and the files are loaded there silently.
+
 
 ## User-relevant QMapShack directories (Windows version)
 

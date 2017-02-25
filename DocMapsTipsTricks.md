@@ -457,8 +457,8 @@ Script converts to OSGEO TMS (http://www.maptiler.org/google-maps-coordinates-ti
 [WMS & WMTS Server Maps](http://www.mtb-touring.net/qms/onlinekarten-einbinden) 
 
 * Sat: ArcGIS, Bing
-* OSM Style: hikebikemap, humanitarian, landscape, mapnik(std), mapnik(de), opencyclemap, opnvkarte, outdoors
-* Topo: OSM Topo, World Topo, Alpenkarte, 4UMaps.eu, MTBMap.cz
+* OSM Style: hikebikemap, humanitarian, landscape, mapnik(std), mapnik(de), opencyclemap, oepnvkarte, outdoors
+* Topo: OSM Topo, World Topo, Alpenkarte, 4UMaps.eu, MTBMap.cz, Reit- und Wanderkarte
 * Waymarkedtrails: Inlinescating, Mountainbiking, Cycling, Riding, Hiking, Slopemap
 * Overlay: Hillshading
 * Google: Google Hybrid Maps, Google Maps, Google Sat Map, Google Terrain Map
