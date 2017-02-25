@@ -3,7 +3,7 @@
 ########################################################################
 ########################################################################
 ##                                                                    ##
-## Copyright (C) 2016 Rainer Woitok, <Rainer.Woitok@Gmail.Com>        ##
+## Copyright (C) 2016 - 2017 Rainer Woitok, <Rainer.Woitok@Gmail.Com> ##
 ##                                                                    ##
 ## This shell script is free software: you can redistribute it and/or ##
 ## modify it  under the terms  of the  GNU General  Public License as ##
@@ -27,34 +27,46 @@
 # nav" would do, but only for exactly those files specified on the comm-
 # and line.
 #
-# ./Make.sh [-d|-n] file ...
+# ./Make.sh [-d|-n|-dn|-nd] file ...
 #
 # If the  "-d" switch or if  no switch is specified,  the Markdown files
 # will be converted to their corresponding "*.html" files  as with "make
 # doc", and if the "-n" switch is specified,  the Markdown files will be
-# processed as with "make nav".
+# processed as with "make nav".  Specifying both switches first process-
+# es the  Markdown files  as with  "make nav"  before converting them to
+# their corresponding "*.html" files as with "make doc".
 #
 #                                                    R Woitok 2016-07-31
 #
 ########################################################################
 
-if   [ "${1-}" = -n ]   # Update navigation bars in the files specified.
-then op=n
-     shift
-elif [ "${1-}" = -d ]  # Create "*.html" files from the files specified.
-then shift
-fi
+case "${1-0}" in
+  -d|-n) eval ${1#-}=1                 # Perform single action selected.
+         shift
+         ;;
+-dn|-nd) d=1 ; n=1                               # Perform both actions.
+         shift
+         ;;
+     -*) echo "Invalid switch '$1'." >&2
+         exit 4
+         ;;
+      *) d=1                                   # Perform default action.
+         ;;
+esac
 
 files=$(ls "${@-}")            # Determine the list of files to process.
 
-if [ -n "${op-}" ]      # Update navigation bars in the files specified.
+if [ -n "${n-}" ]       # Update navigation bars in the files specified.
 then for f in $files
      do echo ./NavBar.sh DocMain.md $f
              ./NavBar.sh DocMain.md $f
      done
-else for f in $files              # Convert the files specified to HTML.
+fi                                              # End if [ -n "${n-}" ].
+
+if [ -n "${d-}" ]                 # Convert the files specified to HTML.
+then for f in $files
      do echo ./HtmlMake.py $f ">" ${f%.md}.html
              ./HtmlMake.py $f  >  ${f%.md}.html
      done
-fi                                           # End else [ -n "${op-}" ].
+fi                                              # End if [ -n "${d-}" ].
 
