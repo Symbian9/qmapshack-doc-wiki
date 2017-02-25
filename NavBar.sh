@@ -3,7 +3,7 @@
 ########################################################################
 ########################################################################
 ##                                                                    ##
-## Copyright (C) 2016 Rainer Woitok, <Rainer.Woitok@Gmail.Com>        ##
+## Copyright (C) 2016 - 2017 Rainer Woitok, <Rainer.Woitok@Gmail.Com> ##
 ##                                                                    ##
 ## This shell script is free software: you can redistribute it and/or ##
 ## modify it  under the terms  of the  GNU General  Public License as ##
@@ -77,6 +77,11 @@ navbar='[[](Home|Prev)[]]|Prev [(][)]|- - -$|[[]TOC[]]$'
 # entifier including  its delimiting character,  provided the identifier
 # isn't delimited by the end of the line.
 #
+# The regular expression in variable "r5"  matches lines with links con-
+# tributing to the  table of contents.   The first parenthesized sub-ex-
+# pression matches the  link description  while the second parenthesized
+# sub-expression matches the link target.
+#
 # To prevent MinGW "gawk" on Windows  from producing  Windows-style line
 # ends  we set MinGW specific "gawk" variable  "BINMODE" to "w" and just
 # to make sure we also set standard "gawk" variable "ORS" (output record
@@ -88,6 +93,7 @@ gawk -v BINMODE=w -v ORS='\n'                                                 \
      -v 'r2=((^ *[[][^^][^]]*[]]:[ \t]+|[]][(] *)[^: #)]+)[.](md|html)'       \
      -v 'r3=((^ *[[][^^][^]]*[]]:[ \t]+|[]][(] *)[^: #)]*#)markdown-header-'  \
      -v 'r4=((^ *[[][^^][^]]*[]]:[ \t]+|[]][(] *)[^: #)]*#)([^: )]+([ )]|$))' \
+     -v 'r5=^ *[*][ \t]+[[]([^]]+)[]][(] *([^ )]+)'                           \
      -v "toc=${1%.*}" '
 
      #
@@ -137,7 +143,7 @@ gawk -v BINMODE=w -v ORS='\n'                                                 \
          # Skip lines which do not directly belong to the table of cont-
          # ents:
 
-         if ( ! match($0,"^ *[*][ \t]+[[]([^]]+)[]][(] *([^ )]+)",m) ) next
+         if ( ! match($0,r5,m) ) next
 
          #
          # Remove a ".html" or ".md" extension from the link target:
