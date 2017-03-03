@@ -1,4 +1,4 @@
-[Prev](DeveloperCommitCode) (Commit Code) | [Home](Home) | [Manual](DocMain) | (Developing Documentation) [Next](DevelopingDocumentation)
+[Prev](DeveloperCommitCode) (Commit Code) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Developing Documentation) [Next](DevelopingDocumentation)
 - - -
 [TOC]
 - - -
@@ -41,4 +41,4 @@ GenericName=GPS device mapping utility
 * To translate it to other language change the `de` in the filename and in the file itself to the language code you are translating for.
 
 - - -
-[Prev](DeveloperCommitCode) (Commit Code) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Developing Documentation) [Next](DevelopingDocumentation)
+[Prev](DeveloperCommitCode) (Commit Code) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Developing Documentation) [Next](DevelopingDocumentation)

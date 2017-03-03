@@ -1,4 +1,4 @@
-Prev () | [Home](Home) | [Manual](DocMain) | (Install QMapShack) [Next](DocGetQMapShack)
+Prev () | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Install QMapShack) [Next](DocGetQMapShack)
 - - -
 [TOC]
 - - -
@@ -95,4 +95,4 @@ Users can find short quickstart help here:
 * [List of images (Advanced usage and FAQ parts only)](AxWikiImages)
     
 - - -
-Prev () | [Home](Home) | [Manual](DocMain) | [Top](#) | (Install QMapShack) [Next](DocGetQMapShack)
+Prev () | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Install QMapShack) [Next](DocGetQMapShack)

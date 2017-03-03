@@ -1,4 +1,4 @@
-[Prev](DocFaqHandling) (Data handling) | [Home](Home) | [Manual](DocMain) | (Maps) [Next](DocFaqMaps)
+[Prev](DocFaqHandling) (Data handling) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Maps) [Next](DocFaqMaps)
 - - -
 [TOC]
 - - -
@@ -65,4 +65,4 @@ When using the standard QMS Windows installation then `planetsplitter.exe` is fo
 These commands can be executed directly from a command line.
 
 - - -
-[Prev](DocFaqHandling) (Data handling) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Maps) [Next](DocFaqMaps)
+[Prev](DocFaqHandling) (Data handling) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Maps) [Next](DocFaqMaps)

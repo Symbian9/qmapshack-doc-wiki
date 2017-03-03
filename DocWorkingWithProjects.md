@@ -1,4 +1,4 @@
-[Prev](DocControlMapDem) (Control maps and DEM files) | [Home](Home) | [Manual](DocMain) | (Handle GPX and QMS files) [Next](DocHandleGpxFiles)
+[Prev](DocControlMapDem) (Control maps and DEM files) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Handle GPX and QMS files) [Next](DocHandleGpxFiles)
 - - -
 [TOC]
 - - -
@@ -14,4 +14,4 @@ You can create a new project, start a search or close all projects by the _Proje
 You get the same menu with a right click when no item in the data view's workspace list is selected.
 
 - - -
-[Prev](DocControlMapDem) (Control maps and DEM files) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Handle GPX and QMS files) [Next](DocHandleGpxFiles)
+[Prev](DocControlMapDem) (Control maps and DEM files) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Handle GPX and QMS files) [Next](DocHandleGpxFiles)

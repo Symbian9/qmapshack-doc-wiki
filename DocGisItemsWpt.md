@@ -1,4 +1,4 @@
-[Prev](DocGisItemsRte) (Routes) | [Home](Home) | [Manual](DocMain) | (Areas) [Next](DocGisItemsArea)
+[Prev](DocGisItemsRte) (Routes) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Areas) [Next](DocGisItemsArea)
 - - -
 [TOC]
 - - -
@@ -91,4 +91,4 @@ Different to moving the waypoint this will create a clone of the waypoint. You h
 ![Project Waypoint](images/DocGisItemsWpt/Projection.png)
 
 - - -
-[Prev](DocGisItemsRte) (Routes) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Areas) [Next](DocGisItemsArea)
+[Prev](DocGisItemsRte) (Routes) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Areas) [Next](DocGisItemsArea)

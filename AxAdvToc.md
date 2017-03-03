@@ -1,4 +1,4 @@
-[Prev](AxHotkeys) (Hotkeys) | [Home](Home) | [Manual](DocMain) | (Glossary) [Next](AxGlossary)
+[Prev](AxHotkeys) (Hotkeys) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Glossary) [Next](AxGlossary)
 - - -
 [TOC]
 - - -
@@ -331,4 +331,4 @@ ___Do not edit - automatically created from DocMain!___
 * [List of images (Advanced usage and FAQ parts only)](AxWikiImages)
 
 - - -
-[Prev](AxHotkeys) (Hotkeys) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Glossary) [Next](AxGlossary)
+[Prev](AxHotkeys) (Hotkeys) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Glossary) [Next](AxGlossary)

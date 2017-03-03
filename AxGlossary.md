@@ -1,4 +1,4 @@
-[Prev](AxAdvToc) (Complete table of contents) | [Home](Home) | [Manual](DocMain) | (Index) [Next](AxAdvIndex)
+[Prev](AxAdvToc) (Complete table of contents) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Index) [Next](AxAdvIndex)
 - - -
 [TOC]
 - - -
@@ -129,4 +129,4 @@ of some track data.
   _Remark:_ From time to time the data view window itself is denoted as workspace.
 
 - - -
-[Prev](AxAdvToc) (Complete table of contents) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Index) [Next](AxAdvIndex)
+[Prev](AxAdvToc) (Complete table of contents) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Index) [Next](AxAdvIndex)

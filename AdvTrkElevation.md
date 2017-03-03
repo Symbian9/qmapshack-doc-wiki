@@ -1,4 +1,4 @@
-[Prev](AdvTrkGraphs) (Working with track graphs) | [Home](Home) | [Manual](DocMain) | (Routes and Routing) [Next](AdvRoutes)
+[Prev](AdvTrkGraphs) (Working with track graphs) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Routes and Routing) [Next](AdvRoutes)
 - - -
 [TOC]
 - - -
@@ -80,4 +80,4 @@ value with the help of the `GDAL` package. On a command line 2 steps have to be 
   ![Trackpoints with corrected elevation](images/DocFaq/DEM13.jpg "Trackpoints with corrected elevation")
 
 - - -
-[Prev](AdvTrkGraphs) (Working with track graphs) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Routes and Routing) [Next](AdvRoutes)
+[Prev](AdvTrkGraphs) (Working with track graphs) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Routes and Routing) [Next](AdvRoutes)

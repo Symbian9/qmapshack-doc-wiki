@@ -1,4 +1,4 @@
-[Prev](AdvMapDetails) (Details of map use) | [Home](Home) | [Manual](DocMain) | (Data handling) [Next](AdvDataHandling)
+[Prev](AdvMapDetails) (Details of map use) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Data handling) [Next](AdvDataHandling)
 - - -
 [TOC]
 - - -
@@ -466,4 +466,4 @@ Script converts to OSGEO TMS (http://www.maptiler.org/google-maps-coordinates-ti
 * Strava: Running & Cycling Heatmap
 
 - - -
-[Prev](AdvMapDetails) (Details of map use) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Data handling) [Next](AdvDataHandling)
+[Prev](AdvMapDetails) (Details of map use) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Data handling) [Next](AdvDataHandling)

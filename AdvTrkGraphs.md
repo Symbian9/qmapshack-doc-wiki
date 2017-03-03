@@ -1,4 +1,4 @@
-[Prev](AdvTrkFilters) (Track filters) | [Home](Home) | [Manual](DocMain) | (Editing elevation data) [Next](AdvTrkElevation)
+[Prev](AdvTrkFilters) (Track filters) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Editing elevation data) [Next](AdvTrkElevation)
 - - -
 [TOC]
 - - -
@@ -48,4 +48,4 @@ _Remark:_ Other already open track edit windows won't be updated when changing t
 The user should re-open them.
 
 - - -
-[Prev](AdvTrkFilters) (Track filters) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Editing elevation data) [Next](AdvTrkElevation)
+[Prev](AdvTrkFilters) (Track filters) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Editing elevation data) [Next](AdvTrkElevation)

@@ -1,4 +1,4 @@
-[Prev](DocGisItemsTrk2) (Tracks) | [Home](Home) | [Manual](DocMain) | (Waypoints) [Next](DocGisItemsWpt)
+[Prev](DocGisItemsTrk2) (Tracks) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Waypoints) [Next](DocGisItemsWpt)
 - - -
 [TOC]
 - - -
@@ -72,4 +72,4 @@ compile a new database.
 MapQuest is an online resource. It will answer to up to 15.000 requests each month without a charge. If that limit is exceeded the requests from all QMapShack users it will stop working until the end of the month. Compared to Routino MapQuest is better for car routes. For hikes and bike tours Routino is prefered. 
 
 - - -
-[Prev](DocGisItemsTrk2) (Tracks) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Waypoints) [Next](DocGisItemsWpt)
+[Prev](DocGisItemsTrk2) (Tracks) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Waypoints) [Next](DocGisItemsWpt)

@@ -1,4 +1,4 @@
-[Prev](DocGetQMapShack) (Install QMapShack) | [Home](Home) | [Manual](DocMain) | (Create Offline Documentation) [Next](OfflineDocumentation)
+[Prev](DocGetQMapShack) (Install QMapShack) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Create Offline Documentation) [Next](OfflineDocumentation)
 - - -
 [TOC]
 - - -
@@ -228,4 +228,4 @@ Now you can _really_ start debugging!
 Right click on "qmapshack" project and select Debug -> Start new instance
 
 - - -
-[Prev](DocGetQMapShack) (Install QMapShack) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Create Offline Documentation) [Next](OfflineDocumentation)
+[Prev](DocGetQMapShack) (Install QMapShack) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Create Offline Documentation) [Next](OfflineDocumentation)

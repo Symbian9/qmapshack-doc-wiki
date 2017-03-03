@@ -1,4 +1,4 @@
-[Prev](AxMaintainAutoPages) (Recommendations for editing QMS Wiki pages) | [Home](Home) | [Manual](DocMain) | (Playground - start your new Wiki page) [Next](DocPlayground)
+[Prev](AxMaintainAutoPages) (Recommendations for editing QMS Wiki pages) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Playground - start your new Wiki page) [Next](DocPlayground)
 - - -
 [TOC]
 - - -
@@ -363,4 +363,4 @@ chosen for
 * a slightly longer text describing in more detail the target topic.
 
 - - -
-[Prev](AxMaintainAutoPages) (Recommendations for editing QMS Wiki pages) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Playground - start your new Wiki page) [Next](DocPlayground)
+[Prev](AxMaintainAutoPages) (Recommendations for editing QMS Wiki pages) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Playground - start your new Wiki page) [Next](DocPlayground)

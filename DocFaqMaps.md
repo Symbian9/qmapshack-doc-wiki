@@ -1,4 +1,4 @@
-[Prev](DocFaqRouting) (Routing) | [Home](Home) | [Manual](DocMain) | (Troubleshooting QMapShack) [Next](TroubleShooting)
+[Prev](DocFaqRouting) (Routing) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Troubleshooting QMapShack) [Next](TroubleShooting)
 - - -
 [TOC]
 - - -
@@ -199,4 +199,4 @@ Raster maps and DEM (**D**igital **E**levation **M**odel) data are supported in 
 Several VRT files can be used. It is up to the user to organize the files properly.
 
 - - -
-[Prev](DocFaqRouting) (Routing) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Troubleshooting QMapShack) [Next](TroubleShooting)
+[Prev](DocFaqRouting) (Routing) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Troubleshooting QMapShack) [Next](TroubleShooting)

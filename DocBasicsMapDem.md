@@ -1,4 +1,4 @@
-[Prev](DocInstallMapDem) (Install Maps & DEM Data) | [Home](Home) | [Manual](DocMain) | (Control maps and DEM files) [Next](DocControlMapDem)
+[Prev](DocInstallMapDem) (Install Maps & DEM Data) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Control maps and DEM files) [Next](DocControlMapDem)
 - - -
 [TOC]
 - - -
@@ -195,4 +195,4 @@ Instead of a **<ServerUrl>** the layer has a **<Script>** tag with JavaScript co
 
 
 - - -
-[Prev](DocInstallMapDem) (Install Maps & DEM Data) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Control maps and DEM files) [Next](DocControlMapDem)
+[Prev](DocInstallMapDem) (Install Maps & DEM Data) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Control maps and DEM files) [Next](DocControlMapDem)

@@ -1,4 +1,4 @@
-Prev () | [Home](Home) | [Manual](DocMain) | () Next
+Prev () | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | () Next
 - - -
 [TOC]
 - - -
@@ -65,4 +65,4 @@ In other words: it is possible to combine multiple VRT files for maps with the s
 and open only one VRT file for loading a whole series of raster maps.
 
 - - -
-Prev () | [Home](Home) | [Manual](DocMain) | [Top](#) | () Next
+Prev () | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | () Next

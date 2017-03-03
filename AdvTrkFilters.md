@@ -1,4 +1,4 @@
-[Prev](AdvTrkGeneral) (General topics) | [Home](Home) | [Manual](DocMain) | (Working with track graphs) [Next](AdvTrkGraphs)
+[Prev](AdvTrkGeneral) (General topics) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Working with track graphs) [Next](AdvTrkGraphs)
 - - -
 [TOC]
 - - -
@@ -130,4 +130,4 @@ if a neighboring ordinary trackpoint has changed.
 The given track filter converts each subpoint to an ordinary trackpoint.
 
 - - -
-[Prev](AdvTrkGeneral) (General topics) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Working with track graphs) [Next](AdvTrkGraphs)
+[Prev](AdvTrkGeneral) (General topics) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Working with track graphs) [Next](AdvTrkGraphs)

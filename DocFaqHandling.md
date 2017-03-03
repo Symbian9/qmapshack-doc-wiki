@@ -1,4 +1,4 @@
-[Prev](DocFaqData) (Databases and projects) | [Home](Home) | [Manual](DocMain) | (Routing) [Next](DocFaqRouting)
+[Prev](DocFaqData) (Databases and projects) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Routing) [Next](DocFaqRouting)
 - - -
 [TOC]
 - - -
@@ -74,4 +74,4 @@ Compare also section
 ![Recorded gpxtpx:speed vs. speed graphs](images/DocFaq/FaqGpxTpxSpeed.jpg "Recorded gpxtpx:speed vs. speed graphs")
 
 - - -
-[Prev](DocFaqData) (Databases and projects) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Routing) [Next](DocFaqRouting)
+[Prev](DocFaqData) (Databases and projects) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Routing) [Next](DocFaqRouting)

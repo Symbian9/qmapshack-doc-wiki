@@ -1,4 +1,4 @@
-[Prev](AdvTracks) (Tracks) | [Home](Home) | [Manual](DocMain) | (Track filters) [Next](AdvTrkFilters)
+[Prev](AdvTracks) (Tracks) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Track filters) [Next](AdvTrkFilters)
 - - -
 [TOC]
 - - -
@@ -449,4 +449,4 @@ Different approaches for avoiding or removing invalid elevations are described
 
 
 - - -
-[Prev](AdvTracks) (Tracks) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Track filters) [Next](AdvTrkFilters)
+[Prev](AdvTracks) (Tracks) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Track filters) [Next](AdvTrkFilters)

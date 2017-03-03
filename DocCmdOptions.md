@@ -1,4 +1,4 @@
-[Prev](DocGettingStarted) (Getting started) | [Home](Home) | [Manual](DocMain) | (Install Maps & DEM Data) [Next](DocInstallMapDem)
+[Prev](DocGettingStarted) (Getting started) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Install Maps & DEM Data) [Next](DocInstallMapDem)
 - - -
 [TOC]
 - - -
@@ -39,4 +39,4 @@ It is handy too for the definition of a top level basic data structure. The user
 As a consequence QMapShack starts much faster due to the fact that less map data must be loaded.
 
 - - -
-[Prev](DocGettingStarted) (Getting started) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Install Maps & DEM Data) [Next](DocInstallMapDem)
+[Prev](DocGettingStarted) (Getting started) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Install Maps & DEM Data) [Next](DocInstallMapDem)

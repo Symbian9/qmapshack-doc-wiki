@@ -1,4 +1,4 @@
-[Prev](RequestFeatures) (Requesting a feature) | [Home](Home) | [Manual](DocMain) | (Commit Code) [Next](DeveloperCommitCode)
+[Prev](RequestFeatures) (Requesting a feature) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Commit Code) [Next](DeveloperCommitCode)
 - - -
 [TOC]
 - - -
@@ -89,4 +89,4 @@ I think that's it. Just look at the code and try to mimic the coding style as go
 
 
 - - -
-[Prev](RequestFeatures) (Requesting a feature) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Commit Code) [Next](DeveloperCommitCode)
+[Prev](RequestFeatures) (Requesting a feature) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Commit Code) [Next](DeveloperCommitCode)

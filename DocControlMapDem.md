@@ -1,4 +1,4 @@
-[Prev](DocBasicsMapDem) (Maps & DEM) | [Home](Home) | [Manual](DocMain) | (Working with Projects) [Next](DocWorkingWithProjects)
+[Prev](DocBasicsMapDem) (Maps & DEM) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Working with Projects) [Next](DocWorkingWithProjects)
 - - -
 [TOC]
 - - -
@@ -95,4 +95,4 @@ _Hillshading_ (1) will overlay the map with a gray shaded relief. You can fine t
 
 
 - - -
-[Prev](DocBasicsMapDem) (Maps & DEM) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Working with Projects) [Next](DocWorkingWithProjects)
+[Prev](DocBasicsMapDem) (Maps & DEM) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Working with Projects) [Next](DocWorkingWithProjects)

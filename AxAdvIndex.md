@@ -1,4 +1,4 @@
-[Prev](AxGlossary) (Glossary) | [Home](Home) | [Manual](DocMain) | (List of images (Advanced usage and FAQ parts only)) [Next](AxWikiImages)
+[Prev](AxGlossary) (Glossary) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (List of images (Advanced usage and FAQ parts only)) [Next](AxWikiImages)
 - - -
 [TOC]
 - - -
@@ -1171,4 +1171,4 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Workspace and Database](DocGisDatabaseWorkspaceDatabase "Workspace and Database") ⊞ [Workspace and database windows](AdvProjects#markdown-header-workspace-and-database-windows "Workspace and database windows")
 
 - - -
-[Prev](AxGlossary) (Glossary) | [Home](Home) | [Manual](DocMain) | [Top](#) | (List of images (Advanced usage and FAQ parts only)) [Next](AxWikiImages)
+[Prev](AxGlossary) (Glossary) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (List of images (Advanced usage and FAQ parts only)) [Next](AxWikiImages)

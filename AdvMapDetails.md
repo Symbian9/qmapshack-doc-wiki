@@ -1,4 +1,4 @@
-[Prev](AdvProjActions) (General Actions) | [Home](Home) | [Manual](DocMain) | (Maps: Tips and Tricks) [Next](DocMapsTipsTricks)
+[Prev](AdvProjActions) (General Actions) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Maps: Tips and Tricks) [Next](DocMapsTipsTricks)
 - - -
 [TOC]
 - - -
@@ -76,4 +76,4 @@ compared with the previous one. This scale is recommended for on-line (TMS, WMTS
 
 
 - - -
-[Prev](AdvProjActions) (General Actions) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Maps: Tips and Tricks) [Next](DocMapsTipsTricks)
+[Prev](AdvProjActions) (General Actions) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Maps: Tips and Tricks) [Next](DocMapsTipsTricks)

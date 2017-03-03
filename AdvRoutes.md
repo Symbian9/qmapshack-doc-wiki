@@ -1,4 +1,4 @@
-[Prev](AdvTrkElevation) (Editing elevation data) | [Home](Home) | [Manual](DocMain) | (Frequently Asked Questions) [Next](DocFaq)
+[Prev](AdvTrkElevation) (Editing elevation data) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Frequently Asked Questions) [Next](DocFaq)
 - - -
 [TOC]
 - - -
@@ -162,4 +162,4 @@ _Remark:_ These methods work in the same way for track and for route creation.
 
 
 - - -
-[Prev](AdvTrkElevation) (Editing elevation data) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Frequently Asked Questions) [Next](DocFaq)
+[Prev](AdvTrkElevation) (Editing elevation data) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Frequently Asked Questions) [Next](DocFaq)

@@ -1,4 +1,4 @@
-[Prev](ReportBugs) (Reporting a bug) | [Home](Home) | [Manual](DocMain) | (Coding Guideline) [Next](DeveloperCodingGuideline)
+[Prev](ReportBugs) (Reporting a bug) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Coding Guideline) [Next](DeveloperCodingGuideline)
 - - -
 [TOC]
 - - -
@@ -29,4 +29,4 @@ The request should be **self-contained**, avoid untraceable references (such as 
 Your **best chance** to get a new feature is to **implement it on your own** (see section [Developing QMapShack](DeveloperCodingGuideline)).
 
 - - -
-[Prev](ReportBugs) (Reporting a bug) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Coding Guideline) [Next](DeveloperCodingGuideline)
+[Prev](ReportBugs) (Reporting a bug) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Coding Guideline) [Next](DeveloperCodingGuideline)

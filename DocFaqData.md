@@ -1,4 +1,4 @@
-[Prev](DocFaqConfig) (Configuring and running) | [Home](Home) | [Manual](DocMain) | (Data handling) [Next](DocFaqHandling)
+[Prev](DocFaqConfig) (Configuring and running) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Data handling) [Next](DocFaqHandling)
 - - -
 [TOC]
 - - -
@@ -71,4 +71,4 @@ There can be several reasons for this error:
 * Check if your user name and password is correct.
         
 - - -
-[Prev](DocFaqConfig) (Configuring and running) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Data handling) [Next](DocFaqHandling)
+[Prev](DocFaqConfig) (Configuring and running) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Data handling) [Next](DocFaqHandling)

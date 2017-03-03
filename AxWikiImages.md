@@ -1,4 +1,4 @@
-[Prev](AxAdvIndex) (Index) | [Home](Home) | [Manual](DocMain) | () Next
+[Prev](AxAdvIndex) (Index) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | () Next
 - - -
 [TOC]
 - - -
@@ -99,4 +99,4 @@ Image caption | Used in
 [Создать базу данных Routino](images/DocAdv/InstallRoutinoDbRu.jpg "Создать базу данных Routino") | [DocQuickStartRussian](DocQuickStartRussian)
 
 - - -
-[Prev](AxAdvIndex) (Index) | [Home](Home) | [Manual](DocMain) | [Top](#) | () Next
+[Prev](AxAdvIndex) (Index) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | () Next

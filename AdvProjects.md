@@ -1,4 +1,4 @@
-[Prev](DocGisDevices) (GPS Devices) | [Home](Home) | [Manual](DocMain) | (General Actions) [Next](AdvProjActions)
+[Prev](DocGisDevices) (GPS Devices) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (General Actions) [Next](AdvProjActions)
 - - -
 [TOC]
 - - -
@@ -132,4 +132,4 @@ If the user wants to delete a data item from the database, then he must use the 
 
 
 - - -
-[Prev](DocGisDevices) (GPS Devices) | [Home](Home) | [Manual](DocMain) | [Top](#) | (General Actions) [Next](AdvProjActions)
+[Prev](DocGisDevices) (GPS Devices) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (General Actions) [Next](AdvProjActions)

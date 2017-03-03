@@ -1,4 +1,4 @@
-[Prev](DocGisItemsWpt) (Waypoints) | [Home](Home) | [Manual](DocMain) | (Edit items with multiple points (tracks, routes, areas)) [Next](DocGisItemsEditMultiple)
+[Prev](DocGisItemsWpt) (Waypoints) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Edit items with multiple points (tracks, routes, areas)) [Next](DocGisItemsEditMultiple)
 - - -
 [TOC]
 - - -
@@ -34,4 +34,4 @@ If you click on the highlighted area you get a short on-screen-summary and a few
 9. This is the history list showing all changes applied to the area.
 
 - - -
-[Prev](DocGisItemsWpt) (Waypoints) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Edit items with multiple points (tracks, routes, areas)) [Next](DocGisItemsEditMultiple)
+[Prev](DocGisItemsWpt) (Waypoints) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Edit items with multiple points (tracks, routes, areas)) [Next](DocGisItemsEditMultiple)

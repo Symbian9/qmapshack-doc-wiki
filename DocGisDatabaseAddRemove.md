@@ -1,4 +1,4 @@
-[Prev](DocGisDatabaseWorkspaceDatabase) (Workspace and Database) | [Home](Home) | [Manual](DocMain) | (Folders and Items) [Next](DocGisDatabaseFoldersItems)
+[Prev](DocGisDatabaseWorkspaceDatabase) (Workspace and Database) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Folders and Items) [Next](DocGisDatabaseFoldersItems)
 - - -
 [TOC]
 - - -
@@ -119,4 +119,4 @@ The search is performed over an internal text that combines:
 The search does **not** include project names and project descriptions.
 
 - - -
-[Prev](DocGisDatabaseWorkspaceDatabase) (Workspace and Database) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Folders and Items) [Next](DocGisDatabaseFoldersItems)
+[Prev](DocGisDatabaseWorkspaceDatabase) (Workspace and Database) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Folders and Items) [Next](DocGisDatabaseFoldersItems)

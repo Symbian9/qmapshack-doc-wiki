@@ -1,4 +1,4 @@
-[Prev](DocGisDatabaseAddRemove) (Add/Remove/Synchronize/Search a Database) | [Home](Home) | [Manual](DocMain) | ('Lost & Found' Folder) [Next](DocGisDatabaseLostFound)
+[Prev](DocGisDatabaseAddRemove) (Add/Remove/Synchronize/Search a Database) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | ('Lost & Found' Folder) [Next](DocGisDatabaseLostFound)
 - - -
 [TOC]
 - - -
@@ -34,4 +34,4 @@ If the items are not referenced by another folder they will be moved into the 'L
 ![maproom2](images/DocGisDatabaseFolderItems/maproom8.png)
 
 - - -
-[Prev](DocGisDatabaseAddRemove) (Add/Remove/Synchronize/Search a Database) | [Home](Home) | [Manual](DocMain) | [Top](#) | ('Lost & Found' Folder) [Next](DocGisDatabaseLostFound)
+[Prev](DocGisDatabaseAddRemove) (Add/Remove/Synchronize/Search a Database) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | ('Lost & Found' Folder) [Next](DocGisDatabaseLostFound)

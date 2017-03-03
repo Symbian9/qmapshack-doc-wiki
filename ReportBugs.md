@@ -1,4 +1,4 @@
-[Prev](TroubleShooting) (Troubleshooting QMapShack) | [Home](Home) | [Manual](DocMain) | (Requesting a feature) [Next](RequestFeatures)
+[Prev](TroubleShooting) (Troubleshooting QMapShack) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Requesting a feature) [Next](RequestFeatures)
 - - -
 [TOC]
 - - -
@@ -52,4 +52,4 @@ Make sure to include the all the information listed below to ease both your and 
 
 ///Footnotes Go Here///
 - - -
-[Prev](TroubleShooting) (Troubleshooting QMapShack) | [Home](Home) | [Manual](DocMain) | [Top](#) | (Requesting a feature) [Next](RequestFeatures)
+[Prev](TroubleShooting) (Troubleshooting QMapShack) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Requesting a feature) [Next](RequestFeatures)
