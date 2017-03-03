@@ -76,13 +76,14 @@ LkDef = {}
 
 #
 # Define the numbers  of self-references  allowed in "*.md" files  (file
-# "AxAdvToc.md" contains a single self-reference while file "DocMain.md"
-# contains two self-references,  one each in the top and bottom navigat-
-# ion bars,  and if a file  isn't explicitly referenced here,  its self-
-# reference count defaults to zero):
+# "AxAdvToc.md" contains a single self-reference, while files "AxAdvInd-
+# ex.md" and "DocMain.md" both contain two self-references,  one each in
+# the top and bottom navigation bars).   If a file isn't explicitly ref-
+# erenced here, its self-reference count defaults to zero:
 
-SelfRef = { 'AxAdvToc': 1,
-            'DocMain' : 2
+SelfRef = { 'AxAdvIndex': 2,
+            'AxAdvToc'  : 1,
+            'DocMain'   : 2
           }
 
 #

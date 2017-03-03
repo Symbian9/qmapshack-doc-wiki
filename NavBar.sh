@@ -49,6 +49,9 @@ footnote='///Footnotes Go Here///$'
 navbar='[[](Home|Prev)[]]|Prev [(][)]|- - -$|[[]TOC[]]$'
 
 #
+# Variable "nb"  contains the constant  common text part  of the top and
+# bottom navigation bars.
+#
 # The regular expression in variable "r0"  matches any line specifying a
 # default footnote place marker or belonging to an already existing nav-
 # igation bar.
@@ -88,6 +91,7 @@ navbar='[[](Home|Prev)[]]|Prev [(][)]|- - -$|[[]TOC[]]$'
 # separator) to just "\n":
 
 gawk -v BINMODE=w -v ORS='\n'                                                 \
+     -v "nb= | [Home](Home) | [Manual](${1%.*}) | [Index](AxAdvIndex) | "     \
      -v "r0=^($footnote|$navbar)"                                             \
      -v "r1=(^ *[[][^^][^]]*[]]:[ \t]+|[]][(] *)$bitbucket"                   \
      -v 'r2=((^ *[[][^^][^]]*[]]:[ \t]+|[]][(] *)[^: #)]+)[.](md|html)'       \
@@ -126,9 +130,7 @@ gawk -v BINMODE=w -v ORS='\n'                                                 \
         if ( bottom ) tp = "[Top](#) | "
         else          tp = ""
 
-        # Print navigation links:
-
-        printf "%s | [Home](Home) | [Manual](%s) | %s\n", pr, toc, tp nx
+        printf "%s\n", pr nb tp nx             # Print navigation links.
                                }                # End of function "nav".
 
      #
