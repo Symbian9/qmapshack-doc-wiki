@@ -124,7 +124,7 @@ ZLIB_INCLUDE_DIRS C:/Qt/5.5/msvc2013_64/include/QtZlib
 - in Visual Studio select the solution configuration type 'Release' or 'RelWithDebInfo' (must match the configuration used to build QMS)
 - Right-Click on the ALL_BUILD project and select build to start the compilation
 - the last step created subdirectories 'Release' resp. 'RelWithDebInfo' in the quazip-build-directory. Within this directory the new build quazip5.dll and lib are to be found.
-- quazip-hearderfiles are to be found in quazip-source-directory, subdirectory 'quazip'
+- quazip-headerfiles are to be found in quazip-source-directory, subdirectory 'quazip' (you need to specify these directories in CMake-config of QMS)
 
 ### C6.) Get the QMapShack source from the repository, e.g.
 ~~~~
