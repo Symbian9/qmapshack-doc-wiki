@@ -34,11 +34,6 @@ make
 sudo make install
 ```
 
-## QuaZip
-```
-# install required dev-packages
-sudo apt-get install libquazip5-headers libquazip5-1 libquazip5-dev
-
 ## Use Qt 5.4 instead of 5.2 (it's only temporary and for the current terminal)
 ```
 source /opt/qt54/bin/qt54-env.sh
@@ -55,4 +50,10 @@ qmapshack
 Maybe there is a better way to use Qt 5.4
 
 - - -
+
+## QuaZip
+```
+# install required dev-packages
+sudo apt-get install libquazip5-headers libquazip5-1 libquazip5-dev
+
 Prev () | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | () Next
