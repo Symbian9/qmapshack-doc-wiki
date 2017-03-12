@@ -104,26 +104,48 @@ Note: QMS should compile with Qt5.4 as well but Qt5.4 has a nasty bug in list sc
   Note: if you prefer offline installation you can choose the right package
   in OFFLINE INSTALLERS section of that page
 
-### C5.) Get the QMapShack source from the repository, e.g.
+### C5.) Compile the QuaZip library http://quazip.sourceforge.net/index.html
+- Get the latest version from the Sourceforce download page https://sourceforge.net/projects/quazip/
+- unzip the file
+- Start the CMake GUI (you did install CMake before, didn't you)
+- Enter the path to the source directory (where you unzipped the sources to)
+- Enter the path where you want to build the quazip-library (should be a new directory)
+- Select "Visual Studio 12 2013 Win64" and "Use default native compilers"
+- add these two entries before running configure:
+
+CMAKE_PREFIX_PATH C:/Qt/5.5/msvc2013_64    <-- this path has to match the actuall Qt-installation
+ZLIB_INCLUDE_DIRS C:/Qt/5.5/msvc2013_64/include/QtZlib
+
+- click 'configure'
+  - verify no 'NOTFOUND' entries remain
+- click 'generate'
+- click 'open project' --> this opens the configured project in Visual studio
+
+- in Visual Studio select the solution configuration type 'Release' or 'RelWithDebInfo' (must match the configuration used to build QMS)
+- Right-Click on the ALL_BUILD project and select build to start the compilation
+- the last step created subdirectories 'Release' resp. 'RelWithDebInfo' in the quazip-build-directory. Within this directory the new build quazip5.dll and lib are to be found.
+- quazip-hearderfiles are to be found in quazip-source-directory, subdirectory 'quazip'
+
+### C6.) Get the QMapShack source from the repository, e.g.
 ~~~~
    hg clone https://bitbucket.org/maproom/qmapshack QMapShack
 ~~~~
 Note: you might have to install TortoiseHG or any other mercurial client
 
-### C6.) Start the CMake GUI (you did install CMake before, didn't you)
+### C7.) Start the CMake GUI (you did install CMake before, didn't you)
 - Enter the path to the source directory (which has been created by cloning the hg repository in the previous step)
 - Enter the path where you want to build the binaries (should be a new directory)
 - Select "Visual Studio 12 2013 Win64" and "Use default native compilers"
 - Configure
     - In the first run there will be errors.
     - Now enter the directories where you have installed Qt5, GDAL,
-      PROJ.4, routino to the respective variables.
+      PROJ.4, routino and quazip to the respective variables.
     - Only change the UPDATE_TRANSLATIONS option in you know what you are doing. See the [DeveloperTranslate Wiki page](DeveloperTranslate) for details.
     - After that, Configure again.
     - Note: in case that you only get some warnings, you anyway can try to GENERATE
 - Generate
 
-### C7.) Open the generated  build\QMapShack.sln with VS2013
+### C8.) Open the generated  build\QMapShack.sln with VS2013
 - Change solution configuration type to "Release"
 - Set the qmapshack project as start project by right-clicking and selecting "Set as StartUp Project" (may not be necessary)
 - Right-Click on the ALL_BUILD project and select build to start the compilation
