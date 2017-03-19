@@ -113,8 +113,8 @@ Note: QMS should compile with Qt5.4 as well but Qt5.4 has a nasty bug in list sc
 - Select "Visual Studio 12 2013 Win64" and "Use default native compilers"
 - add these two entries before running configure:
 ~~~~
-CMAKE_PREFIX_PATH C:/Qt/5.5/msvc2013_64    <-- this path has to match the actuall Qt-installation
-ZLIB_INCLUDE_DIRS C:/Qt/5.5/msvc2013_64/include/QtZlib
+CMAKE_PREFIX_PATH C:/Qt5/5.5/msvc2013_64    <-- this path has to match the actuall Qt-installation
+ZLIB_INCLUDE_DIRS C:/Qt5/5.5/msvc2013_64/include/QtZlib
 ~~~~
 - click 'configure'
   - verify no 'NOTFOUND' entries remain
