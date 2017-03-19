@@ -140,6 +140,7 @@ Note: you might have to install TortoiseHG or any other mercurial client
     - In the first run there will be errors.
     - Now enter the directories where you have installed Qt5, GDAL,
       PROJ.4, routino and quazip to the respective variables.
+    - in addition to the usual defines for QUAZIP you have to specify the path where zlib.h is being found. Zlib is being shipped with Qt5.5 but is not included within the cmake-find-files Qt does proviede. (set QUAZIP_ZLIB_INCLUDE_DIR to e.g. C:/Qt/5.5/msvc2013_64/include/QtZlib)
     - Only change the UPDATE_TRANSLATIONS option in you know what you are doing. See the [DeveloperTranslate Wiki page](DeveloperTranslate) for details.
     - After that, Configure again.
     - Note: in case that you only get some warnings, you anyway can try to GENERATE
