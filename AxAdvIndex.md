@@ -579,6 +579,18 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Map, zoom**
 :  [Change scale type](AdvMapDetails#markdown-header-map-scale-type "Change scale type (logarithmic/square)") ⊞ [Zooming maps](DocFaqMaps#markdown-header-is-there-a-possibility-to-display-small-roadstracks-in-a-vector-map-without-zooming-in-too-much "Display of small roads/tracks in a vector map and zooming")
 
+**MapProxy, Configuration**
+:  [MapProxy confiiguration](DocMapsTipsTricks#markdown-header-configuration-template "MapProxy confiiguration")
+
+**MapProxy, Troubleshooting**
+:  [MapProxy troubleshooting](DocMapsTipsTricks#markdown-header-troubleshooting "MapProxy troubleshooting")
+
+**MapProxy, Usage**
+:  [MapProxy basic usage](DocMapsTipsTricks#markdown-header-mapproxy-basic-usage "MapProxy basic usage")
+
+**MapProxy, Use to access online maps**
+:  [Access to online maps](DocMapsTipsTricks#markdown-header-access-most-online-maps-as-tms-using-mapproxy "Access to online maps")
+
 **MapQuest, routing engine**
 :  [MapQuest router](DocGisItemsRte#markdown-header-mapquest "MapQuest router")
 
@@ -630,6 +642,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **On-line routing, MapQuest**
 :  [MapQuest router](DocGisItemsRte#markdown-header-mapquest "MapQuest router")
+
+**Online maps, Access with MapProxy**
+:  [Access to online maps](DocMapsTipsTricks#markdown-header-access-most-online-maps-as-tms-using-mapproxy "Access to online maps")
 
 **OziExplorer, use of map**
 :  [Use of raster maps](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack "Use of Russian military raster maps")
@@ -820,9 +835,6 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Routino, cross-border routing**
 :  [Routino cross-border routing](DocFaqRouting#markdown-header-does-qmapshackroutino-support-cross-border-routing "Routino cross-border routing")
 
-**Routino, maximum database size**
-:  [Maximum Routino database file size](DocFaqRouting#markdown-header-what-is-the-maximum-routino-databases-file-size-that-can-be-handled-by-the-qmapshack-windows-version "Maximum Routino database file size")
-
 **Routino, PBF file**
 :  [Create Routino database](DocGisItemsRte#markdown-header-create-own-routino-database "Create Routino database using planetsplitter")
 
@@ -884,6 +896,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **TMS, use for WMS server**
 :  [Use WMS server as TMS server](DocMapsTipsTricks#markdown-header-backdoor-to-use-a-wms-server-as-tms-server "Use WMS server as TMS server")
+
+**TMS, Use with MapProxy**
+:  [Access to online maps](DocMapsTipsTricks#markdown-header-access-most-online-maps-as-tms-using-mapproxy "Access to online maps")
 
 **Track graph, activity handling**
 :  [Assign colors to track activities](AdvTrkGeneral#markdown-header-assign-colors-to-track-activities "Assign colors to track activities")

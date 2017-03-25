@@ -54,6 +54,6 @@ qmapshack
 
 Maybe there is a better way to use Qt 5.4
 
-- - -
 
+- - -
 Prev () | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | () Next

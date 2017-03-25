@@ -36,9 +36,6 @@ different road types can be modified by the user.
 On Routino's homepage there is an online version where fine
 tuning of all parameters can be tried. Once done there one can take over the values into the local `profiles.xml` file.
 
-## What is the maximum Routino databases file size that can be handled by the QMapShack Windows version?
-
-Due to limitations in the Windows POSIX API Routino can't handle files larger than 4GB.
 
 ## Does QMapShack/Routino support cross-border routing?
 
