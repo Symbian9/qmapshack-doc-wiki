@@ -54,7 +54,7 @@ GIS Data:
 * Summarize project by a diary
 * Support for tracks, routes, waypoints and areas
 * Support of track point extensions (e.g. heart rate)
-* Support GPX, SLF, FIT and QMapShack's own binary format
+* Support GPX, SLF, FIT, TCX and QMapShack's own binary format
 * Simple geocache support
 * Store projects in a database
 * Support for multiple databases
@@ -68,7 +68,7 @@ Planning:
 * Track point extensions like heart rate, cadence,...
 * Fine tune track statistics by activities
 * Colorize track by extension or activity
-* Create routes and calculate them by Routino (offline) or MapQuest (online)
+* Create routes and calculate them by Routino (offline), MapQuest (online) or BRouter(online/offline)
 * Use offline router to draw tracks on-the-fly.
 
 GPS Devices:
@@ -82,7 +82,8 @@ System:
 
 * License GPL3+
 * Runs on all *nix systems as well as on Windows and OS X.
-* GUI has been translated to Czech, Dutch, French, German and Spanish
+* GUI has been translated to Czech, Dutch, French, German, Russian and Spanish
 * Wiki documentation is English 
-* Needs Qt5.4 or later, GDAL, Proj4 and Routino installed
+* Quickstart guide in English, German and Russian
+* Needs Qt5.4 or later, GDAL, Proj4, Quazip5 and Routino installed
 * For device support on Linux DBus and UDisk2 must be installed
