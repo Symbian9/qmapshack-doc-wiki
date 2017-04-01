@@ -5,6 +5,12 @@
 
 # Frequently Asked Questions - Data handling
 
+## How to create waypoint from POI (point of interest) in map?
+
+If the mouse pointer is moved on a POI in a vector map a small blue circle around this POI pops-up. Right-click to open the context menu and select the menu entry
+`Add POI as waypoint`. The POI name and its coordinates are used in the new waypoint.
+
+![Waypoint from POI](images/DocFaq/WPTfromPOI.jpg "Waypoint created from POI")
 
 ## How to find distance between waypoints
 

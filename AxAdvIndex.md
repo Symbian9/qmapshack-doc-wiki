@@ -261,11 +261,11 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Elevation, edit**
 :  [Edit track elevation](AdvTrkElevation#markdown-header-manually-edit-elevation-of-a-track-point "Edit track elevation")
 
-**Elevation, filter**
-:  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
-
 **Elevation, Filter**
 :  [Track elevation filter](DocGisItemsTrk2#markdown-header-elevation "Track elevation filter")
+
+**Elevation, filter**
+:  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
 
 **Elevation, invalid data**
 :  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
@@ -661,6 +661,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Planetsplitter, Routino**
 :  [Routino cross-border routing](DocFaqRouting#markdown-header-does-qmapshackroutino-support-cross-border-routing "Routino cross-border routing")
+
+**POI, use as waypoint**
+:  [Create waypoint from POI](DocFaqHandling#markdown-header-how-to-create-waypoint-from-poi-point-of-interest-in-map "Create waypoint from POI")
 
 **Project, copy**
 :  [Copy project](AdvProjActions#markdown-header-copy-project "Copy project")
@@ -1112,6 +1115,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Waypoint, attached to track**
 :  [Attach waypoint to track](AdvTrkGeneral#markdown-header-attach-waypoints-to-a-track-to-get-additional-track-information "Attach waypoints to a track to get additional track information")
+
+**Waypoint, create from POI**
+:  [Create waypoint from POI](DocFaqHandling#markdown-header-how-to-create-waypoint-from-poi-point-of-interest-in-map "Create waypoint from POI")
 
 **Waypoint, create**
 :  [Waypoint](DocGisItemsNew#markdown-header-waypoint "Waypoint")

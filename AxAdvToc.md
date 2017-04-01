@@ -235,6 +235,7 @@ ___Do not edit - automatically created from DocMain!___
         * [How to find database to which a project belongs?](DocFaqData#markdown-header-how-to-find-database-to-which-a-project-belongs)
         * [Why does a database not allow creating new folders?](DocFaqData#markdown-header-why-does-a-database-not-allow-creating-new-folders)
     * [Data handling](DocFaqHandling)
+        * [How to create waypoint from POI (point of interest) in map?](DocFaqHandling#markdown-header-how-to-create-waypoint-from-poi-point-of-interest-in-map)
         * [How to find distance between waypoints](DocFaqHandling#markdown-header-how-to-find-distance-between-waypoints)
         * [Which track data is saved in GPX files?](DocFaqHandling#markdown-header-which-track-data-is-saved-in-gpx-files)
         * [What is the difference between speed and gpxtpx:speed?](DocFaqHandling#markdown-header-what-is-the-difference-between-speed-and-gpxtpxspeed)

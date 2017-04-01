@@ -90,6 +90,7 @@ Image caption | Used in
 [Trackpoints with corrected elevation](images/DocFaq/DEM13.jpg "Trackpoints with corrected elevation") | [AdvTrkElevation](AdvTrkElevation)
 [VRT für Höhendaten erstellen](images/DocAdv/InstallDem2Vrt.jpg "VRT für Höhendaten erstellen") | [DocQuickStartGerman](DocQuickStartGerman)
 [Waypoint distances](images/DocFaq/WPTDistances.jpg "Waypoint distances") | [DocFaqHandling](DocFaqHandling)
+[Waypoint from POI](images/DocFaq/WPTfromPOI.jpg "Waypoint created from POI") | [DocFaqHandling](DocFaqHandling)
 [Активировать он-лайн карты](images/DocAdv/InstallMapsRu.jpg "Активировать он-лайн карты") | [DocQuickStartRussian](DocQuickStartRussian)
 [Высота в строке состояния](images/DocAdv/InstallDemRu.jpg "Высота в строке состояния") | [DocQuickStartRussian](DocQuickStartRussian)
 [Нет высоты в строке состояния](images/DocAdv/InstallNoDem.jpg "Нет высоты в строке состояния") | [DocQuickStartRussian](DocQuickStartRussian)

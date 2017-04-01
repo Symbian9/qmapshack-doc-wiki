@@ -37,9 +37,11 @@ ___Basic usage___
             * [C2.) Compile the PROJ library http://trac.osgeo.org/proj/](BuildWindowsVisualStudio#markdown-header-c2-compile-the-proj-library-httptracosgeoorgproj)
             * [C3.) Compile the routino library http://www.routino.org](BuildWindowsVisualStudio#markdown-header-c3-compile-the-routino-library-httpwwwroutinoorg)
             * [C4.) Install Qt5.5 http://qt-project.org](BuildWindowsVisualStudio#markdown-header-c4-install-qt55-httpqt-projectorg)
-            * [C5.) Get the QMapShack source from the repository, e.g.](BuildWindowsVisualStudio#markdown-header-c5-get-the-qmapshack-source-from-the-repository-eg)
-            * [C6.) Start the CMake GUI (you did install CMake before, didn't you)](BuildWindowsVisualStudio#markdown-header-c6-start-the-cmake-gui-you-did-install-cmake-before-didnt-you)
-            * [C7.) Open the generated  build\QMapShack.sln with VS2013](BuildWindowsVisualStudio#markdown-header-c7-open-the-generated-buildqmapshacksln-with-vs2013)
+		    * [C5.) Compile the QuaZip library http://quazip.sourceforge.net/index.html](BuildWindowsVisualStudio#markdown-header-c5-compile-the-quazip-library-httpquazipsourceforgenetindexhtml)
+            * [C6.) Get the QMapShack source from the repository, e.g.](BuildWindowsVisualStudio#markdown-header-c6-get-the-qmapshack-source-from-the-repository-eg)
+            * [C7.) Start the CMake GUI (you did install CMake before, didn't you)](BuildWindowsVisualStudio#markdown-header-c7-start-the-cmake-gui-you-did-install-cmake-before-didnt-you)
+            * [C8.) Open the generated  build\QMapShack.sln with VS2013](BuildWindowsVisualStudio#markdown-header-c8-open-the-generated-buildqmapshacksln-with-vs2013)
+		
         * [Creating a Windows binary installer](BuildWindowsVisualStudio#markdown-header-creating-a-windows-binary-installer)
             * [I1.) Download the VC redistributable installer](BuildWindowsVisualStudio#markdown-header-i1-download-the-vc-redistributable-installer)
             * [I2.) [Optional] Download libmysql.dll from mariadb](BuildWindowsVisualStudio#markdown-header-i2-optional-download-libmysqldll-from-mariadb)
@@ -534,7 +536,25 @@ ___Basic usage___
         + Use ArcGIS server as TMS server
             1. TMS|use for ArcGIS
             1. ArcGIS|accessed with TMS
-                      
+
+        * [Access most online maps as TMS using MapProxy](DocMapsTipsTricks#markdown-header-access-most-online-maps-as-tms-using-mapproxy)
+        + Access to online maps
+		    1. Online maps|Access with MapProxy
+			1. MapProxy|Use to access online maps
+			1. TMS|Use with MapProxy
+		
+        * [Gathering information](DocMapsTipsTricks#markdown-header-gathering-information)
+        * [MapProxy basic usage](DocMapsTipsTricks#markdown-header-mapproxy-basic-usage)
+		    1. MapProxy|Usage
+			
+        * [Configuration template](DocMapsTipsTricks#markdown-header-configuration-template)
+		+ MapProxy confiiguration
+		    1. MapProxy|Configuration
+			
+        * [Troubleshooting](DocMapsTipsTricks#markdown-header-troubleshooting)
+	    + MapProxy troubleshooting
+            1. MapProxy|Troubleshooting
+			
         * [WMTS configuration to access French IGN maps ("Géoportail")](DocMapsTipsTricks#markdown-header-wmts-configuration-to-access-french-ign-maps-geoportail)
         + WMTS for French IGN maps
         ++ WMTS configuration for French IGN maps
@@ -769,6 +789,11 @@ ___Basic usage___
                 1. MySQL|database errors
             
         * [Data handling](DocFaqHandling)
+            * [How to create waypoint from POI (point of interest) in map?](DocFaqHandling#markdown-header-how-to-create-waypoint-from-poi-point-of-interest-in-map)
+            + Create waypoint from POI
+                1. Waypoint|create from POI
+                1. POI|use as waypoint
+                
             * [How to find distance between waypoints](DocFaqHandling#markdown-header-how-to-find-distance-between-waypoints)
             + Find waypoint distance
                 1. Waypoint|distance
@@ -805,9 +830,6 @@ ___Basic usage___
                 1. Routino|configuration
                 1. Configuration|Routino
             
-            * [What is the maximum Routino databases file size that can be handled by the QMapShack Windows version?](DocFaqRouting#markdown-header-what-is-the-maximum-routino-databases-file-size-that-can-be-handled-by-the-qmapshack-windows-version)
-            + Maximum Routino database file size
-                1. Routino|maximum database size
             
             * [Does QMapShack/Routino support cross-border routing?](DocFaqRouting#markdown-header-does-qmapshackroutino-support-cross-border-routing)
             + Routino cross-border routing
