@@ -261,11 +261,11 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Elevation, edit**
 :  [Edit track elevation](AdvTrkElevation#markdown-header-manually-edit-elevation-of-a-track-point "Edit track elevation")
 
-**Elevation, Filter**
-:  [Track elevation filter](DocGisItemsTrk2#markdown-header-elevation "Track elevation filter")
-
 **Elevation, filter**
 :  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
+
+**Elevation, Filter**
+:  [Track elevation filter](DocGisItemsTrk2#markdown-header-elevation "Track elevation filter")
 
 **Elevation, invalid data**
 :  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
@@ -403,6 +403,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **GPX, subpoint handling in**
 :  [Track data in GPX file](DocFaqHandling#markdown-header-which-track-data-is-saved-in-gpx-files "Which track data is saved in GPX file?")
+
+**GPX, track history handling**
+:  [Track history](AdvTrkHist "Track history")
 
 **GUI, language selection and change**
 :  [Change GUI language](DocFaqConfig#markdown-header-how-to-change-the-gui-language "Change GUI language")
@@ -726,6 +729,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **QMS, load file**
 :  [Load GPX Files](DocHandleGpxFiles#markdown-header-load-gpx-files "Load GPX Files")
 
+**QMS, track history handling**
+:  [Track history](AdvTrkHist "Track history")
+
 
 ## R
 
@@ -914,6 +920,12 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Track graph, zoom**
 :  [Zoom track graphs](AdvTrkGraphs#markdown-header-zoom-track-graphs "Zoom track graphs")
+
+**Track history, cut history list**
+:  [Track history](AdvTrkHist "Track history")
+
+**Track history, save history**
+:  [Track history](AdvTrkHist "Track history")
 
 **Track segment, split segments to tracks**
 :  [Split segments into tracks](AdvTrkFilters#markdown-header-split-segments-into-tracks "Split segments into tracks")

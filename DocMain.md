@@ -61,7 +61,8 @@ Users can find short quickstart help here:
         * [General topics](AdvTrkGeneral)
         * [Track filters](AdvTrkFilters)
         * [Working with track graphs](AdvTrkGraphs)
-        * [Editing elevation data](AdvTrkElevation)            
+        * [Editing elevation data](AdvTrkElevation)  
+        * [Track history and saving](AdvTrkHist)        
     * [Routes and Routing](AdvRoutes)
        
 ## Getting Help
