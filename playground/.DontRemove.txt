@@ -1,0 +1,7 @@
+DO NOT REMOVE THIS FILE!
+
+Since Mercurial does not track directories but only files,  this file is
+needed to keep  directory "playground/"  in the repo accross clones even
+when there currently aren't any articles in development and thus direct-
+ory "playground/" is logically empty,  that is,  it does not contain any
+"*.md" files.
