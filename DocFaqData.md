@@ -63,12 +63,15 @@ with an error message
 There can be several reasons for this error:
 
 * Wrong installation of files related to MySQL database handling. For Windows users:
-    * Check if there is a file `libmysql.dll` in the directory where `qmapshack.exe` is located. If not, move the file to this location.
+    * Check if there is a file `libmysql.dll` in the directory where `qmapshack.exe` is located. If not, move the file to this location. _Remark:_ Normally, this file is 
+      part of a full MySQL installation. Find this file in the MySQL installation directory.   
     * Check if there is a file `sqldrivers\qsqlmysql.dll` relative to the directory where `qmapshack.exe` is located. If not, move the 
-      file to this location.  
+      file to this location. _Remark:_ Normally, this file is 
+      part of a full Qt installation. Find this file in the Qt installation directory.   
 * Check if MySQL version is 5.6.5 or greater.
 * Check if your MySQL client is running. If not, start it.
 * Check if your user name and password is correct.
+* Check if your database exists in MySQL. If not, create it.
         
 - - -
 [Prev](DocFaqConfig) (Configuring and running) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Data handling) [Next](DocFaqHandling)
