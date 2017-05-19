@@ -5,6 +5,40 @@
 
 # Frequently Asked Questions - Maps
 
+## How to control visibility of POI info?
+
+(_Inspired by_ [newsgroup discussion](https://www.naviboard.de/showthread.php?t=61038))
+
+The possibility to control the POI visibility in QMS map windows depends on the type of the displayed map:
+
+* _Raster and online maps:_ All map info is hard-coded in the map. Visibility of map elements (POI, roads, ...) can't be changed within QMS.
+* _Vector maps:_ The QMS user has various ways to control the display of the information contained in a map:
+    * _Using the maps tab:_ (if closed, open it with the help of the menu entry `Window - Maps`) After clicking the small triangle at the front of an active map
+      the following map display options can be modified:
+        * _Map opacity_. Use slider to increase or decrease map opacity. This controls the visibility of maps in a stack of active maps.
+        * _Zoom levels for map display_. Select minimum resp. maximum zoom level of map display by clicking the small buttons at the left resp. right of the scale.
+          If the zoom level slider is in the green interval, then the map is displayed.
+        * _Type of displayed map objects_. Use the check boxes to switch on or off the display of areas, lines and points (POI).  
+        * _Details level_. Use levels between -5 and 5 to select the amount of map objects for a given zoom level. 
+    * _Using the main menu_. 
+        * The menu entry `View - POI Text` is a toggle. If it is selected, then the name of a POI (if available in the map) is displayed. The font used can be changed
+          with the help of the menu entry `View - Setup Map Font.`
+        * The menu entry `View - Map Tool Tip` is a toggle. If it is selected, then after moving the mouse pointer to a map object (POI, line, area) a small tool tip window
+          pops-up with information about the object.
+ 
+__Remarks:__
+
+* Several (vector) maps may have the same data source (e.g. OpenStreetMap/OSM). It is up to the author/publisher of the map to select
+    * the data to be included into the map, 
+    * the style in which the data is displayed,
+    * the zoom levels at which data objects are displayed. 
+  
+    Thus, it may happen that maps having the same data source have rather different
+    content and layout. QMS cannot alter this map data. 
+
+* Workspace GIS data (waypoints, tracks, routes, areas) is drawn on an extra layer on the map window. The rules described above for map data don't apply to GIS data.
+  The display of GIS data is controlled via checkboxes in the workspace.
+
 ## Why are waypoints shown with a blue dot icon?
 
 **Source:** [Newsgroup discussion](https://sourceforge.net/p/qlandkartegt/mailman/message/35441910/)

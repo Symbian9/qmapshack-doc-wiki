@@ -261,11 +261,11 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Elevation, edit**
 :  [Edit track elevation](AdvTrkElevation#markdown-header-manually-edit-elevation-of-a-track-point "Edit track elevation")
 
-**Elevation, filter**
-:  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
-
 **Elevation, Filter**
 :  [Track elevation filter](DocGisItemsTrk2#markdown-header-elevation "Track elevation filter")
+
+**Elevation, filter**
+:  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
 
 **Elevation, invalid data**
 :  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
@@ -567,6 +567,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Map, velomap (Linux)**
 :  [openmtbmap.org & velomap.org maps](DocMapsTipsTricks#markdown-header-using-openmtbmaporg-velomaporg-in-qmapshack-linux-only "Using openmtbmap.org & velomap.org (Linux only)")
 
+**Map, visibility of data**
+:  [POI visibility](DocFaqMaps#markdown-header-how-to-control-visibility-of-poi-info "POI visibility")
+
 **Map, visibility range**
 :  [Adjust map properties](AdvMapDetails#markdown-header-adjustable-map-properties "Adjust map properties")
 
@@ -664,6 +667,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Planetsplitter, Routino**
 :  [Routino cross-border routing](DocFaqRouting#markdown-header-does-qmapshackroutino-support-cross-border-routing "Routino cross-border routing")
+
+**POI, control of visibility**
+:  [POI visibility](DocFaqMaps#markdown-header-how-to-control-visibility-of-poi-info "POI visibility")
 
 **POI, use as waypoint**
 :  [Create waypoint from POI](DocFaqHandling#markdown-header-how-to-create-waypoint-from-poi-point-of-interest-in-map "Create waypoint from POI")

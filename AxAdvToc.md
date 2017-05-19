@@ -245,6 +245,7 @@ ___Do not edit - automatically created from DocMain!___
         * [Is there a possibility to choose the preferred road class when routing?](DocFaqRouting#markdown-header-is-there-a-possibility-to-choose-the-preferred-road-class-when-routing)
         * [Does QMapShack/Routino support cross-border routing?](DocFaqRouting#markdown-header-does-qmapshackroutino-support-cross-border-routing)
     * [Maps](DocFaqMaps)
+        * [How to control visibility of POI info?](DocFaqMaps#markdown-header-how-to-control-visibility-of-poi-info)
         * [Why are waypoints shown with a blue dot icon?](DocFaqMaps#markdown-header-why-are-waypoints-shown-with-a-blue-dot-icon)
         * [What is the difference between `Copy position` and `Copy position (Grid)`?](DocFaqMaps#markdown-header-what-is-the-difference-between-copy-position-and-copy-position-grid)
         * [Is there a possibility to display small roads/tracks in a vector map without zooming in too much?](DocFaqMaps#markdown-header-is-there-a-possibility-to-display-small-roadstracks-in-a-vector-map-without-zooming-in-too-much)
