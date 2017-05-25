@@ -35,7 +35,7 @@ sudo make install
 ```
 ## QuaZip
 ```
-# install required dev-packages
+# install required dev-packages *libquazip5 seems not available in Ubuntu 14.04*
 sudo apt-get install libquazip5-headers libquazip5-1 libquazip5-dev
 ```
 
