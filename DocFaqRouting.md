@@ -83,7 +83,7 @@ the Routino router. The result is obviously not the expected one.
 Changing the routing mode to `Vector routing` by pressing `CTRL-V` reveals that the cycleway is contained in the map as polyline which can be used in
 vector routing:
 
-![No vector routing problem](images/DocFaq/Vectorrouting.jpg "Expected routing")
+![No vector routing problem](images/DocFaq/VectorRouting.jpg "Expected routing")
 
 _Explanation:_
 

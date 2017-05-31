@@ -49,7 +49,7 @@ Image caption | Used in
 [No blue dot waypoint icons](images/DocFaq/NoBlueDots.jpg "No blue dot waypoint icons") | [DocFaqMaps](DocFaqMaps)
 [No elevation data in status line](images/DocAdv/InstallNoDem.jpg "No elevation data in status line") | [DocQuickStartEnglish](DocQuickStartEnglish)
 [No fly-as-a-bird routing with Routino](images/DocFaq/RoutinoNoRoute.jpg) | [DocFaqRouting](DocFaqRouting)
-[No vector routing problem](images/DocFaq/Vectorrouting.jpg "Expected routing") | [DocFaqRouting](DocFaqRouting)
+[No vector routing problem](images/DocFaq/VectorRouting.jpg "Expected routing") | [DocFaqRouting](DocFaqRouting)
 [Original elevation profile](images/DocAdv/FilterInterpolate0.jpg "Original elevation profile") | [AdvTrkFilters](AdvTrkFilters)
 [Original elevation profile](images/DocAdv/FilterMedian0.jpg "Original elevation profile") | [AdvTrkFilters](AdvTrkFilters)
 [Overview raster map](images/DocFaq/RasterMap4.jpg "Overview raster map") | [DocFaqMaps](DocFaqMaps)
