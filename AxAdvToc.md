@@ -244,6 +244,8 @@ ___Do not edit - automatically created from DocMain!___
         * [Why do route instructions use different languages?](DocFaqRouting#markdown-header-why-do-route-instructions-use-different-languages)
         * [Is there a possibility to choose the preferred road class when routing?](DocFaqRouting#markdown-header-is-there-a-possibility-to-choose-the-preferred-road-class-when-routing)
         * [Does QMapShack/Routino support cross-border routing?](DocFaqRouting#markdown-header-does-qmapshackroutino-support-cross-border-routing)
+        * [Does the Routino router support _fly-as-a-bird_ routing?](DocFaqRouting#markdown-header-does-the-routino-router-support-_fly-as-a-bird_-routing)
+        * [What can be the reason for unexpected Routino routing results?](DocFaqRouting#markdown-header-what-can-be-the-reason-for-unexpected-routino-routing-results)
     * [Maps](DocFaqMaps)
         * [How to control visibility of POI info?](DocFaqMaps#markdown-header-how-to-control-visibility-of-poi-info)
         * [Why are waypoints shown with a blue dot icon?](DocFaqMaps#markdown-header-why-are-waypoints-shown-with-a-blue-dot-icon)

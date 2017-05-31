@@ -261,11 +261,11 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Elevation, edit**
 :  [Edit track elevation](AdvTrkElevation#markdown-header-manually-edit-elevation-of-a-track-point "Edit track elevation")
 
-**Elevation, Filter**
-:  [Track elevation filter](DocGisItemsTrk2#markdown-header-elevation "Track elevation filter")
-
 **Elevation, filter**
 :  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
+
+**Elevation, Filter**
+:  [Track elevation filter](DocGisItemsTrk2#markdown-header-elevation "Track elevation filter")
 
 **Elevation, invalid data**
 :  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
@@ -842,13 +842,16 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Choose preferred routing road class](DocFaqRouting#markdown-header-is-there-a-possibility-to-choose-the-preferred-road-class-when-routing "Choose preferred routing road class")
 
 **Routino, configuration**
-:  [Choose preferred routing road class](DocFaqRouting#markdown-header-is-there-a-possibility-to-choose-the-preferred-road-class-when-routing "Choose preferred routing road class") ⊞ [User-relevant directories (Windows)](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant directories (Windows)")
+:  [Choose preferred routing road class](DocFaqRouting#markdown-header-is-there-a-possibility-to-choose-the-preferred-road-class-when-routing "Choose preferred routing road class") ⊞ [Unexpected Routino results](DocFaqRouting#markdown-header-what-can-be-the-reason-for-unexpected-routino-routing-results "Unexpected Routino results") ⊞ [User-relevant directories (Windows)](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant directories (Windows)")
 
 **Routino, create database**
 :  [Create Routino database](DocGisItemsRte#markdown-header-create-own-routino-database "Create Routino database using planetsplitter")
 
 **Routino, cross-border routing**
 :  [Routino cross-border routing](DocFaqRouting#markdown-header-does-qmapshackroutino-support-cross-border-routing "Routino cross-border routing")
+
+**Routino, fly-as-bird routing**
+:  [Routino fly-as-bird routing](DocFaqRouting#markdown-header-does-the-routino-router-support-_fly-as-a-bird_-routing "Routino fly-as-bird routing")
 
 **Routino, PBF file**
 :  [Create Routino database](DocGisItemsRte#markdown-header-create-own-routino-database "Create Routino database using planetsplitter")
@@ -867,6 +870,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Routino, routing method**
 :  [Description of routing methods in QMapShack](AdvRoutes#markdown-header-description-of-routing-methods-in-qmapshack "Description of routing methods in QMapShack")
+
+**Routino, unexpected routing**
+:  [Unexpected Routino results](DocFaqRouting#markdown-header-what-can-be-the-reason-for-unexpected-routino-routing-results "Unexpected Routino results")
 
 
 ## S

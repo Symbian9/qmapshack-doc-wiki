@@ -715,6 +715,13 @@ ___Basic usage___
                 1. DEM|elevation
                 1. Elevation|DEM data
                 
+        * [Track history and saving](AdvTrkHist)                
+        + Track history
+            1. Track history|cut history list
+            1. Track history|save history
+            1. GPX|track history handling
+            1. QMS|track history handling
+        
     * [Routes and Routing](AdvRoutes)
         * [Create a route](AdvRoutes#markdown-header-create-a-route)
             1. Route|create
@@ -836,8 +843,22 @@ ___Basic usage___
                 1. Routino|cross-border routing
                 1. Routino|planetsplitter
                 1. Planetsplitter|Routino
+                
+            * [Does the Routino router support _fly-as-a-bird_ routing?](DocFaqRouting#markdown-header-does-the-routino-router-support-_fly-as-a-bird_-routing)
+            + Routino fly-as-bird routing
+                1. Routino|fly-as-bird routing
+            
+            * [What can be the reason for unexpected Routino routing results?](DocFaqRouting#markdown-header-what-can-be-the-reason-for-unexpected-routino-routing-results)                
+            + Unexpected Routino results
+                1. Routino|unexpected routing
+                1. Routino|configuration
             
         * [Maps](DocFaqMaps)
+            * [How to control visibility of POI info?](DocFaqMaps#markdown-header-how-to-control-visibility-of-poi-info)
+            + POI visibility
+                1. POI|control of visibility
+                1. Map|visibility of data
+                
             * [Why are waypoints shown with a blue dot icon?](DocFaqMaps#markdown-header-why-are-waypoints-shown-with-a-blue-dot-icon)
             + Blue dot waypoint icons
                 1. Waypoint|with blue icon
