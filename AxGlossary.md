@@ -67,6 +67,24 @@ given points. Tracks, routes, and area boundaries are polylines.
 : Offline router application for finding a route between two points using the topographical data from
 [OpenStreetMap](http://www.OpenStreetMap.org). To optimize the routing a custom database format is used.
 
+**Slope at geographical location**
+: Value of the steepest ascent or descent at a given geographical location calculated from DEM data. It informs about the steepest ascent resp. descent in the terrain
+around a given location.
+Measured in degrees. Always nonnegative values. Displayed in the QMS status line
+or as adjustable elevation property in a map.
+
+**Slope of terrain (terrain slope)**
+: Slope at geographical location of a trackpoint. Can be attached with the help of the `Calculate terrain slope` track filter to trackpoints. 
+Can be displayed in a graph in the track edit window. Terrain slope and track slope are to different features of a trackpoint!
+
+**Slope of track**
+: Calculated from the elevation difference and the distance between 2 successive waypoints. It informs about the ascent or descent along the track.
+It can have positive values (for ascent) and negative values (for descent).
+Measured in degrees. Can be displayed in a graph in the track edit window.
+
+**Terrain slope**
+: See __Slope of terrain__.
+
 **TMS**
 : Abbreviation for __T__ile __M__ap __S__ervice. A __TMS__ file provides access to cartographic maps
   on special map servers.

@@ -261,11 +261,11 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Elevation, edit**
 :  [Edit track elevation](AdvTrkElevation#markdown-header-manually-edit-elevation-of-a-track-point "Edit track elevation")
 
-**Elevation, filter**
-:  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
-
 **Elevation, Filter**
 :  [Track elevation filter](DocGisItemsTrk2#markdown-header-elevation "Track elevation filter")
+
+**Elevation, filter**
+:  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
 
 **Elevation, invalid data**
 :  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
@@ -387,7 +387,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Export database to GPX file](AdvProjActions#markdown-header-export-database-to-gpx-file "Export database to GPX file")
 
 **GPX, extensions**
-:  [GPXTPX track extension](DocFaqHandling#markdown-header-what-is-the-difference-between-speed-and-gpxtpxspeed "Speed in GPXTPX track extension") ⊞ [Track data in GPX file](DocFaqHandling#markdown-header-which-track-data-is-saved-in-gpx-files "Which track data is saved in GPX file?")
+:  [GPXTPX track extension](DocFaqHandling#markdown-header-what-is-the-difference-between-speed-and-gpxtpxspeed "Speed in GPXTPX track extension") ⊞ [Terrain slope filter](AdvTrkFilters#markdown-header-calculate-terrain-slope "Terrain slope filter") ⊞ [Track data in GPX file](DocFaqHandling#markdown-header-which-track-data-is-saved-in-gpx-files "Which track data is saved in GPX file?")
 
 **GPX, general remark**
 :  [Handle GPX and QMS files](DocHandleGpxFiles "Handle GPX and QMS files")
@@ -884,6 +884,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **SLF, load file**
 :  [Load GPX Files](DocHandleGpxFiles#markdown-header-load-gpx-files "Load GPX Files")
 
+**Slope, calculate terrain slope**
+:  [Terrain slope filter](AdvTrkFilters#markdown-header-calculate-terrain-slope "Terrain slope filter")
+
 **Slope, visualization**
 :  [Adjust elevation properties](AdvMapDetails#markdown-header-adjustable-elevation-properties "Adjust elevation properties")
 
@@ -899,6 +902,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **TCX, load file**
 :  [Load GPX Files](DocHandleGpxFiles#markdown-header-load-gpx-files "Load GPX Files")
+
+**Terrain slope, calculate**
+:  [Terrain slope filter](AdvTrkFilters#markdown-header-calculate-terrain-slope "Terrain slope filter")
 
 **TMS, for contour lines**
 :  [Raster contour line layer](DocMapsTipsTricks#markdown-header-raster-contour-line-layer "Raster contour line layer")

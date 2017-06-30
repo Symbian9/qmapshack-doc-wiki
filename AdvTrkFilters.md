@@ -104,7 +104,7 @@ removes the selected extension (temperature, heart rate, recorded speed, ...) fr
 This filter can be seen as the reverse operation to combining (joining) of tracks.
 
 Each track consists of at least one track segment.
-When combining tracks the track segments of all tracks involved are copied in the selected order into the new track.
+When combining tracks, the track segments of all tracks involved are copied in the selected order into the new track.
 Thus, combining several tracks leads to tracks with several segments.
 
 When applying the given filter to a track, then each track segment is converted to a separate track. The project
@@ -118,7 +118,7 @@ with a _(segment xx)_ suffix.
 
 When creating a track, the user creates with the help of mouse clicks (ordinary) trackpoints. Depending on the selected
 [routing method](AdvRoutes#markdown-header-description-of-routing-methods-in-qmapshack)
-additional trackpoints are be added automatically by the routing algorithm. These additional trackpoints are
+additional trackpoints are being added automatically by the routing algorithm. These additional trackpoints are
 called _subpoints_.
 
 Ordinary trackpoints (marked with a big black square when editing a track) can be moved to a new location or deleted
@@ -128,6 +128,21 @@ Subpoints (marked with a small black square when editing a track) can't be edite
 if a neighboring ordinary trackpoint has changed.
 
 The given track filter converts each subpoint to an ordinary trackpoint.
+
+
+### Calculate terrain slope
+
+(_valid starting with QMS patch version a735e8ee30c8/2017-06-29_)
+
+Calculate slope of the terrain based on loaded DEM data for the trackpoints of the track under consideration.
+
+The terrain slope of a track (if assigned with this filter) can be visualized with the help of a graph in the track edit window (select 
+`Terrain slope` in one of the listboxes in the `Graphs` tab of the edit window). It is also displayed in tooltip windows at trackpoints.
+
+When saving the track (more precisely the project of the track) into a GPX file, the terrain slope appears in a special trackpoint extension.
+
+_Attention:_ The _terrain slope_ depends only on the geographical location and the DEM (elevation) data, whereas the _slope_ (also denoted by _slope*_)
+is calculated from the position and elevation data of a track!
 
 - - -
 [Prev](AdvTrkGeneral) (General topics) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Working with track graphs) [Next](AdvTrkGraphs)

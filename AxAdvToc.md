@@ -206,6 +206,7 @@ ___Do not edit - automatically created from DocMain!___
                 * [Remove extension from all trackpoints](AdvTrkFilters#markdown-header-remove-extension-from-all-trackpoints)
                 * [Split segments into tracks](AdvTrkFilters#markdown-header-split-segments-into-tracks)
                 * [Convert track subpoints to points](AdvTrkFilters#markdown-header-convert-track-subpoints-to-points)
+                * [Calculate terrain slope](AdvTrkFilters#markdown-header-calculate-terrain-slope)
         * [Working with track graphs](AdvTrkGraphs)
             * [Zoom track graphs](AdvTrkGraphs#markdown-header-zoom-track-graphs)
             * [Select a scale range for track data display](AdvTrkGraphs#markdown-header-select-a-scale-range-for-track-data-display)

@@ -694,7 +694,12 @@ ___Basic usage___
                     1. Subpoint|convert subpoint filter
                     1. Track|convert subpoint filter
                 
-            
+                * [Calculate terrain slope](AdvTrkFilters#markdown-header-calculate-terrain-slope)
+                + Terrain slope filter
+                    1. Slope|calculate terrain slope
+                    1. Terrain slope|calculate
+                    1. GPX|extensions
+                    
         * [Working with track graphs](AdvTrkGraphs)
             * [Zoom track graphs](AdvTrkGraphs#markdown-header-zoom-track-graphs)
                 1. Track graph|zoom
