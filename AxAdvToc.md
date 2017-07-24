@@ -167,6 +167,7 @@ ___Do not edit - automatically created from DocMain!___
     * [Maps: Tips and Tricks](DocMapsTipsTricks)              
         * [Backdoor to use a WMS server as TMS server](DocMapsTipsTricks#markdown-header-backdoor-to-use-a-wms-server-as-tms-server)
             * [Use ArcGIS Server like a TMS Server](DocMapsTipsTricks#markdown-header-use-arcgis-server-like-a-tms-server)
+            * [Use a WMTS server as TMS server](DocMapsTipsTricks#markdown-header-use-a-wmts-server-as-tms-server)
         * [Access most online maps as TMS using MapProxy](DocMapsTipsTricks#markdown-header-access-most-online-maps-as-tms-using-mapproxy)
             * [Gathering information](DocMapsTipsTricks#markdown-header-gathering-information)
             * [MapProxy basic usage](DocMapsTipsTricks#markdown-header-mapproxy-basic-usage)
