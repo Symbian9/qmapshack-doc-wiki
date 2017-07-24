@@ -62,7 +62,31 @@ In most cases the request will work as expected, even though the native projecti
 For documentation of export command refer to:
 [http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Export_Map/02r3000000v7000000/](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Export_Map/02r3000000v7000000/).
 
----
+
+### Use a WMTS server as TMS server
+Nearly the same can be applied to build a WMTS request. Here is an example for Spanish IGN Raster map:
+ 
+```
+#!XML
+<TMS>
+<Layer idx="0">
+<Title>IGN topografico</Title>
+<Script><![CDATA[(
+function convert(z1,x1,y1)
+{y=(1<<z1)-1-y1;
+  return "http://www.ign.es/wmts/mapa-raster?request=getTile&format=image/png&layer=MTN&TileMatrixSet=GoogleMapsCompatible&TileMatrix="+z1+"&TileCol="+x1+"&TileRow="+y1;
+}
+)]]></Script>
+</Layer>
+<Copyright>IGN</Copyright>
+</TMS>
+
+```
+For most cases you only have to edit the URL string before **&TileMatrix=**
+
+Note that WMTS request is `getTile` instead of `getMap` , so there is no need to define a BBOX, but the `TileMatrix`, `TileRow`, and  `TileCol` parameters must be included.
+
+This is a useful workaround if loading a map with its WMTSCapabilities.xml file fails.
 
 ## Access most online maps as TMS using MapProxy
 
@@ -464,6 +488,11 @@ Script converts to OSGEO TMS (http://www.maptiler.org/google-maps-coordinates-ti
 * Google: Google Hybrid Maps, Google Maps, Google Sat Map, Google Terrain Map
 * Geoland.at: Basemap, Basemap Overlay, Basemap Grau, Basemap High DPI & Basemap Orthofoto
 * Strava: Running & Cycling Heatmap
+
+[Spanish IGN and other regions online maps](https://www.dropbox.com/s/sfzxdehmdqfs784/ESP_IGN_QMS_onlinemaps.zip?dl=0) 
+
+* ESP IGN:  Ortofoto, Topo map, Historical maps
+* Other: Topo Euskal Herria, Gipuzkoa_5bm , Catalunya topo
 
 - - -
 [Prev](AdvMapDetails) (Details of map use) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Data handling) [Next](AdvDataHandling)

@@ -1191,6 +1191,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **WMS, accessed with TMS**
 :  [Use WMS server as TMS server](DocMapsTipsTricks#markdown-header-backdoor-to-use-a-wms-server-as-tms-server "Use WMS server as TMS server")
 
+**WMTS, accessed with TMS**
+:  [Use a WMTS server as TMS server](DocMapsTipsTricks#markdown-header-use-a-wmts-server-as-tms-server "Use a WMTS server as TMS server")
+
 **WMTS, for French IGN  maps**
 :  [WMTS for French IGN maps](DocMapsTipsTricks#markdown-header-wmts-configuration-to-access-french-ign-maps-geoportail "WMTS configuration for French IGN maps")
 
