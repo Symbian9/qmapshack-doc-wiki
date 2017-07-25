@@ -531,12 +531,15 @@ ___Basic usage___
         + Use WMS server as TMS server
             1. TMS|use for WMS server
             1. WMS|accessed with TMS
-
+            
         * [Use ArcGIS Server like a TMS Server](DocMapsTipsTricks#markdown-header-use-arcgis-server-like-a-tms-server)
         + Use ArcGIS server as TMS server
             1. TMS|use for ArcGIS
             1. ArcGIS|accessed with TMS
-
+        * [Use a WMTS server as TMS server](DocMapsTipsTricks#markdown-header-use-a-wmts-server-as-tms-server)
+            1. WMTS|accessed with TMS
+            
+            
         * [Access most online maps as TMS using MapProxy](DocMapsTipsTricks#markdown-header-access-most-online-maps-as-tms-using-mapproxy)
         + Access to online maps
 		    1. Online maps|Access with MapProxy
