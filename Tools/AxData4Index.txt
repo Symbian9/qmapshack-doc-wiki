@@ -830,7 +830,12 @@ ___Basic usage___
                 1. Course|as trackpoint extension
                 1. Trackpoint|course in track extension
             
-        * [Routing](DocFaqRouting)
+            * [How to edit tracks without losing track data?](DocFaqHandling#markdown-header-how-to-edit-tracks-without-losing-track-data)
+            + Lossless track editing
+                1. Track|edit
+                1. Range|of track
+            
+            * [Routing](DocFaqRouting)
             * [Why do route instructions use different languages?](DocFaqRouting#markdown-header-why-do-route-instructions-use-different-languages)
             + Language in route instruction
             ++ Why do route instructions use different languages?
@@ -889,6 +894,12 @@ ___Basic usage___
                 1. Map|tile
                 1. gmapsupp.img|map
                 1. Map|Garmin                
+                
+            * [How to change the layout of vector maps?](DocFaqMaps#markdown-header-how-to-change-the-layout-of-vector-maps)
+            + Change vector map layout
+                1. Map|change layout
+                1. Type file|change map layout
+                
                 
             * [Which raster map formats are supported?](DocFaqMaps#markdown-header-which-raster-map-formats-are-supported)
             + Supported raster maps

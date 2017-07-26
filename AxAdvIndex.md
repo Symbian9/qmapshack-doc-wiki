@@ -477,6 +477,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Map, cache**
 :  [Adjust map properties](AdvMapDetails#markdown-header-adjustable-map-properties "Adjust map properties") ⊞ [User-relevant directories (Windows)](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant directories (Windows)")
 
+**Map, change layout**
+:  [Change vector map layout](DocFaqMaps#markdown-header-how-to-change-the-layout-of-vector-maps "Change vector map layout")
+
 **Map, CompeGPS (rmap)**
 :  [Supported raster maps](DocBasicsMapDem#markdown-header-raster-maps "Supported raster maps")
 
@@ -746,7 +749,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Select a range of a track in edit mode](AdvTrkGeneral#markdown-header-select-a-range-of-a-track-in-edit-mode "Select a range of a track in edit mode")
 
 **Range, of track**
-:  [Select a range of a track](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track")
+:  [Lossless track editing](DocFaqHandling#markdown-header-how-to-edit-tracks-without-losing-track-data "Lossless track editing") ⊞ [Select a range of a track](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track")
 
 **Raster map, cache handling**
 :  [Adjust map properties](AdvMapDetails#markdown-header-adjustable-map-properties "Adjust map properties")
@@ -988,7 +991,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Recorded and calculated track data](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data "Recorded and calculated track data") ⊞ [Select a range of a track](AdvTrkGeneral#markdown-header-select-a-range-of-a-track "Select a range of a track")
 
 **Track, edit**
-:  [Edit items with multiple points](DocGisItemsEditMultiple "Edit items with multiple points") ⊞ [Edit line](DocGisItemsEditMultiple#markdown-header-edit-line "Edit line") ⊞ [Symbols for trackpoints](AdvTrkGeneral#markdown-header-symbols-for-trackpoints "Symbols for trackpoints")
+:  [Edit items with multiple points](DocGisItemsEditMultiple "Edit items with multiple points") ⊞ [Edit line](DocGisItemsEditMultiple#markdown-header-edit-line "Edit line") ⊞ [Lossless track editing](DocFaqHandling#markdown-header-how-to-edit-tracks-without-losing-track-data "Lossless track editing") ⊞ [Symbols for trackpoints](AdvTrkGeneral#markdown-header-symbols-for-trackpoints "Symbols for trackpoints")
 
 **Track, elevation filter**
 :  [Description of track elevation filters](AdvTrkFilters#markdown-header-elevation-filters "Description of track elevation filters") ⊞ [Track elevation filter](DocGisItemsTrk2#markdown-header-elevation "Track elevation filter")
@@ -1106,6 +1109,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Trackpoint, used symbols/icons**
 :  [Symbols for trackpoints](AdvTrkGeneral#markdown-header-symbols-for-trackpoints "Symbols for trackpoints")
+
+**Type file, change map layout**
+:  [Change vector map layout](DocFaqMaps#markdown-header-how-to-change-the-layout-of-vector-maps "Change vector map layout")
 
 
 ## U

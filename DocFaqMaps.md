@@ -95,6 +95,39 @@ into a special container format. A typical name for such a container file is _gm
 
 QMS does support maps loaded from gmapsupp container files. It doesn't allow the use of single tiles.
 
+## How to change the layout of vector maps?
+
+**(valid starting with QMS version 1.9.0)**
+
+The layout of a vector map in QMS is defined by rules found in a so-called _type file_. Type files are contained in the _gmapsupp.img_ files required for 
+the display of a vector maps in QMS.
+ 
+There is a strong relation between the object types used in the description of the map data and the object types defined in a type file used for the display of the map.
+
+The layout of a vector map can be changed in QMS by loading a new type file in the following way:
+
+* open the __Maps__ tab in the workspace (select menu entries `Window - Maps` if tab is closed),
+* open the map features window of the activated map for which the layout should be changed,
+
+    ![Type file selection window](images/DocFaq/ChangeTypeFile.png "Type file selection")
+   
+* click on the `Load external type file` icon in the Type file row of this window and select a type file (extension __TYP__),
+* click the `Forget external type file` icon to return to the original map layout.
+
+
+The following image shows various layouts of a vector map obtained by using 4 different type files.
+
+
+![Different vector map layouts](images/DocFaq/MapLayoutVariants.png "Different map layouts")
+
+The first layout is the default one for the map, the second one displays the same map data as the first one but in a slightly different way.
+
+The third and the forth layouts illustrate how important and even dangerous layout changes can be when changing to an incompatible type file. If wanted, certain object
+types are not displayed anymore (a motorway might be of no interest for a bicycle user). The forth layout results from a type file not
+built for the given vector map. As a result, even the motorway is not displayed correctly.
+
+
+
 ## Which raster map formats are supported?
 
 There are various sources of raster maps in various formats.
