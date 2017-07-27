@@ -242,6 +242,7 @@ ___Do not edit - automatically created from DocMain!___
         * [How to find distance between waypoints](DocFaqHandling#markdown-header-how-to-find-distance-between-waypoints)
         * [Which track data is saved in GPX files?](DocFaqHandling#markdown-header-which-track-data-is-saved-in-gpx-files)
         * [What is the difference between speed and gpxtpx:speed?](DocFaqHandling#markdown-header-what-is-the-difference-between-speed-and-gpxtpxspeed)
+        * [How to remove DEM info from elevation graph?](DocFaqHandling#markdown-header-how-to-remove-dem-info-from-elevation-graph)
         * [How to edit tracks without losing track data?](DocFaqHandling#markdown-header-how-to-edit-tracks-without-losing-track-data)
     * [Routing](DocFaqRouting)
         * [Why do route instructions use different languages?](DocFaqRouting#markdown-header-why-do-route-instructions-use-different-languages)

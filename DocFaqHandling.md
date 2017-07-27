@@ -80,6 +80,31 @@ Compare also section
 ![Recorded gpxtpx:speed vs. speed graphs](images/DocFaq/FaqGpxTpxSpeed.jpg "Recorded gpxtpx:speed vs. speed graphs")
 
 
+## How to remove DEM info from elevation graph?
+
+_(inspired by newsgroup discussion ["Option to disable DEM plot in track profile view"](https://sourceforge.net/p/qlandkartegt/mailman/message/35962352))_ 
+
+
+Assume
+
+* a (recorded) track has elevation information,
+* DEM data is available for the area in which the track is located, 
+* DEM data is activated in the view in which the track is displayed,
+* the (extended) track profile is activated for the track.
+
+Then the track elevation profile
+displays the recorded elevation together with the elevation obtained from the DEM data (red line).
+
+To remove the DEM data from the track profile proceed as follows:
+
+* clone the existing view (use menu entries `View - Clone map view`),
+* deactivate DEM data in the cloned view,
+* open the track profile in the cloned view.
+
+Now, the track profile shows only the elevation data of the track.
+
+_Hint:_ Use the track profile in the map view, not the one in the track edit window!
+
 ## How to edit tracks without losing track data?
 
 _(inspired by newsgroup discussion [How to edit this track?](https://sourceforge.net/p/qlandkartegt/mailman/message/35965052))_

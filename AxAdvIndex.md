@@ -261,11 +261,11 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Elevation, edit**
 :  [Edit track elevation](AdvTrkElevation#markdown-header-manually-edit-elevation-of-a-track-point "Edit track elevation")
 
-**Elevation, filter**
-:  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
-
 **Elevation, Filter**
 :  [Track elevation filter](DocGisItemsTrk2#markdown-header-elevation "Track elevation filter")
+
+**Elevation, filter**
+:  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
 
 **Elevation, invalid data**
 :  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
@@ -947,6 +947,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Track history, save history**
 :  [Track history](AdvTrkHist "Track history")
+
+**Track profile, remove DEM data**
+:  [Track profile without DEM info](DocFaqHandling#markdown-header-how-to-remove-dem-info-from-elevation-graph "Track profile without DEM info")
 
 **Track segment, split segments to tracks**
 :  [Split segments into tracks](AdvTrkFilters#markdown-header-split-segments-into-tracks "Split segments into tracks")
