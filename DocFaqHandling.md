@@ -118,20 +118,25 @@ A need occurs to remove such non-reliable or wrong data by editing the track man
 
 QMS offers the following track editing methods:
 
-* Edit track in map window by going into the track edit mode and removing there single trackpoints. 
+* Edit track in map window by going into the **track edit mode** and removing there single trackpoints. 
 
     This method is very convenient because it is easy to identify and remove wrong trackpoints.
 
     The disadvantage of this method is that all trackpoint information except the position gets lost for all remaining trackpoints.
 
-* Edit track using range selection.
+* Edit track using **range selection**.
 
     This method can be used in the map window or in the track edit window.
 
     If working in the map window:
+
         * click the track, 
         * click the range selection icon,
         * select the range of the track(points) that should be removed,
+
+    By that the selected trackpoints are hidden and do not add to the statistics. If you want to remove them permanently:
+  
+
         * goto the track edit window of the track,
         * click the `Filter` tab,
         * open the `Reduce visible points` filter group,
@@ -139,8 +144,10 @@ QMS offers the following track editing methods:
 
     This procedure removes the selected range of trackpoints from the track without losing information from other trackpoints.
 
-    _Warning:_ The data is removed from the original track. Save a backup copy of the track before editing it!
+    _Warning:_ As long as you stay in the QMapShack Universe - using the database or the QMS files - you can revert all these steps in the history. However if you save to a GPX file the data will be lost permanently. In this case save a backup copy of the track before editing it!
 
+
+Even as it is possible to remove erroneous recorded trackpoints with both methods, the later is the recommended one. The intended use-case for the track edit mode is to create artificial tracks to plan a tour. That is why additional data like timestamps and sensor data is removed as it won't be valid when moving points or combining different track fragments.
 
 
 - - -
