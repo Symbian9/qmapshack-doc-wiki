@@ -8,6 +8,7 @@
 Hotkey | Meaning
 --------|---------
 __General__ |
+CTRL-D | Toggle docks
 CTRL-E | Show extended track profile (toggle!).
 CTRL-G | Show grid on map (toggle!).
 CTRL-ALT-G | Open grid setup window.
@@ -32,7 +33,7 @@ CTRL-O | Use straight lines for routing when creating route or track. Choice can
 CTRL-V | If available use polyline from map for routing from one point to the next one (_snap to line_), otherwise use straight lines. Choice can be modified during routing. No routing data required
 __Track edit mode__ |
 CTRL-+ | Add trackpoints to track.
-CTRL-D | Delete trackpoints.
+CTRL-- | Delete trackpoints.
 CTRL-M | Move trackpoints.
 CTRL-R | Select range of track points.
 
