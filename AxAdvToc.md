@@ -164,6 +164,7 @@ ___Do not edit - automatically created from DocMain!___
     * [Adjustable map properties](AdvMapDetails#markdown-header-adjustable-map-properties)
     * [Adjustable elevation properties](AdvMapDetails#markdown-header-adjustable-elevation-properties)
     * [Map scale type](AdvMapDetails#markdown-header-map-scale-type)
+    * [Full-screen display](AdvMapDetails#markdown-header-full-screen-display)
     * [Maps: Tips and Tricks](DocMapsTipsTricks)              
         * [Backdoor to use a WMS server as TMS server](DocMapsTipsTricks#markdown-header-backdoor-to-use-a-wms-server-as-tms-server)
             * [Use ArcGIS Server like a TMS Server](DocMapsTipsTricks#markdown-header-use-arcgis-server-like-a-tms-server)

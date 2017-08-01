@@ -20,6 +20,7 @@ CTRL-S | Save all projects from the workspace.
 CTRL-T | Add new view tab.
 CTRL-SHIFT-T | Clone map view.
 CTRL-W | Close tab that is not a map view (_patch version cff9526 (15.11.2016) and later ones_).
+F11    | Show map window in full-screen mode (toggle, _patch version de4deeb (30.07.2017) and later ones_).
 __Map__ |
 up-key     | Move the map focus north, moving the map south
 down-key   | Move the map focus south, moving the map north

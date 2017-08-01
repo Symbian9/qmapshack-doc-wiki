@@ -322,6 +322,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **FIT, load file**
 :  [Load GPX Files](DocHandleGpxFiles#markdown-header-load-gpx-files "Load GPX Files")
 
+**Full-screen display, of maps**
+:  [Full-screen display](AdvMapDetails#markdown-header-full-screen-display "Full-screen display")
+
 
 ## G
 
@@ -500,6 +503,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Map, folder organization**
 :  [Organization of Maps & DEM](DocInstallMapDem#markdown-header-organization-of-maps-dem "Organization of Maps & DEM")
+
+**Map, full-screen display**
+:  [Full-screen display](AdvMapDetails#markdown-header-full-screen-display "Full-screen display")
 
 **Map, Garmin Birds Eye (JNX)**
 :  [Supported raster maps](DocBasicsMapDem#markdown-header-raster-maps "Supported raster maps")

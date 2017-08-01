@@ -11,7 +11,7 @@ For basic information about this topic compare also the
 
 ## Adjustable map properties
 
-_(valid starting with QMS patch version 7440c9d6402c (2017-01-01))_
+_(valid starting with QMS patch version de4deeb (30.07.2017))_
 
 After activating a map in a map view, some properties that control the display of the map can be adjusted.
 The number of properties depends on the type of the map. Their availability is shown in the next table:
@@ -19,13 +19,15 @@ The number of properties depends on the type of the map. Their availability is s
 Property | vector map | off-line raster map | on-line  map
 ---------|------------|--------------------|------------
 Map opacity               | ✔ | ✔ | ✔
-Visibility range          | ✔ | ✔ | ✔
-Visibility by object type | ✔ | ✘ | ✘
-Details visibility        | ✔ | ✘ | ✘
+Visibility range of map   | ✔ | ✔ | ✔
+Visibility of object types | ✔ | ✘ | ✘
+Visibility of details     | ✔ | ✘ | ✘
+Layout of map objects     | ✔ | ✘ | ✘
 Cache size                | ✘ | ✘ | ✔
 Cache expiration          | ✘ | ✘ | ✔
 Layer selection           | ✘ | ✘ | ✔
 _Data opacity_            | ✔ | ✔ | ✔
+_Full-screen display_     | ✔ | ✔ | ✔
 
 The following image shows the layout of the various selection possibilities in the map tab:
 
@@ -35,9 +37,11 @@ _Comments:_
 
 * The map opacity controls the map visibility in a map overlay.
 * The visibility range controls the zoom levels for which the map is displayed.
-* The visibility by object type allows to suppress the display of some object types in the map.
-* The details visibility controls how many map details are shown at a given zoom level.
-* The data opacity (slider in the data and not in the map tab!) controls the visibility of the data in the workspace.
+* The visibility of object types allows to suppress the display of some object types in the map.
+* The visibility of details controls how many map details are shown at a given zoom level.
+* The layout of map objects can be changed by using different type files for the map.
+* The data opacity (slider in the data and not in the map tab!) controls the opacity of the GIS data in the workspace.
+* Full-screen display of a map window is enabled by pressing `F11` (toggle!).
 
 ## Adjustable elevation properties
 
@@ -53,7 +57,7 @@ _Comments:_
 * The opacity slider controls the visibility of hill shading and slope on a map.
 * The visibility range controls the zoom levels for which hill shading and slope are displayed.
 * The level of hill shading controls the intensity used for the display of hill shading.
-* The slop selection allows to choose one of the predefined slope models. In the case of the "__custom__" model
+* The slope selection allows to choose one of the predefined slope models. In the case of the "__custom__" model
   the user can define 5 slope levels.
 
 
@@ -72,7 +76,16 @@ The minimum and maximum zoom levels (scales) are nearly the same for both scales
 For square scales the next zoom step leads to a scale which is approximately changed by a factor 2
 compared with the previous one. This scale is recommended for on-line (TMS, WMTS) maps.
 
+## Full-screen display
 
+_(valid starting with QMS patch version de4deeb (30.07.2017))_
+
+Map windows (and other windows as well) can be displayed in full-screen mode. A map window switches to full-screen mode after pressing `F11`. 
+Pressing `F11` again switches the window back to the standard mode.
+
+_Remarks:_
+* If the QMS toolbar is active, then it is also shown in the full-screen window.
+* Pressing `CTRL-D` in the full-screen mode activates the dockables windows. Pressing this key again closes the dockable windows in the full-screen mode.
 
 
 - - -
