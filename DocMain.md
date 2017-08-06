@@ -49,6 +49,7 @@ Users can find short quickstart help here:
         * [Folders and Items](DocGisDatabaseFoldersItems)
         * ['Lost & Found' Folder](DocGisDatabaseLostFound)
     * [GPS Devices](DocGisDevices)
+    * [Text Editor Templates](DocGisTemplates)
 
 ## Advanced usage
 

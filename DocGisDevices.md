@@ -1,4 +1,4 @@
-[Prev](DocGisDatabaseLostFound) ('Lost & Found' Folder) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Databases and projects) [Next](AdvProjects)
+[Prev](DocGisDatabaseLostFound) ('Lost & Found' Folder) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Text Editor Templates) [Next](DocGisTemplates)
 - - -
 [TOC]
 - - -
@@ -71,4 +71,4 @@ xsi:schemaLocation="http://www.garmin.com/xmlschemas/GarminDevice/v2 http://www.
 
 
 - - -
-[Prev](DocGisDatabaseLostFound) ('Lost & Found' Folder) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Databases and projects) [Next](AdvProjects)
+[Prev](DocGisDatabaseLostFound) ('Lost & Found' Folder) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Text Editor Templates) [Next](DocGisTemplates)
