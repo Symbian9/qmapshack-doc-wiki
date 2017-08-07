@@ -33,7 +33,7 @@ At the top of the template editor you can select from available templates. And t
 
 ![Template Dialog](images/DocGisTemplates/TemplateDialog.png "Template Dialog")
 
-Now you can select and edit what every you want. Use the preview button to get an idea what the final text will look like. If you are done leave with "ok".
+Now you can select and edit what ever you want. Use the preview button to get an idea what the final text will look like. If you are done leave with "ok".
 
 ![Filled Text Edit](images/DocGisTemplates/TextEditFilled.png "Filled Text Edit")
 
@@ -71,7 +71,7 @@ On the left you will see the "Widget Box". The elements that interest you most a
 
 ###Basic Concept
 
-The basic idea is to have one or several group boxes with widgets. Group boxes are sorted by their object name. And by that in the final text, too. Only widgets inside a group box are used to create the text. Inside a groupbox widgets are sorted by their tab order. More on that later.
+The basic idea is to have one or several group boxes with widgets. Group boxes are sorted by their object name. And by that in the final text, too. Only widgets inside a group box are used to create the text. Inside a group box widgets are sorted by their tab order. More on that later.
  
 The object name can be changed in the right hand side property editor:
 
