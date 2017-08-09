@@ -249,6 +249,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Edit, undo**
 :  [Undo/Redo](DocGisItemsEditMultiple#markdown-header-undoredo "Undo/Redo")
 
+**Editor templates, purpose of**
+:  [Text Editor Templates](DocGisTemplates "Text Editor Templates")
+
 **Elevation data, add and activate**
 :  [Add digital elevation model](DocGettingStarted#markdown-header-add-digital-elevation-model "Add digital elevation model")
 
@@ -261,11 +264,11 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Elevation, edit**
 :  [Edit track elevation](AdvTrkElevation#markdown-header-manually-edit-elevation-of-a-track-point "Edit track elevation")
 
-**Elevation, Filter**
-:  [Track elevation filter](DocGisItemsTrk2#markdown-header-elevation "Track elevation filter")
-
 **Elevation, filter**
 :  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
+
+**Elevation, Filter**
+:  [Track elevation filter](DocGisItemsTrk2#markdown-header-elevation "Track elevation filter")
 
 **Elevation, invalid data**
 :  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
@@ -912,8 +915,20 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **TCX, load file**
 :  [Load GPX Files](DocHandleGpxFiles#markdown-header-load-gpx-files "Load GPX Files")
 
+**Templates, create new**
+:  [Create a Template](DocGisTemplates#markdown-header-create-a-template "Create a Template")
+
+**Templates, for text editor**
+:  [Text Editor Templates](DocGisTemplates "Text Editor Templates")
+
+**Templates, use of**
+:  [Use a Template](DocGisTemplates#markdown-header-use-a-template "Use a Template")
+
 **Terrain slope, calculate**
 :  [Terrain slope filter](AdvTrkFilters#markdown-header-calculate-terrain-slope "Terrain slope filter")
+
+**Text editor, templates for**
+:  [Text Editor Templates](DocGisTemplates "Text Editor Templates")
 
 **TMS, for contour lines**
 :  [Raster contour line layer](DocMapsTipsTricks#markdown-header-raster-contour-line-layer "Raster contour line layer")

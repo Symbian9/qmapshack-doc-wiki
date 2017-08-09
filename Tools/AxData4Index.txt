@@ -448,6 +448,21 @@ ___Basic usage___
         ++ Use of Garmin GPSmap 60CSx and similar devices
             1. GPS device|use of legacy Garmin device
             
+    * [Text Editor Templates](DocGisTemplates)
+        1. Templates|for text editor
+        1. Editor templates|purpose of
+        1. Text editor|templates for
+    
+        * [Use a Template](DocGisTemplates#markdown-header-use-a-template)
+            1. Templates|use of
+            
+        * [Create a Template](DocGisTemplates#markdown-header-create-a-template)
+            1. Templates|create new
+            
+            * [Widgets Overview](DocGisTemplates#markdown-header-widgets-overview)
+            * [Basic Concept](DocGisTemplates#markdown-header-basic-concept)
+            * [Order Of Items](DocGisTemplates#markdown-header-order-of-items)            
+            
  ___(Advanced usage part)___
 
 * [Databases and projects](AdvProjects)

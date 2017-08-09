@@ -144,6 +144,12 @@ ___Do not edit - automatically created from DocMain!___
     * [GPS Devices](DocGisDevices)
         * [General description](DocGisDevices#markdown-header-general-description)
         * [Remark about Garmin GPSmap 60CSx and similar devices](DocGisDevices#markdown-header-remark-about-garmin-gpsmap-60csx-and-similar-devices)
+    * [Text Editor Templates](DocGisTemplates)
+        * [Use a Template](DocGisTemplates#markdown-header-use-a-template)
+        * [Create a Template](DocGisTemplates#markdown-header-create-a-template)
+            * [Widgets Overview](DocGisTemplates#markdown-header-widgets-overview)
+            * [Basic Concept](DocGisTemplates#markdown-header-basic-concept)
+            * [Order Of Items](DocGisTemplates#markdown-header-order-of-items)
 
 
 ## Advanced usage
