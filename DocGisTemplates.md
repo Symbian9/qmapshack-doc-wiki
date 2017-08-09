@@ -73,20 +73,11 @@ On the left you will see the "Widget Box". The elements that interest you most a
 
 The basic idea is to have one or several group boxes with widgets. Group boxes are sorted by their object name. And by that in the final text, too. Only widgets inside a group box are used to create the text. Inside a group box widgets are sorted by their tab order. More on that later.
  
-The object name can be changed in the right hand side property editor:
+The object name of a group box can be changed in the right hand side property editor:
 
 ![Designer Property Editor](images/DocGisTemplates/DesignerPropertyEditor.png "Designer Property Editor") 
 
-It is very important how the name starts:
-
-- Group boxes must start with "group"
-- Radio buttons must start with "radio"
-- Check boxes must start with "check"
-- Combo boxes must start with "combo"
-- Line edits must start with "line"
-- Text edits must start with "text"
-
-The rest of the name is up to you. Keep in mind: group boxes are sorted by their name. 
+If the group box should add to the final text it's object name must start with "group". The rest of the name is up to you. But keep in mind: group boxes are sorted by their name. So probably "groupBox<number>" where <number> is from 0..N is a good choice.
 
 Later when the text is produced following strings are used:
 
