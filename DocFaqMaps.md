@@ -133,6 +133,7 @@ built for the given vector map. As a result, even the motorway is not displayed 
 There are various sources of raster maps in various formats.
 
 QMS supports raster formats that are
+
 * supported by the `GDAL` version used with QMapShack. Create a VRT file for the given raster map. Then it can be used in QMS. To get a list of formats supported 
   by `GDAL` run `gdaltransform.exe --formats` in a console window.
 * of type RMAP, GEMF, JNX (formats directly loaded by QMS).
@@ -185,9 +186,9 @@ georeference data can't be found within the MAP files.
     `gdalwarp -of VRT full_path_to_your_raster_map.map full_path_to_your_raster_map.vrt`
 
     * _Remarks:_
-      * It is unclear why `GDALBuildVRT` does not find the georeference information.
-      * If there is a need to move the files discussed in this topic to a different location then repeat this procedure!
-      The VRT file has a pointer to the relative or absolute path of the MAP file.
+
+        * It is unclear why `GDALBuildVRT` does not find the georeference information.
+        * If there is a need to move the files discussed in this topic to a different location then repeat this procedure! The VRT file has a pointer to the relative or absolute path of the MAP file.
 
 * _Hint for Ubuntu users:_ Raster maps may have borders. There is an Ubuntu tool to crop semi-automatically the map or a whole series of maps in such a way that the borders are not visible when loaded into QMapShack. Link to the tool: [github.com/h4tr3d/geocrop](https://github.com/h4tr3d/geocrop). Description of usage:
     * [http://htrd.su/wiki](http://htrd.su/wiki/start?btng[post][tags]=qmapshack) (Russian). This link leads also to a short Russian description of the basic QMapShack features.
@@ -198,6 +199,7 @@ georeference data can't be found within the MAP files.
 **Source:** [http://article.gmane.org/gmane.comp.gis.qlandkartegt.user/2624](http://article.gmane.org/gmane.comp.gis.qlandkartegt.user/2624)
 
 Consider the following hints:
+
 * Use `gdalinfo` to verify if the required VRT file provides proper information. Keep in mind that the VRT file
   is just an XML wrapper around your
   real raster map file. It stores a path to that file. If the path changes,
@@ -242,6 +244,7 @@ from the command line as follows:
     gdalinfo complete_path_to_vrt_file
 
 Be sure the path to
+
 * `gdalinfo` is set in the `PATH` environment variable,
 * the GDAL `data` subdirectory is set in the `GDAL_DATA` environment variable.
 
