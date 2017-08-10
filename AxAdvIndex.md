@@ -338,6 +338,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Garmin, map images**
 :  [Supported vector maps](DocBasicsMapDem#markdown-header-vector-maps "Supported vector maps")
 
+**GDAL, supported version**
+:  [Supported raster maps](DocFaqMaps#markdown-header-which-raster-map-formats-are-supported "Supported raster maps")
+
 **GDAL, VRT**
 :  [Maps in GDAL VRT format](DocBasicsMapDem#markdown-header-gdal-vrt-maps "Maps in GDAL VRT format") ⊞ [Supported raster maps](DocFaqMaps#markdown-header-which-raster-map-formats-are-supported "Supported raster maps")
 

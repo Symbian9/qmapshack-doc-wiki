@@ -932,7 +932,7 @@ ___Basic usage___
                 1. Raster map|convert to other format
                 1. Mapsforge map|convert to raster map
                 1. GDAL|VRT
-                
+                1. GDAL|supported version
                 
             * [How to use Russian military and similar raster maps with QMapShack?](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack)
             + Use of raster maps

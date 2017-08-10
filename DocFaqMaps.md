@@ -133,7 +133,7 @@ built for the given vector map. As a result, even the motorway is not displayed 
 There are various sources of raster maps in various formats.
 
 QMS supports raster formats that are
-* supported by `GDAL`. Create a VRT file for the given raster map. Then it can be used in QMS. To get a list of formats supported 
+* supported by the `GDAL` version used with QMapShack. Create a VRT file for the given raster map. Then it can be used in QMS. To get a list of formats supported 
   by `GDAL` run `gdaltransform.exe --formats` in a console window.
 * of type RMAP, GEMF, JNX (formats directly loaded by QMS).
 
@@ -151,6 +151,9 @@ some time depending on the size and the structure of the map!
 The [MAPC2MAPC64 map converter](http://mapc2mapc64.software.informer.com/5.1/ "MAPC2MAC64 map converter") is designed as a 
 converter between various raster map formats.
 
+**Remark about the QMS Windows version:** Many applications handling geodata use the `GDAL` package. Thus, it may happen that several different versions of this package
+can be found on the computer with different support for raster map formats. In order to avoid version conflicts QMS works exclusively with the `GDAL` version in its
+installation directory. Thus, a change of the `GDAL` related environment variables doesn't result in a change of the `GDAL`version used by QMS.
 
 ## How to use Russian military and similar raster maps with QMapShack?
 
