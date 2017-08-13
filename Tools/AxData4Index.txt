@@ -463,6 +463,8 @@ ___Basic usage___
             * [Basic Concept](DocGisTemplates#markdown-header-basic-concept)
             * [Order Of Items](DocGisTemplates#markdown-header-order-of-items)            
             
+        * [Additional information](DocGisTemplates#markdown-header-additional-information)
+        
  ___(Advanced usage part)___
 
 * [Databases and projects](AdvProjects)
@@ -832,7 +834,7 @@ ___Basic usage___
             + Find waypoint distance
                 1. Waypoint|distance
                 1. Waypoint|proximity
-              
+                          
             * [Which track data is saved in GPX files?](DocFaqHandling#markdown-header-which-track-data-is-saved-in-gpx-files)
             + Track data in GPX file
             ++ Which track data is saved in GPX file?
@@ -840,7 +842,13 @@ ___Basic usage___
                 1. GPX|extensions
                 1. Track|subpoint
                 1. GPX|subpoint handling in
-            
+
+            * [How to access data from legacy Garmin devices?](DocFaqHandling#markdown-header-how-to-access-data-from-legacy-garmin-devices)
+            + Data on legacy devices
+                1. Garmin|use of legacy device
+                1. GPS device|use of legacy Garmin device 
+                1. GPSBabel|use for data download
+                
             * [What is the difference between speed and gpxtpx:speed?](DocFaqHandling#markdown-header-what-is-the-difference-between-speed-and-gpxtpxspeed)
             + GPXTPX track extension
             ++ Speed in GPXTPX track extension

@@ -61,6 +61,27 @@ Trackpoints created by a routing engine can't be edited by the user whereas trac
 created by a user can be
 edited (compare section ["Edit items with multiple points"](DocGisItemsEditMultiple)).
 
+## How to access data from legacy Garmin devices?
+
+_(inspired by [newsgroup discussion](https://sourceforge.net/p/qlandkartegt/mailman/message/35994128))_
+
+The internal memory of legacy Garmin devices (e.g. the well-known Garmin GPS 60Csx) can't be connected as an USB drive to the computer even if they are connected 
+via USB to the computer.. Thus, data in the internal
+memory (e.g. the so-called ActiveLogs or waypoints saved in the device) can't be accessed directly from QMS.
+
+[`GPSBabel`](https://www.gpsbabel.org) (available for Windows, MacOS and Linux) can be used to download tracks and waypoints stored the internal memory of
+a Garmin GPS device by using the command:
+
+    gpsbabel -t -w -i garmin -f usb: -o gpx -F gpsdata.gpx
+
+Drag and drop the output file `gpsdata.gpx` to the QMS workspace or call
+
+    qmapshack.exe gpsdata.gpx
+    
+to see the tracks and waypoints.
+
+Compare the GPSBabel documentation for more details.
+
 ## What is the difference between speed and gpxtpx:speed?
 
 Various GPS receivers record different data for trackpoints. Some Garmin navigators use for this purpose
@@ -110,7 +131,7 @@ _Hint:_ Use the track profile in the map view, not the one in the track edit win
 _(inspired by newsgroup discussion [How to edit this track?](https://sourceforge.net/p/qlandkartegt/mailman/message/35965052))_
 
 Trackpoint data of tracks recorded by a GPS device consists not only of a position and a timestamp. Modern devices record different amounts of other (fitness) information
-such as elevation, cadence, pulse rate, temparature ...
+such as elevation, cadence, pulse rate, temperature ...
 
 While recording a track on a GPS device, the quality of GPS signals may vary. Signals may be weak or even disappear due to various reasons. 
 In such a case the recorded track data is not reliable or even completely wrong.
@@ -144,7 +165,7 @@ QMS offers the following track editing methods:
 
     This procedure removes the selected range of trackpoints from the track without losing information from other trackpoints.
 
-    _Warning:_ As long as you stay in the QMapShack Universe - using the database or the QMS files - you can revert all these steps in the history. However if you save to a GPX file the data will be lost permanently. In this case save a backup copy of the track before editing it!
+    _Warning:_ As long as you stay in the QMapShack Universe - using the database or the QMS files - you can revert all these steps in the history. However, if you save to a GPX file the data will be lost permanently. In this case save a backup copy of the track before editing it!
 
 
 Even as it is possible to remove erroneous recorded trackpoints with both methods, the later is the recommended one. The intended use-case for the track edit mode is to create artificial tracks to plan a tour. That is why additional data like timestamps and sensor data is removed as it won't be valid when moving points or combining different track fragments.

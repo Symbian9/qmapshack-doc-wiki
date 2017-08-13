@@ -10,6 +10,7 @@
 QMapShack supports data exchange with several GPS outdoor units. All newer Garmin devices accessible with mass storage mode will work. And all devices based on the CompeGPS software TwoNav, that are accessible as mass storage.
 
 **Linux:** Make sure you have installed the UDisks2 package.
+
 **Windows:** Supported from version 1.0.0 on.
 
 **Garmin**: If you want to see your device's SD memory card you have to copy the file _GarminDevice.xml_ from the internal _Garmin_ folder to the _Garmin_ folder on your SD memory card.

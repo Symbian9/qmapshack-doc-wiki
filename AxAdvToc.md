@@ -150,6 +150,7 @@ ___Do not edit - automatically created from DocMain!___
             * [Widgets Overview](DocGisTemplates#markdown-header-widgets-overview)
             * [Basic Concept](DocGisTemplates#markdown-header-basic-concept)
             * [Order Of Items](DocGisTemplates#markdown-header-order-of-items)
+            * [Additional information](DocGisTemplates#markdown-header-additional-information)
 
 
 ## Advanced usage
@@ -248,6 +249,7 @@ ___Do not edit - automatically created from DocMain!___
         * [How to create waypoint from POI (point of interest) in map?](DocFaqHandling#markdown-header-how-to-create-waypoint-from-poi-point-of-interest-in-map)
         * [How to find distance between waypoints](DocFaqHandling#markdown-header-how-to-find-distance-between-waypoints)
         * [Which track data is saved in GPX files?](DocFaqHandling#markdown-header-which-track-data-is-saved-in-gpx-files)
+        * [How to access data from legacy Garmin devices?](DocFaqHandling#markdown-header-how-to-access-data-from-legacy-garmin-devices)
         * [What is the difference between speed and gpxtpx:speed?](DocFaqHandling#markdown-header-what-is-the-difference-between-speed-and-gpxtpxspeed)
         * [How to remove DEM info from elevation graph?](DocFaqHandling#markdown-header-how-to-remove-dem-info-from-elevation-graph)
         * [How to edit tracks without losing track data?](DocFaqHandling#markdown-header-how-to-edit-tracks-without-losing-track-data)

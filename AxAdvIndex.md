@@ -338,6 +338,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Garmin, map images**
 :  [Supported vector maps](DocBasicsMapDem#markdown-header-vector-maps "Supported vector maps")
 
+**Garmin, use of legacy device**
+:  [Data on legacy devices](DocFaqHandling#markdown-header-how-to-access-data-from-legacy-garmin-devices "Data on legacy devices")
+
 **GDAL, supported version**
 :  [Supported raster maps](DocFaqMaps#markdown-header-which-raster-map-formats-are-supported "Supported raster maps")
 
@@ -387,10 +390,13 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [General description](DocGisDevices#markdown-header-general-description "General description")
 
 **GPS device, use of legacy Garmin device**
-:  [Use of legacy GPS devices](DocGisDevices#markdown-header-remark-about-garmin-gpsmap-60csx-and-similar-devices "Use of Garmin GPSmap 60CSx and similar devices")
+:  [Data on legacy devices](DocFaqHandling#markdown-header-how-to-access-data-from-legacy-garmin-devices "Data on legacy devices") ⊞ [Use of legacy GPS devices](DocGisDevices#markdown-header-remark-about-garmin-gpsmap-60csx-and-similar-devices "Use of Garmin GPSmap 60CSx and similar devices")
 
 **GPS device, use of**
 :  [General description](DocGisDevices#markdown-header-general-description "General description")
+
+**GPSBabel, use for data download**
+:  [Data on legacy devices](DocFaqHandling#markdown-header-how-to-access-data-from-legacy-garmin-devices "Data on legacy devices")
 
 **GPX, database saved as GPX**
 :  [Export database to GPX file](AdvProjActions#markdown-header-export-database-to-gpx-file "Export database to GPX file")
