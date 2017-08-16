@@ -44,7 +44,7 @@ Now you can select and edit what ever you want. Use the preview button to get an
 
 *Additional information:*
 
-* Remove text obtained from a template before using a template a second time. For tracks this can be done easily in the history tab of the track edit window.
+* Remove text obtained from a template before using a template a second time. This can be done easily in the history tab of the item's edit window.
 * Several templates with disjoint information (keywords/buzz words) can be applied to a data object.
 
 ## Create a Template
@@ -119,8 +119,7 @@ Not one for each group box. But this has no influence on the order of the group 
 ### Additional information
 
 * The name of the template shown in the combo box is the filename of the `UI` template file.
-* The bold keywords in the resulting text are the titles of the corresponding group boxes of the template. As mentioned above, their order is the alphabetical order of the
-  group box object names.
+* The bold keywords in the resulting text are the titles of the corresponding group boxes of the template. As mentioned above, their order is the alphabetical order of the group box object names.
    
 
 - - -
