@@ -241,6 +241,7 @@ ___Do not edit - automatically created from DocMain!___
         * [How to change the GUI language?](DocFaqConfig#markdown-header-how-to-change-the-gui-language)
     * [Databases and projects](DocFaqData)
         * [Why does QMapShack use a separate workspace.db to save data?](DocFaqData#markdown-header-why-does-qmapshack-use-a-separate-workspacedb-to-save-data)
+        * [Why are there no checkboxes for data in workspace projects?](DocFaqData#markdown-header-why-are-there-no-checkboxes-for-data-in-workspace-projects)
         * [How to edit quickly the name of a project?](DocFaqData#markdown-header-how-to-edit-quickly-the-name-of-a-project)
         * [How to find the location of a database file used in QMapShack?](DocFaqData#markdown-header-how-to-find-the-location-of-a-database-file-used-in-qmapshack)
         * [How to find database to which a project belongs?](DocFaqData#markdown-header-how-to-find-database-to-which-a-project-belongs)

@@ -152,6 +152,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Database, project in**
 :  [Data organization](AdvProjects#markdown-header-organization-of-qmapshack-data "Data organization")
 
+**Database, purpose of**
+:  [QMS data selection](DocFaqData#markdown-header-why-are-there-no-checkboxes-for-data-in-workspace-projects "QMS data selection")
+
 **Database, relation between database and workspace**
 :  [Workspace and Database](DocGisDatabaseWorkspaceDatabase "Workspace and Database") ⊞ [Workspace and database windows](AdvProjects#markdown-header-workspace-and-database-windows "Workspace and database windows")
 
@@ -1259,6 +1262,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Workspace, project in**
 :  [QMS workspace database](DocFaqData#markdown-header-why-does-qmapshack-use-a-separate-workspacedb-to-save-data "QMS workspace database")
+
+**Workspace, purpose of**
+:  [QMS data selection](DocFaqData#markdown-header-why-are-there-no-checkboxes-for-data-in-workspace-projects "QMS data selection")
 
 **Workspace, relation between database and workspace**
 :  [Workspace and Database](DocGisDatabaseWorkspaceDatabase "Workspace and Database") ⊞ [Workspace and database windows](AdvProjects#markdown-header-workspace-and-database-windows "Workspace and database windows")

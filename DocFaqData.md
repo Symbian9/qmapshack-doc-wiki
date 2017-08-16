@@ -27,6 +27,31 @@ is considered as temporary and therefore not part of the configuration.
 * The workspace data can be linked to data in a database. When restarting QMS with a different configuration
 (with different databases) workspace data gets lost if a link to the database can't be restored!
 
+## Why are there no checkboxes for data in workspace projects?
+
+_(taken from discussion on [QMS issue 246](https://bitbucket.org/maproom/qmapshack/issues/246/feature-request-add-hide-and-show#comment-39109722))_
+
+This question is directly related to the design philosophy of QMS and in particular its workspace.
+
+There are 2 locations for GIS data in QMS with different purpose:
+
+* the databases
+* the workspace
+
+QMS databases are used to keep all GIS data together in a structured way and to save it permanently. Except for deletion no data manipulation is possible in databases.
+
+The QMS workspace is used for working with part of the data saved in databases (or in external files).
+
+If there is a need to display some data or to edit it, then the necessary data items (tracks, routes, waypoints) should be selected with the help of checkboxes in the 
+database part of the 
+data window. Being selected the data items appear in the workspace. Using this procedure guarantees that the workspace and as a consequence the map windows aren't cluttered 
+with extra data. 
+
+Loading all data objects into the workspace and then selecting the ones to work with would imply a much heavier load on the QMS rendering engine and thus lead to less performance.
+
+
+
+
 ## How to edit quickly the name of a project?
 
 **Compare:** [QMS issues list](https://bitbucket.org/maproom/qmapshack/issues/160/update-of-diary-after-adding-a-waypoint)

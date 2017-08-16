@@ -808,6 +808,11 @@ ___Basic usage___
                 1. Workspace|project in
                 1. Project|in workspace
             
+            * [Why are there no checkboxes for data in workspace projects?](DocFaqData#markdown-header-why-are-there-no-checkboxes-for-data-in-workspace-projects)
+            + QMS data selection
+                1. Workspace|purpose of
+                1. Database|purpose of
+            
             * [How to edit quickly the name of a project?](DocFaqData#markdown-header-how-to-edit-quickly-the-name-of-a-project)
             + Edit project name
                 1. Project|edit
