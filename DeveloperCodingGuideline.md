@@ -101,7 +101,25 @@ the literals will be converted to an instance of a QString. As this costs cycles
 
 ```
 
-Funny enough all string operations do have overloaded versions for const char*. So no macro is needed.
+Funny enough all string operations do have overloaded versions for const char*. So no macro is needed. For example:
+
+
+```
+#!c++
+
+   str += "foo";
+   if(str == "bla")
+   {
+   .....
+
+```
+So that is perfectly fine code.
+
+As a rule of thumb:
+ 
+* check if the API implements the method with a "const char *" type -> use a simple literal
+* check if the API implements the method with QLatin1String -> use lit1() macro
+* check if the API implements the method with QStringLiteral -> use lit() macro
   
 
 - - -
