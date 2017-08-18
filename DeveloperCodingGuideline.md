@@ -83,10 +83,36 @@ No one likes them but it helps to read and maintain the code. Thus please stick 
 
 * Use `nullptr` for checking pointers against null, avoid using `0` or `NULL` for pointers
 
-I think that's it. Just look at the code and try to mimic the coding style as good as you can. A bit of discipline really helps to maintain the beast.
+##Usage of literals
+If you use a literal like 
 
+```
+#!c++
+   cfg.setValue("foobar", "default");
+```
 
+the literals will be converted to an instance of a QString. As this costs cycles at runtime we want to use QStringLiteral and QLatin1String wherever possible. As the use of these will have quite an impact on the readability of the code we have introduced some macros. lit() for QStringLiteral() and lit1() for QLatin1String().
 
+```
+#!c++
+   #include "helpers/Stuff.h"
+   ...
+   cfg.setValue(lit("foobar"), lit("default"));
+
+```
+
+Some methods take a QLatin1String or a QString. In that case the macro lit1() should be used as QLatin1String is even more efficient than QStringLiteral.
+
+```
+#!c++
+    QString str;
+    ...
+
+    str += lit1("bla");
+
+```
+
+  
 
 - - -
 [Prev](RequestFeatures) (Requesting a feature) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Commit Code) [Next](DeveloperCommitCode)
