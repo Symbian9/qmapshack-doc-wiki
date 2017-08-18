@@ -101,17 +101,7 @@ the literals will be converted to an instance of a QString. As this costs cycles
 
 ```
 
-Some methods take a QLatin1String or a QString. In that case the macro lit1() should be used as QLatin1String is even more efficient than QStringLiteral.
-
-```
-#!c++
-    QString str;
-    ...
-
-    str += lit1("bla");
-
-```
-
+Funny enough all string operations do have overloaded versions for const char*. So no macro is needed.
   
 
 - - -
