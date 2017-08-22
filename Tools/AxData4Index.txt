@@ -885,6 +885,7 @@ ___Basic usage___
                 1. Routino|road class preference
                 1. Routino|configuration
                 1. Configuration|Routino
+                1. Routino|edit routing profile
             
             
             * [Does QMapShack/Routino support cross-border routing?](DocFaqRouting#markdown-header-does-qmapshackroutino-support-cross-border-routing)
@@ -992,6 +993,8 @@ ___Basic usage___
 ___Developing QMapShack___
 
 * [Coding Guideline](DeveloperCodingGuideline)
+    * [Usage of literals](DeveloperCodingGuideline#markdown-header-usage-of-literals)
+    
 * [Commit Code](DeveloperCommitCode)
     * [Pull Request](DeveloperCommitCode#markdown-header-pull-request)
 * [Add translations](DeveloperTranslate)
@@ -1030,6 +1033,7 @@ ___No indices maintained in the following sections:___
 
 * [Playground - start your new Wiki page](DocPlayground)
 * [Hotkeys](AxHotkeys)
+* [Structure of main menu](AxMenuStructure)
 * [Complete table of contents](AxAdvToc)
 * [Basic usage](AxAdvToc#markdown-header-basic-usage)
 * [Advanced usage](AxAdvToc#markdown-header-advanced-usage)

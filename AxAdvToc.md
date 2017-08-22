@@ -1,4 +1,4 @@
-[Prev](AxHotkeys) (Hotkeys) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Glossary) [Next](AxGlossary)
+[Prev](AxMenuStructure) (Structure of main menu) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Glossary) [Next](AxGlossary)
 - - -
 [TOC]
 - - -
@@ -287,6 +287,7 @@ ___Do not edit - automatically created from DocMain!___
 
 
 * [Coding Guideline](DeveloperCodingGuideline)
+    * [Usage of literals](DeveloperCodingGuideline#markdown-header-usage-of-literals)
 * [Commit Code](DeveloperCommitCode)
     * [Pull Request](DeveloperCommitCode#markdown-header-pull-request)
 * [Add translations](DeveloperTranslate)
@@ -326,6 +327,7 @@ ___Do not edit - automatically created from DocMain!___
 
 
 * [Hotkeys](AxHotkeys) 
+* [Structure of main menu](AxMenuStructure)
 * [Complete table of contents](AxAdvToc)
     * [Basic usage](AxAdvToc#markdown-header-basic-usage)
     * [Advanced usage](AxAdvToc#markdown-header-advanced-usage)
@@ -356,4 +358,4 @@ ___Do not edit - automatically created from DocMain!___
 * [List of images (Advanced usage and FAQ parts only)](AxWikiImages)
 
 - - -
-[Prev](AxHotkeys) (Hotkeys) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Glossary) [Next](AxGlossary)
+[Prev](AxMenuStructure) (Structure of main menu) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Glossary) [Next](AxGlossary)

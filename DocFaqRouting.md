@@ -3,7 +3,7 @@
 [TOC]
 - - -
 
-# Frequently Asked Questions - Routing
+# Frequently Asked Questions - Routing with Routino router
 
 
 ## Why do route instructions use different languages?
@@ -27,15 +27,22 @@ The language for the routing algorithm was set by the user to Russian within QMS
 **Source:**
 
  * [www.naviboard.de](http://www.naviboard.de/vb/showthread.php?t=59418)
+ * [www.naviboard.de](https://www.naviboard.de/showthread.php?t=61373)
  * [gmane.comp.gis.qlandkartegt.user](http://article.gmane.org/gmane.comp.gis.qlandkartegt.user/2626)
 
-Routing in QMapShack depends on the [Routino](http://routino.org) package and this package does not offer an option to select a preferred road type.
+The Routino router in QMapShack depends on the [Routino](http://routino.org) package and this package does not offer an option to select a preferred road type.
 
 Routing profiles are saved in an XML-file (/usr/share/routino/profiles.xml). Here the preferences/weights of
 different road types can be modified by the user.
 
-On Routino's homepage there is an online version where fine-tuning of all parameters can be tried. Once done, there one can take over the values into the local `profiles.xml` file.
+On Routino's homepage there is an online version where fine-tuning of all parameters can be tried. Once done, one can take over the values into 
+the local `profiles.xml` file.
 
+**Remarks:** 
+
+* Change only values/weights in given profiles. 
+* QMS doesn't support changing the names (text strings) used in profiles.
+* QMS doesn't support adding new profiles.
 
 ## Does QMapShack/Routino support cross-border routing?
 

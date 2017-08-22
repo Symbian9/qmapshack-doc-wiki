@@ -267,11 +267,11 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Elevation, edit**
 :  [Edit track elevation](AdvTrkElevation#markdown-header-manually-edit-elevation-of-a-track-point "Edit track elevation")
 
-**Elevation, filter**
-:  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
-
 **Elevation, Filter**
 :  [Track elevation filter](DocGisItemsTrk2#markdown-header-elevation "Track elevation filter")
+
+**Elevation, filter**
+:  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
 
 **Elevation, invalid data**
 :  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
@@ -873,6 +873,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Routino, cross-border routing**
 :  [Routino cross-border routing](DocFaqRouting#markdown-header-does-qmapshackroutino-support-cross-border-routing "Routino cross-border routing")
+
+**Routino, edit routing profile**
+:  [Choose preferred routing road class](DocFaqRouting#markdown-header-is-there-a-possibility-to-choose-the-preferred-road-class-when-routing "Choose preferred routing road class")
 
 **Routino, fly-as-bird routing**
 :  [Routino fly-as-bird routing](DocFaqRouting#markdown-header-does-the-routino-router-support-_fly-as-a-bird_-routing "Routino fly-as-bird routing")

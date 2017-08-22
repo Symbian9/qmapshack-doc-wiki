@@ -91,6 +91,7 @@ Users can find short quickstart help here:
 ## Appendix
 
 * [Hotkeys](AxHotkeys) 
+* [Structure of main menu](AxMenuStructure)
 * [Complete table of contents](AxAdvToc)
 * [Glossary](AxGlossary)
 * [Index](AxAdvIndex)
