@@ -82,45 +82,8 @@ No one likes them but it helps to read and maintain the code. Thus please stick 
 * Use `const` keyword on methods. Best practice is to use right on the spot for every method. And remove it the moment the method really alters the object's data.
 
 * Use `nullptr` for checking pointers against null, avoid using `0` or `NULL` for pointers
-
-##Usage of literals
-If you use a literal like 
-
-```
-#!c++
-   cfg.setValue("foobar", "default");
-```
-
-the literals will be converted to an instance of a QString. As this costs cycles at runtime we want to use QStringLiteral and QLatin1String wherever possible. As the use of these will have quite an impact on the readability of the code we have introduced some macros. lit() for QStringLiteral() and lit1() for QLatin1String().
-
-```
-#!c++
-   #include "helpers/Stuff.h"
-   ...
-   cfg.setValue(lit("foobar"), lit("default"));
-
-```
-
-Funny enough all string operations do have overloaded versions for const char*. So no macro is needed. For example:
-
-
-```
-#!c++
-
-   str += "foo";
-   if(str == "bla")
-   {
-   .....
-
-```
-So that is perfectly fine code.
-
-As a rule of thumb:
- 
-* check if the API implements the method with a "const char *" type -> use a simple literal
-* check if the API implements the method with QLatin1String -> use lit1() macro
-* check if the API implements the method with QStringLiteral -> use lit() macro
   
+
 
 - - -
 [Prev](RequestFeatures) (Requesting a feature) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Commit Code) [Next](DeveloperCommitCode)
