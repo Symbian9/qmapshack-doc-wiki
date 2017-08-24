@@ -91,7 +91,7 @@ To update the code to the cutting edge change to the folder `QMapShack` and exec
 
 #### Compiling and Installing
 
-Create a new directory `build_QMapShack` (if it does not yet exist)
+Create a new directory `build_QMapShack` parallel to the source directory (if it does not yet exist)
 
     mkdir build_QMapShack
 
