@@ -83,6 +83,7 @@ No one likes them but it helps to read and maintain the code. Thus please stick 
 
 * Use `nullptr` for checking pointers against null, avoid using `0` or `NULL` for pointers
   
+* The use of `QStringLiteral` is kind of depreciated. On a PC system with a lot of memory and a powerful CPU the benefits are quite negligible. On the other hand side it spams the code, making it more tiring to read. Additionally the QT API is not very homogeneous in supplying overrides strictly for const QString& or  const char \*. You have to figure it out for each API method. That is why we drop the use of QStringLiteral. But of course if you use literals in a quite frequent or large loop the use of QStringLiteral is recommended.
 
 
 - - -
