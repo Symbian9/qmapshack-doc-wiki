@@ -355,6 +355,17 @@ described below:
 
 * Save the edited track by either clicking the `Save to original` or the `Save as new` button on top of the map view.
 
+
+## Find the length of a track interval
+
+**Source:** [Newsgroup discussion](https://sourceforge.net/p/qlandkartegt/mailman/message/36030297/)
+
+A track interval (a part of a track between 2 trackpoints) is called **range** in the QMS terminology. Thus, to find the length of a track interval
+
+* select a track range as described [here](AdvTrkGeneral#markdown-header-select-a-range-of-a-track) (compare also the instructions in the upper left corner of the map window),
+* find the length of the track interval/range and some other information of the range in the info window that pops-up.
+
+
 ## Assign colors to track activities
 
 **Source:** [Newsgroup discussion](https://sourceforge.net/p/qlandkartegt/mailman/message/35502464)

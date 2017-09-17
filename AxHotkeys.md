@@ -1,4 +1,4 @@
-[Prev](DocPlayground) (Playground - start your new Wiki page) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Structure of main menu) [Next](AxMenuStructure)
+[Prev](DocPlayground) (Playground - start your new Wiki page) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Main and context menu overview) [Next](AxMenuStructure)
 - - -
 [TOC]
 - - -
@@ -41,4 +41,4 @@ CTRL-R | Select range of track points.
 When in text edit fields the usual hotkeys can be used.
 
 - - -
-[Prev](DocPlayground) (Playground - start your new Wiki page) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Structure of main menu) [Next](AxMenuStructure)
+[Prev](DocPlayground) (Playground - start your new Wiki page) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Main and context menu overview) [Next](AxMenuStructure)

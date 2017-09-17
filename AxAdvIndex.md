@@ -766,6 +766,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 ## R
 
 
+**Range, find length**
+:  [Find the length of a track interval](AdvTrkGeneral#markdown-header-find-the-length-of-a-track-interval "Find the length of a track interval")
+
 **Range, of track in edit mode**
 :  [Select a range of a track in edit mode](AdvTrkGeneral#markdown-header-select-a-range-of-a-track-in-edit-mode "Select a range of a track in edit mode")
 
@@ -1043,6 +1046,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Track, filters tab**
 :  [Track filter tab](DocGisItemsTrk2#markdown-header-filter "Track details, filter tab")
+
+**Track, find length of range**
+:  [Find the length of a track interval](AdvTrkGeneral#markdown-header-find-the-length-of-a-track-interval "Find the length of a track interval")
 
 **Track, get information**
 :  [Get track information](AdvTrkGeneral#markdown-header-get-track-information "Get track information")

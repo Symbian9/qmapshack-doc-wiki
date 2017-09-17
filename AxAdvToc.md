@@ -1,4 +1,4 @@
-[Prev](AxMenuStructure) (Structure of main menu) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Glossary) [Next](AxGlossary)
+[Prev](AxMenuStructure) (Main and context menu overview) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Glossary) [Next](AxGlossary)
 - - -
 [TOC]
 - - -
@@ -202,6 +202,7 @@ ___Do not edit - automatically created from DocMain!___
             * [Select a range of a track](AdvTrkGeneral#markdown-header-select-a-range-of-a-track)
             * [Select a range of a track in edit mode](AdvTrkGeneral#markdown-header-select-a-range-of-a-track-in-edit-mode)
             * [Move track range to new location](AdvTrkGeneral#markdown-header-move-track-range-to-new-location)
+            * [Find the length of a track interval](AdvTrkGeneral#markdown-header-find-the-length-of-a-track-interval)
             * [Assign colors to track activities](AdvTrkGeneral#markdown-header-assign-colors-to-track-activities)
             * [Recorded and calculated track data](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data)
             * [Avoid and remove invalid data in a track](AdvTrkGeneral#markdown-header-avoid-and-remove-invalid-data-in-a-track)
@@ -287,7 +288,6 @@ ___Do not edit - automatically created from DocMain!___
 
 
 * [Coding Guideline](DeveloperCodingGuideline)
-    * [Usage of literals](DeveloperCodingGuideline#markdown-header-usage-of-literals)
 * [Commit Code](DeveloperCommitCode)
     * [Pull Request](DeveloperCommitCode#markdown-header-pull-request)
 * [Add translations](DeveloperTranslate)
@@ -327,7 +327,16 @@ ___Do not edit - automatically created from DocMain!___
 
 
 * [Hotkeys](AxHotkeys) 
-* [Structure of main menu](AxMenuStructure)
+* [Main and context menu overview](AxMenuStructure)
+    * [Structure of main menu](AxMenuStructure#markdown-header-structure-of-main-menu)
+    * [Structure of most important context menus](AxMenuStructure#markdown-header-structure-of-most-important-context-menus)
+        * [Context menu of project](AxMenuStructure#markdown-header-context-menu-of-project)
+        * [Context menu of device project](AxMenuStructure#markdown-header-context-menu-of-device-project)
+        * [Context menu of track](AxMenuStructure#markdown-header-context-menu-of-track)
+        * [Context menu of route](AxMenuStructure#markdown-header-context-menu-of-route)
+        * [Context menu of waypoint](AxMenuStructure#markdown-header-context-menu-of-waypoint)
+        * [Context menu of multiple selected items](AxMenuStructure#markdown-header-context-menu-of-multiple-selected-items)
+        * [Context menu of map window](AxMenuStructure#markdown-header-context-menu-of-map-window)
 * [Complete table of contents](AxAdvToc)
     * [Basic usage](AxAdvToc#markdown-header-basic-usage)
     * [Advanced usage](AxAdvToc#markdown-header-advanced-usage)
@@ -358,4 +367,4 @@ ___Do not edit - automatically created from DocMain!___
 * [List of images (Advanced usage and FAQ parts only)](AxWikiImages)
 
 - - -
-[Prev](AxMenuStructure) (Structure of main menu) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Glossary) [Next](AxGlossary)
+[Prev](AxMenuStructure) (Main and context menu overview) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Glossary) [Next](AxGlossary)
