@@ -99,6 +99,15 @@ Later when the text is produced the following strings are used:
 
 You can edit the widget text either via the property editor or usually with a double click on the widget. For the line and the text edit it's usually up to the user.
 
+### Layout Management
+
+Your templeate will not show anything in QMapShack unless you use the layout management. Each widget that groups other widgets has to use a layout. By that the other widgets are placed relative to the grouping widget. To define a layout do a rightclick on the grouping widget and select "Layout" from the context menu. Another menu shows up:
+
+![Designer Layout](images/DocGisTemplates/DesignerLayout.png "Designer Layout") 
+
+Depending on your task you can select horizontal, vertical or grid layout. For most cases these three will do. You can also embedd other layouts in a layout. Simply drag-n-drop the layouts from the widget box into a layout of the template widget. Use spacers from the widget box to squeeze the other items in a layout.
+
+
 ### Order Of Items
 
 Usually you want to enforce the order of the text fragments from the widgets in the final text. In fact they are sorted by the tab focus order. 
