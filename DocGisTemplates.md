@@ -5,8 +5,6 @@
 
 # Text Editor Templates
 
-*upcoming feature - not yet published*
-
 QMapShack has the functionality to search the database or filter the workspace items by searching for a text in the items full text information. This information includes
 
 * The item's name
