@@ -18,6 +18,16 @@ Aktionen können auch in anderer Form ausgeführt werden. Auf eine Diskussion da
 
 Ausführliche Informationen zu QMS erhält man im englischsprachigen [Wiki](DocMain "QMS Wiki").
 
+## Wichtige Eigenschaften von QMS
+
+* Einfache und flexible Nutzung von Vektor-, Raster- und Onlinekarten
+* Nutzung von Höhendaten
+* Erzeugung/Planung von Routen und Tracks mit verschiedenen Routern
+* Auswertung aufgezeichneter Daten (Tracks) aus unterschiedlichen Navigations- und Fitnessgeräten
+* Bearbeitung geplanter Routen und Tracks
+* Strukturierte Speicherung von Daten in Datenbanken oder Dateien
+* Direkte Lese- und Schreibverbindung zu modernen Navigations- und Fitnessgeräten
+
 ## Dateien aus dem Internet herunterladen
 
 _Hinweise_:
@@ -34,14 +44,14 @@ heruntergeladen werden können.
 * _QMapShack_:
 
     * [QMS vom Bitbucket-Server laden](https://bitbucket.org/maproom/qmapshack/downloads "QMS Installationsdatei laden").
-      Von dieser Seite Datei `QMapShack_Install_Windows64bit__1.7.2.exe` laden (etwa 50 MB, Versionsnummer kann verschieden sein).
+      Von dieser Seite Datei `QMapShack_Install_Windows64bit__1.9.1.exe` laden (etwa 50 MB, Versionsnummer kann verschieden sein).
 
 * _Kartenunterstützung (empfohlen)_:
 
     * [Vektorkarte Deutschland (Freizeitkarte) laden](http://download.freizeitkarte-osm.de/garmin/latest/DEU_de_gmapsupp.img.zip "Freizeitkarte Deutschland"). 
-      (Etwa 1.4 GB, falls Garmin Navigationsgerät benutzt wird, ist eine geeignete Datei `gmapsupp*.img` möglicherweise schon vorhanden 
+      (Direkter Dateilink, etwa 1.4 GB! Falls Garmin Navigationsgerät benutzt wird, ist eine geeignete Datei `gmapsupp*.img` möglicherweise schon vorhanden 
       und kann für diesen Schritt benutzt werden)
-    * _Optional:_ [Online-Kartenlinks laden](http://www.mtb-touring.net/qms/onlinekarten-einbinden/ "Online-Karten"). _Hinweis:_ Blaues Feld `Download online maps`
+    * _Optional:_ [Online-Kartenlinks laden](http://www.mtb-touring.net/qms/onlinekarten-einbinden/ "Online-Karten"). _Hinweis:_ Feld `Download online maps`
       klicken! Liefert Datei `Onlinemaps.zip`.
     
 * _Routingunterstützung (empfohlen zum Erstellen neuer Strecken)_:
@@ -64,8 +74,8 @@ heruntergeladen werden können.
     _Hinweis:_ Es sollten alle für die gewählte Region erforderlichen Dateien heruntergeladen werden!
     
 ## Installation
-* Alle heruntergeladenen Dateien sind im Downloadverzeichnis des Nutzers zu finden.
-* Finde die Datei `QMapShack_Install_Windows64bit__1.7.2.exe` im Download-Verzeichnis.
+* Alle heruntergeladenen Dateien sind im Download-Verzeichnis des Nutzers zu finden.
+* Finde die Datei `QMapShack_Install_Windows64bit__1.9.1.exe` im Download-Verzeichnis.
 * Starte diese Installationsdatei durch einen Doppelklick auf den Dateinamen.
 * Bestätige die Informationen in den ersten Installationsfenstern.
 * Im Fenster `Komponenten auswählen` muss der Punkt `MSVC++ 2013 SP1 runtime` ausgewählt werden (dies kann unterbleiben, wenn auf dem
@@ -101,7 +111,7 @@ heruntergeladen werden können.
 
     ![QMS starten](images/DocAdv/InstallProgramMenu.jpg "QMapShack Startmenü")
   
-* Es erscheint die noch leere QMS Oberfläche. Ist die Betriebssystemssprache deutsch, so wird auch deutsch als Sprache in 
+* Es erscheint die noch leere QMS Oberfläche. Ist die Betriebssystemsprache deutsch, so wird auch deutsch als Sprache in 
   der QMS Oberfläche benutzt.
   
     ![QMS Arbeitsoberfläche](images/DocAdv/InstallGuiDe.jpg "QMS Anfangsoberfläche")
@@ -113,13 +123,18 @@ heruntergeladen werden können.
   
 * Die Arbeitsoberfläche enthält einige Hinweise über empfohlene erste Aktionen. Diese werden in den folgenden Punkten beschrieben. Ähnliche
   Hinweise in Form von Infoblasen erhält man häufig beim Arbeiten mit QMS, wenn man mit der Maus auf ein angezeigtes Objekt weist. 
-* _Vektorkarten aktivieren:_ 
+* _Vektorkarten aktivieren und Detailgrad einstellen:_ 
     * Gehe mit der Maus in das Fenster `Karten`.
-    * Öffne mit Rechtsklick das Kontextmenu und wähle `Kartenverzeichnis angeben`.
+    * Öffne mit Rechtsklick das Kontextmenü und wähle `Kartenverzeichnis angeben`.
     * Öffne das Verzeichnis `QMS\Karten` und wähle dieses Verzeichnis aus.
     * Im Kartenfenster erscheint als neuer Eintrag `Freizeitkarte DE`.
     * Öffne mit Rechtsklick auf den Kartennamen das Kontextmenü und wähle `Aktivieren`.
     * Verschiebe Karte zu einer Position, die in der Karte enthalten ist. Die Karte sollte zu sehen sein.
+    * Ein Doppelklick auf den Namen einer aktivierten Vektorkarte öffnet die Anzeige einzustellender Karteneigenschaften:
+      * Transparenz der Karte (Schieberegler).
+      * Anzeige von Gebieten, Linien und Punkten.
+      * Anzeige von Kartendetails (einstellbar zwischen -5 und 5).
+    
 * _Optional: Online-Karten aktivieren: (setzt Wahl des Kartenverzeichnisses in vorhergehenden Schritt voraus!)_
     * Gehe mit der Maus in das Fenster `Karten`.
     * Öffne mit Rechtsklick das Kontextmenü und wähle `Karten erneut laden`.
@@ -135,7 +150,7 @@ heruntergeladen werden können.
 * _Optional: Routingunterstützung aktivieren:_
     * Wähle den Menüpunkt `Werkzeug - Routino Datenbank erstellen`.
     * Es öffnet sich ein neues Fenster.
-    * Wähle als Quelldatei `QMS\Routino\berlin-latest.osm.pbf` und als Zielpfad `QMS\Routino` aus.
+    * Wähle als Quelldatei `QMS\Routino\berlin-latest.osm.pbf` und als Zielpfad `QMS\Routino` aus (_im nachfolgenden Bild werden aus technischen Gründen andere Pfade gezeigt!_).
     * Gib als Dateipräfix z.B. `BE` ein.
     * Wähle `Starten`.
     * In der rechten Spalte des Fensters kann man die ablaufenden Aktionen verfolgen. Dieser Vorgang kann einige Zeit dauern!
@@ -152,7 +167,7 @@ heruntergeladen werden können.
     * Wähle den Menüpunkt `Werkzeug - VRT Builder`.
     * Es öffnet sich ein neues Fenster.
     * Wähle als Quelldatei `QMS\DEM\N51E012.hgt` (Mehrfachauswahl für weitere HGT-Dateien möglich!) und als Zieldatei `QMS\DEM\N51E012` aus
-      (die Endung `.vrt` wird automatisch angefügt).
+      (die Endung `.vrt` wird automatisch angefügt. (_Im nachfolgenden Bild werden aus technischen Gründen andere Pfade gezeigt!_).
     * Wähle `Start`. Der Abschluss der Operation wird angezeigt.
 
       ![VRT für Höhendaten erstellen](images/DocAdv/InstallDem2Vrt.jpg "VRT für Höhendaten erstellen")
@@ -191,9 +206,11 @@ Mit diesen Schritten ist ein arbeitsfähiger Zustand für QMS hergestellt.
       wird die Karte bewegt. Ist die gewünschte Kartenposition erreicht, Maustaste loslassen.
     * Mit dem Mausrad kann die Karte vergrößert oder verkleinert werden.  
     
+    
 ### GPX-Datei laden und Daten anzeigen
 
 * _Annahme:_ Es ist eine GPX-Datei `QMS\MeinProjekt.gpx` vorhanden.
+* __Hinweis:__ Es können auch Dateien in einigen anderen Formaten (TCX, FIT, ...) in ähnlicher Weise geladen werden!
 * Wähle Menüpunkt `Datei - GIS Daten laden` und wähle `QMS\MeinProjekt.gpx` im Dateiauswahlfenster aus.
 * Im oberen Teil des Fensters `Daten` (_Projektfenster_) erscheint ein neuer Projekteintrag mit Namen `MeinProjekt`.
 * Nach Öffnen des Projekts werden die in der GPX-Datei (d.h. die im Projekt) vorhandenen Wegpunkte und Tracks angezeigt.
@@ -263,7 +280,7 @@ _Weitere Informationen:_
 
 ### Track erzeugen
 
-* _Annahme:_ Die Routingunterstützung wurde installiert.
+* _Annahme:_ Die Routingunterstützung wurde installiert und ist aktiviert.
 * Gehe mit der Maus zum Fenster `Route`.
 * Wähle in der obersten Auswahlliste des Fensters `Routino (offline)`.
 * Wähle in den weiteren Listen das Profil (die Fortbewegungsart), die Sprache (für Abbiegehinweise), den Modus (kürzeste/schnellste) 
@@ -286,8 +303,49 @@ _Weitere Informationen:_
 * Öffne mit einem Rechtsklick auf den Projektnamen das Kontextmenü und wähle `Speichern`. Das Projekt mit seinen
   Daten wird in dem gewählten Datenbankordner permanent gespeichert. Der gespeicherte Track erscheint als Zeile im Datenbankordner.
   
+### Trackinformationen anzeigen
+
+Trackinformationen sind in unterschiedlicher Form und Detailliertheit verfügbar:
+
+* _Im Projektfenster:_ Wenn der Mauszeiger auf den Tracknamen geschoben wird, so werden summarische Informationen zum Track angezeigt.
+* _Im Kartenfenster:_ Durch Doppelklick auf den Tracknamen im Projektfenster wird das Kartenfenster so eingestellt, dass der Track vollständig angezeigt wird. 
+  Schiebt man den Mauszeiger auf den Track im Kartenfenster, so werden für den gewählten Trackpunkt die Entfernung zu Anfang und Ende des Tracks sowie Informationen zum gewählten
+  Trackpunkt (Höhe, Geschwindigkeit, ...) angezeigt.
+* _Im Trackinfo-/Editfenster:_ Dieses Fenster wird über das Trackkontextmenü im Projektfenster mittels des Menüpunkts `Bearbeiten...` geöffnet. Es zeigt neben summarischen Informationen 
+  bis zu 3 Verlaufskurven. Je nach Verfügbarkeit kann die Höhe, die Geschwindigkeit, der Anstieg, ... über der Entfernung bzw. der Zeit grafisch dargestellt werden.
+  Die Auswahl erfolgt über den Reiter `Diagramme`.
+  Dieses Fenster unterstützt über eine Reihe von Filtern im Reiter `Filter` auch das Bearbeiten geplanter Tracks.
+
+### Track (Route) durch Wegpunkte erzeugen
+
+* _Aufgabe:_ Es soll Track durch eine vorgegebene Reihe von Wegpunkten gefunden werden.
+* _Annahme:_ Die Routingunterstützung wurde installiert und ist aktiviert.
+* Kopiere, falls erforderlich, alle zu benutzenden Wegpunkte in 1 Projekt.
+* Wähle im Fenster `Route` den gewünschten Router (`Routino (offline)`) und die gewünschten Routingoptionen.
+* Wähle bei gedrückter Steuerungstaste die zu durchlaufenden Wegpunkte in der erforderlichen Reihenfolge.
+* Öffne mit Rechtsklick auf einen ausgewählten Wegpunkt das Kontextmenü und wähle `Route erstellen`.
+* Kontrolliere und ändere, falls erforderlich, die Reihenfolge der Wegpunkte im neuen Fenster `Route aus Wegpunkten erstellen`.
+
+    ![Track durch Wegpunkte](images/DocAdv/WPTs2Trk.jpg "Track durch Wegpunkte")
+
+* Wähle `Ok`, um eine Route durch die Wegpunkte zu erzeugen. 
+* Gib der neuen Route einen Namen und ordne sie einem Projekt zu.
+* Öffne mit Rechtsklick auf die neue Route im Projekt das Kontextmenü und wähle `In einen Track umwandeln`.
+* Gib dem neuen Track einen Namen und ordne ihn einem Projekt zu.
+
+
+### Wegpunkt suchen  
   
-  
+* _Annahme:_ Internetverbindung ist verfügbar.
+* Wähle Menüpunkt `Projekt - Mit Google suchen`. Es öffnet sich ein Eingabefeld im Projektfenster.
+* Gib Name bzw. Adresse des gesuchten Wegpunkts in der bei Google üblichen Form ein und bestätige die Eingabe mit der Eingabetaste.
+
+    ![Wegpunktsuche](images/DocAdv/SearchWPT.jpg "Beispiel für Wegpunktsuche")
+
+* Wird der gesuchte Wegpunkt über die Google-Suche gefunden, so erscheint das Ergebnis als Wegpunkt unter dem Eingabefeld. 
+* Kopiere den neuen Wegpunkt in ein normales Projekt zum Speichern.    
+
+
 
 - - -
 Prev () | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | () Next

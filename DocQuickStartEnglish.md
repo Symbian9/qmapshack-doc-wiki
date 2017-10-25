@@ -17,6 +17,16 @@ actions can also be performed in a different way. The discussion of these possib
 Detailed information on QMS is available in the
 [Wiki](DocMain "QMS Wiki").
 
+## Basic QMS features
+
+* Easy and flexible use of vector, raster, and online maps
+* Use of elevation data
+* Creation/planning of routes and tracks with different routers
+* Analysis of recorded data (tracks) from various navigation and fitness devices
+* Editing of planned routes and tracks
+* Structured saving of data in databases or files
+* Direct read and write connection to up-to-date navigation and fitness devices
+
 ## Download files from Internet
 
 _Hints_:
@@ -30,15 +40,15 @@ The following links are recommendations for files which allow comfortable workin
 * _QMapShack_:
 
     * [Load QMS from Bitbucket-Server](https://bitbucket.org/maproom/qmapshack/downloads "Load QMS installation file").
-      Download the file `QMapShack_Install_Windows64bit__1.7.2.exe` from this site (approximately 50 MB, version number can be different).
+      Download the file `QMapShack_Install_Windows64bit__1.9.1.exe` from this site (approximately 50 MB, version number can be different).
 
 * _Use of maps (recommended)_:
 
     * [Load vector map Germany (Freizeitkarte)](http://download.freizeitkarte-osm.de/garmin/latest/DEU_de_gmapsupp.img.zip "Freizeitkarte Deutschland"). 
-      (Choose your region! Approximately 1.4 GB, if a Garmin navigation device is used, a suitable file `gmapsupp*.img` may already exist
+      (Choose your region! This links to a file! Approximately 1.4 GB, if a Garmin navigation device is used, a suitable file `gmapsupp*.img` may already exist
        and can be used in this step)
     * _Optional:_ [Load links to on-line maps](http://www.mtb-touring.net/qms/onlinekarten-einbinden/ "On-line maps"). 
-      _Hint:_ Click blue field `Download online maps`! Result is a downloaded file `Onlinemaps.zip`.
+      _Hint:_ Click field `Download online maps`! Result is a downloaded file `Onlinemaps.zip`.
     
 * _Routing support (recommended for creation of new routes and tracks)_:
 
@@ -61,8 +71,8 @@ The following links are recommendations for files which allow comfortable workin
     _Hint:_ Download as many files as needed for your region!  
       
 ## Installation
-* All downloaded files are in the user's download directory.
-* Find the file `QMapShack_Install_Windows64bit__1.7.2.exe` in the download directory.
+* All downloaded files are saved in the user's download directory.
+* Find the file `QMapShack_Install_Windows64bit__1.9.1.exe` in the download directory.
 * Start this installation file by double-clicking the filename.
 * Confirm the information in the first installation windows.
 * In the `Select Components window`, select `MSVC ++ 2013 SP1 runtime` (this can be omitted if 
@@ -72,7 +82,7 @@ The following links are recommendations for files which allow comfortable workin
   The QMS installation is then continued and QMS is installed completely.
 * QMS can already now be started from the Start menu. However, it is recommended to perform still the following steps.
 * Create a directory where the user has write permission. In the following discussion
-  this directory called `QMS`. _Note:_ The user has no
+  this directory is called `QMS`. _Note:_ The user has no
   full write permission for the default installation directory, so in this step a
   separate directory for data must be created.
 * Add the following subdirectories to the directory `QMS`
@@ -107,13 +117,18 @@ The following links are recommendations for files which allow comfortable workin
 * The GUI contains some hints about recommended first actions. These are described in the following points. Similar
   information in the form of info boxes is often obtained if one points with the mouse on a displayed object. 
    
-* _Activate vector maps:_
+* _Activate vector maps and choose level of map details:_
     * Go to the `Maps` window with your mouse.
     * Open the context menu with a right click and select `Setup map paths`.
     * Open the folder `QMS\Maps` and select this folder.
     * In the map window appears a new entry `LeisureMap DE`.
     * Open the context menu with a right click on the map name and select `Activate`.
     * Move the map to a position that is contained in the map. The map should be visible.
+    * A double-click on the name of an activated vector map opens the display of configurable map properties:
+      * Opacity of the map (slider).
+      * Display of areas, lines and points.
+      * Level of map details display (between -5 and 5).
+      
 * _Optional: Activate on-line maps: (requires selection of the map folder in the previous step!)_
     * Go to the `Maps` window with your mouse.
     * Open the context menu with a right click and select `Reload Maps`.
@@ -180,7 +195,7 @@ With these steps, a workable state of QMS is reached.
     * The keys "__+__" and "__-__" increase or decrease the map scale (zoom in and out).
 * _With the mouse:_
     * Press and hold the left mouse button to fix the map to the mouse. When moving the mouse (without releasing the pressed key),
-      the map is moved. Once the desired map position has been reached, release the mouse key.
+      the map is moved. Once the desired map position has been reached, release the mouse button.
     * Use the mouse wheel to zoom in or out.
     
 ### Load GPX file and show data
@@ -276,9 +291,46 @@ _Further information:_
 * Open the context menu with a right click on the project name and select `Save`. The project with its
   data is permanently saved in the selected database folder. The saved track appears as a line in the database folder.
 
+### Display track information
+
+Track information is provided in various forms and with different detail level.
+
+* _In the project window:_ If the mouse pointer is located on the track name in the project window, then a summary of track information is shown.
+* _In the map window:_ A double click on the track name in the project window moves and zooms the map so that the track is completely shown in the map window.
+  Moving the mouse to the track in the map window gives the distance of the selected trackpoint to the begin and the end of the track as well as some additional
+  information (elevation, speed, ...) of the trackpoint.
+* _In the track info (edit) window:_ To open this window select `Edit...` from the track context menu in the project window. It shows summary 
+  information of the track and up to 3 graphs. Depending on data availability track speed, elevation, slope, ... can be shown as function of the distance or the time.
+  Select the form of the graph with the help of the tab `Graphs`. This window also provides in the tab `Filter` a series of filters for editing track data.
   
+
+### Create track (route) through waypoints
+
+* _Task:_ Find track through given series of waypoints.
+* _Assumption:_ Routing support has been installed and activated.
+* Copy, if necessary, all required waypoints into 1 project.
+* Choose in the window `Route` the wanted router (Routino (offline)) and its options.
+* Select while holding the CTRL-key down the required waypoints in the wanted order.
+* Open with a right-click on a selected waypoint the context menu and select `Create Route`.
+* Check and change, if necessary, the order of the waypoints in the window `Create route from waypoints`.
+
+    ![Track through waypoints](images/DocAdv/WPTs2TrkEn.jpg "Track through waypoints")
+
+* Press `Ok` to start the creation of a route through the given waypoints.
+* Assign a name and project to the new route.
+* Open with a right-click on the new route the context menu and select `Convert to Track`.
+* Assign a name and a project to the new track.
+
+### Find waypoint 
   
+* _Assumption:_ Connection to the Internet is available.
+* Select menu entry `Project - Search Google` to open an edit field in the project window.
+* Type name resp. address of the waypoint if the form used for a Google search and press the `Return` key.
   
+    ![Find waypoint](images/DocAdv/SearchWPT.jpg "Find waypoint")
+  
+* If the waypoint could be found, then the result is shown as a new waypoint below the edit field.
+* Copy the new waypoint into a normal project for saving.
 
 - - -
 Prev () | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | () Next
