@@ -149,6 +149,7 @@ ___Do not edit - automatically created from DocMain!___
         * [Create a Template](DocGisTemplates#markdown-header-create-a-template)
             * [Widgets Overview](DocGisTemplates#markdown-header-widgets-overview)
             * [Basic Concept](DocGisTemplates#markdown-header-basic-concept)
+            * [Layout Management](DocGisTemplates#markdown-header-layout-management)
             * [Order Of Items](DocGisTemplates#markdown-header-order-of-items)
             * [Additional information](DocGisTemplates#markdown-header-additional-information)
 
@@ -230,6 +231,24 @@ ___Do not edit - automatically created from DocMain!___
         * [Get route instructions](AdvRoutes#markdown-header-get-route-instructions)
         * [Save route in GPX file](AdvRoutes#markdown-header-save-route-in-gpx-file)
         * [Description of routing methods in QMapShack](AdvRoutes#markdown-header-description-of-routing-methods-in-qmapshack)
+* [Overview of setup and configuration options](AdvSetup)       
+    * [General options](AdvSetup#markdown-header-general-options)
+        * [Workspace setup ](AdvSetup#markdown-header-workspace-setup)
+        * [Waypoint icons setup](AdvSetup#markdown-header-waypoint-icons-setup)
+        * [Toolbar setup](AdvSetup#markdown-header-toolbar-setup)
+    * [Map and DEM setup](AdvSetup#markdown-header-map-and-dem-setup)
+        * [Map paths](AdvSetup#markdown-header-map-paths)
+        * [Map cache path for online maps](AdvSetup#markdown-header-map-cache-path-for-online-maps)
+        * [DEM file paths](AdvSetup#markdown-header-dem-file-paths)
+        * [Map window display switches (toggles)](AdvSetup#markdown-header-map-window-display-switches-toggles)
+        * [Map window display settings](AdvSetup#markdown-header-map-window-display-settings)
+        * [Single map display options](AdvSetup#markdown-header-single-map-display-options)
+    * [Routing setup](AdvSetup#markdown-header-routing-setup)
+        * [Routino database paths](AdvSetup#markdown-header-routino-database-paths)
+        * [Routino settings](AdvSetup#markdown-header-routino-settings)
+        * [BRouter settings](AdvSetup#markdown-header-brouter-settings)
+        * [MapQuest settings](AdvSetup#markdown-header-mapquest-settings)
+    * [Further setup and configuration options](AdvSetup#markdown-header-further-setup-and-configuration-options)
 
 
 ## Getting Help

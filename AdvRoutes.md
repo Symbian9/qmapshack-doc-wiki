@@ -1,4 +1,4 @@
-[Prev](AdvTrkHist) (Track history and saving) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Frequently Asked Questions) [Next](DocFaq)
+[Prev](AdvTrkHist) (Track history and saving) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | (Overview of setup and configuration options) [Next](AdvSetup)
 - - -
 [TOC]
 - - -
@@ -162,4 +162,4 @@ _Remark:_ These methods work in the same way for track and for route creation.
 
 
 - - -
-[Prev](AdvTrkHist) (Track history and saving) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Frequently Asked Questions) [Next](DocFaq)
+[Prev](AdvTrkHist) (Track history and saving) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Overview of setup and configuration options) [Next](AdvSetup)

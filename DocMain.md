@@ -65,6 +65,7 @@ Users can find short quickstart help here:
         * [Editing elevation data](AdvTrkElevation)  
         * [Track history and saving](AdvTrkHist)        
     * [Routes and Routing](AdvRoutes)
+* [Overview of setup and configuration options](AdvSetup)       
        
 ## Getting Help
 

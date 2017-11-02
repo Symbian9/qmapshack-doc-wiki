@@ -73,8 +73,11 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Compilation, Windows**
 :  [Compile instructions](BuildWindowsVisualStudio#markdown-header-compile-instructions "Compile instructions")
 
+**Configuration, overview of options**
+:  [Setup options](AdvSetup "Setup options")
+
 **Configuration, Routino**
-:  [Choose preferred routing road class](DocFaqRouting#markdown-header-is-there-a-possibility-to-choose-the-preferred-road-class-when-routing "Choose preferred routing road class") ⊞ [User-relevant directories (Windows)](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant directories (Windows)")
+:  [Choose preferred routing road class](DocFaqRouting#markdown-header-is-there-a-possibility-to-choose-the-preferred-road-class-when-routing "Choose preferred routing road class") ⊞ [Routing setup](AdvSetup#markdown-header-routing-setup "Routing setup") ⊞ [User-relevant directories (Windows)](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant directories (Windows)")
 
 **Contour line, from Garmin IMG**
 :  [Vector map in Garmin IMG format](DocMapsTipsTricks#markdown-header-vector-map-in-garmin-img-format "Vector map in Garmin IMG format")
@@ -185,6 +188,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Delete data, in workspace & database**
 :  [Workspace and database windows](AdvProjects#markdown-header-workspace-and-database-windows "Workspace and database windows")
 
+**DEM setup, overview of options**
+:  [Map and DEM setup](AdvSetup#markdown-header-map-and-dem-setup "Map and DEM setup")
+
 **DEM, add elevation data**
 :  [Add digital elevation model](DocGettingStarted#markdown-header-add-digital-elevation-model "Add digital elevation model")
 
@@ -205,6 +211,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **DEM, installation**
 :  [Installing Raster Maps or DEM Data](DocInstallMapDem#markdown-header-installing-raster-maps-or-dem-data "Installing Raster Maps or DEM Data")
+
+**DEM, overview of setup**
+:  [Map and DEM setup](AdvSetup#markdown-header-map-and-dem-setup "Map and DEM setup")
 
 **DEM, properties of DEM**
 :  [DEM Files](DocControlMapDem#markdown-header-dem-files "DEM Files")
@@ -483,6 +492,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Main window, layout**
 :  [Getting started](DocGettingStarted "Getting started")
 
+**Map setup, overview of options**
+:  [Map and DEM setup](AdvSetup#markdown-header-map-and-dem-setup "Map and DEM setup")
+
 **Map view, add**
 :  [Workspace](DocControlMapDem#markdown-header-workspace "Workspace")
 
@@ -549,6 +561,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Map, openmtbmap (Linux)**
 :  [openmtbmap.org & velomap.org maps](DocMapsTipsTricks#markdown-header-using-openmtbmaporg-velomaporg-in-qmapshack-linux-only "Using openmtbmap.org & velomap.org (Linux only)")
 
+**Map, overview of setup**
+:  [Map and DEM setup](AdvSetup#markdown-header-map-and-dem-setup "Map and DEM setup")
+
 **Map, projection**
 :  [Projection and Scaling](DocBasicsMapDem#markdown-header-projection-and-scaling "Projection and Scaling")
 
@@ -610,7 +625,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Change scale type](AdvMapDetails#markdown-header-map-scale-type "Change scale type (logarithmic/square)") ⊞ [Zooming maps](DocFaqMaps#markdown-header-is-there-a-possibility-to-display-small-roadstracks-in-a-vector-map-without-zooming-in-too-much "Display of small roads/tracks in a vector map and zooming")
 
 **MapProxy, Configuration**
-:  [MapProxy confiiguration](DocMapsTipsTricks#markdown-header-configuration-template "MapProxy confiiguration")
+:  [MapProxy configuration](DocMapsTipsTricks#markdown-header-configuration-template "MapProxy configuration")
 
 **MapProxy, Troubleshooting**
 :  [MapProxy troubleshooting](DocMapsTipsTricks#markdown-header-troubleshooting "MapProxy troubleshooting")
@@ -856,6 +871,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Routing method, using vector map**
 :  [Description of routing methods in QMapShack](AdvRoutes#markdown-header-description-of-routing-methods-in-qmapshack "Description of routing methods in QMapShack")
 
+**Routing setup, overview of options**
+:  [Routing setup](AdvSetup#markdown-header-routing-setup "Routing setup")
+
 **Routing, methods**
 :  [Routing](DocGisItemsEditMultiple#markdown-header-routing "Routing")
 
@@ -868,8 +886,11 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Routing, Routino**
 :  [Choose preferred routing road class](DocFaqRouting#markdown-header-is-there-a-possibility-to-choose-the-preferred-road-class-when-routing "Choose preferred routing road class")
 
+**Routing, setup**
+:  [Routing setup](AdvSetup#markdown-header-routing-setup "Routing setup")
+
 **Routino, configuration**
-:  [Choose preferred routing road class](DocFaqRouting#markdown-header-is-there-a-possibility-to-choose-the-preferred-road-class-when-routing "Choose preferred routing road class") ⊞ [Unexpected Routino results](DocFaqRouting#markdown-header-what-can-be-the-reason-for-unexpected-routino-routing-results "Unexpected Routino results") ⊞ [User-relevant directories (Windows)](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant directories (Windows)")
+:  [Choose preferred routing road class](DocFaqRouting#markdown-header-is-there-a-possibility-to-choose-the-preferred-road-class-when-routing "Choose preferred routing road class") ⊞ [Routing setup](AdvSetup#markdown-header-routing-setup "Routing setup") ⊞ [Unexpected Routino results](DocFaqRouting#markdown-header-what-can-be-the-reason-for-unexpected-routino-routing-results "Unexpected Routino results") ⊞ [User-relevant directories (Windows)](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant directories (Windows)")
 
 **Routino, create database**
 :  [Create Routino database](DocGisItemsRte#markdown-header-create-own-routino-database "Create Routino database using planetsplitter")
@@ -910,6 +931,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Scale, of map**
 :  [Change scale type](AdvMapDetails#markdown-header-map-scale-type "Change scale type (logarithmic/square)")
+
+**Setup, overview of options**
+:  [Setup options](AdvSetup "Setup options")
 
 **SLF, load file**
 :  [Load GPX Files](DocHandleGpxFiles#markdown-header-load-gpx-files "Load GPX Files")
