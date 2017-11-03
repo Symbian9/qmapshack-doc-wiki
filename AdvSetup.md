@@ -113,6 +113,7 @@ section "[Adjustable map properties](AdvMapDetails#markdown-header-adjustable-ma
     
 ### BRouter settings
 
+* For general information about the use of BRouter see [here](http://brouter.de/brouter/).
 * Goto the `Route` tab (dockable window, if not visible, then open it with the menu entry `Window - Route`)
 * In the combobox on the top of the window, select `BRouter (...)` 
 * Be sure the Internet can be accessed
@@ -120,26 +121,38 @@ section "[Adjustable map properties](AdvMapDetails#markdown-header-adjustable-ma
 * In the pop-up window choose 
     * online (`BRouter-Web (online)`) or offline (`local installation`) routing. _Remark:_ This selection will change the router name shown in the above mentioned combobox.
     * `Expert mode:` if appropriate: enables setting of some additional parameters for off- or online routing
-* _Online router settings:_   
+* _Online router settings (recommended, easier to use, no additional installation step):_ 
     * Click `Next` after selecting online routing
     * In the next window, add or remove available BRouter profiles
     * If necessary, change the order of selected profiles
     * Close the profile selection window
-* _Offline router settings:_
+* _Offline router settings (requires additional installation step):_
     * Click `Next` after selecting offline routing  
     * Select local BRouter installation directory
+        * If the installation directory is empty or doesn't exist: click button `Create new BRouter installation` resp. `Create directory and install BRouter there`
+        * If a BRouter installation is found in the installation directory: click button `Update existing BRouter installation` and select the version you
+          want to install
     * Select Java executable  
     * Click `Update existing BRouter installation`, if appropriate
     * Go to the next window
     * Add or remove available BRouter profiles
     * If necessary, change the order of selected profiles
     * Close the profile selection window
-    * In the next window, select the tiles (areas) to be used for routing
+    * In the next window, select the tiles (areas) to be used for routing.
+    
+        _Comments:_
+       
+         * The tiles (segments) have a size of 5° in each direction
+         * The scale of the tile selection window can't be changed
+         * The tile selection window is centered at the center of the last map view used. It shows the map of this view with minimal scale.
+         * _Recommendation:_ Before starting the BRouter setup define with the help of context menu `Add area` a sufficiently large area on the map for which routing
+           data are required. This area can be seen in the tile selection window and tiles around it can be selected properly.  
+           
     * Click `Download` to start the download of routing data for offline use. _Attention:_ Depending on the size of the selected area
       the download duration can be considerable!
     * Close the download window after the end of the download  
  * Select one of the available routing profiles
- * Select, if required, an alternative
+ * Select, if required, an alternative to the original route
  * In the case of offline routing, select the `on the fly routing` checkbox, if the next route segment should be calculated
    immediately after selecting the next route point.
     
