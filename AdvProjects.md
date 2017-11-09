@@ -22,7 +22,8 @@ QMS can load data from files with these types and also from
 * `FIT` files (used by Garmin fitness devices),
 * `TCX` files (Garmin Training Center XML - limited support), 
 * `SLF` files (Sigma Log Format),
-* `SML` files (Suunto file format).
+* `SML` files (Suunto XML format),
+* `LOG` files (Openambi XML format).
 
 
 If selected in the menu `Project - Setup Workspace` data is saved automatically at the end of a QMS run and
