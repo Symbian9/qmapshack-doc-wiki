@@ -77,7 +77,7 @@ As a workaround you could download the and compatible Windows SSL package
 and copy the 2 DLLs libeay32.dll and ssleay32.dll to QMS home directory.
 The DLLs from the following 2 sources have been reported to work:
 [indy](https://indy.fulgan.com/SSL/openssl-1.0.2d-x64_86-win64.zip) or
-[gisinternals](http://download.gisinternals.com/sdk/downloads/release-1800-x64-gdal-1-11-1-mapserver-6-4-1.zip).
+[gisinternals](http://download.gisinternals.com/sdk/downloads/release-1800-x64-gdal-1-11-mapserver-6-4.zip).
 Please judge by yourself whether those sources are trustable for you and
 whether they fit to your actual installation.
 
