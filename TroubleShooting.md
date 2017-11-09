@@ -86,7 +86,7 @@ whether they fit to your actual installation.
 The default GDAL libraries come without curl support.
 This may hinder some kinds of web maps to be downloaded properly.
 As a workaround you could download GDAL binaries from
-[gisinternals](http://download.gisinternals.com/sdk/downloads/release-1800-x64-gdal-1-11-1-mapserver-6-4-1.zip)
+[gisinternals](http://download.gisinternals.com/sdk/downloads/release-1800-x64-gdal-1-11-4-mapserver-6-4-3.zip)
 and then brute-force-copy the complete "bin" subdirectory including
 subdirectories to the QMS home directory.
 
