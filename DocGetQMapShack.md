@@ -46,7 +46,7 @@ Below a (non-exhaustive) list of Linux Distributions shipping QMapShack:
 * [Debian](https://packages.debian.org/testing/qmapshack)
 * [Ubuntu](http://packages.ubuntu.com/xenial/qmapshack)
 * [OpenSUSE](https://software.opensuse.org/package/qmapshack)
-* [Arch](https://aur.archlinux.org/packages/qmapshack/)
+* [Arch](https://aur.archlinux.org/packages/qmapshack-hg/)
 * [Fedora](https://admin.fedoraproject.org/pkgdb/package/rpms/qmapshack/)
 
 Refer to your distribution's manual on how to install packages using the package system.
