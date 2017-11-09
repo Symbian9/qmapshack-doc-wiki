@@ -235,11 +235,11 @@ As an individual, you can apply for a free non-commercial access to the French I
 
 The terms of use enforce a few restrictions listed at the following URL:
 
-[http://professionnels.ign.fr/licence-api-geoportail-libre-et-gratuite](http://professionnels.ign.fr/licence-api-geoportail-libre-et-gratuite)
+[http://professionnels.ign.fr/conditions](http://professionnels.ign.fr/conditions)
 
 You can register for this free "licence géoservices IGN pour usage grand public" at the following URL:
 
-[http://professionnels.ign.fr/api-web](http://professionnels.ign.fr/api-web)
+[http://professionnels.ign.fr/user/register](http://professionnels.ign.fr/user/register)
 
 You will be prompted to select which layers you want. Although the same procedure probably applies to any of the available layers, the process described here has only been tried with the map layer called "cartes IGN" (or "GEOGRAPHICALGRIDSYSTEMS.MAPS" on the WMTS server).
 
