@@ -18,7 +18,7 @@ The translations are extracted and also compiled. To return to the compilation o
 
 ```
 #!cmake
-cmake -DCMAKE_UPDATE_TRANSLATIONS=OFF ..
+cmake -DUPDATE_TRANSLATIONS=OFF ..
 ```
 
 **Warning**: For all other generators than Makefile: When `UPDATE_TRANSLATIONS` is enabled a clean command will also clean the generated .ts files. So, after extracting the translations sources it's advisable to set `UPDATE_TRANSLATIOS` to `OFF` right away.
