@@ -78,7 +78,7 @@ The Routino router supports only routing along a road network derived from OpenS
 This can be easily checked on a map area for which no Routino routing data
 is available. This demonstrates also that the data of a vector map and the Routino routing data are completely independent.
 
-![No fly-as-a-bird routing with Routino](images/DocFaq/RoutinoNoRoute.jpg)
+![No fly-as-a-bird routing with Routino](images/DocFaq/RoutinoNoRoute.jpg "No fly-as-a-bird routing")
 
 ## What can be the reason for unexpected Routino routing results?
 

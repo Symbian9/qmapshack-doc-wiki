@@ -13,10 +13,10 @@
 
 The philosophy of the QMS workspace concept is to support handling of temporary project data which exists only for a short time
 period and for which there is no need to save it permanently into a user-defined database
-(shown in the lower part of the "Data" dock widget).
+(shown in the  "Database" dock widget).
 In order to avoid the loss of such temporary project data without
 forcing the user to save it as permanent data QMS uses the `workspace.db` database. This file contains all the data of the
-current QMS workspace (upper part of the "Data" dock widget). Thus, this state of the workspace can be restored after a
+current QMS workspace. Thus, this state of the workspace can be restored after a
 restart of QMS.
 
 The database setup is part of the configuration and saved in a configuration file (*.config or *.ini file, Windows registry). The workspace setup
@@ -43,9 +43,8 @@ QMS databases are used to keep all GIS data together in a structured way and to 
 The QMS workspace is used for working with part of the data saved in databases (or in external files).
 
 If there is a need to display some data or to edit it, then the necessary data items (tracks, routes, waypoints) should be selected with the help of checkboxes in the 
-database part of the 
-data window. Being selected the data items appear in the workspace. Using this procedure guarantees that the workspace and as a consequence the map windows aren't cluttered 
-with extra data. 
+database window. Being selected the data items appear in the workspace window. Using this procedure guarantees that the workspace and as a consequence the map windows 
+aren't cluttered with extra data. 
 
 Loading all data objects into the workspace and then selecting the ones to work with would imply a much heavier load on the QMS rendering engine and thus lead to less performance.
 
@@ -65,7 +64,7 @@ window is then opened very quickly and the project name can be edited in it.
 
 ## How to find the location of a database file used in QMapShack?
 
-Move the mouse pointer on the database name in the main window. A bubble box appears and shows the physical location of the
+Move the mouse pointer on the database name in the database window. A bubble box appears and shows the physical location of the
 database file.
 
 ## How to find database to which a project belongs?

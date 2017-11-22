@@ -8,6 +8,14 @@
 **Activity**
 : Means of motion (pedestrian, bicycle, car, ...) for part (range) of a track.
 
+**BRouter**
+: Router application for finding a route between two points using the topographical data from OpenStreetMap. The router can
+
+* handle different routing profiles,  
+* use elevation data,
+* calculate alternative routes,
+* work online and offline.
+  
 **DEM**
 : Abbreviation for __D__igital __E__levation __M__odel. DEM data provides elevation data for maps.
   QMapShack can handle this data from different sources with the help of _VRT_ files that describe the properties of
@@ -143,8 +151,7 @@ of some track data.
 
 **Workspace**
 : The part of the user interface (GUI) where the user can work with projects and their data (waypoints, tracks, routes).
-  The workspace is the upper part of the data view window of the GUI.
-  _Remark:_ From time to time the data view window itself is denoted as workspace.
+
 
 - - -
 [Prev](AxAdvToc) (Complete table of contents) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Index) [Next](AxAdvIndex)

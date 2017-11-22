@@ -151,21 +151,20 @@ QMS offers the following track editing methods:
 
     If working in the map window:
 
-        * click the track, 
-        * click the range selection icon,
-        * select the range of the track(points) that should be removed,
+    * click the track, 
+    * click the range selection icon,
+    * select the range of the track(points) that should be removed,
 
     By that the selected trackpoints are hidden and do not add to the statistics. If you want to remove them permanently:
   
-
-        * goto the track edit window of the track,
-        * click the `Filter` tab,
-        * open the `Reduce visible points` filter group,
-        * run the `Remove trackpoints` filter.
+    * goto the track edit window of the track,
+    * click the `Filter` tab,
+    * open the `Reduce visible points` filter group,
+    * run the `Remove trackpoints` filter.
 
     This procedure removes the selected range of trackpoints from the track without losing information from other trackpoints.
 
-    _Warning:_ As long as you stay in the QMapShack Universe - using the database or the QMS files - you can revert all these steps in the history. However, if you save to a GPX file the data will be lost permanently. In this case save a backup copy of the track before editing it!
+    _Warning:_ As long as you stay in the QMapShack universe - using the database or the QMS files - you can revert all these steps in the history. However, if you save to a GPX file the data will be lost permanently. In this case save a backup copy of the track before editing it!
 
 
 Even as it is possible to remove erroneous recorded trackpoints with both methods, the later is the recommended one. The intended use-case for the track edit mode is to create artificial tracks to plan a tour. That is why additional data like timestamps and sensor data is removed as it won't be valid when moving points or combining different track fragments.

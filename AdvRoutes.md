@@ -23,7 +23,7 @@ When selecting a routing strategy the user has to decide about features like
 To create a route in QMapShack (QMS) the user can proceed as follows:
 
 1. Open a QMS map view
-1. Open the route tab by selecting the menu entries `Window - Route`
+1. Open the route tab by selecting the menu entries `Window - Routing`
 1. Choose `Routino (offline)` in the combobox on top of the route tab for offline routing (the recommended routing method
 which is described in this section).
 1. Make necessary selections in the `Profile, Language, Mode, Database` comboboxes (for the preparation of a routing

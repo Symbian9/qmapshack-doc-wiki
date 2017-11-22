@@ -26,7 +26,7 @@ QMS can load data from files with these types and also from
 * `LOG` files (Openambi XML format).
 
 
-If selected in the menu `Project - Setup Workspace` data is saved automatically at the end of a QMS run and
+If selected in the menu `Workspace - Setup Workspace` data is saved automatically at the end of a QMS run and
 regularly after some user-defined time interval.
 A backup of databases is recommended from time to time.
 
@@ -85,10 +85,7 @@ clone (a copy) of the data item.
 
 _(inspired by [QMS issue 200 discussion](https://bitbucket.org/maproom/qmapshack/issues/200 "QMS issue 200"))_
 
-QMS data items can be found in the data window (if closed, then open it with the menu entries `Window - Data`). This window is split into 2 parts:
-
-* the upper part is the so-called _workspace (window)_,
-* the lower part is the so-called _database window_.
+QMS data items can be found in the workspace and database windows (if closed, then open it with the menu entries `Window - Workspace` resp. `Window - Database`). 
 
 Data loaded from files is shown in the workspace. Each file defines a project of its own.
 

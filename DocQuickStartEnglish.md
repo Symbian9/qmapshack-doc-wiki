@@ -4,8 +4,9 @@ Prev () | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | () Next
 - - -
 
 # Quickstart
-
 ___(Short summary for Windows users)___
+
+_Valid from patch version 55d8aa7 (18.11.2017)._
 
 _Except for the parts relating to the QMapShack installation itself this summary is valid for non-Windows operating systems, too._
 
@@ -85,7 +86,7 @@ The following links are recommendations for files which allow comfortable workin
   this directory is called `QMS`. _Note:_ The user has no
   full write permission for the default installation directory, so in this step a
   separate directory for data must be created.
-* Add the following subdirectories to the directory `QMS`
+* Add the following subdirectories to the directory `QMS`:
     * `Maps`,
     * `Routino`,
     * `DEM`,
@@ -111,8 +112,8 @@ The following links are recommendations for files which allow comfortable workin
 
     The middle part of the user interface is designed for map display, for data editing windows, and for some other purposes.
   
-    The 4 subwindows on the left and right edges (`Maps`, ` Dig.Elev.Model(DEM)`, `Data`, `Route`) can be moved separately and
-    can be docked in different arrangements at different locations. You can open and close the windows using the `Window` menu item.
+    Each of the 5 subwindows on the left and right edges (`Maps`, ` Dig.Elev.Model(DEM)`, `Workspace`, `Database`, `Routing`) can be moved and
+    docked at the left resp. right edge of the main window or used as floating window. You can open and close these windows using the `Window` menu item.
  
 * The GUI contains some hints about recommended first actions. These are described in the following points. Similar
   information in the form of info boxes is often obtained if one points with the mouse on a displayed object. 
@@ -128,6 +129,8 @@ The following links are recommendations for files which allow comfortable workin
       * Opacity of the map (slider).
       * Display of areas, lines and points.
       * Level of map details display (between -5 and 5).
+      * Layout of map objects (selection of a `TYP` file).
+    * _Remark:_ Open and configure more map windows with the help of the menu entry `View - Add map view`.  
       
 * _Optional: Activate on-line maps: (requires selection of the map folder in the previous step!)_
     * Go to the `Maps` window with your mouse.
@@ -143,13 +146,13 @@ The following links are recommendations for files which allow comfortable workin
 * _Optional: Activate routing support:_
     * Choose menu entry `Tool - Create Routino Database`.
     * A new window will open.
-    * Select `QMS\Routino\berlin-latest.osm.pbf` as source file and ` QMS\Routino` as target path.
+    * Select `QMS\Routino\berlin-latest.osm.pbf` as source file and ` QMS\Routino` as target path (_Paths shown in the snapshot are different!_).
     * Type `BE` as file prefix.
     * Click the `Start` button.
     * In the right column of the window you can follow the executed actions. This process can take some time!
       The completion of the operation is shown.
-    * Go to the `Route` window and add the `QMS\Routino` folder using the 'Open' icon.
-    * Open the database selection list in the `Route` window and select `BE`.
+    * Go to the `Routing` window and add the `QMS\Routino` folder using the 'Open' icon.
+    * Open the database selection list in the `Routing` window and select `BE`.
     * Routes and tracks can now be created with the support of the off-line Routino router (in the area covered by the
       selected database, in the example for Berlin!).
       
@@ -160,7 +163,7 @@ The following links are recommendations for files which allow comfortable workin
     * Choose the menu entry `Tool - VRT Builder`.
     * A new window will open.
     * Select `QMS\DEM\N51E012.hgt` as source file (multiple selections for further HGT files possible!) and `QMS\DEM\N51E012` as target file
-      (the extension `.vrt` is added automatically).
+      (the extension `.vrt` is added automatically). _Paths shown in the snapshot are different!_
     * Click the `Start` button. The completion of the operation is shown.
 
       ![Create VRT for elevation data](images/DocAdv/InstallDem2VrtEn.jpg "Create VRT file for elevation data")
@@ -201,8 +204,9 @@ With these steps, a workable state of QMS is reached.
 ### Load GPX file and show data
 
 * _Assumption:_ There exists a GPX file `QMS\MyProject.gpx`.
+* __Remark:__ Files with GIS data in some other formats (TCX, FIT, ...) can be loaded in a similar way!
 * Choose the menu entry `File - Load GIS Data` and select `QMS\MyProject.gpx` in the file selection window.
-* In the upper part of the `Data` window (the _project window_) appears a new project entry with name ` MyProject`.
+* In the workspace window appears a new project entry with name ` MyProject`.
 * After opening the project, the waypoints and tracks present in the GPX file (that is, the project) are displayed.
 * If you move the mouse pointer to one of the displayed lines, you get some information about the selected object.
 * A double click on a waypoint or track centers the selected map around this object.
@@ -214,7 +218,7 @@ With these steps, a workable state of QMS is reached.
 QMS provides various forms of data storage. A recommended and powerful form is storing the data in
 a database. The following steps are required to create a database:
 
-* Go with the mouse to the bottom half of the `Data` window (the _database window_).
+* Go with the mouse to the database window.
 * Open the context menu with a right click and select `Add Database`.
 * In the next window, select a database name and a file name in the form `QMS\Databases\MyDatabase.db`
   (leave `SQLite` selected!).
@@ -226,9 +230,9 @@ QMS databases are appropriate for a clear tree-like data structure similar to th
 The nodes of the tree (also called folders) can have one out of three different types used for a clearer organization of the data:
 
 * _Group:_ Is only used to keep together subordinate folders. Groups can only contain subfolders, but no data.
-* _Project, Other:_ Can contain subfolders and data. Data can be displayed and edited in the project window.
+* _Project, Other:_ Can contain subfolders and data. Data can be displayed and edited in the workspace window.
 
-Physically saved are databases. Saving can be done manually or, if properly setup with the help of the menu entry `Project - Setup workspace`,
+Physically saved are databases. Saving can be done manually or, if properly setup with the help of the menu entry `Workspace - Setup workspace`,
 automatically within certain time intervals.
 
 _Example:_
@@ -250,25 +254,25 @@ To create group, project and other folders follow these steps:
 _Further information:_ 
 
 * By setting a hook in the field in front of the folder name, the folder 
-  is opened in the project window and the data contained in it (if also selected) is shown in the map window. 
+  is opened in the workspace window and the data contained in it (if also selected) is shown in the map window. 
   For a clearer identification of the source of the project (folder) the name of the next higher folder is appended 
   to the folder name after the separator "__@__".
   This additional information is not appended to top-level folders.
-  The described procedure allows a target-oriented and structured display of selected data in the project and in the map windows.
-* Editing and deleting data is done in the project window.
+  The described procedure allows a target-oriented and structured display of selected data in the workspace and in the map windows.
+* Editing and deleting data is done in the workspace window.
   If the data of a folder has been edited, then this is indicated by a dot in front of the folder name and the data name (in the example the
-  new track _Süßer See_ is not yet saved and therefore not yet available in the database). Edited projects
+  edited track _Süßer See_ is not yet saved to the database). Edited projects
   should be saved regularly to the database using the context menu entry `Save`.
 * Complete deletion of data has to take place in the database window. Deleted data is moved to the automatically created
   Folder `Lost & Found` and final deletion should be done from this folder.
-  Deletion in the project window deletes the data from the displayed project, but not from the database.
+  Deletion in the workspace window deletes the data from the displayed project, but not from the database.
 * In addition to folders (projects) that belong to databases, there are still projects that are saved directly in a GPX or QMS file.
 
 
 ### Create track 
 
 * _Assumption:_ Routing support has been installed.
-* Move the mouse to the `Route` window.
+* Move the mouse to the `Routing` window.
 * In the selection list at the top of the window select `Routino (offline)`.
 * In the other lists select the profile (the kind of movement), the language (for turn-by-turn instructions), the mode (quickest/shortest) 
   and one of the
@@ -286,7 +290,7 @@ _Further information:_
 * Select a new project name and `Database` as the project type.
 * Select the available database.
 * Select a name for a database folder.
-* A new project with the selected name is displayed in the project window. This project contains the newly created track.
+* A new project with the selected name is displayed in the workspace window. This project contains the newly created track.
 * The database window shows a new folder for the used database.
 * Open the context menu with a right click on the project name and select `Save`. The project with its
   data is permanently saved in the selected database folder. The saved track appears as a line in the database folder.
@@ -295,11 +299,11 @@ _Further information:_
 
 Track information is provided in various forms and with different detail level.
 
-* _In the project window:_ If the mouse pointer is located on the track name in the project window, then a summary of track information is shown.
-* _In the map window:_ A double click on the track name in the project window moves and zooms the map so that the track is completely shown in the map window.
+* _In the workspace window:_ If the mouse pointer is located on the track name in the workspace window, then a summary of track information is shown.
+* _In the map window:_ A double click on the track name in the workspace window moves and zooms the map so that the track is completely shown in the map window.
   Moving the mouse to the track in the map window gives the distance of the selected trackpoint to the begin and the end of the track as well as some additional
   information (elevation, speed, ...) of the trackpoint.
-* _In the track info (edit) window:_ To open this window select `Edit...` from the track context menu in the project window. It shows summary 
+* _In the track info (edit) window:_ To open this window select `Edit...` from the track context menu in the workspace window. It shows summary 
   information of the track and up to 3 graphs. Depending on data availability track speed, elevation, slope, ... can be shown as function of the distance or the time.
   Select the form of the graph with the help of the tab `Graphs`. This window also provides in the tab `Filter` a series of filters for editing track data.
   
@@ -309,7 +313,7 @@ Track information is provided in various forms and with different detail level.
 * _Task:_ Find track through given series of waypoints.
 * _Assumption:_ Routing support has been installed and activated.
 * Copy, if necessary, all required waypoints into 1 project.
-* Choose in the window `Route` the wanted router (Routino (offline)) and its options.
+* Choose in the window `Routing` the wanted router (Routino (offline)) and its options.
 * Select while holding the CTRL-key down the required waypoints in the wanted order.
 * Open with a right-click on a selected waypoint the context menu and select `Create Route`.
 * Check and change, if necessary, the order of the waypoints in the window `Create route from waypoints`.
@@ -324,7 +328,7 @@ Track information is provided in various forms and with different detail level.
 ### Find waypoint 
   
 * _Assumption:_ Connection to the Internet is available.
-* Select menu entry `Project - Search Google` to open an edit field in the project window.
+* Select menu entry `Workspace - Search Google` to open an edit field in the workspace window.
 * Type name resp. address of the waypoint if the form used for a Google search and press the `Return` key.
   
     ![Find waypoint](images/DocAdv/SearchWPT.jpg "Find waypoint")

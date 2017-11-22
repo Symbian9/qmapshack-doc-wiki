@@ -5,6 +5,8 @@
 
 # Overview of setup and configuration options
 
+_Valid from patch version 55d8aa7 (18.11.2017)._
+
 This page gives an overview over the available QMS setup and configuration options.
 
 More details of the topics mentioned on this page can be found elsewhere in this Wiki.
@@ -13,14 +15,19 @@ More details of the topics mentioned on this page can be found elsewhere in this
 
 ### Workspace setup 
 
-* Goto menu  `Project - Setup workspace`
-* In the pop-up windows define
+* Goto menu  `Workspace - Setup workspace`
+
+  In the pop-up windows define
     * a time interval for automatic project data backup,
     * a listening port for a QMS multi-user environment.
-
+* To control the visibility of parts of the workspace goto menu `Window`
+    * `Toggle docks:` change visibility of all docked window parts at once.
+    * `Toolbar:` change visibility of toolbar.
+    * `Maps, Dig.Elev.Model (DEM), Workspace, Database, Routing:` change visibility of single docked window part.
+    
 ### Waypoint icons setup
 
-* Goto menu  `Project - Setup waypoint icons`
+* Goto menu  `Workspace - Setup waypoint icons`
 * In the pop-up windows click the `Open` icon and define a path from which additional user-defined waypoint icons can be loaded
 
 
@@ -70,7 +77,7 @@ The following toggles change the layout of all map windows:
 * Menu `View - Flip mouse wheel`: change the zoom direction when zooming a map with the mouse wheel
 * Menu `View - Ext. profile`: if selected: track profile is shown in a resizable and floating separate window, otherwise in a small and fixed window
 
-### Map window display settings
+### Map window display setup
 
 The following setup options change the layout of all map windows:
 
@@ -101,7 +108,7 @@ section "[Adjustable map properties](AdvMapDetails#markdown-header-adjustable-ma
 * In the combobox on the top of the window, select `Routino (offline)` 
 * In the pop-up window, add or remove paths for Routino databases
 
-### Routino settings
+### Routino setup
 
 * Goto the `Route` tab (dockable window, if not visible, then open it with the menu entry `Window - Route`)
 * In the combobox on the top of the window, select `Routino (offline)` 
@@ -111,7 +118,7 @@ section "[Adjustable map properties](AdvMapDetails#markdown-header-adjustable-ma
     * Mode (quickest/shortest)
     * Routino database (should cover area under consideration)
     
-### BRouter settings
+### BRouter setup
 
 * For general information about the use of BRouter see [here](http://brouter.de/brouter/).
 * Goto the `Route` tab (dockable window, if not visible, then open it with the menu entry `Window - Route`)
@@ -127,12 +134,12 @@ section "[Adjustable map properties](AdvMapDetails#markdown-header-adjustable-ma
     * If necessary, change the order of selected profiles
     * Close the profile selection window
 * _Offline router settings (requires additional installation step):_
-    * Click `Next` after selecting offline routing  
+    * Click `Next` after selecting offline routing
     * Select local BRouter installation directory
         * If the installation directory is empty or doesn't exist: click button `Create new BRouter installation` resp. `Create directory and install BRouter there`
         * If a BRouter installation is found in the installation directory: click button `Update existing BRouter installation` and select the version you
           want to install
-    * Select Java executable  
+    * Select Java executable
     * Click `Update existing BRouter installation`, if appropriate
     * Go to the next window
     * Add or remove available BRouter profiles
@@ -150,14 +157,14 @@ section "[Adjustable map properties](AdvMapDetails#markdown-header-adjustable-ma
            
     * Click `Download` to start the download of routing data for offline use. _Attention:_ Depending on the size of the selected area
       the download duration can be considerable!
-    * Close the download window after the end of the download  
+    * Close the download window after the end of the download
  * Select one of the available routing profiles
  * Select, if required, an alternative to the original route
  * In the case of offline routing, select the `on the fly routing` checkbox, if the next route segment should be calculated
    immediately after selecting the next route point.
     
 
-### MapQuest settings
+### MapQuest setup
 
 * Goto the `Route` tab (dockable window, if not visible, then open it with the menu entry `Window - Route`)
 * In the combobox on the top of the window, select `MapQuest (online)` 

@@ -241,13 +241,13 @@ ___Do not edit - automatically created from DocMain!___
         * [Map cache path for online maps](AdvSetup#markdown-header-map-cache-path-for-online-maps)
         * [DEM file paths](AdvSetup#markdown-header-dem-file-paths)
         * [Map window display switches (toggles)](AdvSetup#markdown-header-map-window-display-switches-toggles)
-        * [Map window display settings](AdvSetup#markdown-header-map-window-display-settings)
+        * [Map window display setup](AdvSetup#markdown-header-map-window-display-setup)
         * [Single map display options](AdvSetup#markdown-header-single-map-display-options)
     * [Routing setup](AdvSetup#markdown-header-routing-setup)
         * [Routino database paths](AdvSetup#markdown-header-routino-database-paths)
-        * [Routino settings](AdvSetup#markdown-header-routino-settings)
-        * [BRouter settings](AdvSetup#markdown-header-brouter-settings)
-        * [MapQuest settings](AdvSetup#markdown-header-mapquest-settings)
+        * [Routino setup](AdvSetup#markdown-header-routino-setup)
+        * [BRouter setup](AdvSetup#markdown-header-brouter-setup)
+        * [MapQuest setup](AdvSetup#markdown-header-mapquest-setup)
     * [Further setup and configuration options](AdvSetup#markdown-header-further-setup-and-configuration-options)
 
 

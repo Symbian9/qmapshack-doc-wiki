@@ -116,6 +116,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Data, opacity selection**
 :  [Adjust map properties](AdvMapDetails#markdown-header-adjustable-map-properties "Adjust map properties")
 
+**Database**
+:  [Database](DocGisDatabase "Database")
+
 **Database, add folder**
 :  [Database folders and items](DocGisDatabaseFoldersItems "Database folders and items")
 
@@ -133,9 +136,6 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Database, import GIS data**
 :  [Import of GIS data](AdvProjActions#markdown-header-import-of-gis-data "Import of GIS data")
-
-**Database, in workspace**
-:  [Database](DocGisDatabase "Database")
 
 **Database, location**
 :  [Find location of database file](DocFaqData#markdown-header-how-to-find-the-location-of-a-database-file-used-in-qmapshack "Find location of database file")
@@ -175,9 +175,6 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Database, synchronize**
 :  [Multi-user access](DocGisDatabaseAddRemove#markdown-header-multi-user-access "Multi-user access")
-
-**Database, workspace**
-:  [User-relevant directories (Windows)](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant directories (Windows)")
 
 **Datum, map**
 :  [Projection and Scaling](DocBasicsMapDem#markdown-header-projection-and-scaling "Projection and Scaling")
@@ -225,10 +222,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [DEM](DocInstallMapDem#markdown-header-dem "DEM")
 
 **DEM, VRT file for**
-:  [Use of VRT files](DocFaqMaps#markdown-header-is-it-possible-to-use-several-vrt-files "Use of several VRT files")
-
-**DEM, VRT file of**
-:  [DEM Files](DocBasicsMapDem#markdown-header-dem-files "DEM Files")
+:  [DEM Files](DocBasicsMapDem#markdown-header-dem-files "DEM Files") ⊞ [Use of VRT files](DocFaqMaps#markdown-header-is-it-possible-to-use-several-vrt-files "Use of several VRT files")
 
 **Directories, used**
 :  [User-relevant directories (Windows)](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant directories (Windows)")
@@ -648,12 +642,6 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Menu, File - Save all GIS data**
 :  [Save project](AdvProjActions#markdown-header-save-project "Save project")
 
-**Menu, Project - Setup Workspace**
-:  [Data organization](AdvProjects#markdown-header-organization-of-qmapshack-data "Data organization") ⊞ [Multi-user access](DocGisDatabaseAddRemove#markdown-header-multi-user-access "Multi-user access")
-
-**Menu, Project**
-:  [Working with Projects](DocWorkingWithProjects "Working with Projects")
-
 **Menu, Tool - Create Routino Database**
 :  [Create Routino database](DocGisItemsRte#markdown-header-create-own-routino-database "Create Routino database using planetsplitter")
 
@@ -671,6 +659,12 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Menu, View**
 :  [Workspace](DocControlMapDem#markdown-header-workspace "Workspace")
+
+**Menu, Workspace - Setup Workspace**
+:  [Data organization](AdvProjects#markdown-header-organization-of-qmapshack-data "Data organization") ⊞ [Multi-user access](DocGisDatabaseAddRemove#markdown-header-multi-user-access "Multi-user access")
+
+**Menu, Workspace**
+:  [Working with Projects](DocWorkingWithProjects "Working with Projects")
 
 **MySQL, database errors**
 :  [Why does a database not allow creating new folders?](DocFaqData#markdown-header-why-does-a-database-not-allow-creating-new-folders "Why does a database not allow creating new folders?")
@@ -823,7 +817,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Raster map, use of Russian military map**
 :  [Use of raster maps](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack "Use of Russian military raster maps")
 
-**Raster map, VRT file of**
+**Raster map, VRT file for**
 :  [Find raster map location](DocFaqMaps#markdown-header-how-to-find-the-location-of-a-raster-map "Find raster map location with gdalinfo") ⊞ [Use of raster maps](DocFaqMaps#markdown-header-how-to-use-russian-military-and-similar-raster-maps-with-qmapshack "Use of Russian military raster maps")
 
 **Redo, edit**
@@ -1281,14 +1275,11 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **WMTS, server list**
 :  [List of WMS & WMTS maps](DocMapsTipsTricks#markdown-header-some-more-wms-wmts-server-maps "List of WMS & WMTS maps")
 
-**Workspace, data view**
-:  [Data view](DocHandleGpxFiles#markdown-header-data-view "Data view")
-
-**Workspace, database part**
+**Workspace**
 :  [Database](DocGisDatabase "Database")
 
-**Workspace, database**
-:  [User-relevant directories (Windows)](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant directories (Windows)")
+**Workspace, data view**
+:  [Data view](DocHandleGpxFiles#markdown-header-data-view "Data view")
 
 **Workspace, delete data**
 :  [Workspace and database windows](AdvProjects#markdown-header-workspace-and-database-windows "Workspace and database windows")

@@ -85,7 +85,7 @@ Pressing `F11` again switches the window back to the standard mode.
 
 _Remarks:_
 * If the QMS toolbar is active, then it is also shown in the full-screen window.
-* Pressing `CTRL-D` in the full-screen mode activates the dockables windows. Pressing this key again closes the dockable windows in the full-screen mode.
+* Pressing `CTRL-D` in the full-screen mode activates the docked windows. Pressing this key again closes the docked windows in the full-screen mode.
 
 
 - - -

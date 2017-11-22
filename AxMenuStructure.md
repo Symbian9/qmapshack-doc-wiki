@@ -20,7 +20,7 @@
  |Setup DEM Paths| | | 
  |Save(Print) Map Screenshot|Ctrl+P| |Print a selected area of the map
  |Close|Ctrl+Q| | 
-**Project**| | | |
+**Workspace**| | | |
  |Add empty project| | | 
  |Search Google| |True| 
  |Close all projects|F8| | 
@@ -51,6 +51,12 @@
  |Close Tab|Ctrl+W| | 
  |Full Screen|F11| | 
  |Toggle Docks|Ctrl+D|True|Toggle visibility of dockable windows
+ |Toolbar| |True | 
+ |Maps| |True | 
+ |Dig. Elev. Model (DEM)| |True | 
+ |Workspace| |True | 
+ |Database| |True | 
+ |Routing| |True | 
  |Setup Toolbar| | | 
 **?**| | | |
  |About| | | 

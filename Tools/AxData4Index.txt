@@ -138,7 +138,7 @@ ___Basic usage___
                     1. Map|on-line
 
                 * [DEM Files](DocBasicsMapDem#markdown-header-dem-files)
-                    1. DEM|VRT file of
+                    1. DEM|VRT file for
                     1. VRT|DEM
                     1. Elevation|DEM
                     
@@ -194,7 +194,7 @@ ___Basic usage___
                     
     * [Working with Projects](DocWorkingWithProjects)
         1. Project|sources
-        1. Menu|Project
+        1. Menu|Workspace
         
         * [Handle GPX and QMS files](DocHandleGpxFiles)
             1. GPX|general remark
@@ -399,8 +399,8 @@ ___Basic usage___
                 1. Edit|redo                
             
     * [Database](DocGisDatabase)
-        1. Database|in workspace
-        1. Workspace|database part
+        1. Database|
+        1. Workspace|
         
         * [Workspace and Database](DocGisDatabaseWorkspaceDatabase)
             1. Database|relation between database and workspace
@@ -424,7 +424,7 @@ ___Basic usage___
             * [Multi-user access](DocGisDatabaseAddRemove#markdown-header-multi-user-access)
                 1. Database|multi-user access
                 1. Database|synchronize
-                1. Menu|Project - Setup Workspace
+                1. Menu|Workspace - Setup Workspace
                 
             * [Search the database](DocGisDatabaseAddRemove#markdown-header-search-the-database)   
                 1. Database|search
@@ -481,7 +481,7 @@ ___Basic usage___
         1. Database|lost & found folder
         1. Database|group in
         1. Database|project in
-        1. Menu|Project - Setup Workspace
+        1. Menu|Workspace - Setup Workspace
 
     * [Workspace and database windows](AdvProjects#markdown-header-workspace-and-database-windows)
         1. Delete data|in workspace & database
@@ -802,7 +802,7 @@ ___Basic usage___
         * [Map cache path for online maps](AdvSetup#markdown-header-map-cache-path-for-online-maps)
         * [DEM file paths](AdvSetup#markdown-header-dem-file-paths)
         * [Map window display switches (toggles)](AdvSetup#markdown-header-map-window-display-switches-toggles)
-        * [Map window display settings](AdvSetup#markdown-header-map-window-display-settings)
+        * [Map window display setup](AdvSetup#markdown-header-map-window-display-setup)
         * [Single map display options](AdvSetup#markdown-header-single-map-display-options)
         
     * [Routing setup](AdvSetup#markdown-header-routing-setup)
@@ -812,9 +812,9 @@ ___Basic usage___
         1. Routing|setup
         
         * [Routino database paths](AdvSetup#markdown-header-routino-database-paths)
-        * [Routino settings](AdvSetup#markdown-header-routino-settings)
-        * [BRouter settings](AdvSetup#markdown-header-brouter-settings)
-        * [MapQuest settings](AdvSetup#markdown-header-mapquest-settings)
+        * [Routino setup](AdvSetup#markdown-header-routino-setup)
+        * [BRouter setup](AdvSetup#markdown-header-brouter-setup)
+        * [MapQuest setup](AdvSetup#markdown-header-mapquest-setup)
         
     * [Further setup and configuration options](AdvSetup#markdown-header-further-setup-and-configuration-options)            
 
@@ -831,8 +831,6 @@ ___Basic usage___
             1. Logfile|location
             1. Routino|configuration
             1. Map|cache
-            1. Workspace|database
-            1. Database|workspace
             1. Configuration|Routino
 
         * [How to change the GUI language?](DocFaqConfig#markdown-header-how-to-change-the-gui-language)    
@@ -994,7 +992,7 @@ ___Basic usage___
             ++ Use of Russian military raster maps            
                 1. Raster map|use of Russian military map    
                 1. Raster map|sources
-                1. Raster map|VRT file of
+                1. Raster map|VRT file for
                 1. VRT|for raster map
                 1. OziExplorer|use of map
             
@@ -1008,7 +1006,7 @@ ___Basic usage___
             + Find raster map location
             ++ Find raster map location with gdalinfo
                 1. Raster map|find location
-                1. Raster map|VRT file of
+                1. Raster map|VRT file for
                 1. VRT|for raster map 
                 1. gdalinfo|get VRT file info
                 1. VRT|get file info with gdalinfo                

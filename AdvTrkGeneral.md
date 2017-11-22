@@ -149,17 +149,17 @@ There are several ways to do this:
 
 * If the track does not yet exist but some waypoints for the track under constructions are already known:
   * Create the required waypoints within one project.
-  * Select the waypoints in the project window.
+  * Select the waypoints in theworkspace window.
   * Right click and select the context menu entry `Create Route`.
   * In the `Create Route from Waypoints` window move the waypoints into the necessary order and click ok.
   * Enter a route name.
   * Select the target project (the project with the waypoints under consideration) and click ok.
-  * Right click on the new route in the project window and select the context menu entry `Convert to Track`.
+  * Right click on the new route in the workspace window and select the context menu entry `Convert to Track`.
   * Enter a track name.
   * Select the target project (the project with the waypoints under consideration) and click ok.
   * Delete the temporary route.
 * If the track exists and is displayed in a map:
-  * double click on the track in the project window.
+  * double click on the track in the workspace window.
   * Zoom the map in such a way that track details (trackpoints) become visible.
   * Move the mouse pointer to the required waypoint location on the track.
   * A bubble box pops up at the closest trackpoint.
