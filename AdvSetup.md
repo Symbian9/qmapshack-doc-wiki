@@ -7,9 +7,9 @@
 
 _Valid from patch version 55d8aa7 (18.11.2017)._
 
-This page gives an overview over the available QMS setup and configuration options.
+This page gives an overview over the available QMS GUI setup and configuration options. This includes in some cases QMS installation topics, too.
 
-More details of the topics mentioned on this page can be found elsewhere in this Wiki.
+More details of the topics mentioned on this page can be found elsewhere in this [Wiki](DocMain).
 
 ## General options
 
@@ -18,8 +18,9 @@ More details of the topics mentioned on this page can be found elsewhere in this
 * Goto menu  `Workspace - Setup workspace`
 
   In the pop-up windows define
-    * a time interval for automatic project data backup,
-    * a listening port for a QMS multi-user environment.
+  
+  * a time interval for automatic project data backup,
+  * a listening port for a QMS multi-user environment.
 * To control the visibility of parts of the workspace goto menu `Window`
     * `Toggle docks:` change visibility of all docked window parts at once.
     * `Toolbar:` change visibility of toolbar.
@@ -43,23 +44,50 @@ The toolbar allows quick access to important QMS actions.
 
 ## Map and DEM setup
 
+### Download and install 
+
+QMS can render vector maps in the Garmin format and various types of raster and online maps.
+
+* _Vector maps:_ 
+    * must have the `gmapsupp.img` container format,
+    * only unlocked ones can be used,
+    * typical sources:
+        * [http://download.freizeitkarte-osm.de/garmin/latest](http://download.freizeitkarte-osm.de/garmin/latest) - select region and correct format.
+        * [http://raumbezug.eu/osm-garmin_en.htm](http://raumbezug.eu/osm-garmin_en.htm) - select region and format.
+        * an overview of available free vector maps can be found [here](http://wiki.openstreetmap.org/wiki/OSM_Map_On_Garmin/Download).
+    * download (and unzip if necessary) the map and save it in some map directory.
+* _Raster maps:_ for details see [here](DocFaqMaps).
+* _Online maps:_ 
+    * [Load file with links to on-line maps](http://www.mtb-touring.net/qms/onlinekarten-einbinden/ "On-line maps"). 
+      _Hint:_ Click field `Download online maps`! Result is a downloaded file `Onlinemaps.zip`. 
+    * Unpack this file into some map directory.  
+    
+QMS can use digital elevation data (`DEM` data). Necessary files can be downloaded from
+
+* [https://dds.cr.usgs.gov/srtm/version2_1/SRTM3](https://dds.cr.usgs.gov/srtm/version2_1/SRTM3) or
+* [http://viewfinderpanoramas.org/dem3.html](http://viewfinderpanoramas.org/dem3.html).
+
+For more details about the installation of maps and DEM data compare also the [Quick start guide](DocQuickStartEnglish).
+
 ### Map paths
 
-* Goto the `Maps` tab (dockable window, if not visible, then open it with the menu entry `Window - Maps`)
+* _Assumption:_ Vector, raster maps or links to online maps have been downloaded and installed
+* Goto the `Maps` tab (docked window, if not visible, then open it with the menu entry `Window - Maps`)
 * Right click in the window to open the context menu
 * Select `Setup map paths` (alternatively: select menu `File - Setup map paths`)
 * In the pop-up window, add or remove paths with vector or raster maps
 
 ### Map cache path for online maps
 
-* Goto the `Maps` tab (dockable window, if not visible, then open it with the menu entry `Window - Maps`)
+* Goto the `Maps` tab (docked window, if not visible, then open it with the menu entry `Window - Maps`)
 * Right click in the window to open the context menu
 * Select `Setup map paths` (alternatively: select menu `File - Setup map paths`)
 * In the pop-up window, define a path used for caching online map tiles
 
 ### DEM file paths
 
-* Goto the `Dig.Elev.Model (DEM)` tab (dockable window, if not visible, then open it with the menu entry `Window - Dig.Elev.Model (DEM)`)
+* _Assumption:_ DEM data has been downloaded and installed.
+* Goto the `Dig.Elev.Model (DEM)` tab (docked window, if not visible, then open it with the menu entry `Window - Dig.Elev.Model (DEM)`)
 * Right click in the window to open the context menu
 * Select `Setup DEM paths` (alternatively: select menu `File - Setup DEM paths`)
 * In the pop-up window add or remove paths with digital elevation (DEM) data 
@@ -104,13 +132,14 @@ section "[Adjustable map properties](AdvMapDetails#markdown-header-adjustable-ma
 
 ### Routino database paths
 
-* Goto the `Route` tab (dockable window, if not visible, then open it with the menu entry `Window - Route`)
+* _Assumption:_ Routing databases have been downloaded and installed. For more details compare also the [Quick start guide](DocQuickStartEnglish).
+* Goto the `Routing` tab (docked window, if not visible, then open it with the menu entry `Window - Routing`)
 * In the combobox on the top of the window, select `Routino (offline)` 
 * In the pop-up window, add or remove paths for Routino databases
 
 ### Routino setup
 
-* Goto the `Route` tab (dockable window, if not visible, then open it with the menu entry `Window - Route`)
+* Goto the `Routing` tab (docked window, if not visible, then open it with the menu entry `Window - Routing`)
 * In the combobox on the top of the window, select `Routino (offline)` 
 * Select 
     * Profile (vehicle type)
@@ -121,28 +150,28 @@ section "[Adjustable map properties](AdvMapDetails#markdown-header-adjustable-ma
 ### BRouter setup
 
 * For general information about the use of BRouter see [here](http://brouter.de/brouter/).
-* Goto the `Route` tab (dockable window, if not visible, then open it with the menu entry `Window - Route`)
+* Goto the `Routing` tab (docked window, if not visible, then open it with the menu entry `Window - Routing`)
 * In the combobox on the top of the window, select `BRouter (...)` 
 * Be sure the Internet can be accessed
 * Click the `Setup` button
 * In the pop-up window choose 
     * online (`BRouter-Web (online)`) or offline (`local installation`) routing. _Remark:_ This selection will change the router name shown in the above mentioned combobox.
-    * `Expert mode:` if appropriate: enables setting of some additional parameters for off- or online routing
+    * `Expert mode:` if appropriate: enables setting of some additional parameters for off- or online routing. _Recommendation:_ Don't select the expert mode (there is no advantage from changing the given default values)
 * _Online router settings (recommended, easier to use, no additional installation step):_ 
     * Click `Next` after selecting online routing
-    * In the next window, add or remove available BRouter profiles
+    * In the next window, add or remove available BRouter profiles. Click on a profile name to see a short summary of the profile features.
     * If necessary, change the order of selected profiles
     * Close the profile selection window
 * _Offline router settings (requires additional installation step):_
+    * Be sure that Java runtime environment is installed on your system
     * Click `Next` after selecting offline routing
     * Select local BRouter installation directory
         * If the installation directory is empty or doesn't exist: click button `Create new BRouter installation` resp. `Create directory and install BRouter there`
         * If a BRouter installation is found in the installation directory: click button `Update existing BRouter installation` and select the version you
           want to install
-    * Select Java executable
-    * Click `Update existing BRouter installation`, if appropriate
+    * Select Java executable if not automatically found
     * Go to the next window
-    * Add or remove available BRouter profiles
+    * Add or remove available BRouter profiles. Click on a profile name to see a short summary of the profile features.
     * If necessary, change the order of selected profiles
     * Close the profile selection window
     * In the next window, select the tiles (areas) to be used for routing.
@@ -153,20 +182,23 @@ section "[Adjustable map properties](AdvMapDetails#markdown-header-adjustable-ma
          * The scale of the tile selection window can't be changed
          * The tile selection window is centered at the center of the last map view used. It shows the map of this view with minimal scale.
          * _Recommendation:_ Before starting the BRouter setup define with the help of context menu `Add area` a sufficiently large area on the map for which routing
-           data are required. This area can be seen in the tile selection window and tiles around it can be selected properly.  
+           data are required. This area can be seen in the tile selection window and tiles around it can be selected properly. In the next image an area covering the whole of
+           Germany was selected.
+           
+           ![Area overlay](images/DocAdv/BRouterTileSelection.jpg "BRouter tile selection")
            
     * Click `Download` to start the download of routing data for offline use. _Attention:_ Depending on the size of the selected area
       the download duration can be considerable!
     * Close the download window after the end of the download
  * Select one of the available routing profiles
- * Select, if required, an alternative to the original route
+ * Select, if wanted, an alternative to the original route
  * In the case of offline routing, select the `on the fly routing` checkbox, if the next route segment should be calculated
    immediately after selecting the next route point.
     
 
 ### MapQuest setup
 
-* Goto the `Route` tab (dockable window, if not visible, then open it with the menu entry `Window - Route`)
+* Goto the `Routing` tab (docked window, if not visible, then open it with the menu entry `Window - Routing`)
 * In the combobox on the top of the window, select `MapQuest (online)` 
 * Select 
     * Profile (vehicle type)

@@ -22,7 +22,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 
 
-[A](#markdown-header-a) [C](#markdown-header-c) [D](#markdown-header-d) [E](#markdown-header-e) [F](#markdown-header-f) [G](#markdown-header-g) [H](#markdown-header-h) [I](#markdown-header-i) [L](#markdown-header-l) [M](#markdown-header-m) [O](#markdown-header-o) [P](#markdown-header-p) [Q](#markdown-header-q) [R](#markdown-header-r) [S](#markdown-header-s) [T](#markdown-header-t) [U](#markdown-header-u) [V](#markdown-header-v) [W](#markdown-header-w)
+[A](#markdown-header-a) [B](#markdown-header-b) [C](#markdown-header-c) [D](#markdown-header-d) [E](#markdown-header-e) [F](#markdown-header-f) [G](#markdown-header-g) [H](#markdown-header-h) [I](#markdown-header-i) [L](#markdown-header-l) [M](#markdown-header-m) [N](#markdown-header-n) [O](#markdown-header-o) [P](#markdown-header-p) [Q](#markdown-header-q) [R](#markdown-header-r) [S](#markdown-header-s) [T](#markdown-header-t) [U](#markdown-header-u) [V](#markdown-header-v) [W](#markdown-header-w)
 
 ------
 
@@ -56,6 +56,16 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Area, save**
 :  [Saving data](DocGisItemsEditMultiple#markdown-header-saving-data "Saving data")
+
+**Avoid area, routing**
+:  [Using no-go areas](AdvRoutes#markdown-header-using-no-go-areas "Using no-go areas")
+
+
+## B
+
+
+**BRouter, routing engine**
+:  [Routing engines](AdvRoutes#markdown-header-routing-engines "Routing engines")
 
 
 ## C
@@ -631,7 +641,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Access to online maps](DocMapsTipsTricks#markdown-header-access-most-online-maps-as-tms-using-mapproxy "Access to online maps")
 
 **MapQuest, routing engine**
-:  [MapQuest router](DocGisItemsRte#markdown-header-mapquest "MapQuest router")
+:  [MapQuest router](DocGisItemsRte#markdown-header-mapquest "MapQuest router") ⊞ [Routing engines](AdvRoutes#markdown-header-routing-engines "Routing engines")
 
 **Mapsforge map, convert to raster map**
 :  [Supported raster maps](DocFaqMaps#markdown-header-which-raster-map-formats-are-supported "Supported raster maps")
@@ -671,6 +681,13 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **MySQL, database**
 :  [MySQL database](DocGisDatabaseAddRemove#markdown-header-mysql-565 "MySQL database")
+
+
+## N
+
+
+**No-go area, routing**
+:  [Using no-go areas](AdvRoutes#markdown-header-using-no-go-areas "Using no-go areas")
 
 
 ## O
@@ -829,6 +846,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Route instruction, used language**
 :  [Language in route instruction](DocFaqRouting#markdown-header-why-do-route-instructions-use-different-languages "Why do route instructions use different languages?")
 
+**Route, add point**
+:  [Edit a route](AdvRoutes#markdown-header-edit-a-route "Edit a route")
+
 **Route, create**
 :  [Create a route](AdvRoutes#markdown-header-create-a-route "Create a route") ⊞ [Create route](DocGisItemsRte#markdown-header-create-route "Create route")
 
@@ -850,16 +870,22 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Route, save**
 :  [Save route in GPX file](AdvRoutes#markdown-header-save-route-in-gpx-file "Save route in GPX file") ⊞ [Saving data](DocGisItemsEditMultiple#markdown-header-saving-data "Saving data")
 
+**Routing engine, BRouter**
+:  [Routing engines](AdvRoutes#markdown-header-routing-engines "Routing engines")
+
+**Routing engine, compare**
+:  [Comparison of routing engines](AdvRoutes#markdown-header-comparison-of-routing-engines "Comparison of routing engines")
+
 **Routing engine, MapQuest**
-:  [MapQuest router](DocGisItemsRte#markdown-header-mapquest "MapQuest router")
+:  [MapQuest router](DocGisItemsRte#markdown-header-mapquest "MapQuest router") ⊞ [Routing engines](AdvRoutes#markdown-header-routing-engines "Routing engines")
 
 **Routing engine, Routino**
-:  [Create a route](AdvRoutes#markdown-header-create-a-route "Create a route") ⊞ [Routino router](DocGisItemsRte#markdown-header-routino "Routino router")
+:  [Routing engines](AdvRoutes#markdown-header-routing-engines "Routing engines") ⊞ [Routino router](DocGisItemsRte#markdown-header-routino "Routino router")
 
-**Routing method, off-road routing**
+**Routing method, automatic routing**
 :  [Description of routing methods in QMapShack](AdvRoutes#markdown-header-description-of-routing-methods-in-qmapshack "Description of routing methods in QMapShack")
 
-**Routing method, Routino**
+**Routing method, off-road routing**
 :  [Description of routing methods in QMapShack](AdvRoutes#markdown-header-description-of-routing-methods-in-qmapshack "Description of routing methods in QMapShack")
 
 **Routing method, using vector map**
@@ -882,6 +908,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Routing, setup**
 :  [Routing setup](AdvSetup#markdown-header-routing-setup "Routing setup")
+
+**Routing, with no-go areas**
+:  [Using no-go areas](AdvRoutes#markdown-header-using-no-go-areas "Using no-go areas")
 
 **Routino, configuration**
 :  [Choose preferred routing road class](DocFaqRouting#markdown-header-is-there-a-possibility-to-choose-the-preferred-road-class-when-routing "Choose preferred routing road class") ⊞ [Routing setup](AdvSetup#markdown-header-routing-setup "Routing setup") ⊞ [Unexpected Routino results](DocFaqRouting#markdown-header-what-can-be-the-reason-for-unexpected-routino-routing-results "Unexpected Routino results") ⊞ [User-relevant directories (Windows)](DocFaqConfig#markdown-header-user-relevant-qmapshack-directories-windows-version "User-relevant directories (Windows)")
@@ -911,7 +940,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Routino router](DocGisItemsRte#markdown-header-routino "Routino router")
 
 **Routino, routing engine**
-:  [Create a route](AdvRoutes#markdown-header-create-a-route "Create a route") ⊞ [Routino router](DocGisItemsRte#markdown-header-routino "Routino router")
+:  [Routing engines](AdvRoutes#markdown-header-routing-engines "Routing engines") ⊞ [Routino router](DocGisItemsRte#markdown-header-routino "Routino router")
 
 **Routino, routing method**
 :  [Description of routing methods in QMapShack](AdvRoutes#markdown-header-description-of-routing-methods-in-qmapshack "Description of routing methods in QMapShack")

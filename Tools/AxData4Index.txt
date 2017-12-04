@@ -757,17 +757,30 @@ ___Basic usage___
             1. QMS|track history handling
         
     * [Routes and Routing](AdvRoutes)
+        * [Description of a route](AdvRoutes#markdown-header-description-of-a-route)
+        * [Routing engines](AdvRoutes#markdown-header-routing-engines)
+            1. Routing engine|Routino
+            1. Routing engine|BRouter
+            1. Routing engine|MapQuest
+            1. BRouter|routing engine
+            1. Routino|routing engine
+            1. MapQuest|routing engine
+
+
         * [Create a route](AdvRoutes#markdown-header-create-a-route)
             1. Route|create
             1. Routing|routing strategy
             1. Route|routing engine
             1. Route|routing strategy
-            1. Routing engine|Routino
-            1. Routino|routing engine
            
+            * [Select autorouting](AdvRoutes#markdown-header-select-autorouting)
+            * [Use list of routing points](AdvRoutes#markdown-header-use-list-of-routing-points)
+            * [Use map window](AdvRoutes#markdown-header-use-map-window)
+            
         * [Edit a route](AdvRoutes#markdown-header-edit-a-route)
             1. Route|edit
             1. Route|recalculate
+            1. Route|add point
             
         * [Get route instructions](AdvRoutes#markdown-header-get-route-instructions)
             1. Route|route instructions
@@ -776,11 +789,22 @@ ___Basic usage___
         * [Save route in GPX file](AdvRoutes#markdown-header-save-route-in-gpx-file)
             1. Route|save
             
+        * [Using no-go areas](AdvRoutes#markdown-header-using-no-go-areas)
+            1. No-go area|routing
+            1. Routing|with no-go areas
+            1. Avoid area|routing
+            
+        
         * [Description of routing methods in QMapShack](AdvRoutes#markdown-header-description-of-routing-methods-in-qmapshack)
             1. Routing method|off-road routing
-            1. Routing method|Routino
+            1. Routing method|automatic routing
             1. Routing method|using vector map            
             1. Routino|routing method
+            
+        * [Comparison of routing engines](AdvRoutes#markdown-header-comparison-of-routing-engines)
+            1. Routing engine|compare
+
+        * [Other information](AdvRoutes#markdown-header-other-information)    
             
 * [Overview of setup and configuration options](AdvSetup)
 + Setup options
@@ -798,6 +822,7 @@ ___Basic usage___
         1. Map|overview of setup
         1. DEM|overview of setup
         
+        * [Download and install ](AdvSetup#markdown-header-download-and-install)
         * [Map paths](AdvSetup#markdown-header-map-paths)
         * [Map cache path for online maps](AdvSetup#markdown-header-map-cache-path-for-online-maps)
         * [DEM file paths](AdvSetup#markdown-header-dem-file-paths)
