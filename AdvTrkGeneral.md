@@ -21,19 +21,52 @@ There are various ways to get information about a track.
         * Number of visible and total trackpoints in track
 
       Some of this information can be missing if the track is not recorded by a GPS device.
+      
+      ![Track info in workspace](images/DocAdv/TrackInfo1.jpg "Track info in workspace")
 
-* _Using the map window:_
+* _Using the track edit/info window:_
+    * Open the track edit window with a right-click on the track name in the workspace window and select the `Edit...`
+      menu entry in the context menu.
+    * In the graphs tab select with the help of comboboxes up to 3 track properties (speed, slope, elevation, fitness data, ...)
+      to be displayed as graphs.
+      
+      ![Track info in edit window](images/DocAdv/TrackInfo2.jpg "Track info in track edit/info window")
+     
+    * _Description of information:_
+        * Data in the lower left corner of the window are totals for the whole tracks (the same data as in the workspace window).
+        * A red vertical slider can be moved over the graphs.
+        * The information given in the upper part of the window is track data for the location resp. time selected with the slider
+          (horizontal graph axes show either the distance from the start of the track or the time). The data shown for ascent, descent, distance, and moving are 
+          totals from the start of the track.
+
+* _Using the map view:_
     * _Track is displayed without red frame:_
-        * Left click on the track
+        * Left-click on the track
         * An info window pops up that shows the same info as described in the previous point.
 
-      With the help of the icons shown in this info window the user can carry out various operations with the track.
+           ![Track info in map window](images/DocAdv/TrackInfo3.jpg "Summary track info in map window")
+           
+          With the help of the icons shown in this info window the user can carry out various operations with the track.
 
-      In the style tab of the track edit window the user can select one of the track properties (speed, slope, elevation,
-      fitness data, ...) to be used for coloring the track.
+        * In the style tab of the track edit window the user can select one of the track properties (speed, slope, elevation,
+          fitness data, ...) to be used for coloring the track.
+
+           ![Track info colors in map window](images/DocAdv/TrackInfo4.jpg "Track info by color in map window")
+           
+        * _(to be implemented soon):_ Selecting the menu entry `View - Min./max. track values` or pressing `CTRL-M` (toggle!) adds bubble boxes to the track showing
+          the locations and the minimal resp. maximal values of track data fields.
+          
+          _Hint:_ Use this feature with an as small as possible number of tracks in the workspace. Otherwise, the map view gets cluttered with too many info boxes.
+          
+           ![Track info in map window](images/DocAdv/TrackInfo5.jpg "Track max/min info in map window")
+
+        *  _(to be implemented soon):_ If the display of max./min. values is selected, then a double-click on the track name in the workspace opens
+           an additional window in the lower right corner of the map view showing the maximum resp. minimum values of all available track fields for the whole track.
+
+           ![Track info in map window](images/DocAdv/TrackInfo7.jpg "Track max/min totals in map window")
 
     * _Track is displayed with red frame:_
-        * To get this state of a track in the map window double click on the track name in the workspace window. The map
+        * To get this state of a track in the map window double-click on the track name in the workspace window. The map
           window is zoomed so that the complete track is displayed in the window.
         * Move the mouse pointer on the track
         * An info window pops up that shows information about the closest trackpoint:
@@ -42,19 +75,17 @@ There are various ways to get information about a track.
             * Index of the trackpoint
             * Time at the trackpoint
             * Elevation, slope, speed and fitness data at the trackpoint
-        * With a left click on the track the information described in the previous point is displayed.
+        * A small window with a red slider shows the track elevation graph and the elevation at the selected location.    
+            
+           ![Track info in map window](images/DocAdv/TrackInfo6.jpg "Track info at location in map window")
+           
+        * With a left-click on the track the information described in the previous point is displayed.
 
-          Some of this information can be missing if the track is not recorded by a GPS device.
+        Some of this information can be missing if the track is not recorded by a GPS device.
 
         Get out of this track state by then double clicking
         on a location without a track.
-
- * _Using the track edit window:_
-     * To open the track edit window right-click on the track name in the workspace window and select the `Edit...`
-       menu entry in the context menu.
-     * In the graphs tab the user can select up to 3 track properties (speed, slope, elevation, fitness data, ...)
-       to be displayed as graphs.
-
+          
 ## Symbols for trackpoints
 
 The points of a track may have different properties. These properties can be seen when clicking on a track
@@ -108,11 +139,11 @@ A track can be cut (split) into 2 parts. To do this use the following procedure:
   then an info window pops-up giving some information about the nearest trackpoint of the track. The mouse pointer is located on a
   trackpoint, if it is located on the pointer of the info window.
   
-    Mouse not on trackpoint | Mouse on trackpoint
-    ------------------------|--------------------
-    ![Mouse not on trackpoint](images/DocAdv/CutNoTrkPt.jpg "Mouse not on trackpoint") | ![Mouse on trackpoint](images/DocAdv/CutTrkPt.jpg "Mouse on trackpoint")
+Mouse not on trackpoint | Mouse on trackpoint
+------------------------|--------------------
+![Mouse not on trackpoint](images/DocAdv/CutNoTrkPt.jpg "Mouse not on trackpoint") | ![Mouse on trackpoint](images/DocAdv/CutTrkPt.jpg "Mouse on trackpoint")
   
-* Left click on the trackpoint. A toolbox window pops-up.
+* Left-click on the trackpoint. A toolbox window pops-up.
 
     ![Toolbox with cut icon](images/DocAdv/CutTools.jpg "Toolbox with cut icon")
 
@@ -150,20 +181,20 @@ There are several ways to do this:
 * If the track does not yet exist but some waypoints for the track under constructions are already known:
   * Create the required waypoints within one project.
   * Select the waypoints in theworkspace window.
-  * Right click and select the context menu entry `Create Route`.
+  * Right-click and select the context menu entry `Create Route`.
   * In the `Create Route from Waypoints` window move the waypoints into the necessary order and click ok.
   * Enter a route name.
   * Select the target project (the project with the waypoints under consideration) and click ok.
-  * Right click on the new route in the workspace window and select the context menu entry `Convert to Track`.
+  * Right-click on the new route in the workspace window and select the context menu entry `Convert to Track`.
   * Enter a track name.
   * Select the target project (the project with the waypoints under consideration) and click ok.
   * Delete the temporary route.
 * If the track exists and is displayed in a map:
-  * double click on the track in the workspace window.
+  * Double-click on the track in the workspace window.
   * Zoom the map in such a way that track details (trackpoints) become visible.
   * Move the mouse pointer to the required waypoint location on the track.
   * A bubble box pops up at the closest trackpoint.
-  * Move the mouse pointer to the bubble box, right click and select `Add waypoint` from the context menu.
+  * Move the mouse pointer to the bubble box, right-click and select `Add waypoint` from the context menu.
 _Remark:_ If a selected waypoint has a distance of less than 50m to a trackpoint than it is attached to the track.
 
     ![Trackpoint info box](images/DocFaq/BubbleBox.jpg "Trackpoint info box")
@@ -173,7 +204,7 @@ _Remark:_ If a selected waypoint has a distance of less than 50m to a trackpoint
   * Zoom the graph horizontally with the mouse wheel for better detail.
   * Move the mouse cursor on the profile graph to a location where the index shown in the upper left corner
 jumps to a new value (i.e. where a trackpoint is located).
-  * Right click and select `Add waypoint` to attach a waypoint to the track.
+  * Right-click and select `Add waypoint` to attach a waypoint to the track.
 _Remark:_ If a selected waypoint has a distance of less than 50m to a trackpoint than it is attached to the track.
 
 Having waypoints attached to a track additional information about the waypoints is available in the roadbook of the
@@ -181,7 +212,7 @@ project.
 
 To display this information proceed as follows:
 
-* Right click on the project and select the context menu entry `Edit...`.
+* Right-click on the project and select the context menu entry `Edit...`.
 * The project roadbook opens as additional tab in the upper right part of the user interface.
 * Select the `Sort along track (multiple)` or `Sort along track (single)` entry from the combobox in the
 upper right part of the roadbook.
@@ -296,7 +327,7 @@ This track range selection mode is useful when refining planned tracks.
   not a subpoint with small black square!)
   as the start of the range to be selected in the track and release the mouse button.
 * Move the mouse in the direction of the track. The color of the selected track range is changed to green.
-  Left click at the end of the wanted range.
+  Left-click at the end of the wanted range.
 
     ![Range in track edit mode](images/DocAdv/RangeSelected.jpg "Selected range in track edit mode")
 
@@ -334,7 +365,7 @@ described below:
 * Click with the left mouse button at the start of the range that should be moved to a new location and
   release the mouse button.
 * Move the mouse in the direction of the track. The color of the selected track range is changed to green.
-  Left click at the end of the wanted range.
+  Left-click at the end of the wanted range.
 
     ![Track range in edit mode](images/DocAdv/MoveTrackRange.jpg "Track range in edit mode")
 
@@ -346,8 +377,8 @@ described below:
 * Click the `Add new points` icon at the top of the map view.
 
 * Move the mouse on the straight line segment.
-* Left click and release the mouse button. A new trackpoint is attached to the mouse.
-* Move the mouse (i.e. the new trackpoint) to the wanted new location and left click. The track is re-routed using
+* Left-click and release the mouse button. A new trackpoint is attached to the mouse.
+* Move the mouse (i.e. the new trackpoint) to the wanted new location and left-click. The track is re-routed using
   this additional trackpoint.
 * If necessary, repeat the last step to get the wanted new location of the track.
 
@@ -453,7 +484,7 @@ In a track created with the methods mentioned in the last paragraph
 
 If there are invalid timestamps or elevation data in a newly created or edited track then QMS displays a red warning message in the track info box.
 
-The user should use the __Change timestamps of track points__ filter to remove invalid timestamps.
+The user should use the `Change timestamps of track points` filter to remove invalid timestamps.
 
 Different approaches for avoiding or removing invalid elevations are described
 [here](AdvTrkElevation#markdown-header-handle-invalid-elevation-data).

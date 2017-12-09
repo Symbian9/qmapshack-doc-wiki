@@ -299,10 +299,12 @@ use of elevation data in route calculation | yes | no | no | no | no
 requires installation of routing database | yes (offline router) | yes | no | no | no
 requires vector map | no | no | no | no | yes
 off-road routing | (yes) | no | no | yes | no
-road class preferences | yes | yes | partially | no | manually
+road class preferences | yes, in configuration files | yes, in configuration files | partially | no | manually
+user configuration | in additional configuration files | in default configuration file | no | no | no |
 cross-border routing | yes | special routing database preparation required | yes | yes | if map covers several countries
 no-go areas | yes | no | no | yes - manually | yes - manually
 on-the-fly routing | online: no, offline: yes, if switched on | yes | no | no | (yes)
+
 
 ## Other information
 
@@ -313,7 +315,9 @@ on-the-fly routing | online: no, offline: yes, if switched on | yes | no | no | 
   
     _BRouter (offline):_ The tile selection window (last setup window) shows the number of downloaded but outdated tiles. A tile is outdated, if a newer one is found on the 
     BRouter Internet server. This information is available only with Internet access. 
-  
+ 
+* The user can change routing preferences in the configuration files of the BRouter and Routino routers. Special knowledge is needed for making changes to these configuration
+  files.
 * Routes can be (re-)calculated. There are 2 methods to start route calculation:
     * Goto to the route object in the workspace window, open the context menu with a right click and select `Calculate route`.
     * Click on the route in a map window and select the `Calculate route` icon from the displayed toolbar (![Apply icon](images/DocAdv/Apply.png) icon).
