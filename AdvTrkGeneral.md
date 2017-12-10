@@ -53,7 +53,7 @@ There are various ways to get information about a track.
 
            ![Track info colors in map window](images/DocAdv/TrackInfo4.jpg "Track info by color in map window")
            
-        * _(valid starting with patch version ab7bb2d, 09.12.2017):_ Selecting the menu entry `View - Min./max. track values` or pressing `CTRL-M` (toggle!) adds bubble boxes to the track showing
+        * _(valid starting with patch version ab7bb2d, 09.12.2017):_ Selecting the menu entry `View - Min./max. track values` or pressing `CTRL-N` (toggle!) adds bubble boxes to the track showing
           the locations and the minimal resp. maximal values of track data fields.
           
           _Hint:_ Use this feature with an as small as possible number of tracks in the workspace. Otherwise, the map view gets cluttered with too many info boxes.

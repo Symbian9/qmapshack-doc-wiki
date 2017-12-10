@@ -14,7 +14,7 @@ CTRL-G | Show grid on map (toggle!).
 CTRL-ALT-G | Open grid setup window.
 CTRL-I | Show map tooltips (type of map object at cursor location, toggle!).
 CTRL-L | Load GIS data.
-CTRL-M | Show the minimum and maximum values of the track properties along the track in the map view.
+CTRL-N | Show the minimum and maximum values of the track properties along the track in the map view.
 CTRL-P | Print selected map area.
 CTRL-Q | Close QMapShack.
 CTRL-S | Save all projects from the workspace.
