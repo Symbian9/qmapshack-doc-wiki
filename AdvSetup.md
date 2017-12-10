@@ -102,6 +102,7 @@ The following toggles change the layout of all map windows:
 * Menu `View - POI text`: switch on or off display of POI names on vector maps
 * Menu `View - Map tooltip`: switch on or off tooltip window display of features of the objects under the mouse cursor in a vector map
 * Menu `View - Night/Day`: change map display between day and night layout (if supported by map)
+* Menu `View - Min./max. track values`: show the minimum and maximum values of the track properties along the track in the map view
 * Menu `View - Flip mouse wheel`: change the zoom direction when zooming a map with the mouse wheel
 * Menu `View - Ext. profile`: if selected: track profile is shown in a resizable and floating separate window, otherwise in a small and fixed window
 

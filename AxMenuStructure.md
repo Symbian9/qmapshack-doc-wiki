@@ -34,6 +34,7 @@
  |POI Text| |True| 
  |Map Tool Tip|Ctrl+I|True| 
  |Night / Day| |True| 
+ |Min./Max. Track Values|Ctrl+M|True|Show the minimum and maximum values of the track properties along the track in the map view.
  |Flip Mouse Wheel| |True| 
  |Ext. Profile|Ctrl+E|True| 
  |Setup Map Font| | | 
