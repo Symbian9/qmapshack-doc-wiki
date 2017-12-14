@@ -76,6 +76,87 @@ The minimum and maximum zoom levels (scales) are nearly the same for both scales
 For square scales the next zoom step leads to a scale which is approximately changed by a factor 2
 compared with the previous one. This scale is recommended for on-line (TMS, WMTS) maps.
 
+## Projection and datum
+
+The projection and geodetic datum (in short: _the coordinate systems_) for map rendering and grid display 
+can be defined separately for each view. To do this, use the menu entries `View - Setup map view` and `View - Setup grid`.
+
+Recommended (default) settings are:
+
+* _for map rendering:_ projection: Mercator, datum: WGS_1984, used setup string (`Proj.4` format):
+
+        +proj=merc +a=6378137.0000 +b=6356752.3142 +towgs84=0,0,0,0,0,0,0,0 +units=m +no_defs
+        
+* _for grid display:_  projection: lon/lat (geographical coordinates), datum: WGS_1984, used setup string (`Proj.4` format):
+
+        +proj=longlat +datum=WGS84 +no_defs
+
+These settings use the format of the `Proj.4` project. For details see the [project documentation](https://raw.githubusercontent.com/OSGeo/proj.4/gh-pages/proj4.pdf).       
+        
+The status line at the bottom of the QMS window shows always the geographical coordinates of the mouse location on the
+map. The map is rendered so that the edges of the map view have constant first resp. second coordinate as defined with the coordinate system for the map. 
+
+If the grid display is switched on (use menu entry `View - Show grid`), then grid lines are drawn on the map. In general, grid lines are curves 
+connecting points on the map with equal first resp. second coordinate (in the default case: latitude resp. longitude). 
+Grid coordinates are shown in the status line within square brackets after the geographical coordinates.
+
+If the map coordinate system and the grid coordinate system are equal, then the grid lines are straight lines parallel to the edges of the
+map view.
+
+Some properties of coordinate systems are illustrated in the following images using a map for the whole of Germany:
+
+* _Map and grid settings as mentioned at the begin of this section:_ 
+    * default WGS84 display of map and grid
+    * coordinates are longitude and latitude
+    * map and grid coordinates are equal
+    * straight grid line
+    * grid lines parallel to the edges of the map view
+    * coordinates and grid coordinates in the status line are equal
+    * grid coordinates displayed at the edges of the map view show longitude and latitude
+
+    ![Lon/lat for map and grid](images/DocAdv/MapGrid1.jpg "Lon/lat for map and grid")
+
+* _ Map setting changed to UTM, zone 32, grid settings unchanged:_
+    * new map setting:
+    
+            +proj=utm +zone=32  +a=6378137.0000 +b=6356752.3142 +towgs84=0,0,0,0,0,0,0,0 +units=m  +no_defs
+            
+    * grid coordinates are still longitude and latitude
+    * map coordinates are UTM (northing/easting)
+    * as a consequence of UTM coordinates in the map and lon/lat coordinates in the grid: grid lines are curved
+    * edges of the map view have constant northing resp. easting values
+    * map is distorted compared with previous image due to the use of different coordinate systems
+    * coordinates and grid coordinates in status line are equal (even if the coordinates used for map rendering
+      have changed, the location on the map is always shown with lat/lon coordinates)
+    * grid coordinates at the edges of the map window show longitude and latitude   
+    
+    ![UTM for map, lon/lat for grid](images/DocAdv/MapGrid2.jpg "UTM for map, lon/lat for grid")
+  
+* _ Map setting changed to UTM, zone 32, grid changed to UTM, zone 32:_  
+    * new grid setting:
+    
+            +proj=utm +zone=32  +a=6378137.0000 +b=6356752.3142 +towgs84=0,0,0,0,0,0,0,0 +units=m  +no_defs
+            
+    * grid coordinates are UTM (northing/easting)       
+    * map coordinates are UTM (northing/easting) and equal to grid coordinates
+    * edges of the map view have constant northing resp. easting (latitude resp. longitude vary along these edges!)
+    * carefully comparing the next image with the first one in this section shows that there is again a distortion due to the use of 
+      different coordinate systems in the 2 images.
+    * straight grid lines
+    * grid lines parallel to the edges of the map view
+    * grid coordinates at the edges of the map window show northing resp. easting
+    * coordinates in status line are different: lon/lat followed by UTM for grid
+ 
+    ![UTM for map and grid](images/DocAdv/MapGrid3.jpg "UTM for map and grid")
+    
+_Remarks:_  
+
+* Curved grid lines and map distortion are clearly visible if the map is displayed at a large scale. The smaller the 
+  map area displayed in the map view the less obvious are these distortions.
+* A side effect of using coordinate systems with different features is the change of the map scale when 
+  moving the map over long distances to the north or south (not zooming the map).
+  
+
 ## Full-screen display
 
 _(valid starting with QMS patch version de4deeb (30.07.2017))_

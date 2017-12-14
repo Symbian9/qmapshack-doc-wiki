@@ -186,8 +186,11 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Database, synchronize**
 :  [Multi-user access](DocGisDatabaseAddRemove#markdown-header-multi-user-access "Multi-user access")
 
+**Datum, grid**
+:  [Projection and datum](AdvMapDetails#markdown-header-projection-and-datum "Projection and datum")
+
 **Datum, map**
-:  [Projection and Scaling](DocBasicsMapDem#markdown-header-projection-and-scaling "Projection and Scaling")
+:  [Projection and Scaling](DocBasicsMapDem#markdown-header-projection-and-scaling "Projection and Scaling") ⊞ [Projection and datum](AdvMapDetails#markdown-header-projection-and-datum "Projection and datum")
 
 **Datum, WGS84**
 :  [Projection and Scaling](DocBasicsMapDem#markdown-header-projection-and-scaling "Projection and Scaling")
@@ -438,6 +441,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **GPX, track history handling**
 :  [Track history](AdvTrkHist "Track history")
 
+**Grid, projection and datum**
+:  [Projection and datum](AdvMapDetails#markdown-header-projection-and-datum "Projection and datum")
+
 **GUI, language selection and change**
 :  [Change GUI language](DocFaqConfig#markdown-header-how-to-change-the-gui-language "Change GUI language")
 
@@ -567,6 +573,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Map, overview of setup**
 :  [Map and DEM setup](AdvSetup#markdown-header-map-and-dem-setup "Map and DEM setup")
+
+**Map, projection and datum**
+:  [Projection and datum](AdvMapDetails#markdown-header-projection-and-datum "Projection and datum")
 
 **Map, projection**
 :  [Projection and Scaling](DocBasicsMapDem#markdown-header-projection-and-scaling "Projection and Scaling")
@@ -751,8 +760,11 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Project, sources**
 :  [Working with Projects](DocWorkingWithProjects "Working with Projects")
 
+**Projection, grid**
+:  [Projection and datum](AdvMapDetails#markdown-header-projection-and-datum "Projection and datum")
+
 **Projection, map**
-:  [Projection and Scaling](DocBasicsMapDem#markdown-header-projection-and-scaling "Projection and Scaling")
+:  [Projection and Scaling](DocBasicsMapDem#markdown-header-projection-and-scaling "Projection and Scaling") ⊞ [Projection and datum](AdvMapDetails#markdown-header-projection-and-datum "Projection and datum")
 
 **Projection, Mercator**
 :  [Projection and Scaling](DocBasicsMapDem#markdown-header-projection-and-scaling "Projection and Scaling")
@@ -1212,6 +1224,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Undo, edit**
 :  [Undo/Redo](DocGisItemsEditMultiple#markdown-header-undoredo "Undo/Redo")
 
+**UTM, coordinates**
+:  [Projection and datum](AdvMapDetails#markdown-header-projection-and-datum "Projection and datum")
+
 
 ## V
 
@@ -1282,6 +1297,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Waypoint, with blue icon**
 :  [Blue dot waypoint icons](DocFaqMaps#markdown-header-why-are-waypoints-shown-with-a-blue-dot-icon "Blue dot waypoint icons")
+
+**WGS84, projection**
+:  [Projection and datum](AdvMapDetails#markdown-header-projection-and-datum "Projection and datum")
 
 **Windows registry, use**
 :  [Command line options](DocCmdOptions "Command line options")

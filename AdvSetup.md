@@ -98,7 +98,7 @@ For more details about the installation of maps and DEM data compare also the [Q
 The following toggles change the layout of all map windows:
 
 * Menu `View - Show scale`: switch on or off display of map scale 
-* Menu `View - Show grid`:  switch on or off display of map grid
+* Menu `View - Show grid`:  switch on or off display of map grid in all map views
 * Menu `View - POI text`: switch on or off display of POI names on vector maps
 * Menu `View - Map tooltip`: switch on or off tooltip window display of features of the objects under the mouse cursor in a vector map
 * Menu `View - Night/Day`: change map display between day and night layout (if supported by map)
@@ -112,16 +112,18 @@ The following setup options change the layout of all map windows:
 
 * Menu `View - Setup map font`: In the pop-up window select the font and its properties used for text in map objects
 * Menu `View - Setup map background`: In the pop-up window select the color of the map background
-* Menu `View - Setup units`: In the pop-up window select the length unit (nautic, imperial, metric) and the slope unit (% or °). 
+* Menu `View - Setup units`: In the pop-up window select the length unit (nautical, imperial, metric) and the slope unit (% or °). 
   _Hint:_ Changes may take effect only after a QMS restart
 * Menu `View - Setup grid`: 
     * Select the color of the map grid with the help of the palette icon
-    * _Expert mode_: Define the projection used for the grid
+    * _Expert mode_: Define projection and datum (coordinate system) used for the map grid
+    * _Remark:_ Each view has its own settings!
 * Menu `View - Setup map view`: 
     * Set the map scales to _Logarithmic_ or _Square_. A change of this option leads to a different zoom behavior of maps 
      (compare section "[Map scale type](AdvMapDetails#markdown-header-map-scale-type)").
-    * _Expert mode_: Define the projection and datum of maps
-* Menu `View - Setup coord. format`: Select one out of 3 supported coordinate formats 
+    * _Expert mode_: Define projection and datum (coordinate system) used for rendering of maps
+    * _Remark:_ Each view has its own settings!
+* Menu `View - Setup coord. format`: Select one out of 3 supported geographical coordinate formats
 
 ### Single map display options
 
