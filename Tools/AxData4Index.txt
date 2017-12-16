@@ -544,6 +544,17 @@ ___Basic usage___
         1. WMTS|recommended map scale
         1. Menu|View - Setup Map View
         
+    * [Projection and datum](AdvMapDetails#markdown-header-projection-and-datum)     
+        1. Map|projection and datum
+        1. Grid|projection and datum
+        1. Datum|map
+        1. Datum|grid
+        1. Projection|map
+        1. Projection|grid
+        1. UTM|coordinates
+        1. WGS84|projection
+    
+    
     * [Full-screen display](AdvMapDetails#markdown-header-full-screen-display)
         1. Map|full-screen display
         1. Full-screen display|of maps        

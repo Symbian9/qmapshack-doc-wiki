@@ -155,6 +155,14 @@ _Remarks:_
   map area displayed in the map view the less obvious are these distortions.
 * A side effect of using coordinate systems with different features is the change of the map scale when 
   moving the map over long distances to the north or south (not zooming the map).
+* Quite often geographical lon/lat coordinates are given without mentioning the used coordinate system. A typical situation is the use of some national
+  coordinate system. The following image shows map and grid coordinates in lon/lat format. The map coordinate system is the international WGS84 one, the grid
+  coordinate system is the German Potsdam datum. WPT2 is located at 50° North (WGS84/map coordinate), the corresponding grid coordinate is 50.001162° North (Potsdam datum).
+  WPT1 is a WPT located at 50° North (Potsdam datum). The distance between both waypoints is more than 100m. This demonstrates also the danger of using coordinates
+  with unknown coordinate system (can happen with coordinates from printed raster maps). Trying different grid settings can help
+  to identify the coordinate system which was used when describing a waypoint.
+  
+  ![Different lon/lat coordinates](images/DocAdv/MapGrid4.jpg "Different lon/lat coordinates")
   
 
 ## Full-screen display

@@ -226,7 +226,8 @@ A no-go area can be defined as follows:
 
   ![Mouse handling](images/DocAdv/WPTMouseEdit.jpg "No-go area toolbar")    
 
-As soon as no-go areas are defined any route constructed with BRouter avoids each of the no-go areas.
+As soon as no-go areas are defined any route constructed with BRouter avoids each of the no-go areas. _Attention:_ This statement is true only if no routing
+point lies inside the no-go area. If a routing point is inside of a no-go area, then the router creates a route through this routing point irrespective of the no-go area.
 
 Example of a route connecting 2 waypoints without crossing a no-go area:
 
@@ -288,6 +289,8 @@ _Remark:_ These methods work in the same way for track and for route creation.
     * _Disadvantage:_ Quite often very short map polylines. Thus, many intermediate routing points are required.
 
 ## Comparison of routing engines
+
+(for a general comparison of routers in general see also [OSM router comparison matrix](http://wiki.openstreetmap.org/wiki/Routing/online_routers))
 
 _Feature_| _BRouter_ | _Routino_ | _MapQuest_ | _Off-road_ | _Vector_ |
 ---------|-----------|-----------|------------|----------|:----------:|

@@ -34,6 +34,7 @@ Image caption | Used in
 [DEM properties selection](images/DocAdv/DemProperties.jpg "Elevation data properties selection") | [AdvMapDetails](AdvMapDetails)
 [Database error](images/DocFaq/MySqlNoConnect.jpg "Database error") | [DocFaqData](DocFaqData)
 [Database menu grayed out](images/DocFaq/MySqlNoFolder.jpg "Add folder menu grayed out") | [DocFaqData](DocFaqData)
+[Different lon/lat coordinates](images/DocAdv/MapGrid4.jpg "Different lon/lat coordinates") | [AdvMapDetails](AdvMapDetails)
 [Different vector map layouts](images/DocFaq/MapLayoutVariants.png "Different map layouts") | [DocFaqMaps](DocFaqMaps)
 [Direct track distance](images/DocFaq/Directtrack.jpg "Direct track distance") | [DocFaqHandling](DocFaqHandling)
 [Distance between waypoints](images/DocFaq/WPTDistance.jpg "Distance between waypoints") | [DocFaqHandling](DocFaqHandling)
