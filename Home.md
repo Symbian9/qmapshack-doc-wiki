@@ -54,7 +54,7 @@ GIS Data:
 * Summarize project by a diary
 * Support for tracks, routes, waypoints and areas
 * Support of track point extensions (e.g. heart rate)
-* Support GPX, SLF, FIT, TCX and QMapShack's own binary format
+* Support GPX, SLF, FIT, TCX, SMl, LOG, QLB and QMapShack's own binary format
 * Simple geocache support
 * Store projects in a database
 * Support for multiple databases
@@ -82,7 +82,7 @@ System:
 
 * License GPL3+
 * Runs on all *nix systems as well as on Windows and OS X.
-* GUI has been translated to Czech, Dutch, French, German, Russian and Spanish
+* GUI has been translated to Czech, Dutch, French, German, Russian, Spanish and Catalan
 * Wiki documentation is English 
 * Quickstart guide in English, German and Russian
 * Needs Qt5.4 or later, GDAL, Proj4, Quazip5 and Routino installed
