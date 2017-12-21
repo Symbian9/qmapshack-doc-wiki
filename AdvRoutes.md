@@ -226,7 +226,7 @@ A no-go area can be defined as follows:
     * switch the no-go area feature on or off,    
     * remove the proximity radius and thus the no-go area.
  
-  These actions can also be triggered in the waypoint context menu (menu entries `Change radius`, `Toggle no-go area`, `Delete radius`).
+    These actions can also be triggered in the waypoint context menu (menu entries `Change radius`, `Toggle no-go area`, `Delete radius`).
   
   ![Mouse handling](images/DocAdv/WPTMouseEdit.jpg "No-go area toolbar")    
 
