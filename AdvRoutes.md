@@ -215,11 +215,11 @@ A no-go area can be defined as follows:
 * Close the waypoint edit window. A thin circle around the waypoint shows the proximity
   range.
   
-  ![Waypoint with proximity range](images/DocAdv/WPTProximity.jpg "Waypoint with proximity range")
+    ![Waypoint with proximity range](images/DocAdv/WPTProximity.jpg "Waypoint with proximity range")
   
 * In the waypoint context menu select `Toggle no-go area`. The proximity range is now shown as a filled circle.
 
-  ![No-go area](images/DocAdv/WPTNoGo.jpg "No-go area")
+    ![No-go area](images/DocAdv/WPTNoGo.jpg "No-go area")
   
 * Clicking on the circle surrounding a no-go area opens a toolbox. The text in the toolbox shows the proximity radius. Using the toolbox icons the user can
     * change the radius of the no-go area with the mouse (click icon, move mouse to new size of no-go area, left click to confirm new size),
@@ -228,7 +228,7 @@ A no-go area can be defined as follows:
  
     These actions can also be triggered in the waypoint context menu (menu entries `Change radius`, `Toggle no-go area`, `Delete radius`).
   
-  ![Mouse handling](images/DocAdv/WPTMouseEdit.jpg "No-go area toolbar")    
+    ![Mouse handling](images/DocAdv/WPTMouseEdit.jpg "No-go area toolbar")    
 
 As soon as no-go areas are defined any route constructed with BRouter avoids each of the no-go areas in all selected projects in the workspace. _Attention:_ This statement is true only if no routing
 point lies inside the no-go area. If a routing point is inside of a no-go area, then the router creates a route through this routing point irrespective of the no-go area.
