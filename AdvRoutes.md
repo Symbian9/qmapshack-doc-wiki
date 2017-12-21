@@ -202,31 +202,35 @@ non-portable format which links route and track data.
 
 ## Using no-go areas
 
-_(to be implemented soon in QMS, if more than 1 no-go area should be used: needs also improved BRouter URI parsing)_
+_(valid starting with QMS version 1.10.0, if more than 1 no-go area should be used: needs also improved URI parsing as implemented in BRouter pull request 3ca296c)_
 
 A no-go area (an avoid area) is an area which must be avoided by routes. The BRouter routing engine can handle no-go areas.
 BRouter no-go areas are discs with a certain radius.
 
 A no-go area can be defined as follows:
 
-* Define a waypoint as centre of the no-go area.
-* In the waypoint properties window define the radius of the no-go area in the field `Proximity`. A thin circle around the waypoint shows the proximity
+* Define a waypoint as center of the no-go area.
+* Click `Edit` in the waypoint context menu to open the waypoint edit window 
+* In the waypoint edit window define the radius of the no-go area in the field `Proximity`. 
+* Close the waypoint edit window. A thin circle around the waypoint shows the proximity
   range.
   
   ![Waypoint with proximity range](images/DocAdv/WPTProximity.jpg "Waypoint with proximity range")
   
-* In the waypoint context menu select `Avoid area`. The proximity range is now shown as a filled circle.
+* In the waypoint context menu select `Toggle no-go area`. The proximity range is now shown as a filled circle.
 
   ![No-go area](images/DocAdv/WPTNoGo.jpg "No-go area")
   
-* Clicking on the circle surrounding a no-go area opens a toolbox. Using the toolbox icons the user can
-    * remove the proximity radius and thus the no-go area,
-    * switch the no-go area feature on or off,
-    * change the radius of the no-go area with the mouse.
-
+* Clicking on the circle surrounding a no-go area opens a toolbox. The text in the toolbox shows the proximity radius. Using the toolbox icons the user can
+    * change the radius of the no-go area with the mouse (click icon, move mouse to new size of no-go area, left click to confirm new size),
+    * switch the no-go area feature on or off,    
+    * remove the proximity radius and thus the no-go area.
+ 
+  These actions can also be triggered in the waypoint context menu (menu entries `Change radius`, `Toggle no-go area`, `Delete radius`).
+  
   ![Mouse handling](images/DocAdv/WPTMouseEdit.jpg "No-go area toolbar")    
 
-As soon as no-go areas are defined any route constructed with BRouter avoids each of the no-go areas. _Attention:_ This statement is true only if no routing
+As soon as no-go areas are defined any route constructed with BRouter avoids each of the no-go areas in all selected projects in the workspace. _Attention:_ This statement is true only if no routing
 point lies inside the no-go area. If a routing point is inside of a no-go area, then the router creates a route through this routing point irrespective of the no-go area.
 
 Example of a route connecting 2 waypoints without crossing a no-go area:
@@ -343,7 +347,12 @@ on-the-fly routing | online: no, offline: yes, if switched on | yes | no | no | 
           http://brouter.de/brouter-web
           
       in a browser and proceed as described in the browser window.    
-          
+* _Recommendation on choice of router profiles:_
+    * The BRouter and Routino routers offer different routing profiles with different routing results.
+    * Good profiles for trekking and biking are:
+        * BRouter: `trekking` or `shortest`,
+        * Routino: `Foot` or `Bicycle`.
+    * The user is advised to check the resulting route and, if necessary, improve it by inserting additional routing points.
 * _Vector routing:_
     * Routing is possible along any line types in the vector map, even those that don't have the character of a road (e.g. power lines, rivers). Check
       carefully the line types of the map when using this router!

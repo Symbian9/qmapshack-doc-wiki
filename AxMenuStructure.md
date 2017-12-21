@@ -136,6 +136,9 @@ Copy to... |   |
 Show Bubble |   | True 
 Move Waypoint |   |   
 Proj. Waypoint... |   |   
+Change Radius |   |   
+Toggle Nogo-Area |   | True 
+Delete Radius |   |   
 Delete |   |   
 
 ### Context menu of multiple selected items
