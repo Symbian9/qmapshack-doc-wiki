@@ -5,6 +5,8 @@
 
 # Main and context menu overview
 
+_(valid from commit a09414d, 25.12.2017)_
+
 ## Structure of main menu
 
 *(Global QMS actions)*
@@ -124,6 +126,7 @@ Route Instructions |   | True
 Calculate Route |   |   
 Reset Route |   |   
 Edit Route |   |   
+Reverse Route |   |   
 Convert to Track |   |   
 Delete |   |   
 

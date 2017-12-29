@@ -271,5 +271,32 @@ waypoint. This centers the map in QMS to the waypoint and thus to the raster map
 Raster maps and DEM (**D**igital **E**levation **M**odel) data are supported in QMS via corresponding VRT files.
 Several VRT files can be used. It is up to the user to organize the files properly.
 
+## Is it possible to use EPSG codes for the coordinate system setup?
+
+_(inspired by [newsgroup discussion](https://sourceforge.net/p/qlandkartegt/mailman/message/36169806))_
+
+Geodetic coordinate systems can be identified by a so-called EPSG code. If this code is known for a coordinate system, then it can be used
+for the setup of the coordinate system used for the map or the map grid.
+
+Examples:
+
+* WGS 84, geographic:
+
+        +init=epsg:4326
+        
+  more detailed proj.4 setting of this coordinate system:
+  
+        +proj=longlat +datum=WGS84 +no_defs
+    
+* WGS 84 / Pseudo-Mercator (selected in QMS/QMT via "World Mercator (OSM) - datum WGS_1984")
+
+        +init=epsg:3857
+    
+  more detailed proj.4 setting of this coordinate system:
+
+        +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs  
+
+Parts of the coordinate system (projection, datum ellipsoid) can be described in a similar way if the EPSG code is known.  
+    
 - - -
 [Prev](DocFaqRouting) (Routing) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Troubleshooting QMapShack) [Next](TroubleShooting)

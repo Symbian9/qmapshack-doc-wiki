@@ -27,6 +27,9 @@
 **Douglas-Peuker filter**
 : A track filter for smoothing recorded tracks and for removing superfluous trackpoints from a track.
 
+**EPSG code**
+: A 4- or 5-digits code which identifies a geodetic coordinate system or its components (projection, datum). 
+
 **Filter**
 : See __Track filter__.
 

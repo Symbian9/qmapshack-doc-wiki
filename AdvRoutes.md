@@ -242,7 +242,11 @@ Example of the same route with additional no-go areas:
 
   ![Route with no-go area](images/DocAdv/RouteNoGo.jpg "Route with no-go areas")
 
- 
+_Remark:_ No-go areas with arbitrary boundaries can be filled with a series of no-go areas that approximate the given area as demonstrated in the following image. The
+green area should be used as no-go area. This is achieved by filling it with a few disc-shaped no-go areas. The blue line is a route almost surrounding
+the no-go area and following partially the boundary of the no-go area. Red dots are the used routing points.
+
+![Not disc-shaped no-go area](images/DocAdv/NoGoArbitr.jpg "Not disc-shaped no-go area")
 
 ## Description of routing methods in QMapShack
 

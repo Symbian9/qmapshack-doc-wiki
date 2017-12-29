@@ -60,6 +60,7 @@ Image caption | Used in
 [No fly-as-a-bird routing with Routino](images/DocFaq/RoutinoNoRoute.jpg "No fly-as-a-bird routing") | [DocFaqRouting](DocFaqRouting)
 [No vector routing problem](images/DocFaq/VectorRouting.jpg "Expected routing") | [DocFaqRouting](DocFaqRouting)
 [No-go area](images/DocAdv/WPTNoGo.jpg "No-go area") | [AdvRoutes](AdvRoutes)
+[Not disc-shaped no-go area](images/DocAdv/NoGoArbitr.jpg "Not disc-shaped no-go area") | [AdvRoutes](AdvRoutes)
 [Off icon](images/DocAdv/Off.png) | [AdvRoutes](AdvRoutes)
 [Open log](images/DocAdv/TextCenter.png) | [AdvRoutes](AdvRoutes)
 [Original elevation profile](images/DocAdv/FilterInterpolate0.jpg "Original elevation profile") | [AdvTrkFilters](AdvTrkFilters)

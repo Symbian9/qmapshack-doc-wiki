@@ -302,6 +302,7 @@ ___Do not edit - automatically created from DocMain!___
         * [Why is a raster map not displayed?](DocFaqMaps#markdown-header-why-is-a-raster-map-not-displayed)
         * [How to find the location of a raster map?](DocFaqMaps#markdown-header-how-to-find-the-location-of-a-raster-map)
         * [Is it possible to use several VRT files?](DocFaqMaps#markdown-header-is-it-possible-to-use-several-vrt-files)
+        * [Is it possible to use EPSG codes for the coordinate system setup?](DocFaqMaps#markdown-header-is-it-possible-to-use-epsg-codes-for-the-coordinate-system-setup)
 * [Troubleshooting QMapShack](TroubleShooting)
     * [Qt comes without SSL support](TroubleShooting#markdown-header-qt-comes-without-ssl-support)
     * [GDAL comes without curl support](TroubleShooting#markdown-header-gdal-comes-without-curl-support)

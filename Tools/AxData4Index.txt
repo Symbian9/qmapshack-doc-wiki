@@ -1053,6 +1053,13 @@ ___Basic usage___
                 1. VRT|use of several files
                 1. VRT|for DEM file
                 1. DEM|VRT file for
+                
+            * [Is it possible to use EPSG codes for the coordinate system setup?](DocFaqMaps#markdown-header-is-it-possible-to-use-epsg-codes-for-the-coordinate-system-setup)    
+            + Use of EPSG code
+                1. EPSG|use for coordinate system setup
+                1. Setup|coordinate system
+                1. Coordinate system|setup with EPSG code
+            
             
 * [Troubleshooting QMapShack](TroubleShooting)
     * [Qt comes without SSL support](TroubleShooting#markdown-header-qt-comes-without-ssl-support)

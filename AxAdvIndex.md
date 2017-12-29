@@ -95,6 +95,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 **Contour lines, from raster map**
 :  [Raster contour line layer](DocMapsTipsTricks#markdown-header-raster-contour-line-layer "Raster contour line layer")
 
+**Coordinate system, setup with EPSG code**
+:  [Use of EPSG code](DocFaqMaps#markdown-header-is-it-possible-to-use-epsg-codes-for-the-coordinate-system-setup "Use of EPSG code")
+
 **Course, as trackpoint extension**
 :  [GPXTPX track extension](DocFaqHandling#markdown-header-what-is-the-difference-between-speed-and-gpxtpxspeed "Speed in GPXTPX track extension")
 
@@ -291,6 +294,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Elevation, invalid data**
 :  [Handle invalid elevation data](AdvTrkElevation#markdown-header-handle-invalid-elevation-data "Handle invalid elevation data")
+
+**EPSG, use for coordinate system setup**
+:  [Use of EPSG code](DocFaqMaps#markdown-header-is-it-possible-to-use-epsg-codes-for-the-coordinate-system-setup "Use of EPSG code")
 
 **Export as GPX file, database**
 :  [Export database to GPX file](AdvProjActions#markdown-header-export-database-to-gpx-file "Export database to GPX file")
@@ -966,6 +972,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Scale, of map**
 :  [Change scale type](AdvMapDetails#markdown-header-map-scale-type "Change scale type (logarithmic/square)")
+
+**Setup, coordinate system**
+:  [Use of EPSG code](DocFaqMaps#markdown-header-is-it-possible-to-use-epsg-codes-for-the-coordinate-system-setup "Use of EPSG code")
 
 **Setup, overview of options**
 :  [Setup options](AdvSetup "Setup options")
