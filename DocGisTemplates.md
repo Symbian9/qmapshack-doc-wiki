@@ -127,7 +127,10 @@ Not one for each group box. But this has no influence on the order of the group 
 
 * The name of the template shown in the combo box is the filename of the `UI` template file.
 * The bold keywords in the resulting text are the titles of the corresponding group boxes of the template. As mentioned above, their order is the alphabetical order of the group box object names.
-   
+* Information added to a data object via a template is saved in form of text strings together with the data object into a database or a GPX file. The text strings are
+  preformatted in accordance with XML/HTML rules. It is known that Garmin GPX parsers can only parse a limited number of XML tags. Thus, if a GPX file saved by QMS 
+  should be used in some Garmin application or device it is recommended to save the GPX file via the QMS project context menu entry `Save as GPX 1.1 w/o ext...`. 
+  The saved GPX contains still the information from the template but without formatting.  
 
 - - -
 [Prev](DocGisDevices) (GPS Devices) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Databases and projects) [Next](AdvProjects)
