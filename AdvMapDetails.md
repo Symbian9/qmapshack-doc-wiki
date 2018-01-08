@@ -93,6 +93,8 @@ Recommended (default) settings are:
 
 These settings use the format of the `Proj.4` project. For details see the [project documentation](https://raw.githubusercontent.com/OSGeo/proj.4/gh-pages/proj4.pdf).       
         
+_Remark:_ For map rendering projections using lat/lon coordinates are not supported. Don't use Proj.4 settings with `+proj=longlat`!
+        
 The status line at the bottom of the QMS window shows always the geographical coordinates of the mouse location on the
 map. The map is rendered so that the edges of the map view have constant first resp. second coordinate as defined with the coordinate system for the map. 
 

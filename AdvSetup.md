@@ -122,7 +122,10 @@ The following setup options change the layout of all map windows:
     * Set the map scales to _Logarithmic_ or _Square_. A change of this option leads to a different zoom behavior of maps 
      (compare section "[Map scale type](AdvMapDetails#markdown-header-map-scale-type)").
     * _Expert mode_: Define projection and datum (coordinate system) used for rendering of maps
-    * _Remark:_ Each view has its own settings!
+    * _Remarks:_ 
+        * Each view has its own settings!
+        * Projections using lat/lon coordinates are not supported. Don't use Proj.4 settings with `+proj=longlat`!
+        
 * Menu `View - Setup coord. format`: Select one out of 3 supported geographical coordinate formats
 
 ### Single map display options
