@@ -278,10 +278,9 @@ Bitbucket, the following conditions must be met:
         manually convert your `*.md` file to HTML so you can locally
         inspect it using your browser.
 
-    *   You have _GNU_ `gawk` to run `make nav` and `make check` against
-        the repository.  The scripts `DocFix.sh`, `NavBar.sh`, and
-        `LinkCheck.sh` use some `gawk` specific features, like a
-        function `match()` which takes three arguments, function
+    *   You have _GNU_ `gawk` to run `make nav` against the repository.
+        The script `NavBar.sh` uses some `gawk` specific features, like
+        a function `match()` which takes three arguments, function
         `gensub()`, and perhaps a few others.
 
     *   **You are using an editor which is capable of producing UTF-8
@@ -382,10 +381,13 @@ Bitbucket, the following conditions must be met:
                     Use your Browser's "Back" button to return.
 
 *   If you are done with editing, `cd` to the top level directory of
-    your wiki repository, if necessary, and issue the commands
+    your wiki repository, if necessary.  Then keep your Bitbucket
+    password ready for pushing the repository upstream and run the
+    commands
 
             make nav
-            make check
+            hg commit -A
+            make check && hg push
 
     to ensure all your changed `*.md` files are in a consistent state
     which is usable both, locally and online[^3].  This includes fixing
@@ -400,12 +402,6 @@ Bitbucket, the following conditions must be met:
     corrections, but leave errors not related to your current work
     unresolved in the current changeset you are working on, and if you
     want to resolve them, resolve them in a separate changeset later.
-
-*   Finally, keep your Bitbucket password ready for pushing the
-    repository upstream and run the commands
-
-            hg commit
-            hg push
 
 [^3]:
     Mind that under some circumstances (in particular when running it
