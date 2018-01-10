@@ -36,6 +36,8 @@
 from __future__ import unicode_literals
 import codecs, copy, os, re, sys, tempfile, unicodedata
 
+ec = 0                                              # Default exit code.
+
 #
 # Define global dicts:
 #
@@ -128,6 +130,7 @@ fragid = re.compile(r'#.*$')          # To remove a fragment identifier.
 
 def linkref(fn, lk):
 
+    global ec                           # Use global exit code variable.
     global Links, SelfRef, Where           # Use globally defined dicts.
 
     #
@@ -139,7 +142,9 @@ def linkref(fn, lk):
     elif fn == lk:                         # Deal with a self-reference.
          SelfRef[fn] = SelfRef.get(fn,0) - 1
 
-         if SelfRef[fn] < 0: print('Self-reference in %s.md' % fn)
+         if SelfRef[fn] < 0:
+            print('Self-reference in %s.md' % fn)
+            ec = 1                       # Use non-zero exit code later.
 
          return       # No need to record that a file references itself.
 
@@ -166,9 +171,12 @@ def linkref(fn, lk):
 
 def notify(w, t):
 
+    global ec                           # Use global exit code variable.
+
     for f in sorted(w.keys()):
         if len(w[f]):
            print('\n%s in %s.md:' % (t, f))
+           ec = 1                        # Use non-zero exit code later.
 
            for n in sorted(w[f].keys()): print(n)
 
@@ -438,6 +446,7 @@ ext = re.compile(r'\.[a-z]+$')  # To check for existing file extensions.
 
 if len(FlUnref):
    print('\nUnreferenced files:')
+   ec = 1                                # Use non-zero exit code later.
 
    #
    # If the file name  already contains an extension,  use it, otherwise
@@ -460,8 +469,9 @@ for lk in LkDef:
 
 if len(Where):
    print('\nBroken links:')
+   ec = 1                                # Use non-zero exit code later.
 
    for lk in sorted(Where.keys()):
        print('%s in: %s' % (lk, Where[lk][1:]))
 
-sys.exit(0)
+sys.exit(ec)
