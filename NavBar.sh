@@ -3,7 +3,7 @@
 ########################################################################
 ########################################################################
 ##                                                                    ##
-## Copyright (C) 2016 - 2017 Rainer Woitok, <Rainer.Woitok@Gmail.Com> ##
+## Copyright (C) 2016 - 2018 Rainer Woitok, <Rainer.Woitok@Gmail.Com> ##
 ##                                                                    ##
 ## This shell script is free software: you can redistribute it and/or ##
 ## modify it  under the terms  of the  GNU General  Public License as ##
