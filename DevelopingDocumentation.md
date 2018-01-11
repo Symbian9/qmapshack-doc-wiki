@@ -319,7 +319,7 @@ Bitbucket, the following conditions must be met:
     save the edited file to disk, `cd` to the top level of the wiki
     repository, if necessary, and then run the commands
 
-    >    ./Make.sh _YourFilePath_.md
+    >    ./Make.sh _YourFilePath_.md	
     >    _YourBrowser_ _YourFilePath_.html
 
     where _YourFilePath_ has to start with `playground/`, if you created
@@ -343,16 +343,19 @@ Bitbucket, the following conditions must be met:
 *   If you finally decide to really include your new file into the wiki,
     some more steps are necessary:
 
-    *   If you used "`](../`_TargetFile_" to link to other wiki files
-        in your file, edit it one last time and change all strings
-        "`](../`" to just "`](`" or else these links will no longer be
-        resolvable in the new file location.
+    *   If your file contains _Markdown_ inline links
+        "\[...]\(../_TargetFile_)" to link to other wiki files, edit it
+        one last time and change all strings "]\(../" to just "]\(" or
+        else these links will no longer be resolvable from the new file
+        location.  Likewise, if your file contains _Markdown_
+        reference-style links "\[...]: ...", replace all matches of the
+        regular expression "(\\]:[ \t]+)\[.]\[.]/" with just "\1", the
+        part matching the parenthesized sub-expression.
 
-    *   Move your file one directory level up by `cd`-ing to the top
-        level directory of your wiki repository and issuing the
-        command
+    *   Move your file one directory level up by issuing the commands
 
-        >    mv playground/_YourNewFileName_.md .
+        >    cd /_YourPathTo_/playground	
+        >    mv _YourNewFileName_.md ..
 
     *   If your file isn't reachable via some link occurring in one of
         the other `*.md` files, it is dead.  Or at least as good as
@@ -404,23 +407,22 @@ Bitbucket, the following conditions must be met:
     want to resolve them, resolve them in a separate changeset later.
 
 [^3]:
-    Mind that under some circumstances (in particular when running it
-    for the very first time) the command `make nav` might process more
-    than just the files you changed.  However, it should normally not
-    introduce any real changes (not even changes to file modification
-    dates) which aren't caused by your own changes.
+    Under some circumstances (in particular when running it for the very
+    first time) the command `make nav` might process more than just the
+    files you changed.  However, it should normally not introduce any
+    real changes (not even changes to file modification dates) which
+    aren't caused by your own work.
 
 [^4]:
     To be precise, `make check` checks all _tracked_ files of the wiki
     repository for being referenced in at least one _toplevel_ `*.md`
     file as well as all _toplevel_ `*.md` files for containing only
-    defined local links into any _toplevel_ `*.md` file.  This implies
-    that `make check` can neither find undefined links in `*.md` files
-    still residing in directory `playground/` nor check whether (yet)
-    untracked files are referenced.
-
-
-
+    local links without a fragment identifier to _tracked_ `*.md` files
+    and local links with a fragment identifier into a _toplevel_ `*.md`
+    file.  This implies that `make check` can neither find undefined
+    links in `*.md` files still residing in directory `playground/` nor
+    correctly check references without a fragment identifier to (yet)
+    untracked files.
 
 ///Footnotes Go Here///
 - - -
