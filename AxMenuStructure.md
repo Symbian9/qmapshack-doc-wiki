@@ -5,7 +5,7 @@
 
 # Main and context menu overview
 
-_(valid from commit a09414d, 25.12.2017)_
+_Overview derived from commit c176f56fbb05 (Thu Jan 11 16:01:28 2018 +0100)_ 
 
 ## Structure of main menu
 
@@ -50,6 +50,7 @@ _(valid from commit a09414d, 25.12.2017)_
  |Import Database from QLandkarte| | |Import QLandkarte GT database
  |VRT Builder| | |GUI front end to gdalbuildvrt
  |Create Routino Database| | | 
+ |Start QMapTool| | | 
 **Window**| | | |
  |Close Tab|Ctrl+W| | 
  |Full Screen|F11| | 
@@ -66,6 +67,9 @@ _(valid from commit a09414d, 25.12.2017)_
  |Help|F1| | 
  |Quickstart Help| | | 
 
+
+_Remarks:_
+* The `Start QMapTool` menu entry is visible only if QMapTool can be found in the PATH environment variable.
 
 ## Structure of most important context menus
 
