@@ -114,7 +114,7 @@ window. The same procedure should be used if the on-the-fly option for the BRout
 
 Editing of routes is described in this section for the case of autorouting only.
 
-An existing route can be modified and edited in various ways:
+An existing route in a project __selected__ in the workspace can be modified and edited in various ways:
 
 * _Change of the routing method/recalculation of route:_
     1. Change selections in routing docked window.
@@ -230,7 +230,9 @@ A no-go area can be defined as follows:
   
     ![Mouse handling](images/DocAdv/WPTMouseEdit.jpg "No-go area toolbar")    
 
-As soon as no-go areas are defined any route constructed with BRouter avoids each of the no-go areas in all selected projects in the workspace. _Attention:_ This statement is true only if no routing
+As soon as no-go areas are defined any route constructed with BRouter avoids each of the no-go areas in __all selected__ projects in the workspace. 
+No-go areas defined in unselected workspace projects are inactive while routing.
+_Attention:_ This statement is true only if no routing
 point lies inside the no-go area. If a routing point is inside of a no-go area, then the router creates a route through this routing point irrespective of the no-go area.
 
 Example of a route connecting 2 waypoints without crossing a no-go area:
