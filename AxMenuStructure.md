@@ -69,7 +69,7 @@ _Overview derived from commit c176f56fbb05 (Thu Jan 11 16:01:28 2018 +0100)_
 
 
 _Remarks:_
-* The `Start QMapTool` menu entry is visible only if QMapTool can be found in the PATH environment variable.
+* The `Start QMapTool` menu entry is visible only if `qmaptool.exe` can be found in the `PATH  environment variable.
 
 ## Structure of most important context menus
 
@@ -179,7 +179,9 @@ Copy position (Grid) |   |
   If the user chooses another checkable action in the group, the one they chose becomes active and the one that was active becomes inactive.
 * `True` in the column `Checkable` marks a menu entry which has an on/off state (`checked/selected` or 
   `not checked/not selected`).
-* Depending on the state of the objects for which the context menu is called one or more menu entries can be inactive.
+* Depending on the state of the objects for which the context menu is called one or more menu entries can be inactive. 
+  As a rule all context menu entries (actions) in an unselected workspace project that produce new data are active, because the new data can 
+  be placed into an active project. Most other context menu entries (those changing only a given data object) are inactive.
 
 - - -
 [Prev](AxHotkeys) (Hotkeys) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Complete table of contents) [Next](AxAdvToc)
