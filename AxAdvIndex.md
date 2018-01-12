@@ -701,6 +701,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 ## N
 
 
+**No-go area, in tracks**
+:  [Tracks and no-go areas](AdvTrkGeneral#markdown-header-tracks-and-no-go-areas "Tracks and no-go areas")
+
 **No-go area, routing**
 :  [Using no-go areas](AdvRoutes#markdown-header-using-no-go-areas "Using no-go areas")
 
@@ -1195,6 +1198,9 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 
 **Track, track points filter**
 :  [Track points filter](DocGisItemsTrk2#markdown-header-points "Track points filter")
+
+**Track, use of no-go areas**
+:  [Tracks and no-go areas](AdvTrkGeneral#markdown-header-tracks-and-no-go-areas "Tracks and no-go areas")
 
 **Track, used trackpoint symbols**
 :  [Symbols for trackpoints](AdvTrkGeneral#markdown-header-symbols-for-trackpoints "Symbols for trackpoints")

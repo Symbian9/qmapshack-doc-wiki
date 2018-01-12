@@ -490,5 +490,10 @@ Different approaches for avoiding or removing invalid elevations are described
 [here](AdvTrkElevation#markdown-header-handle-invalid-elevation-data).
 
 
+## Tracks and no-go areas
+
+When using the BRouter as routing engine for creating or editing tracks, then the tracks won't pass through no-go areas of all selected projects.
+For details of no-go areas compare section ["Using no-go areas"](AdvRoutes#markdown-header-using-no-go-areas).
+
 - - -
 [Prev](AdvTracks) (Tracks) | [Home](Home) | [Manual](DocMain) | [Index](AxAdvIndex) | [Top](#) | (Track filters) [Next](AdvTrkFilters)

@@ -696,6 +696,10 @@ ___Basic usage___
                 1. Track|filter
                 1. Filter|track
                 
+            * [Tracks and no-go areas](AdvTrkGeneral#markdown-header-tracks-and-no-go-areas)
+                1. Track|use of no-go areas
+                1. No-go area|in tracks
+                
         * [Track filters](AdvTrkFilters)
             * [Elevation filters](AdvTrkFilters#markdown-header-elevation-filters)    
             + Description of track elevation filters            

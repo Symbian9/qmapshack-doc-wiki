@@ -208,6 +208,7 @@ ___Do not edit - automatically created from DocMain!___
             * [Assign colors to track activities](AdvTrkGeneral#markdown-header-assign-colors-to-track-activities)
             * [Recorded and calculated track data](AdvTrkGeneral#markdown-header-recorded-and-calculated-track-data)
             * [Avoid and remove invalid data in a track](AdvTrkGeneral#markdown-header-avoid-and-remove-invalid-data-in-a-track)
+            * [Tracks and no-go areas](AdvTrkGeneral#markdown-header-tracks-and-no-go-areas)
         * [Track filters](AdvTrkFilters)
             * [Elevation filters](AdvTrkFilters#markdown-header-elevation-filters)
                 * [Median filter](AdvTrkFilters#markdown-header-median-filter)
