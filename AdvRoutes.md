@@ -26,8 +26,15 @@ When selecting a routing strategy, the user has to decide about features like
 Having the routing points and having selected the routing strategy the route can be constructed (calculated). After a change of the routing strategy 
 the route can be recalculated. This possibility distinguishes routes from tracks. 
 
-Tracks consist of an ordered list of waypoints (trackpoints) only. In addition to position and elevation trackpoints may contain also other information
-(e.g. various fitness data if track has been recorded by a fitness device).  
+If a route is saved into a GPX file, then typically only the routing points are saved. Remember: reconstruction of the route from the list of routing points alone
+is not possible. 
+
+Tracks consist of an ordered list of waypoints (trackpoints). In addition to position, elevation and a timestamp trackpoints may contain also other information
+(e.g. various fitness data if track has been recorded by a fitness device). Thus, a track is a standalone geospatial data object, which does not require 
+additional information like a routing strategy for interpretation.
+
+Typically, a track contains much more points (factor 10 .. 100 ) than a route. That implies, that it is easier to make changes to a route than to a track when planning
+a tour. After the final edit step the route can easily be converted into a track.
 
 QMS offers tools to create and edit easily routes and tracks.
 
@@ -222,7 +229,7 @@ A no-go area can be defined as follows:
     ![No-go area](images/DocAdv/WPTNoGo.jpg "No-go area")
   
 * Clicking on the circle surrounding a no-go area opens a toolbox. The text in the toolbox shows the proximity radius. Using the toolbox icons the user can
-    * change the radius of the no-go area with the mouse (click icon, move mouse to new size of no-go area, left click to confirm new size),
+    * change the radius of the no-go area with the mouse (click icon, move mouse to new size of no-go area, old radius size is still shown, left click to confirm new size).
     * switch the no-go area feature on or off,    
     * remove the proximity radius and thus the no-go area.
  
