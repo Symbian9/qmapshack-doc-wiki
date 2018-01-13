@@ -599,7 +599,7 @@ _The symbol_ " ⊞ " _is used as a separator in the case that several links belo
 :  [Supported raster maps](DocBasicsMapDem#markdown-header-raster-maps "Supported raster maps")
 
 **Map, Russian military map**
-:  [Use of (Russian military) raster maps](DocMapsTipsTricks#markdown-header-russian-raster-maps-ex-military-aka-genshtab-maps-of-the-general-staff-non-classified-maps-and-so-on "Use of (Russian military) raster maps")
+:  [Use of Russian military raster maps](DocMapsTipsTricks#markdown-header-raster-maps-ex-military-or-russian-genshtab-maps "Use of Russian military raster maps")
 
 **Map, scale (logarithmic/quadratic)**
 :  [Change scale type](AdvMapDetails#markdown-header-map-scale-type "Change scale type (logarithmic/square)")

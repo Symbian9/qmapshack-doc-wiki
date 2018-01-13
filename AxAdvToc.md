@@ -191,7 +191,7 @@ ___Do not edit - automatically created from DocMain!___
             * [Script](DocMapsTipsTricks#markdown-header-script)
                 * [Configuration](DocMapsTipsTricks#markdown-header-configuration)
         * [TMS Configuration for NZ Topo](DocMapsTipsTricks#markdown-header-tms-configuration-for-nz-topo)
-        * [(Russian) Raster maps (ex-military (aka "Genshtab" /Maps of the General Staff/), non-classified maps and so on) ](DocMapsTipsTricks#markdown-header-russian-raster-maps-ex-military-aka-genshtab-maps-of-the-general-staff-non-classified-maps-and-so-on)
+        * [Raster maps (ex-military or Russian Genshtab maps) ](DocMapsTipsTricks#markdown-header-raster-maps-ex-military-or-russian-genshtab-maps)
         * [Some more WMS & WMTS Server Maps](DocMapsTipsTricks#markdown-header-some-more-wms-wmts-server-maps)
 * [Data handling](AdvDataHandling)    
     * [Tracks](AdvTracks)    
