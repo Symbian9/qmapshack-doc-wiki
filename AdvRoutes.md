@@ -26,8 +26,15 @@ When selecting a routing strategy, the user has to decide about features like
 Having the routing points and having selected the routing strategy the route can be constructed (calculated). After a change of the routing strategy 
 the route can be recalculated. This possibility distinguishes routes from tracks. 
 
-Tracks consist of an ordered list of waypoints (trackpoints) only. In addition to position and elevation trackpoints may contain also other information
-(e.g. various fitness data if track has been recorded by a fitness device).  
+If a route is saved into a GPX file, then typically only the routing points are saved. Remember: reconstruction of the route from the list of routing points alone
+is not possible. 
+
+Tracks consist of an ordered list of waypoints (trackpoints). In addition to position, elevation and a timestamp trackpoints may contain also other information
+(e.g. various fitness data if track has been recorded by a fitness device). Thus, a track is a standalone geospatial data object, which does not require 
+additional information like a routing strategy for interpretation.
+
+Typically, a track contains much more points (factor 10 .. 100 ) than a route. That implies, that it is easier to make changes to a route than to a track when planning
+a tour. After the final edit step the route can easily be converted into a track.
 
 QMS offers tools to create and edit easily routes and tracks.
 
@@ -114,7 +121,7 @@ window. The same procedure should be used if the on-the-fly option for the BRout
 
 Editing of routes is described in this section for the case of autorouting only.
 
-An existing route can be modified and edited in various ways:
+An existing route in a project __selected__ in the workspace can be modified and edited in various ways:
 
 * _Change of the routing method/recalculation of route:_
     1. Change selections in routing docked window.
@@ -222,7 +229,7 @@ A no-go area can be defined as follows:
     ![No-go area](images/DocAdv/WPTNoGo.jpg "No-go area")
   
 * Clicking on the circle surrounding a no-go area opens a toolbox. The text in the toolbox shows the proximity radius. Using the toolbox icons the user can
-    * change the radius of the no-go area with the mouse (click icon, move mouse to new size of no-go area, left click to confirm new size),
+    * change the radius of the no-go area with the mouse (click icon, move mouse to new size of no-go area, old radius size is still shown, left click to confirm new size).
     * switch the no-go area feature on or off,    
     * remove the proximity radius and thus the no-go area.
  
@@ -230,7 +237,9 @@ A no-go area can be defined as follows:
   
     ![Mouse handling](images/DocAdv/WPTMouseEdit.jpg "No-go area toolbar")    
 
-As soon as no-go areas are defined any route constructed with BRouter avoids each of the no-go areas in all selected projects in the workspace. _Attention:_ This statement is true only if no routing
+As soon as no-go areas are defined any route constructed with BRouter avoids each of the no-go areas in __all selected__ projects in the workspace. 
+No-go areas defined in unselected workspace projects are inactive while routing.
+_Attention:_ This statement is true only if no routing
 point lies inside the no-go area. If a routing point is inside of a no-go area, then the router creates a route through this routing point irrespective of the no-go area.
 
 Example of a route connecting 2 waypoints without crossing a no-go area:

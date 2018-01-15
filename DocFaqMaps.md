@@ -169,7 +169,7 @@ Some servers are
   When downloading a map tile 2 files are created:
 a GIF file (or other image file) with the raster map and an `OZIExplorer` MAP file with geodetic calibration data.
 
-* QMapShack supports the use of raster maps via VRT files. These files can be created with the `GDALBuildVRT`tool
+* QMapShack supports the use of raster maps via VRT files. These files can be created with the `GDALBuildVRT` tool
 and can also be accessed from within QMapShack.
 Doing so leads for the above mentioned maps to an error message indicating that
 georeference data can't be found within the MAP files.
@@ -190,9 +190,8 @@ georeference data can't be found within the MAP files.
         * It is unclear why `GDALBuildVRT` does not find the georeference information.
         * If there is a need to move the files discussed in this topic to a different location then repeat this procedure! The VRT file has a pointer to the relative or absolute path of the MAP file.
 
-* _Hint for Ubuntu users:_ Raster maps may have borders. There is an Ubuntu tool to crop semi-automatically the map or a whole series of maps in such a way that the borders are not visible when loaded into QMapShack. Link to the tool: [github.com/h4tr3d/geocrop](https://github.com/h4tr3d/geocrop). Description of usage:
-    * [http://htrd.su/wiki](http://htrd.su/wiki/start?btng[post][tags]=qmapshack) (Russian). This link leads also to a short Russian description of the basic QMapShack features.
-    * [Quick way to prepare raster map for QMapShack](QuickWayToPrepareRasterMapForQMapShack)
+*  Raster maps may have borders. Use QMapTool to cut the map to the wanted shape without borders. For details compare section
+   ["Raster maps"](DocMapsTipsTricks#markdown-header-raster-maps-ex-military-or-russian-genshtab-maps)
 
 ## Why is a raster map not displayed?
 

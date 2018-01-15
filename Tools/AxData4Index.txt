@@ -617,8 +617,8 @@ ___Basic usage___
             1. Map|NZ topo configuration
             1. TMS|NZ topo configuration  
         
-        * [(Russian) Raster maps (ex-military (aka "Genshtab" /Maps of the General Staff/), non-classified maps and so on) ](DocMapsTipsTricks#markdown-header-russian-raster-maps-ex-military-aka-genshtab-maps-of-the-general-staff-non-classified-maps-and-so-on)
-        + Use of (Russian military) raster maps
+        * [Raster maps (ex-military or Russian Genshtab maps) ](DocMapsTipsTricks#markdown-header-raster-maps-ex-military-or-russian-genshtab-maps)
+        + Use of Russian military raster maps
             1. Map|Russian military map
         
         * [Some more WMS & WMTS Server Maps](DocMapsTipsTricks#markdown-header-some-more-wms-wmts-server-maps)
@@ -695,6 +695,10 @@ ___Basic usage___
                 1. Track|invalid data
                 1. Track|filter
                 1. Filter|track
+                
+            * [Tracks and no-go areas](AdvTrkGeneral#markdown-header-tracks-and-no-go-areas)
+                1. Track|use of no-go areas
+                1. No-go area|in tracks
                 
         * [Track filters](AdvTrkFilters)
             * [Elevation filters](AdvTrkFilters#markdown-header-elevation-filters)    

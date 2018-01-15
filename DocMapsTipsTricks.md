@@ -158,7 +158,7 @@ sources:
     grid: upstream_mylayer_grid
     # Upstream's native resolution for this layer is 2. We *don't* set this
     # here, it's already in the upstream_mylayer_grid definition. Instead, we
-    # specificy that content from this source is to be used scaled, down to res
+    # specify that content from this source is to be used scaled, down to res
     # 10 if needed (larger res numbers mean lower-detail map!).
     # min/max_res in sources is the key to setting which source serves which
     # resolution.
@@ -316,7 +316,7 @@ Other sources for transparent contour line tiles:
 ---
 ## Using openmtbmap.org & velomap.org in QMapShack (Linux only)
 In order to use openmtbmap.org or velomap.org maps within QMapShack you first need to create a gmapsupp.img from the map tiles. 
-For Windows user, there is an integrated batchfile, which will do all necessary steps; so this tutorial is for Linux users. More information you may find [here](https://openmtbmap.org/de/tutorials/mkgmap/).
+For Windows user, there is an integrated batch file, which will do all necessary steps; so this tutorial is for Linux users. More information you may find [here](https://openmtbmap.org/de/tutorials/mkgmap/).
 
 In Linux, please check if package p7zip-full is installed – we need it to unpack the .exe file. Open the console and execute *sudo apt-get install p7zip-full* . We need [Mkgmap](http://www.mkgmap.org.uk/), too. Also Java is required.
 
@@ -472,16 +472,41 @@ Script converts to OSGEO TMS (http://www.maptiler.org/google-maps-coordinates-ti
 </TMS>
 ```
 
-## (Russian) Raster maps (ex-military (aka "Genshtab" /Maps of the General Staff/), non-classified maps and so on) 
+## Raster maps (ex-military or Russian Genshtab maps) 
 
-[Quick way to prepare raster map for QMapShack](QuickWayToPrepareRasterMapForQMapShack)
+[http://loadmap.net](http://loadmap.net) is a server for a wide variety of raster maps covering large parts of the world. 
+Among them are various kinds of Russian army and topographic maps,
+but also maps of the U.S. army map service.
 
+Some of the maps are georeferenced with reference information in various formats. Quite often the `OziExplorer map file` format is used to keep the reference information.
+A major disadvantage of such maps is a border that overlaps neighboring maps. 
+
+To make raster maps from this source available in QMapShack the [QMapTool](https://bitbucket.org/maproom/qmaptool) can be used to reference and to cut unreferenced 
+raster maps.
+
+Referenced maps in the OziExplorer format can be prepared for QMS as follows:
+
+* Assume the map was downloaded as `rastermap.gif` with reference information in `rastermap.map`.
+* Move these 2 files into a QMS map directory.
+* Use `gdalwarp` (to be found in the QMS installation directory for Windows) to convert the map to a georeferenced TIF file:
+
+      gdalwarp rastermap.map rastermap.tif
+    
+* Open QMapTool (if `qmaptool.exe` is on the `PATH`, then it can be opened from QMS by choosing the menu entry `Tool - Start QMapTool`).
+* Use the QMapTool to cut the map to the necessary shape. For details compare the [QMapTool documentation](https://bitbucket.org/maproom/qmaptool/wiki/CutTool).
+  The result is a new file `rastermap_cut.tif` in the QMS map directory.
+* Open QMapShack and select the menu entry `Tool - VRT Builder`.  
+* Insert `rastermap_cut.tif` as source file name, insert a target file name and select the creation of overviews for better rendering of the map. 
+* Click the `Start` button in the tool.
+* Activate the new map in QMapShack.
+  
+    
 ## Some more WMS & WMTS Server Maps
 
 [Download WMS & WMTS Server Maps](http://www.mtb-touring.net/qms/onlinekarten-einbinden) 
 
 * Sat: ArcGIS, Bing
-* OSM Style: mapnik, german & french style, hikebikemap, humanitarian, landscape, opencyclemap, oepnvkarte, outdoors
+* OSM Style: mapnik, German & French style, hikebikemap, humanitarian, landscape, opencyclemap, oepnvkarte, outdoors
 * Topo: OSM Topo, World Topo, Alpenkarte, 4UMaps.eu, MTBMap.cz, Reit- und Wanderkarte
 * Waymarkedtrails: Inlinescating, Mountainbiking, Cycling, Riding, Hiking, Slopemap
 * Overlay: Hillshading
