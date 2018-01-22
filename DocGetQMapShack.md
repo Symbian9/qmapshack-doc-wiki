@@ -60,7 +60,7 @@ To compile QMapShack, you need to have installed:
 * [Qt5](https://www.qt.io/) (at least 5.4)
 * [GDAL](http://www.gdal.org/)
 * [Proj4](https://github.com/OSGeo/proj.4/wiki)
-* [Routino](http://www.routino.org/) (at least 3.0)
+* [Routino](http://www.routino.org/) (at least 3.1)
 * [QuaZip](http://quazip.sourceforge.net/index.html)
 * CMake/Make
 * a C++ compiler (supporting C++11)
