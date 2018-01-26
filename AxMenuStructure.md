@@ -5,7 +5,7 @@
 
 # Main and context menu overview
 
-_Overview derived from commit c176f56fbb05 (Thu Jan 11 16:01:28 2018 +0100)_ 
+_Overview derived from commit 9efcf8b76960 (Thu Jan 25 14:44:47 2018 +0100)_ 
 
 ## Structure of main menu
 
@@ -61,6 +61,7 @@ _Overview derived from commit c176f56fbb05 (Thu Jan 11 16:01:28 2018 +0100)_
  |Workspace| |True | 
  |Database| |True | 
  |Routing| |True | 
+ |Realtime| |True | 
  |Setup Toolbar| | | 
 **?**| | | |
  |About| | | 
