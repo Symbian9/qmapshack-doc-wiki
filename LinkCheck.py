@@ -268,10 +268,10 @@ os.environ['HGRCPATH'     ] = ''           # vanilla Mercurial commands.
 rem = tempfile.mktemp()  # To contain names of files marked for removal.
 
 #
-# Save modified output of "hg status -r" in temporary file and terminate
-# the script, if "cut" returned with a non-zero exit code:
+# Save the output of  "hg status -nr"  in a temporary file and terminate
+# the script, if "hg" returned with a non-zero exit code:
 
-if os.system('hg status -r | cut -sd\  -f2- > %s' % rem):
+if os.system('hg status -nr > %s' % rem):
    os.remove(rem)                                # Delete temporary file
    sys.exit(err >> 8)                                    # and bail out.
 
@@ -291,8 +291,7 @@ md     = re.compile(r'(\.md)?[\r\n]*$')  # To drop ".md" file extension.
 # the extension from "*.md" files,  and mark all these files as existing
 # but not yet referenced:
 
-trk = subprocess.Popen('hg status -a | cut -sd\  -f2-\n\
-                        hg manifest  | grep -vf %s' % rem,
+trk = subprocess.Popen('hg status -an ; hg manifest | grep -vf %s' % rem,
                        shell=True, stdout=subprocess.PIPE).stdout
 
 for ln in trk:             # Read list of added and still tracked files.
@@ -487,7 +486,7 @@ if len(Where):
 # the "hg status" command), otherwise it will be "0" (indicating uncomm-
 # itted changes)):
 
-if not os.system('hg status | grep -q .'):
+if not os.system('hg status | grep -qm1 .'):
    print('\nUncommitted changes:')
 
    ec = 1                                # Use non-zero exit code below.
