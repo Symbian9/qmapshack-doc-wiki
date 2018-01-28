@@ -209,7 +209,7 @@ non-portable format which links route and track data.
 
 ## Using no-go areas
 
-_(valid starting with QMS version 1.10.0, if more than 1 no-go area should be used: needs also improved URI parsing as implemented in BRouter pull request 3ca296c)_
+_(valid starting with QMS version 1.10.0, if more than 1 no-go area should be used: needs also improved URI parsing as implemented in a BRouter pull request from Dec 3, 2017 (pr nr. 92))_
 
 A no-go area (an avoid area) is an area which must be avoided by routes. The BRouter routing engine can handle no-go areas.
 BRouter no-go areas are discs with a certain radius.
