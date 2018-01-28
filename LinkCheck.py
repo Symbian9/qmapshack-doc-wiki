@@ -295,6 +295,8 @@ trk = subprocess.Popen('hg status -an ; hg manifest | grep -vf %s' % rem,
                        shell=True, stdout=subprocess.PIPE).stdout
 
 for ln in trk:             # Read list of added and still tracked files.
+    ln = codecs.decode(ln, 'ascii')           # Convert to ASCII string.
+
     if ignore.search(ln): continue
 
     fn          = md.sub('', ln)    # File name without ".md" extension.
@@ -324,6 +326,7 @@ mkd = subprocess.Popen('ls *.md',
                        shell=True, stdout=subprocess.PIPE).stdout
 
 for fl in mkd:                    # Process all toplevel Markdown files.
+    fl = codecs.decode(fl, 'ascii')           # Convert to ASCII string.
     fn = md.sub('', fl)       # Input file name without ".md" extension.
     sf = codecs.open(fl.rstrip(), 'r',                    # Open current
                      encoding='utf-8')           # Markdown source file.
@@ -493,6 +496,7 @@ if not os.system('hg status | grep -qm1 .'):
    hg = subprocess.Popen('hg status',
                          shell=True, stdout=subprocess.PIPE).stdout
 
-   for ln in hg: print ln                    # Print "hg status" output.
+   for ln in hg:
+       print(codecs.decode(ln, 'ascii'))     # Print "hg status" output.
 
 sys.exit(ec)
